@@ -34,7 +34,7 @@ mkdir -p kinRdf
 
 ### Step 2 - Move the RDF (.ttl) files into the newly created folder
 ```
-cp ~/Output/RDF_Kin_Data_2022-Dec.ttl /kinRdf
+cp Output/RDF_Kin_Data_2022-Dec.ttl kinRdf/KINRDF.ttl
 ```
 
 ### Step 3 - Run the Docker image
@@ -52,7 +52,7 @@ sudo docker exec -it KinRDF  bash
 ### Step 5 - Move the .ttl files
 First, enter the "/data" folder and move the Turtle file(s) to the folder upstream by using:
 ```
-mv data/RDF_Kin_Data_2022-Dec.ttl .
+mv data/KINRDF.ttl .
 exit
 ```
 
@@ -84,7 +84,7 @@ grant execute on "DB.DBA.SPARQL_SINV_IMP" to "SPARQL";
 ```
 
 ```
-ld_dir('.', 'RDF_Kin_Data_2022-Dec.ttl', 'KinRDF.org');
+ld_dir('.', 'KINRDF.ttl', 'KinRDF.org');
 ```
 
 To finalize the loading of data, use:
