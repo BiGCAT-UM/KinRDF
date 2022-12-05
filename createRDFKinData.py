@@ -6,8 +6,15 @@ print("Version info: ", sys.version_info)
 import os
 from os.path import join
 
-#Check Working directory:
+#Set Working directory to where this file is located:
+#abspath = os.path.abspath("createRDFKinData.py")
+#dname = os.path.dirname(abspath)
+#os.chdir(dname)
+
+#Update the path to where the data is stored.
 dir_code = os.getcwd()
+parentPath = os.path.dirname(dir_code) #go up one directory
+dir_code = parentPath
 dataFolder = dir_code + "/KineticsData"
 os.chdir(dataFolder) ##Update directory to folder with data
 dir_code = os.getcwd()
@@ -126,48 +133,45 @@ for itemSubstrate in ListTotal:
 
 #Km
 for itemKm in ListTotal:
-	i = itemKm.split('\t')
-	#ListKm.append(i[0].strip( ) + '\t' + 'wd:Q61751178' + ' ' + i[8].strip( )) #Old line.
-    ListKm.append(i[0].strip( ) + '\t' + 'SEP:hasKm' + ' "' + i[8].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q61751178'
-	for items in ListKm: 
-		if '-' in items:
-			ListKm.remove(items)	
+  i = itemKm.split('\t')
+  ListKm.append(i[0].strip( ) + '\t' + 'SEP:hasKm "' + ' ' + i[8].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q61751178'
+  for items in ListKm: 
+    if '-' in items:
+      ListKm.remove(items)	
 			
 #Kcat
 for itemKcat in ListTotal:
-	i = itemKcat.split('\t')
-	#ListKcat.append(i[0].strip( ) + '\t' + 'wd:Q883112' + ' ' + i[9].strip( )) #Old line.
-    ListKcat.append(i[0].strip( ) + '\t' + 'SEP:hasKcat' + ' "' + i[9].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
-	for items in ListKcat: 
-		if '-' in items:
-			ListKcat.remove(items)	
+  i = itemKcat.split('\t')
+  #ListKcat.append(i[0].strip( ) + '\t' + 'wd:Q883112' + ' ' + i[9].strip( )) #Old line.
+  ListKcat.append(i[0].strip( ) + '\t' + 'SEP:hasKcat ' + ' "' + i[9].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
+  for items in ListKcat: 
+    if '-' in items:
+      ListKcat.remove(items)	
 
 #KcatKm
 for itemKcatKm in ListTotal:
-	i = itemKcatKm.split('\t')
-	#ListKcatKm.append(i[0].strip( ) + '\t' + 'wd:Q7575016' + ' ' + i[10].strip( )) #Old line
-    ListKcatKm.append(i[0].strip( ) + '\t' + 'SEP:hasKmKcat' + ' "' + i[10].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
-	for items in ListKcatKm: 
-		if '-' in items:
-			ListKcatKm.remove(items)				
+  i = itemKcatKm.split('\t')
+  #ListKcatKm.append(i[0].strip( ) + '\t' + 'wd:Q7575016' + ' ' + i[10].strip( )) #Old line
+  ListKcatKm.append(i[0].strip( ) + '\t' + 'SEP:hasKmKcat' + ' "' + i[10].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
+  for items in ListKcatKm: 
+    if '-' in items:
+      ListKcatKm.remove(items)				
 			
 #pH
 for item_pH in ListTotal:
-	i = item_pH.split('\t')
-	#List_pH.append(i[0].strip( ) + '\t' + 'wd:Q40936' + ' ' + i[11].strip( )) #Old line
-    List_pH.append(i[0].strip( ) + '\t' + 'SEP:hasPh + ' ' + i[11].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q40936
-	for items in List_pH: 
-		if '-' in items:
-			List_pH.remove(items)			
+  i = item_pH.split('\t')
+  List_pH.append(i[0].strip( ) + '\t' + 'SEP:hasPh "'+ ' ' + i[11].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q40936
+  for items in List_pH:
+    if '-' in items:
+      List_pH.remove(items)			
 			
 #Temperature
 for itemTemperature in ListTotal:
-	i = itemTemperature.split('\t')
-	#ListTemperature.append(i[0].strip( ) + '\t' + 'wdt:P2076' + ' ' + i[12].strip( )) #Old line
-    ListTemperature.append(i[0].strip( ) + '\t' + 'wdt:P2076' + ' ' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
-	for items in ListTemperature: 
-		if '-' in items or '' in items :
-			ListTemperature.remove(items)	
+  i = itemTemperature.split('\t')
+  ListTemperature.append(i[0].strip( ) + '\t' + 'wdt:P2076' + ' ' + i[12].strip( ) + '^^xsd:float') #Line from after 2020-01-17
+  for items in ListTemperature:
+    if '-' in items or '' in items:
+      ListTemperature.remove(items)	
 
 #AdditionalConditions
 for itemAdditionalConditions in ListTotal:
@@ -288,18 +292,25 @@ for itemListPMID in ListPMID:
 	
 ##Last item should end with a .
 for itemListDatabase in ListDatabase:
-	(key, val) = itemListDatabase.strip('\n').split('\t')
-	AllDict.setdefault(key, [])
-	AllDict[key].append(val + ' .')		
-	
-# # open a file for writing:
+  (key, val) = itemListDatabase.strip('\n').split('\t')
+  AllDict.setdefault(key, [])
+  AllDict[key].append(val + ' .')		
+  
+# # Go to output folder
 dir_code = os.getcwd()
 parentPath = os.path.dirname(dir_code) #go up one directory
 outputFolder = parentPath + "/Output"
 os.chdir(outputFolder) ##Update directory to folder to store output data
 dir_code = os.getcwd()
 
+# # Empty the data file before writing new content:
+open('RDF_Kin_Data_2022-Dec.ttl', 'w').close()
+
+# # open a file for writing:
 RDF_Kin_data = open('RDF_Kin_Data_2022-Dec.ttl', 'wb')
+
+# # Clean all content in the file
+#TODO
 
 # #First, print the prefixes from existing databases
 ##.encode() needed to write to files in Python 3.x (compared to 2.x)
@@ -332,3 +343,14 @@ for KeySEPX, ValueSEPX in AllDict.items():
 
 #Close this file as well
 RDF_Kin_data.close()
+
+# # Go back to parent folder before finishing the script:
+dir_code = os.getcwd()
+parentPath = os.path.dirname(dir_code) #go up one directory
+dir_code = parentPath
+
+#Remove all variables in working directory:
+for element in dir():
+    if element[0:2] != "__":
+        del globals()[element]
+del element

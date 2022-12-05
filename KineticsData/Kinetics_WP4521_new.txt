@@ -1,15 +1,15 @@
 EnzymePW	ApprovedEnzymeName	ECnumber	UniProt	Ensemble	RheaID	CHEBIID	Km	Kcat	Kcat/Km	pH	Temperature	AdditionalConditions	Species	PMID 	Database
 30.39	-	1.3.1.B13	Q9H8P0	-	RHEA:34281	67132	-	-	-	8	37	-	Homo sapiens	20637498	Brenda
 30.38	-	2.7.1.108	Q9UPQ8	-	RHEA:13134	16091	-	-	-	-	-	-	Homo sapiens	-	Brenda
-30.38	-	2.7.1.108	-	-	RHEA:13134	16091	"0,023"	-	-	"7,4"	37	-	Rattus norvegicus	2838091	Brenda
-30.38	-	2.7.1.108	-	-	RHEA:13134	16091	"0,075"	-	-	"7,4"	37	-	Rattus norvegicus	2999115	Brenda
+30.38	-	2.7.1.108	-	-	RHEA:13134	16091	23	-	-	7.4	37	-	Rattus norvegicus	2838091	Brenda
+30.38	-	2.7.1.108	-	-	RHEA:13134	16091	75	-	-	7.4	37	-	Rattus norvegicus	2999115	Brenda
 DAPGT1	-	2.7.8.15	-	-	RHEA:13290	4691	-	-	-	-	-	-	-	-	Brenda
-ALG13	-	2.4.1.141	-	-	RHEA:23381	58427	-	-	-	"7,5"	37	-	Gallus gallus	9530952	Brenda
+ALG13	-	2.4.1.141	-	-	RHEA:23381	58427	-	-	-	7.5	37	-	Gallus gallus	9530952	Brenda
 ALG13	-	2.4.1.141	-	-	-	58427	-	-	-	7	-	-	Sus scrofa	11377171	Brenda
 30.9	-	2.4.1.142 	Q9BT22	-	RHEA:13866 	57269	-	-	-	-	-	-	Homo sapiens	-	Brenda
 30.9	-	2.4.1.142 	-	-	RHEA:13866 	57269	-	-	-	7	37	-	Sus scrofa	3021065	Brenda
-30.7	-	2.4.1.132	Q9H553	-	RHEA:29516	58472	-	-	-	"6,8"	37	"pH range was between 6,8 to 7,3"	Oryctoloagus cuniculus	7309740	Brenda
-30.7	-	2.4.1.132	Q9H553	-	RHEA:29516	58472	-	-	-	"7,3"	37	"pH range was between 6,8 to 7,3"	Oryctoloagus cuniculus	7309740	Brenda
-30.11		2.4.1.131	-		RHEA:29523	132511	"0,00064"	-	-	7	37		Oryctoloagus cuniculus	6154707	Brenda
-30.11	-	2.4.1.131	-	-	RHEA:29523	-	-	-	-	"6,5"	-	"pH range was between 6,5 to 7,6"	Bos taurus	6698009	Brenda
-30.11	-	2.4.1.131	-	-	RHEA:29523	-	-	-	-	"7,6"	-	"pH range was between 6,5 to 7,6"	Bos taurus	6698009	Brenda
+30.7	-	2.4.1.132	Q9H553	-	RHEA:29516	58472	-	-	-	6.8	37	pH range was between 6,8 to 7,3	Oryctoloagus cuniculus	7309740	Brenda
+30.7	-	2.4.1.132	Q9H553	-	RHEA:29516	58472	-	-	-	7.3	37	pH range was between 6,8 to 7,3	Oryctoloagus cuniculus	7309740	Brenda
+30.11		2.4.1.131	-		RHEA:29523	132511	0,00064	-	-	7	37		Oryctoloagus cuniculus	6154707	Brenda
+30.11	-	2.4.1.131	-	-	RHEA:29523	-	-	-	-	6.5	-	pH range was between 6,5 to 7,6	Bos taurus	6698009	Brenda
+30.11	-	2.4.1.131	-	-	RHEA:29523	-	-	-	-	7.6	-	pH range was between 6,5 to 7,6	Bos taurus	6698009	Brenda
