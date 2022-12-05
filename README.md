@@ -105,3 +105,9 @@ quit;
 
 ### Step 8 - Enter the Virtuoso service with loaded AOP-Wiki RDF
 The container is running with loaded RDF, available through http://localhost:8890, or enter the SPARQL endpoint directly through http://localhost:8890/sparql/.
+
+### Step 9 - Stop and remove the Docker container when done
+```
+sudo docker stop KinRDF
+sudo docker rm KinRDF
+```
