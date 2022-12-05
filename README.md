@@ -45,12 +45,14 @@ sudo docker run -d --env DBA_PASSWORD=dba -p 8890:8890 -p 1111:1111 --name KinRD
 
 ### Step 4 - Enter the running container
 The SPARQL endpoint should already be accessible through [localhost:8890/sparql/](http://localhost:8890/sparql/). However, while the Docker image is running, the data is not yet loaded. Therefore you need to enter the it by using:
+
 ```
 sudo docker exec -it KinRDF  bash
 ```
 
 ### Step 5 - Move the .ttl files
 First, enter the "/data" folder and move the Turtle file(s) to the folder upstream by using:
+
 ```
 mv data/KINRDF.ttl .
 exit
@@ -58,30 +60,49 @@ exit
 
 ### Step 6 - Enter the container SQL and reset
 Enter the running docker container SQL by using: 
+
 ```
 sudo docker exec -i KinRDF isql 1111
 ```
+
 In case the service is already active and contains older RDF, be sure to perform a global reset and delete the old RDF files from the load_list, using the following commands:
+
 ```
 RDF_GLOBAL_RESET();
 DELETE FROM load_list WHERE ll_graph = 'KinRDF.org';
 ```
+
 The presence of files in the load_list can be viewed using the following command:
+
 ```
 select * from DB.DBA.load_list;
 ```
 
 ### Step 7 - Load the RDF
-Use the following commands to complete the loading of prefixes in the SPARQL endpoint. If errors occur, try again within a few seconds (which often works), or look at http://docs.openlinksw.com/virtuoso/errorcodes/ to find out what they mean. 
+Use the following commands to complete the loading of prefixes in the SPARQL endpoint. If errors occur, try again within a few seconds (which often works), or look at http://docs.openlinksw.com/virtuoso/errorcodes/ to find out what they mean. Add more pre-defined PREFIXES if needed:
 
 ```
 log_enable(2);
+DB.DBA.XML_SET_NS_DECL ('SEP', 'http://vocabularies.wikipathways.org/kin#',2);
 DB.DBA.XML_SET_NS_DECL ('dc', 'http://purl.org/dc/elements/1.1/',2);
-DB.DBA.XML_SET_NS_DECL ('dcterms', 'http://purl.org/dc/terms/',2);
+DB.DBA.XML_SET_NS_DECL ('rdfs', 'http://www.w3.org/2000/01/rdf-schema#',2);
+DB.DBA.XML_SET_NS_DECL ('wp', 'http://vocabularies.wikipathways.org/wp#',2);
+DB.DBA.XML_SET_NS_DECL ('rh', 'http://rdf.rhea-db.org/',2);
+DB.DBA.XML_SET_NS_DECL ('dcterms', 'http://purl.org/dc/terms/#',2);
+DB.DBA.XML_SET_NS_DECL ('xsd', 'http://www.w3.org/2001/XMLSchema#',2);
+DB.DBA.XML_SET_NS_DECL ('S_id', 'http://identifiers.org/uniprot/',2);
+DB.DBA.XML_SET_NS_DECL ('ECcode', 'https://identifiers.org/ec-code/',2);
+DB.DBA.XML_SET_NS_DECL ('En_id', 'http://identifiers.org/ensembl/',2);
+DB.DBA.XML_SET_NS_DECL ('PMID', 'http://identifiers.org/pubmed/',2);
+DB.DBA.XML_SET_NS_DECL ('RHEA', 'https://www.rhea-db.org/reaction?id=',2);
+DB.DBA.XML_SET_NS_DECL ('wd', 'http://www.wikidata.org/entity/',2);
+DB.DBA.XML_SET_NS_DECL ('wdt', 'http://www.wikidata.org/prop/direct/',2);
 log_enable(1);
 grant select on "DB.DBA.SPARQL_SINV_2" to "SPARQL";
 grant execute on "DB.DBA.SPARQL_SINV_IMP" to "SPARQL";
 ```
+
+Load the data: 
 
 ```
 ld_dir('.', 'KINRDF.ttl', 'KinRDF.org');
