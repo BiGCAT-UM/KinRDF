@@ -314,7 +314,7 @@ RDF_Kin_data = open('RDF_Kin_Data_2022-Dec.ttl', 'wb')
 
 # #First, print the prefixes from existing databases
 ##.encode() needed to write to files in Python 3.x (compared to 2.x)
-RDF_Kin_data.write("@prefix SEP: <> . \n".encode())  #Need to make URL for this prefix!
+RDF_Kin_data.write("@prefix SEP: <http://vocabularies.wikipathways.org/kin> . \n".encode())  #Need to make URL for this prefix!
 RDF_Kin_data.write("@prefix dc: <http://purl.org/dc/elements/1.1/> . \n".encode()) 
 RDF_Kin_data.write("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . \n".encode()) 
 RDF_Kin_data.write("@prefix wp: <http://vocabularies.wikipathways.org/wp#> . \n".encode()) #From WikiPathways
