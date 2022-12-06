@@ -96,7 +96,7 @@ for itemEC_Number in ListTotal:
 ##Uniprot
 for itemUniprot in ListTotal:
 	e = itemUniprot.split('\t')
-	ListUniprot.append(e[0].strip( ) + '\t' + 'wp:bdbUniprot' + ' S_id:' + e[4].strip( ))
+	ListUniprot.append(e[0].strip( ) + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( ))
 	for items in ListUniprot: 
 		if '-' in items:
 			ListUniprot.remove(items)				
@@ -187,15 +187,15 @@ for itemOrganism in ListTotal:
 		if '-' in items:
 			ListOrganism.remove(items)	
 
-#[15]=PMID			
+#[15]=PMID	--> Not read in correctly, check!!		
 for itemPMID in ListTotal:
 	k = itemPMID.split('\t')
 	if '/' in k[15]:
 		k2 = k[15].split('/')
 		k2 = [x.strip(' ') for x in k2]
-		ListPMID.append(k[0].strip( ) + '\t' + 'dcterms:references' + " PMID:" + ', PMID:'.join(k2))
+		ListPMID.append(k[0].strip( ) + '\t' + 'dcterms:references' + " pubmed:" + ', PMID:'.join(k2))
 	else:
-		ListPMID.append(k[0].strip( ) + '\t' + 'dcterms:references' + " PMID:" + k[15].strip( ))
+		ListPMID.append(k[0].strip( ) + '\t' + 'dcterms:references' + " pubmed:" + k[15].strip( ))
 	for items in ListPMID: 
 		if '-' in items or '' in items:
 			ListPMID.remove(items)	
@@ -312,17 +312,17 @@ RDF_Kin_data = open('RDF_Kin_Data_2022-Dec.ttl', 'wb')
 
 # #First, print the prefixes from existing databases
 ##.encode() needed to write to files in Python 3.x (compared to 2.x)
-RDF_Kin_data.write("@prefix SEP: <http://vocabularies.wikipathways.org/kin> . \n".encode())  #Need to make URL for this prefix!
+RDF_Kin_data.write("@prefix SEP: <http://vocabularies.wikipathways.org/kin#> . \n".encode())  #Need to make URL for this prefix!
 RDF_Kin_data.write("@prefix dc: <http://purl.org/dc/elements/1.1/> . \n".encode()) 
 RDF_Kin_data.write("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . \n".encode()) 
 RDF_Kin_data.write("@prefix wp: <http://vocabularies.wikipathways.org/wp#> . \n".encode()) #From WikiPathways
 RDF_Kin_data.write("@prefix rh: <http://rdf.rhea-db.org/> . \n".encode()) #From Rhea
 RDF_Kin_data.write("@prefix dcterms: <http://purl.org/dc/terms/> . \n".encode()) 
 RDF_Kin_data.write("@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> . \n".encode())
-RDF_Kin_data.write("@prefix S_id:   <http://identifiers.org/uniprot/> . \n".encode())
+RDF_Kin_data.write("@prefix uniprot:   <https://identifiers.org/uniprot/> . \n".encode())
 RDF_Kin_data.write("@prefix ECcode:   <https://identifiers.org/ec-code/> . \n".encode())
 RDF_Kin_data.write("@prefix En_id:   <http://identifiers.org/ensembl/> . \n".encode())
-RDF_Kin_data.write("@prefix PMID:   <http://identifiers.org/pubmed/> . \n".encode())
+RDF_Kin_data.write("@prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . \n".encode())
 RDF_Kin_data.write("@prefix RHEA:   <https://www.rhea-db.org/reaction?id=> . \n".encode())
 RDF_Kin_data.write("@prefix wd: <http://www.wikidata.org/entity/> . \n".encode()) #From WikiData
 RDF_Kin_data.write("@prefix wdt: <http://www.wikidata.org/prop/direct/> . \n\n".encode()) #From WikiData

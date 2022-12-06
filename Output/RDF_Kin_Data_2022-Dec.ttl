@@ -1,14 +1,14 @@
-@prefix SEP: <http://vocabularies.wikipathways.org/kin> . 
+@prefix SEP: <http://vocabularies.wikipathways.org/kin#> . 
 @prefix dc: <http://purl.org/dc/elements/1.1/> . 
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
 @prefix wp: <http://vocabularies.wikipathways.org/wp#> . 
 @prefix rh: <http://rdf.rhea-db.org/> . 
 @prefix dcterms: <http://purl.org/dc/terms/> . 
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> . 
-@prefix S_id:   <http://identifiers.org/uniprot/> . 
+@prefix uniprot:   <https://identifiers.org/uniprot/> . 
 @prefix ECcode:   <https://identifiers.org/ec-code/> . 
 @prefix En_id:   <http://identifiers.org/ensembl/> . 
-@prefix PMID:   <http://identifiers.org/pubmed/> . 
+@prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . 
 @prefix RHEA:   <https://www.rhea-db.org/reaction?id=> . 
 @prefix wd: <http://www.wikidata.org/entity/> . 
 @prefix wdt: <http://www.wikidata.org/prop/direct/> . 
@@ -17,7 +17,7 @@ SEP:1
 	dc:identifier SEP:1 ;
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
-	wp:bdbUniprot S_id:P19440 ;
+	wp:bdbUniprot uniprot:P19440 ;
 	rh:accession RHEA:23905 ;
 	SEP:hasKm  "0.68"^^xsd:float ;
 	wp:organismName "Mus musculus"^^xsd:string ;
@@ -27,7 +27,7 @@ SEP:2
 	dc:identifier SEP:2 ;
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
-	wp:bdbUniprot S_id:P19440 ;
+	wp:bdbUniprot uniprot:P19440 ;
 	rh:accession RHEA:23905 ;
 	SEP:hasKm  "0.0057"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
@@ -37,7 +37,7 @@ SEP:3
 	dc:identifier SEP:3 ;
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
-	wp:bdbUniprot S_id:P19440 ;
+	wp:bdbUniprot uniprot:P19440 ;
 	rh:accession RHEA:23905 ;
 	SEP:hasKm  "0.0105"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
@@ -49,7 +49,7 @@ SEP:4
 	dc:identifier SEP:4 ;
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
-	wp:bdbUniprot S_id:P19440 ;
+	wp:bdbUniprot uniprot:P19440 ;
 	rh:accession RHEA:23905 ;
 	SEP:hasKm  "0.0106"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
@@ -61,14 +61,14 @@ SEP:5
 	dc:identifier SEP:5 ;
 	rdfs:label "GGCT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.4 ;
-	wp:bdbUniprot S_id:O75223 ;
+	wp:bdbUniprot uniprot:O75223 ;
 	rh:accession RHEA:20506 ;
 	dc:source "Unknown"^^xsd:string .
 
 SEP:6
 	dc:identifier SEP:6 ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	wp:bdbUniprot S_id:O14841 ;
+	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
 	SEP:hasKm  "0.16"^^xsd:float ;
 	dcterms:description "initial Km in presence of GTP"@en ;
@@ -78,7 +78,7 @@ SEP:6
 SEP:7
 	dc:identifier SEP:7 ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	wp:bdbUniprot S_id:O14841 ;
+	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
 	SEP:hasKm  "0.18"^^xsd:float ;
 	dcterms:description "initial Km in presence of ITP"@en ;
@@ -88,7 +88,7 @@ SEP:7
 SEP:8
 	dc:identifier SEP:8 ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	wp:bdbUniprot S_id:O14841 ;
+	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
 	SEP:hasKm  "0.2"^^xsd:float ;
 	dcterms:description "initial Km in presence of UTP"@en ;
@@ -98,7 +98,7 @@ SEP:8
 SEP:9
 	dc:identifier SEP:9 ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	wp:bdbUniprot S_id:O14841 ;
+	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
 	SEP:hasKm  "0.41"^^xsd:float ;
 	dcterms:description "in presence of ATP"@en ;
@@ -108,7 +108,7 @@ SEP:9
 SEP:10
 	dc:identifier SEP:10 ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	wp:bdbUniprot S_id:O14841 ;
+	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
 	SEP:hasKm  "0.5"^^xsd:float ;
 	dcterms:description "final Km in presence of UTP"@en ;
@@ -118,7 +118,7 @@ SEP:10
 SEP:11
 	dc:identifier SEP:11 ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	wp:bdbUniprot S_id:O14841 ;
+	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
 	SEP:hasKm  "0.5"^^xsd:float ;
 	wp:organismName "Rattus norverigus"^^xsd:string ;
@@ -127,7 +127,7 @@ SEP:11
 SEP:12
 	dc:identifier SEP:12 ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	wp:bdbUniprot S_id:O14841 ;
+	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
 	SEP:hasKm  "0.57"^^xsd:float ;
 	dcterms:description "final Km in presence of GTP"@en ;
@@ -137,7 +137,7 @@ SEP:12
 SEP:13
 	dc:identifier SEP:13 ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	wp:bdbUniprot S_id:O14841 ;
+	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
 	SEP:hasKm  "0.58"^^xsd:float ;
 	dcterms:description "final Km in presence of ITP"@en ;
@@ -147,7 +147,7 @@ SEP:13
 SEP:14
 	dc:identifier SEP:14 ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	wp:bdbUniprot S_id:O14841 ;
+	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
 	SEP:hasKm  "0.0316"^^xsd:float ;
 	wp:organismName "Rattus norverigus"^^xsd:string ;
@@ -156,7 +156,7 @@ SEP:14
 SEP:15
 	dc:identifier SEP:15 ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	wp:bdbUniprot S_id:O14841 ;
+	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
 	SEP:hasKm  "0.05"^^xsd:float ;
 	wp:organismName "Rattus norverigus"^^xsd:string ;
@@ -166,7 +166,7 @@ SEP:16
 	dc:identifier SEP:16 ;
 	rdfs:label "GCLC"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
-	wp:bdbUniprot S_id:P48506 ;
+	wp:bdbUniprot uniprot:P48506 ;
 	rh:accession RHEA:13286 ;
 	SEP:hasKm  "0.75"^^xsd:float ;
 	dcterms:description "enzyme from embryo homogenate"@en ;
@@ -177,7 +177,7 @@ SEP:17
 	dc:identifier SEP:17 ;
 	rdfs:label "GCLC"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
-	wp:bdbUniprot S_id:P48506 ;
+	wp:bdbUniprot uniprot:P48506 ;
 	rh:accession RHEA:13286 ;
 	SEP:hasKm  "1.38"^^xsd:float ;
 	dcterms:description "enzyme from visceral yolk sac homogenate"@en ;
@@ -188,7 +188,7 @@ SEP:18
 	dc:identifier SEP:18 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "0.2"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -198,7 +198,7 @@ SEP:19
 	dc:identifier SEP:19 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "0.25"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -210,7 +210,7 @@ SEP:20
 	dc:identifier SEP:20 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "452"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -221,7 +221,7 @@ SEP:21
 	dc:identifier SEP:21 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "0.58"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -232,7 +232,7 @@ SEP:22
 	dc:identifier SEP:22 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "1.75"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -243,7 +243,7 @@ SEP:23
 	dc:identifier SEP:23 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "1.96"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -255,7 +255,7 @@ SEP:24
 	dc:identifier SEP:24 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -265,7 +265,7 @@ SEP:25
 	dc:identifier SEP:25 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "16"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -277,7 +277,7 @@ SEP:26
 	dc:identifier SEP:26 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "51"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -289,7 +289,7 @@ SEP:27
 	dc:identifier SEP:27 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "0.53"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -299,7 +299,7 @@ SEP:28
 	dc:identifier SEP:28 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "1.02"^^xsd:float ;
 	dcterms:description "mutant enzyme R283C"@en ;
@@ -310,7 +310,7 @@ SEP:29
 	dc:identifier SEP:29 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "1.24"^^xsd:float ;
 	dcterms:description "mutant enzyme Y270H"@en ;
@@ -321,7 +321,7 @@ SEP:30
 	dc:identifier SEP:30 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "1.43"^^xsd:float ;
 	dcterms:description "mutant enzyme Y270C"@en ;
@@ -332,7 +332,7 @@ SEP:31
 	dc:identifier SEP:31 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "1.51"^^xsd:float ;
 	dcterms:description "mutant enzyme D219G"@en ;
@@ -343,7 +343,7 @@ SEP:32
 	dc:identifier SEP:32 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "1.64"^^xsd:float ;
 	dcterms:description "mutant enzyme P314L"@en ;
@@ -354,7 +354,7 @@ SEP:33
 	dc:identifier SEP:33 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "1.75"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -364,7 +364,7 @@ SEP:34
 	dc:identifier SEP:34 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "2.07"^^xsd:float ;
 	dcterms:description "mutant enzyme D219A"@en ;
@@ -375,7 +375,7 @@ SEP:35
 	dc:identifier SEP:35 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "2.25"^^xsd:float ;
 	dcterms:description "mutant enzyme L188P"@en ;
@@ -386,7 +386,7 @@ SEP:36
 	dc:identifier SEP:36 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKm  "2.52"^^xsd:float ;
 	dcterms:description "mutant G371V"@en ;
@@ -397,7 +397,7 @@ SEP:37
 	dc:identifier SEP:37 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "10.36"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
@@ -408,7 +408,7 @@ SEP:38
 	dc:identifier SEP:38 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "1.17"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -420,7 +420,7 @@ SEP:39
 	dc:identifier SEP:39 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "1.6"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -432,7 +432,7 @@ SEP:40
 	dc:identifier SEP:40 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "2.31"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -444,7 +444,7 @@ SEP:41
 	dc:identifier SEP:41 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "15.68"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
@@ -455,7 +455,7 @@ SEP:42
 	dc:identifier SEP:42 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "52"^^xsd:float ;
 	dcterms:description "mutant G370V"@en ;
@@ -466,7 +466,7 @@ SEP:43
 	dc:identifier SEP:43 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "133"^^xsd:float ;
 	dcterms:description "mutant G369V"@en ;
@@ -477,7 +477,7 @@ SEP:44
 	dc:identifier SEP:44 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "2.36"^^xsd:float ;
 	dcterms:description "mutant G371V"@en ;
@@ -488,7 +488,7 @@ SEP:45
 	dc:identifier SEP:45 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "18.8"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -498,7 +498,7 @@ SEP:46
 	dc:identifier SEP:46 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "26.9"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
@@ -509,7 +509,7 @@ SEP:47
 	dc:identifier SEP:47 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "55"^^xsd:float ;
 	wp:organismName "Pasteurella multocida"^^xsd:string ;
@@ -519,7 +519,7 @@ SEP:48
 	dc:identifier SEP:48 ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
-	wp:bdbUniprot S_id:P48637 ;
+	wp:bdbUniprot uniprot:P48637 ;
 	rh:accession RHEA:13558 ;
 	SEP:hasKmKcat "10.36"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
@@ -539,7 +539,7 @@ SEP:50
 	dc:identifier SEP:50 ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
-	wp:bdbUniprot S_id:P06863 ;
+	wp:bdbUniprot uniprot:P06863 ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SEP:hasKm  "1.12"^^xsd:float ;
 	wp:organismName "Gallus gallus"^^xsd:string ;
@@ -549,7 +549,7 @@ SEP:51
 	dc:identifier SEP:51 ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
-	wp:bdbUniprot S_id:P06865 ;
+	wp:bdbUniprot uniprot:P06865 ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SEP:hasKm  "1.77"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
@@ -559,7 +559,7 @@ SEP:52
 	dc:identifier SEP:52 ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
-	wp:bdbUniprot S_id:P06866 ;
+	wp:bdbUniprot uniprot:P06866 ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SEP:hasKm  "0.075"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
@@ -569,7 +569,7 @@ SEP:53
 	dc:identifier SEP:53 ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
-	wp:bdbUniprot S_id:P06866 ;
+	wp:bdbUniprot uniprot:P06866 ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SEP:hasKm  "0.083"^^xsd:float ;
 	dcterms:description "soluble enzyme ; Km range 0,075 – 0,083"@en ;
@@ -580,7 +580,7 @@ SEP:54
 	dc:identifier SEP:54 ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
-	wp:bdbUniprot S_id:P04180 ;
+	wp:bdbUniprot uniprot:P04180 ;
 	SEP:hasKm  "0.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA/Uni Prot"^^xsd:string .
@@ -589,7 +589,7 @@ SEP:55
 	dc:identifier SEP:55 ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
-	wp:bdbUniprot S_id:P04180 ;
+	wp:bdbUniprot uniprot:P04180 ;
 	SEP:hasKm  "0.57"^^xsd:float ;
 	dcterms:description "recombinant enzyme expressed in baby hamster kidney cells"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -599,7 +599,7 @@ SEP:56
 	dc:identifier SEP:56 ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
-	wp:bdbUniprot S_id:P04180 ;
+	wp:bdbUniprot uniprot:P04180 ;
 	SEP:hasKm  "0.83"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
@@ -608,7 +608,7 @@ SEP:57
 	dc:identifier SEP:57 ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
-	wp:bdbUniprot S_id:PO4180 ;
+	wp:bdbUniprot uniprot:PO4180 ;
 	SEP:hasKm  "21.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
@@ -616,14 +616,14 @@ SEP:57
 SEP:58
 	dc:identifier SEP:58 ;
 	rdfs:label "CETP"^^xsd:string ;
-	wp:bdbUniprot S_id:P11597 ;
+	wp:bdbUniprot uniprot:P11597 ;
 	dc:source "Unknown"^^xsd:string .
 
 SEP:59
 	dc:identifier SEP:59 ;
 	rdfs:label "HL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
-	wp:bdbUniprot S_id:P11150 ;
+	wp:bdbUniprot uniprot:P11150 ;
 	rh:equation "38495"^^xsd:string ;
 	dc:source "Unknown"^^xsd:string .
 
@@ -631,7 +631,7 @@ SEP:60
 	dc:identifier SEP:60 ;
 	rdfs:label "HL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
-	wp:bdbUniprot S_id:P11150 ;
+	wp:bdbUniprot uniprot:P11150 ;
 	rh:equation "12046"^^xsd:string ;
 	dc:source "Unknown"^^xsd:string .
 
@@ -639,7 +639,7 @@ SEP:61
 	dc:identifier SEP:61 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.11"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -651,7 +651,7 @@ SEP:62
 	dc:identifier SEP:62 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.36"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -662,7 +662,7 @@ SEP:63
 	dc:identifier SEP:63 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.37"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -673,7 +673,7 @@ SEP:64
 	dc:identifier SEP:64 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.38"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -685,7 +685,7 @@ SEP:65
 	dc:identifier SEP:65 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.42"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -697,7 +697,7 @@ SEP:66
 	dc:identifier SEP:66 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.45"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -709,7 +709,7 @@ SEP:67
 	dc:identifier SEP:67 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.49"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -721,7 +721,7 @@ SEP:68
 	dc:identifier SEP:68 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.52"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -732,7 +732,7 @@ SEP:69
 	dc:identifier SEP:69 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.54"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -744,7 +744,7 @@ SEP:70
 	dc:identifier SEP:70 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.55"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -755,7 +755,7 @@ SEP:71
 	dc:identifier SEP:71 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.61"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -766,7 +766,7 @@ SEP:72
 	dc:identifier SEP:72 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.62"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -777,7 +777,7 @@ SEP:73
 	dc:identifier SEP:73 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.68"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -788,7 +788,7 @@ SEP:74
 	dc:identifier SEP:74 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.77"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -799,7 +799,7 @@ SEP:75
 	dc:identifier SEP:75 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.85"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -810,7 +810,7 @@ SEP:76
 	dc:identifier SEP:76 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.88"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -821,7 +821,7 @@ SEP:77
 	dc:identifier SEP:77 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.95"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -832,7 +832,7 @@ SEP:78
 	dc:identifier SEP:78 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "1.1"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -843,7 +843,7 @@ SEP:79
 	dc:identifier SEP:79 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "1.2"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -854,7 +854,7 @@ SEP:80
 	dc:identifier SEP:80 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "1"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -865,7 +865,7 @@ SEP:81
 	dc:identifier SEP:81 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "5"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -876,7 +876,7 @@ SEP:82
 	dc:identifier SEP:82 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "7"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -887,7 +887,7 @@ SEP:83
 	dc:identifier SEP:83 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "0.01"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -898,7 +898,7 @@ SEP:84
 	dc:identifier SEP:84 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "11"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -910,7 +910,7 @@ SEP:85
 	dc:identifier SEP:85 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "17"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -921,7 +921,7 @@ SEP:86
 	dc:identifier SEP:86 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "19"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -932,7 +932,7 @@ SEP:87
 	dc:identifier SEP:87 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "22"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -943,7 +943,7 @@ SEP:88
 	dc:identifier SEP:88 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "36"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -954,7 +954,7 @@ SEP:89
 	dc:identifier SEP:89 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "37"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -966,7 +966,7 @@ SEP:90
 	dc:identifier SEP:90 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "0.05"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -977,7 +977,7 @@ SEP:91
 	dc:identifier SEP:91 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "64"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -988,7 +988,7 @@ SEP:92
 	dc:identifier SEP:92 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "67"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -999,7 +999,7 @@ SEP:93
 	dc:identifier SEP:93 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "79"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1011,7 +1011,7 @@ SEP:94
 	dc:identifier SEP:94 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "92"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1022,7 +1022,7 @@ SEP:95
 	dc:identifier SEP:95 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "94"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1033,7 +1033,7 @@ SEP:96
 	dc:identifier SEP:96 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "95"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1044,7 +1044,7 @@ SEP:97
 	dc:identifier SEP:97 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "0.15"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1056,7 +1056,7 @@ SEP:98
 	dc:identifier SEP:98 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "0.0009"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1067,7 +1067,7 @@ SEP:99
 	dc:identifier SEP:99 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "0.0024"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1079,7 +1079,7 @@ SEP:100
 	dc:identifier SEP:100 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "0.0025"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1091,7 +1091,7 @@ SEP:101
 	dc:identifier SEP:101 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "3"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1102,7 +1102,7 @@ SEP:102
 	dc:identifier SEP:102 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "5"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1114,7 +1114,7 @@ SEP:103
 	dc:identifier SEP:103 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "6"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1126,7 +1126,7 @@ SEP:104
 	dc:identifier SEP:104 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "7"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1137,7 +1137,7 @@ SEP:105
 	dc:identifier SEP:105 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "9"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1148,7 +1148,7 @@ SEP:106
 	dc:identifier SEP:106 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "12"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1159,7 +1159,7 @@ SEP:107
 	dc:identifier SEP:107 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "16"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1171,7 +1171,7 @@ SEP:108
 	dc:identifier SEP:108 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "0.02"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1182,7 +1182,7 @@ SEP:109
 	dc:identifier SEP:109 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "22"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1193,7 +1193,7 @@ SEP:110
 	dc:identifier SEP:110 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "24"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1204,7 +1204,7 @@ SEP:111
 	dc:identifier SEP:111 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "29"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1216,7 +1216,7 @@ SEP:112
 	dc:identifier SEP:112 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "34"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1227,7 +1227,7 @@ SEP:113
 	dc:identifier SEP:113 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "39"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1238,7 +1238,7 @@ SEP:114
 	dc:identifier SEP:114 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "47"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1249,7 +1249,7 @@ SEP:115
 	dc:identifier SEP:115 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "52"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1260,7 +1260,7 @@ SEP:116
 	dc:identifier SEP:116 ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot S_id:O95477 ;
+	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "59"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -1271,7 +1271,7 @@ SEP:117
 	dc:identifier SEP:117 ;
 	rdfs:label "PCSK9"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.4.21.61 ;
-	wp:bdbUniprot S_id:Q8NBP7 ;
+	wp:bdbUniprot uniprot:Q8NBP7 ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
@@ -1565,7 +1565,7 @@ SEP:147
 	dc:identifier SEP:147 ;
 	rdfs:label "POR"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.6.2.4 ;
-	wp:bdbUniprot S_id:P16435 ;
+	wp:bdbUniprot uniprot:P16435 ;
 	dc:source "Unknown"^^xsd:string .
 
 SEP:148
@@ -2283,14 +2283,14 @@ SEP:216
 SEP:217
 	dc:identifier SEP:217 ;
 	rdfs:label "Cytochrome b5"^^xsd:string ;
-	wp:bdbUniprot S_id:J3KNC7 ;
+	wp:bdbUniprot uniprot:J3KNC7 ;
 	dc:source "Unknown"^^xsd:string .
 
 SEP:218
 	dc:identifier SEP:218 ;
 	rdfs:label "30.39"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.1.B13 ;
-	wp:bdbUniprot S_id:Q9H8P0 ;
+	wp:bdbUniprot uniprot:Q9H8P0 ;
 	rh:accession RHEA:34281 ;
 	SEP:hasPh " 8"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -2300,7 +2300,7 @@ SEP:219
 	dc:identifier SEP:219 ;
 	rdfs:label "30.38"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
-	wp:bdbUniprot S_id:Q9UPQ8 ;
+	wp:bdbUniprot uniprot:Q9UPQ8 ;
 	rh:accession RHEA:13134 ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
@@ -2353,7 +2353,7 @@ SEP:225
 	dc:identifier SEP:225 ;
 	rdfs:label "30.9"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
-	wp:bdbUniprot S_id:Q9BT22 ;
+	wp:bdbUniprot uniprot:Q9BT22 ;
 	rh:accession RHEA:13866 ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
@@ -2371,7 +2371,7 @@ SEP:227
 	dc:identifier SEP:227 ;
 	rdfs:label "30.7"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
-	wp:bdbUniprot S_id:Q9H553 ;
+	wp:bdbUniprot uniprot:Q9H553 ;
 	rh:accession RHEA:29516 ;
 	SEP:hasPh " 6.8"^^xsd:float ;
 	dcterms:description "pH range was between 6,8 to 7,3"@en ;
@@ -2382,7 +2382,7 @@ SEP:228
 	dc:identifier SEP:228 ;
 	rdfs:label "30.7"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
-	wp:bdbUniprot S_id:Q9H553 ;
+	wp:bdbUniprot uniprot:Q9H553 ;
 	rh:accession RHEA:29516 ;
 	SEP:hasPh " 7.3"^^xsd:float ;
 	dcterms:description "pH range was between 6,8 to 7,3"@en ;
@@ -2425,7 +2425,7 @@ SEP:232
 	dc:identifier SEP:232 ;
 	rdfs:label "Aminocyclase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
-	wp:bdbUniprot S_id:P45381 ;
+	wp:bdbUniprot uniprot:P45381 ;
 	rh:accession RHEA:14167 ;
 	SEP:hasKm  "163"^^xsd:float ;
 	SEP:hasKcat  "37,5"^^xsd:float ;
@@ -2437,7 +2437,7 @@ SEP:233
 	dc:identifier SEP:233 ;
 	rdfs:label "Aminocyclase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
-	wp:bdbUniprot S_id:P45381 ;
+	wp:bdbUniprot uniprot:P45381 ;
 	rh:accession RHEA:14167 ;
 	SEP:hasKm  "1.69"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
@@ -2448,7 +2448,7 @@ SEP:233
 SEP:234
 	dc:identifier SEP:234 ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot S_id:Q92947 ;
+	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	rh:accession RHEA:47421 ;
 	SEP:hasKm  "3"^^xsd:float ;
@@ -2459,7 +2459,7 @@ SEP:234
 SEP:235
 	dc:identifier SEP:235 ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot S_id:Q92947 ;
+	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	rh:accession RHEA:47422 ;
 	SEP:hasKm  "0.0047"^^xsd:float ;
@@ -2471,7 +2471,7 @@ SEP:235
 SEP:236
 	dc:identifier SEP:236 ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot S_id:Q92947 ;
+	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	rh:accession RHEA:47423 ;
 	SEP:hasKm  "0.0064"^^xsd:float ;
@@ -2483,7 +2483,7 @@ SEP:236
 SEP:237
 	dc:identifier SEP:237 ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot S_id:Q92947 ;
+	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	rh:accession RHEA:47424 ;
 	SEP:hasKm  "0.0074"^^xsd:float ;
@@ -2496,7 +2496,7 @@ SEP:237
 SEP:238
 	dc:identifier SEP:238 ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot S_id:Q92947 ;
+	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	rh:accession RHEA:47425 ;
 	SEP:hasKm  "0.0081"^^xsd:float ;
@@ -2508,7 +2508,7 @@ SEP:238
 SEP:239
 	dc:identifier SEP:239 ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot S_id:Q92947 ;
+	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	rh:accession RHEA:47426 ;
 	SEP:hasKm  "0.0123"^^xsd:float ;
@@ -2521,7 +2521,7 @@ SEP:239
 SEP:240
 	dc:identifier SEP:240 ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot S_id:Q92947 ;
+	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	rh:accession RHEA:47427 ;
 	SEP:hasKm  "0.0261"^^xsd:float ;
@@ -2534,7 +2534,7 @@ SEP:240
 SEP:241
 	dc:identifier SEP:241 ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot S_id:Q92947 ;
+	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	rh:accession RHEA:47428 ;
 	SEP:hasKm  "4"^^xsd:float ;
@@ -2545,7 +2545,7 @@ SEP:241
 SEP:242
 	dc:identifier SEP:242 ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot S_id:Q92947 ;
+	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	rh:accession RHEA:47429 ;
 	SEP:hasKm  "0.0026"^^xsd:float ;
@@ -2559,7 +2559,7 @@ SEP:242
 SEP:243
 	dc:identifier SEP:243 ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
-	wp:bdbUniprot S_id:Q9H9P8 ;
+	wp:bdbUniprot uniprot:Q9H9P8 ;
 	rh:accession RHEA:21253 ;
 	SEP:hasKm  "0.8"^^xsd:float ;
 	SEP:hasPh " 7"^^xsd:float ;
@@ -2569,7 +2569,7 @@ SEP:243
 SEP:244
 	dc:identifier SEP:244 ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
-	wp:bdbUniprot S_id:Q9H9P8 ;
+	wp:bdbUniprot uniprot:Q9H9P8 ;
 	rh:accession RHEA:21254 ;
 	SEP:hasKm  "1.7"^^xsd:float ;
 	SEP:hasPh " 7,2"^^xsd:float ;
@@ -2579,7 +2579,7 @@ SEP:244
 SEP:245
 	dc:identifier SEP:245 ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
-	wp:bdbUniprot S_id:Q8N465 ;
+	wp:bdbUniprot uniprot:Q8N465 ;
 	rh:accession RHEA:21255 ;
 	SEP:hasKm  "584"^^xsd:float ;
 	SEP:hasKcat  "0,8"^^xsd:float ;
@@ -2592,7 +2592,7 @@ SEP:246
 	dc:identifier SEP:246 ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot S_id:P48735 ;
+	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	rh:accession RHEA:49614 ;
 	SEP:hasKm  "17"^^xsd:float ;
@@ -2605,7 +2605,7 @@ SEP:247
 	dc:identifier SEP:247 ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot S_id:P48735 ;
+	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	rh:accession RHEA:49615 ;
 	SEP:hasKm  "26"^^xsd:float ;
@@ -2618,7 +2618,7 @@ SEP:248
 	dc:identifier SEP:248 ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot S_id:P48735 ;
+	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	rh:accession RHEA:49616 ;
 	SEP:hasKm  "0.13"^^xsd:float ;
@@ -2629,7 +2629,7 @@ SEP:249
 	dc:identifier SEP:249 ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot S_id:P48735 ;
+	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	rh:accession RHEA:49617 ;
 	SEP:hasKm  "0.2"^^xsd:float ;
@@ -2641,7 +2641,7 @@ SEP:250
 	dc:identifier SEP:250 ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot S_id:P48735 ;
+	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	rh:accession RHEA:49618 ;
 	SEP:hasKm  "304"^^xsd:float ;
@@ -2654,7 +2654,7 @@ SEP:251
 	dc:identifier SEP:251 ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot S_id:P48735 ;
+	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	rh:accession RHEA:49619 ;
 	SEP:hasKm  "398"^^xsd:float ;
@@ -2667,7 +2667,7 @@ SEP:252
 	dc:identifier SEP:252 ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot S_id:P48735 ;
+	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	rh:accession RHEA:49620 ;
 	SEP:hasKm  "1.1"^^xsd:float ;
@@ -2680,7 +2680,7 @@ SEP:253
 	dc:identifier SEP:253 ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot S_id:P48735 ;
+	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	rh:accession RHEA:49621 ;
 	SEP:hasKm  "1.92"^^xsd:float ;
@@ -2692,7 +2692,7 @@ SEP:254
 	dc:identifier SEP:254 ;
 	rdfs:label "Antiquitin"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.2.1.3 ;
-	wp:bdbUniprot S_id:P49419 ;
+	wp:bdbUniprot uniprot:P49419 ;
 	wp:bdbEnsembl En_id:ENSG00000164904 ;
 	SEP:hasKm  "17"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -2702,7 +2702,7 @@ SEP:255
 	dc:identifier SEP:255 ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
-	wp:bdbUniprot S_id:Q8IWW8 ;
+	wp:bdbUniprot uniprot:Q8IWW8 ;
 	rh:accession RHEA:49614 ;
 	SEP:hasKm  "77"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -2712,7 +2712,7 @@ SEP:256
 	dc:identifier SEP:256 ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
-	wp:bdbUniprot S_id:Q8IWW8 ;
+	wp:bdbUniprot uniprot:Q8IWW8 ;
 	rh:accession RHEA:49615 ;
 	SEP:hasKm  "18"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
@@ -2722,7 +2722,7 @@ SEP:257
 	dc:identifier SEP:257 ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
-	wp:bdbUniprot S_id:Q8IWW8 ;
+	wp:bdbUniprot uniprot:Q8IWW8 ;
 	rh:accession RHEA:49616 ;
 	SEP:hasKm  "77"^^xsd:float ;
 	SEP:hasPh " 7,1"^^xsd:float ;
@@ -2734,7 +2734,7 @@ SEP:258
 	dc:identifier SEP:258 ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
-	wp:bdbUniprot S_id:Q8IWW8 ;
+	wp:bdbUniprot uniprot:Q8IWW8 ;
 	rh:accession RHEA:49617 ;
 	SEP:hasKm  "85"^^xsd:float ;
 	SEP:hasPh " 7,1"^^xsd:float ;
@@ -2746,7 +2746,7 @@ SEP:259
 	dc:identifier SEP:259 ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.37 ;
-	wp:bdbUniprot S_id:P40926 ;
+	wp:bdbUniprot uniprot:P40926 ;
 	rh:accession RHEA:21253 ;
 	SEP:hasPh " 7,4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -2756,7 +2756,7 @@ SEP:260
 	dc:identifier SEP:260 ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
-	wp:bdbUniprot S_id:P23368 ;
+	wp:bdbUniprot uniprot:P23368 ;
 	rh:accession RHEA:21254 ;
 	SEP:hasKm  "1.4"^^xsd:float ;
 	SEP:hasKcat  "26"^^xsd:float ;
@@ -2769,7 +2769,7 @@ SEP:261
 	dc:identifier SEP:261 ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
-	wp:bdbUniprot S_id:P23368 ;
+	wp:bdbUniprot uniprot:P23368 ;
 	rh:accession RHEA:21255 ;
 	SEP:hasKm  "130"^^xsd:float ;
 	SEP:hasKcat  "26"^^xsd:float ;
@@ -2782,7 +2782,7 @@ SEP:262
 	dc:identifier SEP:262 ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
-	wp:bdbUniprot S_id:P23368 ;
+	wp:bdbUniprot uniprot:P23368 ;
 	rh:accession RHEA:21256 ;
 	SEP:hasKm  "6.4"^^xsd:float ;
 	SEP:hasKcat  "26"^^xsd:float ;
