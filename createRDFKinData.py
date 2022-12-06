@@ -6,16 +6,14 @@ print("Version info: ", sys.version_info)
 import os
 from os.path import join
 
-#Set Working directory to where this file is located:
-#abspath = os.path.abspath("createRDFKinData.py")
-#dname = os.path.dirname(abspath)
-#os.chdir(dname)
-
 #Update the path to where the data is stored.
 dir_code = os.getcwd()
-parentPath = os.path.dirname(dir_code) #go up one directory
-dir_code = parentPath
-dataFolder = dir_code + "/KineticsData"
+if dir_code.endswith('KinRDF'):
+  dataFolder = dir_code + "/KineticsData"
+else:
+  parentPath = os.path.dirname(dir_code) #go up one directory
+  dir_code = parentPath
+  dataFolder = dir_code + "/KineticsData"
 os.chdir(dataFolder) ##Update directory to folder with data
 dir_code = os.getcwd()
 
@@ -134,7 +132,7 @@ for itemSubstrate in ListTotal:
 #Km
 for itemKm in ListTotal:
   i = itemKm.split('\t')
-  ListKm.append(i[0].strip( ) + '\t' + 'SEP:hasKm "' + ' ' + i[8].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q61751178'
+  ListKm.append(i[0].strip() + '\t' + 'SEP:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q61751178'
   for items in ListKm: 
     if '-' in items:
       ListKm.remove(items)	
@@ -143,7 +141,7 @@ for itemKm in ListTotal:
 for itemKcat in ListTotal:
   i = itemKcat.split('\t')
   #ListKcat.append(i[0].strip( ) + '\t' + 'wd:Q883112' + ' ' + i[9].strip( )) #Old line.
-  ListKcat.append(i[0].strip( ) + '\t' + 'SEP:hasKcat ' + ' "' + i[9].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
+  ListKcat.append(i[0].strip() + '\t' + 'SEP:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
   for items in ListKcat: 
     if '-' in items:
       ListKcat.remove(items)	
@@ -152,7 +150,7 @@ for itemKcat in ListTotal:
 for itemKcatKm in ListTotal:
   i = itemKcatKm.split('\t')
   #ListKcatKm.append(i[0].strip( ) + '\t' + 'wd:Q7575016' + ' ' + i[10].strip( )) #Old line
-  ListKcatKm.append(i[0].strip( ) + '\t' + 'SEP:hasKmKcat' + ' "' + i[10].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
+  ListKcatKm.append(i[0].strip() + '\t' + 'SEP:hasKmKcat' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
   for items in ListKcatKm: 
     if '-' in items:
       ListKcatKm.remove(items)				
