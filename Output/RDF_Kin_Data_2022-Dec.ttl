@@ -1,11 +1,14 @@
 @prefix SEP: <http://vocabularies.wikipathways.org/kin#> . 
 @prefix dc: <http://purl.org/dc/elements/1.1/> . 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
 @prefix wp: <http://vocabularies.wikipathways.org/wp#> . 
 @prefix rh: <http://rdf.rhea-db.org/> . 
 @prefix dcterms: <http://purl.org/dc/terms/> . 
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> . 
 @prefix uniprot:   <https://identifiers.org/uniprot/> . 
+@prefix uniprotkb:   <http://purl.uniprot.org/uniprot/> . 
+@prefix up:   <http://purl.uniprot.org/core/> . 
 @prefix ECcode:   <https://identifiers.org/ec-code/> . 
 @prefix En_id:   <http://identifiers.org/ensembl/> . 
 @prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . 
@@ -15,6 +18,7 @@
 
 SEP:1
 	dc:identifier SEP:1 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	wp:bdbUniprot uniprot:P19440 ;
@@ -25,6 +29,7 @@ SEP:1
 
 SEP:2
 	dc:identifier SEP:2 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	wp:bdbUniprot uniprot:P19440 ;
@@ -35,6 +40,7 @@ SEP:2
 
 SEP:3
 	dc:identifier SEP:3 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	wp:bdbUniprot uniprot:P19440 ;
@@ -47,6 +53,7 @@ SEP:3
 
 SEP:4
 	dc:identifier SEP:4 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	wp:bdbUniprot uniprot:P19440 ;
@@ -59,6 +66,7 @@ SEP:4
 
 SEP:5
 	dc:identifier SEP:5 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GGCT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.4 ;
 	wp:bdbUniprot uniprot:O75223 ;
@@ -67,6 +75,7 @@ SEP:5
 
 SEP:6
 	dc:identifier SEP:6 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
@@ -77,6 +86,7 @@ SEP:6
 
 SEP:7
 	dc:identifier SEP:7 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
@@ -87,6 +97,7 @@ SEP:7
 
 SEP:8
 	dc:identifier SEP:8 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
@@ -97,6 +108,7 @@ SEP:8
 
 SEP:9
 	dc:identifier SEP:9 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
@@ -107,6 +119,7 @@ SEP:9
 
 SEP:10
 	dc:identifier SEP:10 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
@@ -117,6 +130,7 @@ SEP:10
 
 SEP:11
 	dc:identifier SEP:11 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
@@ -126,6 +140,7 @@ SEP:11
 
 SEP:12
 	dc:identifier SEP:12 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
@@ -136,6 +151,7 @@ SEP:12
 
 SEP:13
 	dc:identifier SEP:13 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
@@ -146,6 +162,7 @@ SEP:13
 
 SEP:14
 	dc:identifier SEP:14 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
@@ -155,6 +172,7 @@ SEP:14
 
 SEP:15
 	dc:identifier SEP:15 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
 	rh:accession RHEA:10349 ;
@@ -164,6 +182,7 @@ SEP:15
 
 SEP:16
 	dc:identifier SEP:16 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GCLC"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	wp:bdbUniprot uniprot:P48506 ;
@@ -175,6 +194,7 @@ SEP:16
 
 SEP:17
 	dc:identifier SEP:17 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GCLC"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	wp:bdbUniprot uniprot:P48506 ;
@@ -186,6 +206,7 @@ SEP:17
 
 SEP:18
 	dc:identifier SEP:18 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -196,6 +217,7 @@ SEP:18
 
 SEP:19
 	dc:identifier SEP:19 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -208,6 +230,7 @@ SEP:19
 
 SEP:20
 	dc:identifier SEP:20 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -219,6 +242,7 @@ SEP:20
 
 SEP:21
 	dc:identifier SEP:21 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -230,6 +254,7 @@ SEP:21
 
 SEP:22
 	dc:identifier SEP:22 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -241,6 +266,7 @@ SEP:22
 
 SEP:23
 	dc:identifier SEP:23 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -253,6 +279,7 @@ SEP:23
 
 SEP:24
 	dc:identifier SEP:24 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -263,6 +290,7 @@ SEP:24
 
 SEP:25
 	dc:identifier SEP:25 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -275,6 +303,7 @@ SEP:25
 
 SEP:26
 	dc:identifier SEP:26 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -287,6 +316,7 @@ SEP:26
 
 SEP:27
 	dc:identifier SEP:27 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -297,6 +327,7 @@ SEP:27
 
 SEP:28
 	dc:identifier SEP:28 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -308,6 +339,7 @@ SEP:28
 
 SEP:29
 	dc:identifier SEP:29 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -319,6 +351,7 @@ SEP:29
 
 SEP:30
 	dc:identifier SEP:30 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -330,6 +363,7 @@ SEP:30
 
 SEP:31
 	dc:identifier SEP:31 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -341,6 +375,7 @@ SEP:31
 
 SEP:32
 	dc:identifier SEP:32 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -352,6 +387,7 @@ SEP:32
 
 SEP:33
 	dc:identifier SEP:33 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -362,6 +398,7 @@ SEP:33
 
 SEP:34
 	dc:identifier SEP:34 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -373,6 +410,7 @@ SEP:34
 
 SEP:35
 	dc:identifier SEP:35 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -384,6 +422,7 @@ SEP:35
 
 SEP:36
 	dc:identifier SEP:36 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -395,6 +434,7 @@ SEP:36
 
 SEP:37
 	dc:identifier SEP:37 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -406,6 +446,7 @@ SEP:37
 
 SEP:38
 	dc:identifier SEP:38 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -418,6 +459,7 @@ SEP:38
 
 SEP:39
 	dc:identifier SEP:39 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -430,6 +472,7 @@ SEP:39
 
 SEP:40
 	dc:identifier SEP:40 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -442,6 +485,7 @@ SEP:40
 
 SEP:41
 	dc:identifier SEP:41 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -453,6 +497,7 @@ SEP:41
 
 SEP:42
 	dc:identifier SEP:42 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -464,6 +509,7 @@ SEP:42
 
 SEP:43
 	dc:identifier SEP:43 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -475,6 +521,7 @@ SEP:43
 
 SEP:44
 	dc:identifier SEP:44 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -486,6 +533,7 @@ SEP:44
 
 SEP:45
 	dc:identifier SEP:45 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -496,6 +544,7 @@ SEP:45
 
 SEP:46
 	dc:identifier SEP:46 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -507,6 +556,7 @@ SEP:46
 
 SEP:47
 	dc:identifier SEP:47 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -517,6 +567,7 @@ SEP:47
 
 SEP:48
 	dc:identifier SEP:48 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -528,6 +579,7 @@ SEP:48
 
 SEP:49
 	dc:identifier SEP:49 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "DP"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.4.11.2 ;
 	wp:bdbEnsembl En_id:ENSG00000015413 ;
@@ -537,6 +589,7 @@ SEP:49
 
 SEP:50
 	dc:identifier SEP:50 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	wp:bdbUniprot uniprot:P06863 ;
@@ -547,6 +600,7 @@ SEP:50
 
 SEP:51
 	dc:identifier SEP:51 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	wp:bdbUniprot uniprot:P06865 ;
@@ -557,6 +611,7 @@ SEP:51
 
 SEP:52
 	dc:identifier SEP:52 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	wp:bdbUniprot uniprot:P06866 ;
@@ -567,6 +622,7 @@ SEP:52
 
 SEP:53
 	dc:identifier SEP:53 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	wp:bdbUniprot uniprot:P06866 ;
@@ -578,6 +634,7 @@ SEP:53
 
 SEP:54
 	dc:identifier SEP:54 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
 	wp:bdbUniprot uniprot:P04180 ;
@@ -587,6 +644,7 @@ SEP:54
 
 SEP:55
 	dc:identifier SEP:55 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
 	wp:bdbUniprot uniprot:P04180 ;
@@ -597,6 +655,7 @@ SEP:55
 
 SEP:56
 	dc:identifier SEP:56 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
 	wp:bdbUniprot uniprot:P04180 ;
@@ -606,6 +665,7 @@ SEP:56
 
 SEP:57
 	dc:identifier SEP:57 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
 	wp:bdbUniprot uniprot:PO4180 ;
@@ -615,12 +675,14 @@ SEP:57
 
 SEP:58
 	dc:identifier SEP:58 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "CETP"^^xsd:string ;
 	wp:bdbUniprot uniprot:P11597 ;
 	dc:source "Unknown"^^xsd:string .
 
 SEP:59
 	dc:identifier SEP:59 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "HL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	wp:bdbUniprot uniprot:P11150 ;
@@ -629,6 +691,7 @@ SEP:59
 
 SEP:60
 	dc:identifier SEP:60 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "HL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	wp:bdbUniprot uniprot:P11150 ;
@@ -637,6 +700,7 @@ SEP:60
 
 SEP:61
 	dc:identifier SEP:61 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -649,6 +713,7 @@ SEP:61
 
 SEP:62
 	dc:identifier SEP:62 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -660,6 +725,7 @@ SEP:62
 
 SEP:63
 	dc:identifier SEP:63 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -671,6 +737,7 @@ SEP:63
 
 SEP:64
 	dc:identifier SEP:64 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -683,6 +750,7 @@ SEP:64
 
 SEP:65
 	dc:identifier SEP:65 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -695,6 +763,7 @@ SEP:65
 
 SEP:66
 	dc:identifier SEP:66 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -707,6 +776,7 @@ SEP:66
 
 SEP:67
 	dc:identifier SEP:67 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -719,6 +789,7 @@ SEP:67
 
 SEP:68
 	dc:identifier SEP:68 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -730,6 +801,7 @@ SEP:68
 
 SEP:69
 	dc:identifier SEP:69 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -742,6 +814,7 @@ SEP:69
 
 SEP:70
 	dc:identifier SEP:70 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -753,6 +826,7 @@ SEP:70
 
 SEP:71
 	dc:identifier SEP:71 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -764,6 +838,7 @@ SEP:71
 
 SEP:72
 	dc:identifier SEP:72 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -775,6 +850,7 @@ SEP:72
 
 SEP:73
 	dc:identifier SEP:73 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -786,6 +862,7 @@ SEP:73
 
 SEP:74
 	dc:identifier SEP:74 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -797,6 +874,7 @@ SEP:74
 
 SEP:75
 	dc:identifier SEP:75 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -808,6 +886,7 @@ SEP:75
 
 SEP:76
 	dc:identifier SEP:76 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -819,6 +898,7 @@ SEP:76
 
 SEP:77
 	dc:identifier SEP:77 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -830,6 +910,7 @@ SEP:77
 
 SEP:78
 	dc:identifier SEP:78 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -841,6 +922,7 @@ SEP:78
 
 SEP:79
 	dc:identifier SEP:79 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -852,6 +934,7 @@ SEP:79
 
 SEP:80
 	dc:identifier SEP:80 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -863,6 +946,7 @@ SEP:80
 
 SEP:81
 	dc:identifier SEP:81 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -874,6 +958,7 @@ SEP:81
 
 SEP:82
 	dc:identifier SEP:82 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -885,6 +970,7 @@ SEP:82
 
 SEP:83
 	dc:identifier SEP:83 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -896,6 +982,7 @@ SEP:83
 
 SEP:84
 	dc:identifier SEP:84 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -908,6 +995,7 @@ SEP:84
 
 SEP:85
 	dc:identifier SEP:85 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -919,6 +1007,7 @@ SEP:85
 
 SEP:86
 	dc:identifier SEP:86 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -930,6 +1019,7 @@ SEP:86
 
 SEP:87
 	dc:identifier SEP:87 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -941,6 +1031,7 @@ SEP:87
 
 SEP:88
 	dc:identifier SEP:88 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -952,6 +1043,7 @@ SEP:88
 
 SEP:89
 	dc:identifier SEP:89 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -964,6 +1056,7 @@ SEP:89
 
 SEP:90
 	dc:identifier SEP:90 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -975,6 +1068,7 @@ SEP:90
 
 SEP:91
 	dc:identifier SEP:91 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -986,6 +1080,7 @@ SEP:91
 
 SEP:92
 	dc:identifier SEP:92 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -997,6 +1092,7 @@ SEP:92
 
 SEP:93
 	dc:identifier SEP:93 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1009,6 +1105,7 @@ SEP:93
 
 SEP:94
 	dc:identifier SEP:94 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1020,6 +1117,7 @@ SEP:94
 
 SEP:95
 	dc:identifier SEP:95 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1031,6 +1129,7 @@ SEP:95
 
 SEP:96
 	dc:identifier SEP:96 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1042,6 +1141,7 @@ SEP:96
 
 SEP:97
 	dc:identifier SEP:97 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1054,6 +1154,7 @@ SEP:97
 
 SEP:98
 	dc:identifier SEP:98 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1065,6 +1166,7 @@ SEP:98
 
 SEP:99
 	dc:identifier SEP:99 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1077,6 +1179,7 @@ SEP:99
 
 SEP:100
 	dc:identifier SEP:100 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1089,6 +1192,7 @@ SEP:100
 
 SEP:101
 	dc:identifier SEP:101 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1100,6 +1204,7 @@ SEP:101
 
 SEP:102
 	dc:identifier SEP:102 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1112,6 +1217,7 @@ SEP:102
 
 SEP:103
 	dc:identifier SEP:103 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1124,6 +1230,7 @@ SEP:103
 
 SEP:104
 	dc:identifier SEP:104 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1135,6 +1242,7 @@ SEP:104
 
 SEP:105
 	dc:identifier SEP:105 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1146,6 +1254,7 @@ SEP:105
 
 SEP:106
 	dc:identifier SEP:106 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1157,6 +1266,7 @@ SEP:106
 
 SEP:107
 	dc:identifier SEP:107 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1169,6 +1279,7 @@ SEP:107
 
 SEP:108
 	dc:identifier SEP:108 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1180,6 +1291,7 @@ SEP:108
 
 SEP:109
 	dc:identifier SEP:109 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1191,6 +1303,7 @@ SEP:109
 
 SEP:110
 	dc:identifier SEP:110 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1202,6 +1315,7 @@ SEP:110
 
 SEP:111
 	dc:identifier SEP:111 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1214,6 +1328,7 @@ SEP:111
 
 SEP:112
 	dc:identifier SEP:112 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1225,6 +1340,7 @@ SEP:112
 
 SEP:113
 	dc:identifier SEP:113 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1236,6 +1352,7 @@ SEP:113
 
 SEP:114
 	dc:identifier SEP:114 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1247,6 +1364,7 @@ SEP:114
 
 SEP:115
 	dc:identifier SEP:115 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1258,6 +1376,7 @@ SEP:115
 
 SEP:116
 	dc:identifier SEP:116 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1269,6 +1388,7 @@ SEP:116
 
 SEP:117
 	dc:identifier SEP:117 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "PCSK9"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.4.21.61 ;
 	wp:bdbUniprot uniprot:Q8NBP7 ;
@@ -1277,6 +1397,7 @@ SEP:117
 
 SEP:118
 	dc:identifier SEP:118 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1288,6 +1409,7 @@ SEP:118
 
 SEP:119
 	dc:identifier SEP:119 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1298,6 +1420,7 @@ SEP:119
 
 SEP:120
 	dc:identifier SEP:120 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1309,6 +1432,7 @@ SEP:120
 
 SEP:121
 	dc:identifier SEP:121 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1319,6 +1443,7 @@ SEP:121
 
 SEP:122
 	dc:identifier SEP:122 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1329,6 +1454,7 @@ SEP:122
 
 SEP:123
 	dc:identifier SEP:123 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1339,6 +1465,7 @@ SEP:123
 
 SEP:124
 	dc:identifier SEP:124 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1349,6 +1476,7 @@ SEP:124
 
 SEP:125
 	dc:identifier SEP:125 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1359,6 +1487,7 @@ SEP:125
 
 SEP:126
 	dc:identifier SEP:126 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1370,6 +1499,7 @@ SEP:126
 
 SEP:127
 	dc:identifier SEP:127 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1380,6 +1510,7 @@ SEP:127
 
 SEP:128
 	dc:identifier SEP:128 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1390,6 +1521,7 @@ SEP:128
 
 SEP:129
 	dc:identifier SEP:129 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1400,6 +1532,7 @@ SEP:129
 
 SEP:130
 	dc:identifier SEP:130 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1410,6 +1543,7 @@ SEP:130
 
 SEP:131
 	dc:identifier SEP:131 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
@@ -1420,6 +1554,7 @@ SEP:131
 
 SEP:132
 	dc:identifier SEP:132 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "STAR"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.11.12 ;
 	wp:bdbEnsembl En_id:ENSG00000147465 ;
@@ -1428,6 +1563,7 @@ SEP:132
 
 SEP:133
 	dc:identifier SEP:133 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24077 ;
@@ -1436,6 +1572,7 @@ SEP:133
 
 SEP:134
 	dc:identifier SEP:134 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24078 ;
@@ -1446,6 +1583,7 @@ SEP:134
 
 SEP:135
 	dc:identifier SEP:135 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24079 ;
@@ -1456,6 +1594,7 @@ SEP:135
 
 SEP:136
 	dc:identifier SEP:136 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24080 ;
@@ -1465,6 +1604,7 @@ SEP:136
 
 SEP:137
 	dc:identifier SEP:137 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24081 ;
@@ -1474,6 +1614,7 @@ SEP:137
 
 SEP:138
 	dc:identifier SEP:138 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24082 ;
@@ -1484,6 +1625,7 @@ SEP:138
 
 SEP:139
 	dc:identifier SEP:139 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24083 ;
@@ -1494,6 +1636,7 @@ SEP:139
 
 SEP:140
 	dc:identifier SEP:140 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24084 ;
@@ -1505,6 +1648,7 @@ SEP:140
 
 SEP:141
 	dc:identifier SEP:141 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24085 ;
@@ -1516,6 +1660,7 @@ SEP:141
 
 SEP:142
 	dc:identifier SEP:142 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24086 ;
@@ -1526,6 +1671,7 @@ SEP:142
 
 SEP:143
 	dc:identifier SEP:143 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24087 ;
@@ -1536,6 +1682,7 @@ SEP:143
 
 SEP:144
 	dc:identifier SEP:144 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	rh:accession RHEA:24088 ;
@@ -1545,6 +1692,7 @@ SEP:144
 
 SEP:145
 	dc:identifier SEP:145 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Corticosterone Methyl Oxidase I"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.5 ;
 	wp:bdbEnsembl En_id:ENSG00000179142 ;
@@ -1554,6 +1702,7 @@ SEP:145
 
 SEP:146
 	dc:identifier SEP:146 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Corticosterone Methyl Oxidase II"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.5 ;
 	wp:bdbEnsembl En_id:ENSG00000179142 ;
@@ -1563,6 +1712,7 @@ SEP:146
 
 SEP:147
 	dc:identifier SEP:147 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "POR"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.6.2.4 ;
 	wp:bdbUniprot uniprot:P16435 ;
@@ -1570,6 +1720,7 @@ SEP:147
 
 SEP:148
 	dc:identifier SEP:148 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1580,6 +1731,7 @@ SEP:148
 
 SEP:149
 	dc:identifier SEP:149 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1591,6 +1743,7 @@ SEP:149
 
 SEP:150
 	dc:identifier SEP:150 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1603,6 +1756,7 @@ SEP:150
 
 SEP:151
 	dc:identifier SEP:151 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1613,6 +1767,7 @@ SEP:151
 
 SEP:152
 	dc:identifier SEP:152 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1624,6 +1779,7 @@ SEP:152
 
 SEP:153
 	dc:identifier SEP:153 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1636,6 +1792,7 @@ SEP:153
 
 SEP:154
 	dc:identifier SEP:154 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1646,6 +1803,7 @@ SEP:154
 
 SEP:155
 	dc:identifier SEP:155 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1656,6 +1814,7 @@ SEP:155
 
 SEP:156
 	dc:identifier SEP:156 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1667,6 +1826,7 @@ SEP:156
 
 SEP:157
 	dc:identifier SEP:157 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1679,6 +1839,7 @@ SEP:157
 
 SEP:158
 	dc:identifier SEP:158 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1689,6 +1850,7 @@ SEP:158
 
 SEP:159
 	dc:identifier SEP:159 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1700,6 +1862,7 @@ SEP:159
 
 SEP:160
 	dc:identifier SEP:160 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1711,6 +1874,7 @@ SEP:160
 
 SEP:161
 	dc:identifier SEP:161 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1721,6 +1885,7 @@ SEP:161
 
 SEP:162
 	dc:identifier SEP:162 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1732,6 +1897,7 @@ SEP:162
 
 SEP:163
 	dc:identifier SEP:163 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1743,6 +1909,7 @@ SEP:163
 
 SEP:164
 	dc:identifier SEP:164 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1753,6 +1920,7 @@ SEP:164
 
 SEP:165
 	dc:identifier SEP:165 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1764,6 +1932,7 @@ SEP:165
 
 SEP:166
 	dc:identifier SEP:166 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1775,6 +1944,7 @@ SEP:166
 
 SEP:167
 	dc:identifier SEP:167 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1786,6 +1956,7 @@ SEP:167
 
 SEP:168
 	dc:identifier SEP:168 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1797,6 +1968,7 @@ SEP:168
 
 SEP:169
 	dc:identifier SEP:169 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1808,6 +1980,7 @@ SEP:169
 
 SEP:170
 	dc:identifier SEP:170 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1819,6 +1992,7 @@ SEP:170
 
 SEP:171
 	dc:identifier SEP:171 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1830,6 +2004,7 @@ SEP:171
 
 SEP:172
 	dc:identifier SEP:172 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1841,6 +2016,7 @@ SEP:172
 
 SEP:173
 	dc:identifier SEP:173 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1852,6 +2028,7 @@ SEP:173
 
 SEP:174
 	dc:identifier SEP:174 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1862,6 +2039,7 @@ SEP:174
 
 SEP:175
 	dc:identifier SEP:175 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1873,6 +2051,7 @@ SEP:175
 
 SEP:176
 	dc:identifier SEP:176 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1884,6 +2063,7 @@ SEP:176
 
 SEP:177
 	dc:identifier SEP:177 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1894,6 +2074,7 @@ SEP:177
 
 SEP:178
 	dc:identifier SEP:178 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1904,6 +2085,7 @@ SEP:178
 
 SEP:179
 	dc:identifier SEP:179 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1914,6 +2096,7 @@ SEP:179
 
 SEP:180
 	dc:identifier SEP:180 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1924,6 +2107,7 @@ SEP:180
 
 SEP:181
 	dc:identifier SEP:181 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1934,6 +2118,7 @@ SEP:181
 
 SEP:182
 	dc:identifier SEP:182 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1944,6 +2129,7 @@ SEP:182
 
 SEP:183
 	dc:identifier SEP:183 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
@@ -1954,6 +2140,7 @@ SEP:183
 
 SEP:184
 	dc:identifier SEP:184 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -1964,6 +2151,7 @@ SEP:184
 
 SEP:185
 	dc:identifier SEP:185 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -1973,6 +2161,7 @@ SEP:185
 
 SEP:186
 	dc:identifier SEP:186 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -1983,6 +2172,7 @@ SEP:186
 
 SEP:187
 	dc:identifier SEP:187 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -1992,6 +2182,7 @@ SEP:187
 
 SEP:188
 	dc:identifier SEP:188 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -2003,6 +2194,7 @@ SEP:188
 
 SEP:189
 	dc:identifier SEP:189 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -2013,6 +2205,7 @@ SEP:189
 
 SEP:190
 	dc:identifier SEP:190 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -2023,6 +2216,7 @@ SEP:190
 
 SEP:191
 	dc:identifier SEP:191 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -2032,6 +2226,7 @@ SEP:191
 
 SEP:192
 	dc:identifier SEP:192 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -2042,6 +2237,7 @@ SEP:192
 
 SEP:193
 	dc:identifier SEP:193 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -2053,6 +2249,7 @@ SEP:193
 
 SEP:194
 	dc:identifier SEP:194 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -2063,6 +2260,7 @@ SEP:194
 
 SEP:195
 	dc:identifier SEP:195 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c11"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.4 ;
 	wp:bdbEnsembl En_id:ENSG00000160882 ;
@@ -2076,6 +2274,7 @@ SEP:195
 
 SEP:196
 	dc:identifier SEP:196 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c11"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.4 ;
 	wp:bdbEnsembl En_id:ENSG00000160882 ;
@@ -2089,6 +2288,7 @@ SEP:196
 
 SEP:197
 	dc:identifier SEP:197 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "H6PD"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.47 ;
 	wp:bdbEnsembl En_id:ENSG00000049239 ;
@@ -2100,6 +2300,7 @@ SEP:197
 
 SEP:198
 	dc:identifier SEP:198 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "H6PD"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.47 ;
 	wp:bdbEnsembl En_id:ENSG00000049239 ;
@@ -2111,6 +2312,7 @@ SEP:198
 
 SEP:199
 	dc:identifier SEP:199 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "H6PD"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.47 ;
 	wp:bdbEnsembl En_id:ENSG00000049239 ;
@@ -2122,6 +2324,7 @@ SEP:199
 
 SEP:200
 	dc:identifier SEP:200 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
 	rh:accession RHEA:11390 ;
@@ -2132,6 +2335,7 @@ SEP:200
 
 SEP:201
 	dc:identifier SEP:201 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
 	rh:accession RHEA:11391 ;
@@ -2142,6 +2346,7 @@ SEP:201
 
 SEP:202
 	dc:identifier SEP:202 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
 	rh:accession RHEA:11392 ;
@@ -2152,6 +2357,7 @@ SEP:202
 
 SEP:203
 	dc:identifier SEP:203 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
 	rh:accession RHEA:11393 ;
@@ -2162,6 +2368,7 @@ SEP:203
 
 SEP:204
 	dc:identifier SEP:204 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
 	rh:accession RHEA:11394 ;
@@ -2172,6 +2379,7 @@ SEP:204
 
 SEP:205
 	dc:identifier SEP:205 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
 	rh:accession RHEA:11395 ;
@@ -2182,6 +2390,7 @@ SEP:205
 
 SEP:206
 	dc:identifier SEP:206 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
 	rh:accession RHEA:11396 ;
@@ -2192,6 +2401,7 @@ SEP:206
 
 SEP:207
 	dc:identifier SEP:207 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
 	rh:accession RHEA:11397 ;
@@ -2202,6 +2412,7 @@ SEP:207
 
 SEP:208
 	dc:identifier SEP:208 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
 	rh:accession RHEA:11398 ;
@@ -2212,6 +2423,7 @@ SEP:208
 
 SEP:209
 	dc:identifier SEP:209 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.B40 ;
 	wp:bdbEnsembl En_id:ENSG00000176387 ;
 	rh:accession RHEA:53117 ;
@@ -2222,6 +2434,7 @@ SEP:209
 
 SEP:210
 	dc:identifier SEP:210 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.B40 ;
 	wp:bdbEnsembl En_id:ENSG00000176387 ;
 	rh:accession RHEA:53118 ;
@@ -2232,6 +2445,7 @@ SEP:210
 
 SEP:211
 	dc:identifier SEP:211 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.B40 ;
 	wp:bdbEnsembl En_id:ENSG00000176387 ;
 	rh:accession RHEA:53119 ;
@@ -2242,6 +2456,7 @@ SEP:211
 
 SEP:212
 	dc:identifier SEP:212 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.99.5 ;
 	wp:bdbEnsembl En_id:ENSG00000277893 ;
 	rh:accession RHEA:54385 ;
@@ -2251,6 +2466,7 @@ SEP:212
 
 SEP:213
 	dc:identifier SEP:213 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.99.5 ;
 	wp:bdbEnsembl En_id:ENSG00000277893 ;
 	rh:accession RHEA:54386 ;
@@ -2260,6 +2476,7 @@ SEP:213
 
 SEP:214
 	dc:identifier SEP:214 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.99.5 ;
 	wp:bdbEnsembl En_id:ENSG00000277893 ;
 	rh:accession RHEA:54387 ;
@@ -2269,6 +2486,7 @@ SEP:214
 
 SEP:215
 	dc:identifier SEP:215 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.51 ;
 	wp:bdbEnsembl En_id:ENSG00000130948 ;
 	rh:accession RHEA:14983 ;
@@ -2276,18 +2494,21 @@ SEP:215
 
 SEP:216
 	dc:identifier SEP:216 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450Aro"^^xsd:string ;
 	wp:bdbEnsembl En_id:ENSG00000137869 ;
 	dc:source "Unknown"^^xsd:string .
 
 SEP:217
 	dc:identifier SEP:217 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Cytochrome b5"^^xsd:string ;
 	wp:bdbUniprot uniprot:J3KNC7 ;
 	dc:source "Unknown"^^xsd:string .
 
 SEP:218
 	dc:identifier SEP:218 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.39"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.1.B13 ;
 	wp:bdbUniprot uniprot:Q9H8P0 ;
@@ -2298,6 +2519,7 @@ SEP:218
 
 SEP:219
 	dc:identifier SEP:219 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.38"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
 	wp:bdbUniprot uniprot:Q9UPQ8 ;
@@ -2307,6 +2529,7 @@ SEP:219
 
 SEP:220
 	dc:identifier SEP:220 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.38"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
 	rh:accession RHEA:13134 ;
@@ -2317,6 +2540,7 @@ SEP:220
 
 SEP:221
 	dc:identifier SEP:221 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.38"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
 	rh:accession RHEA:13134 ;
@@ -2327,6 +2551,7 @@ SEP:221
 
 SEP:222
 	dc:identifier SEP:222 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "DAPGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.8.15 ;
 	rh:accession RHEA:13290 ;
@@ -2334,6 +2559,7 @@ SEP:222
 
 SEP:223
 	dc:identifier SEP:223 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ALG13"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.141 ;
 	rh:accession RHEA:23381 ;
@@ -2343,6 +2569,7 @@ SEP:223
 
 SEP:224
 	dc:identifier SEP:224 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "ALG13"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.141 ;
 	SEP:hasPh " 7"^^xsd:float ;
@@ -2351,6 +2578,7 @@ SEP:224
 
 SEP:225
 	dc:identifier SEP:225 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.9"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
 	wp:bdbUniprot uniprot:Q9BT22 ;
@@ -2360,6 +2588,7 @@ SEP:225
 
 SEP:226
 	dc:identifier SEP:226 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.9"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
 	rh:accession RHEA:13866 ;
@@ -2369,6 +2598,7 @@ SEP:226
 
 SEP:227
 	dc:identifier SEP:227 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.7"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
 	wp:bdbUniprot uniprot:Q9H553 ;
@@ -2380,6 +2610,7 @@ SEP:227
 
 SEP:228
 	dc:identifier SEP:228 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.7"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
 	wp:bdbUniprot uniprot:Q9H553 ;
@@ -2391,6 +2622,7 @@ SEP:228
 
 SEP:229
 	dc:identifier SEP:229 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.11"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.131 ;
 	wp:bdbEnsembl En_id: ;
@@ -2403,6 +2635,7 @@ SEP:229
 
 SEP:230
 	dc:identifier SEP:230 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.11"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.131 ;
 	rh:accession RHEA:29523 ;
@@ -2413,6 +2646,7 @@ SEP:230
 
 SEP:231
 	dc:identifier SEP:231 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "30.11"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.131 ;
 	rh:accession RHEA:29523 ;
@@ -2423,6 +2657,7 @@ SEP:231
 
 SEP:232
 	dc:identifier SEP:232 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Aminocyclase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
 	wp:bdbUniprot uniprot:P45381 ;
@@ -2435,6 +2670,7 @@ SEP:232
 
 SEP:233
 	dc:identifier SEP:233 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Aminocyclase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
 	wp:bdbUniprot uniprot:P45381 ;
@@ -2447,6 +2683,7 @@ SEP:233
 
 SEP:234
 	dc:identifier SEP:234 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
@@ -2458,6 +2695,7 @@ SEP:234
 
 SEP:235
 	dc:identifier SEP:235 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
@@ -2470,6 +2708,7 @@ SEP:235
 
 SEP:236
 	dc:identifier SEP:236 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
@@ -2482,6 +2721,7 @@ SEP:236
 
 SEP:237
 	dc:identifier SEP:237 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
@@ -2495,6 +2735,7 @@ SEP:237
 
 SEP:238
 	dc:identifier SEP:238 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
@@ -2507,6 +2748,7 @@ SEP:238
 
 SEP:239
 	dc:identifier SEP:239 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
@@ -2520,6 +2762,7 @@ SEP:239
 
 SEP:240
 	dc:identifier SEP:240 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
@@ -2533,6 +2776,7 @@ SEP:240
 
 SEP:241
 	dc:identifier SEP:241 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
@@ -2544,6 +2788,7 @@ SEP:241
 
 SEP:242
 	dc:identifier SEP:242 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
@@ -2558,6 +2803,7 @@ SEP:242
 
 SEP:243
 	dc:identifier SEP:243 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
 	wp:bdbUniprot uniprot:Q9H9P8 ;
 	rh:accession RHEA:21253 ;
@@ -2568,6 +2814,7 @@ SEP:243
 
 SEP:244
 	dc:identifier SEP:244 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
 	wp:bdbUniprot uniprot:Q9H9P8 ;
 	rh:accession RHEA:21254 ;
@@ -2578,6 +2825,7 @@ SEP:244
 
 SEP:245
 	dc:identifier SEP:245 ;
+	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
 	wp:bdbUniprot uniprot:Q8N465 ;
 	rh:accession RHEA:21255 ;
@@ -2590,6 +2838,7 @@ SEP:245
 
 SEP:246
 	dc:identifier SEP:246 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbUniprot uniprot:P48735 ;
@@ -2603,6 +2852,7 @@ SEP:246
 
 SEP:247
 	dc:identifier SEP:247 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbUniprot uniprot:P48735 ;
@@ -2616,6 +2866,7 @@ SEP:247
 
 SEP:248
 	dc:identifier SEP:248 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbUniprot uniprot:P48735 ;
@@ -2627,6 +2878,7 @@ SEP:248
 
 SEP:249
 	dc:identifier SEP:249 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbUniprot uniprot:P48735 ;
@@ -2639,6 +2891,7 @@ SEP:249
 
 SEP:250
 	dc:identifier SEP:250 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbUniprot uniprot:P48735 ;
@@ -2652,6 +2905,7 @@ SEP:250
 
 SEP:251
 	dc:identifier SEP:251 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbUniprot uniprot:P48735 ;
@@ -2665,6 +2919,7 @@ SEP:251
 
 SEP:252
 	dc:identifier SEP:252 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbUniprot uniprot:P48735 ;
@@ -2678,6 +2933,7 @@ SEP:252
 
 SEP:253
 	dc:identifier SEP:253 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbUniprot uniprot:P48735 ;
@@ -2690,6 +2946,7 @@ SEP:253
 
 SEP:254
 	dc:identifier SEP:254 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Antiquitin"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.2.1.3 ;
 	wp:bdbUniprot uniprot:P49419 ;
@@ -2700,6 +2957,7 @@ SEP:254
 
 SEP:255
 	dc:identifier SEP:255 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	wp:bdbUniprot uniprot:Q8IWW8 ;
@@ -2710,6 +2968,7 @@ SEP:255
 
 SEP:256
 	dc:identifier SEP:256 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	wp:bdbUniprot uniprot:Q8IWW8 ;
@@ -2720,6 +2979,7 @@ SEP:256
 
 SEP:257
 	dc:identifier SEP:257 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	wp:bdbUniprot uniprot:Q8IWW8 ;
@@ -2732,6 +2992,7 @@ SEP:257
 
 SEP:258
 	dc:identifier SEP:258 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	wp:bdbUniprot uniprot:Q8IWW8 ;
@@ -2744,6 +3005,7 @@ SEP:258
 
 SEP:259
 	dc:identifier SEP:259 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.37 ;
 	wp:bdbUniprot uniprot:P40926 ;
@@ -2754,6 +3016,7 @@ SEP:259
 
 SEP:260
 	dc:identifier SEP:260 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	wp:bdbUniprot uniprot:P23368 ;
@@ -2767,6 +3030,7 @@ SEP:260
 
 SEP:261
 	dc:identifier SEP:261 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	wp:bdbUniprot uniprot:P23368 ;
@@ -2780,6 +3044,7 @@ SEP:261
 
 SEP:262
 	dc:identifier SEP:262 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	wp:bdbUniprot uniprot:P23368 ;
