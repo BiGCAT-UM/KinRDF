@@ -103,13 +103,19 @@ for itemEC_Number in ListTotal:
 			ListEC_Number.remove(items)				
 	
 ##Uniprot IRIs for WPRDF link && ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
+##Since this list will only include two statements, we can already add the ';' and '.' after the entries.
 for itemUniprot in ListTotal:
 	e = itemUniprot.split('\t')
 	ListUniprot.append(e[0].strip( ) + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( ))
-	ListLinkUniprot.append('uniprotkb:' + e[4].strip( ) + '\t' + 'a' + ' up:Protein')
 	for items in ListUniprot: 
 		if '-' in items:
-			ListUniprot.remove(items)				
+			ListUniprot.remove(items)			
+	##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
+	ListLinkUniprot.append('uniprotkb:' + e[4].strip( ) + '\t' + 'a' + ' up:Protein ; ')
+	ListLinkUniprot.append('uniprotkb:' + e[4].strip( ) + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip() + '.' )	
+	for items in ListLinkUniprot: 
+		if '-' in items:
+			ListLinkUniprot.remove(items)		
 			
 ##Ensembl
 for itemEnsembl in ListTotal:
@@ -303,6 +309,17 @@ for itemListDatabase in ListDatabase:
   (key, val) = itemListDatabase.strip('\n').split('\t')
   AllDict.setdefault(key, [])
   AllDict[key].append(val + ' .')		
+
+##Remove duplicates in ListLinkUniProt
+unique_ListLinkUniprot = list(dict.fromkeys(ListLinkUniprot))
+  
+## Add UniProt proteins for interoperability:  
+for itemListLinkedUniprot in unique_ListLinkUniprot:
+	(key, val) = itemListLinkedUniprot.strip('\n').split('\t')
+#	numberOfIDs = count(val)
+#	print(key + ' ' + numberOfIDs)
+	AllDict.setdefault(key, [])
+	AllDict[key].append(val)
   
 # # Go to output folder
 dir_code = os.getcwd()

@@ -3056,3 +3056,119 @@ SEP:262
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Sabio: 141"^^xsd:string .
 
+uniprotkb:P19440
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P19440.
+
+uniprotkb:O75223
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:O75223.
+
+uniprotkb:O14841
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:O14841.
+
+uniprotkb:P48506
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P48506.
+
+uniprotkb:P48637
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P48637.
+
+uniprotkb:P06863
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P06863.
+
+uniprotkb:P06865
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P06865.
+
+uniprotkb:P06866
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P06866.
+
+uniprotkb:P04180
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P04180.
+
+uniprotkb:PO4180
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:PO4180.
+
+uniprotkb:P11597
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P11597.
+
+uniprotkb:P11150
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P11150.
+
+uniprotkb:O95477
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:O95477.
+
+uniprotkb:Q8NBP7
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q8NBP7.
+
+uniprotkb:P16435
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P16435.
+
+uniprotkb:J3KNC7
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:J3KNC7.
+
+uniprotkb:Q9H8P0
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q9H8P0.
+
+uniprotkb:Q9UPQ8
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q9UPQ8.
+
+uniprotkb:Q9BT22
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q9BT22.
+
+uniprotkb:Q9H553
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q9H553.
+
+uniprotkb:P45381
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P45381.
+
+uniprotkb:Q92947
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q92947.
+
+uniprotkb:Q9H9P8
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q9H9P8.
+
+uniprotkb:Q8N465
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q8N465.
+
+uniprotkb:P48735
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P48735.
+
+uniprotkb:P49419
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P49419.
+
+uniprotkb:Q8IWW8
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q8IWW8.
+
+uniprotkb:P40926
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P40926.
+
+uniprotkb:P23368
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P23368.
+
