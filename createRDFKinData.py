@@ -31,6 +31,7 @@ ListUniprot = []
 ListLinkUniprot = [] 
 ListEnsembl = []
 ListRheaID = []
+ListLinkRheaID = [] 
 ListSubstrate = []
 ListKm = []
 ListKcat = []
@@ -102,10 +103,11 @@ for itemEC_Number in ListTotal:
 		if '-' in items:
 			ListEC_Number.remove(items)				
 	
-##Uniprot IRIs for WPRDF link && ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
+##Uniprot IRIs for WPRDF link && Uniprot interoperability IRIs
 ##Since this list will only include two statements, we can already add the ';' and '.' after the entries.
 for itemUniprot in ListTotal:
 	e = itemUniprot.split('\t')
+	##Wp IRIs:
 	ListUniprot.append(e[0].strip( ) + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( ))
 	for items in ListUniprot: 
 		if '-' in items:
@@ -140,15 +142,22 @@ for itemEnsembl in ListTotal:
 for itemRheaID in ListTotal:
 	g = itemRheaID.split('\t')
 	if g[6].isnumeric(): #without prefix
-	  ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbdRhea' + ' RHEA:' + g[6].strip( ) )
+	  ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ) )
+	  ListLinkRheaID.append('rh:' + g[6].strip( ) + '\t' + 'rdfs:subClassOf ' + 'rh:Reaction ; ')
+	  ListLinkRheaID.append('rh:' + g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ) + '.' )	
 	elif 'RHEA:' in g[6]: #with prefix
-	  ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbdRhea' + ' RHEA:' + g[6].strip( ).replace("RHEA:", "") )
+	  ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ).replace("RHEA:", "") )
+	  ListLinkRheaID.append('rh:' + g[6].strip( ).replace("RHEA:", "") + '\t' + 'rdfs:subClassOf ' + 'rh:Reaction ; ')
+	  ListLinkRheaID.append('rh:' + g[6].strip( ).replace("RHEA:", "") + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ).replace("RHEA:", "") + '.' )	
 	  #ListRheaID.append(g[0].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ))  #old
 	else: #if no Rhea is available
-	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string')
+	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!
 	for items in ListRheaID: 
 		if '-' in items:
-			ListRheaID.remove(items)	
+			ListRheaID.remove(items)
+	for items in ListLinkRheaID: 
+		if '-' in items:
+			ListLinkRheaID.remove(items)	
 			
 			
 ##CHEBIID for substrate
@@ -324,16 +333,21 @@ for itemListDatabase in ListDatabase:
   AllDict.setdefault(key, [])
   AllDict[key].append(val + ' .')		
 
-##Remove duplicates in ListLinkUniProt
+##Remove duplicates in ListLinkUniProt and ListLinkRheaID
 unique_ListLinkUniprot = list(dict.fromkeys(ListLinkUniprot))
+unique_ListLinkRheaID= list(dict.fromkeys(ListLinkRheaID))
   
 ## Add UniProt proteins for interoperability:  
 for itemListLinkedUniprot in unique_ListLinkUniprot:
 	(key, val) = itemListLinkedUniprot.strip('\n').split('\t')
-#	numberOfIDs = count(val)
-#	print(key + ' ' + numberOfIDs)
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val)
+	
+## Add Rhea interaction IDs for interoperability:  
+for itemListLinkRheaID in unique_ListLinkRheaID:
+	(key, val) = itemListLinkRheaID.strip('\n').split('\t')
+	AllDict.setdefault(key, [])
+	AllDict[key].append(val)	
   
 # # Go to output folder
 dir_code = os.getcwd()
@@ -369,7 +383,6 @@ RDF_Kin_data.write("@prefix up:   <http://purl.uniprot.org/core/> . \n".encode()
 RDF_Kin_data.write("@prefix ECcode:   <https://identifiers.org/ec-code/> . \n".encode())
 RDF_Kin_data.write("@prefix En_id:   <http://identifiers.org/ensembl/> . \n".encode())
 RDF_Kin_data.write("@prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . \n".encode())
-
 RDF_Kin_data.write("@prefix wd: <http://www.wikidata.org/entity/> . \n".encode()) #From WikiData
 RDF_Kin_data.write("@prefix wdt: <http://www.wikidata.org/prop/direct/> . \n\n".encode()) #From WikiData
 
