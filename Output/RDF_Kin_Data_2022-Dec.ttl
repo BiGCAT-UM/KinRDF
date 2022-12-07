@@ -26,7 +26,9 @@ SEP:1
 	SEP:hasKm  "163"^^xsd:float ;
 	SEP:hasKcat  "37,5"^^xsd:float ;
 	SEP:hasPh " 7,4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:18280251 ;
 	dc:source "Brenda: 668640"^^xsd:string .
 
 SEP:2
@@ -40,6 +42,7 @@ SEP:2
 	SEP:hasPh " 8"^^xsd:float ;
 	dcterms:description "ASPA isolated from cytosol"@en ;
 	wp:organismName "Mus musculus"^^xsd:string ;
+	dcterms:references pubmed:17254025 ;
 	dc:source "Brenda: 681524"^^xsd:string .
 
 SEP:3
@@ -51,7 +54,9 @@ SEP:3
 	wp:bdbRhea RHEA:47421 ;
 	SEP:hasKm  "3"^^xsd:float ;
 	SEP:hasPh " 7,5"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:16229482 ;
 	dc:source "Brenda:713046"^^xsd:string .
 
 SEP:4
@@ -64,7 +69,9 @@ SEP:4
 	SEP:hasKm  "0.0047"^^xsd:float ;
 	SEP:hasKcat  "5,6"^^xsd:float ;
 	SEP:hasPh " 6,5"^^xsd:float ;
+	wdt:P2076 ^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:17176108 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:5
@@ -77,7 +84,9 @@ SEP:5
 	SEP:hasKm  "0.0064"^^xsd:float ;
 	SEP:hasKcat  "6,7"^^xsd:float ;
 	SEP:hasPh " 7,6"^^xsd:float ;
+	wdt:P2076 25^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12948740 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:6
@@ -90,8 +99,10 @@ SEP:6
 	SEP:hasKm  "0.0074"^^xsd:float ;
 	SEP:hasKcat  "4,8"^^xsd:float ;
 	SEP:hasPh " 7,6"^^xsd:float ;
+	wdt:P2076 25^^xsd:float ;
 	dcterms:description "mutant A421T; electron acceptor is electron transfer flavoprotein "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12948740 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:7
@@ -105,6 +116,7 @@ SEP:7
 	SEP:hasKcat  "9,4"^^xsd:float ;
 	SEP:hasPh " 7,6"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:17176108 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:8
@@ -117,8 +129,10 @@ SEP:8
 	SEP:hasKm  "0.0123"^^xsd:float ;
 	SEP:hasKcat  "4,6"^^xsd:float ;
 	SEP:hasPh " 7,6"^^xsd:float ;
+	wdt:P2076 25^^xsd:float ;
 	dcterms:description "mutant A421V; electron acceptor is electron transfer flavoprotein "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12948740 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:9
@@ -131,8 +145,10 @@ SEP:9
 	SEP:hasKm  "0.0261"^^xsd:float ;
 	SEP:hasKcat  "4,9"^^xsd:float ;
 	SEP:hasPh " 7,6"^^xsd:float ;
+	wdt:P2076 25^^xsd:float ;
 	dcterms:description "mutant A433V; electron acceptor is electron transfer flavoprotein "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12948740 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:10
@@ -144,7 +160,9 @@ SEP:10
 	wp:bdbRhea RHEA:47428 ;
 	SEP:hasKm  "4"^^xsd:float ;
 	SEP:hasPh " 7,5"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:11705404 ;
 	dc:source "Brenda:713046"^^xsd:string .
 
 SEP:11
@@ -158,8 +176,10 @@ SEP:11
 	SEP:hasKcat  "9"^^xsd:float ;
 	SEP:hasKmKcat "3,5"^^xsd:float ;
 	SEP:hasPh " 7,6"^^xsd:float ;
+	wdt:P2076 25^^xsd:float ;
 	dcterms:description "10 mM potassium phosphate"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:11024031 ;
 	dc:source "Sabio: 2418"^^xsd:string .
 
 SEP:12
@@ -170,7 +190,9 @@ SEP:12
 	wp:bdbRhea RHEA:21253 ;
 	SEP:hasKm  "0.8"^^xsd:float ;
 	SEP:hasPh " 7"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:16005139 ;
 	dc:source "Brenda: 657168"^^xsd:string .
 
 SEP:13
@@ -194,7 +216,9 @@ SEP:14
 	SEP:hasKcat  "0,8"^^xsd:float ;
 	SEP:hasKmKcat "1,37"^^xsd:float ;
 	SEP:hasPh " 8,75"^^xsd:float ;
+	wdt:P2076 25^^xsd:float ;
 	wp:organismName "Arabidopsis thaliana"^^xsd:string ;
+	dcterms:references pubmed:19586914 ;
 	dc:source "Brenda: 698932"^^xsd:string .
 
 SEP:15
@@ -209,6 +233,7 @@ SEP:15
 	SEP:hasPh " 7"^^xsd:float ;
 	dcterms:description "mitochondrial isozyme; reverse reaction"@en ;
 	wp:organismName "Pisum sativum"^^xsd:string ;
+	dcterms:references pubmed:14507432 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:16
@@ -223,6 +248,7 @@ SEP:16
 	SEP:hasPh " 7"^^xsd:float ;
 	dcterms:description "mitochondrial isozyme; reverse reaction"@en ;
 	wp:organismName "Pisum sativum"^^xsd:string ;
+	dcterms:references pubmed:14507432 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:17
@@ -248,6 +274,7 @@ SEP:18
 	SEP:hasKm  "0.2"^^xsd:float ;
 	dcterms:description "Isozyme IDP2"@en ;
 	wp:organismName "Saccharomyces cerevisiae"^^xsd:string ;
+	dcterms:references pubmed:15001388 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:19
@@ -303,6 +330,7 @@ SEP:22
 	SEP:hasKm  "1.92"^^xsd:float ;
 	dcterms:description "Isozyme IDP2"@en ;
 	wp:organismName "Saccharomyces cerevisiae"^^xsd:string ;
+	dcterms:references pubmed:15001388 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:23
@@ -314,6 +342,7 @@ SEP:23
 	wp:bdbEnsembl En_id:ENSG00000164904 ;
 	SEP:hasKm  "17"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:224930 ;
 	dc:source "Brenda:689379"^^xsd:string .
 
 SEP:24
@@ -325,6 +354,7 @@ SEP:24
 	wp:bdbRhea RHEA:49614 ;
 	SEP:hasKm  "77"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:16616524 ;
 	dc:source "Brenda: 286147"^^xsd:string .
 
 SEP:25
@@ -336,6 +366,7 @@ SEP:25
 	wp:bdbRhea RHEA:49615 ;
 	SEP:hasKm  "18"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:3182820 ;
 	dc:source "Brenda: 697277"^^xsd:string .
 
 SEP:26
@@ -349,6 +380,7 @@ SEP:26
 	SEP:hasPh " 7,1"^^xsd:float ;
 	dcterms:description "Recombinant enzyme"@en ;
 	wp:organismName "Mus musculus"^^xsd:string ;
+	dcterms:references pubmed:16616524 ;
 	dc:source "Brenda:664967"^^xsd:string .
 
 SEP:27
@@ -360,8 +392,10 @@ SEP:27
 	wp:bdbRhea RHEA:49617 ;
 	SEP:hasKm  "85"^^xsd:float ;
 	SEP:hasPh " 7,1"^^xsd:float ;
+	wdt:P2076 30^^xsd:float ;
 	dcterms:description "0,007 mM"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:16616524 ;
 	dc:source "Brenda: 664967"^^xsd:string .
 
 SEP:28
@@ -385,8 +419,10 @@ SEP:29
 	SEP:hasKm  "1.4"^^xsd:float ;
 	SEP:hasKcat  "26"^^xsd:float ;
 	SEP:hasPh " 7,4"^^xsd:float ;
+	wdt:P2076 30^^xsd:float ;
 	dcterms:description "in vitro; wildtype; different concentration"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15182181 ;
 	dc:source "Sabio: 141"^^xsd:string .
 
 SEP:30
@@ -399,8 +435,10 @@ SEP:30
 	SEP:hasKm  "130"^^xsd:float ;
 	SEP:hasKcat  "26"^^xsd:float ;
 	SEP:hasPh " 7,4"^^xsd:float ;
+	wdt:P2076 30^^xsd:float ;
 	dcterms:description "in vitro; wildtype; different concentration"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15182181 ;
 	dc:source "Sabio: 141"^^xsd:string .
 
 SEP:31
@@ -413,8 +451,10 @@ SEP:31
 	SEP:hasKm  "6.4"^^xsd:float ;
 	SEP:hasKcat  "26"^^xsd:float ;
 	SEP:hasPh " 7,4"^^xsd:float ;
+	wdt:P2076 30^^xsd:float ;
 	dcterms:description "in vitro; wildtype; different concentration"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15182181 ;
 	dc:source "Sabio: 141"^^xsd:string .
 
 SEP:32
@@ -426,6 +466,7 @@ SEP:32
 	wp:bdbRhea RHEA:23905 ;
 	SEP:hasKm  "0.68"^^xsd:float ;
 	wp:organismName "Mus musculus"^^xsd:string ;
+	dcterms:references pubmed:36916 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:33
@@ -437,6 +478,7 @@ SEP:33
 	wp:bdbRhea RHEA:23905 ;
 	SEP:hasKm  "0.0057"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:6126192 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:34
@@ -448,8 +490,10 @@ SEP:34
 	wp:bdbRhea RHEA:23905 ;
 	SEP:hasKm  "0.0105"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "isoform GGT5. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21447318 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:35
@@ -461,8 +505,10 @@ SEP:35
 	wp:bdbRhea RHEA:23905 ;
 	SEP:hasKm  "0.0106"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "isoform GGT1. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21447318 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:36
@@ -483,6 +529,7 @@ SEP:37
 	SEP:hasKm  "0.16"^^xsd:float ;
 	dcterms:description "initial Km in presence of GTP"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:6121802 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:38
@@ -494,6 +541,7 @@ SEP:38
 	SEP:hasKm  "0.18"^^xsd:float ;
 	dcterms:description "initial Km in presence of ITP"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:6121802 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:39
@@ -505,6 +553,7 @@ SEP:39
 	SEP:hasKm  "0.2"^^xsd:float ;
 	dcterms:description "initial Km in presence of UTP"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:6121802 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:40
@@ -516,6 +565,7 @@ SEP:40
 	SEP:hasKm  "0.41"^^xsd:float ;
 	dcterms:description "in presence of ATP"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:6121802 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:41
@@ -527,6 +577,7 @@ SEP:41
 	SEP:hasKm  "0.5"^^xsd:float ;
 	dcterms:description "final Km in presence of UTP"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:6121802 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:42
@@ -537,6 +588,7 @@ SEP:42
 	wp:bdbRhea RHEA:10349 ;
 	SEP:hasKm  "0.5"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:6121802 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:43
@@ -548,6 +600,7 @@ SEP:43
 	SEP:hasKm  "0.57"^^xsd:float ;
 	dcterms:description "final Km in presence of GTP"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:6121802 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:44
@@ -559,6 +612,7 @@ SEP:44
 	SEP:hasKm  "0.58"^^xsd:float ;
 	dcterms:description "final Km in presence of ITP"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:6121802 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:45
@@ -569,6 +623,7 @@ SEP:45
 	wp:bdbRhea RHEA:10349 ;
 	SEP:hasKm  "0.0316"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:1181279 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:46
@@ -579,6 +634,7 @@ SEP:46
 	wp:bdbRhea RHEA:10349 ;
 	SEP:hasKm  "0.05"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:1181279, 4823446, 10078874 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:47
@@ -591,6 +647,7 @@ SEP:47
 	SEP:hasKm  "0.75"^^xsd:float ;
 	dcterms:description "enzyme from embryo homogenate"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:15115889 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:48
@@ -603,6 +660,7 @@ SEP:48
 	SEP:hasKm  "1.38"^^xsd:float ;
 	dcterms:description "enzyme from visceral yolk sac homogenate"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:15115889 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:49
@@ -625,8 +683,10 @@ SEP:50
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKm  "0.25"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant K305A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:14990577 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:51
@@ -638,7 +698,9 @@ SEP:51
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKm  "452"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:11708780 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:52
@@ -650,7 +712,9 @@ SEP:52
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKm  "0.58"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21771585 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:53
@@ -662,7 +726,9 @@ SEP:53
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKm  "1.75"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:14990577 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:54
@@ -674,8 +740,10 @@ SEP:54
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKm  "1.96"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant K305E"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:14990577 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:55
@@ -686,7 +754,9 @@ SEP:55
 	wp:bdbUniprot uniprot:P48637 ;
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21771585 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:56
@@ -698,8 +768,10 @@ SEP:56
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKm  "16"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "D458N"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21771585 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:57
@@ -711,8 +783,10 @@ SEP:57
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKm  "51"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "D458R"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21771585 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:58
@@ -723,7 +797,9 @@ SEP:58
 	wp:bdbUniprot uniprot:P48637 ;
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKm  "0.53"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20800579 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:59
@@ -736,6 +812,7 @@ SEP:59
 	SEP:hasKm  "1.02"^^xsd:float ;
 	dcterms:description "mutant enzyme R283C"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15056072 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:60
@@ -748,6 +825,7 @@ SEP:60
 	SEP:hasKm  "1.24"^^xsd:float ;
 	dcterms:description "mutant enzyme Y270H"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15056072 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:61
@@ -760,6 +838,7 @@ SEP:61
 	SEP:hasKm  "1.43"^^xsd:float ;
 	dcterms:description "mutant enzyme Y270C"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15056072 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:62
@@ -772,6 +851,7 @@ SEP:62
 	SEP:hasKm  "1.51"^^xsd:float ;
 	dcterms:description "mutant enzyme D219G"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15056072 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:63
@@ -784,6 +864,7 @@ SEP:63
 	SEP:hasKm  "1.64"^^xsd:float ;
 	dcterms:description "mutant enzyme P314L"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15056072 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:64
@@ -795,6 +876,7 @@ SEP:64
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKm  "1.75"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15056072 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:65
@@ -807,6 +889,7 @@ SEP:65
 	SEP:hasKm  "2.07"^^xsd:float ;
 	dcterms:description "mutant enzyme D219A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15056072 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:66
@@ -819,6 +902,7 @@ SEP:66
 	SEP:hasKm  "2.25"^^xsd:float ;
 	dcterms:description "mutant enzyme L188P"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15056072 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:67
@@ -829,8 +913,10 @@ SEP:67
 	wp:bdbUniprot uniprot:P48637 ;
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKm  "2.52"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G371V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20800579 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:68
@@ -842,7 +928,9 @@ SEP:68
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "10.36"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
+	wdt:P2076 25^^xsd:float ;
 	wp:organismName "Synechocystis sp."^^xsd:string ;
+	dcterms:references pubmed:23170977 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:69
@@ -854,8 +942,10 @@ SEP:69
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "1.17"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "D458R"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21771585 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:70
@@ -867,8 +957,10 @@ SEP:70
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "1.6"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "D458A "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21771585 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:71
@@ -880,8 +972,10 @@ SEP:71
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "2.31"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "D458N "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21771585 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:72
@@ -893,7 +987,9 @@ SEP:72
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "15.68"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
+	wdt:P2076 25^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21771585 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:73
@@ -904,8 +1000,10 @@ SEP:73
 	wp:bdbUniprot uniprot:P48637 ;
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "52"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G370V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20800579 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:74
@@ -916,8 +1014,10 @@ SEP:74
 	wp:bdbUniprot uniprot:P48637 ;
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "133"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G369V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20800579 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:75
@@ -928,8 +1028,10 @@ SEP:75
 	wp:bdbUniprot uniprot:P48637 ;
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "2.36"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G371V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20800579 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:76
@@ -940,7 +1042,9 @@ SEP:76
 	wp:bdbUniprot uniprot:P48637 ;
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "18.8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20800579 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:77
@@ -952,7 +1056,9 @@ SEP:77
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "26.9"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
+	wdt:P2076 25^^xsd:float ;
 	wp:organismName "Pasteurella multocida"^^xsd:string ;
+	dcterms:references pubmed:16339152 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:78
@@ -964,6 +1070,7 @@ SEP:78
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "55"^^xsd:float ;
 	wp:organismName "Pasteurella multocida"^^xsd:string ;
+	dcterms:references pubmed:16339152 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:79
@@ -975,7 +1082,9 @@ SEP:79
 	wp:bdbRhea RHEA:13558 ;
 	SEP:hasKmKcat "10.36"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
+	wdt:P2076 25^^xsd:float ;
 	wp:organismName "Synechocystis sp."^^xsd:string ;
+	dcterms:references pubmed:23170977 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:80
@@ -987,6 +1096,7 @@ SEP:80
 	rh:equation "Cysteinylglycine = cysteine"^^xsd:string ;
 	SEP:hasKm  "2.5"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:6122685 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:81
@@ -997,7 +1107,9 @@ SEP:81
 	wp:bdbUniprot uniprot:Q9H8P0 ;
 	wp:bdbRhea RHEA:34281 ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20637498 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:82
@@ -1018,7 +1130,9 @@ SEP:83
 	wp:bdbRhea RHEA:13134 ;
 	SEP:hasKm  "23"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:2838091 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:84
@@ -1029,7 +1143,9 @@ SEP:84
 	wp:bdbRhea RHEA:13134 ;
 	SEP:hasKm  "75"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:2999115 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:85
@@ -1047,7 +1163,9 @@ SEP:86
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.141 ;
 	wp:bdbRhea RHEA:23381 ;
 	SEP:hasPh " 7.5"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Gallus gallus"^^xsd:string ;
+	dcterms:references pubmed:9530952 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:87
@@ -1057,6 +1175,7 @@ SEP:87
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.141 ;
 	SEP:hasPh " 7"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:11377171 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:88
@@ -1076,7 +1195,9 @@ SEP:89
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
 	wp:bdbRhea RHEA:13866 ;
 	SEP:hasPh " 7"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:3021065 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:90
@@ -1087,8 +1208,10 @@ SEP:90
 	wp:bdbUniprot uniprot:Q9H553 ;
 	wp:bdbRhea RHEA:29516 ;
 	SEP:hasPh " 6.8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "pH range was between 6,8 to 7,3"@en ;
 	wp:organismName "Oryctolagus cuniculus"^^xsd:string ;
+	dcterms:references pubmed:7309740 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:91
@@ -1099,8 +1222,10 @@ SEP:91
 	wp:bdbUniprot uniprot:Q9H553 ;
 	wp:bdbRhea RHEA:29516 ;
 	SEP:hasPh " 7.3"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "pH range was between 6,8 to 7,3"@en ;
 	wp:organismName "Oryctolagus cuniculus"^^xsd:string ;
+	dcterms:references pubmed:7309740 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:92
@@ -1112,8 +1237,10 @@ SEP:92
 	wp:bdbRhea RHEA:29523 ;
 	SEP:hasKm  "0,00064"^^xsd:float ;
 	SEP:hasPh " 7"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description ""@en ;
 	wp:organismName "Oryctolagus cuniculus"^^xsd:string ;
+	dcterms:references pubmed:6154707 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:93
@@ -1125,6 +1252,7 @@ SEP:93
 	SEP:hasPh " 6.5"^^xsd:float ;
 	dcterms:description "pH range was between 6,5 to 7,6"@en ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:6698009 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:94
@@ -1136,6 +1264,7 @@ SEP:94
 	SEP:hasPh " 7.6"^^xsd:float ;
 	dcterms:description "pH range was between 6,5 to 7,6"@en ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:6698009 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:95
@@ -1147,6 +1276,7 @@ SEP:95
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SEP:hasKm  "1.12"^^xsd:float ;
 	wp:organismName "Gallus gallus"^^xsd:string ;
+	dcterms:references pubmed:11249004 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:96
@@ -1158,6 +1288,7 @@ SEP:96
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SEP:hasKm  "1.77"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:3523161 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:97
@@ -1169,6 +1300,7 @@ SEP:97
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SEP:hasKm  "0.075"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:4370169 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:98
@@ -1181,6 +1313,7 @@ SEP:98
 	SEP:hasKm  "0.083"^^xsd:float ;
 	dcterms:description "soluble enzyme ; Km range 0,075 – 0,083"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:4370169 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:99
@@ -1191,6 +1324,7 @@ SEP:99
 	wp:bdbUniprot uniprot:P04180 ;
 	SEP:hasKm  "0.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:16780378 ;
 	dc:source "BRENDA/Uni Prot"^^xsd:string .
 
 SEP:100
@@ -1202,6 +1336,7 @@ SEP:100
 	SEP:hasKm  "0.57"^^xsd:float ;
 	dcterms:description "recombinant enzyme expressed in baby hamster kidney cells"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:10685026 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:101
@@ -1212,6 +1347,7 @@ SEP:101
 	wp:bdbUniprot uniprot:P04180 ;
 	SEP:hasKm  "0.83"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:10685026 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:102
@@ -1222,6 +1358,7 @@ SEP:102
 	wp:bdbUniprot uniprot:PO4180 ;
 	SEP:hasKm  "21.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:1901219 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:103
@@ -1258,8 +1395,10 @@ SEP:106
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.11"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant K529R"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:107
@@ -1271,7 +1410,9 @@ SEP:107
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.36"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:108
@@ -1283,7 +1424,9 @@ SEP:108
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.37"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:109
@@ -1295,8 +1438,10 @@ SEP:109
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.38"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant W770A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:110
@@ -1308,8 +1453,10 @@ SEP:110
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.42"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G893P"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:111
@@ -1321,8 +1468,10 @@ SEP:111
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.45"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G894S"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:112
@@ -1334,8 +1483,10 @@ SEP:112
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.49"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant T880V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:113
@@ -1347,7 +1498,9 @@ SEP:113
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.52"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:114
@@ -1359,8 +1512,10 @@ SEP:114
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.54"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G893A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:115
@@ -1372,7 +1527,9 @@ SEP:115
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.55"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:116
@@ -1384,7 +1541,9 @@ SEP:116
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.61"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:117
@@ -1396,7 +1555,9 @@ SEP:117
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.62"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:118
@@ -1408,7 +1569,9 @@ SEP:118
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.68"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:119
@@ -1420,7 +1583,9 @@ SEP:119
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.77"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:120
@@ -1432,7 +1597,9 @@ SEP:120
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.85"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:121
@@ -1444,7 +1611,9 @@ SEP:121
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.88"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:122
@@ -1456,7 +1625,9 @@ SEP:122
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "0.95"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:123
@@ -1468,7 +1639,9 @@ SEP:123
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "1.1"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:124
@@ -1480,7 +1653,9 @@ SEP:124
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKm  "1.2"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:125
@@ -1492,7 +1667,9 @@ SEP:125
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "1"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:126
@@ -1504,7 +1681,9 @@ SEP:126
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "5"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:127
@@ -1516,7 +1695,9 @@ SEP:127
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "7"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:128
@@ -1528,7 +1709,9 @@ SEP:128
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "0.01"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:129
@@ -1540,8 +1723,10 @@ SEP:129
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "11"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G894S"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:130
@@ -1553,7 +1738,9 @@ SEP:130
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "17"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:131
@@ -1565,7 +1752,9 @@ SEP:131
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "19"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:132
@@ -1577,7 +1766,9 @@ SEP:132
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "22"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:133
@@ -1589,7 +1780,9 @@ SEP:133
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "36"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:134
@@ -1601,8 +1794,10 @@ SEP:134
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "37"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G893P"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:135
@@ -1614,7 +1809,9 @@ SEP:135
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "0.05"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:136
@@ -1626,7 +1823,9 @@ SEP:136
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "64"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:137
@@ -1638,7 +1837,9 @@ SEP:137
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "67"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:138
@@ -1650,8 +1851,10 @@ SEP:138
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "79"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G894A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:139
@@ -1663,7 +1866,9 @@ SEP:139
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "92"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:140
@@ -1675,7 +1880,9 @@ SEP:140
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "94"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:141
@@ -1687,7 +1894,9 @@ SEP:141
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "95"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:142
@@ -1699,8 +1908,10 @@ SEP:142
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKcat  "0.15"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant K529R"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:143
@@ -1712,7 +1923,9 @@ SEP:143
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "0.0009"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:144
@@ -1724,8 +1937,10 @@ SEP:144
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "0.0024"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant T880V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:145
@@ -1737,8 +1952,10 @@ SEP:145
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "0.0025"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant W770A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:146
@@ -1750,7 +1967,9 @@ SEP:146
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "3"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:147
@@ -1762,8 +1981,10 @@ SEP:147
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "5"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G894S"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:148
@@ -1775,8 +1996,10 @@ SEP:148
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "6"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G893A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:149
@@ -1788,7 +2011,9 @@ SEP:149
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "7"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:150
@@ -1800,7 +2025,9 @@ SEP:150
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "9"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:151
@@ -1812,7 +2039,9 @@ SEP:151
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "12"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:152
@@ -1824,8 +2053,10 @@ SEP:152
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "16"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G893P, mutant K529R"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:153
@@ -1837,7 +2068,9 @@ SEP:153
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "0.02"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:154
@@ -1849,7 +2082,9 @@ SEP:154
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "22"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:155
@@ -1861,7 +2096,9 @@ SEP:155
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "24"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:156
@@ -1873,8 +2110,10 @@ SEP:156
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "29"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant G894A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:157
@@ -1886,7 +2125,9 @@ SEP:157
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "34"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:158
@@ -1898,7 +2139,9 @@ SEP:158
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "39"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:159
@@ -1910,7 +2153,9 @@ SEP:159
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "47"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:160
@@ -1922,7 +2167,9 @@ SEP:160
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "52"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:161
@@ -1934,7 +2181,9 @@ SEP:161
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SEP:hasKmKcat "59"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:162
@@ -1955,7 +2204,9 @@ SEP:163
 	wp:bdbRhea RHEA:35740 ;
 	SEP:hasKm  "0.0005"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 ^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:285426 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:164
@@ -1967,6 +2218,7 @@ SEP:164
 	wp:bdbRhea RHEA:35741 ;
 	SEP:hasKm  "2"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:285420 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:165
@@ -1979,6 +2231,7 @@ SEP:165
 	SEP:hasKm  "0.0091"^^xsd:float ;
 	SEP:hasKmKcat "212"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:703418 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:166
@@ -1990,6 +2243,7 @@ SEP:166
 	wp:bdbRhea RHEA:35743 ;
 	SEP:hasKm  "0.0165"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:285426 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:167
@@ -2001,6 +2255,7 @@ SEP:167
 	wp:bdbRhea RHEA:35744 ;
 	SEP:hasKm  "164"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:285432 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:168
@@ -2012,6 +2267,7 @@ SEP:168
 	wp:bdbRhea RHEA:35745 ;
 	SEP:hasKm  "0.19"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:285418 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:169
@@ -2023,6 +2279,7 @@ SEP:169
 	wp:bdbRhea RHEA:35746 ;
 	SEP:hasKm  "0.3"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:285420 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:170
@@ -2034,6 +2291,7 @@ SEP:170
 	wp:bdbRhea RHEA:35747 ;
 	SEP:hasKm  "0.39"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:285413 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:171
@@ -2046,6 +2304,7 @@ SEP:171
 	SEP:hasKm  "1.18"^^xsd:float ;
 	SEP:hasKmKcat "11.17"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:704039 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:172
@@ -2057,6 +2316,7 @@ SEP:172
 	wp:bdbRhea RHEA:35749 ;
 	SEP:hasKcat  "0.05"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:3968069 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:173
@@ -2068,6 +2328,7 @@ SEP:173
 	wp:bdbRhea RHEA:35750 ;
 	SEP:hasKcat  "0.1"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:18573681 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:174
@@ -2079,6 +2340,7 @@ SEP:174
 	wp:bdbRhea RHEA:35751 ;
 	SEP:hasKcat  "248"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:18573681 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:175
@@ -2090,6 +2352,7 @@ SEP:175
 	wp:bdbRhea RHEA:35752 ;
 	SEP:hasKmKcat "212"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:18573681 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:176
@@ -2101,6 +2364,7 @@ SEP:176
 	wp:bdbRhea RHEA:35753 ;
 	SEP:hasKmKcat "11.17"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:18573681 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:177
@@ -2119,6 +2383,7 @@ SEP:178
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	wp:bdbRhea RHEA:24077 ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:6957697 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:179
@@ -2129,7 +2394,9 @@ SEP:179
 	wp:bdbRhea RHEA:24078 ;
 	SEP:hasKm  "0.0028"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 27^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12205101 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:180
@@ -2140,7 +2407,9 @@ SEP:180
 	wp:bdbRhea RHEA:24079 ;
 	SEP:hasKm  "0.05"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 27^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12205101 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:181
@@ -2151,6 +2420,7 @@ SEP:181
 	wp:bdbRhea RHEA:24080 ;
 	SEP:hasKm  "0.0035"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12205101 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:182
@@ -2161,6 +2431,7 @@ SEP:182
 	wp:bdbRhea RHEA:24081 ;
 	SEP:hasKm  "18"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12205101 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:183
@@ -2172,6 +2443,7 @@ SEP:183
 	SEP:hasKm  "0.0007"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:17624763 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:184
@@ -2182,7 +2454,9 @@ SEP:184
 	wp:bdbRhea RHEA:24083 ;
 	SEP:hasKm  "0.0018"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15084349 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:185
@@ -2194,7 +2468,9 @@ SEP:185
 	SEP:hasKm  "0.0037"^^xsd:float ;
 	SEP:hasKmKcat "0.0073"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 27^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15291757 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:186
@@ -2206,7 +2482,9 @@ SEP:186
 	SEP:hasKm  "0.0037"^^xsd:float ;
 	SEP:hasKmKcat "14.83"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 27^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15291757 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:187
@@ -2217,7 +2495,9 @@ SEP:187
 	wp:bdbRhea RHEA:24086 ;
 	SEP:hasKm  "0.0061"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 27^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15797861 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:188
@@ -2229,6 +2509,7 @@ SEP:188
 	SEP:hasKm  "0.0156"^^xsd:float ;
 	SEP:hasKmKcat "15"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20736065 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:189
@@ -2239,6 +2520,7 @@ SEP:189
 	wp:bdbRhea RHEA:24088 ;
 	SEP:hasKm  "47"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12530651 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:190
@@ -2249,6 +2531,7 @@ SEP:190
 	wp:bdbEnsembl En_id:ENSG00000179142 ;
 	wp:bdbRhea RHEA:11873 ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 27^^xsd:float ;
 	dc:source "Unknown"^^xsd:string .
 
 SEP:191
@@ -2259,6 +2542,7 @@ SEP:191
 	wp:bdbEnsembl En_id:ENSG00000179142 ;
 	wp:bdbRhea RHEA:11874 ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 27^^xsd:float ;
 	dc:source "Unknown"^^xsd:string .
 
 SEP:192
@@ -2278,6 +2562,7 @@ SEP:193
 	wp:bdbRhea RHEA:50237 ;
 	SEP:hasKm  "0.00025"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:9726253 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:194
@@ -2289,7 +2574,9 @@ SEP:194
 	wp:bdbRhea RHEA:50238 ;
 	SEP:hasKm  "0.00038"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25301938 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:195
@@ -2302,7 +2589,9 @@ SEP:195
 	SEP:hasKm  "0.0005"^^xsd:float ;
 	SEP:hasKmKcat "7.4"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:196
@@ -2314,6 +2603,7 @@ SEP:196
 	wp:bdbRhea RHEA:50240 ;
 	SEP:hasKm  "0.00055"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:19454579 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:197
@@ -2325,7 +2615,9 @@ SEP:197
 	wp:bdbRhea RHEA:50241 ;
 	SEP:hasKm  "0.00093"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25301938 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:198
@@ -2338,7 +2630,9 @@ SEP:198
 	SEP:hasKm  "0.0011"^^xsd:float ;
 	SEP:hasKmKcat "100"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:199
@@ -2350,6 +2644,7 @@ SEP:199
 	wp:bdbRhea RHEA:50243 ;
 	SEP:hasKm  "0.0025"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:4854454 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:200
@@ -2361,6 +2656,7 @@ SEP:200
 	wp:bdbRhea RHEA:50244 ;
 	SEP:hasKm  "0.0077"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:8396144 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:201
@@ -2372,7 +2668,9 @@ SEP:201
 	wp:bdbRhea RHEA:50245 ;
 	SEP:hasKcat  "0.0037"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:202
@@ -2384,8 +2682,10 @@ SEP:202
 	wp:bdbRhea RHEA:50246 ;
 	SEP:hasKcat  "0.11"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "presence of cytochrome b5"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:203
@@ -2397,6 +2697,7 @@ SEP:203
 	wp:bdbRhea RHEA:46309 ;
 	SEP:hasKm  "0.00045"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:9726253 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:204
@@ -2408,7 +2709,9 @@ SEP:204
 	wp:bdbRhea RHEA:46310 ;
 	SEP:hasKm  "0.0011"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:205
@@ -2420,7 +2723,9 @@ SEP:205
 	wp:bdbRhea RHEA:46311 ;
 	SEP:hasKm  "0.00196"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25301938 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:206
@@ -2432,6 +2737,7 @@ SEP:206
 	wp:bdbRhea RHEA:46312 ;
 	SEP:hasKm  "0.0023"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:4854454 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:207
@@ -2443,7 +2749,9 @@ SEP:207
 	wp:bdbRhea RHEA:46313 ;
 	SEP:hasKm  "0.0043"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:208
@@ -2455,7 +2763,9 @@ SEP:208
 	wp:bdbRhea RHEA:46314 ;
 	SEP:hasKm  "0.0053"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:209
@@ -2467,6 +2777,7 @@ SEP:209
 	wp:bdbRhea RHEA:46315 ;
 	SEP:hasKm  "0.0063"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:8396144 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:210
@@ -2478,7 +2789,9 @@ SEP:210
 	wp:bdbRhea RHEA:46316 ;
 	SEP:hasKm  "0.0097"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:211
@@ -2490,7 +2803,9 @@ SEP:211
 	wp:bdbRhea RHEA:46317 ;
 	SEP:hasKm  "0.0105"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25301938 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:212
@@ -2502,7 +2817,9 @@ SEP:212
 	wp:bdbRhea RHEA:46318 ;
 	SEP:hasKmKcat "4.7"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:213
@@ -2514,7 +2831,9 @@ SEP:213
 	wp:bdbRhea RHEA:46319 ;
 	SEP:hasKmKcat "5.8"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:214
@@ -2526,7 +2845,9 @@ SEP:214
 	wp:bdbRhea RHEA:46320 ;
 	SEP:hasKmKcat "8.9"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:215
@@ -2538,7 +2859,9 @@ SEP:215
 	wp:bdbRhea RHEA:46321 ;
 	SEP:hasKmKcat "40"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:216
@@ -2550,7 +2873,9 @@ SEP:216
 	wp:bdbRhea RHEA:46322 ;
 	SEP:hasKcat  "0.0064"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:217
@@ -2562,7 +2887,9 @@ SEP:217
 	wp:bdbRhea RHEA:46323 ;
 	SEP:hasKcat  "17"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25301938 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:218
@@ -2574,7 +2901,9 @@ SEP:218
 	wp:bdbRhea RHEA:46324 ;
 	SEP:hasKcat  "25"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:219
@@ -2586,6 +2915,7 @@ SEP:219
 	wp:bdbRhea RHEA:46325 ;
 	SEP:hasKcat  "0.0483"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:8396144 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:220
@@ -2597,7 +2927,9 @@ SEP:220
 	wp:bdbRhea RHEA:46326 ;
 	SEP:hasKcat  "86"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:221
@@ -2609,7 +2941,9 @@ SEP:221
 	wp:bdbRhea RHEA:46309 ;
 	SEP:hasKcat  "0.17"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:222
@@ -2621,6 +2955,7 @@ SEP:222
 	wp:bdbRhea RHEA:14754 ;
 	SEP:hasKm  "0.000525"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:8918985 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:223
@@ -2632,6 +2967,7 @@ SEP:223
 	wp:bdbRhea RHEA:14755 ;
 	SEP:hasKm  "0.0024"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:6971291 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:224
@@ -2643,6 +2979,7 @@ SEP:224
 	wp:bdbRhea RHEA:14756 ;
 	SEP:hasKm  "0.0025"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:6608525 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:225
@@ -2654,6 +2991,7 @@ SEP:225
 	wp:bdbRhea RHEA:50245 ;
 	SEP:hasKm  "0.0004"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:10406467 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:226
@@ -2665,6 +3003,7 @@ SEP:226
 	wp:bdbRhea RHEA:50246 ;
 	SEP:hasKm  "0.00056"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:10406467 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:227
@@ -2676,6 +3015,7 @@ SEP:227
 	wp:bdbRhea RHEA:50247 ;
 	SEP:hasKm  "0.0008"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:10406467 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:228
@@ -2687,6 +3027,7 @@ SEP:228
 	wp:bdbRhea RHEA:50248 ;
 	SEP:hasKcat  "0.00283"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:8396144 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:229
@@ -2697,7 +3038,9 @@ SEP:229
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
 	SEP:hasKm  "0.00021"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25855791 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:230
@@ -2708,6 +3051,7 @@ SEP:230
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
 	SEP:hasKm  "0.00021"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28539365 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:231
@@ -2718,7 +3062,9 @@ SEP:231
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
 	SEP:hasKm  "0.0011"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21446712 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:232
@@ -2728,7 +3074,9 @@ SEP:232
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
 	SEP:hasKm  "6.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15126570 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:233
@@ -2740,7 +3088,9 @@ SEP:233
 	SEP:hasKcat  "2.8"^^xsd:float ;
 	SEP:hasKmKcat "13330"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25855791 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:234
@@ -2752,6 +3102,7 @@ SEP:234
 	SEP:hasKcat  "2.8"^^xsd:float ;
 	SEP:hasKmKcat "13333"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28539365 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:235
@@ -2761,8 +3112,10 @@ SEP:235
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
 	SEP:hasKm  "2.3"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant P482S"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15126570 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:236
@@ -2772,7 +3125,9 @@ SEP:236
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
 	SEP:hasKm  "8.5"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15126570 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:237
@@ -2782,8 +3137,10 @@ SEP:237
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
 	SEP:hasKm  "9.2"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	dcterms:description "mutant A15T"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15126570 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:238
@@ -2795,7 +3152,9 @@ SEP:238
 	SEP:hasKcat  "4"^^xsd:float ;
 	SEP:hasKmKcat "2667"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25855791 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:239
@@ -2807,6 +3166,7 @@ SEP:239
 	SEP:hasKcat  "4"^^xsd:float ;
 	SEP:hasKmKcat "2667"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28539365 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:240
@@ -2821,6 +3181,7 @@ SEP:240
 	SEP:hasPh " 7.4"^^xsd:float ;
 	dcterms:description "recombinant enzyme"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:18215163 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:241
@@ -2835,6 +3196,7 @@ SEP:241
 	SEP:hasPh " 7.4"^^xsd:float ;
 	dcterms:description "recombinant enzyme"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:18215163 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:242
@@ -2846,7 +3208,9 @@ SEP:242
 	wp:bdbRhea RHEA:15842 ;
 	SEP:hasKm  "0.0036"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:6641908 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:243
@@ -2858,7 +3222,9 @@ SEP:243
 	wp:bdbRhea RHEA:15843 ;
 	SEP:hasKm  "0.0046"^^xsd:float ;
 	SEP:hasPh " 10"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:6641908 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:244
@@ -2870,7 +3236,9 @@ SEP:244
 	wp:bdbRhea RHEA:15844 ;
 	SEP:hasKm  "62"^^xsd:float ;
 	SEP:hasPh " 9.5"^^xsd:float ;
+	wdt:P2076 30^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:7092232 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:245
@@ -2881,7 +3249,9 @@ SEP:245
 	wp:bdbRhea RHEA:11390 ;
 	SEP:hasKm  "0.0003"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12397058 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:246
@@ -2892,7 +3262,9 @@ SEP:246
 	wp:bdbRhea RHEA:11391 ;
 	SEP:hasKm  "0.00034"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15152005 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:247
@@ -2903,7 +3275,9 @@ SEP:247
 	wp:bdbRhea RHEA:11392 ;
 	SEP:hasKm  "0.0006"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12460758 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:248
@@ -2914,7 +3288,9 @@ SEP:248
 	wp:bdbRhea RHEA:11393 ;
 	SEP:hasKm  "0.0008"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12397058 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:249
@@ -2925,7 +3301,9 @@ SEP:249
 	wp:bdbRhea RHEA:11394 ;
 	SEP:hasKm  "2"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12397058 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:250
@@ -2936,7 +3314,9 @@ SEP:250
 	wp:bdbRhea RHEA:11395 ;
 	SEP:hasKm  "0.0044"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 28^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:17825335 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:251
@@ -2947,7 +3327,9 @@ SEP:251
 	wp:bdbRhea RHEA:11396 ;
 	SEP:hasKm  "9"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12397058 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:252
@@ -2958,7 +3340,9 @@ SEP:252
 	wp:bdbRhea RHEA:11397 ;
 	SEP:hasKm  "14"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:11841241 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:253
@@ -2969,7 +3353,9 @@ SEP:253
 	wp:bdbRhea RHEA:11398 ;
 	SEP:hasKcat  "0.4"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12397058 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:254
@@ -2980,7 +3366,9 @@ SEP:254
 	wp:bdbRhea RHEA:53117 ;
 	SEP:hasKm  "0.0002"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Felis catus"^^xsd:string ;
+	dcterms:references pubmed:14732482 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:255
@@ -2991,7 +3379,9 @@ SEP:255
 	wp:bdbRhea RHEA:53118 ;
 	SEP:hasKm  "0.00038"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 34^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:17942303 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:256
@@ -3002,7 +3392,9 @@ SEP:256
 	wp:bdbRhea RHEA:53119 ;
 	SEP:hasKm  "0.00136"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 34^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:17942303 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:257
@@ -3012,7 +3404,9 @@ SEP:257
 	wp:bdbEnsembl En_id:ENSG00000277893 ;
 	wp:bdbRhea RHEA:54385 ;
 	SEP:hasPh " 7.4"^^xsd:float ;
+	wdt:P2076 37^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20823678 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:258
@@ -3023,6 +3417,7 @@ SEP:258
 	wp:bdbRhea RHEA:54386 ;
 	SEP:hasKm  "0.0004"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20170668 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:259
@@ -3033,6 +3428,7 @@ SEP:259
 	wp:bdbRhea RHEA:54387 ;
 	SEP:hasKm  "0.01"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20170668 ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:260

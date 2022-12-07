@@ -19,7 +19,9 @@ dir_code = os.getcwd()
 
 ##TODO:
 #Build in check for empty values (especially for provenance).
-#Build queries to test for content (all number with point/decimal?) -> Jenkins
+
+#Regex to test for structure of content
+import re
 
 ##Lists to store data in
 ListTotal = []
@@ -69,10 +71,14 @@ for itemSEPX in ListTotal:
 ##Define type, extension of WP vocabulary:		
 for itemSEPX in ListTotal:
 	a = itemSEPX.split('\t')
-	ListSEP_ID.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
-	for items in ListSEP_ID: 
-		if '-' in items:
-			ListSEP_ID.remove(items)			
+	pattern = '[a-zA-Z]+:[0-9]'
+	result = re.match(pattern, a[0])
+	if '-' in a[0]:
+	  continue
+	elif result:
+	  ListSEP_ID.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
+	else:
+		print("Data format for rdf:type IDs unknown, check original data!")
 
 #LengthList = len(ListSEP_ID)
 		
@@ -207,7 +213,7 @@ for itemTemperature in ListTotal:
   i = itemTemperature.split('\t')
   ListTemperature.append(i[0].strip( ) + '\t' + 'wdt:P2076' + ' ' + i[12].strip( ) + '^^xsd:float') #Line from after 2020-01-17
   for items in ListTemperature:
-    if '-' in items or '' in items:
+    if '-' in items in items:
       ListTemperature.remove(items)	
 
 #AdditionalConditions
@@ -229,14 +235,18 @@ for itemOrganism in ListTotal:
 #[15]=PMID	--> Not read in correctly, check!!		
 for itemPMID in ListTotal:
 	k = itemPMID.split('\t')
-	if '/' in k[15]:
-		k2 = k[15].split('/')
+	if k[15].isnumeric():
+	  ListPMID.append(k[0] + '\t' + 'dcterms:references' + " pubmed:" + k[15].strip( ))
+	elif ';' in k[15]:
+		k2 = k[15].split(';') ##Split multiple references in one line.
 		k2 = [x.strip(' ') for x in k2]
-		ListPMID.append(k[0].strip( ) + '\t' + 'dcterms:references' + " pubmed:" + ', PMID:'.join(k2))
+		ListPMID.append(k[0].strip( ) + '\t' + 'dcterms:references' + " pubmed:" + ', '.join(k2))
+	elif '-' in k[15]:
+	  continue
 	else:
-		ListPMID.append(k[0].strip( ) + '\t' + 'dcterms:references' + " pubmed:" + k[15].strip( ))
+		print("Data format for PubMed IDs unknown, check original data!")
 	for items in ListPMID: 
-		if '-' in items or '' in items:
+		if '-' in items in items:
 			ListPMID.remove(items)	
 			
 #[16]=Database				
@@ -382,7 +392,7 @@ RDF_Kin_data.write("@prefix uniprotkb:   <http://purl.uniprot.org/uniprot/> . \n
 RDF_Kin_data.write("@prefix up:   <http://purl.uniprot.org/core/> . \n".encode())
 RDF_Kin_data.write("@prefix ECcode:   <https://identifiers.org/ec-code/> . \n".encode())
 RDF_Kin_data.write("@prefix En_id:   <http://identifiers.org/ensembl/> . \n".encode())
-RDF_Kin_data.write("@prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . \n".encode())
+RDF_Kin_data.write("@prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . \n".encode()) #For WPRDF interoperability
 RDF_Kin_data.write("@prefix wd: <http://www.wikidata.org/entity/> . \n".encode()) #From WikiData
 RDF_Kin_data.write("@prefix wdt: <http://www.wikidata.org/prop/direct/> . \n\n".encode()) #From WikiData
 
