@@ -47,4 +47,4 @@ GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	18.8	-	37	wild-t
 GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515	-	-	26.9	8.2	25	-	Pasteurella multocida	16339152	BRENDA
 GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515	-	-	55	-	-	inTris-HCl buffer (200 mM. pH 8.2)	Pasteurella multocida	16339152	BRENDA
 GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515	-	-	10.36	7.5	25	wild-type enzyme	Synechocystis sp.	23170977	BRENDA
-DP	Membrane alanyl aminopeptidase	 3.4.11.2	-	ENSG00000015413	cysteinylglycine -> cysteine 	4047	2.5	-	-	-	-	-	Rattus norvegicus	6122685	BRENDA
+DP	Membrane alanyl aminopeptidase	 3.4.11.2	-	ENSG00000015413	Cysteinylglycine = cysteine 	4047	2.5	-	-	-	-	-	Rattus norvegicus	6122685	BRENDA

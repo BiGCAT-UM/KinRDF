@@ -125,13 +125,27 @@ for itemEnsembl in ListTotal:
 		if '-' in items:
 			ListEnsembl.remove(items)			
 
-##RheaID
+##Update interoperability with Rhea RDF:
+#  ?rhea rdfs:subClassOf rh:Reaction .
+#  ?rhea rh:id ?id .
+#  ?rhea rh:accession ?accession .
+#  ?rhea rh:equation ?equation .
+
+# rhea: http://rdf.rhea-db.org/10000
+# id: "10000"xsd:long
+# accession: "RHEA:10000"xsd:string
+# equation: "H2O + pentanamide = NH4(+) + pentanoate"xsd:string
+
+##RheaID ##Check if rh:accession shouldn't be wp:bdbdRhea (since accession is used to levarage between reactionscheme and RheaID by RHEA RDF).
 for itemRheaID in ListTotal:
 	g = itemRheaID.split('\t')
-	if 'RHEA:' in g[6]:
-		ListRheaID.append(g[0].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ))  ##Check if rh:accession shouldn't be wp:bdbdRhea (since accession is used to levarage between reactionscheme and RheaID by RHEA RDF).
-	else:
-		ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string')
+	if g[6].isnumeric(): #without prefix
+	  ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbdRhea' + ' RHEA:' + g[6].strip( ) )
+	elif 'RHEA:' in g[6]: #with prefix
+	  ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbdRhea' + ' RHEA:' + g[6].strip( ).replace("RHEA:", "") )
+	  #ListRheaID.append(g[0].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ))  #old
+	else: #if no Rhea is available
+	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string')
 	for items in ListRheaID: 
 		if '-' in items:
 			ListRheaID.remove(items)	
@@ -345,6 +359,8 @@ RDF_Kin_data.write("@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 RDF_Kin_data.write("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . \n".encode()) 
 RDF_Kin_data.write("@prefix wp: <http://vocabularies.wikipathways.org/wp#> . \n".encode()) #From WikiPathways
 RDF_Kin_data.write("@prefix rh: <http://rdf.rhea-db.org/> . \n".encode()) #From Rhea
+#RDF_Kin_data.write("@prefix RHEA:   <https://www.rhea-db.org/reaction?id=> . \n".encode()) #For website link, not for IRI!
+RDF_Kin_data.write("@prefix RHEA:   <https://identifiers.org/rhea/> . \n".encode()) #To link to WPRDF
 RDF_Kin_data.write("@prefix dcterms: <http://purl.org/dc/terms/> . \n".encode()) 
 RDF_Kin_data.write("@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> . \n".encode())
 RDF_Kin_data.write("@prefix uniprot:   <https://identifiers.org/uniprot/> . \n".encode())
@@ -353,7 +369,7 @@ RDF_Kin_data.write("@prefix up:   <http://purl.uniprot.org/core/> . \n".encode()
 RDF_Kin_data.write("@prefix ECcode:   <https://identifiers.org/ec-code/> . \n".encode())
 RDF_Kin_data.write("@prefix En_id:   <http://identifiers.org/ensembl/> . \n".encode())
 RDF_Kin_data.write("@prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . \n".encode())
-RDF_Kin_data.write("@prefix RHEA:   <https://www.rhea-db.org/reaction?id=> . \n".encode())
+
 RDF_Kin_data.write("@prefix wd: <http://www.wikidata.org/entity/> . \n".encode()) #From WikiData
 RDF_Kin_data.write("@prefix wdt: <http://www.wikidata.org/prop/direct/> . \n\n".encode()) #From WikiData
 

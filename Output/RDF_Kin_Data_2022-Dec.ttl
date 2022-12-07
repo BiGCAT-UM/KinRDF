@@ -4,6 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
 @prefix wp: <http://vocabularies.wikipathways.org/wp#> . 
 @prefix rh: <http://rdf.rhea-db.org/> . 
+@prefix RHEA:   <https://identifiers.org/rhea/> . 
 @prefix dcterms: <http://purl.org/dc/terms/> . 
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> . 
 @prefix uniprot:   <https://identifiers.org/uniprot/> . 
@@ -12,583 +13,1133 @@
 @prefix ECcode:   <https://identifiers.org/ec-code/> . 
 @prefix En_id:   <http://identifiers.org/ensembl/> . 
 @prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . 
-@prefix RHEA:   <https://www.rhea-db.org/reaction?id=> . 
 @prefix wd: <http://www.wikidata.org/entity/> . 
 @prefix wdt: <http://www.wikidata.org/prop/direct/> . 
 
 SEP:1
 	dc:identifier SEP:1 ;
 	rdf:type wp:InteractionData ;
-	rdfs:label "GGT1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
-	wp:bdbUniprot uniprot:P19440 ;
-	rh:accession RHEA:23905 ;
-	SEP:hasKm  "0.68"^^xsd:float ;
-	wp:organismName "Mus musculus"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
+	rdfs:label "Aminocyclase 2"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
+	wp:bdbUniprot uniprot:P45381 ;
+	wp:bdbdRhea RHEA:14167 ;
+	SEP:hasKm  "163"^^xsd:float ;
+	SEP:hasKcat  "37,5"^^xsd:float ;
+	SEP:hasPh " 7,4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda: 668640"^^xsd:string .
 
 SEP:2
 	dc:identifier SEP:2 ;
 	rdf:type wp:InteractionData ;
-	rdfs:label "GGT1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
-	wp:bdbUniprot uniprot:P19440 ;
-	rh:accession RHEA:23905 ;
-	SEP:hasKm  "0.0057"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
+	rdfs:label "Aminocyclase 2"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
+	wp:bdbUniprot uniprot:P45381 ;
+	wp:bdbdRhea RHEA:14167 ;
+	SEP:hasKm  "1.69"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "ASPA isolated from cytosol"@en ;
+	wp:organismName "Mus musculus"^^xsd:string ;
+	dc:source "Brenda: 681524"^^xsd:string .
 
 SEP:3
 	dc:identifier SEP:3 ;
 	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
+	wp:bdbUniprot uniprot:Q92947 ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	wp:bdbdRhea RHEA:47421 ;
+	SEP:hasKm  "3"^^xsd:float ;
+	SEP:hasPh " 7,5"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda:713046"^^xsd:string .
+
+SEP:4
+	dc:identifier SEP:4 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
+	wp:bdbUniprot uniprot:Q92947 ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	wp:bdbdRhea RHEA:47422 ;
+	SEP:hasKm  "0.0047"^^xsd:float ;
+	SEP:hasKcat  "5,6"^^xsd:float ;
+	SEP:hasPh " 6,5"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:5
+	dc:identifier SEP:5 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
+	wp:bdbUniprot uniprot:Q92947 ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	wp:bdbdRhea RHEA:47423 ;
+	SEP:hasKm  "0.0064"^^xsd:float ;
+	SEP:hasKcat  "6,7"^^xsd:float ;
+	SEP:hasPh " 7,6"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:6
+	dc:identifier SEP:6 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
+	wp:bdbUniprot uniprot:Q92947 ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	wp:bdbdRhea RHEA:47424 ;
+	SEP:hasKm  "0.0074"^^xsd:float ;
+	SEP:hasKcat  "4,8"^^xsd:float ;
+	SEP:hasPh " 7,6"^^xsd:float ;
+	dcterms:description "mutant A421T; electron acceptor is electron transfer flavoprotein "@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:7
+	dc:identifier SEP:7 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
+	wp:bdbUniprot uniprot:Q92947 ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	wp:bdbdRhea RHEA:47425 ;
+	SEP:hasKm  "0.0081"^^xsd:float ;
+	SEP:hasKcat  "9,4"^^xsd:float ;
+	SEP:hasPh " 7,6"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:8
+	dc:identifier SEP:8 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
+	wp:bdbUniprot uniprot:Q92947 ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	wp:bdbdRhea RHEA:47426 ;
+	SEP:hasKm  "0.0123"^^xsd:float ;
+	SEP:hasKcat  "4,6"^^xsd:float ;
+	SEP:hasPh " 7,6"^^xsd:float ;
+	dcterms:description "mutant A421V; electron acceptor is electron transfer flavoprotein "@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:9
+	dc:identifier SEP:9 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
+	wp:bdbUniprot uniprot:Q92947 ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	wp:bdbdRhea RHEA:47427 ;
+	SEP:hasKm  "0.0261"^^xsd:float ;
+	SEP:hasKcat  "4,9"^^xsd:float ;
+	SEP:hasPh " 7,6"^^xsd:float ;
+	dcterms:description "mutant A433V; electron acceptor is electron transfer flavoprotein "@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:10
+	dc:identifier SEP:10 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
+	wp:bdbUniprot uniprot:Q92947 ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	wp:bdbdRhea RHEA:47428 ;
+	SEP:hasKm  "4"^^xsd:float ;
+	SEP:hasPh " 7,5"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda:713046"^^xsd:string .
+
+SEP:11
+	dc:identifier SEP:11 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
+	wp:bdbUniprot uniprot:Q92947 ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	wp:bdbdRhea RHEA:47429 ;
+	SEP:hasKm  "0.0026"^^xsd:float ;
+	SEP:hasKcat  "9"^^xsd:float ;
+	SEP:hasKmKcat "3,5"^^xsd:float ;
+	SEP:hasPh " 7,6"^^xsd:float ;
+	dcterms:description "10 mM potassium phosphate"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Sabio: 2418"^^xsd:string .
+
+SEP:12
+	dc:identifier SEP:12 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
+	wp:bdbUniprot uniprot:Q9H9P8 ;
+	wp:bdbdRhea RHEA:21253 ;
+	SEP:hasKm  "0.8"^^xsd:float ;
+	SEP:hasPh " 7"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda: 657168"^^xsd:string .
+
+SEP:13
+	dc:identifier SEP:13 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
+	wp:bdbUniprot uniprot:Q9H9P8 ;
+	wp:bdbdRhea RHEA:21254 ;
+	SEP:hasKm  "1.7"^^xsd:float ;
+	SEP:hasPh " 7,2"^^xsd:float ;
+	wp:organismName "Alcaligenes sp. "^^xsd:string ;
+	dc:source "Brenda:389902"^^xsd:string .
+
+SEP:14
+	dc:identifier SEP:14 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
+	wp:bdbUniprot uniprot:Q8N465 ;
+	wp:bdbdRhea RHEA:21255 ;
+	SEP:hasKm  "584"^^xsd:float ;
+	SEP:hasKcat  "0,8"^^xsd:float ;
+	SEP:hasKmKcat "1,37"^^xsd:float ;
+	SEP:hasPh " 8,75"^^xsd:float ;
+	wp:organismName "Arabidopsis thaliana"^^xsd:string ;
+	dc:source "Brenda: 698932"^^xsd:string .
+
+SEP:15
+	dc:identifier SEP:15 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
+	wp:bdbUniprot uniprot:P48735 ;
+	wp:bdbEnsembl En_id:ENSG00000182054 ;
+	wp:bdbdRhea RHEA:49614 ;
+	SEP:hasKm  "17"^^xsd:float ;
+	SEP:hasPh " 7"^^xsd:float ;
+	dcterms:description "mitochondrial isozyme; reverse reaction"@en ;
+	wp:organismName "Pisum sativum"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:16
+	dc:identifier SEP:16 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
+	wp:bdbUniprot uniprot:P48735 ;
+	wp:bdbEnsembl En_id:ENSG00000182054 ;
+	wp:bdbdRhea RHEA:49615 ;
+	SEP:hasKm  "26"^^xsd:float ;
+	SEP:hasPh " 7"^^xsd:float ;
+	dcterms:description "mitochondrial isozyme; reverse reaction"@en ;
+	wp:organismName "Pisum sativum"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:17
+	dc:identifier SEP:17 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
+	wp:bdbUniprot uniprot:P48735 ;
+	wp:bdbEnsembl En_id:ENSG00000182054 ;
+	wp:bdbdRhea RHEA:49616 ;
+	SEP:hasKm  "0.13"^^xsd:float ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:18
+	dc:identifier SEP:18 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
+	wp:bdbUniprot uniprot:P48735 ;
+	wp:bdbEnsembl En_id:ENSG00000182054 ;
+	wp:bdbdRhea RHEA:49617 ;
+	SEP:hasKm  "0.2"^^xsd:float ;
+	dcterms:description "Isozyme IDP2"@en ;
+	wp:organismName "Saccharomyces cerevisiae"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:19
+	dc:identifier SEP:19 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
+	wp:bdbUniprot uniprot:P48735 ;
+	wp:bdbEnsembl En_id:ENSG00000182054 ;
+	wp:bdbdRhea RHEA:49618 ;
+	SEP:hasKm  "304"^^xsd:float ;
+	SEP:hasPh " 6,5"^^xsd:float ;
+	dcterms:description "reverse reaction"@en ;
+	wp:organismName "Chlorobium limicola"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:20
+	dc:identifier SEP:20 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
+	wp:bdbUniprot uniprot:P48735 ;
+	wp:bdbEnsembl En_id:ENSG00000182054 ;
+	wp:bdbdRhea RHEA:49619 ;
+	SEP:hasKm  "398"^^xsd:float ;
+	SEP:hasPh " 6,5"^^xsd:float ;
+	dcterms:description "reverse reaction"@en ;
+	wp:organismName "Rhoopseudomonas palustris"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:21
+	dc:identifier SEP:21 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
+	wp:bdbUniprot uniprot:P48735 ;
+	wp:bdbEnsembl En_id:ENSG00000182054 ;
+	wp:bdbdRhea RHEA:49620 ;
+	SEP:hasKm  "1.1"^^xsd:float ;
+	SEP:hasPh " 7"^^xsd:float ;
+	dcterms:description "Recombinant enzyme"@en ;
+	wp:organismName "Chlorobium limicola"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:22
+	dc:identifier SEP:22 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
+	wp:bdbUniprot uniprot:P48735 ;
+	wp:bdbEnsembl En_id:ENSG00000182054 ;
+	wp:bdbdRhea RHEA:49621 ;
+	SEP:hasKm  "1.92"^^xsd:float ;
+	dcterms:description "Isozyme IDP2"@en ;
+	wp:organismName "Saccharomyces cerevisiae"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:23
+	dc:identifier SEP:23 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Antiquitin"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.2.1.3 ;
+	wp:bdbUniprot uniprot:P49419 ;
+	wp:bdbEnsembl En_id:ENSG00000164904 ;
+	SEP:hasKm  "17"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda:689379"^^xsd:string .
+
+SEP:24
+	dc:identifier SEP:24 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
+	wp:bdbUniprot uniprot:Q8IWW8 ;
+	wp:bdbdRhea RHEA:49614 ;
+	SEP:hasKm  "77"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda: 286147"^^xsd:string .
+
+SEP:25
+	dc:identifier SEP:25 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
+	wp:bdbUniprot uniprot:Q8IWW8 ;
+	wp:bdbdRhea RHEA:49615 ;
+	SEP:hasKm  "18"^^xsd:float ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dc:source "Brenda: 697277"^^xsd:string .
+
+SEP:26
+	dc:identifier SEP:26 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
+	wp:bdbUniprot uniprot:Q8IWW8 ;
+	wp:bdbdRhea RHEA:49616 ;
+	SEP:hasKm  "77"^^xsd:float ;
+	SEP:hasPh " 7,1"^^xsd:float ;
+	dcterms:description "Recombinant enzyme"@en ;
+	wp:organismName "Mus musculus"^^xsd:string ;
+	dc:source "Brenda:664967"^^xsd:string .
+
+SEP:27
+	dc:identifier SEP:27 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
+	wp:bdbUniprot uniprot:Q8IWW8 ;
+	wp:bdbdRhea RHEA:49617 ;
+	SEP:hasKm  "85"^^xsd:float ;
+	SEP:hasPh " 7,1"^^xsd:float ;
+	dcterms:description "0,007 mM"@en ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dc:source "Brenda: 664967"^^xsd:string .
+
+SEP:28
+	dc:identifier SEP:28 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.37 ;
+	wp:bdbUniprot uniprot:P40926 ;
+	wp:bdbdRhea RHEA:21253 ;
+	SEP:hasPh " 7,4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Unknown"^^xsd:string .
+
+SEP:29
+	dc:identifier SEP:29 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
+	wp:bdbUniprot uniprot:P23368 ;
+	wp:bdbdRhea RHEA:21254 ;
+	SEP:hasKm  "1.4"^^xsd:float ;
+	SEP:hasKcat  "26"^^xsd:float ;
+	SEP:hasPh " 7,4"^^xsd:float ;
+	dcterms:description "in vitro; wildtype; different concentration"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Sabio: 141"^^xsd:string .
+
+SEP:30
+	dc:identifier SEP:30 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
+	wp:bdbUniprot uniprot:P23368 ;
+	wp:bdbdRhea RHEA:21255 ;
+	SEP:hasKm  "130"^^xsd:float ;
+	SEP:hasKcat  "26"^^xsd:float ;
+	SEP:hasPh " 7,4"^^xsd:float ;
+	dcterms:description "in vitro; wildtype; different concentration"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Sabio: 141"^^xsd:string .
+
+SEP:31
+	dc:identifier SEP:31 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
+	wp:bdbUniprot uniprot:P23368 ;
+	wp:bdbdRhea RHEA:21256 ;
+	SEP:hasKm  "6.4"^^xsd:float ;
+	SEP:hasKcat  "26"^^xsd:float ;
+	SEP:hasPh " 7,4"^^xsd:float ;
+	dcterms:description "in vitro; wildtype; different concentration"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Sabio: 141"^^xsd:string .
+
+SEP:32
+	dc:identifier SEP:32 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	wp:bdbUniprot uniprot:P19440 ;
-	rh:accession RHEA:23905 ;
+	wp:bdbdRhea RHEA:23905 ;
+	SEP:hasKm  "0.68"^^xsd:float ;
+	wp:organismName "Mus musculus"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:33
+	dc:identifier SEP:33 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "GGT1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
+	wp:bdbUniprot uniprot:P19440 ;
+	wp:bdbdRhea RHEA:23905 ;
+	SEP:hasKm  "0.0057"^^xsd:float ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:34
+	dc:identifier SEP:34 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "GGT1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
+	wp:bdbUniprot uniprot:P19440 ;
+	wp:bdbdRhea RHEA:23905 ;
 	SEP:hasKm  "0.0105"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	dcterms:description "isoform GGT5. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:4
-	dc:identifier SEP:4 ;
+SEP:35
+	dc:identifier SEP:35 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	wp:bdbUniprot uniprot:P19440 ;
-	rh:accession RHEA:23905 ;
+	wp:bdbdRhea RHEA:23905 ;
 	SEP:hasKm  "0.0106"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	dcterms:description "isoform GGT1. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:5
-	dc:identifier SEP:5 ;
+SEP:36
+	dc:identifier SEP:36 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GGCT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.4 ;
 	wp:bdbUniprot uniprot:O75223 ;
-	rh:accession RHEA:20506 ;
+	wp:bdbdRhea RHEA:20506 ;
 	dc:source "Unknown"^^xsd:string .
 
-SEP:6
-	dc:identifier SEP:6 ;
+SEP:37
+	dc:identifier SEP:37 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
-	rh:accession RHEA:10349 ;
+	wp:bdbdRhea RHEA:10349 ;
 	SEP:hasKm  "0.16"^^xsd:float ;
 	dcterms:description "initial Km in presence of GTP"@en ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:7
-	dc:identifier SEP:7 ;
+SEP:38
+	dc:identifier SEP:38 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
-	rh:accession RHEA:10349 ;
+	wp:bdbdRhea RHEA:10349 ;
 	SEP:hasKm  "0.18"^^xsd:float ;
 	dcterms:description "initial Km in presence of ITP"@en ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:8
-	dc:identifier SEP:8 ;
+SEP:39
+	dc:identifier SEP:39 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
-	rh:accession RHEA:10349 ;
+	wp:bdbdRhea RHEA:10349 ;
 	SEP:hasKm  "0.2"^^xsd:float ;
 	dcterms:description "initial Km in presence of UTP"@en ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:9
-	dc:identifier SEP:9 ;
+SEP:40
+	dc:identifier SEP:40 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
-	rh:accession RHEA:10349 ;
+	wp:bdbdRhea RHEA:10349 ;
 	SEP:hasKm  "0.41"^^xsd:float ;
 	dcterms:description "in presence of ATP"@en ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:10
-	dc:identifier SEP:10 ;
+SEP:41
+	dc:identifier SEP:41 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
-	rh:accession RHEA:10349 ;
+	wp:bdbdRhea RHEA:10349 ;
 	SEP:hasKm  "0.5"^^xsd:float ;
 	dcterms:description "final Km in presence of UTP"@en ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:11
-	dc:identifier SEP:11 ;
+SEP:42
+	dc:identifier SEP:42 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
-	rh:accession RHEA:10349 ;
+	wp:bdbdRhea RHEA:10349 ;
 	SEP:hasKm  "0.5"^^xsd:float ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:12
-	dc:identifier SEP:12 ;
+SEP:43
+	dc:identifier SEP:43 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
-	rh:accession RHEA:10349 ;
+	wp:bdbdRhea RHEA:10349 ;
 	SEP:hasKm  "0.57"^^xsd:float ;
 	dcterms:description "final Km in presence of GTP"@en ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:13
-	dc:identifier SEP:13 ;
+SEP:44
+	dc:identifier SEP:44 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
-	rh:accession RHEA:10349 ;
+	wp:bdbdRhea RHEA:10349 ;
 	SEP:hasKm  "0.58"^^xsd:float ;
 	dcterms:description "final Km in presence of ITP"@en ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:14
-	dc:identifier SEP:14 ;
+SEP:45
+	dc:identifier SEP:45 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
-	rh:accession RHEA:10349 ;
+	wp:bdbdRhea RHEA:10349 ;
 	SEP:hasKm  "0.0316"^^xsd:float ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:15
-	dc:identifier SEP:15 ;
+SEP:46
+	dc:identifier SEP:46 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbUniprot uniprot:O14841 ;
-	rh:accession RHEA:10349 ;
+	wp:bdbdRhea RHEA:10349 ;
 	SEP:hasKm  "0.05"^^xsd:float ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:16
-	dc:identifier SEP:16 ;
+SEP:47
+	dc:identifier SEP:47 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GCLC"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	wp:bdbUniprot uniprot:P48506 ;
-	rh:accession RHEA:13286 ;
+	wp:bdbdRhea RHEA:13286 ;
 	SEP:hasKm  "0.75"^^xsd:float ;
 	dcterms:description "enzyme from embryo homogenate"@en ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:17
-	dc:identifier SEP:17 ;
+SEP:48
+	dc:identifier SEP:48 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GCLC"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	wp:bdbUniprot uniprot:P48506 ;
-	rh:accession RHEA:13286 ;
+	wp:bdbdRhea RHEA:13286 ;
 	SEP:hasKm  "1.38"^^xsd:float ;
 	dcterms:description "enzyme from visceral yolk sac homogenate"@en ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:18
-	dc:identifier SEP:18 ;
+SEP:49
+	dc:identifier SEP:49 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "0.2"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:19
-	dc:identifier SEP:19 ;
+SEP:50
+	dc:identifier SEP:50 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "0.25"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	dcterms:description "mutant K305A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:20
-	dc:identifier SEP:20 ;
+SEP:51
+	dc:identifier SEP:51 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "452"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:21
-	dc:identifier SEP:21 ;
+SEP:52
+	dc:identifier SEP:52 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "0.58"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:22
-	dc:identifier SEP:22 ;
+SEP:53
+	dc:identifier SEP:53 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "1.75"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:23
-	dc:identifier SEP:23 ;
+SEP:54
+	dc:identifier SEP:54 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "1.96"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	dcterms:description "mutant K305E"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:24
-	dc:identifier SEP:24 ;
+SEP:55
+	dc:identifier SEP:55 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:25
-	dc:identifier SEP:25 ;
+SEP:56
+	dc:identifier SEP:56 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "16"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	dcterms:description "D458N"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:26
-	dc:identifier SEP:26 ;
+SEP:57
+	dc:identifier SEP:57 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "51"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	dcterms:description "D458R"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:27
-	dc:identifier SEP:27 ;
+SEP:58
+	dc:identifier SEP:58 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "0.53"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:28
-	dc:identifier SEP:28 ;
+SEP:59
+	dc:identifier SEP:59 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "1.02"^^xsd:float ;
 	dcterms:description "mutant enzyme R283C"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:29
-	dc:identifier SEP:29 ;
+SEP:60
+	dc:identifier SEP:60 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "1.24"^^xsd:float ;
 	dcterms:description "mutant enzyme Y270H"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:30
-	dc:identifier SEP:30 ;
+SEP:61
+	dc:identifier SEP:61 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "1.43"^^xsd:float ;
 	dcterms:description "mutant enzyme Y270C"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:31
-	dc:identifier SEP:31 ;
+SEP:62
+	dc:identifier SEP:62 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "1.51"^^xsd:float ;
 	dcterms:description "mutant enzyme D219G"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:32
-	dc:identifier SEP:32 ;
+SEP:63
+	dc:identifier SEP:63 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "1.64"^^xsd:float ;
 	dcterms:description "mutant enzyme P314L"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:33
-	dc:identifier SEP:33 ;
+SEP:64
+	dc:identifier SEP:64 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "1.75"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:34
-	dc:identifier SEP:34 ;
+SEP:65
+	dc:identifier SEP:65 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "2.07"^^xsd:float ;
 	dcterms:description "mutant enzyme D219A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:35
-	dc:identifier SEP:35 ;
+SEP:66
+	dc:identifier SEP:66 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "2.25"^^xsd:float ;
 	dcterms:description "mutant enzyme L188P"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:36
-	dc:identifier SEP:36 ;
+SEP:67
+	dc:identifier SEP:67 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKm  "2.52"^^xsd:float ;
 	dcterms:description "mutant G371V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:37
-	dc:identifier SEP:37 ;
+SEP:68
+	dc:identifier SEP:68 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "10.36"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
 	wp:organismName "Synechocystis sp."^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:38
-	dc:identifier SEP:38 ;
+SEP:69
+	dc:identifier SEP:69 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "1.17"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	dcterms:description "D458R"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:39
-	dc:identifier SEP:39 ;
+SEP:70
+	dc:identifier SEP:70 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "1.6"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	dcterms:description "D458A "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:40
-	dc:identifier SEP:40 ;
+SEP:71
+	dc:identifier SEP:71 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "2.31"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	dcterms:description "D458N "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:41
-	dc:identifier SEP:41 ;
+SEP:72
+	dc:identifier SEP:72 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "15.68"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:42
-	dc:identifier SEP:42 ;
+SEP:73
+	dc:identifier SEP:73 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "52"^^xsd:float ;
 	dcterms:description "mutant G370V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:43
-	dc:identifier SEP:43 ;
+SEP:74
+	dc:identifier SEP:74 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "133"^^xsd:float ;
 	dcterms:description "mutant G369V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:44
-	dc:identifier SEP:44 ;
+SEP:75
+	dc:identifier SEP:75 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "2.36"^^xsd:float ;
 	dcterms:description "mutant G371V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:45
-	dc:identifier SEP:45 ;
+SEP:76
+	dc:identifier SEP:76 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "18.8"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:46
-	dc:identifier SEP:46 ;
+SEP:77
+	dc:identifier SEP:77 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "26.9"^^xsd:float ;
 	SEP:hasPh " 8.2"^^xsd:float ;
 	wp:organismName "Pasteurella multocida"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:47
-	dc:identifier SEP:47 ;
+SEP:78
+	dc:identifier SEP:78 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "55"^^xsd:float ;
 	wp:organismName "Pasteurella multocida"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:48
-	dc:identifier SEP:48 ;
+SEP:79
+	dc:identifier SEP:79 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbUniprot uniprot:P48637 ;
-	rh:accession RHEA:13558 ;
+	wp:bdbdRhea RHEA:13558 ;
 	SEP:hasKmKcat "10.36"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
 	wp:organismName "Synechocystis sp."^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:49
-	dc:identifier SEP:49 ;
+SEP:80
+	dc:identifier SEP:80 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "DP"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.4.11.2 ;
 	wp:bdbEnsembl En_id:ENSG00000015413 ;
+	rh:equation "Cysteinylglycine = cysteine"^^xsd:string ;
 	SEP:hasKm  "2.5"^^xsd:float ;
-	wp:organismName "Rattus norverigus"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:50
-	dc:identifier SEP:50 ;
+SEP:81
+	dc:identifier SEP:81 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.39"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.1.B13 ;
+	wp:bdbUniprot uniprot:Q9H8P0 ;
+	wp:bdbdRhea RHEA:34281 ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:82
+	dc:identifier SEP:82 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.38"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
+	wp:bdbUniprot uniprot:Q9UPQ8 ;
+	wp:bdbdRhea RHEA:13134 ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:83
+	dc:identifier SEP:83 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.38"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
+	wp:bdbdRhea RHEA:13134 ;
+	SEP:hasKm  "23"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:84
+	dc:identifier SEP:84 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.38"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
+	wp:bdbdRhea RHEA:13134 ;
+	SEP:hasKm  "75"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:85
+	dc:identifier SEP:85 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "DAPGT1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.7.8.15 ;
+	wp:bdbdRhea RHEA:13290 ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:86
+	dc:identifier SEP:86 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ALG13"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.141 ;
+	wp:bdbdRhea RHEA:23381 ;
+	SEP:hasPh " 7.5"^^xsd:float ;
+	wp:organismName "Gallus gallus"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:87
+	dc:identifier SEP:87 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ALG13"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.141 ;
+	SEP:hasPh " 7"^^xsd:float ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:88
+	dc:identifier SEP:88 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.9"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
+	wp:bdbUniprot uniprot:Q9BT22 ;
+	wp:bdbdRhea RHEA:13866 ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:89
+	dc:identifier SEP:89 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.9"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
+	wp:bdbdRhea RHEA:13866 ;
+	SEP:hasPh " 7"^^xsd:float ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:90
+	dc:identifier SEP:90 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.7"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
+	wp:bdbUniprot uniprot:Q9H553 ;
+	wp:bdbdRhea RHEA:29516 ;
+	SEP:hasPh " 6.8"^^xsd:float ;
+	dcterms:description "pH range was between 6,8 to 7,3"@en ;
+	wp:organismName "Oryctolagus cuniculus"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:91
+	dc:identifier SEP:91 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.7"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
+	wp:bdbUniprot uniprot:Q9H553 ;
+	wp:bdbdRhea RHEA:29516 ;
+	SEP:hasPh " 7.3"^^xsd:float ;
+	dcterms:description "pH range was between 6,8 to 7,3"@en ;
+	wp:organismName "Oryctolagus cuniculus"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:92
+	dc:identifier SEP:92 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.11"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.131 ;
+	wp:bdbEnsembl En_id: ;
+	wp:bdbdRhea RHEA:29523 ;
+	SEP:hasKm  "0,00064"^^xsd:float ;
+	SEP:hasPh " 7"^^xsd:float ;
+	dcterms:description ""@en ;
+	wp:organismName "Oryctolagus cuniculus"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:93
+	dc:identifier SEP:93 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.11"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.131 ;
+	wp:bdbdRhea RHEA:29523 ;
+	SEP:hasPh " 6.5"^^xsd:float ;
+	dcterms:description "pH range was between 6,5 to 7,6"@en ;
+	wp:organismName "Bos taurus"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:94
+	dc:identifier SEP:94 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "30.11"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.131 ;
+	wp:bdbdRhea RHEA:29523 ;
+	SEP:hasPh " 7.6"^^xsd:float ;
+	dcterms:description "pH range was between 6,5 to 7,6"@en ;
+	wp:organismName "Bos taurus"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:95
+	dc:identifier SEP:95 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
@@ -598,8 +1149,8 @@ SEP:50
 	wp:organismName "Gallus gallus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:51
-	dc:identifier SEP:51 ;
+SEP:96
+	dc:identifier SEP:96 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
@@ -609,8 +1160,8 @@ SEP:51
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:52
-	dc:identifier SEP:52 ;
+SEP:97
+	dc:identifier SEP:97 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
@@ -620,8 +1171,8 @@ SEP:52
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:53
-	dc:identifier SEP:53 ;
+SEP:98
+	dc:identifier SEP:98 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
@@ -632,8 +1183,8 @@ SEP:53
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:54
-	dc:identifier SEP:54 ;
+SEP:99
+	dc:identifier SEP:99 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
@@ -642,8 +1193,8 @@ SEP:54
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA/Uni Prot"^^xsd:string .
 
-SEP:55
-	dc:identifier SEP:55 ;
+SEP:100
+	dc:identifier SEP:100 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
@@ -653,8 +1204,8 @@ SEP:55
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:56
-	dc:identifier SEP:56 ;
+SEP:101
+	dc:identifier SEP:101 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
@@ -663,8 +1214,8 @@ SEP:56
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:57
-	dc:identifier SEP:57 ;
+SEP:102
+	dc:identifier SEP:102 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
@@ -673,33 +1224,33 @@ SEP:57
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:58
-	dc:identifier SEP:58 ;
+SEP:103
+	dc:identifier SEP:103 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "CETP"^^xsd:string ;
 	wp:bdbUniprot uniprot:P11597 ;
 	dc:source "Unknown"^^xsd:string .
 
-SEP:59
-	dc:identifier SEP:59 ;
+SEP:104
+	dc:identifier SEP:104 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "HL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	wp:bdbUniprot uniprot:P11150 ;
-	rh:equation "38495"^^xsd:string ;
+	wp:bdbdRhea RHEA:38495 ;
 	dc:source "Unknown"^^xsd:string .
 
-SEP:60
-	dc:identifier SEP:60 ;
+SEP:105
+	dc:identifier SEP:105 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "HL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	wp:bdbUniprot uniprot:P11150 ;
-	rh:equation "12046"^^xsd:string ;
+	wp:bdbdRhea RHEA:12046 ;
 	dc:source "Unknown"^^xsd:string .
 
-SEP:61
-	dc:identifier SEP:61 ;
+SEP:106
+	dc:identifier SEP:106 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
@@ -711,8 +1262,8 @@ SEP:61
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:62
-	dc:identifier SEP:62 ;
+SEP:107
+	dc:identifier SEP:107 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
@@ -723,560 +1274,6 @@ SEP:62
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
-SEP:63
-	dc:identifier SEP:63 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.37"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:64
-	dc:identifier SEP:64 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.38"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant W770A"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:65
-	dc:identifier SEP:65 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.42"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant G893P"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:66
-	dc:identifier SEP:66 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.45"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant G894S"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:67
-	dc:identifier SEP:67 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.49"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant T880V"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:68
-	dc:identifier SEP:68 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.52"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:69
-	dc:identifier SEP:69 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.54"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant G893A"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:70
-	dc:identifier SEP:70 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.55"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:71
-	dc:identifier SEP:71 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.61"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:72
-	dc:identifier SEP:72 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.62"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:73
-	dc:identifier SEP:73 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.68"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:74
-	dc:identifier SEP:74 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.77"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:75
-	dc:identifier SEP:75 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.85"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:76
-	dc:identifier SEP:76 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.88"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:77
-	dc:identifier SEP:77 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "0.95"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:78
-	dc:identifier SEP:78 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "1.1"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:79
-	dc:identifier SEP:79 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKm  "1.2"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:80
-	dc:identifier SEP:80 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "1"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:81
-	dc:identifier SEP:81 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "5"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:82
-	dc:identifier SEP:82 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "7"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:83
-	dc:identifier SEP:83 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "0.01"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:84
-	dc:identifier SEP:84 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "11"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant G894S"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:85
-	dc:identifier SEP:85 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "17"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:86
-	dc:identifier SEP:86 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "19"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:87
-	dc:identifier SEP:87 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "22"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:88
-	dc:identifier SEP:88 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "36"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:89
-	dc:identifier SEP:89 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "37"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant G893P"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:90
-	dc:identifier SEP:90 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "0.05"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:91
-	dc:identifier SEP:91 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "64"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:92
-	dc:identifier SEP:92 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "67"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:93
-	dc:identifier SEP:93 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "79"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant G894A"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:94
-	dc:identifier SEP:94 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "92"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:95
-	dc:identifier SEP:95 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "94"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:96
-	dc:identifier SEP:96 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "95"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:97
-	dc:identifier SEP:97 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKcat  "0.15"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant K529R"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:98
-	dc:identifier SEP:98 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "0.0009"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:99
-	dc:identifier SEP:99 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "0.0024"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant T880V"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:100
-	dc:identifier SEP:100 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "0.0025"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant W770A"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:101
-	dc:identifier SEP:101 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "3"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:102
-	dc:identifier SEP:102 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "5"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant G894S"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:103
-	dc:identifier SEP:103 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "6"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant G893A"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:104
-	dc:identifier SEP:104 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "7"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:105
-	dc:identifier SEP:105 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "9"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:106
-	dc:identifier SEP:106 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "12"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SEP:107
-	dc:identifier SEP:107 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
-	wp:bdbUniprot uniprot:O95477 ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "16"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant G893P, mutant K529R"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
 SEP:108
 	dc:identifier SEP:108 ;
 	rdf:type wp:InteractionData ;
@@ -1284,7 +1281,7 @@ SEP:108
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "0.02"^^xsd:float ;
+	SEP:hasKm  "0.37"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
@@ -1296,8 +1293,9 @@ SEP:109
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "22"^^xsd:float ;
+	SEP:hasKm  "0.38"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant W770A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
@@ -1308,8 +1306,9 @@ SEP:110
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "24"^^xsd:float ;
+	SEP:hasKm  "0.42"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant G893P"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
@@ -1320,9 +1319,9 @@ SEP:111
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "29"^^xsd:float ;
+	SEP:hasKm  "0.45"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "mutant G894A"@en ;
+	dcterms:description "mutant G894S"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
@@ -1333,8 +1332,9 @@ SEP:112
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "34"^^xsd:float ;
+	SEP:hasKm  "0.49"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant T880V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
@@ -1345,7 +1345,7 @@ SEP:113
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "39"^^xsd:float ;
+	SEP:hasKm  "0.52"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
@@ -1357,8 +1357,9 @@ SEP:114
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "47"^^xsd:float ;
+	SEP:hasKm  "0.54"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant G893A"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
@@ -1369,7 +1370,7 @@ SEP:115
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "52"^^xsd:float ;
+	SEP:hasKm  "0.55"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
@@ -1381,7 +1382,7 @@ SEP:116
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	wp:bdbUniprot uniprot:O95477 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SEP:hasKmKcat "59"^^xsd:float ;
+	SEP:hasKm  "0.61"^^xsd:float ;
 	SEP:hasPh " 8"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
@@ -1389,171 +1390,721 @@ SEP:116
 SEP:117
 	dc:identifier SEP:117 ;
 	rdf:type wp:InteractionData ;
-	rdfs:label "PCSK9"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.4.21.61 ;
-	wp:bdbUniprot uniprot:Q8NBP7 ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKm  "0.62"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "BRENDA"^^xsd:string .
 
 SEP:118
 	dc:identifier SEP:118 ;
 	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKm  "0.68"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:119
+	dc:identifier SEP:119 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKm  "0.77"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:120
+	dc:identifier SEP:120 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKm  "0.85"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:121
+	dc:identifier SEP:121 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKm  "0.88"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:122
+	dc:identifier SEP:122 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKm  "0.95"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:123
+	dc:identifier SEP:123 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKm  "1.1"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:124
+	dc:identifier SEP:124 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKm  "1.2"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:125
+	dc:identifier SEP:125 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "1"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:126
+	dc:identifier SEP:126 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "5"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:127
+	dc:identifier SEP:127 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "7"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:128
+	dc:identifier SEP:128 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "0.01"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:129
+	dc:identifier SEP:129 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "11"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant G894S"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:130
+	dc:identifier SEP:130 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "17"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:131
+	dc:identifier SEP:131 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "19"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:132
+	dc:identifier SEP:132 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "22"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:133
+	dc:identifier SEP:133 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "36"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:134
+	dc:identifier SEP:134 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "37"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant G893P"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:135
+	dc:identifier SEP:135 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "0.05"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:136
+	dc:identifier SEP:136 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "64"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:137
+	dc:identifier SEP:137 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "67"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:138
+	dc:identifier SEP:138 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "79"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant G894A"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:139
+	dc:identifier SEP:139 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "92"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:140
+	dc:identifier SEP:140 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "94"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:141
+	dc:identifier SEP:141 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "95"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:142
+	dc:identifier SEP:142 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKcat  "0.15"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant K529R"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:143
+	dc:identifier SEP:143 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "0.0009"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:144
+	dc:identifier SEP:144 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "0.0024"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant T880V"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:145
+	dc:identifier SEP:145 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "0.0025"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant W770A"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:146
+	dc:identifier SEP:146 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "3"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:147
+	dc:identifier SEP:147 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "5"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant G894S"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:148
+	dc:identifier SEP:148 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "6"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant G893A"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:149
+	dc:identifier SEP:149 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "7"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:150
+	dc:identifier SEP:150 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "9"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:151
+	dc:identifier SEP:151 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "12"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:152
+	dc:identifier SEP:152 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "16"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant G893P, mutant K529R"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:153
+	dc:identifier SEP:153 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "0.02"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:154
+	dc:identifier SEP:154 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "22"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:155
+	dc:identifier SEP:155 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "24"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:156
+	dc:identifier SEP:156 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "29"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	dcterms:description "mutant G894A"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:157
+	dc:identifier SEP:157 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "34"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:158
+	dc:identifier SEP:158 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "39"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:159
+	dc:identifier SEP:159 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "47"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:160
+	dc:identifier SEP:160 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "52"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:161
+	dc:identifier SEP:161 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "ABCA1"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
+	wp:bdbUniprot uniprot:O95477 ;
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	SEP:hasKmKcat "59"^^xsd:float ;
+	SEP:hasPh " 8"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:162
+	dc:identifier SEP:162 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "PCSK9"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.4.21.61 ;
+	wp:bdbUniprot uniprot:Q8NBP7 ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "BRENDA"^^xsd:string .
+
+SEP:163
+	dc:identifier SEP:163 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35740 ;
+	wp:bdbdRhea RHEA:35740 ;
 	SEP:hasKm  "0.0005"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:119
-	dc:identifier SEP:119 ;
+SEP:164
+	dc:identifier SEP:164 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35741 ;
+	wp:bdbdRhea RHEA:35741 ;
 	SEP:hasKm  "2"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:120
-	dc:identifier SEP:120 ;
+SEP:165
+	dc:identifier SEP:165 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35742 ;
+	wp:bdbdRhea RHEA:35742 ;
 	SEP:hasKm  "0.0091"^^xsd:float ;
 	SEP:hasKmKcat "212"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:121
-	dc:identifier SEP:121 ;
+SEP:166
+	dc:identifier SEP:166 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35743 ;
+	wp:bdbdRhea RHEA:35743 ;
 	SEP:hasKm  "0.0165"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:122
-	dc:identifier SEP:122 ;
+SEP:167
+	dc:identifier SEP:167 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35744 ;
+	wp:bdbdRhea RHEA:35744 ;
 	SEP:hasKm  "164"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:123
-	dc:identifier SEP:123 ;
+SEP:168
+	dc:identifier SEP:168 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35745 ;
+	wp:bdbdRhea RHEA:35745 ;
 	SEP:hasKm  "0.19"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:124
-	dc:identifier SEP:124 ;
+SEP:169
+	dc:identifier SEP:169 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35746 ;
+	wp:bdbdRhea RHEA:35746 ;
 	SEP:hasKm  "0.3"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:125
-	dc:identifier SEP:125 ;
+SEP:170
+	dc:identifier SEP:170 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35747 ;
+	wp:bdbdRhea RHEA:35747 ;
 	SEP:hasKm  "0.39"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:126
-	dc:identifier SEP:126 ;
+SEP:171
+	dc:identifier SEP:171 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35748 ;
+	wp:bdbdRhea RHEA:35748 ;
 	SEP:hasKm  "1.18"^^xsd:float ;
 	SEP:hasKmKcat "11.17"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:127
-	dc:identifier SEP:127 ;
+SEP:172
+	dc:identifier SEP:172 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35749 ;
+	wp:bdbdRhea RHEA:35749 ;
 	SEP:hasKcat  "0.05"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:128
-	dc:identifier SEP:128 ;
+SEP:173
+	dc:identifier SEP:173 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35750 ;
+	wp:bdbdRhea RHEA:35750 ;
 	SEP:hasKcat  "0.1"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:129
-	dc:identifier SEP:129 ;
+SEP:174
+	dc:identifier SEP:174 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35751 ;
+	wp:bdbdRhea RHEA:35751 ;
 	SEP:hasKcat  "248"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:130
-	dc:identifier SEP:130 ;
+SEP:175
+	dc:identifier SEP:175 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35752 ;
+	wp:bdbdRhea RHEA:35752 ;
 	SEP:hasKmKcat "212"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:131
-	dc:identifier SEP:131 ;
+SEP:176
+	dc:identifier SEP:176 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450scc"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
-	rh:accession RHEA:35753 ;
+	wp:bdbdRhea RHEA:35753 ;
 	SEP:hasKmKcat "11.17"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:132
-	dc:identifier SEP:132 ;
+SEP:177
+	dc:identifier SEP:177 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "STAR"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.11.12 ;
@@ -1561,590 +2112,75 @@ SEP:132
 	rh:equation "ATP + steroidogenic acute regulatory protein = ADP + phosphorylated steroidogenic acute regulatory protein"^^xsd:string ;
 	dc:source "Unknown"^^xsd:string .
 
-SEP:133
-	dc:identifier SEP:133 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24077 ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:134
-	dc:identifier SEP:134 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24078 ;
-	SEP:hasKm  "0.0028"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:135
-	dc:identifier SEP:135 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24079 ;
-	SEP:hasKm  "0.05"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:136
-	dc:identifier SEP:136 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24080 ;
-	SEP:hasKm  "0.0035"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:137
-	dc:identifier SEP:137 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24081 ;
-	SEP:hasKm  "18"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:138
-	dc:identifier SEP:138 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24082 ;
-	SEP:hasKm  "0.0007"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:139
-	dc:identifier SEP:139 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24083 ;
-	SEP:hasKm  "0.0018"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:140
-	dc:identifier SEP:140 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24084 ;
-	SEP:hasKm  "0.0037"^^xsd:float ;
-	SEP:hasKmKcat "0.0073"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:141
-	dc:identifier SEP:141 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24085 ;
-	SEP:hasKm  "0.0037"^^xsd:float ;
-	SEP:hasKmKcat "14.83"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:142
-	dc:identifier SEP:142 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24086 ;
-	SEP:hasKm  "0.0061"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:143
-	dc:identifier SEP:143 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24087 ;
-	SEP:hasKm  "0.0156"^^xsd:float ;
-	SEP:hasKmKcat "15"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:144
-	dc:identifier SEP:144 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
-	wp:bdbEnsembl En_id:ENSG00000203859 ;
-	rh:accession RHEA:24088 ;
-	SEP:hasKm  "47"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:145
-	dc:identifier SEP:145 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Corticosterone Methyl Oxidase I"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.15.5 ;
-	wp:bdbEnsembl En_id:ENSG00000179142 ;
-	rh:accession RHEA:11873 ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	dc:source "Unknown"^^xsd:string .
-
-SEP:146
-	dc:identifier SEP:146 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Corticosterone Methyl Oxidase II"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.15.5 ;
-	wp:bdbEnsembl En_id:ENSG00000179142 ;
-	rh:accession RHEA:11874 ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	dc:source "Unknown"^^xsd:string .
-
-SEP:147
-	dc:identifier SEP:147 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "POR"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.6.2.4 ;
-	wp:bdbUniprot uniprot:P16435 ;
-	dc:source "Unknown"^^xsd:string .
-
-SEP:148
-	dc:identifier SEP:148 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50237 ;
-	SEP:hasKm  "0.00025"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:149
-	dc:identifier SEP:149 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50238 ;
-	SEP:hasKm  "0.00038"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:150
-	dc:identifier SEP:150 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50239 ;
-	SEP:hasKm  "0.0005"^^xsd:float ;
-	SEP:hasKmKcat "7.4"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:151
-	dc:identifier SEP:151 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50240 ;
-	SEP:hasKm  "0.00055"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:152
-	dc:identifier SEP:152 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50241 ;
-	SEP:hasKm  "0.00093"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:153
-	dc:identifier SEP:153 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50242 ;
-	SEP:hasKm  "0.0011"^^xsd:float ;
-	SEP:hasKmKcat "100"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:154
-	dc:identifier SEP:154 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50243 ;
-	SEP:hasKm  "0.0025"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:155
-	dc:identifier SEP:155 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50244 ;
-	SEP:hasKm  "0.0077"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:156
-	dc:identifier SEP:156 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50245 ;
-	SEP:hasKcat  "0.0037"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:157
-	dc:identifier SEP:157 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50246 ;
-	SEP:hasKcat  "0.11"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	dcterms:description "presence of cytochrome b5"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:158
-	dc:identifier SEP:158 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46309 ;
-	SEP:hasKm  "0.00045"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:159
-	dc:identifier SEP:159 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46310 ;
-	SEP:hasKm  "0.0011"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:160
-	dc:identifier SEP:160 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46311 ;
-	SEP:hasKm  "0.00196"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:161
-	dc:identifier SEP:161 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46312 ;
-	SEP:hasKm  "0.0023"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:162
-	dc:identifier SEP:162 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46313 ;
-	SEP:hasKm  "0.0043"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:163
-	dc:identifier SEP:163 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46314 ;
-	SEP:hasKm  "0.0053"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:164
-	dc:identifier SEP:164 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46315 ;
-	SEP:hasKm  "0.0063"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:165
-	dc:identifier SEP:165 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46316 ;
-	SEP:hasKm  "0.0097"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:166
-	dc:identifier SEP:166 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46317 ;
-	SEP:hasKm  "0.0105"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:167
-	dc:identifier SEP:167 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46318 ;
-	SEP:hasKmKcat "4.7"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:168
-	dc:identifier SEP:168 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46319 ;
-	SEP:hasKmKcat "5.8"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:169
-	dc:identifier SEP:169 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46320 ;
-	SEP:hasKmKcat "8.9"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:170
-	dc:identifier SEP:170 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46321 ;
-	SEP:hasKmKcat "40"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:171
-	dc:identifier SEP:171 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46322 ;
-	SEP:hasKcat  "0.0064"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:172
-	dc:identifier SEP:172 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46323 ;
-	SEP:hasKcat  "17"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:173
-	dc:identifier SEP:173 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46324 ;
-	SEP:hasKcat  "25"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:174
-	dc:identifier SEP:174 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46325 ;
-	SEP:hasKcat  "0.0483"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:175
-	dc:identifier SEP:175 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46326 ;
-	SEP:hasKcat  "86"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:176
-	dc:identifier SEP:176 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:46309 ;
-	SEP:hasKcat  "0.17"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:177
-	dc:identifier SEP:177 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:14754 ;
-	SEP:hasKm  "0.000525"^^xsd:float ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
 SEP:178
 	dc:identifier SEP:178 ;
 	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:14755 ;
-	SEP:hasKm  "0.0024"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24077 ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:179
 	dc:identifier SEP:179 ;
 	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:14756 ;
-	SEP:hasKm  "0.0025"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24078 ;
+	SEP:hasKm  "0.0028"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:180
 	dc:identifier SEP:180 ;
 	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50245 ;
-	SEP:hasKm  "0.0004"^^xsd:float ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24079 ;
+	SEP:hasKm  "0.05"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:181
 	dc:identifier SEP:181 ;
 	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50246 ;
-	SEP:hasKm  "0.00056"^^xsd:float ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24080 ;
+	SEP:hasKm  "0.0035"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:182
 	dc:identifier SEP:182 ;
 	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50247 ;
-	SEP:hasKm  "0.0008"^^xsd:float ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24081 ;
+	SEP:hasKm  "18"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:183
 	dc:identifier SEP:183 ;
 	rdf:type wp:InteractionData ;
-	rdfs:label "P450c17"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
-	wp:bdbEnsembl En_id:ENSG00000148795 ;
-	rh:accession RHEA:50248 ;
-	SEP:hasKcat  "0.00283"^^xsd:float ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24082 ;
+	SEP:hasKm  "0.0007"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
 SEP:184
 	dc:identifier SEP:184 ;
 	rdf:type wp:InteractionData ;
-	rdfs:label "P450c21"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
-	wp:bdbEnsembl En_id:ENSG00000231852 ;
-	SEP:hasKm  "0.00021"^^xsd:float ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24083 ;
+	SEP:hasKm  "0.0018"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
@@ -2152,6 +2188,521 @@ SEP:184
 SEP:185
 	dc:identifier SEP:185 ;
 	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24084 ;
+	SEP:hasKm  "0.0037"^^xsd:float ;
+	SEP:hasKmKcat "0.0073"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:186
+	dc:identifier SEP:186 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24085 ;
+	SEP:hasKm  "0.0037"^^xsd:float ;
+	SEP:hasKmKcat "14.83"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:187
+	dc:identifier SEP:187 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24086 ;
+	SEP:hasKm  "0.0061"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:188
+	dc:identifier SEP:188 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24087 ;
+	SEP:hasKm  "0.0156"^^xsd:float ;
+	SEP:hasKmKcat "15"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:189
+	dc:identifier SEP:189 ;
+	rdf:type wp:InteractionData ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
+	wp:bdbEnsembl En_id:ENSG00000203859 ;
+	wp:bdbdRhea RHEA:24088 ;
+	SEP:hasKm  "47"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:190
+	dc:identifier SEP:190 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Corticosterone Methyl Oxidase I"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.15.5 ;
+	wp:bdbEnsembl En_id:ENSG00000179142 ;
+	wp:bdbdRhea RHEA:11873 ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	dc:source "Unknown"^^xsd:string .
+
+SEP:191
+	dc:identifier SEP:191 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "Corticosterone Methyl Oxidase II"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.15.5 ;
+	wp:bdbEnsembl En_id:ENSG00000179142 ;
+	wp:bdbdRhea RHEA:11874 ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	dc:source "Unknown"^^xsd:string .
+
+SEP:192
+	dc:identifier SEP:192 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "POR"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.6.2.4 ;
+	wp:bdbUniprot uniprot:P16435 ;
+	dc:source "Unknown"^^xsd:string .
+
+SEP:193
+	dc:identifier SEP:193 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50237 ;
+	SEP:hasKm  "0.00025"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:194
+	dc:identifier SEP:194 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50238 ;
+	SEP:hasKm  "0.00038"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:195
+	dc:identifier SEP:195 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50239 ;
+	SEP:hasKm  "0.0005"^^xsd:float ;
+	SEP:hasKmKcat "7.4"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:196
+	dc:identifier SEP:196 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50240 ;
+	SEP:hasKm  "0.00055"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:197
+	dc:identifier SEP:197 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50241 ;
+	SEP:hasKm  "0.00093"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:198
+	dc:identifier SEP:198 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50242 ;
+	SEP:hasKm  "0.0011"^^xsd:float ;
+	SEP:hasKmKcat "100"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:199
+	dc:identifier SEP:199 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50243 ;
+	SEP:hasKm  "0.0025"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:200
+	dc:identifier SEP:200 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50244 ;
+	SEP:hasKm  "0.0077"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:201
+	dc:identifier SEP:201 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50245 ;
+	SEP:hasKcat  "0.0037"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:202
+	dc:identifier SEP:202 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50246 ;
+	SEP:hasKcat  "0.11"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	dcterms:description "presence of cytochrome b5"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:203
+	dc:identifier SEP:203 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46309 ;
+	SEP:hasKm  "0.00045"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:204
+	dc:identifier SEP:204 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46310 ;
+	SEP:hasKm  "0.0011"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:205
+	dc:identifier SEP:205 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46311 ;
+	SEP:hasKm  "0.00196"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:206
+	dc:identifier SEP:206 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46312 ;
+	SEP:hasKm  "0.0023"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:207
+	dc:identifier SEP:207 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46313 ;
+	SEP:hasKm  "0.0043"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:208
+	dc:identifier SEP:208 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46314 ;
+	SEP:hasKm  "0.0053"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:209
+	dc:identifier SEP:209 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46315 ;
+	SEP:hasKm  "0.0063"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:210
+	dc:identifier SEP:210 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46316 ;
+	SEP:hasKm  "0.0097"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:211
+	dc:identifier SEP:211 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46317 ;
+	SEP:hasKm  "0.0105"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:212
+	dc:identifier SEP:212 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46318 ;
+	SEP:hasKmKcat "4.7"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:213
+	dc:identifier SEP:213 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46319 ;
+	SEP:hasKmKcat "5.8"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:214
+	dc:identifier SEP:214 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46320 ;
+	SEP:hasKmKcat "8.9"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:215
+	dc:identifier SEP:215 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46321 ;
+	SEP:hasKmKcat "40"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:216
+	dc:identifier SEP:216 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46322 ;
+	SEP:hasKcat  "0.0064"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:217
+	dc:identifier SEP:217 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46323 ;
+	SEP:hasKcat  "17"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:218
+	dc:identifier SEP:218 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46324 ;
+	SEP:hasKcat  "25"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:219
+	dc:identifier SEP:219 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46325 ;
+	SEP:hasKcat  "0.0483"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:220
+	dc:identifier SEP:220 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46326 ;
+	SEP:hasKcat  "86"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:221
+	dc:identifier SEP:221 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:46309 ;
+	SEP:hasKcat  "0.17"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:222
+	dc:identifier SEP:222 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:14754 ;
+	SEP:hasKm  "0.000525"^^xsd:float ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:223
+	dc:identifier SEP:223 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:14755 ;
+	SEP:hasKm  "0.0024"^^xsd:float ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:224
+	dc:identifier SEP:224 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:14756 ;
+	SEP:hasKm  "0.0025"^^xsd:float ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:225
+	dc:identifier SEP:225 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50245 ;
+	SEP:hasKm  "0.0004"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:226
+	dc:identifier SEP:226 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50246 ;
+	SEP:hasKm  "0.00056"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:227
+	dc:identifier SEP:227 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50247 ;
+	SEP:hasKm  "0.0008"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:228
+	dc:identifier SEP:228 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c17"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
+	wp:bdbEnsembl En_id:ENSG00000148795 ;
+	wp:bdbdRhea RHEA:50248 ;
+	SEP:hasKcat  "0.00283"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:229
+	dc:identifier SEP:229 ;
+	rdf:type wp:InteractionData ;
+	rdfs:label "P450c21"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
+	wp:bdbEnsembl En_id:ENSG00000231852 ;
+	SEP:hasKm  "0.00021"^^xsd:float ;
+	SEP:hasPh " 7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SEP:230
+	dc:identifier SEP:230 ;
+	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
@@ -2159,8 +2710,8 @@ SEP:185
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:186
-	dc:identifier SEP:186 ;
+SEP:231
+	dc:identifier SEP:231 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
@@ -2170,8 +2721,8 @@ SEP:186
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:187
-	dc:identifier SEP:187 ;
+SEP:232
+	dc:identifier SEP:232 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
@@ -2180,8 +2731,8 @@ SEP:187
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:188
-	dc:identifier SEP:188 ;
+SEP:233
+	dc:identifier SEP:233 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
@@ -2192,8 +2743,8 @@ SEP:188
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:189
-	dc:identifier SEP:189 ;
+SEP:234
+	dc:identifier SEP:234 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
@@ -2203,8 +2754,8 @@ SEP:189
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:190
-	dc:identifier SEP:190 ;
+SEP:235
+	dc:identifier SEP:235 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
@@ -2214,8 +2765,8 @@ SEP:190
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:191
-	dc:identifier SEP:191 ;
+SEP:236
+	dc:identifier SEP:236 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
@@ -2224,8 +2775,8 @@ SEP:191
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:192
-	dc:identifier SEP:192 ;
+SEP:237
+	dc:identifier SEP:237 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
@@ -2235,8 +2786,8 @@ SEP:192
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:193
-	dc:identifier SEP:193 ;
+SEP:238
+	dc:identifier SEP:238 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
@@ -2247,8 +2798,8 @@ SEP:193
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:194
-	dc:identifier SEP:194 ;
+SEP:239
+	dc:identifier SEP:239 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
@@ -2258,13 +2809,13 @@ SEP:194
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:195
-	dc:identifier SEP:195 ;
+SEP:240
+	dc:identifier SEP:240 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c11"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.4 ;
 	wp:bdbEnsembl En_id:ENSG00000160882 ;
-	rh:accession RHEA:15630 ;
+	wp:bdbdRhea RHEA:15630 ;
 	SEP:hasKm  "0.18"^^xsd:float ;
 	SEP:hasKcat  "0.85"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
@@ -2272,13 +2823,13 @@ SEP:195
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:196
-	dc:identifier SEP:196 ;
+SEP:241
+	dc:identifier SEP:241 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450c11"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.4 ;
 	wp:bdbEnsembl En_id:ENSG00000160882 ;
-	rh:accession RHEA:15631 ;
+	wp:bdbdRhea RHEA:15631 ;
 	SEP:hasKm  "338"^^xsd:float ;
 	SEP:hasKcat  "167"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
@@ -2286,775 +2837,261 @@ SEP:196
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:197
-	dc:identifier SEP:197 ;
+SEP:242
+	dc:identifier SEP:242 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "H6PD"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.47 ;
 	wp:bdbEnsembl En_id:ENSG00000049239 ;
-	rh:accession RHEA:15842 ;
+	wp:bdbdRhea RHEA:15842 ;
 	SEP:hasKm  "0.0036"^^xsd:float ;
 	SEP:hasPh " 7.5"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:198
-	dc:identifier SEP:198 ;
+SEP:243
+	dc:identifier SEP:243 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "H6PD"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.47 ;
 	wp:bdbEnsembl En_id:ENSG00000049239 ;
-	rh:accession RHEA:15843 ;
+	wp:bdbdRhea RHEA:15843 ;
 	SEP:hasKm  "0.0046"^^xsd:float ;
 	SEP:hasPh " 10"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:199
-	dc:identifier SEP:199 ;
+SEP:244
+	dc:identifier SEP:244 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "H6PD"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.47 ;
 	wp:bdbEnsembl En_id:ENSG00000049239 ;
-	rh:accession RHEA:15844 ;
+	wp:bdbdRhea RHEA:15844 ;
 	SEP:hasKm  "62"^^xsd:float ;
 	SEP:hasPh " 9.5"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:200
-	dc:identifier SEP:200 ;
+SEP:245
+	dc:identifier SEP:245 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
-	rh:accession RHEA:11390 ;
+	wp:bdbdRhea RHEA:11390 ;
 	SEP:hasKm  "0.0003"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:201
-	dc:identifier SEP:201 ;
+SEP:246
+	dc:identifier SEP:246 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
-	rh:accession RHEA:11391 ;
+	wp:bdbdRhea RHEA:11391 ;
 	SEP:hasKm  "0.00034"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:202
-	dc:identifier SEP:202 ;
+SEP:247
+	dc:identifier SEP:247 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
-	rh:accession RHEA:11392 ;
+	wp:bdbdRhea RHEA:11392 ;
 	SEP:hasKm  "0.0006"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:203
-	dc:identifier SEP:203 ;
+SEP:248
+	dc:identifier SEP:248 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
-	rh:accession RHEA:11393 ;
+	wp:bdbdRhea RHEA:11393 ;
 	SEP:hasKm  "0.0008"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:204
-	dc:identifier SEP:204 ;
+SEP:249
+	dc:identifier SEP:249 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
-	rh:accession RHEA:11394 ;
+	wp:bdbdRhea RHEA:11394 ;
 	SEP:hasKm  "2"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:205
-	dc:identifier SEP:205 ;
+SEP:250
+	dc:identifier SEP:250 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
-	rh:accession RHEA:11395 ;
+	wp:bdbdRhea RHEA:11395 ;
 	SEP:hasKm  "0.0044"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:206
-	dc:identifier SEP:206 ;
+SEP:251
+	dc:identifier SEP:251 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
-	rh:accession RHEA:11396 ;
+	wp:bdbdRhea RHEA:11396 ;
 	SEP:hasKm  "9"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:207
-	dc:identifier SEP:207 ;
+SEP:252
+	dc:identifier SEP:252 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
-	rh:accession RHEA:11397 ;
+	wp:bdbdRhea RHEA:11397 ;
 	SEP:hasKm  "14"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:208
-	dc:identifier SEP:208 ;
+SEP:253
+	dc:identifier SEP:253 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
-	rh:accession RHEA:11398 ;
+	wp:bdbdRhea RHEA:11398 ;
 	SEP:hasKcat  "0.4"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:209
-	dc:identifier SEP:209 ;
+SEP:254
+	dc:identifier SEP:254 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.B40 ;
 	wp:bdbEnsembl En_id:ENSG00000176387 ;
-	rh:accession RHEA:53117 ;
+	wp:bdbdRhea RHEA:53117 ;
 	SEP:hasKm  "0.0002"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Felis catus"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:210
-	dc:identifier SEP:210 ;
+SEP:255
+	dc:identifier SEP:255 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.B40 ;
 	wp:bdbEnsembl En_id:ENSG00000176387 ;
-	rh:accession RHEA:53118 ;
+	wp:bdbdRhea RHEA:53118 ;
 	SEP:hasKm  "0.00038"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:211
-	dc:identifier SEP:211 ;
+SEP:256
+	dc:identifier SEP:256 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.B40 ;
 	wp:bdbEnsembl En_id:ENSG00000176387 ;
-	rh:accession RHEA:53119 ;
+	wp:bdbdRhea RHEA:53119 ;
 	SEP:hasKm  "0.00136"^^xsd:float ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:212
-	dc:identifier SEP:212 ;
+SEP:257
+	dc:identifier SEP:257 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.99.5 ;
 	wp:bdbEnsembl En_id:ENSG00000277893 ;
-	rh:accession RHEA:54385 ;
+	wp:bdbdRhea RHEA:54385 ;
 	SEP:hasPh " 7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:213
-	dc:identifier SEP:213 ;
+SEP:258
+	dc:identifier SEP:258 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.99.5 ;
 	wp:bdbEnsembl En_id:ENSG00000277893 ;
-	rh:accession RHEA:54386 ;
+	wp:bdbdRhea RHEA:54386 ;
 	SEP:hasKm  "0.0004"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:214
-	dc:identifier SEP:214 ;
+SEP:259
+	dc:identifier SEP:259 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.99.5 ;
 	wp:bdbEnsembl En_id:ENSG00000277893 ;
-	rh:accession RHEA:54387 ;
+	wp:bdbdRhea RHEA:54387 ;
 	SEP:hasKm  "0.01"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
 
-SEP:215
-	dc:identifier SEP:215 ;
+SEP:260
+	dc:identifier SEP:260 ;
 	rdf:type wp:InteractionData ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.51 ;
 	wp:bdbEnsembl En_id:ENSG00000130948 ;
-	rh:accession RHEA:14983 ;
+	wp:bdbdRhea RHEA:14983 ;
 	dc:source "Unknown"^^xsd:string .
 
-SEP:216
-	dc:identifier SEP:216 ;
+SEP:261
+	dc:identifier SEP:261 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "P450Aro"^^xsd:string ;
 	wp:bdbEnsembl En_id:ENSG00000137869 ;
 	dc:source "Unknown"^^xsd:string .
 
-SEP:217
-	dc:identifier SEP:217 ;
+SEP:262
+	dc:identifier SEP:262 ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Cytochrome b5"^^xsd:string ;
 	wp:bdbUniprot uniprot:J3KNC7 ;
 	dc:source "Unknown"^^xsd:string .
 
-SEP:218
-	dc:identifier SEP:218 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.39"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.1.B13 ;
-	wp:bdbUniprot uniprot:Q9H8P0 ;
-	rh:accession RHEA:34281 ;
-	SEP:hasPh " 8"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
+uniprotkb:P45381
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P45381.
 
-SEP:219
-	dc:identifier SEP:219 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.38"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
-	wp:bdbUniprot uniprot:Q9UPQ8 ;
-	rh:accession RHEA:13134 ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
+uniprotkb:Q92947
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q92947.
 
-SEP:220
-	dc:identifier SEP:220 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.38"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
-	rh:accession RHEA:13134 ;
-	SEP:hasKm  "23"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
+uniprotkb:Q9H9P8
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q9H9P8.
 
-SEP:221
-	dc:identifier SEP:221 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.38"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
-	rh:accession RHEA:13134 ;
-	SEP:hasKm  "75"^^xsd:float ;
-	SEP:hasPh " 7.4"^^xsd:float ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
+uniprotkb:Q8N465
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q8N465.
 
-SEP:222
-	dc:identifier SEP:222 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "DAPGT1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.7.8.15 ;
-	rh:accession RHEA:13290 ;
-	dc:source "Brenda"^^xsd:string .
+uniprotkb:P48735
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P48735.
 
-SEP:223
-	dc:identifier SEP:223 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ALG13"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.141 ;
-	rh:accession RHEA:23381 ;
-	SEP:hasPh " 7.5"^^xsd:float ;
-	wp:organismName "Gallus gallus"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
+uniprotkb:P49419
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P49419.
 
-SEP:224
-	dc:identifier SEP:224 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "ALG13"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.141 ;
-	SEP:hasPh " 7"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
+uniprotkb:Q8IWW8
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q8IWW8.
 
-SEP:225
-	dc:identifier SEP:225 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.9"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
-	wp:bdbUniprot uniprot:Q9BT22 ;
-	rh:accession RHEA:13866 ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
+uniprotkb:P40926
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P40926.
 
-SEP:226
-	dc:identifier SEP:226 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.9"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
-	rh:accession RHEA:13866 ;
-	SEP:hasPh " 7"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:227
-	dc:identifier SEP:227 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.7"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
-	wp:bdbUniprot uniprot:Q9H553 ;
-	rh:accession RHEA:29516 ;
-	SEP:hasPh " 6.8"^^xsd:float ;
-	dcterms:description "pH range was between 6,8 to 7,3"@en ;
-	wp:organismName "Oryctoloagus cuniculus"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:228
-	dc:identifier SEP:228 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.7"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
-	wp:bdbUniprot uniprot:Q9H553 ;
-	rh:accession RHEA:29516 ;
-	SEP:hasPh " 7.3"^^xsd:float ;
-	dcterms:description "pH range was between 6,8 to 7,3"@en ;
-	wp:organismName "Oryctoloagus cuniculus"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:229
-	dc:identifier SEP:229 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.11"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.131 ;
-	wp:bdbEnsembl En_id: ;
-	rh:accession RHEA:29523 ;
-	SEP:hasKm  "0,00064"^^xsd:float ;
-	SEP:hasPh " 7"^^xsd:float ;
-	dcterms:description ""@en ;
-	wp:organismName "Oryctoloagus cuniculus"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:230
-	dc:identifier SEP:230 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.11"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.131 ;
-	rh:accession RHEA:29523 ;
-	SEP:hasPh " 6.5"^^xsd:float ;
-	dcterms:description "pH range was between 6,5 to 7,6"@en ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:231
-	dc:identifier SEP:231 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "30.11"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.131 ;
-	rh:accession RHEA:29523 ;
-	SEP:hasPh " 7.6"^^xsd:float ;
-	dcterms:description "pH range was between 6,5 to 7,6"@en ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:232
-	dc:identifier SEP:232 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Aminocyclase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
-	wp:bdbUniprot uniprot:P45381 ;
-	rh:accession RHEA:14167 ;
-	SEP:hasKm  "163"^^xsd:float ;
-	SEP:hasKcat  "37,5"^^xsd:float ;
-	SEP:hasPh " 7,4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda: 668640"^^xsd:string .
-
-SEP:233
-	dc:identifier SEP:233 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Aminocyclase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
-	wp:bdbUniprot uniprot:P45381 ;
-	rh:accession RHEA:14167 ;
-	SEP:hasKm  "1.69"^^xsd:float ;
-	SEP:hasPh " 8"^^xsd:float ;
-	dcterms:description "ASPA isolated from cytosol"@en ;
-	wp:organismName "Mus musculus"^^xsd:string ;
-	dc:source "Brenda: 681524"^^xsd:string .
-
-SEP:234
-	dc:identifier SEP:234 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	rh:accession RHEA:47421 ;
-	SEP:hasKm  "3"^^xsd:float ;
-	SEP:hasPh " 7,5"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda:713046"^^xsd:string .
-
-SEP:235
-	dc:identifier SEP:235 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	rh:accession RHEA:47422 ;
-	SEP:hasKm  "0.0047"^^xsd:float ;
-	SEP:hasKcat  "5,6"^^xsd:float ;
-	SEP:hasPh " 6,5"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:236
-	dc:identifier SEP:236 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	rh:accession RHEA:47423 ;
-	SEP:hasKm  "0.0064"^^xsd:float ;
-	SEP:hasKcat  "6,7"^^xsd:float ;
-	SEP:hasPh " 7,6"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:237
-	dc:identifier SEP:237 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	rh:accession RHEA:47424 ;
-	SEP:hasKm  "0.0074"^^xsd:float ;
-	SEP:hasKcat  "4,8"^^xsd:float ;
-	SEP:hasPh " 7,6"^^xsd:float ;
-	dcterms:description "mutant A421T; electron acceptor is electron transfer flavoprotein "@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:238
-	dc:identifier SEP:238 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	rh:accession RHEA:47425 ;
-	SEP:hasKm  "0.0081"^^xsd:float ;
-	SEP:hasKcat  "9,4"^^xsd:float ;
-	SEP:hasPh " 7,6"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:239
-	dc:identifier SEP:239 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	rh:accession RHEA:47426 ;
-	SEP:hasKm  "0.0123"^^xsd:float ;
-	SEP:hasKcat  "4,6"^^xsd:float ;
-	SEP:hasPh " 7,6"^^xsd:float ;
-	dcterms:description "mutant A421V; electron acceptor is electron transfer flavoprotein "@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:240
-	dc:identifier SEP:240 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	rh:accession RHEA:47427 ;
-	SEP:hasKm  "0.0261"^^xsd:float ;
-	SEP:hasKcat  "4,9"^^xsd:float ;
-	SEP:hasPh " 7,6"^^xsd:float ;
-	dcterms:description "mutant A433V; electron acceptor is electron transfer flavoprotein "@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:241
-	dc:identifier SEP:241 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	rh:accession RHEA:47428 ;
-	SEP:hasKm  "4"^^xsd:float ;
-	SEP:hasPh " 7,5"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda:713046"^^xsd:string .
-
-SEP:242
-	dc:identifier SEP:242 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	rh:accession RHEA:47429 ;
-	SEP:hasKm  "0.0026"^^xsd:float ;
-	SEP:hasKcat  "9"^^xsd:float ;
-	SEP:hasKmKcat "3,5"^^xsd:float ;
-	SEP:hasPh " 7,6"^^xsd:float ;
-	dcterms:description "10 mM potassium phosphate"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Sabio: 2418"^^xsd:string .
-
-SEP:243
-	dc:identifier SEP:243 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
-	wp:bdbUniprot uniprot:Q9H9P8 ;
-	rh:accession RHEA:21253 ;
-	SEP:hasKm  "0.8"^^xsd:float ;
-	SEP:hasPh " 7"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda: 657168"^^xsd:string .
-
-SEP:244
-	dc:identifier SEP:244 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
-	wp:bdbUniprot uniprot:Q9H9P8 ;
-	rh:accession RHEA:21254 ;
-	SEP:hasKm  "1.7"^^xsd:float ;
-	SEP:hasPh " 7,2"^^xsd:float ;
-	wp:organismName "Alcaligenes sp. "^^xsd:string ;
-	dc:source "Brenda:389902"^^xsd:string .
-
-SEP:245
-	dc:identifier SEP:245 ;
-	rdf:type wp:InteractionData ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
-	wp:bdbUniprot uniprot:Q8N465 ;
-	rh:accession RHEA:21255 ;
-	SEP:hasKm  "584"^^xsd:float ;
-	SEP:hasKcat  "0,8"^^xsd:float ;
-	SEP:hasKmKcat "1,37"^^xsd:float ;
-	SEP:hasPh " 8,75"^^xsd:float ;
-	wp:organismName "Arabidopsis thaliana"^^xsd:string ;
-	dc:source "Brenda: 698932"^^xsd:string .
-
-SEP:246
-	dc:identifier SEP:246 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot uniprot:P48735 ;
-	wp:bdbEnsembl En_id:ENSG00000182054 ;
-	rh:accession RHEA:49614 ;
-	SEP:hasKm  "17"^^xsd:float ;
-	SEP:hasPh " 7"^^xsd:float ;
-	dcterms:description "mitochondrial isozyme; reverse reaction"@en ;
-	wp:organismName "Pisum sativum"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:247
-	dc:identifier SEP:247 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot uniprot:P48735 ;
-	wp:bdbEnsembl En_id:ENSG00000182054 ;
-	rh:accession RHEA:49615 ;
-	SEP:hasKm  "26"^^xsd:float ;
-	SEP:hasPh " 7"^^xsd:float ;
-	dcterms:description "mitochondrial isozyme; reverse reaction"@en ;
-	wp:organismName "Pisum sativum"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:248
-	dc:identifier SEP:248 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot uniprot:P48735 ;
-	wp:bdbEnsembl En_id:ENSG00000182054 ;
-	rh:accession RHEA:49616 ;
-	SEP:hasKm  "0.13"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:249
-	dc:identifier SEP:249 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot uniprot:P48735 ;
-	wp:bdbEnsembl En_id:ENSG00000182054 ;
-	rh:accession RHEA:49617 ;
-	SEP:hasKm  "0.2"^^xsd:float ;
-	dcterms:description "Isozyme IDP2"@en ;
-	wp:organismName "Saccharomyces cerevisiaese"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:250
-	dc:identifier SEP:250 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot uniprot:P48735 ;
-	wp:bdbEnsembl En_id:ENSG00000182054 ;
-	rh:accession RHEA:49618 ;
-	SEP:hasKm  "304"^^xsd:float ;
-	SEP:hasPh " 6,5"^^xsd:float ;
-	dcterms:description "reverse reaction"@en ;
-	wp:organismName "Chlorobium limicola"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:251
-	dc:identifier SEP:251 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot uniprot:P48735 ;
-	wp:bdbEnsembl En_id:ENSG00000182054 ;
-	rh:accession RHEA:49619 ;
-	SEP:hasKm  "398"^^xsd:float ;
-	SEP:hasPh " 6,5"^^xsd:float ;
-	dcterms:description "reverse reaction"@en ;
-	wp:organismName "Rhoopseudomonas palustris"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:252
-	dc:identifier SEP:252 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot uniprot:P48735 ;
-	wp:bdbEnsembl En_id:ENSG00000182054 ;
-	rh:accession RHEA:49620 ;
-	SEP:hasKm  "1.1"^^xsd:float ;
-	SEP:hasPh " 7"^^xsd:float ;
-	dcterms:description "Recombinant enzyme"@en ;
-	wp:organismName "Chlorobium limicola"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:253
-	dc:identifier SEP:253 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
-	wp:bdbUniprot uniprot:P48735 ;
-	wp:bdbEnsembl En_id:ENSG00000182054 ;
-	rh:accession RHEA:49621 ;
-	SEP:hasKm  "1.92"^^xsd:float ;
-	dcterms:description "Isozyme IDP2"@en ;
-	wp:organismName "Saccharomyces cerevisiae"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SEP:254
-	dc:identifier SEP:254 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Antiquitin"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.2.1.3 ;
-	wp:bdbUniprot uniprot:P49419 ;
-	wp:bdbEnsembl En_id:ENSG00000164904 ;
-	SEP:hasKm  "17"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda:689379"^^xsd:string .
-
-SEP:255
-	dc:identifier SEP:255 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
-	wp:bdbUniprot uniprot:Q8IWW8 ;
-	rh:accession RHEA:49614 ;
-	SEP:hasKm  "77"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda: 286147"^^xsd:string .
-
-SEP:256
-	dc:identifier SEP:256 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
-	wp:bdbUniprot uniprot:Q8IWW8 ;
-	rh:accession RHEA:49615 ;
-	SEP:hasKm  "18"^^xsd:float ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dc:source "Brenda: 697277"^^xsd:string .
-
-SEP:257
-	dc:identifier SEP:257 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
-	wp:bdbUniprot uniprot:Q8IWW8 ;
-	rh:accession RHEA:49616 ;
-	SEP:hasKm  "77"^^xsd:float ;
-	SEP:hasPh " 7,1"^^xsd:float ;
-	dcterms:description "Recombinant enzyme"@en ;
-	wp:organismName "Mus Musculus"^^xsd:string ;
-	dc:source "Brenda:664967"^^xsd:string .
-
-SEP:258
-	dc:identifier SEP:258 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
-	wp:bdbUniprot uniprot:Q8IWW8 ;
-	rh:accession RHEA:49617 ;
-	SEP:hasKm  "85"^^xsd:float ;
-	SEP:hasPh " 7,1"^^xsd:float ;
-	dcterms:description "0,007 mM"@en ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dc:source "Brenda: 664967"^^xsd:string .
-
-SEP:259
-	dc:identifier SEP:259 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.37 ;
-	wp:bdbUniprot uniprot:P40926 ;
-	rh:accession RHEA:21253 ;
-	SEP:hasPh " 7,4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Unknown"^^xsd:string .
-
-SEP:260
-	dc:identifier SEP:260 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
-	wp:bdbUniprot uniprot:P23368 ;
-	rh:accession RHEA:21254 ;
-	SEP:hasKm  "1.4"^^xsd:float ;
-	SEP:hasKcat  "26"^^xsd:float ;
-	SEP:hasPh " 7,4"^^xsd:float ;
-	dcterms:description "in vitro; wildtype; different concentration"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Sabio: 141"^^xsd:string .
-
-SEP:261
-	dc:identifier SEP:261 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
-	wp:bdbUniprot uniprot:P23368 ;
-	rh:accession RHEA:21255 ;
-	SEP:hasKm  "130"^^xsd:float ;
-	SEP:hasKcat  "26"^^xsd:float ;
-	SEP:hasPh " 7,4"^^xsd:float ;
-	dcterms:description "in vitro; wildtype; different concentration"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Sabio: 141"^^xsd:string .
-
-SEP:262
-	dc:identifier SEP:262 ;
-	rdf:type wp:InteractionData ;
-	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
-	wp:bdbUniprot uniprot:P23368 ;
-	rh:accession RHEA:21256 ;
-	SEP:hasKm  "6.4"^^xsd:float ;
-	SEP:hasKcat  "26"^^xsd:float ;
-	SEP:hasPh " 7,4"^^xsd:float ;
-	dcterms:description "in vitro; wildtype; different concentration"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Sabio: 141"^^xsd:string .
+uniprotkb:P23368
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:P23368.
 
 uniprotkb:P19440
 	a up:Protein ; 
@@ -3075,6 +3112,22 @@ uniprotkb:P48506
 uniprotkb:P48637
 	a up:Protein ; 
 	wp:bdbUniprot uniprot:P48637.
+
+uniprotkb:Q9H8P0
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q9H8P0.
+
+uniprotkb:Q9UPQ8
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q9UPQ8.
+
+uniprotkb:Q9BT22
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q9BT22.
+
+uniprotkb:Q9H553
+	a up:Protein ; 
+	wp:bdbUniprot uniprot:Q9H553.
 
 uniprotkb:P06863
 	a up:Protein ; 
@@ -3119,56 +3172,4 @@ uniprotkb:P16435
 uniprotkb:J3KNC7
 	a up:Protein ; 
 	wp:bdbUniprot uniprot:J3KNC7.
-
-uniprotkb:Q9H8P0
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:Q9H8P0.
-
-uniprotkb:Q9UPQ8
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:Q9UPQ8.
-
-uniprotkb:Q9BT22
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:Q9BT22.
-
-uniprotkb:Q9H553
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:Q9H553.
-
-uniprotkb:P45381
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:P45381.
-
-uniprotkb:Q92947
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:Q92947.
-
-uniprotkb:Q9H9P8
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:Q9H9P8.
-
-uniprotkb:Q8N465
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:Q8N465.
-
-uniprotkb:P48735
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:P48735.
-
-uniprotkb:P49419
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:P49419.
-
-uniprotkb:Q8IWW8
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:Q8IWW8.
-
-uniprotkb:P40926
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:P40926.
-
-uniprotkb:P23368
-	a up:Protein ; 
-	wp:bdbUniprot uniprot:P23368.
 
