@@ -13,7 +13,7 @@ GGCT	Gamma-glutamylcycletransferase	 2.3.2.4	O75223	-	RHEA:20506	15857	-	-	-	-	-
 5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.57	-	-	-	-	final Km in presence of GTP	Rattus norvegicus	6121802	BRENDA
 5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.58	-	-	-	-	final Km in presence of ITP	Rattus norvegicus	6121802	BRENDA
 5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.0316	-	-	-	-	-	Rattus norvegicus	1181279	BRENDA
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.05	-	-	-	-	-	Rattus norvegicus	1181279/ 4823446/ 10078874	BRENDA
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.05	-	-	-	-	-	Rattus norvegicus	1181279;4823446;10078874	BRENDA
 GCLC	Glutamate-cysteine ligase	 6.3.2.2	P48506	-	RHEA:13286	14321	0.75	-	-	-	-	enzyme from embryo homogenate	Rattus norvegicus	15115889	BRENDA
 GCLC	Glutamate-cysteine ligase	 6.3.2.2	P48506	-	RHEA:13286	14321	1.38	-	-	-	-	enzyme from visceral yolk sac homogenate	Rattus norvegicus	15115889	BRENDA
 GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515	0.2	-	-	-	-	-	Homo sapiens	-	BRENDA
