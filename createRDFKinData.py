@@ -44,6 +44,7 @@ ListAdditionalConditions = []
 ListOrganism = []
 ListPMID = []
 ListDatabase = []
+ListQC = []
 
 ##Read in files with kinetics data.
 count = 0
@@ -63,10 +64,14 @@ for (dirname, dirs, files) in os.walk('.'):
 ##ERPX_number			
 for itemSEPX in ListTotal:
 	a = itemSEPX.split('\t')
-	ListSEP_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + a[0].strip( ))
-	for items in ListSEP_ID: 
-		if '-' in items:
-			ListSEP_ID.remove(items)
+	pattern = '[a-zA-Z]+:[0-9]'
+	result = re.match(pattern, a[0])
+	if '-' in a[0]:
+	  continue
+	elif result:
+	  ListSEP_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + a[0].strip( ))
+	else:
+		ListQC.append("Data format for dc:identifier unknown, check original data for: "+ a[0])
 			
 ##Define type, extension of WP vocabulary:		
 for itemSEPX in ListTotal:
@@ -410,6 +415,20 @@ for KeySEPX, ValueSEPX in AllDict.items():
 
 #Close this file as well
 RDF_Kin_data.close()
+
+# # Empty the QC file before writing new content:
+open('QC_RDF_Kin_Data_2022-Dec.ttl', 'w').close()
+
+# # open a file for writing:
+RDF_Kin_data_QC = open('QC_RDF_Kin_Data_2022-Dec.ttl', 'wb')
+
+##Write QC info to file:
+if len(ListQC) >0:
+  for item in ListQC:
+    RDF_Kin_data_QC.write(item.encode())
+
+#Close this file as well
+RDF_Kin_data_QC.close()
 
 # # Go back to parent folder before finishing the script:
 dir_code = os.getcwd()
