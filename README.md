@@ -24,7 +24,7 @@ python3 --version
 Run the RDF locally (with Virtuoso Docker, on Linux):
 Documentation curtosy of Marvin Martens [https://github.com/marvinm2/AOPWikiRDF]
 
-## Set up a Virtuoso SPARQL endpoint with AOP-Wiki RDF (on linux):
+## Set up a local Virtuoso SPARQL endpoint for the Kinetics RDF data (on Linux):
 
 ### Step 1 - Create folder to mount
 Open the terminal and create a local folder to map to the docker container. Note the path to the folder to enter it at step 3. In this example, the folder '/kinRdf' was created and entered it by using:
