@@ -67,10 +67,11 @@ for itemSERX in ListTotal:
 	a = itemSERX.split('\t')
 	pattern = '[a-zA-Z]+:[0-9]'
 	result = re.match(pattern, a[0])
-	if '-' in a[0]:
+	if ('-' in a[0])|('-' in a[4])|('-' in a[6])|('-' in a[7]): #Check if one of the necessary values is missing!!
 	  continue
-	elif result: ##Create a unique IRI based on Substrate [7], Enzyme [4], and Reaction [6] ID. Note: if one of the three is missing, report in QC.
-	  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( ))
+	elif result: ##check against REGEX
+	  ##Create a unique IRI based on Substrate [7], Enzyme [4], and Reaction [6] ID. Note: if one of the three is missing, report in QC.
+	  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( )) ##Trim RHEA/CHEBI in fromt of IDs if available.
 	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO:000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
 	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  'measurements_' + a[0].strip( )) #Add the 'has attribute' relationship, so we can link the values to that later.
 	else:
@@ -81,7 +82,7 @@ for itemSERX in ListTotal:
 	a = itemSERX.split('\t')
 	pattern = '[a-zA-Z]+:[0-9]'
 	result = re.match(pattern, a[0])
-	if '-' in a[0]:
+	if ('-' in a[0])|('-' in a[4])|('-' in a[6])|('-' in a[7]):
 	  continue
 	elif result:
 	  ListSER_ID.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
@@ -95,10 +96,13 @@ for itemSERX in ListTotal:
 ##EnzymePW --> Add to enzyme_SER:X
 for itemEnzymePW in ListTotal:
 	b = itemEnzymePW.split('\t')
-	ListEnzymePW.append(b[0].strip( ) + '\t' + 'rdfs:label' + ' "' + b[1].strip( ) + '"^^xsd:string')
-	for items in ListEnzymePW: 
-		if '-' in items:
-			ListEnzymePW.remove(items)				
+	if ('-' in b[0])|('-' in b[4])|('-' in b[6])|('-' in b[7]): #Check if one of the necessary values is missing!!
+	  continue
+	else:
+	  ListEnzymePW.append(b[0].strip( ) + '\t' + 'rdfs:label' + ' "' + b[1].strip( ) + '"^^xsd:string')
+#	for items in ListEnzymePW: 
+#		if '-' in items:
+#			ListEnzymePW.remove(items)				
 			
 ###Ignore for now...
 # ##[2]=ApprovedEnzymeName
@@ -112,34 +116,37 @@ for itemEnzymePW in ListTotal:
 ##EC_Number --> Add to enzyme_SER:X
 for itemEC_Number in ListTotal:
 	d = itemEC_Number.split('\t')
-	ListEC_Number.append(d[0].strip( ) + '\t' + 'wp:bdbEnzymeNomenclature' + ' ECcode:' + d[3].strip( ))
+	if ('-' in d[0])|('-' in d[4])|('-' in d[6])|('-' in d[7]): #Check if one of the necessary values is missing!!
+	  continue
+	else:
+	  ListEC_Number.append(d[0].strip( ) + '\t' + 'wp:bdbEnzymeNomenclature' + ' ECcode:' + d[3].strip( ))
 	for items in ListEC_Number: 
 		if '-' in items:
 			ListEC_Number.remove(items)				
+	
+#	ListSubstrate.append(h[0].strip( ) + '_substrate' +'\t' + 'rdf:type' + ' ' + "wp:Metabolite")
+#	ListSubstrateIDs.append(h[0].strip( ) + '_substrate' + "\t" + "wp:bdbChEBI " + 'CHEBI:' + h[7].strip( )+ '.')	
 	
 ##Uniprot IRIs for WPRDF link && Uniprot interoperability IRIs --> Add to SER:X_enzyme
 ##Since this list will only include two statements, we can already add the ';' and '.' after the entries.
 for itemUniprot in ListTotal:
 	e = itemUniprot.split('\t')
-	##Wp IRIs:
-	ListUniprot.append(e[0].strip( ) + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( ))
-	for items in ListUniprot: 
-		if '-' in items:
-			ListUniprot.remove(items)			
-	##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
-	ListLinkUniprot.append('uniprotkb:' + e[4].strip( ) + '\t' + 'a' + ' up:Protein ; ')
-	ListLinkUniprot.append('uniprotkb:' + e[4].strip( ) + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip() + '.' )	
-	for items in ListLinkUniprot: 
-		if '-' in items:
-			ListLinkUniprot.remove(items)		
-			
+	if ('-' in e[0])|('-' in e[4])|('-' in e[6])|('-' in e[7]): #Check if one of the necessary values is missing!!
+	  continue
+	else:
+	  ListUniprot.append(e[0].strip( ) + '_enzyme' + '\t'  + 'rdf:type' + ' ' + "wp:Protein")
+	  ##Wp IRIs: to be updated
+	  ListUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( ))
+	  ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
+	  ListLinkUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'uniprotkb' + ' ' + e[4].strip() + '.' )	
+
 ##Ensembl --> Add to enzyme_SER:X
 for itemEnsembl in ListTotal:
 	f = itemEnsembl.split('\t')
-	ListEnsembl.append(f[0].strip( ) + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
-	for items in ListEnsembl: 
-		if '-' in items:
-			ListEnsembl.remove(items)			
+	if ('-' in f[0])|('-' in f[4])|('-' in f[6])|('-' in f[7]): #Check if one of the necessary values is missing!!
+	  continue
+	else:
+	  ListEnsembl.append(f[0].strip( ) + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
 
 ##Update interoperability with Rhea RDF:
 #  ?rhea rdfs:subClassOf rh:Reaction .
@@ -178,11 +185,11 @@ for itemRheaID in ListTotal:
 ##CHEBIID for substrate ##--> Add to SER:X_substrate
 for itemSubstrate in ListTotal:
 	h = itemSubstrate.split('\t')
-	ListSubstrate.append(h[0].strip( ) + '_substrate' +'\t' + 'rdf:type' + ' ' + "wp:Metabolite")
-	ListSubstrateIDs.append(h[0].strip( ) + '_substrate' + "\t" + "wp:bdbChEBI " + 'CHEBI:' + h[7].strip( )+ '.')
-	for items in ListSubstrate: 
-		if '-' in items:
-			ListSubstrate.remove(items)	
+	if ('-' in h[0])|('-' in h[4])|('-' in h[6])|('-' in h[7]): #Check if one of the necessary values is missing!!
+	  continue
+	else:
+	  ListSubstrate.append(h[0].strip( ) + '_substrate' +'\t' + 'rdf:type' + ' ' + "wp:Metabolite")
+	  ListSubstrateIDs.append(h[0].strip( ) + '_substrate' + "\t" + "wp:bdbChEBI " + 'CHEBI:' + h[7].strip( )+ '.')
 
 #Km##--> Add to measurement
 for itemKm in ListTotal:
