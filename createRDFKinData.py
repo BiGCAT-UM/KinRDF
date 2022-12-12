@@ -25,7 +25,7 @@ import re
 
 ##Lists to store data in
 ListTotal = []
-ListSEP_ID = []
+ListSER_ID = []
 ListEnzymePW = []
 ListApprovedEnzymeName = []
 ListEC_Number = []
@@ -35,6 +35,7 @@ ListEnsembl = []
 ListRheaID = []
 ListLinkRheaID = [] 
 ListSubstrate = []
+ListSubstrateIDs = []
 ListKm = []
 ListKcat = []
 ListKcatKm = []
@@ -48,7 +49,7 @@ ListQC = []
 
 ##Read in files with kinetics data.
 count = 0
-countSEP = 1
+countSER = 1
 for (dirname, dirs, files) in os.walk('.'):
 	for filename in files:
 		if filename.endswith('.txt') :
@@ -57,39 +58,41 @@ for (dirname, dirs, files) in os.walk('.'):
 			f = open(filename, "r")
 			next(f)
 			for line in f:
-				SEP_Name = "SEP:" + str(countSEP)
-				ListTotal.append(SEP_Name + '\t' + line.strip('\n'))
-				countSEP += 1
+				SER_Name = "SER:" + str(countSER)
+				ListTotal.append(SER_Name + '\t' + line.strip('\n'))
+				countSER += 1
 
-##ERPX_number			
-for itemSEPX in ListTotal:
-	a = itemSEPX.split('\t')
+##SER_number			
+for itemSERX in ListTotal:
+	a = itemSERX.split('\t')
 	pattern = '[a-zA-Z]+:[0-9]'
 	result = re.match(pattern, a[0])
 	if '-' in a[0]:
 	  continue
-	elif result:
-	  ListSEP_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + a[0].strip( ))
+	elif result: ##Create a unique IRI based on Substrate [7], Enzyme [4], and Reaction [6] ID. Note: if one of the three is missing, report in QC.
+	  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( ))
+	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO:000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
+	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  'measurements_' + a[0].strip( )) #Add the 'has attribute' relationship, so we can link the values to that later.
 	else:
 		ListQC.append("Data format for dc:identifier unknown, check original data for: "+ a[0])
 			
 ##Define type, extension of WP vocabulary:		
-for itemSEPX in ListTotal:
-	a = itemSEPX.split('\t')
+for itemSERX in ListTotal:
+	a = itemSERX.split('\t')
 	pattern = '[a-zA-Z]+:[0-9]'
 	result = re.match(pattern, a[0])
 	if '-' in a[0]:
 	  continue
 	elif result:
-	  ListSEP_ID.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
+	  ListSER_ID.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
 	else:
 		print("Data format for rdf:type IDs unknown, check original data!")
 
-#LengthList = len(ListSEP_ID)
+#LengthList = len(ListSER_ID)
 		
 # #Read in tsv file: [0]=ERPX_number [1]=EnzymePW, [2]=ApprovedEnzymeName, [3]=EC_Number, [4]=Uniprot , [5]=Ensembl, [6]=RheaID, [7]=CHEBIID, [8]=Km, [9]=Kcat, [10]=Kcat/Km, [11]=pH, [12]=Temperature, [13]=AdditionalConditions, [14]=Organism, [15]=PMID, [16]=Database				
 
-##EnzymePW
+##EnzymePW --> Add to enzyme_SER:X
 for itemEnzymePW in ListTotal:
 	b = itemEnzymePW.split('\t')
 	ListEnzymePW.append(b[0].strip( ) + '\t' + 'rdfs:label' + ' "' + b[1].strip( ) + '"^^xsd:string')
@@ -106,7 +109,7 @@ for itemEnzymePW in ListTotal:
 		# if '-' in items:
 			# ListApprovedEnzymeName.remove(items)
 			
-##EC_Number
+##EC_Number --> Add to enzyme_SER:X
 for itemEC_Number in ListTotal:
 	d = itemEC_Number.split('\t')
 	ListEC_Number.append(d[0].strip( ) + '\t' + 'wp:bdbEnzymeNomenclature' + ' ECcode:' + d[3].strip( ))
@@ -114,7 +117,7 @@ for itemEC_Number in ListTotal:
 		if '-' in items:
 			ListEC_Number.remove(items)				
 	
-##Uniprot IRIs for WPRDF link && Uniprot interoperability IRIs
+##Uniprot IRIs for WPRDF link && Uniprot interoperability IRIs --> Add to SER:X_enzyme
 ##Since this list will only include two statements, we can already add the ';' and '.' after the entries.
 for itemUniprot in ListTotal:
 	e = itemUniprot.split('\t')
@@ -130,7 +133,7 @@ for itemUniprot in ListTotal:
 		if '-' in items:
 			ListLinkUniprot.remove(items)		
 			
-##Ensembl
+##Ensembl --> Add to enzyme_SER:X
 for itemEnsembl in ListTotal:
 	f = itemEnsembl.split('\t')
 	ListEnsembl.append(f[0].strip( ) + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
@@ -150,6 +153,7 @@ for itemEnsembl in ListTotal:
 # equation: "H2O + pentanamide = NH4(+) + pentanoate"xsd:string
 
 ##RheaID ##Check if rh:accession shouldn't be wp:bdbdRhea (since accession is used to levarage between reactionscheme and RheaID by RHEA RDF).
+##--> Add to SER:X_reaction
 for itemRheaID in ListTotal:
 	g = itemRheaID.split('\t')
 	if g[6].isnumeric(): #without prefix
@@ -171,57 +175,58 @@ for itemRheaID in ListTotal:
 			ListLinkRheaID.remove(items)	
 			
 			
-##CHEBIID for substrate
+##CHEBIID for substrate ##--> Add to SER:X_substrate
 for itemSubstrate in ListTotal:
 	h = itemSubstrate.split('\t')
-	ListSubstrate.append('CHEBI:' + h[7].strip( ) + ' ' + 'dcterms:isPartOf' + '\t' + h[0].strip( ))
+	ListSubstrate.append(h[0].strip( ) + '_substrate' +'\t' + 'rdf:type' + ' ' + "wp:Metabolite")
+	ListSubstrateIDs.append(h[0].strip( ) + '_substrate' + "\t" + "wp:bdbChEBI " + 'CHEBI:' + h[7].strip( )+ '.')
 	for items in ListSubstrate: 
 		if '-' in items:
 			ListSubstrate.remove(items)	
 
-#Km
+#Km##--> Add to measurement
 for itemKm in ListTotal:
   i = itemKm.split('\t')
-  ListKm.append(i[0].strip() + '\t' + 'SEP:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q61751178'
+  ListKm.append(i[0].strip() + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q61751178'
   for items in ListKm: 
     if '-' in items:
       ListKm.remove(items)	
 			
-#Kcat
+#Kcat ##--> Add to measurement
 for itemKcat in ListTotal:
   i = itemKcat.split('\t')
   #ListKcat.append(i[0].strip( ) + '\t' + 'wd:Q883112' + ' ' + i[9].strip( )) #Old line.
-  ListKcat.append(i[0].strip() + '\t' + 'SEP:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
+  ListKcat.append(i[0].strip() + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
   for items in ListKcat: 
     if '-' in items:
       ListKcat.remove(items)	
 
-#KcatKm
+#KcatKm##--> Add to measurement
 for itemKcatKm in ListTotal:
   i = itemKcatKm.split('\t')
   #ListKcatKm.append(i[0].strip( ) + '\t' + 'wd:Q7575016' + ' ' + i[10].strip( )) #Old line
-  ListKcatKm.append(i[0].strip() + '\t' + 'SEP:hasKmKcat' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
+  ListKcatKm.append(i[0].strip() + '\t' + 'SER:hasKmKcat' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
   for items in ListKcatKm: 
     if '-' in items:
       ListKcatKm.remove(items)				
 			
-#pH
+#pH##--> Add to measurement
 for item_pH in ListTotal:
   i = item_pH.split('\t')
-  List_pH.append(i[0].strip( ) + '\t' + 'SEP:hasPh "'+ ' ' + i[11].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q40936
+  List_pH.append(i[0].strip( ) + '\t' + 'SER:hasPh'+ ' "' + i[11].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q40936
   for items in List_pH:
     if '-' in items:
       List_pH.remove(items)			
 			
-#Temperature
+#Temperature##--> Add to measurement
 for itemTemperature in ListTotal:
   i = itemTemperature.split('\t')
-  ListTemperature.append(i[0].strip( ) + '\t' + 'wdt:P2076' + ' ' + i[12].strip( ) + '^^xsd:float') #Line from after 2020-01-17
+  ListTemperature.append(i[0].strip( ) + '\t' + 'wdt:P2076 ' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
   for items in ListTemperature:
     if '-' in items in items:
       ListTemperature.remove(items)	
 
-#AdditionalConditions
+#AdditionalConditions##--> Add to measurement
 for itemAdditionalConditions in ListTotal:
 	i = itemAdditionalConditions.split('\t')
 	ListAdditionalConditions.append(i[0].strip( ) + '\t' + 'dcterms:description' + ' "' + i[13].strip('"') + '"@en')
@@ -229,7 +234,7 @@ for itemAdditionalConditions in ListTotal:
 		if '-' in items:
 			ListAdditionalConditions.remove(items)			
 
-#[14]=Organism			
+#[14]=Organism			##--> Add to measurement
 for itemOrganism in ListTotal:
 	j = itemOrganism.split('\t')
 	ListOrganism.append(j[0].strip( ) + '\t' + 'wp:organismName' + ' "' + j[14].strip('"') + '"^^xsd:string')
@@ -237,7 +242,7 @@ for itemOrganism in ListTotal:
 		if '-' in items:
 			ListOrganism.remove(items)	
 
-#[15]=PMID	--> Not read in correctly, check!!		
+#[15]=PMID	##--> Add to measurement	
 for itemPMID in ListTotal:
 	k = itemPMID.split('\t')
 	if k[15].isnumeric():
@@ -254,7 +259,7 @@ for itemPMID in ListTotal:
 		if '-' in items in items:
 			ListPMID.remove(items)	
 			
-#[16]=Database				
+#[16]=Database ##--> Add to measurement				
 for itemDatabase in ListTotal:
 	l = itemDatabase.split('\t')
 	ListDatabase.append(l[0].strip( ) + '\t' + 'dc:source' + ' "' + l[16].strip( ) + '"^^xsd:string')
@@ -266,9 +271,9 @@ for itemDatabase in ListTotal:
 AllDict = {}			
 
 ##Connect all List data in a Dictionary
-##All items are separated with ; (since each line has his own SEP_ID.
-for itemListSEP in ListSEP_ID:
-	(key, val) = itemListSEP.strip('\n').split('\t')
+##All items are separated with ; (since each line has his own SER_ID.
+for itemListSER in ListSER_ID:
+	(key, val) = itemListSER.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')
 	
@@ -297,10 +302,10 @@ for itemListRheaID in ListRheaID:
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
 
-# for itemListSubstrate in ListSubstrate:
-	# (key, val) = itemListSubstrate.strip('\n').split('\t')
-	# AllDict.setdefault(key, [])
-	# AllDict[key].append(val + ' ;')	
+for itemListSubstrate in ListSubstrate:
+	(key, val) = itemListSubstrate.strip('\n').split('\t')
+	AllDict.setdefault(key, [])
+	AllDict[key].append(val + ' ;')	
 
 for itemListKm in ListKm:
 	(key, val) = itemListKm.strip('\n').split('\t')
@@ -351,6 +356,7 @@ for itemListDatabase in ListDatabase:
 ##Remove duplicates in ListLinkUniProt and ListLinkRheaID
 unique_ListLinkUniprot = list(dict.fromkeys(ListLinkUniprot))
 unique_ListLinkRheaID= list(dict.fromkeys(ListLinkRheaID))
+unique_ListSubstrateIDs= list(dict.fromkeys(ListSubstrateIDs))
   
 ## Add UniProt proteins for interoperability:  
 for itemListLinkedUniprot in unique_ListLinkUniprot:
@@ -361,6 +367,12 @@ for itemListLinkedUniprot in unique_ListLinkUniprot:
 ## Add Rhea interaction IDs for interoperability:  
 for itemListLinkRheaID in unique_ListLinkRheaID:
 	(key, val) = itemListLinkRheaID.strip('\n').split('\t')
+	AllDict.setdefault(key, [])
+	AllDict[key].append(val)	
+  
+##Add ChEBI IDs for substrates ListSubstrateIDs  
+for itemListSubstrateIDs in unique_ListSubstrateIDs:
+	(key, val) = itemListSubstrateIDs.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val)	
   
@@ -382,7 +394,7 @@ RDF_Kin_data = open('RDF_Kin_Data_2022-Dec.ttl', 'wb')
 
 # #First, print the prefixes from existing databases
 ##.encode() needed to write to files in Python 3.x (compared to 2.x)
-RDF_Kin_data.write("@prefix SEP: <http://vocabularies.wikipathways.org/kin#> . \n".encode())  #Need to make URL for this prefix!
+RDF_Kin_data.write("@prefix SER: <http://vocabularies.wikipathways.org/kin#> . \n".encode())  #Need to make URL for this prefix!
 RDF_Kin_data.write("@prefix dc: <http://purl.org/dc/elements/1.1/> . \n".encode()) 
 RDF_Kin_data.write("@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . \n".encode()) 
 RDF_Kin_data.write("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . \n".encode()) 
@@ -400,14 +412,15 @@ RDF_Kin_data.write("@prefix En_id:   <http://identifiers.org/ensembl/> . \n".enc
 RDF_Kin_data.write("@prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . \n".encode()) #For WPRDF interoperability
 RDF_Kin_data.write("@prefix wd: <http://www.wikidata.org/entity/> . \n".encode()) #From WikiData
 RDF_Kin_data.write("@prefix wdt: <http://www.wikidata.org/prop/direct/> . \n\n".encode()) #From WikiData
+RDF_Kin_data.write("@prefix sio: <http://semanticscience.org/resource/> . \n\n".encode()) #Semanticscience Integrated Ontology
 
 # #Second, print the NEW prefixes (if needed)
 
 #Third, print the dictionaries.
 ##ERPX_number			
-for KeySEPX, ValueSEPX in AllDict.items():
-	RDF_Kin_data.write(KeySEPX.encode('utf-8') + "\n".encode())
-	for item in ValueSEPX:
+for KeySERX, ValueSERX in AllDict.items():
+	RDF_Kin_data.write(KeySERX.encode('utf-8') + "\n".encode())
+	for item in ValueSERX:
 		RDF_Kin_data.write("\t".encode() + item.encode('utf-8') + "\n".encode())
 	RDF_Kin_data.write("\n".encode())	
 # for i in range(LengthList):
