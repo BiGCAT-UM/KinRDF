@@ -62,20 +62,31 @@ for (dirname, dirs, files) in os.walk('.'):
 				ListTotal.append(SER_Name + '\t' + line.strip('\n'))
 				countSER += 1
 
-##SER_number			
+##SER_number
+countSER = 0
 for itemSERX in ListTotal:
 	a = itemSERX.split('\t')
 	pattern = '[a-zA-Z]+:[0-9]'
 	result = re.match(pattern, a[0])
+	pattern_chebi = '^(CHEBI:)?\\d+$'
+	result_chebi =  re.match(pattern_chebi, a[7])
+	pattern_uniprot = '^([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?|([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])$'
+	result_uniprot = re.match(pattern_uniprot, a[4])
+	pattern_rhea = '^(RHEA:)?\\d{5}$'
+	result_rhea = re.match(pattern_rhea, a[6])
 	if ('-' in a[0])|('-' in a[4])|('-' in a[6])|('-' in a[7]): #Check if one of the necessary values is missing!!
 	  continue
-	elif result: ##check against REGEX
-	  ##Create a unique IRI based on Substrate [7], Enzyme [4], and Reaction [6] ID. Note: if one of the three is missing, report in QC.
-	  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( )) ##Trim RHEA/CHEBI in fromt of IDs if available.
-	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO:000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
-	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  'measurements_' + a[0].strip( )) #Add the 'has attribute' relationship, so we can link the values to that later.
+	elif result: ##Create a unique IRI based on Substrate [7], Enzyme [4], and Reaction [6] ID. Note: if one of the three is missing, report in QC.
+	  if (result_chebi is not None) & (result_uniprot is not None) & (result_rhea is not None): ##check against REGEX
+	    #print(result_chebi + ' ' + result_uniprot + ' ' + result_rhea)
+	    ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( )) ##Trim RHEA/CHEBI in fromt of IDs if available.
+	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO:000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
+	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
+	    countSER = countSER +1
 	else:
-		ListQC.append("Data format for dc:identifier unknown, check original data for: "+ a[0])
+		ListQC.append("Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
+
+ListQC.append("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs. \n")  
 			
 ##Define type, extension of WP vocabulary:		
 for itemSERX in ListTotal:
@@ -138,16 +149,26 @@ for itemUniprot in ListTotal:
 	  ##Wp IRIs: to be updated
 	  ListUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( ))
 	  ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
-	  ListLinkUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'uniprotkb' + ' ' + e[4].strip() + '.' )	
+	  ListLinkUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )	
 
 ##Ensembl --> Add to enzyme_SER:X
+countGenes = 0
 for itemEnsembl in ListTotal:
-	f = itemEnsembl.split('\t')
-	if ('-' in f[0])|('-' in f[4])|('-' in f[6])|('-' in f[7]): #Check if one of the necessary values is missing!!
-	  continue
-	else:
-	  ListEnsembl.append(f[0].strip( ) + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
+  f = itemEnsembl.split('\t')
+  pattern = '^ENS[A-Z]*[FPTG]\\d{11}$' #Pattern is: ^ENS[A-Z]*[FPTG]\d{11}$' ; need to escape backslash! 
+  result = re.match(pattern, f[5].strip( ) )
+  if ('-' in f[0])|('-' in f[4])|('-' in f[6])|('-' in f[7])|('-' in f[5]): #Check if one of the necessary values is missing!!
+    continue
+  elif result: ##check against REGEX
+    ListUniprot.append(f[0].strip( ) + '_enzyme' + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
+    countGenes = countGenes + 1
+  else:
+    ListQC.append("Data format for 'wp:bdbEnsembl unknown, check original data for: "+ f[0] + ' : ' + f[5]+ '\n')
+    print(f[0])
 
+ListQC.append("Data format for 'wp:bdbEnsembl correctly loaded for " + str(countGenes) + " gene IDs. \n")  
+  
+    
 ##Update interoperability with Rhea RDF:
 #  ?rhea rdfs:subClassOf rh:Reaction .
 #  ?rhea rh:id ?id .
@@ -189,7 +210,7 @@ for itemSubstrate in ListTotal:
 	  continue
 	else:
 	  ListSubstrate.append(h[0].strip( ) + '_substrate' +'\t' + 'rdf:type' + ' ' + "wp:Metabolite")
-	  ListSubstrateIDs.append(h[0].strip( ) + '_substrate' + "\t" + "wp:bdbChEBI " + 'CHEBI:' + h[7].strip( )+ '.')
+	  ListSubstrateIDs.append(h[0].strip( ) + '_substrate' + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
 
 #Km##--> Add to measurement
 for itemKm in ListTotal:
@@ -299,10 +320,10 @@ for itemListUniprot in ListUniprot:
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
 
-for itemListEnsembl in ListEnsembl:
-	(key, val) = itemListEnsembl.strip('\n').split('\t')
-	AllDict.setdefault(key, [])
-	AllDict[key].append(val + ' ;')	
+#for itemListEnsembl in ListEnsembl:
+#	(key, val) = itemListEnsembl.strip('\n').split('\t')
+#	AllDict.setdefault(key, [])
+#	AllDict[key].append(val + ' ;')	
 
 for itemListRheaID in ListRheaID:
 	(key, val) = itemListRheaID.strip('\n').split('\t')
@@ -418,8 +439,9 @@ RDF_Kin_data.write("@prefix ECcode:   <https://identifiers.org/ec-code/> . \n".e
 RDF_Kin_data.write("@prefix En_id:   <http://identifiers.org/ensembl/> . \n".encode())
 RDF_Kin_data.write("@prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . \n".encode()) #For WPRDF interoperability
 RDF_Kin_data.write("@prefix wd: <http://www.wikidata.org/entity/> . \n".encode()) #From WikiData
-RDF_Kin_data.write("@prefix wdt: <http://www.wikidata.org/prop/direct/> . \n\n".encode()) #From WikiData
-RDF_Kin_data.write("@prefix sio: <http://semanticscience.org/resource/> . \n\n".encode()) #Semanticscience Integrated Ontology
+RDF_Kin_data.write("@prefix wdt: <http://www.wikidata.org/prop/direct/> . \n".encode()) #From WikiData
+RDF_Kin_data.write("@prefix sio: <http://semanticscience.org/resource/> . \n".encode()) #Semanticscience Integrated Ontology
+RDF_Kin_data.write("@prefix bioregistry: <https://bioregistry.io/oboinowl:> . \n\n".encode()) #Bioregistry hasDbXref
 
 # #Second, print the NEW prefixes (if needed)
 
