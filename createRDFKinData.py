@@ -77,7 +77,7 @@ for itemSERX in ListTotal:
 	  if (result_chebi is not None) & (result_uniprot is not None) & (result_rhea is not None): ##check against REGEX
 	    #print(result_chebi + ' ' + result_uniprot + ' ' + result_rhea)
 	    ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( )) ##Trim RHEA/CHEBI in fromt of IDs if available.
-	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO:000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
+	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
 	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
 	    countSER = countSER +1
 	else:
@@ -102,6 +102,7 @@ for itemSERX in ListTotal:
 # #Read in tsv file: [0]=ERPX_number [1]=EnzymePW, [2]=ApprovedEnzymeName, [3]=EC_Number, [4]=Uniprot , [5]=Ensembl, [6]=RheaID, [7]=CHEBIID, [8]=Km, [9]=Kcat, [10]=Kcat/Km, [11]=pH, [12]=Temperature, [13]=AdditionalConditions, [14]=Organism, [15]=PMID, [16]=Database				
 
 ##EnzymePW --> Add to enzyme_SER:X
+##No regex or count defined, since the names of Proteins can be very diverse!
 for itemEnzymePW in ListTotal:
 	b = itemEnzymePW.split('\t')
 	if ('-' in b[0])|('-' in b[4])|('-' in b[6])|('-' in b[7]): #Check if one of the necessary values is missing!!
@@ -152,7 +153,7 @@ for itemUniprot in ListTotal:
 	  ##Wp IRIs: to be updated
 	  #ListUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) #old
 	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) 
-	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'sio:SIO:000028' + ' uniprot:' + e[0].strip( ) + '_enzyme')
+	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'sio:SIO_000028' + ' ' + e[0].strip( ) + '_enzyme')
 	  ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
 	  #ListLinkUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )	#old
 	  ListLinkUniprot.append('uniprot:' + e[4].strip( ) + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )
@@ -187,17 +188,20 @@ ListQC.append("Data format for 'wp:bdbEnsembl correctly loaded for " + str(count
 # equation: "H2O + pentanamide = NH4(+) + pentanoate"xsd:string
 
 ##RheaID ##Check if rh:accession shouldn't be wp:bdbdRhea (since accession is used to levarage between reactionscheme and RheaID by RHEA RDF).
-##--> Add to SER:X_reaction
+##--> Add to sio:SIO_000028  SER:X_reaction
+##Add regex check!
 for itemRheaID in ListTotal:
 	g = itemRheaID.split('\t')
 	if g[6].isnumeric(): #without prefix
-	  ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ) )
-	  ListLinkRheaID.append('rh:' + g[6].strip( ) + '\t' + 'rdfs:subClassOf ' + 'rh:Reaction ; ')
-	  ListLinkRheaID.append('rh:' + g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ) + '.' )	
+	  #ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ) ) #old
+	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
+	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' SER:' + g[0].strip( ) + '_reaction') 
+	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:' + ' RHEA:' + g[6].strip( ) + '.' )	
 	elif 'RHEA:' in g[6]: #with prefix
-	  ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ).replace("RHEA:", "") )
-	  ListLinkRheaID.append('rh:' + g[6].strip( ).replace("RHEA:", "") + '\t' + 'rdfs:subClassOf ' + 'rh:Reaction ; ')
-	  ListLinkRheaID.append('rh:' + g[6].strip( ).replace("RHEA:", "") + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ).replace("RHEA:", "") + '.' )	
+	  #ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ).replace("RHEA:", "") ) #old
+	  ListRheaID.append(g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' ' + g[6].strip( ))
+	  ListRheaID.append(g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' SER:' + g[0].strip( ) + '_reaction') 
+	  ListLinkRheaID.append(g[6].strip( ) + '\t' + 'rh:' + ' ' + g[6].strip( ) + '.' )	
 	  #ListRheaID.append(g[0].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ))  #old
 	else: #if no Rhea is available
 	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!
@@ -318,7 +322,10 @@ for itemListUniprot in unique_ListUniprot:
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
 
-for itemListRheaID in ListRheaID:
+#Remove duplicates
+unique_ListRheaID = list(dict.fromkeys(ListRheaID))
+
+for itemListRheaID in unique_ListRheaID:
 	(key, val) = itemListRheaID.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
@@ -374,7 +381,7 @@ for itemListDatabase in ListDatabase:
   AllDict.setdefault(key, [])
   AllDict[key].append(val + ' .')		
 
-##Remove duplicates in ListLinkUniProt and ListLinkRheaID
+##Remove duplicates for linked lists:
 unique_ListLinkUniprot = list(dict.fromkeys(ListLinkUniprot))
 unique_ListLinkRheaID= list(dict.fromkeys(ListLinkRheaID))
 unique_ListSubstrateIDs= list(dict.fromkeys(ListSubstrateIDs))
