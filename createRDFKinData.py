@@ -110,7 +110,7 @@ for itemEnzymePW in ListTotal:
 	if ('-' in b[0])|('-' in b[4])|('-' in b[6])|('-' in b[7]): #Check if one of the necessary values is missing!!
 	  continue
 	else:
-	  ListEnzymePW.append(b[0].strip( ) + '\t' + 'rdfs:label' + ' "' + b[1].strip( ) + '"^^xsd:string')
+	  ListEnzymePW.append('uniprot:' + b[4].strip( ) + '\t' + 'rdfs:label' + ' "' + b[1].strip( ) + '"^^xsd:string')
 #	for items in ListEnzymePW: 
 #		if '-' in items:
 #			ListEnzymePW.remove(items)				
@@ -133,7 +133,7 @@ for itemEC_Number in ListTotal:
 	if ('-' in d[0])|('-' in d[4])|('-' in d[6])|('-' in d[7]): #Check if one of the necessary values is missing!!
 	  continue
 	elif result:
-	  ListUniprot.append(d[0].strip( ) + '_enzyme'  + '\t' + 'wp:bdbEnzymeNomenclature' + ' ECcode:' + d[3].strip( ))
+	  ListUniprot.append('uniprot:' + d[4].strip( )  + '\t' + 'wp:bdbEnzymeNomenclature' + ' ECcode:' + d[3].strip( ))
 	  countECs = countECs + 1
 	else:
 	  ListQC.append("CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: "+ d[0] + ' : ' + d[3]+ '\n')
@@ -150,11 +150,16 @@ for itemUniprot in ListTotal:
 	if ('-' in e[0])|('-' in e[4])|('-' in e[6])|('-' in e[7]): #Check if one of the necessary values is missing!!
 	  continue
 	else:
-	  ListUniprot.append(e[0].strip( ) + '_enzyme' + '\t'  + 'rdf:type' + ' ' + "wp:Protein")
+	  #ListUniprot.append(e[0].strip( ) + '_enzyme' + '\t'  + 'rdf:type' + ' ' + "wp:Protein") #old
+	  ListUniprot.append('uniprot:' + e[4].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Protein")
 	  ##Wp IRIs: to be updated
-	  ListUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( ))
+	  #ListUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) #old
+	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) 
+	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'sio:SIO:000028' + ' uniprot:' + e[0].strip( ) + '_enzyme')
 	  ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
-	  ListLinkUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )	
+	  #ListLinkUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )	#old
+	  ListLinkUniprot.append('uniprot:' + e[4].strip( ) + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )
+
 
 ##Ensembl --> Add to enzyme_SER:X
 countGenes = 0
@@ -165,7 +170,7 @@ for itemEnsembl in ListTotal:
   if ('-' in f[0])|('-' in f[4])|('-' in f[6])|('-' in f[7])|('-' in f[5]): #Check if one of the necessary values is missing!!
     continue
   elif result: ##check against REGEX
-    ListUniprot.append(f[0].strip( ) + '_enzyme' + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
+    ListUniprot.append('uniprot:' + f[4].strip( ) + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
     countGenes = countGenes + 1
   else:
     ListQC.append("CHECK: Data format for 'wp:bdbEnsembl unknown, check original data for: "+ f[0] + ' : ' + f[5]+ '\n')
@@ -319,7 +324,9 @@ for itemListEC_Number in ListEC_Number:
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')	
 
-for itemListUniprot in ListUniprot:
+unique_ListUniprot = list(dict.fromkeys(ListUniprot))
+
+for itemListUniprot in unique_ListUniprot:
 	(key, val) = itemListUniprot.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
