@@ -84,9 +84,9 @@ for itemSERX in ListTotal:
 	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
 	    countSER = countSER +1
 	else:
-		ListQC.append("Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
+		ListQC.append("CHECK: Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
 
-ListQC.append("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs. \n")  
+ListQC.append("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs. \n\n")  
 			
 ##Define type, extension of WP vocabulary:		
 for itemSERX in ListTotal:
@@ -98,7 +98,7 @@ for itemSERX in ListTotal:
 	elif result:
 	  ListSER_ID.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
 	else:
-		print("Data format for rdf:type IDs unknown, check original data!")
+		print("CHECK: Data format for rdf:type IDs unknown, check original data for: " + a[0])
 
 #LengthList = len(ListSER_ID)
 		
@@ -125,15 +125,20 @@ for itemEnzymePW in ListTotal:
 			# ListApprovedEnzymeName.remove(items)
 			
 ##EC_Number --> Add to enzyme_SER:X
+countECs = 0
 for itemEC_Number in ListTotal:
 	d = itemEC_Number.split('\t')
+	pattern = '^\\d+\\.-\\.-\\.-|\\d+\\.\\d+\\.-\\.-|\\d+\\.\\d+\\.\\d+\\.-|\\d+\\.\\d+\\.\\d+\\.(n)?\\d+$'
+	result = re.match(pattern, d[3].strip())
 	if ('-' in d[0])|('-' in d[4])|('-' in d[6])|('-' in d[7]): #Check if one of the necessary values is missing!!
 	  continue
+	elif result:
+	  ListUniprot.append(d[0].strip( ) + '_enzyme'  + '\t' + 'wp:bdbEnzymeNomenclature' + ' ECcode:' + d[3].strip( ))
+	  countECs = countECs + 1
 	else:
-	  ListEC_Number.append(d[0].strip( ) + '\t' + 'wp:bdbEnzymeNomenclature' + ' ECcode:' + d[3].strip( ))
-	for items in ListEC_Number: 
-		if '-' in items:
-			ListEC_Number.remove(items)				
+	  ListQC.append("CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: "+ d[0] + ' : ' + d[3]+ '\n')
+    
+ListQC.append("Data format for 'wp:bdbEnzymeNomenclature correctly loaded for " + str(countECs) + " EC IDs. \n\n")  
 	
 #	ListSubstrate.append(h[0].strip( ) + '_substrate' +'\t' + 'rdf:type' + ' ' + "wp:Metabolite")
 #	ListSubstrateIDs.append(h[0].strip( ) + '_substrate' + "\t" + "wp:bdbChEBI " + 'CHEBI:' + h[7].strip( )+ '.')	
@@ -163,10 +168,9 @@ for itemEnsembl in ListTotal:
     ListUniprot.append(f[0].strip( ) + '_enzyme' + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
     countGenes = countGenes + 1
   else:
-    ListQC.append("Data format for 'wp:bdbEnsembl unknown, check original data for: "+ f[0] + ' : ' + f[5]+ '\n')
-    print(f[0])
-
-ListQC.append("Data format for 'wp:bdbEnsembl correctly loaded for " + str(countGenes) + " gene IDs. \n")  
+    ListQC.append("CHECK: Data format for 'wp:bdbEnsembl unknown, check original data for: "+ f[0] + ' : ' + f[5]+ '\n')
+    
+ListQC.append("Data format for 'wp:bdbEnsembl correctly loaded for " + str(countGenes) + " gene IDs. \n\n")  
   
     
 ##Update interoperability with Rhea RDF:

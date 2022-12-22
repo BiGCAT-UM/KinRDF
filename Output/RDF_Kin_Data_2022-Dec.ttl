@@ -24,7 +24,6 @@ SER:1
 	sio:SIO_000008  SER:1_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Aminocyclase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
 	wp:bdbRhea RHEA:14167 ;
 	SER:hasKm  "163"^^xsd:float ;
 	SER:hasKcat  "37,5"^^xsd:float ;
@@ -40,7 +39,6 @@ SER:2
 	sio:SIO_000008  SER:2_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Aminocyclase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
 	wp:bdbRhea RHEA:14167 ;
 	SER:hasKm  "1.69"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -55,7 +53,6 @@ SER:3
 	sio:SIO_000008  SER:3_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Glutaryl-CoA dehydrogenase First Reaction"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbRhea RHEA:47421 ;
 	SER:hasKm  "3"^^xsd:float ;
 	SER:hasPh "7,5"^^xsd:float ;
@@ -70,7 +67,6 @@ SER:4
 	sio:SIO_000008  SER:4_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Glutaryl-CoA dehydrogenase First Reaction"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbRhea RHEA:47422 ;
 	SER:hasKm  "0.0047"^^xsd:float ;
 	SER:hasKcat  "5,6"^^xsd:float ;
@@ -86,7 +82,6 @@ SER:5
 	sio:SIO_000008  SER:5_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Glutaryl-CoA dehydrogenase First Reaction"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbRhea RHEA:47423 ;
 	SER:hasKm  "0.0064"^^xsd:float ;
 	SER:hasKcat  "6,7"^^xsd:float ;
@@ -102,7 +97,6 @@ SER:6
 	sio:SIO_000008  SER:6_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Glutaryl-CoA dehydrogenase First Reaction"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbRhea RHEA:47424 ;
 	SER:hasKm  "0.0074"^^xsd:float ;
 	SER:hasKcat  "4,8"^^xsd:float ;
@@ -119,7 +113,6 @@ SER:7
 	sio:SIO_000008  SER:7_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Glutaryl-CoA dehydrogenase First Reaction"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbRhea RHEA:47425 ;
 	SER:hasKm  "0.0081"^^xsd:float ;
 	SER:hasKcat  "9,4"^^xsd:float ;
@@ -134,7 +127,6 @@ SER:8
 	sio:SIO_000008  SER:8_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Glutaryl-CoA dehydrogenase First Reaction"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbRhea RHEA:47426 ;
 	SER:hasKm  "0.0123"^^xsd:float ;
 	SER:hasKcat  "4,6"^^xsd:float ;
@@ -151,7 +143,6 @@ SER:9
 	sio:SIO_000008  SER:9_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Glutaryl-CoA dehydrogenase First Reaction"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbRhea RHEA:47427 ;
 	SER:hasKm  "0.0261"^^xsd:float ;
 	SER:hasKcat  "4,9"^^xsd:float ;
@@ -168,7 +159,6 @@ SER:10
 	sio:SIO_000008  SER:10_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Glutaryl-CoA dehydrogenase Second reaction"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbRhea RHEA:47428 ;
 	SER:hasKm  "4"^^xsd:float ;
 	SER:hasPh "7,5"^^xsd:float ;
@@ -183,7 +173,6 @@ SER:11
 	sio:SIO_000008  SER:11_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Glutaryl-CoA dehydrogenase Second reaction"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	wp:bdbRhea RHEA:47429 ;
 	SER:hasKm  "0.0026"^^xsd:float ;
 	SER:hasKcat  "9"^^xsd:float ;
@@ -201,7 +190,6 @@ SER:12
 	sio:SIO_000008  SER:12_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "L-2-hydro-yglutarate dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
 	wp:bdbRhea RHEA:21253 ;
 	SER:hasKm  "0.8"^^xsd:float ;
 	SER:hasPh "7"^^xsd:float ;
@@ -216,7 +204,6 @@ SER:13
 	sio:SIO_000008  SER:13_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "L-2-hydro-yglutarate dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
 	wp:bdbRhea RHEA:21254 ;
 	SER:hasKm  "1.7"^^xsd:float ;
 	SER:hasPh "7,2"^^xsd:float ;
@@ -229,7 +216,6 @@ SER:14
 	sio:SIO_000008  SER:14_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "D-2-hydro-yglutarate dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
 	wp:bdbRhea RHEA:21255 ;
 	SER:hasKm  "584"^^xsd:float ;
 	SER:hasKcat  "0,8"^^xsd:float ;
@@ -246,7 +232,6 @@ SER:15
 	sio:SIO_000008  SER:15_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbRhea RHEA:49614 ;
 	SER:hasKm  "17"^^xsd:float ;
 	SER:hasPh "7"^^xsd:float ;
@@ -261,7 +246,6 @@ SER:16
 	sio:SIO_000008  SER:16_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbRhea RHEA:49615 ;
 	SER:hasKm  "26"^^xsd:float ;
 	SER:hasPh "7"^^xsd:float ;
@@ -276,7 +260,6 @@ SER:17
 	sio:SIO_000008  SER:17_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbRhea RHEA:49616 ;
 	SER:hasKm  "0.13"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
@@ -288,7 +271,6 @@ SER:18
 	sio:SIO_000008  SER:18_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbRhea RHEA:49617 ;
 	SER:hasKm  "0.2"^^xsd:float ;
 	dcterms:description "Isozyme IDP2"@en ;
@@ -302,7 +284,6 @@ SER:19
 	sio:SIO_000008  SER:19_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbRhea RHEA:49618 ;
 	SER:hasKm  "304"^^xsd:float ;
 	SER:hasPh "6,5"^^xsd:float ;
@@ -316,7 +297,6 @@ SER:20
 	sio:SIO_000008  SER:20_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbRhea RHEA:49619 ;
 	SER:hasKm  "398"^^xsd:float ;
 	SER:hasPh "6,5"^^xsd:float ;
@@ -330,7 +310,6 @@ SER:21
 	sio:SIO_000008  SER:21_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbRhea RHEA:49620 ;
 	SER:hasKm  "1.1"^^xsd:float ;
 	SER:hasPh "7"^^xsd:float ;
@@ -344,7 +323,6 @@ SER:22
 	sio:SIO_000008  SER:22_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	wp:bdbRhea RHEA:49621 ;
 	SER:hasKm  "1.92"^^xsd:float ;
 	dcterms:description "Isozyme IDP2"@en ;
@@ -358,7 +336,6 @@ SER:24
 	sio:SIO_000008  SER:24_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	wp:bdbRhea RHEA:49614 ;
 	SER:hasKm  "77"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -371,7 +348,6 @@ SER:25
 	sio:SIO_000008  SER:25_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	wp:bdbRhea RHEA:49615 ;
 	SER:hasKm  "18"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
@@ -384,7 +360,6 @@ SER:26
 	sio:SIO_000008  SER:26_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	wp:bdbRhea RHEA:49616 ;
 	SER:hasKm  "77"^^xsd:float ;
 	SER:hasPh "7,1"^^xsd:float ;
@@ -399,7 +374,6 @@ SER:27
 	sio:SIO_000008  SER:27_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	wp:bdbRhea RHEA:49617 ;
 	SER:hasKm  "85"^^xsd:float ;
 	SER:hasPh "7,1"^^xsd:float ;
@@ -415,7 +389,6 @@ SER:28
 	sio:SIO_000008  SER:28_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.37 ;
 	wp:bdbRhea RHEA:21253 ;
 	SER:hasPh "7,4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -427,7 +400,6 @@ SER:29
 	sio:SIO_000008  SER:29_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	wp:bdbRhea RHEA:21254 ;
 	SER:hasKm  "1.4"^^xsd:float ;
 	SER:hasKcat  "26"^^xsd:float ;
@@ -444,7 +416,6 @@ SER:30
 	sio:SIO_000008  SER:30_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	wp:bdbRhea RHEA:21255 ;
 	SER:hasKm  "130"^^xsd:float ;
 	SER:hasKcat  "26"^^xsd:float ;
@@ -461,7 +432,6 @@ SER:31
 	sio:SIO_000008  SER:31_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	wp:bdbRhea RHEA:21256 ;
 	SER:hasKm  "6.4"^^xsd:float ;
 	SER:hasKcat  "26"^^xsd:float ;
@@ -478,7 +448,6 @@ SER:32
 	sio:SIO_000008  SER:32_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GGT1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	wp:bdbRhea RHEA:23905 ;
 	SER:hasKm  "0.68"^^xsd:float ;
 	wp:organismName "Mus musculus"^^xsd:string ;
@@ -491,7 +460,6 @@ SER:33
 	sio:SIO_000008  SER:33_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GGT1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	wp:bdbRhea RHEA:23905 ;
 	SER:hasKm  "0.0057"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
@@ -504,7 +472,6 @@ SER:34
 	sio:SIO_000008  SER:34_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GGT1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	wp:bdbRhea RHEA:23905 ;
 	SER:hasKm  "0.0105"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
@@ -520,7 +487,6 @@ SER:35
 	sio:SIO_000008  SER:35_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GGT1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	wp:bdbRhea RHEA:23905 ;
 	SER:hasKm  "0.0106"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
@@ -536,7 +502,6 @@ SER:36
 	sio:SIO_000008  SER:36_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GGCT"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.3.2.4 ;
 	wp:bdbRhea RHEA:20506 ;
 	dc:source "Unknown"^^xsd:string .
 
@@ -546,7 +511,6 @@ SER:37
 	sio:SIO_000008  SER:37_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbRhea RHEA:10349 ;
 	SER:hasKm  "0.16"^^xsd:float ;
 	dcterms:description "initial Km in presence of GTP"@en ;
@@ -560,7 +524,6 @@ SER:38
 	sio:SIO_000008  SER:38_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbRhea RHEA:10349 ;
 	SER:hasKm  "0.18"^^xsd:float ;
 	dcterms:description "initial Km in presence of ITP"@en ;
@@ -574,7 +537,6 @@ SER:39
 	sio:SIO_000008  SER:39_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbRhea RHEA:10349 ;
 	SER:hasKm  "0.2"^^xsd:float ;
 	dcterms:description "initial Km in presence of UTP"@en ;
@@ -588,7 +550,6 @@ SER:40
 	sio:SIO_000008  SER:40_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbRhea RHEA:10349 ;
 	SER:hasKm  "0.41"^^xsd:float ;
 	dcterms:description "in presence of ATP"@en ;
@@ -602,7 +563,6 @@ SER:41
 	sio:SIO_000008  SER:41_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbRhea RHEA:10349 ;
 	SER:hasKm  "0.5"^^xsd:float ;
 	dcterms:description "final Km in presence of UTP"@en ;
@@ -616,7 +576,6 @@ SER:42
 	sio:SIO_000008  SER:42_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbRhea RHEA:10349 ;
 	SER:hasKm  "0.5"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
@@ -629,7 +588,6 @@ SER:43
 	sio:SIO_000008  SER:43_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbRhea RHEA:10349 ;
 	SER:hasKm  "0.57"^^xsd:float ;
 	dcterms:description "final Km in presence of GTP"@en ;
@@ -643,7 +601,6 @@ SER:44
 	sio:SIO_000008  SER:44_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbRhea RHEA:10349 ;
 	SER:hasKm  "0.58"^^xsd:float ;
 	dcterms:description "final Km in presence of ITP"@en ;
@@ -657,7 +614,6 @@ SER:45
 	sio:SIO_000008  SER:45_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbRhea RHEA:10349 ;
 	SER:hasKm  "0.0316"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
@@ -670,7 +626,6 @@ SER:46
 	sio:SIO_000008  SER:46_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	wp:bdbRhea RHEA:10349 ;
 	SER:hasKm  "0.05"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
@@ -683,7 +638,6 @@ SER:47
 	sio:SIO_000008  SER:47_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GCLC"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	wp:bdbRhea RHEA:13286 ;
 	SER:hasKm  "0.75"^^xsd:float ;
 	dcterms:description "enzyme from embryo homogenate"@en ;
@@ -697,7 +651,6 @@ SER:48
 	sio:SIO_000008  SER:48_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GCLC"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	wp:bdbRhea RHEA:13286 ;
 	SER:hasKm  "1.38"^^xsd:float ;
 	dcterms:description "enzyme from visceral yolk sac homogenate"@en ;
@@ -711,7 +664,6 @@ SER:49
 	sio:SIO_000008  SER:49_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "0.2"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -723,7 +675,6 @@ SER:50
 	sio:SIO_000008  SER:50_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "0.25"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -739,7 +690,6 @@ SER:51
 	sio:SIO_000008  SER:51_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "452"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -754,7 +704,6 @@ SER:52
 	sio:SIO_000008  SER:52_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "0.58"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -769,7 +718,6 @@ SER:53
 	sio:SIO_000008  SER:53_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "1.75"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -784,7 +732,6 @@ SER:54
 	sio:SIO_000008  SER:54_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "1.96"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -800,7 +747,6 @@ SER:55
 	sio:SIO_000008  SER:55_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasPh "8.2"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -814,7 +760,6 @@ SER:56
 	sio:SIO_000008  SER:56_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "16"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -830,7 +775,6 @@ SER:57
 	sio:SIO_000008  SER:57_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "51"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -846,7 +790,6 @@ SER:58
 	sio:SIO_000008  SER:58_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "0.53"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -860,7 +803,6 @@ SER:59
 	sio:SIO_000008  SER:59_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "1.02"^^xsd:float ;
 	dcterms:description "mutant enzyme R283C"@en ;
@@ -874,7 +816,6 @@ SER:60
 	sio:SIO_000008  SER:60_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "1.24"^^xsd:float ;
 	dcterms:description "mutant enzyme Y270H"@en ;
@@ -888,7 +829,6 @@ SER:61
 	sio:SIO_000008  SER:61_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "1.43"^^xsd:float ;
 	dcterms:description "mutant enzyme Y270C"@en ;
@@ -902,7 +842,6 @@ SER:62
 	sio:SIO_000008  SER:62_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "1.51"^^xsd:float ;
 	dcterms:description "mutant enzyme D219G"@en ;
@@ -916,7 +855,6 @@ SER:63
 	sio:SIO_000008  SER:63_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "1.64"^^xsd:float ;
 	dcterms:description "mutant enzyme P314L"@en ;
@@ -930,7 +868,6 @@ SER:64
 	sio:SIO_000008  SER:64_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "1.75"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -943,7 +880,6 @@ SER:65
 	sio:SIO_000008  SER:65_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "2.07"^^xsd:float ;
 	dcterms:description "mutant enzyme D219A"@en ;
@@ -957,7 +893,6 @@ SER:66
 	sio:SIO_000008  SER:66_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "2.25"^^xsd:float ;
 	dcterms:description "mutant enzyme L188P"@en ;
@@ -971,7 +906,6 @@ SER:67
 	sio:SIO_000008  SER:67_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKm  "2.52"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -986,7 +920,6 @@ SER:68
 	sio:SIO_000008  SER:68_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "10.36"^^xsd:float ;
 	SER:hasPh "7.5"^^xsd:float ;
@@ -1001,7 +934,6 @@ SER:69
 	sio:SIO_000008  SER:69_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "1.17"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -1017,7 +949,6 @@ SER:70
 	sio:SIO_000008  SER:70_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "1.6"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -1033,7 +964,6 @@ SER:71
 	sio:SIO_000008  SER:71_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "2.31"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -1049,7 +979,6 @@ SER:72
 	sio:SIO_000008  SER:72_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "15.68"^^xsd:float ;
 	SER:hasPh "7.5"^^xsd:float ;
@@ -1064,7 +993,6 @@ SER:73
 	sio:SIO_000008  SER:73_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "52"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -1079,7 +1007,6 @@ SER:74
 	sio:SIO_000008  SER:74_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "133"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -1094,7 +1021,6 @@ SER:75
 	sio:SIO_000008  SER:75_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "2.36"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -1109,7 +1035,6 @@ SER:76
 	sio:SIO_000008  SER:76_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "18.8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -1123,7 +1048,6 @@ SER:77
 	sio:SIO_000008  SER:77_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "26.9"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
@@ -1138,7 +1062,6 @@ SER:78
 	sio:SIO_000008  SER:78_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "55"^^xsd:float ;
 	wp:organismName "Pasteurella multocida"^^xsd:string ;
@@ -1151,7 +1074,6 @@ SER:79
 	sio:SIO_000008  SER:79_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "GSS"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	wp:bdbRhea RHEA:13558 ;
 	SER:hasKmKcat "10.36"^^xsd:float ;
 	SER:hasPh "7.5"^^xsd:float ;
@@ -1166,7 +1088,6 @@ SER:81
 	sio:SIO_000008  SER:81_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "30.39"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.1.B13 ;
 	wp:bdbRhea RHEA:34281 ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -1180,7 +1101,6 @@ SER:82
 	sio:SIO_000008  SER:82_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "30.38"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
 	wp:bdbRhea RHEA:13134 ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
@@ -1191,7 +1111,6 @@ SER:90
 	sio:SIO_000008  SER:90_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "30.7"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
 	wp:bdbRhea RHEA:29516 ;
 	SER:hasPh "6.8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -1206,7 +1125,6 @@ SER:91
 	sio:SIO_000008  SER:91_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "30.7"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
 	wp:bdbRhea RHEA:29516 ;
 	SER:hasPh "7.3"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -1221,7 +1139,6 @@ SER:104
 	sio:SIO_000008  SER:104_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "HL"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	wp:bdbRhea RHEA:38495 ;
 	dc:source "Unknown"^^xsd:string .
 
@@ -1231,14 +1148,12 @@ SER:105
 	sio:SIO_000008  SER:105_measurement ;
 	rdf:type wp:InteractionData ;
 	rdfs:label "HL"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	wp:bdbRhea RHEA:12046 ;
 	dc:source "Unknown"^^xsd:string .
 
 SER:88
 	rdf:type wp:InteractionData ;
 	rdfs:label "30.9"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
 	wp:bdbRhea RHEA:13866 ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
@@ -1246,7 +1161,6 @@ SER:88
 SER:95
 	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SER:hasKm  "1.12"^^xsd:float ;
 	wp:organismName "Gallus gallus"^^xsd:string ;
@@ -1256,7 +1170,6 @@ SER:95
 SER:96
 	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SER:hasKm  "1.77"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
@@ -1266,7 +1179,6 @@ SER:96
 SER:97
 	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SER:hasKm  "0.075"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
@@ -1276,7 +1188,6 @@ SER:97
 SER:98
 	rdf:type wp:InteractionData ;
 	rdfs:label "LPL"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	SER:hasKm  "0.083"^^xsd:float ;
 	dcterms:description "soluble enzyme ; Km range 0,075 – 0,083"@en ;
@@ -1287,7 +1198,6 @@ SER:98
 SER:106
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.11"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1300,7 +1210,6 @@ SER:106
 SER:107
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.36"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1312,7 +1221,6 @@ SER:107
 SER:108
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.37"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1324,7 +1232,6 @@ SER:108
 SER:109
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.38"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1337,7 +1244,6 @@ SER:109
 SER:110
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.42"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1350,7 +1256,6 @@ SER:110
 SER:111
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.45"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1363,7 +1268,6 @@ SER:111
 SER:112
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.49"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1376,7 +1280,6 @@ SER:112
 SER:113
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.52"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1388,7 +1291,6 @@ SER:113
 SER:114
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.54"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1401,7 +1303,6 @@ SER:114
 SER:115
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.55"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1413,7 +1314,6 @@ SER:115
 SER:116
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.61"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1425,7 +1325,6 @@ SER:116
 SER:117
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.62"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1437,7 +1336,6 @@ SER:117
 SER:118
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.68"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1449,7 +1347,6 @@ SER:118
 SER:119
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.77"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1461,7 +1358,6 @@ SER:119
 SER:120
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.85"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1473,7 +1369,6 @@ SER:120
 SER:121
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.88"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1485,7 +1380,6 @@ SER:121
 SER:122
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.95"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1497,7 +1391,6 @@ SER:122
 SER:123
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "1.1"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1509,7 +1402,6 @@ SER:123
 SER:124
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "1.2"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1521,7 +1413,6 @@ SER:124
 SER:125
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "1"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1533,7 +1424,6 @@ SER:125
 SER:126
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "5"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1545,7 +1435,6 @@ SER:126
 SER:127
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "7"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1557,7 +1446,6 @@ SER:127
 SER:128
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "0.01"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1569,7 +1457,6 @@ SER:128
 SER:129
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "11"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1582,7 +1469,6 @@ SER:129
 SER:130
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "17"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1594,7 +1480,6 @@ SER:130
 SER:131
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "19"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1606,7 +1491,6 @@ SER:131
 SER:132
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "22"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1618,7 +1502,6 @@ SER:132
 SER:133
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "36"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1630,7 +1513,6 @@ SER:133
 SER:134
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "37"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1643,7 +1525,6 @@ SER:134
 SER:135
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "0.05"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1655,7 +1536,6 @@ SER:135
 SER:136
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "64"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1667,7 +1547,6 @@ SER:136
 SER:137
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "67"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1679,7 +1558,6 @@ SER:137
 SER:138
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "79"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1692,7 +1570,6 @@ SER:138
 SER:139
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "92"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1704,7 +1581,6 @@ SER:139
 SER:140
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "94"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1716,7 +1592,6 @@ SER:140
 SER:141
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "95"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1728,7 +1603,6 @@ SER:141
 SER:142
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "0.15"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1741,7 +1615,6 @@ SER:142
 SER:143
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "0.0009"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1753,7 +1626,6 @@ SER:143
 SER:144
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "0.0024"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1766,7 +1638,6 @@ SER:144
 SER:145
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "0.0025"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1779,7 +1650,6 @@ SER:145
 SER:146
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "3"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1791,7 +1661,6 @@ SER:146
 SER:147
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "5"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1804,7 +1673,6 @@ SER:147
 SER:148
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "6"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1817,7 +1685,6 @@ SER:148
 SER:149
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "7"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1829,7 +1696,6 @@ SER:149
 SER:150
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "9"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1841,7 +1707,6 @@ SER:150
 SER:151
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "12"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1853,7 +1718,6 @@ SER:151
 SER:152
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "16"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1866,7 +1730,6 @@ SER:152
 SER:153
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "0.02"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1878,7 +1741,6 @@ SER:153
 SER:154
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "22"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1890,7 +1752,6 @@ SER:154
 SER:155
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "24"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1902,7 +1763,6 @@ SER:155
 SER:156
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "29"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1915,7 +1775,6 @@ SER:156
 SER:157
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "34"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1927,7 +1786,6 @@ SER:157
 SER:158
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "39"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1939,7 +1797,6 @@ SER:158
 SER:159
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "47"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1951,7 +1808,6 @@ SER:159
 SER:160
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "52"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1963,7 +1819,6 @@ SER:160
 SER:161
 	rdf:type wp:InteractionData ;
 	rdfs:label "ABCA1"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "59"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -1973,746 +1828,890 @@ SER:161
 	dc:source "BRENDA"^^xsd:string .
 
 SER:1_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P45381 ;
 	bioregistry:hasDbXref uniprotkb:P45381.
 
 SER:2_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P45381 ;
 	bioregistry:hasDbXref uniprotkb:P45381.
 
 SER:3_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	bioregistry:hasDbXref uniprotkb:Q92947.
 
 SER:4_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	bioregistry:hasDbXref uniprotkb:Q92947.
 
 SER:5_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	bioregistry:hasDbXref uniprotkb:Q92947.
 
 SER:6_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	bioregistry:hasDbXref uniprotkb:Q92947.
 
 SER:7_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	bioregistry:hasDbXref uniprotkb:Q92947.
 
 SER:8_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	bioregistry:hasDbXref uniprotkb:Q92947.
 
 SER:9_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	bioregistry:hasDbXref uniprotkb:Q92947.
 
 SER:10_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	bioregistry:hasDbXref uniprotkb:Q92947.
 
 SER:11_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q92947 ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	bioregistry:hasDbXref uniprotkb:Q92947.
 
 SER:12_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q9H9P8 ;
 	bioregistry:hasDbXref uniprotkb:Q9H9P8.
 
 SER:13_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q9H9P8 ;
 	bioregistry:hasDbXref uniprotkb:Q9H9P8.
 
 SER:14_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q8N465 ;
 	bioregistry:hasDbXref uniprotkb:Q8N465.
 
 SER:15_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	bioregistry:hasDbXref uniprotkb:P48735.
 
 SER:16_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	bioregistry:hasDbXref uniprotkb:P48735.
 
 SER:17_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	bioregistry:hasDbXref uniprotkb:P48735.
 
 SER:18_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	bioregistry:hasDbXref uniprotkb:P48735.
 
 SER:19_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	bioregistry:hasDbXref uniprotkb:P48735.
 
 SER:20_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	bioregistry:hasDbXref uniprotkb:P48735.
 
 SER:21_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	bioregistry:hasDbXref uniprotkb:P48735.
 
 SER:22_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48735 ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	bioregistry:hasDbXref uniprotkb:P48735.
 
 SER:24_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q8IWW8 ;
 	bioregistry:hasDbXref uniprotkb:Q8IWW8.
 
 SER:25_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q8IWW8 ;
 	bioregistry:hasDbXref uniprotkb:Q8IWW8.
 
 SER:26_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q8IWW8 ;
 	bioregistry:hasDbXref uniprotkb:Q8IWW8.
 
 SER:27_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q8IWW8 ;
 	bioregistry:hasDbXref uniprotkb:Q8IWW8.
 
 SER:28_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.37 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P40926 ;
 	bioregistry:hasDbXref uniprotkb:P40926.
 
 SER:29_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P23368 ;
 	bioregistry:hasDbXref uniprotkb:P23368.
 
 SER:30_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P23368 ;
 	bioregistry:hasDbXref uniprotkb:P23368.
 
 SER:31_enzyme
+	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P23368 ;
 	bioregistry:hasDbXref uniprotkb:P23368.
 
 SER:32_enzyme
+	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P19440 ;
 	bioregistry:hasDbXref uniprotkb:P19440.
 
 SER:33_enzyme
+	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P19440 ;
 	bioregistry:hasDbXref uniprotkb:P19440.
 
 SER:34_enzyme
+	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P19440 ;
 	bioregistry:hasDbXref uniprotkb:P19440.
 
 SER:35_enzyme
+	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P19440 ;
 	bioregistry:hasDbXref uniprotkb:P19440.
 
 SER:36_enzyme
+	wp:bdbEnzymeNomenclature ECcode:2.3.2.4 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O75223 ;
 	bioregistry:hasDbXref uniprotkb:O75223.
 
 SER:37_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O14841 ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:38_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O14841 ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:39_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O14841 ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:40_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O14841 ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:41_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O14841 ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:42_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O14841 ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:43_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O14841 ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:44_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O14841 ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:45_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O14841 ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:46_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O14841 ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:47_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48506 ;
 	bioregistry:hasDbXref uniprotkb:P48506.
 
 SER:48_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48506 ;
 	bioregistry:hasDbXref uniprotkb:P48506.
 
 SER:49_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:50_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:51_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:52_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:53_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:54_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:55_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:56_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:57_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:58_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:59_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:60_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:61_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:62_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:63_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:64_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:65_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:66_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:67_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:68_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:69_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:70_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:71_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:72_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:73_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:74_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:75_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:76_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:77_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:78_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 SER:79_enzyme
+	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
-SER:81_enzyme
-	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q9H8P0 ;
-	bioregistry:hasDbXref uniprotkb:Q9H8P0.
-
 SER:82_enzyme
+	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q9UPQ8 ;
 	bioregistry:hasDbXref uniprotkb:Q9UPQ8.
 
 SER:88_enzyme
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q9BT22 ;
 	bioregistry:hasDbXref uniprotkb:Q9BT22.
 
 SER:90_enzyme
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q9H553 ;
 	bioregistry:hasDbXref uniprotkb:Q9H553.
 
 SER:91_enzyme
+	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q9H553 ;
 	bioregistry:hasDbXref uniprotkb:Q9H553.
 
 SER:95_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P06863 ;
 	bioregistry:hasDbXref uniprotkb:P06863.
 
 SER:96_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P06865 ;
 	bioregistry:hasDbXref uniprotkb:P06865.
 
 SER:97_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P06866 ;
 	bioregistry:hasDbXref uniprotkb:P06866.
 
 SER:98_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P06866 ;
 	bioregistry:hasDbXref uniprotkb:P06866.
 
 SER:104_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P11150 ;
 	bioregistry:hasDbXref uniprotkb:P11150.
 
 SER:105_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P11150 ;
 	bioregistry:hasDbXref uniprotkb:P11150.
 
 SER:106_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:107_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:108_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:109_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:110_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:111_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:112_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:113_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:114_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:115_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:116_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:117_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:118_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:119_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:120_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:121_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:122_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:123_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:124_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:125_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:126_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:127_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:128_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:129_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:130_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:131_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:132_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:133_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:134_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:135_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:136_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:137_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:138_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:139_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:140_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:141_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:142_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:143_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:144_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:145_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:146_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:147_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:148_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:149_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:150_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:151_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:152_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:153_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:154_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:155_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:156_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:157_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:158_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:159_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:160_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 SER:161_enzyme
+	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
 	bioregistry:hasDbXref uniprotkb:O95477.
+
+SER:81_enzyme
+	rdf:type wp:Protein ;
+	wp:bdbUniprot uniprot:Q9H8P0 ;
+	bioregistry:hasDbXref uniprotkb:Q9H8P0.
 
 SER:80
 	rh:equation "Cysteinylglycine = cysteine"^^xsd:string ;
