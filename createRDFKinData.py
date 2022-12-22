@@ -110,10 +110,10 @@ for itemEnzymePW in ListTotal:
 	if ('-' in b[0])|('-' in b[4])|('-' in b[6])|('-' in b[7]): #Check if one of the necessary values is missing!!
 	  continue
 	else:
-	  ListEnzymePW.append('uniprot:' + b[4].strip( ) + '\t' + 'rdfs:label' + ' "' + b[1].strip( ) + '"^^xsd:string')
-#	for items in ListEnzymePW: 
-#		if '-' in items:
-#			ListEnzymePW.remove(items)				
+	  ListUniprot.append('uniprot:' + b[4].strip( ) + '\t' + 'rdfs:label' + ' "' + b[1].strip( ) + '"^^xsd:string')
+	for items in ListUniprot: 
+		if '-' in items:
+			ListEnzymePW.remove(items)				
 			
 ###Ignore for now...
 # ##[2]=ApprovedEnzymeName
