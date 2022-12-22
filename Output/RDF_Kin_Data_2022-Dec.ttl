@@ -1691,39 +1691,8 @@ uniprot:P45381
 	sio:SIO:000028 uniprot:SER:2_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P45381.
 
-uniprot:Q92947
-	rdfs:label "Glutaryl-CoA dehydrogenase First Reaction"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	sio:SIO:000028 uniprot:SER:3_enzyme ;
-	sio:SIO:000028 uniprot:SER:4_enzyme ;
-	sio:SIO:000028 uniprot:SER:5_enzyme ;
-	sio:SIO:000028 uniprot:SER:6_enzyme ;
-	sio:SIO:000028 uniprot:SER:7_enzyme ;
-	sio:SIO:000028 uniprot:SER:8_enzyme ;
-	sio:SIO:000028 uniprot:SER:9_enzyme ;
-	sio:SIO:000028 uniprot:SER:10_enzyme ;
-	sio:SIO:000028 uniprot:SER:11_enzyme ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	bioregistry:hasDbXref uniprotkb:Q92947.
-
-uniprot:Q9H9P8
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
-	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q9H9P8 ;
-	sio:SIO:000028 uniprot:SER:12_enzyme ;
-	sio:SIO:000028 uniprot:SER:13_enzyme ;
-	bioregistry:hasDbXref uniprotkb:Q9H9P8.
-
-uniprot:Q8N465
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
-	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q8N465 ;
-	sio:SIO:000028 uniprot:SER:14_enzyme ;
-	bioregistry:hasDbXref uniprotkb:Q8N465.
-
 uniprot:P48735
+	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48735 ;
@@ -1739,6 +1708,7 @@ uniprot:P48735
 	bioregistry:hasDbXref uniprotkb:P48735.
 
 uniprot:Q8IWW8
+	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q8IWW8 ;
@@ -1749,6 +1719,7 @@ uniprot:Q8IWW8
 	bioregistry:hasDbXref uniprotkb:Q8IWW8.
 
 uniprot:P40926
+	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.37 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P40926 ;
@@ -1756,6 +1727,7 @@ uniprot:P40926
 	bioregistry:hasDbXref uniprotkb:P40926.
 
 uniprot:P23368
+	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P23368 ;
@@ -1765,6 +1737,7 @@ uniprot:P23368
 	bioregistry:hasDbXref uniprotkb:P23368.
 
 uniprot:P19440
+	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P19440 ;
@@ -1775,29 +1748,15 @@ uniprot:P19440
 	bioregistry:hasDbXref uniprotkb:P19440.
 
 uniprot:O75223
+	rdfs:label "GGCT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.4 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O75223 ;
 	sio:SIO:000028 uniprot:SER:36_enzyme ;
 	bioregistry:hasDbXref uniprotkb:O75223.
 
-uniprot:O14841
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:O14841 ;
-	sio:SIO:000028 uniprot:SER:37_enzyme ;
-	sio:SIO:000028 uniprot:SER:38_enzyme ;
-	sio:SIO:000028 uniprot:SER:39_enzyme ;
-	sio:SIO:000028 uniprot:SER:40_enzyme ;
-	sio:SIO:000028 uniprot:SER:41_enzyme ;
-	sio:SIO:000028 uniprot:SER:42_enzyme ;
-	sio:SIO:000028 uniprot:SER:43_enzyme ;
-	sio:SIO:000028 uniprot:SER:44_enzyme ;
-	sio:SIO:000028 uniprot:SER:45_enzyme ;
-	sio:SIO:000028 uniprot:SER:46_enzyme ;
-	bioregistry:hasDbXref uniprotkb:O14841.
-
 uniprot:P48506
+	rdfs:label "GCLC"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48506 ;
@@ -1806,6 +1765,7 @@ uniprot:P48506
 	bioregistry:hasDbXref uniprotkb:P48506.
 
 uniprot:P48637
+	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P48637 ;
@@ -1842,7 +1802,15 @@ uniprot:P48637
 	sio:SIO:000028 uniprot:SER:79_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
+uniprot:Q9H8P0
+	rdfs:label "30.39"^^xsd:string ;
+	rdf:type wp:Protein ;
+	wp:bdbUniprot uniprot:Q9H8P0 ;
+	sio:SIO:000028 uniprot:SER:81_enzyme ;
+	bioregistry:hasDbXref uniprotkb:Q9H8P0.
+
 uniprot:Q9UPQ8
+	rdfs:label "30.38"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q9UPQ8 ;
@@ -1850,6 +1818,7 @@ uniprot:Q9UPQ8
 	bioregistry:hasDbXref uniprotkb:Q9UPQ8.
 
 uniprot:Q9BT22
+	rdfs:label "30.9"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q9BT22 ;
@@ -1857,6 +1826,7 @@ uniprot:Q9BT22
 	bioregistry:hasDbXref uniprotkb:Q9BT22.
 
 uniprot:Q9H553
+	rdfs:label "30.7"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:Q9H553 ;
@@ -1865,6 +1835,7 @@ uniprot:Q9H553
 	bioregistry:hasDbXref uniprotkb:Q9H553.
 
 uniprot:P06863
+	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P06863 ;
@@ -1872,6 +1843,7 @@ uniprot:P06863
 	bioregistry:hasDbXref uniprotkb:P06863.
 
 uniprot:P06865
+	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P06865 ;
@@ -1879,6 +1851,7 @@ uniprot:P06865
 	bioregistry:hasDbXref uniprotkb:P06865.
 
 uniprot:P06866
+	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P06866 ;
@@ -1887,6 +1860,7 @@ uniprot:P06866
 	bioregistry:hasDbXref uniprotkb:P06866.
 
 uniprot:P11150
+	rdfs:label "HL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P11150 ;
@@ -1895,6 +1869,7 @@ uniprot:P11150
 	bioregistry:hasDbXref uniprotkb:P11150.
 
 uniprot:O95477
+	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
@@ -1956,11 +1931,52 @@ uniprot:O95477
 	sio:SIO:000028 uniprot:SER:161_enzyme ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
-uniprot:Q9H8P0
+uniprot:Q92947
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q9H8P0 ;
-	sio:SIO:000028 uniprot:SER:81_enzyme ;
-	bioregistry:hasDbXref uniprotkb:Q9H8P0.
+	wp:bdbUniprot uniprot:Q92947 ;
+	sio:SIO:000028 uniprot:SER:3_enzyme ;
+	sio:SIO:000028 uniprot:SER:4_enzyme ;
+	sio:SIO:000028 uniprot:SER:5_enzyme ;
+	sio:SIO:000028 uniprot:SER:6_enzyme ;
+	sio:SIO:000028 uniprot:SER:7_enzyme ;
+	sio:SIO:000028 uniprot:SER:8_enzyme ;
+	sio:SIO:000028 uniprot:SER:9_enzyme ;
+	sio:SIO:000028 uniprot:SER:10_enzyme ;
+	sio:SIO:000028 uniprot:SER:11_enzyme ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	bioregistry:hasDbXref uniprotkb:Q92947.
+
+uniprot:Q9H9P8
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
+	rdf:type wp:Protein ;
+	wp:bdbUniprot uniprot:Q9H9P8 ;
+	sio:SIO:000028 uniprot:SER:12_enzyme ;
+	sio:SIO:000028 uniprot:SER:13_enzyme ;
+	bioregistry:hasDbXref uniprotkb:Q9H9P8.
+
+uniprot:Q8N465
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
+	rdf:type wp:Protein ;
+	wp:bdbUniprot uniprot:Q8N465 ;
+	sio:SIO:000028 uniprot:SER:14_enzyme ;
+	bioregistry:hasDbXref uniprotkb:Q8N465.
+
+uniprot:O14841
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
+	rdf:type wp:Protein ;
+	wp:bdbUniprot uniprot:O14841 ;
+	sio:SIO:000028 uniprot:SER:37_enzyme ;
+	sio:SIO:000028 uniprot:SER:38_enzyme ;
+	sio:SIO:000028 uniprot:SER:39_enzyme ;
+	sio:SIO:000028 uniprot:SER:40_enzyme ;
+	sio:SIO:000028 uniprot:SER:41_enzyme ;
+	sio:SIO:000028 uniprot:SER:42_enzyme ;
+	sio:SIO:000028 uniprot:SER:43_enzyme ;
+	sio:SIO:000028 uniprot:SER:44_enzyme ;
+	sio:SIO:000028 uniprot:SER:45_enzyme ;
+	sio:SIO:000028 uniprot:SER:46_enzyme ;
+	bioregistry:hasDbXref uniprotkb:O14841.
 
 SER:80
 	rh:equation "Cysteinylglycine = cysteine"^^xsd:string ;

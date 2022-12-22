@@ -26,9 +26,6 @@ import re
 ##Lists to store data in
 ListTotal = []
 ListSER_ID = []
-ListEnzymePW = []
-ListApprovedEnzymeName = []
-ListEC_Number = []
 ListUniprot = [] 
 ListLinkUniprot = [] 
 ListEnsembl = []
@@ -113,7 +110,7 @@ for itemEnzymePW in ListTotal:
 	  ListUniprot.append('uniprot:' + b[4].strip( ) + '\t' + 'rdfs:label' + ' "' + b[1].strip( ) + '"^^xsd:string')
 	for items in ListUniprot: 
 		if '-' in items:
-			ListEnzymePW.remove(items)				
+			ListUniprot.remove(items)				
 			
 ###Ignore for now...
 # ##[2]=ApprovedEnzymeName
@@ -314,27 +311,12 @@ for itemListSER in ListSER_ID:
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')
 	
-for itemListEnzymePW in ListEnzymePW:
-	(key, val) = itemListEnzymePW.strip('\n').split('\t')
-	AllDict.setdefault(key, [])
-	AllDict[key].append(val + ' ;')		
-	
-for itemListEC_Number in ListEC_Number:
-	(key, val) = itemListEC_Number.strip('\n').split('\t')
-	AllDict.setdefault(key, [])
-	AllDict[key].append(val + ' ;')	
-
 unique_ListUniprot = list(dict.fromkeys(ListUniprot))
 
 for itemListUniprot in unique_ListUniprot:
 	(key, val) = itemListUniprot.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
-
-#for itemListEnsembl in ListEnsembl:
-#	(key, val) = itemListEnsembl.strip('\n').split('\t')
-#	AllDict.setdefault(key, [])
-#	AllDict[key].append(val + ' ;')	
 
 for itemListRheaID in ListRheaID:
 	(key, val) = itemListRheaID.strip('\n').split('\t')
