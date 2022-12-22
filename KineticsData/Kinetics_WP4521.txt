@@ -1,4 +1,4 @@
-EnzymePW	ApprovedEnzymeName	ECnumber	UniProt	Ensemble	RheaID	CHEBIID	Km	Kcat	Kcat/Km	pH	Temperature	AdditionalConditions	Species	PMID 	Database
+EnzymePW	ApprovedEnzymeName	ECnumber	UniProt	Ensembl	RheaID	CHEBIID	Km	Kcat	Kcat/Km	pH	Temperature	AdditionalConditions	Species	PMID 	Database
 30.39	-	1.3.1.B13	Q9H8P0	-	RHEA:34281	67132	-	-	-	8	37	-	Homo sapiens	20637498	Brenda
 30.38	-	2.7.1.108	Q9UPQ8	-	RHEA:13134	16091	-	-	-	-	-	-	Homo sapiens	-	Brenda
 30.38	-	2.7.1.108	-	-	RHEA:13134	16091	23	-	-	7.4	37	-	Rattus norvegicus	2838091	Brenda
