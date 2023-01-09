@@ -5,6 +5,7 @@
 @prefix wp: <http://vocabularies.wikipathways.org/wp#> . 
 @prefix rh: <http://rdf.rhea-db.org/> . 
 @prefix RHEA:   <https://identifiers.org/rhea/> . 
+@prefix CHEBI:   <http://purl.obolibrary.org/obo/CHEBI_> . 
 @prefix dcterms: <http://purl.org/dc/terms/> . 
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> . 
 @prefix uniprot:   <https://identifiers.org/uniprot/> . 
@@ -936,6 +937,13 @@ SER:91
 	dcterms:references pubmed:7309740 ;
 	dc:source "Brenda"^^xsd:string .
 
+SER:104
+	dc:identifier SER:77272-P11150-38495 ;
+	sio:SIO_000028  SER:104_substrate, SER:104_enzyme, SER:104_reaction ;
+	sio:SIO_000008  SER:104_measurement ;
+	rdf:type wp:InteractionData ;
+	dc:source "Unknown"^^xsd:string .
+
 SER:105
 	dc:identifier SER:132933-P11150-12046 ;
 	sio:SIO_000028  SER:105_substrate, SER:105_enzyme, SER:105_reaction ;
@@ -980,14 +988,6 @@ SER:95
 	dcterms:references pubmed:11249004 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:96
-	rdf:type wp:InteractionData ;
-	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
-	SER:hasKm  "1.77"^^xsd:float ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dcterms:references pubmed:3523161 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:97
 	rdf:type wp:InteractionData ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
@@ -996,44 +996,10 @@ SER:97
 	dcterms:references pubmed:4370169 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:98
-	rdf:type wp:InteractionData ;
-	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
-	SER:hasKm  "0.083"^^xsd:float ;
-	dcterms:description "soluble enzyme ; Km range 0,075 – 0,083"@en ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dcterms:references pubmed:4370169 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:104
-	rdf:type wp:InteractionData ;
-	dc:source "Unknown"^^xsd:string .
-
-SER:106
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKm  "0.11"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant K529R"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:107
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.36"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:108
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKm  "0.37"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1051,17 +1017,6 @@ SER:109
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:110
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKm  "0.42"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant G893P"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:111
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
@@ -1069,17 +1024,6 @@ SER:111
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G894S"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:112
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKm  "0.49"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant T880V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
@@ -1094,31 +1038,10 @@ SER:113
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:114
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKm  "0.54"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant G893A"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:115
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.55"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:116
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKm  "0.61"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1135,30 +1058,10 @@ SER:117
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:118
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKm  "0.68"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:119
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "0.77"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:120
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKm  "0.85"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1175,30 +1078,10 @@ SER:121
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:122
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKm  "0.95"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:123
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKm  "1.1"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:124
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKm  "1.2"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1215,30 +1098,10 @@ SER:125
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:126
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKcat  "5"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:127
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "7"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:128
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKcat  "0.01"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1256,30 +1119,10 @@ SER:129
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:130
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKcat  "17"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:131
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "19"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:132
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKcat  "22"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1296,31 +1139,10 @@ SER:133
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:134
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKcat  "37"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant G893P"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:135
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "0.05"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:136
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKcat  "64"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1337,31 +1159,10 @@ SER:137
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:138
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKcat  "79"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant G894A"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:139
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKcat  "92"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:140
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKcat  "94"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1378,34 +1179,12 @@ SER:141
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:142
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKcat  "0.15"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant K529R"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:143
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "0.0009"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:144
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKmKcat "0.0024"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant T880V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
@@ -1421,16 +1200,6 @@ SER:145
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:146
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKmKcat "3"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:147
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
@@ -1442,31 +1211,10 @@ SER:147
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:148
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKmKcat "6"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant G893A"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:149
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "7"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:150
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKmKcat "9"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1483,31 +1231,10 @@ SER:151
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:152
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKmKcat "16"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant G893P, mutant K529R"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:153
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "0.02"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:154
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKmKcat "22"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1524,17 +1251,6 @@ SER:155
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:156
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKmKcat "29"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant G894A"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:157
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
@@ -1545,30 +1261,10 @@ SER:157
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:158
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKmKcat "39"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
 SER:159
 	rdf:type wp:InteractionData ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	SER:hasKmKcat "47"^^xsd:float ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:24520911 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:160
-	rdf:type wp:InteractionData ;
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	SER:hasKmKcat "52"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1745,21 +1441,12 @@ uniprot:P06863
 	sio:SIO_000028 SER:95_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P06863.
 
-uniprot:P06865
-	rdfs:label "LPL"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
-	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P06865 ;
-	sio:SIO_000028 SER:96_enzyme ;
-	bioregistry:hasDbXref uniprotkb:P06865.
-
 uniprot:P06866
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:P06866 ;
 	sio:SIO_000028 SER:97_enzyme ;
-	sio:SIO_000028 SER:98_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P06866.
 
 uniprot:P11150
@@ -1776,61 +1463,33 @@ uniprot:O95477
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
 	wp:bdbUniprot uniprot:O95477 ;
-	sio:SIO_000028 SER:106_enzyme ;
 	sio:SIO_000028 SER:107_enzyme ;
-	sio:SIO_000028 SER:108_enzyme ;
 	sio:SIO_000028 SER:109_enzyme ;
-	sio:SIO_000028 SER:110_enzyme ;
 	sio:SIO_000028 SER:111_enzyme ;
-	sio:SIO_000028 SER:112_enzyme ;
 	sio:SIO_000028 SER:113_enzyme ;
-	sio:SIO_000028 SER:114_enzyme ;
 	sio:SIO_000028 SER:115_enzyme ;
-	sio:SIO_000028 SER:116_enzyme ;
 	sio:SIO_000028 SER:117_enzyme ;
-	sio:SIO_000028 SER:118_enzyme ;
 	sio:SIO_000028 SER:119_enzyme ;
-	sio:SIO_000028 SER:120_enzyme ;
 	sio:SIO_000028 SER:121_enzyme ;
-	sio:SIO_000028 SER:122_enzyme ;
 	sio:SIO_000028 SER:123_enzyme ;
-	sio:SIO_000028 SER:124_enzyme ;
 	sio:SIO_000028 SER:125_enzyme ;
-	sio:SIO_000028 SER:126_enzyme ;
 	sio:SIO_000028 SER:127_enzyme ;
-	sio:SIO_000028 SER:128_enzyme ;
 	sio:SIO_000028 SER:129_enzyme ;
-	sio:SIO_000028 SER:130_enzyme ;
 	sio:SIO_000028 SER:131_enzyme ;
-	sio:SIO_000028 SER:132_enzyme ;
 	sio:SIO_000028 SER:133_enzyme ;
-	sio:SIO_000028 SER:134_enzyme ;
 	sio:SIO_000028 SER:135_enzyme ;
-	sio:SIO_000028 SER:136_enzyme ;
 	sio:SIO_000028 SER:137_enzyme ;
-	sio:SIO_000028 SER:138_enzyme ;
 	sio:SIO_000028 SER:139_enzyme ;
-	sio:SIO_000028 SER:140_enzyme ;
 	sio:SIO_000028 SER:141_enzyme ;
-	sio:SIO_000028 SER:142_enzyme ;
 	sio:SIO_000028 SER:143_enzyme ;
-	sio:SIO_000028 SER:144_enzyme ;
 	sio:SIO_000028 SER:145_enzyme ;
-	sio:SIO_000028 SER:146_enzyme ;
 	sio:SIO_000028 SER:147_enzyme ;
-	sio:SIO_000028 SER:148_enzyme ;
 	sio:SIO_000028 SER:149_enzyme ;
-	sio:SIO_000028 SER:150_enzyme ;
 	sio:SIO_000028 SER:151_enzyme ;
-	sio:SIO_000028 SER:152_enzyme ;
 	sio:SIO_000028 SER:153_enzyme ;
-	sio:SIO_000028 SER:154_enzyme ;
 	sio:SIO_000028 SER:155_enzyme ;
-	sio:SIO_000028 SER:156_enzyme ;
 	sio:SIO_000028 SER:157_enzyme ;
-	sio:SIO_000028 SER:158_enzyme ;
 	sio:SIO_000028 SER:159_enzyme ;
-	sio:SIO_000028 SER:160_enzyme ;
 	sio:SIO_000028 SER:161_enzyme ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
@@ -2315,584 +1974,176 @@ RHEA:54387
 	sio:SIO_000028 SER:259_reaction ;
 	rh: RHEA:54387.
 
-SER:1_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:16953
+	sio:SIO_000028 SER:1 ;
+	sio:SIO_000028 SER:2 ;
 	wp:bdbChEBI 16953.
 
-SER:2_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16953.
-
-SER:3_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:15524
+	sio:SIO_000028 SER:3 ;
+	sio:SIO_000028 SER:4 ;
+	sio:SIO_000028 SER:5 ;
+	sio:SIO_000028 SER:6 ;
+	sio:SIO_000028 SER:7 ;
+	sio:SIO_000028 SER:8 ;
+	sio:SIO_000028 SER:9 ;
 	wp:bdbChEBI 15524.
 
-SER:4_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15524.
-
-SER:5_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15524.
-
-SER:6_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15524.
-
-SER:7_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15524.
-
-SER:8_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15524.
-
-SER:9_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15524.
-
-SER:10_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:24311
+	sio:SIO_000028 SER:10 ;
+	sio:SIO_000028 SER:11 ;
 	wp:bdbChEBI 24311.
 
-SER:11_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 24311.
-
-SER:12_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:17084
+	sio:SIO_000028 SER:12 ;
+	sio:SIO_000028 SER:13 ;
+	sio:SIO_000028 SER:14 ;
+	sio:SIO_000028 SER:28 ;
+	sio:SIO_000028 SER:29 ;
+	sio:SIO_000028 SER:30 ;
+	sio:SIO_000028 SER:31 ;
 	wp:bdbChEBI 17084.
 
-SER:13_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17084.
-
-SER:14_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17084.
-
-SER:15_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:30915
+	sio:SIO_000028 SER:15 ;
+	sio:SIO_000028 SER:16 ;
+	sio:SIO_000028 SER:17 ;
+	sio:SIO_000028 SER:18 ;
+	sio:SIO_000028 SER:19 ;
+	sio:SIO_000028 SER:20 ;
+	sio:SIO_000028 SER:21 ;
+	sio:SIO_000028 SER:22 ;
+	sio:SIO_000028 SER:24 ;
+	sio:SIO_000028 SER:25 ;
+	sio:SIO_000028 SER:26 ;
+	sio:SIO_000028 SER:27 ;
 	wp:bdbChEBI 30915.
 
-SER:16_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:17_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:18_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:19_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:20_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:21_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:22_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:24_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:25_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:26_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:27_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-SER:28_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17084.
-
-SER:29_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17084.
-
-SER:30_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17084.
-
-SER:31_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17084.
-
-SER:32_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:16856
+	sio:SIO_000028 SER:32 ;
+	sio:SIO_000028 SER:33 ;
+	sio:SIO_000028 SER:34 ;
+	sio:SIO_000028 SER:35 ;
 	wp:bdbChEBI 16856.
 
-SER:33_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16856.
-
-SER:34_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16856.
-
-SER:35_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16856.
-
-SER:36_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:15857
+	sio:SIO_000028 SER:36 ;
 	wp:bdbChEBI 15857.
 
-SER:37_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:16010
+	sio:SIO_000028 SER:37 ;
+	sio:SIO_000028 SER:38 ;
+	sio:SIO_000028 SER:39 ;
+	sio:SIO_000028 SER:40 ;
+	sio:SIO_000028 SER:41 ;
+	sio:SIO_000028 SER:42 ;
+	sio:SIO_000028 SER:43 ;
+	sio:SIO_000028 SER:44 ;
+	sio:SIO_000028 SER:45 ;
+	sio:SIO_000028 SER:46 ;
 	wp:bdbChEBI 16010.
 
-SER:38_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16010.
-
-SER:39_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16010.
-
-SER:40_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16010.
-
-SER:41_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16010.
-
-SER:42_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16010.
-
-SER:43_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16010.
-
-SER:44_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16010.
-
-SER:45_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16010.
-
-SER:46_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16010.
-
-SER:47_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:14321
+	sio:SIO_000028 SER:47 ;
+	sio:SIO_000028 SER:48 ;
 	wp:bdbChEBI 14321.
 
-SER:48_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 14321.
-
-SER:49_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:17515
+	sio:SIO_000028 SER:49 ;
+	sio:SIO_000028 SER:77 ;
+	sio:SIO_000028 SER:78 ;
+	sio:SIO_000028 SER:79 ;
 	wp:bdbChEBI 17515.
 
-SER:50_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:15428
+	sio:SIO_000028 SER:50 ;
+	sio:SIO_000028 SER:51 ;
+	sio:SIO_000028 SER:52 ;
+	sio:SIO_000028 SER:53 ;
+	sio:SIO_000028 SER:54 ;
+	sio:SIO_000028 SER:55 ;
+	sio:SIO_000028 SER:56 ;
+	sio:SIO_000028 SER:57 ;
+	sio:SIO_000028 SER:58 ;
+	sio:SIO_000028 SER:59 ;
+	sio:SIO_000028 SER:60 ;
+	sio:SIO_000028 SER:61 ;
+	sio:SIO_000028 SER:62 ;
+	sio:SIO_000028 SER:63 ;
+	sio:SIO_000028 SER:64 ;
+	sio:SIO_000028 SER:65 ;
+	sio:SIO_000028 SER:66 ;
+	sio:SIO_000028 SER:67 ;
+	sio:SIO_000028 SER:68 ;
+	sio:SIO_000028 SER:69 ;
+	sio:SIO_000028 SER:70 ;
+	sio:SIO_000028 SER:71 ;
+	sio:SIO_000028 SER:72 ;
+	sio:SIO_000028 SER:73 ;
+	sio:SIO_000028 SER:74 ;
+	sio:SIO_000028 SER:75 ;
+	sio:SIO_000028 SER:76 ;
 	wp:bdbChEBI 15428.
 
-SER:51_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:52_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:53_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:54_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:55_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:56_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:57_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:58_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:59_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:60_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:61_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:62_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:63_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:64_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:65_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:66_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:67_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:68_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:69_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:70_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:71_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:72_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:73_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:74_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:75_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:76_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-SER:77_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17515.
-
-SER:78_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17515.
-
-SER:79_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17515.
-
-SER:81_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:67132
+	sio:SIO_000028 SER:81 ;
 	wp:bdbChEBI 67132.
 
-SER:82_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:16091
+	sio:SIO_000028 SER:82 ;
 	wp:bdbChEBI 16091.
 
-SER:88_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:57269
+	sio:SIO_000028 SER:88 ;
 	wp:bdbChEBI 57269.
 
-SER:90_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:58472
+	sio:SIO_000028 SER:90 ;
+	sio:SIO_000028 SER:91 ;
 	wp:bdbChEBI 58472.
 
-SER:91_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 58472.
-
-SER:95_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:59238
+	sio:SIO_000028 SER:95 ;
+	sio:SIO_000028 SER:97 ;
 	wp:bdbChEBI 59238.
 
-SER:96_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 59238.
-
-SER:97_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 59238.
-
-SER:98_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 59238.
-
-SER:104_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:77272
+	sio:SIO_000028 SER:104 ;
 	wp:bdbChEBI 77272.
 
-SER:105_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:132933
+	sio:SIO_000028 SER:105 ;
 	wp:bdbChEBI 132933.
 
-SER:106_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:107_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:108_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:109_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:110_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:111_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:112_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:113_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:114_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:115_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:116_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:117_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:118_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:119_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:120_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:121_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:122_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:123_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:124_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:125_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:126_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:127_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:128_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:129_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:130_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:131_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:132_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:133_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:134_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:135_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:136_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:137_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:138_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:139_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:140_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:141_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:142_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:143_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:144_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:145_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:146_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:147_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:148_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:149_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:150_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:151_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:152_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:153_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:154_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:155_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:156_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:157_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:158_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:159_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:160_substrate
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-SER:161_substrate
-	rdf:type wp:Metabolite ;
+CHEBI:15422
+	sio:SIO_000028 SER:107 ;
+	sio:SIO_000028 SER:109 ;
+	sio:SIO_000028 SER:111 ;
+	sio:SIO_000028 SER:113 ;
+	sio:SIO_000028 SER:115 ;
+	sio:SIO_000028 SER:117 ;
+	sio:SIO_000028 SER:119 ;
+	sio:SIO_000028 SER:121 ;
+	sio:SIO_000028 SER:123 ;
+	sio:SIO_000028 SER:125 ;
+	sio:SIO_000028 SER:127 ;
+	sio:SIO_000028 SER:129 ;
+	sio:SIO_000028 SER:131 ;
+	sio:SIO_000028 SER:133 ;
+	sio:SIO_000028 SER:135 ;
+	sio:SIO_000028 SER:137 ;
+	sio:SIO_000028 SER:139 ;
+	sio:SIO_000028 SER:141 ;
+	sio:SIO_000028 SER:143 ;
+	sio:SIO_000028 SER:145 ;
+	sio:SIO_000028 SER:147 ;
+	sio:SIO_000028 SER:149 ;
+	sio:SIO_000028 SER:151 ;
+	sio:SIO_000028 SER:153 ;
+	sio:SIO_000028 SER:155 ;
+	sio:SIO_000028 SER:157 ;
+	sio:SIO_000028 SER:159 ;
+	sio:SIO_000028 SER:161 ;
 	wp:bdbChEBI 15422.
 
 SER:84
@@ -2903,17 +2154,16 @@ SER:84
 	dcterms:references pubmed:2999115 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:100
-	SER:hasKm  "0.57"^^xsd:float ;
-	dcterms:description "recombinant enzyme expressed in baby hamster kidney cells"@en ;
+SER:99
+	SER:hasKm  "0.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:16780378 ;
+	dc:source "BRENDA/Uni Prot"^^xsd:string .
+
+SER:101
+	SER:hasKm  "0.83"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:10685026 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:102
-	SER:hasKm  "21.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:1901219 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SER:163
@@ -3279,6 +2529,9 @@ SER:257
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:20823678 ;
 	dc:source "Brenda"^^xsd:string .
+
+SER:103
+	dc:source "Unknown"^^xsd:string .
 
 SER:261
 	dc:source "Unknown"^^xsd:string .

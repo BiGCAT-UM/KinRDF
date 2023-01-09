@@ -81,6 +81,8 @@ for itemSERX in ListTotal:
 	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
 	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
 	    countSER = countSER +1
+	  else:
+	    ListTotal.remove(itemSERX)
 	else:
 		ListQC.append("CHECK: Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
 
@@ -173,7 +175,7 @@ for itemEnsembl in ListTotal:
   else:
     ListQC.append("CHECK: Data format for 'wp:bdbEnsembl unknown, check original data for: "+ f[0] + ' : ' + f[5]+ '\n')
     
-ListQC.append("Data format for 'wp:bdbEnsembl correctly loaded for " + str(countGenes) + " gene IDs. \n\n")  
+ListQC.append("Data format for wp:bdbEnsembl correctly loaded for " + str(countGenes) + " gene IDs. \n\n")  
   
 ##TODO Add regex check!
 ##RHEA IDs
@@ -200,14 +202,27 @@ for itemRheaID in ListTotal:
 			ListLinkRheaID.remove(items)	
 
 
-##CHEBIID for substrate ##--> Add to SER:X_substrate
+##CHEBI IDs
+countSubstrates = 0
 for itemSubstrate in ListTotal:
 	h = itemSubstrate.split('\t')
+	pattern_chebi = '^(CHEBI:)?\\d+$'
+	result_chebi =  re.match(pattern_chebi, h[7])
 	if ('-' in h[0])|('-' in h[4])|('-' in h[6])|('-' in h[7]): #Check if one of the necessary values is missing!!
 	  continue
+	elif(result_chebi):
+	  if h[7].isnumeric(): #without prefix
+	    ListSubstrate.append('CHEBI:' + h[7].strip( ) +'\t' + 'sio:SIO_000028' + ' ' + h[0].strip())
+	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
+	    countSubstrates = countSubstrates + 1
+	  else: #'CHEBI:' Prefix is already included in the data
+	    ListSubstrate.append(h[7].strip( ) +'\t' + 'sio:SIO_000028' + ' ' + h[0].strip())
+	    ListSubstrateIDs.append(h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
+	    countSubstrates = countSubstrates + 1
 	else:
-	  ListSubstrate.append(h[0].strip( ) + '_substrate' +'\t' + 'rdf:type' + ' ' + "wp:Metabolite")
-	  ListSubstrateIDs.append(h[0].strip( ) + '_substrate' + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
+	  ListQC.append("CHECK: Data format for CHEBI ID unknown, check original data for: "+ h[0] + " : " + h[7] + '\n')
+
+ListQC.append("Data format for wp:bdbChEBI correctly loaded for " + str(countSubstrates) + " substrate IDs. \n\n")  
 
 #Km##--> Add to measurement
 for itemKm in ListTotal:
@@ -417,6 +432,7 @@ RDF_Kin_data.write("@prefix wp: <http://vocabularies.wikipathways.org/wp#> . \n"
 RDF_Kin_data.write("@prefix rh: <http://rdf.rhea-db.org/> . \n".encode()) #From Rhea
 #RDF_Kin_data.write("@prefix RHEA:   <https://www.rhea-db.org/reaction?id=> . \n".encode()) #For website link, not for IRI!
 RDF_Kin_data.write("@prefix RHEA:   <https://identifiers.org/rhea/> . \n".encode()) #To link to WPRDF
+RDF_Kin_data.write("@prefix CHEBI:   <http://purl.obolibrary.org/obo/CHEBI_> . \n".encode()) #To link to Rhea RDF
 RDF_Kin_data.write("@prefix dcterms: <http://purl.org/dc/terms/> . \n".encode()) 
 RDF_Kin_data.write("@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> . \n".encode())
 RDF_Kin_data.write("@prefix uniprot:   <https://identifiers.org/uniprot/> . \n".encode())
