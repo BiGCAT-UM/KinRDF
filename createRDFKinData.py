@@ -59,6 +59,8 @@ for (dirname, dirs, files) in os.walk('.'):
 				ListTotal.append(SER_Name + '\t' + line.strip('\n'))
 				countSER += 1
 
+ListQC.append("Total lines read: "+ str(len(ListTotal)) + '\n')
+
 ##SER_number
 countSER = 0
 for itemSERX in ListTotal:
@@ -72,16 +74,17 @@ for itemSERX in ListTotal:
 	pattern_rhea = '^(RHEA:)?\\d{5}$'
 	result_rhea = re.match(pattern_rhea, a[6])
 	if ('-' in a[0])|('-' in a[4])|('-' in a[6])|('-' in a[7]): #Check if one of the necessary values is missing!!
-	  continue
+	  ListTotal.remove(itemSERX)
 	elif result: ##Create a unique IRI based on Substrate [7], Enzyme [4], and Reaction [6] ID. Note: if one of the three is missing, report in QC.
 	  if (result_chebi is not None) & (result_uniprot is not None) & (result_rhea is not None): ##check against REGEX
-	    #print(result_chebi + ' ' + result_uniprot + ' ' + result_rhea)
 	    ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( )) ##Trim RHEA/CHEBI in fromt of IDs if available.
 	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
 	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
 	    countSER = countSER +1
 	else:
 		ListQC.append("CHECK: Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
+
+ListQC.append("Lines remaining without missing SER info: "+ str(len(ListTotal)) + '\n')
 
 ListQC.append("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs. \n\n")  
 			
@@ -97,11 +100,11 @@ for itemSERX in ListTotal:
 	else:
 		print("CHECK: Data format for rdf:type IDs unknown, check original data for: " + a[0])
 
-#LengthList = len(ListSER_ID)
-		
-# #Read in tsv file: [0]=ERPX_number [1]=EnzymePW, [2]=ApprovedEnzymeName, [3]=EC_Number, [4]=Uniprot , [5]=Ensembl, [6]=RheaID, [7]=CHEBIID, [8]=Km, [9]=Kcat, [10]=Kcat/Km, [11]=pH, [12]=Temperature, [13]=AdditionalConditions, [14]=Organism, [15]=PMID, [16]=Database				
+#### Read in tsv file: [0]=ERPX_number [1]=EnzymePW, [2]=ApprovedEnzymeName, [3]=EC_Number, [4]=Uniprot , 
+#### [5]=Ensembl, [6]=RheaID, [7]=CHEBIID, [8]=Km, [9]=Kcat, [10]=Kcat/Km, [11]=pH, [12]=Temperature, 
+#### [13]=AdditionalConditions, [14]=Organism, [15]=PMID, [16]=Database				
 
-##EnzymePW --> Add to enzyme_SER:X
+##EnzymePW 
 ##No regex or count defined, since the names of Proteins can be very diverse!
 for itemEnzymePW in ListTotal:
 	b = itemEnzymePW.split('\t')
@@ -113,7 +116,7 @@ for itemEnzymePW in ListTotal:
 		if '-' in items:
 			ListUniprot.remove(items)				
 			
-###Ignore for now...
+###Approved Ennzyme names (added in spreadsheet for curation, not needed in RDF model)
 # ##[2]=ApprovedEnzymeName
 # for itemApprovedEnzymeName in ListTotal:
 	# c = itemApprovedEnzymeName.split('\t')
@@ -122,7 +125,7 @@ for itemEnzymePW in ListTotal:
 		# if '-' in items:
 			# ListApprovedEnzymeName.remove(items)
 			
-##EC_Number --> Add to enzyme_SER:X
+##EC_Numbers
 countECs = 0
 for itemEC_Number in ListTotal:
 	d = itemEC_Number.split('\t')
@@ -138,11 +141,8 @@ for itemEC_Number in ListTotal:
     
 ListQC.append("Data format for 'wp:bdbEnzymeNomenclature correctly loaded for " + str(countECs) + " EC IDs. \n\n")  
 	
-#	ListSubstrate.append(h[0].strip( ) + '_substrate' +'\t' + 'rdf:type' + ' ' + "wp:Metabolite")
-#	ListSubstrateIDs.append(h[0].strip( ) + '_substrate' + "\t" + "wp:bdbChEBI " + 'CHEBI:' + h[7].strip( )+ '.')	
-	
-##Uniprot IRIs for WPRDF link && Uniprot interoperability IRIs --> Add to SER:X_enzyme
-##Since this list will only include two statements, we can already add the ';' and '.' after the entries.
+
+##Uniprot IDs
 for itemUniprot in ListTotal:
 	e = itemUniprot.split('\t')
 	if ('-' in e[0])|('-' in e[4])|('-' in e[6])|('-' in e[7]): #Check if one of the necessary values is missing!!
@@ -159,7 +159,7 @@ for itemUniprot in ListTotal:
 	  ListLinkUniprot.append('uniprot:' + e[4].strip( ) + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )
 
 
-##Ensembl --> Add to enzyme_SER:X
+##Ensembl IDs
 countGenes = 0
 for itemEnsembl in ListTotal:
   f = itemEnsembl.split('\t')
@@ -175,32 +175,19 @@ for itemEnsembl in ListTotal:
     
 ListQC.append("Data format for 'wp:bdbEnsembl correctly loaded for " + str(countGenes) + " gene IDs. \n\n")  
   
-    
-##Update interoperability with Rhea RDF:
-#  ?rhea rdfs:subClassOf rh:Reaction .
-#  ?rhea rh:id ?id .
-#  ?rhea rh:accession ?accession .
-#  ?rhea rh:equation ?equation .
-
-# rhea: http://rdf.rhea-db.org/10000
-# id: "10000"xsd:long
-# accession: "RHEA:10000"xsd:string
-# equation: "H2O + pentanamide = NH4(+) + pentanoate"xsd:string
-
-##RheaID ##Check if rh:accession shouldn't be wp:bdbdRhea (since accession is used to levarage between reactionscheme and RheaID by RHEA RDF).
-##--> Add to sio:SIO_000028  SER:X_reaction
-##Add regex check!
+##TODO Add regex check!
+##RHEA IDs
 for itemRheaID in ListTotal:
 	g = itemRheaID.split('\t')
 	if g[6].isnumeric(): #without prefix
 	  #ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ) ) #old
 	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
-	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' SER:' + g[0].strip( ) + '_reaction') 
+	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
 	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:' + ' RHEA:' + g[6].strip( ) + '.' )	
 	elif 'RHEA:' in g[6]: #with prefix
 	  #ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ).replace("RHEA:", "") ) #old
 	  ListRheaID.append(g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' ' + g[6].strip( ))
-	  ListRheaID.append(g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' SER:' + g[0].strip( ) + '_reaction') 
+	  ListRheaID.append(g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
 	  ListLinkRheaID.append(g[6].strip( ) + '\t' + 'rh:' + ' ' + g[6].strip( ) + '.' )	
 	  #ListRheaID.append(g[0].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ))  #old
 	else: #if no Rhea is available
@@ -211,8 +198,8 @@ for itemRheaID in ListTotal:
 	for items in ListLinkRheaID: 
 		if '-' in items:
 			ListLinkRheaID.remove(items)	
-			
-			
+
+
 ##CHEBIID for substrate ##--> Add to SER:X_substrate
 for itemSubstrate in ListTotal:
 	h = itemSubstrate.split('\t')

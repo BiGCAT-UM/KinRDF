@@ -286,16 +286,6 @@ SER:22
 	dcterms:references pubmed:15001388 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:24
-	dc:identifier SER:30915-Q8IWW8-RHEA:49614 ;
-	sio:SIO_000028  SER:24_substrate, SER:24_enzyme, SER:24_reaction ;
-	sio:SIO_000008  SER:24_measurement ;
-	rdf:type wp:InteractionData ;
-	SER:hasKm  "77"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:16616524 ;
-	dc:source "Brenda: 286147"^^xsd:string .
-
 SER:25
 	dc:identifier SER:30915-Q8IWW8-RHEA:49615 ;
 	sio:SIO_000028  SER:25_substrate, SER:25_enzyme, SER:25_reaction ;
@@ -926,35 +916,12 @@ SER:79
 	dcterms:references pubmed:23170977 ;
 	dc:source "BRENDA"^^xsd:string .
 
-SER:81
-	dc:identifier SER:67132-Q9H8P0-RHEA:34281 ;
-	sio:SIO_000028  SER:81_substrate, SER:81_enzyme, SER:81_reaction ;
-	sio:SIO_000008  SER:81_measurement ;
-	rdf:type wp:InteractionData ;
-	SER:hasPh "8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:20637498 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:82
 	dc:identifier SER:16091-Q9UPQ8-RHEA:13134 ;
 	sio:SIO_000028  SER:82_substrate, SER:82_enzyme, SER:82_reaction ;
 	sio:SIO_000008  SER:82_measurement ;
 	rdf:type wp:InteractionData ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:90
-	dc:identifier SER:58472-Q9H553-RHEA:29516 ;
-	sio:SIO_000028  SER:90_substrate, SER:90_enzyme, SER:90_reaction ;
-	sio:SIO_000008  SER:90_measurement ;
-	rdf:type wp:InteractionData ;
-	SER:hasPh "6.8"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "pH range was between 6,8 to 7,3"@en ;
-	wp:organismName "Oryctolagus cuniculus"^^xsd:string ;
-	dcterms:references pubmed:7309740 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:91
@@ -969,13 +936,6 @@ SER:91
 	dcterms:references pubmed:7309740 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:104
-	dc:identifier SER:77272-P11150-38495 ;
-	sio:SIO_000028  SER:104_substrate, SER:104_enzyme, SER:104_reaction ;
-	sio:SIO_000008  SER:104_measurement ;
-	rdf:type wp:InteractionData ;
-	dc:source "Unknown"^^xsd:string .
-
 SER:105
 	dc:identifier SER:132933-P11150-12046 ;
 	sio:SIO_000028  SER:105_substrate, SER:105_enzyme, SER:105_reaction ;
@@ -983,9 +943,33 @@ SER:105
 	rdf:type wp:InteractionData ;
 	dc:source "Unknown"^^xsd:string .
 
+SER:24
+	rdf:type wp:InteractionData ;
+	SER:hasKm  "77"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:16616524 ;
+	dc:source "Brenda: 286147"^^xsd:string .
+
+SER:81
+	rdf:type wp:InteractionData ;
+	SER:hasPh "8"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20637498 ;
+	dc:source "Brenda"^^xsd:string .
+
 SER:88
 	rdf:type wp:InteractionData ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:90
+	rdf:type wp:InteractionData ;
+	SER:hasPh "6.8"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	dcterms:description "pH range was between 6,8 to 7,3"@en ;
+	wp:organismName "Oryctolagus cuniculus"^^xsd:string ;
+	dcterms:references pubmed:7309740 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:95
@@ -1020,6 +1004,10 @@ SER:98
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dcterms:references pubmed:4370169 ;
 	dc:source "BRENDA"^^xsd:string .
+
+SER:104
+	rdf:type wp:InteractionData ;
+	dc:source "Unknown"^^xsd:string .
 
 SER:106
 	rdf:type wp:InteractionData ;
@@ -1895,664 +1883,437 @@ uniprot:O14841
 
 RHEA:14167
 	wp:bdbRhea RHEA:14167 ;
-	sio:SIO_000028 SER:SER:1_reaction ;
-	sio:SIO_000028 SER:SER:2_reaction ;
+	sio:SIO_000028 SER:1_reaction ;
+	sio:SIO_000028 SER:2_reaction ;
 	rh: RHEA:14167.
 
 RHEA:47421
 	wp:bdbRhea RHEA:47421 ;
-	sio:SIO_000028 SER:SER:3_reaction ;
+	sio:SIO_000028 SER:3_reaction ;
 	rh: RHEA:47421.
 
 RHEA:47422
 	wp:bdbRhea RHEA:47422 ;
-	sio:SIO_000028 SER:SER:4_reaction ;
+	sio:SIO_000028 SER:4_reaction ;
 	rh: RHEA:47422.
 
 RHEA:47423
 	wp:bdbRhea RHEA:47423 ;
-	sio:SIO_000028 SER:SER:5_reaction ;
+	sio:SIO_000028 SER:5_reaction ;
 	rh: RHEA:47423.
 
 RHEA:47424
 	wp:bdbRhea RHEA:47424 ;
-	sio:SIO_000028 SER:SER:6_reaction ;
+	sio:SIO_000028 SER:6_reaction ;
 	rh: RHEA:47424.
 
 RHEA:47425
 	wp:bdbRhea RHEA:47425 ;
-	sio:SIO_000028 SER:SER:7_reaction ;
+	sio:SIO_000028 SER:7_reaction ;
 	rh: RHEA:47425.
 
 RHEA:47426
 	wp:bdbRhea RHEA:47426 ;
-	sio:SIO_000028 SER:SER:8_reaction ;
+	sio:SIO_000028 SER:8_reaction ;
 	rh: RHEA:47426.
 
 RHEA:47427
 	wp:bdbRhea RHEA:47427 ;
-	sio:SIO_000028 SER:SER:9_reaction ;
+	sio:SIO_000028 SER:9_reaction ;
 	rh: RHEA:47427.
 
 RHEA:47428
 	wp:bdbRhea RHEA:47428 ;
-	sio:SIO_000028 SER:SER:10_reaction ;
+	sio:SIO_000028 SER:10_reaction ;
 	rh: RHEA:47428.
 
 RHEA:47429
 	wp:bdbRhea RHEA:47429 ;
-	sio:SIO_000028 SER:SER:11_reaction ;
+	sio:SIO_000028 SER:11_reaction ;
 	rh: RHEA:47429.
 
 RHEA:21253
 	wp:bdbRhea RHEA:21253 ;
-	sio:SIO_000028 SER:SER:12_reaction ;
-	sio:SIO_000028 SER:SER:28_reaction ;
+	sio:SIO_000028 SER:12_reaction ;
+	sio:SIO_000028 SER:28_reaction ;
 	rh: RHEA:21253.
 
 RHEA:21254
 	wp:bdbRhea RHEA:21254 ;
-	sio:SIO_000028 SER:SER:13_reaction ;
-	sio:SIO_000028 SER:SER:29_reaction ;
+	sio:SIO_000028 SER:13_reaction ;
+	sio:SIO_000028 SER:29_reaction ;
 	rh: RHEA:21254.
 
 RHEA:21255
 	wp:bdbRhea RHEA:21255 ;
-	sio:SIO_000028 SER:SER:14_reaction ;
-	sio:SIO_000028 SER:SER:30_reaction ;
+	sio:SIO_000028 SER:14_reaction ;
+	sio:SIO_000028 SER:30_reaction ;
 	rh: RHEA:21255.
 
 RHEA:49614
 	wp:bdbRhea RHEA:49614 ;
-	sio:SIO_000028 SER:SER:15_reaction ;
-	sio:SIO_000028 SER:SER:24_reaction ;
+	sio:SIO_000028 SER:15_reaction ;
+	sio:SIO_000028 SER:24_reaction ;
 	rh: RHEA:49614.
 
 RHEA:49615
 	wp:bdbRhea RHEA:49615 ;
-	sio:SIO_000028 SER:SER:16_reaction ;
-	sio:SIO_000028 SER:SER:25_reaction ;
+	sio:SIO_000028 SER:16_reaction ;
+	sio:SIO_000028 SER:25_reaction ;
 	rh: RHEA:49615.
 
 RHEA:49616
 	wp:bdbRhea RHEA:49616 ;
-	sio:SIO_000028 SER:SER:17_reaction ;
-	sio:SIO_000028 SER:SER:26_reaction ;
+	sio:SIO_000028 SER:17_reaction ;
+	sio:SIO_000028 SER:26_reaction ;
 	rh: RHEA:49616.
 
 RHEA:49617
 	wp:bdbRhea RHEA:49617 ;
-	sio:SIO_000028 SER:SER:18_reaction ;
-	sio:SIO_000028 SER:SER:27_reaction ;
+	sio:SIO_000028 SER:18_reaction ;
+	sio:SIO_000028 SER:27_reaction ;
 	rh: RHEA:49617.
 
 RHEA:49618
 	wp:bdbRhea RHEA:49618 ;
-	sio:SIO_000028 SER:SER:19_reaction ;
+	sio:SIO_000028 SER:19_reaction ;
 	rh: RHEA:49618.
 
 RHEA:49619
 	wp:bdbRhea RHEA:49619 ;
-	sio:SIO_000028 SER:SER:20_reaction ;
+	sio:SIO_000028 SER:20_reaction ;
 	rh: RHEA:49619.
 
 RHEA:49620
 	wp:bdbRhea RHEA:49620 ;
-	sio:SIO_000028 SER:SER:21_reaction ;
+	sio:SIO_000028 SER:21_reaction ;
 	rh: RHEA:49620.
 
 RHEA:49621
 	wp:bdbRhea RHEA:49621 ;
-	sio:SIO_000028 SER:SER:22_reaction ;
+	sio:SIO_000028 SER:22_reaction ;
 	rh: RHEA:49621.
 
 RHEA:21256
 	wp:bdbRhea RHEA:21256 ;
-	sio:SIO_000028 SER:SER:31_reaction ;
+	sio:SIO_000028 SER:31_reaction ;
 	rh: RHEA:21256.
 
 RHEA:23905
 	wp:bdbRhea RHEA:23905 ;
-	sio:SIO_000028 SER:SER:32_reaction ;
-	sio:SIO_000028 SER:SER:33_reaction ;
-	sio:SIO_000028 SER:SER:34_reaction ;
-	sio:SIO_000028 SER:SER:35_reaction ;
+	sio:SIO_000028 SER:32_reaction ;
+	sio:SIO_000028 SER:33_reaction ;
+	sio:SIO_000028 SER:34_reaction ;
+	sio:SIO_000028 SER:35_reaction ;
 	rh: RHEA:23905.
 
 RHEA:20506
 	wp:bdbRhea RHEA:20506 ;
-	sio:SIO_000028 SER:SER:36_reaction ;
+	sio:SIO_000028 SER:36_reaction ;
 	rh: RHEA:20506.
 
 RHEA:10349
 	wp:bdbRhea RHEA:10349 ;
-	sio:SIO_000028 SER:SER:37_reaction ;
-	sio:SIO_000028 SER:SER:38_reaction ;
-	sio:SIO_000028 SER:SER:39_reaction ;
-	sio:SIO_000028 SER:SER:40_reaction ;
-	sio:SIO_000028 SER:SER:41_reaction ;
-	sio:SIO_000028 SER:SER:42_reaction ;
-	sio:SIO_000028 SER:SER:43_reaction ;
-	sio:SIO_000028 SER:SER:44_reaction ;
-	sio:SIO_000028 SER:SER:45_reaction ;
-	sio:SIO_000028 SER:SER:46_reaction ;
+	sio:SIO_000028 SER:37_reaction ;
+	sio:SIO_000028 SER:38_reaction ;
+	sio:SIO_000028 SER:39_reaction ;
+	sio:SIO_000028 SER:40_reaction ;
+	sio:SIO_000028 SER:41_reaction ;
+	sio:SIO_000028 SER:42_reaction ;
+	sio:SIO_000028 SER:43_reaction ;
+	sio:SIO_000028 SER:44_reaction ;
+	sio:SIO_000028 SER:45_reaction ;
+	sio:SIO_000028 SER:46_reaction ;
 	rh: RHEA:10349.
 
 RHEA:13286
 	wp:bdbRhea RHEA:13286 ;
-	sio:SIO_000028 SER:SER:47_reaction ;
-	sio:SIO_000028 SER:SER:48_reaction ;
+	sio:SIO_000028 SER:47_reaction ;
+	sio:SIO_000028 SER:48_reaction ;
 	rh: RHEA:13286.
 
 RHEA:13558
 	wp:bdbRhea RHEA:13558 ;
-	sio:SIO_000028 SER:SER:49_reaction ;
-	sio:SIO_000028 SER:SER:50_reaction ;
-	sio:SIO_000028 SER:SER:51_reaction ;
-	sio:SIO_000028 SER:SER:52_reaction ;
-	sio:SIO_000028 SER:SER:53_reaction ;
-	sio:SIO_000028 SER:SER:54_reaction ;
-	sio:SIO_000028 SER:SER:55_reaction ;
-	sio:SIO_000028 SER:SER:56_reaction ;
-	sio:SIO_000028 SER:SER:57_reaction ;
-	sio:SIO_000028 SER:SER:58_reaction ;
-	sio:SIO_000028 SER:SER:59_reaction ;
-	sio:SIO_000028 SER:SER:60_reaction ;
-	sio:SIO_000028 SER:SER:61_reaction ;
-	sio:SIO_000028 SER:SER:62_reaction ;
-	sio:SIO_000028 SER:SER:63_reaction ;
-	sio:SIO_000028 SER:SER:64_reaction ;
-	sio:SIO_000028 SER:SER:65_reaction ;
-	sio:SIO_000028 SER:SER:66_reaction ;
-	sio:SIO_000028 SER:SER:67_reaction ;
-	sio:SIO_000028 SER:SER:68_reaction ;
-	sio:SIO_000028 SER:SER:69_reaction ;
-	sio:SIO_000028 SER:SER:70_reaction ;
-	sio:SIO_000028 SER:SER:71_reaction ;
-	sio:SIO_000028 SER:SER:72_reaction ;
-	sio:SIO_000028 SER:SER:73_reaction ;
-	sio:SIO_000028 SER:SER:74_reaction ;
-	sio:SIO_000028 SER:SER:75_reaction ;
-	sio:SIO_000028 SER:SER:76_reaction ;
-	sio:SIO_000028 SER:SER:77_reaction ;
-	sio:SIO_000028 SER:SER:78_reaction ;
-	sio:SIO_000028 SER:SER:79_reaction ;
+	sio:SIO_000028 SER:49_reaction ;
+	sio:SIO_000028 SER:50_reaction ;
+	sio:SIO_000028 SER:51_reaction ;
+	sio:SIO_000028 SER:52_reaction ;
+	sio:SIO_000028 SER:53_reaction ;
+	sio:SIO_000028 SER:54_reaction ;
+	sio:SIO_000028 SER:55_reaction ;
+	sio:SIO_000028 SER:56_reaction ;
+	sio:SIO_000028 SER:57_reaction ;
+	sio:SIO_000028 SER:58_reaction ;
+	sio:SIO_000028 SER:59_reaction ;
+	sio:SIO_000028 SER:60_reaction ;
+	sio:SIO_000028 SER:61_reaction ;
+	sio:SIO_000028 SER:62_reaction ;
+	sio:SIO_000028 SER:63_reaction ;
+	sio:SIO_000028 SER:64_reaction ;
+	sio:SIO_000028 SER:65_reaction ;
+	sio:SIO_000028 SER:66_reaction ;
+	sio:SIO_000028 SER:67_reaction ;
+	sio:SIO_000028 SER:68_reaction ;
+	sio:SIO_000028 SER:69_reaction ;
+	sio:SIO_000028 SER:70_reaction ;
+	sio:SIO_000028 SER:71_reaction ;
+	sio:SIO_000028 SER:72_reaction ;
+	sio:SIO_000028 SER:73_reaction ;
+	sio:SIO_000028 SER:74_reaction ;
+	sio:SIO_000028 SER:75_reaction ;
+	sio:SIO_000028 SER:76_reaction ;
+	sio:SIO_000028 SER:77_reaction ;
+	sio:SIO_000028 SER:78_reaction ;
+	sio:SIO_000028 SER:79_reaction ;
 	rh: RHEA:13558.
-
-SER:80
-	rh:equation "Cysteinylglycine = cysteine"^^xsd:string ;
-	SER:hasKm  "2.5"^^xsd:float ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dcterms:references pubmed:6122685 ;
-	dc:source "BRENDA"^^xsd:string .
 
 RHEA:34281
 	wp:bdbRhea RHEA:34281 ;
-	sio:SIO_000028 SER:SER:81_reaction ;
+	sio:SIO_000028 SER:81_reaction ;
 	rh: RHEA:34281.
 
 RHEA:13134
 	wp:bdbRhea RHEA:13134 ;
-	sio:SIO_000028 SER:SER:82_reaction ;
-	sio:SIO_000028 SER:SER:83_reaction ;
-	sio:SIO_000028 SER:SER:84_reaction ;
+	sio:SIO_000028 SER:82_reaction ;
+	sio:SIO_000028 SER:84_reaction ;
 	rh: RHEA:13134.
-
-RHEA:13290
-	wp:bdbRhea RHEA:13290 ;
-	sio:SIO_000028 SER:SER:85_reaction ;
-	rh: RHEA:13290.
 
 RHEA:23381
 	wp:bdbRhea RHEA:23381 ;
-	sio:SIO_000028 SER:SER:86_reaction ;
+	sio:SIO_000028 SER:86_reaction ;
 	rh: RHEA:23381.
 
 RHEA:13866
 	wp:bdbRhea RHEA:13866 ;
-	sio:SIO_000028 SER:SER:88_reaction ;
-	sio:SIO_000028 SER:SER:89_reaction ;
+	sio:SIO_000028 SER:88_reaction ;
 	rh: RHEA:13866.
 
 RHEA:29516
 	wp:bdbRhea RHEA:29516 ;
-	sio:SIO_000028 SER:SER:90_reaction ;
-	sio:SIO_000028 SER:SER:91_reaction ;
+	sio:SIO_000028 SER:90_reaction ;
+	sio:SIO_000028 SER:91_reaction ;
 	rh: RHEA:29516.
 
 RHEA:29523
 	wp:bdbRhea RHEA:29523 ;
-	sio:SIO_000028 SER:SER:92_reaction ;
-	sio:SIO_000028 SER:SER:93_reaction ;
-	sio:SIO_000028 SER:SER:94_reaction ;
+	sio:SIO_000028 SER:93_reaction ;
 	rh: RHEA:29523.
 
 RHEA:38495
 	wp:bdbRhea RHEA:38495 ;
-	sio:SIO_000028 SER:SER:104_reaction ;
+	sio:SIO_000028 SER:104_reaction ;
 	rh: RHEA:38495.
 
 RHEA:12046
 	wp:bdbRhea RHEA:12046 ;
-	sio:SIO_000028 SER:SER:105_reaction ;
+	sio:SIO_000028 SER:105_reaction ;
 	rh: RHEA:12046.
 
 RHEA:35740
 	wp:bdbRhea RHEA:35740 ;
-	sio:SIO_000028 SER:SER:163_reaction ;
+	sio:SIO_000028 SER:163_reaction ;
 	rh: RHEA:35740.
-
-RHEA:35741
-	wp:bdbRhea RHEA:35741 ;
-	sio:SIO_000028 SER:SER:164_reaction ;
-	rh: RHEA:35741.
 
 RHEA:35742
 	wp:bdbRhea RHEA:35742 ;
-	sio:SIO_000028 SER:SER:165_reaction ;
+	sio:SIO_000028 SER:165_reaction ;
 	rh: RHEA:35742.
-
-RHEA:35743
-	wp:bdbRhea RHEA:35743 ;
-	sio:SIO_000028 SER:SER:166_reaction ;
-	rh: RHEA:35743.
 
 RHEA:35744
 	wp:bdbRhea RHEA:35744 ;
-	sio:SIO_000028 SER:SER:167_reaction ;
+	sio:SIO_000028 SER:167_reaction ;
 	rh: RHEA:35744.
-
-RHEA:35745
-	wp:bdbRhea RHEA:35745 ;
-	sio:SIO_000028 SER:SER:168_reaction ;
-	rh: RHEA:35745.
 
 RHEA:35746
 	wp:bdbRhea RHEA:35746 ;
-	sio:SIO_000028 SER:SER:169_reaction ;
+	sio:SIO_000028 SER:169_reaction ;
 	rh: RHEA:35746.
-
-RHEA:35747
-	wp:bdbRhea RHEA:35747 ;
-	sio:SIO_000028 SER:SER:170_reaction ;
-	rh: RHEA:35747.
 
 RHEA:35748
 	wp:bdbRhea RHEA:35748 ;
-	sio:SIO_000028 SER:SER:171_reaction ;
+	sio:SIO_000028 SER:171_reaction ;
 	rh: RHEA:35748.
-
-RHEA:35749
-	wp:bdbRhea RHEA:35749 ;
-	sio:SIO_000028 SER:SER:172_reaction ;
-	rh: RHEA:35749.
 
 RHEA:35750
 	wp:bdbRhea RHEA:35750 ;
-	sio:SIO_000028 SER:SER:173_reaction ;
+	sio:SIO_000028 SER:173_reaction ;
 	rh: RHEA:35750.
-
-RHEA:35751
-	wp:bdbRhea RHEA:35751 ;
-	sio:SIO_000028 SER:SER:174_reaction ;
-	rh: RHEA:35751.
 
 RHEA:35752
 	wp:bdbRhea RHEA:35752 ;
-	sio:SIO_000028 SER:SER:175_reaction ;
+	sio:SIO_000028 SER:175_reaction ;
 	rh: RHEA:35752.
-
-RHEA:35753
-	wp:bdbRhea RHEA:35753 ;
-	sio:SIO_000028 SER:SER:176_reaction ;
-	rh: RHEA:35753.
 
 SER:177
 	rh:equation "ATP + steroidogenic acute regulatory protein = ADP + phosphorylated steroidogenic acute regulatory protein"^^xsd:string ;
 	dc:source "Unknown"^^xsd:string .
 
-RHEA:24077
-	wp:bdbRhea RHEA:24077 ;
-	sio:SIO_000028 SER:SER:178_reaction ;
-	rh: RHEA:24077.
-
 RHEA:24078
 	wp:bdbRhea RHEA:24078 ;
-	sio:SIO_000028 SER:SER:179_reaction ;
+	sio:SIO_000028 SER:179_reaction ;
 	rh: RHEA:24078.
-
-RHEA:24079
-	wp:bdbRhea RHEA:24079 ;
-	sio:SIO_000028 SER:SER:180_reaction ;
-	rh: RHEA:24079.
 
 RHEA:24080
 	wp:bdbRhea RHEA:24080 ;
-	sio:SIO_000028 SER:SER:181_reaction ;
+	sio:SIO_000028 SER:181_reaction ;
 	rh: RHEA:24080.
-
-RHEA:24081
-	wp:bdbRhea RHEA:24081 ;
-	sio:SIO_000028 SER:SER:182_reaction ;
-	rh: RHEA:24081.
 
 RHEA:24082
 	wp:bdbRhea RHEA:24082 ;
-	sio:SIO_000028 SER:SER:183_reaction ;
+	sio:SIO_000028 SER:183_reaction ;
 	rh: RHEA:24082.
-
-RHEA:24083
-	wp:bdbRhea RHEA:24083 ;
-	sio:SIO_000028 SER:SER:184_reaction ;
-	rh: RHEA:24083.
 
 RHEA:24084
 	wp:bdbRhea RHEA:24084 ;
-	sio:SIO_000028 SER:SER:185_reaction ;
+	sio:SIO_000028 SER:185_reaction ;
 	rh: RHEA:24084.
-
-RHEA:24085
-	wp:bdbRhea RHEA:24085 ;
-	sio:SIO_000028 SER:SER:186_reaction ;
-	rh: RHEA:24085.
 
 RHEA:24086
 	wp:bdbRhea RHEA:24086 ;
-	sio:SIO_000028 SER:SER:187_reaction ;
+	sio:SIO_000028 SER:187_reaction ;
 	rh: RHEA:24086.
-
-RHEA:24087
-	wp:bdbRhea RHEA:24087 ;
-	sio:SIO_000028 SER:SER:188_reaction ;
-	rh: RHEA:24087.
 
 RHEA:24088
 	wp:bdbRhea RHEA:24088 ;
-	sio:SIO_000028 SER:SER:189_reaction ;
+	sio:SIO_000028 SER:189_reaction ;
 	rh: RHEA:24088.
-
-RHEA:11873
-	wp:bdbRhea RHEA:11873 ;
-	sio:SIO_000028 SER:SER:190_reaction ;
-	rh: RHEA:11873.
 
 RHEA:11874
 	wp:bdbRhea RHEA:11874 ;
-	sio:SIO_000028 SER:SER:191_reaction ;
+	sio:SIO_000028 SER:191_reaction ;
 	rh: RHEA:11874.
 
 RHEA:50237
 	wp:bdbRhea RHEA:50237 ;
-	sio:SIO_000028 SER:SER:193_reaction ;
+	sio:SIO_000028 SER:193_reaction ;
 	rh: RHEA:50237.
-
-RHEA:50238
-	wp:bdbRhea RHEA:50238 ;
-	sio:SIO_000028 SER:SER:194_reaction ;
-	rh: RHEA:50238.
 
 RHEA:50239
 	wp:bdbRhea RHEA:50239 ;
-	sio:SIO_000028 SER:SER:195_reaction ;
+	sio:SIO_000028 SER:195_reaction ;
 	rh: RHEA:50239.
-
-RHEA:50240
-	wp:bdbRhea RHEA:50240 ;
-	sio:SIO_000028 SER:SER:196_reaction ;
-	rh: RHEA:50240.
 
 RHEA:50241
 	wp:bdbRhea RHEA:50241 ;
-	sio:SIO_000028 SER:SER:197_reaction ;
+	sio:SIO_000028 SER:197_reaction ;
 	rh: RHEA:50241.
-
-RHEA:50242
-	wp:bdbRhea RHEA:50242 ;
-	sio:SIO_000028 SER:SER:198_reaction ;
-	rh: RHEA:50242.
 
 RHEA:50243
 	wp:bdbRhea RHEA:50243 ;
-	sio:SIO_000028 SER:SER:199_reaction ;
+	sio:SIO_000028 SER:199_reaction ;
 	rh: RHEA:50243.
-
-RHEA:50244
-	wp:bdbRhea RHEA:50244 ;
-	sio:SIO_000028 SER:SER:200_reaction ;
-	rh: RHEA:50244.
 
 RHEA:50245
 	wp:bdbRhea RHEA:50245 ;
-	sio:SIO_000028 SER:SER:201_reaction ;
-	sio:SIO_000028 SER:SER:225_reaction ;
+	sio:SIO_000028 SER:201_reaction ;
+	sio:SIO_000028 SER:225_reaction ;
 	rh: RHEA:50245.
-
-RHEA:50246
-	wp:bdbRhea RHEA:50246 ;
-	sio:SIO_000028 SER:SER:202_reaction ;
-	sio:SIO_000028 SER:SER:226_reaction ;
-	rh: RHEA:50246.
 
 RHEA:46309
 	wp:bdbRhea RHEA:46309 ;
-	sio:SIO_000028 SER:SER:203_reaction ;
-	sio:SIO_000028 SER:SER:221_reaction ;
+	sio:SIO_000028 SER:203_reaction ;
+	sio:SIO_000028 SER:221_reaction ;
 	rh: RHEA:46309.
-
-RHEA:46310
-	wp:bdbRhea RHEA:46310 ;
-	sio:SIO_000028 SER:SER:204_reaction ;
-	rh: RHEA:46310.
 
 RHEA:46311
 	wp:bdbRhea RHEA:46311 ;
-	sio:SIO_000028 SER:SER:205_reaction ;
+	sio:SIO_000028 SER:205_reaction ;
 	rh: RHEA:46311.
-
-RHEA:46312
-	wp:bdbRhea RHEA:46312 ;
-	sio:SIO_000028 SER:SER:206_reaction ;
-	rh: RHEA:46312.
 
 RHEA:46313
 	wp:bdbRhea RHEA:46313 ;
-	sio:SIO_000028 SER:SER:207_reaction ;
+	sio:SIO_000028 SER:207_reaction ;
 	rh: RHEA:46313.
-
-RHEA:46314
-	wp:bdbRhea RHEA:46314 ;
-	sio:SIO_000028 SER:SER:208_reaction ;
-	rh: RHEA:46314.
 
 RHEA:46315
 	wp:bdbRhea RHEA:46315 ;
-	sio:SIO_000028 SER:SER:209_reaction ;
+	sio:SIO_000028 SER:209_reaction ;
 	rh: RHEA:46315.
-
-RHEA:46316
-	wp:bdbRhea RHEA:46316 ;
-	sio:SIO_000028 SER:SER:210_reaction ;
-	rh: RHEA:46316.
 
 RHEA:46317
 	wp:bdbRhea RHEA:46317 ;
-	sio:SIO_000028 SER:SER:211_reaction ;
+	sio:SIO_000028 SER:211_reaction ;
 	rh: RHEA:46317.
-
-RHEA:46318
-	wp:bdbRhea RHEA:46318 ;
-	sio:SIO_000028 SER:SER:212_reaction ;
-	rh: RHEA:46318.
 
 RHEA:46319
 	wp:bdbRhea RHEA:46319 ;
-	sio:SIO_000028 SER:SER:213_reaction ;
+	sio:SIO_000028 SER:213_reaction ;
 	rh: RHEA:46319.
-
-RHEA:46320
-	wp:bdbRhea RHEA:46320 ;
-	sio:SIO_000028 SER:SER:214_reaction ;
-	rh: RHEA:46320.
 
 RHEA:46321
 	wp:bdbRhea RHEA:46321 ;
-	sio:SIO_000028 SER:SER:215_reaction ;
+	sio:SIO_000028 SER:215_reaction ;
 	rh: RHEA:46321.
-
-RHEA:46322
-	wp:bdbRhea RHEA:46322 ;
-	sio:SIO_000028 SER:SER:216_reaction ;
-	rh: RHEA:46322.
 
 RHEA:46323
 	wp:bdbRhea RHEA:46323 ;
-	sio:SIO_000028 SER:SER:217_reaction ;
+	sio:SIO_000028 SER:217_reaction ;
 	rh: RHEA:46323.
-
-RHEA:46324
-	wp:bdbRhea RHEA:46324 ;
-	sio:SIO_000028 SER:SER:218_reaction ;
-	rh: RHEA:46324.
 
 RHEA:46325
 	wp:bdbRhea RHEA:46325 ;
-	sio:SIO_000028 SER:SER:219_reaction ;
+	sio:SIO_000028 SER:219_reaction ;
 	rh: RHEA:46325.
-
-RHEA:46326
-	wp:bdbRhea RHEA:46326 ;
-	sio:SIO_000028 SER:SER:220_reaction ;
-	rh: RHEA:46326.
-
-RHEA:14754
-	wp:bdbRhea RHEA:14754 ;
-	sio:SIO_000028 SER:SER:222_reaction ;
-	rh: RHEA:14754.
 
 RHEA:14755
 	wp:bdbRhea RHEA:14755 ;
-	sio:SIO_000028 SER:SER:223_reaction ;
+	sio:SIO_000028 SER:223_reaction ;
 	rh: RHEA:14755.
-
-RHEA:14756
-	wp:bdbRhea RHEA:14756 ;
-	sio:SIO_000028 SER:SER:224_reaction ;
-	rh: RHEA:14756.
 
 RHEA:50247
 	wp:bdbRhea RHEA:50247 ;
-	sio:SIO_000028 SER:SER:227_reaction ;
+	sio:SIO_000028 SER:227_reaction ;
 	rh: RHEA:50247.
-
-RHEA:50248
-	wp:bdbRhea RHEA:50248 ;
-	sio:SIO_000028 SER:SER:228_reaction ;
-	rh: RHEA:50248.
-
-RHEA:15630
-	wp:bdbRhea RHEA:15630 ;
-	sio:SIO_000028 SER:SER:240_reaction ;
-	rh: RHEA:15630.
 
 RHEA:15631
 	wp:bdbRhea RHEA:15631 ;
-	sio:SIO_000028 SER:SER:241_reaction ;
+	sio:SIO_000028 SER:241_reaction ;
 	rh: RHEA:15631.
-
-RHEA:15842
-	wp:bdbRhea RHEA:15842 ;
-	sio:SIO_000028 SER:SER:242_reaction ;
-	rh: RHEA:15842.
 
 RHEA:15843
 	wp:bdbRhea RHEA:15843 ;
-	sio:SIO_000028 SER:SER:243_reaction ;
+	sio:SIO_000028 SER:243_reaction ;
 	rh: RHEA:15843.
-
-RHEA:15844
-	wp:bdbRhea RHEA:15844 ;
-	sio:SIO_000028 SER:SER:244_reaction ;
-	rh: RHEA:15844.
 
 RHEA:11390
 	wp:bdbRhea RHEA:11390 ;
-	sio:SIO_000028 SER:SER:245_reaction ;
+	sio:SIO_000028 SER:245_reaction ;
 	rh: RHEA:11390.
-
-RHEA:11391
-	wp:bdbRhea RHEA:11391 ;
-	sio:SIO_000028 SER:SER:246_reaction ;
-	rh: RHEA:11391.
 
 RHEA:11392
 	wp:bdbRhea RHEA:11392 ;
-	sio:SIO_000028 SER:SER:247_reaction ;
+	sio:SIO_000028 SER:247_reaction ;
 	rh: RHEA:11392.
-
-RHEA:11393
-	wp:bdbRhea RHEA:11393 ;
-	sio:SIO_000028 SER:SER:248_reaction ;
-	rh: RHEA:11393.
 
 RHEA:11394
 	wp:bdbRhea RHEA:11394 ;
-	sio:SIO_000028 SER:SER:249_reaction ;
+	sio:SIO_000028 SER:249_reaction ;
 	rh: RHEA:11394.
-
-RHEA:11395
-	wp:bdbRhea RHEA:11395 ;
-	sio:SIO_000028 SER:SER:250_reaction ;
-	rh: RHEA:11395.
 
 RHEA:11396
 	wp:bdbRhea RHEA:11396 ;
-	sio:SIO_000028 SER:SER:251_reaction ;
+	sio:SIO_000028 SER:251_reaction ;
 	rh: RHEA:11396.
-
-RHEA:11397
-	wp:bdbRhea RHEA:11397 ;
-	sio:SIO_000028 SER:SER:252_reaction ;
-	rh: RHEA:11397.
 
 RHEA:11398
 	wp:bdbRhea RHEA:11398 ;
-	sio:SIO_000028 SER:SER:253_reaction ;
+	sio:SIO_000028 SER:253_reaction ;
 	rh: RHEA:11398.
-
-RHEA:53117
-	wp:bdbRhea RHEA:53117 ;
-	sio:SIO_000028 SER:SER:254_reaction ;
-	rh: RHEA:53117.
 
 RHEA:53118
 	wp:bdbRhea RHEA:53118 ;
-	sio:SIO_000028 SER:SER:255_reaction ;
+	sio:SIO_000028 SER:255_reaction ;
 	rh: RHEA:53118.
-
-RHEA:53119
-	wp:bdbRhea RHEA:53119 ;
-	sio:SIO_000028 SER:SER:256_reaction ;
-	rh: RHEA:53119.
 
 RHEA:54385
 	wp:bdbRhea RHEA:54385 ;
-	sio:SIO_000028 SER:SER:257_reaction ;
+	sio:SIO_000028 SER:257_reaction ;
 	rh: RHEA:54385.
-
-RHEA:54386
-	wp:bdbRhea RHEA:54386 ;
-	sio:SIO_000028 SER:SER:258_reaction ;
-	rh: RHEA:54386.
 
 RHEA:54387
 	wp:bdbRhea RHEA:54387 ;
-	sio:SIO_000028 SER:SER:259_reaction ;
+	sio:SIO_000028 SER:259_reaction ;
 	rh: RHEA:54387.
-
-RHEA:14983
-	wp:bdbRhea RHEA:14983 ;
-	sio:SIO_000028 SER:SER:260_reaction ;
-	rh: RHEA:14983.
 
 SER:1_substrate
 	rdf:type wp:Metabolite ;
@@ -3134,20 +2895,6 @@ SER:161_substrate
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 15422.
 
-SER:23
-	SER:hasKm  "17"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:224930 ;
-	dc:source "Brenda:689379"^^xsd:string .
-
-SER:83
-	SER:hasKm  "23"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dcterms:references pubmed:2838091 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:84
 	SER:hasKm  "75"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
@@ -3156,30 +2903,9 @@ SER:84
 	dcterms:references pubmed:2999115 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:92
-	SER:hasKm  "0,00064"^^xsd:float ;
-	SER:hasPh "7"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description ""@en ;
-	wp:organismName "Oryctolagus cuniculus"^^xsd:string ;
-	dcterms:references pubmed:6154707 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:99
-	SER:hasKm  "0.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:16780378 ;
-	dc:source "BRENDA/Uni Prot"^^xsd:string .
-
 SER:100
 	SER:hasKm  "0.57"^^xsd:float ;
 	dcterms:description "recombinant enzyme expressed in baby hamster kidney cells"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:10685026 ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:101
-	SER:hasKm  "0.83"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:10685026 ;
 	dc:source "BRENDA"^^xsd:string .
@@ -3198,23 +2924,11 @@ SER:163
 	dcterms:references pubmed:285426 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:164
-	SER:hasKm  "2"^^xsd:float ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dcterms:references pubmed:285420 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:165
 	SER:hasKm  "0.0091"^^xsd:float ;
 	SER:hasKmKcat "212"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dcterms:references pubmed:703418 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:166
-	SER:hasKm  "0.0165"^^xsd:float ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dcterms:references pubmed:285426 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:167
@@ -3223,22 +2937,10 @@ SER:167
 	dcterms:references pubmed:285432 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:168
-	SER:hasKm  "0.19"^^xsd:float ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dcterms:references pubmed:285418 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:169
 	SER:hasKm  "0.3"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dcterms:references pubmed:285420 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:170
-	SER:hasKm  "0.39"^^xsd:float ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dcterms:references pubmed:285413 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:171
@@ -3256,22 +2958,8 @@ SER:179
 	dcterms:references pubmed:12205101 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:180
-	SER:hasKm  "0.05"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "27"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12205101 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:181
 	SER:hasKm  "0.0035"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12205101 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:182
-	SER:hasKm  "18"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:12205101 ;
 	dc:source "Brenda"^^xsd:string .
@@ -3283,26 +2971,9 @@ SER:183
 	dcterms:references pubmed:17624763 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:184
-	SER:hasKm  "0.0018"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15084349 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:185
 	SER:hasKm  "0.0037"^^xsd:float ;
 	SER:hasKmKcat "0.0073"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "27"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15291757 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:186
-	SER:hasKm  "0.0037"^^xsd:float ;
-	SER:hasKmKcat "14.83"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "27"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3317,13 +2988,6 @@ SER:187
 	dcterms:references pubmed:15797861 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:188
-	SER:hasKm  "0.0156"^^xsd:float ;
-	SER:hasKmKcat "15"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:20736065 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:189
 	SER:hasKm  "47"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3336,14 +3000,6 @@ SER:193
 	dcterms:references pubmed:9726253 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:194
-	SER:hasKm  "0.00038"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:25301938 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:195
 	SER:hasKm  "0.0005"^^xsd:float ;
 	SER:hasKmKcat "7.4"^^xsd:float ;
@@ -3351,12 +3007,6 @@ SER:195
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:28684414 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:196
-	SER:hasKm  "0.00055"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:19454579 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:197
@@ -3367,39 +3017,16 @@ SER:197
 	dcterms:references pubmed:25301938 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:198
-	SER:hasKm  "0.0011"^^xsd:float ;
-	SER:hasKmKcat "100"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:199
 	SER:hasKm  "0.0025"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:4854454 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:200
-	SER:hasKm  "0.0077"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:8396144 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:203
 	SER:hasKm  "0.00045"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:9726253 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:204
-	SER:hasKm  "0.0011"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:205
@@ -3410,22 +3037,8 @@ SER:205
 	dcterms:references pubmed:25301938 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:206
-	SER:hasKm  "0.0023"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:4854454 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:207
 	SER:hasKm  "0.0043"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:208
-	SER:hasKm  "0.0053"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3438,14 +3051,6 @@ SER:209
 	dcterms:references pubmed:8396144 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:210
-	SER:hasKm  "0.0097"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:211
 	SER:hasKm  "0.0105"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
@@ -3454,32 +3059,14 @@ SER:211
 	dcterms:references pubmed:25301938 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:222
-	SER:hasKm  "0.000525"^^xsd:float ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dcterms:references pubmed:8918985 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:223
 	SER:hasKm  "0.0024"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
 	dcterms:references pubmed:6971291 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:224
-	SER:hasKm  "0.0025"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:6608525 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:225
 	SER:hasKm  "0.0004"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:10406467 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:226
-	SER:hasKm  "0.00056"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:10406467 ;
 	dc:source "Brenda"^^xsd:string .
@@ -3498,12 +3085,6 @@ SER:229
 	dcterms:references pubmed:25855791 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:230
-	SER:hasKm  "0.00021"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28539365 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:231
 	SER:hasKm  "0.0011"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
@@ -3512,24 +3093,10 @@ SER:231
 	dcterms:references pubmed:21446712 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:232
-	SER:hasKm  "6.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15126570 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:235
 	SER:hasKm  "2.3"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant P482S"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15126570 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:236
-	SER:hasKm  "8.5"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:15126570 ;
 	dc:source "Brenda"^^xsd:string .
@@ -3542,15 +3109,6 @@ SER:237
 	dcterms:references pubmed:15126570 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:240
-	SER:hasKm  "0.18"^^xsd:float ;
-	SER:hasKcat  "0.85"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	dcterms:description "recombinant enzyme"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:18215163 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:241
 	SER:hasKm  "338"^^xsd:float ;
 	SER:hasKcat  "167"^^xsd:float ;
@@ -3558,14 +3116,6 @@ SER:241
 	dcterms:description "recombinant enzyme"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:18215163 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:242
-	SER:hasKm  "0.0036"^^xsd:float ;
-	SER:hasPh "7.5"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:6641908 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:243
@@ -3576,28 +3126,12 @@ SER:243
 	dcterms:references pubmed:6641908 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:244
-	SER:hasKm  "62"^^xsd:float ;
-	SER:hasPh "9.5"^^xsd:float ;
-	wdt:P2076  "30"^^xsd:float ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dcterms:references pubmed:7092232 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:245
 	SER:hasKm  "0.0003"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:12397058 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:246
-	SER:hasKm  "0.00034"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15152005 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:247
@@ -3608,28 +3142,12 @@ SER:247
 	dcterms:references pubmed:12460758 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:248
-	SER:hasKm  "0.0008"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12397058 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:249
 	SER:hasKm  "2"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:12397058 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:250
-	SER:hasKm  "0.0044"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "28"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:17825335 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:251
@@ -3640,22 +3158,6 @@ SER:251
 	dcterms:references pubmed:12397058 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:252
-	SER:hasKm  "14"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:11841241 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:254
-	SER:hasKm  "0.0002"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Felis catus"^^xsd:string ;
-	dcterms:references pubmed:14732482 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:255
 	SER:hasKm  "0.00038"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
@@ -3664,30 +3166,10 @@ SER:255
 	dcterms:references pubmed:17942303 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:256
-	SER:hasKm  "0.00136"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "34"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:17942303 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:258
-	SER:hasKm  "0.0004"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:20170668 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:259
 	SER:hasKm  "0.01"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:20170668 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:172
-	SER:hasKcat  "0.05"^^xsd:float ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dcterms:references pubmed:3968069 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:173
@@ -3696,31 +3178,8 @@ SER:173
 	dcterms:references pubmed:18573681 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:174
-	SER:hasKcat  "248"^^xsd:float ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dcterms:references pubmed:18573681 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:201
 	SER:hasKcat  "0.0037"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:202
-	SER:hasKcat  "0.11"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "presence of cytochrome b5"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:216
-	SER:hasKcat  "0.0064"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3735,26 +3194,10 @@ SER:217
 	dcterms:references pubmed:25301938 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:218
-	SER:hasKcat  "25"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:219
 	SER:hasKcat  "0.0483"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:8396144 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:220
-	SER:hasKcat  "86"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:221
@@ -3765,31 +3208,9 @@ SER:221
 	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:228
-	SER:hasKcat  "0.00283"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:8396144 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:233
 	SER:hasKcat  "2.8"^^xsd:float ;
 	SER:hasKmKcat "13330"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:25855791 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:234
-	SER:hasKcat  "2.8"^^xsd:float ;
-	SER:hasKmKcat "13333"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28539365 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:238
-	SER:hasKcat  "4"^^xsd:float ;
-	SER:hasKmKcat "2667"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3817,30 +3238,8 @@ SER:175
 	dcterms:references pubmed:18573681 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:176
-	SER:hasKmKcat "11.17"^^xsd:float ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dcterms:references pubmed:18573681 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:212
-	SER:hasKmKcat "4.7"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:213
 	SER:hasKmKcat "5.8"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:214
-	SER:hasKmKcat "8.9"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3862,37 +3261,12 @@ SER:86
 	dcterms:references pubmed:9530952 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:87
-	SER:hasPh "7"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:11377171 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:89
-	SER:hasPh "7"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:3021065 ;
-	dc:source "Brenda"^^xsd:string .
-
 SER:93
 	SER:hasPh "6.5"^^xsd:float ;
 	dcterms:description "pH range was between 6,5 to 7,6"@en ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dcterms:references pubmed:6698009 ;
 	dc:source "Brenda"^^xsd:string .
-
-SER:94
-	SER:hasPh "7.6"^^xsd:float ;
-	dcterms:description "pH range was between 6,5 to 7,6"@en ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dcterms:references pubmed:6698009 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:190
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "27"^^xsd:float ;
-	dc:source "Unknown"^^xsd:string .
 
 SER:191
 	SER:hasPh "7.4"^^xsd:float ;
@@ -3906,30 +3280,6 @@ SER:257
 	dcterms:references pubmed:20823678 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:162
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "BRENDA"^^xsd:string .
-
-SER:178
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:6957697 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:85
-	dc:source "Brenda"^^xsd:string .
-
-SER:103
-	dc:source "Unknown"^^xsd:string .
-
-SER:192
-	dc:source "Unknown"^^xsd:string .
-
-SER:260
-	dc:source "Unknown"^^xsd:string .
-
 SER:261
-	dc:source "Unknown"^^xsd:string .
-
-SER:262
 	dc:source "Unknown"^^xsd:string .
 
