@@ -1285,8 +1285,8 @@ uniprot:P45381
 	rdfs:label "Aminocyclase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P45381 ;
 	sio:SIO_000028 SER:1_enzyme ;
+	wp:bdbUniprot uniprot:P45381 ;
 	sio:SIO_000028 SER:2_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P45381.
 
@@ -1294,8 +1294,8 @@ uniprot:P48735
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P48735 ;
 	sio:SIO_000028 SER:15_enzyme ;
+	wp:bdbUniprot uniprot:P48735 ;
 	sio:SIO_000028 SER:16_enzyme ;
 	sio:SIO_000028 SER:17_enzyme ;
 	sio:SIO_000028 SER:18_enzyme ;
@@ -1310,8 +1310,8 @@ uniprot:Q8IWW8
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q8IWW8 ;
 	sio:SIO_000028 SER:24_enzyme ;
+	wp:bdbUniprot uniprot:Q8IWW8 ;
 	sio:SIO_000028 SER:25_enzyme ;
 	sio:SIO_000028 SER:26_enzyme ;
 	sio:SIO_000028 SER:27_enzyme ;
@@ -1321,16 +1321,16 @@ uniprot:P40926
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.37 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P40926 ;
 	sio:SIO_000028 SER:28_enzyme ;
+	wp:bdbUniprot uniprot:P40926 ;
 	bioregistry:hasDbXref uniprotkb:P40926.
 
 uniprot:P23368
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P23368 ;
 	sio:SIO_000028 SER:29_enzyme ;
+	wp:bdbUniprot uniprot:P23368 ;
 	sio:SIO_000028 SER:30_enzyme ;
 	sio:SIO_000028 SER:31_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P23368.
@@ -1339,8 +1339,8 @@ uniprot:P19440
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P19440 ;
 	sio:SIO_000028 SER:32_enzyme ;
+	wp:bdbUniprot uniprot:P19440 ;
 	sio:SIO_000028 SER:33_enzyme ;
 	sio:SIO_000028 SER:34_enzyme ;
 	sio:SIO_000028 SER:35_enzyme ;
@@ -1350,16 +1350,16 @@ uniprot:O75223
 	rdfs:label "GGCT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.4 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:O75223 ;
 	sio:SIO_000028 SER:36_enzyme ;
+	wp:bdbUniprot uniprot:O75223 ;
 	bioregistry:hasDbXref uniprotkb:O75223.
 
 uniprot:P48506
 	rdfs:label "GCLC"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P48506 ;
 	sio:SIO_000028 SER:47_enzyme ;
+	wp:bdbUniprot uniprot:P48506 ;
 	sio:SIO_000028 SER:48_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P48506.
 
@@ -1367,8 +1367,8 @@ uniprot:P48637
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P48637 ;
 	sio:SIO_000028 SER:49_enzyme ;
+	wp:bdbUniprot uniprot:P48637 ;
 	sio:SIO_000028 SER:50_enzyme ;
 	sio:SIO_000028 SER:51_enzyme ;
 	sio:SIO_000028 SER:52_enzyme ;
@@ -1404,32 +1404,32 @@ uniprot:P48637
 uniprot:Q9H8P0
 	rdfs:label "30.39"^^xsd:string ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q9H8P0 ;
 	sio:SIO_000028 SER:81_enzyme ;
+	wp:bdbUniprot uniprot:Q9H8P0 ;
 	bioregistry:hasDbXref uniprotkb:Q9H8P0.
 
 uniprot:Q9UPQ8
 	rdfs:label "30.38"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q9UPQ8 ;
 	sio:SIO_000028 SER:82_enzyme ;
+	wp:bdbUniprot uniprot:Q9UPQ8 ;
 	bioregistry:hasDbXref uniprotkb:Q9UPQ8.
 
 uniprot:Q9BT22
 	rdfs:label "30.9"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q9BT22 ;
 	sio:SIO_000028 SER:88_enzyme ;
+	wp:bdbUniprot uniprot:Q9BT22 ;
 	bioregistry:hasDbXref uniprotkb:Q9BT22.
 
 uniprot:Q9H553
 	rdfs:label "30.7"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q9H553 ;
 	sio:SIO_000028 SER:90_enzyme ;
+	wp:bdbUniprot uniprot:Q9H553 ;
 	sio:SIO_000028 SER:91_enzyme ;
 	bioregistry:hasDbXref uniprotkb:Q9H553.
 
@@ -1437,24 +1437,24 @@ uniprot:P06863
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P06863 ;
 	sio:SIO_000028 SER:95_enzyme ;
+	wp:bdbUniprot uniprot:P06863 ;
 	bioregistry:hasDbXref uniprotkb:P06863.
 
 uniprot:P06866
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P06866 ;
 	sio:SIO_000028 SER:97_enzyme ;
+	wp:bdbUniprot uniprot:P06866 ;
 	bioregistry:hasDbXref uniprotkb:P06866.
 
 uniprot:P11150
 	rdfs:label "HL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:P11150 ;
 	sio:SIO_000028 SER:104_enzyme ;
+	wp:bdbUniprot uniprot:P11150 ;
 	sio:SIO_000028 SER:105_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P11150.
 
@@ -1462,8 +1462,8 @@ uniprot:O95477
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:O95477 ;
 	sio:SIO_000028 SER:107_enzyme ;
+	wp:bdbUniprot uniprot:O95477 ;
 	sio:SIO_000028 SER:109_enzyme ;
 	sio:SIO_000028 SER:111_enzyme ;
 	sio:SIO_000028 SER:113_enzyme ;
@@ -1496,8 +1496,8 @@ uniprot:O95477
 uniprot:Q92947
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q92947 ;
 	sio:SIO_000028 SER:3_enzyme ;
+	wp:bdbUniprot uniprot:Q92947 ;
 	sio:SIO_000028 SER:4_enzyme ;
 	sio:SIO_000028 SER:5_enzyme ;
 	sio:SIO_000028 SER:6_enzyme ;
@@ -1512,23 +1512,23 @@ uniprot:Q92947
 uniprot:Q9H9P8
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q9H9P8 ;
 	sio:SIO_000028 SER:12_enzyme ;
+	wp:bdbUniprot uniprot:Q9H9P8 ;
 	sio:SIO_000028 SER:13_enzyme ;
 	bioregistry:hasDbXref uniprotkb:Q9H9P8.
 
 uniprot:Q8N465
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:Q8N465 ;
 	sio:SIO_000028 SER:14_enzyme ;
+	wp:bdbUniprot uniprot:Q8N465 ;
 	bioregistry:hasDbXref uniprotkb:Q8N465.
 
 uniprot:O14841
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
-	wp:bdbUniprot uniprot:O14841 ;
 	sio:SIO_000028 SER:37_enzyme ;
+	wp:bdbUniprot uniprot:O14841 ;
 	sio:SIO_000028 SER:38_enzyme ;
 	sio:SIO_000028 SER:39_enzyme ;
 	sio:SIO_000028 SER:40_enzyme ;
@@ -1734,13 +1734,7 @@ RHEA:34281
 RHEA:13134
 	wp:bdbRhea RHEA:13134 ;
 	sio:SIO_000028 SER:82_reaction ;
-	sio:SIO_000028 SER:84_reaction ;
 	rh: RHEA:13134.
-
-RHEA:23381
-	wp:bdbRhea RHEA:23381 ;
-	sio:SIO_000028 SER:86_reaction ;
-	rh: RHEA:23381.
 
 RHEA:13866
 	wp:bdbRhea RHEA:13866 ;
@@ -1753,11 +1747,6 @@ RHEA:29516
 	sio:SIO_000028 SER:91_reaction ;
 	rh: RHEA:29516.
 
-RHEA:29523
-	wp:bdbRhea RHEA:29523 ;
-	sio:SIO_000028 SER:93_reaction ;
-	rh: RHEA:29523.
-
 RHEA:38495
 	wp:bdbRhea RHEA:38495 ;
 	sio:SIO_000028 SER:104_reaction ;
@@ -1767,212 +1756,6 @@ RHEA:12046
 	wp:bdbRhea RHEA:12046 ;
 	sio:SIO_000028 SER:105_reaction ;
 	rh: RHEA:12046.
-
-RHEA:35740
-	wp:bdbRhea RHEA:35740 ;
-	sio:SIO_000028 SER:163_reaction ;
-	rh: RHEA:35740.
-
-RHEA:35742
-	wp:bdbRhea RHEA:35742 ;
-	sio:SIO_000028 SER:165_reaction ;
-	rh: RHEA:35742.
-
-RHEA:35744
-	wp:bdbRhea RHEA:35744 ;
-	sio:SIO_000028 SER:167_reaction ;
-	rh: RHEA:35744.
-
-RHEA:35746
-	wp:bdbRhea RHEA:35746 ;
-	sio:SIO_000028 SER:169_reaction ;
-	rh: RHEA:35746.
-
-RHEA:35748
-	wp:bdbRhea RHEA:35748 ;
-	sio:SIO_000028 SER:171_reaction ;
-	rh: RHEA:35748.
-
-RHEA:35750
-	wp:bdbRhea RHEA:35750 ;
-	sio:SIO_000028 SER:173_reaction ;
-	rh: RHEA:35750.
-
-RHEA:35752
-	wp:bdbRhea RHEA:35752 ;
-	sio:SIO_000028 SER:175_reaction ;
-	rh: RHEA:35752.
-
-SER:177
-	rh:equation "ATP + steroidogenic acute regulatory protein = ADP + phosphorylated steroidogenic acute regulatory protein"^^xsd:string ;
-	dc:source "Unknown"^^xsd:string .
-
-RHEA:24078
-	wp:bdbRhea RHEA:24078 ;
-	sio:SIO_000028 SER:179_reaction ;
-	rh: RHEA:24078.
-
-RHEA:24080
-	wp:bdbRhea RHEA:24080 ;
-	sio:SIO_000028 SER:181_reaction ;
-	rh: RHEA:24080.
-
-RHEA:24082
-	wp:bdbRhea RHEA:24082 ;
-	sio:SIO_000028 SER:183_reaction ;
-	rh: RHEA:24082.
-
-RHEA:24084
-	wp:bdbRhea RHEA:24084 ;
-	sio:SIO_000028 SER:185_reaction ;
-	rh: RHEA:24084.
-
-RHEA:24086
-	wp:bdbRhea RHEA:24086 ;
-	sio:SIO_000028 SER:187_reaction ;
-	rh: RHEA:24086.
-
-RHEA:24088
-	wp:bdbRhea RHEA:24088 ;
-	sio:SIO_000028 SER:189_reaction ;
-	rh: RHEA:24088.
-
-RHEA:11874
-	wp:bdbRhea RHEA:11874 ;
-	sio:SIO_000028 SER:191_reaction ;
-	rh: RHEA:11874.
-
-RHEA:50237
-	wp:bdbRhea RHEA:50237 ;
-	sio:SIO_000028 SER:193_reaction ;
-	rh: RHEA:50237.
-
-RHEA:50239
-	wp:bdbRhea RHEA:50239 ;
-	sio:SIO_000028 SER:195_reaction ;
-	rh: RHEA:50239.
-
-RHEA:50241
-	wp:bdbRhea RHEA:50241 ;
-	sio:SIO_000028 SER:197_reaction ;
-	rh: RHEA:50241.
-
-RHEA:50243
-	wp:bdbRhea RHEA:50243 ;
-	sio:SIO_000028 SER:199_reaction ;
-	rh: RHEA:50243.
-
-RHEA:50245
-	wp:bdbRhea RHEA:50245 ;
-	sio:SIO_000028 SER:201_reaction ;
-	sio:SIO_000028 SER:225_reaction ;
-	rh: RHEA:50245.
-
-RHEA:46309
-	wp:bdbRhea RHEA:46309 ;
-	sio:SIO_000028 SER:203_reaction ;
-	sio:SIO_000028 SER:221_reaction ;
-	rh: RHEA:46309.
-
-RHEA:46311
-	wp:bdbRhea RHEA:46311 ;
-	sio:SIO_000028 SER:205_reaction ;
-	rh: RHEA:46311.
-
-RHEA:46313
-	wp:bdbRhea RHEA:46313 ;
-	sio:SIO_000028 SER:207_reaction ;
-	rh: RHEA:46313.
-
-RHEA:46315
-	wp:bdbRhea RHEA:46315 ;
-	sio:SIO_000028 SER:209_reaction ;
-	rh: RHEA:46315.
-
-RHEA:46317
-	wp:bdbRhea RHEA:46317 ;
-	sio:SIO_000028 SER:211_reaction ;
-	rh: RHEA:46317.
-
-RHEA:46319
-	wp:bdbRhea RHEA:46319 ;
-	sio:SIO_000028 SER:213_reaction ;
-	rh: RHEA:46319.
-
-RHEA:46321
-	wp:bdbRhea RHEA:46321 ;
-	sio:SIO_000028 SER:215_reaction ;
-	rh: RHEA:46321.
-
-RHEA:46323
-	wp:bdbRhea RHEA:46323 ;
-	sio:SIO_000028 SER:217_reaction ;
-	rh: RHEA:46323.
-
-RHEA:46325
-	wp:bdbRhea RHEA:46325 ;
-	sio:SIO_000028 SER:219_reaction ;
-	rh: RHEA:46325.
-
-RHEA:14755
-	wp:bdbRhea RHEA:14755 ;
-	sio:SIO_000028 SER:223_reaction ;
-	rh: RHEA:14755.
-
-RHEA:50247
-	wp:bdbRhea RHEA:50247 ;
-	sio:SIO_000028 SER:227_reaction ;
-	rh: RHEA:50247.
-
-RHEA:15631
-	wp:bdbRhea RHEA:15631 ;
-	sio:SIO_000028 SER:241_reaction ;
-	rh: RHEA:15631.
-
-RHEA:15843
-	wp:bdbRhea RHEA:15843 ;
-	sio:SIO_000028 SER:243_reaction ;
-	rh: RHEA:15843.
-
-RHEA:11390
-	wp:bdbRhea RHEA:11390 ;
-	sio:SIO_000028 SER:245_reaction ;
-	rh: RHEA:11390.
-
-RHEA:11392
-	wp:bdbRhea RHEA:11392 ;
-	sio:SIO_000028 SER:247_reaction ;
-	rh: RHEA:11392.
-
-RHEA:11394
-	wp:bdbRhea RHEA:11394 ;
-	sio:SIO_000028 SER:249_reaction ;
-	rh: RHEA:11394.
-
-RHEA:11396
-	wp:bdbRhea RHEA:11396 ;
-	sio:SIO_000028 SER:251_reaction ;
-	rh: RHEA:11396.
-
-RHEA:11398
-	wp:bdbRhea RHEA:11398 ;
-	sio:SIO_000028 SER:253_reaction ;
-	rh: RHEA:11398.
-
-RHEA:53118
-	wp:bdbRhea RHEA:53118 ;
-	sio:SIO_000028 SER:255_reaction ;
-	rh: RHEA:53118.
-
-RHEA:54385
-	wp:bdbRhea RHEA:54385 ;
-	sio:SIO_000028 SER:257_reaction ;
-	rh: RHEA:54385.
-
-RHEA:54387
-	wp:bdbRhea RHEA:54387 ;
-	sio:SIO_000028 SER:259_reaction ;
-	rh: RHEA:54387.
 
 CHEBI:16953
 	sio:SIO_000028 SER:1 ;
@@ -2531,6 +2314,9 @@ SER:257
 	dc:source "Brenda"^^xsd:string .
 
 SER:103
+	dc:source "Unknown"^^xsd:string .
+
+SER:177
 	dc:source "Unknown"^^xsd:string .
 
 SER:261

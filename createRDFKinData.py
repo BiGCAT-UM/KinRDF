@@ -17,9 +17,6 @@ else:
 os.chdir(dataFolder) ##Update directory to folder with data
 dir_code = os.getcwd()
 
-##TODO:
-#Build in check for empty values (especially for provenance).
-
 #Regex to test for structure of content
 import re
 
@@ -59,6 +56,7 @@ for (dirname, dirs, files) in os.walk('.'):
 				ListTotal.append(SER_Name + '\t' + line.strip('\n'))
 				countSER += 1
 
+##Print total number of lines found in files:
 ListQC.append("Total lines read: "+ str(len(ListTotal)) + '\n')
 
 ##SER_number
@@ -86,8 +84,10 @@ for itemSERX in ListTotal:
 	else:
 		ListQC.append("CHECK: Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
 
+##Print total number of lines found in files, after removing data without SEP-ID:
 ListQC.append("Lines remaining without missing SER info: "+ str(len(ListTotal)) + '\n')
 
+##Print total number of SEP-IDs, for which measurements are available:
 ListQC.append("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs. \n\n")  
 			
 ##Define type, extension of WP vocabulary:		
@@ -102,9 +102,10 @@ for itemSERX in ListTotal:
 	else:
 		print("CHECK: Data format for rdf:type IDs unknown, check original data for: " + a[0])
 
-#### Read in tsv file: [0]=ERPX_number [1]=EnzymePW, [2]=ApprovedEnzymeName, [3]=EC_Number, [4]=Uniprot , 
+#### [0]=ERPX_number [1]=EnzymePW, [2]=ApprovedEnzymeName, [3]=EC_Number, [4]=Uniprot , 
 #### [5]=Ensembl, [6]=RheaID, [7]=CHEBIID, [8]=Km, [9]=Kcat, [10]=Kcat/Km, [11]=pH, [12]=Temperature, 
 #### [13]=AdditionalConditions, [14]=Organism, [15]=PMID, [16]=Database				
+
 
 ##EnzymePW 
 ##No regex or count defined, since the names of Proteins can be very diverse!
@@ -117,6 +118,7 @@ for itemEnzymePW in ListTotal:
 	for items in ListUniprot: 
 		if '-' in items:
 			ListUniprot.remove(items)				
+	
 			
 ###Approved Ennzyme names (added in spreadsheet for curation, not needed in RDF model)
 # ##[2]=ApprovedEnzymeName
@@ -126,6 +128,7 @@ for itemEnzymePW in ListTotal:
 	# for items in ListApprovedEnzymeName: 
 		# if '-' in items:
 			# ListApprovedEnzymeName.remove(items)
+
 			
 ##EC_Numbers
 countECs = 0
@@ -145,21 +148,22 @@ ListQC.append("Data format for 'wp:bdbEnzymeNomenclature correctly loaded for " 
 	
 
 ##Uniprot IDs
+countProteins = 0
 for itemUniprot in ListTotal:
 	e = itemUniprot.split('\t')
 	if ('-' in e[0])|('-' in e[4])|('-' in e[6])|('-' in e[7]): #Check if one of the necessary values is missing!!
 	  continue
 	else:
-	  #ListUniprot.append(e[0].strip( ) + '_enzyme' + '\t'  + 'rdf:type' + ' ' + "wp:Protein") #old
 	  ListUniprot.append('uniprot:' + e[4].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Protein")
-	  ##Wp IRIs: to be updated
-	  #ListUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) #old
-	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) 
 	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'sio:SIO_000028' + ' ' + e[0].strip( ) + '_enzyme')
+	  ##WP IRIs:
+	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) 
 	  ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
-	  #ListLinkUniprot.append(e[0].strip( ) + '_enzyme' + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )	#old
 	  ListLinkUniprot.append('uniprot:' + e[4].strip( ) + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )
+	  countProteins = countProteins + 1
 
+##Print total number of Ensembl IDs:    
+ListQC.append("Data format for wp:bdbUniprot correctly loaded for " + str(countProteins) + " UniProt Protein IDs. \n\n")  
 
 ##Ensembl IDs
 countGenes = 0
@@ -173,33 +177,41 @@ for itemEnsembl in ListTotal:
     ListUniprot.append('uniprot:' + f[4].strip( ) + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
     countGenes = countGenes + 1
   else:
-    ListQC.append("CHECK: Data format for 'wp:bdbEnsembl unknown, check original data for: "+ f[0] + ' : ' + f[5]+ '\n')
-    
+    ListQC.append("CHECK: Data format for wp:bdbEnsembl unknown, check original data for: "+ f[0] + ' : ' + f[5]+ '\n')
+
+##Print total number of Ensembl IDs:    
 ListQC.append("Data format for wp:bdbEnsembl correctly loaded for " + str(countGenes) + " gene IDs. \n\n")  
   
-##TODO Add regex check!
+
 ##RHEA IDs
+countRhea = 0
+countEquation = 0
 for itemRheaID in ListTotal:
 	g = itemRheaID.split('\t')
-	if g[6].isnumeric(): #without prefix
-	  #ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ) ) #old
-	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
-	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
-	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:' + ' RHEA:' + g[6].strip( ) + '.' )	
-	elif 'RHEA:' in g[6]: #with prefix
-	  #ListRheaID.append(g[0].strip( ) + '\t' + 'wp:bdbRhea' + ' RHEA:' + g[6].strip( ).replace("RHEA:", "") ) #old
-	  ListRheaID.append(g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' ' + g[6].strip( ))
-	  ListRheaID.append(g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
-	  ListLinkRheaID.append(g[6].strip( ) + '\t' + 'rh:' + ' ' + g[6].strip( ) + '.' )	
-	  #ListRheaID.append(g[0].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ))  #old
-	else: #if no Rhea is available
+	pattern_rhea = '^(RHEA:)?\\d{5}$'
+	result_rhea = re.match(pattern_rhea, g[6].strip())
+	if ('-' in g[0])|('-' in g[4])|('-' in g[6])|('-' in g[7]): #Check if one of the necessary values is missing!!
+	  continue
+	elif(result_rhea): ##regex check
+	  if g[6].isnumeric(): #without prefix
+	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
+	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
+	    ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:' + ' RHEA:' + g[6].strip( ) + '.' )	
+	    countRhea = countRhea +1
+	  else: # 'RHEA:' in g[6]: #with prefix
+	    ListRheaID.append(g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' ' + g[6].strip( ))
+	    ListRheaID.append(g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
+	    ListLinkRheaID.append(g[6].strip( ) + '\t' + 'rh:' + ' ' + g[6].strip( ) + '.' )
+	    countRhea = countRhea + 1
+	elif ('+' in g[6])&('=' in g[6]): #if no Rhea is available, but there is a reaction equation.
 	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!
-	for items in ListRheaID: 
-		if '-' in items:
-			ListRheaID.remove(items)
-	for items in ListLinkRheaID: 
-		if '-' in items:
-			ListLinkRheaID.remove(items)	
+	  countEquation = countEquation + 1   
+	else: #if no Rhea is available
+	  ListQC.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6]+ '\n')
+
+##Print total number of Ensembl IDs:    
+ListQC.append("Data format for wp:bdbRhea correctly loaded for " + str(countRhea) + " rhea interaction IDs. \n\n")  
+ListQC.append("Data format for rh:equation correctly loaded for " + str(countEquation) + " reaction formulas. \n\n")  
 
 
 ##CHEBI IDs
@@ -224,7 +236,7 @@ for itemSubstrate in ListTotal:
 
 ListQC.append("Data format for wp:bdbChEBI correctly loaded for " + str(countSubstrates) + " substrate IDs. \n\n")  
 
-#Km##--> Add to measurement
+#Km##--> Add to measurement sio:SIO_000008  SER:1_measurement ;
 for itemKm in ListTotal:
   i = itemKm.split('\t')
   ListKm.append(i[0].strip() + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q61751178'

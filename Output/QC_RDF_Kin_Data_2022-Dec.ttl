@@ -5,7 +5,13 @@ Data format for SER correctly loaded for 81 Substrate, Enzyme, and Reaction IDs.
 CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:81 : 1.3.1.B13
 Data format for 'wp:bdbEnzymeNomenclature correctly loaded for 114 EC IDs. 
 
+Data format for wp:bdbUniprot correctly loaded for 115 UniProt Protein IDs. 
+
 Data format for wp:bdbEnsembl correctly loaded for 17 gene IDs. 
+
+Data format for wp:bdbRhea correctly loaded for 85 rhea interaction IDs. 
+
+Data format for rh:equation correctly loaded for 30 reaction formulas. 
 
 Data format for wp:bdbChEBI correctly loaded for 115 substrate IDs. 
 
