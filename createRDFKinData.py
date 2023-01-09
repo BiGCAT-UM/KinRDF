@@ -23,6 +23,7 @@ import re
 ##Lists to store data in
 ListTotal = []
 ListSER_ID = []
+ListSER_ID_type = []
 ListUniprot = [] 
 ListLinkUniprot = [] 
 ListEnsembl = []
@@ -98,7 +99,7 @@ for itemSERX in ListTotal:
 	if ('-' in a[0])|('-' in a[4])|('-' in a[6])|('-' in a[7]):
 	  continue
 	elif result:
-	  ListSER_ID.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
+	  ListSER_ID_type.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
 	else:
 		print("CHECK: Data format for rdf:type IDs unknown, check original data for: " + a[0])
 
@@ -236,90 +237,108 @@ for itemSubstrate in ListTotal:
 
 ListQC.append("Data format for wp:bdbChEBI correctly loaded for " + str(countSubstrates) + " substrate IDs. \n\n")  
 
-#Km##--> Add to measurement sio:SIO_000008  SER:1_measurement ;
+####No regex or count defined for the following items, since these can be very diverse:
+
+##Km
+countKm = 0
 for itemKm in ListTotal:
   i = itemKm.split('\t')
-  ListKm.append(i[0].strip() + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q61751178'
-  for items in ListKm: 
-    if '-' in items:
-      ListKm.remove(items)	
-			
-#Kcat ##--> Add to measurement
+  if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[8]): #Check if one of the necessary values is missing!!
+    continue
+  else:
+    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
+    countKm = countKm + 1
+	  
+ListQC.append("Data format for Km correctly loaded for " + str(countKm) + " values. \n\n")  
+
+
+##Kcat
+countKcat = 0
 for itemKcat in ListTotal:
   i = itemKcat.split('\t')
-  #ListKcat.append(i[0].strip( ) + '\t' + 'wd:Q883112' + ' ' + i[9].strip( )) #Old line.
-  ListKcat.append(i[0].strip() + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
-  for items in ListKcat: 
-    if '-' in items:
-      ListKcat.remove(items)	
+  if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[9]): #Check if one of the necessary values is missing!!
+    continue
+  else:
+    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
+    countKcat = countKcat + 1
 
-#KcatKm##--> Add to measurement
+ListQC.append("Data format for Kcat correctly loaded for " + str(countKcat) + " values. \n\n") 
+
+
+#KcatKm
+countKcatKm = 0
 for itemKcatKm in ListTotal:
   i = itemKcatKm.split('\t')
-  #ListKcatKm.append(i[0].strip( ) + '\t' + 'wd:Q7575016' + ' ' + i[10].strip( )) #Old line
-  ListKcatKm.append(i[0].strip() + '\t' + 'SER:hasKmKcat' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
-  for items in ListKcatKm: 
-    if '-' in items:
-      ListKcatKm.remove(items)				
+  if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[10]): #Check if one of the necessary values is missing!!
+    continue
+  else:
+    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKmKcat' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
+    countKcatKm = countKcatKm + 1	
+
+ListQC.append("Data format for KcatKm correctly loaded for " + str(countKcatKm) + " values. \n\n") 
+
 			
 #pH##--> Add to measurement
 for item_pH in ListTotal:
   i = item_pH.split('\t')
-  List_pH.append(i[0].strip( ) + '\t' + 'SER:hasPh'+ ' "' + i[11].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q40936
-  for items in List_pH:
-    if '-' in items:
-      List_pH.remove(items)			
+  if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[11]): #Check if one of the necessary values is missing!!
+    continue
+  else:
+    List_pH.append(i[0].strip( ) + '_measurement' + '\t' + 'SER:hasPh'+ ' "' + i[11].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q40936
+
 			
 #Temperature##--> Add to measurement
 for itemTemperature in ListTotal:
   i = itemTemperature.split('\t')
-  ListTemperature.append(i[0].strip( ) + '\t' + 'wdt:P2076 ' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
-  for items in ListTemperature:
-    if '-' in items in items:
-      ListTemperature.remove(items)	
+  if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[12]): #Check if one of the necessary values is missing!!
+    continue
+  else:
+    ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076 ' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
+
 
 #AdditionalConditions##--> Add to measurement
 for itemAdditionalConditions in ListTotal:
 	i = itemAdditionalConditions.split('\t')
-	ListAdditionalConditions.append(i[0].strip( ) + '\t' + 'dcterms:description' + ' "' + i[13].strip('"') + '"@en')
-	for items in ListAdditionalConditions: 
-		if '-' in items:
-			ListAdditionalConditions.remove(items)			
+	if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[13]): #Check if one of the necessary values is missing!!
+	  continue
+	else:
+	  ListAdditionalConditions.append(i[0].strip( )  + '_measurement' + '\t' + 'dcterms:description' + ' "' + i[13].strip('"') + '"@en')
+
 
 #[14]=Organism			##--> Add to measurement
 for itemOrganism in ListTotal:
 	j = itemOrganism.split('\t')
-	ListOrganism.append(j[0].strip( ) + '\t' + 'wp:organismName' + ' "' + j[14].strip('"') + '"^^xsd:string')
-	for items in ListOrganism: 
-		if '-' in items:
-			ListOrganism.remove(items)	
+	if('-' in j[0])|('-' in j[4])|('-' in j[6])|('-' in j[7])|('-' in j[14]): #Check if one of the necessary values is missing!!
+	  continue
+	else:
+	  ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + j[14].strip('"') + '"^^xsd:string')
+
 
 #[15]=PMID	##--> Add to measurement	
 for itemPMID in ListTotal:
 	k = itemPMID.split('\t')
+	if('-' in k[0])|('-' in k[4])|('-' in k[6])|('-' in k[7])|('-' in k[15]): #Check if one of the necessary values is missing!!
+	  continue
 	if k[15].isnumeric():
-	  ListPMID.append(k[0] + '\t' + 'dcterms:references' + " pubmed:" + k[15].strip( ))
+	  ListPMID.append(k[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + k[15].strip( ))
 	elif ';' in k[15]:
 		k2 = k[15].split(';') ##Split multiple references in one line.
 		k2 = [x.strip(' ') for x in k2]
-		ListPMID.append(k[0].strip( ) + '\t' + 'dcterms:references' + " pubmed:" + ', '.join(k2))
+		ListPMID.append(k[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + ', '.join(k2))
 	elif '-' in k[15]:
 	  continue
 	else:
-		print("Data format for PubMed IDs unknown, check original data!")
-	for items in ListPMID: 
-		if '-' in items in items:
-			ListPMID.remove(items)	
+		print("Data format for PubMed IDs unknown, check original data for: " + k[0] + ' : ' + k[15])
+
 			
 #[16]=Database ##--> Add to measurement				
 for itemDatabase in ListTotal:
 	l = itemDatabase.split('\t')
-	ListDatabase.append(l[0].strip( ) + '\t' + 'dc:source' + ' "' + l[16].strip( ) + '"^^xsd:string')
-	for items in ListDatabase: 
-		if '-' in items:
-			ListDatabase.remove(items)	
+	if('-' in l[0])|('-' in l[4])|('-' in l[6])|('-' in l[7])|('-' in l[16]): #Check if one of the necessary values is missing!!
+	  continue
+	else:
+	  ListDatabase.append(l[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + l[16].strip( ) + '"^^xsd:string')
 
-			
 AllDict = {}			
 
 ##Connect all List data in a Dictionary
@@ -328,6 +347,12 @@ for itemListSER in ListSER_ID:
 	(key, val) = itemListSER.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')
+
+##Finalize first statements with type info:	
+for itemListSERtype in ListSER_ID_type:
+	(key, val) = itemListSERtype.strip('\n').split('\t')
+	AllDict.setdefault(key, [])
+	AllDict[key].append(val + ' .')	
 	
 unique_ListUniprot = list(dict.fromkeys(ListUniprot))
 

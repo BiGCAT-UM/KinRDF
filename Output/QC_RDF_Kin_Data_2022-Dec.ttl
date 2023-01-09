@@ -15,3 +15,9 @@ Data format for rh:equation correctly loaded for 30 reaction formulas.
 
 Data format for wp:bdbChEBI correctly loaded for 115 substrate IDs. 
 
+Data format for Km correctly loaded for 74 values. 
+
+Data format for Kcat correctly loaded for 21 values. 
+
+Data format for KcatKm correctly loaded for 24 values. 
+
