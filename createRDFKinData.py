@@ -28,6 +28,7 @@ ListUniprot = []
 ListLinkUniprot = [] 
 ListEnsembl = []
 ListRheaID = []
+ListRheaID_type = []
 ListLinkRheaID = [] 
 ListSubstrate = []
 ListSubstrateIDs = []
@@ -60,18 +61,20 @@ for (dirname, dirs, files) in os.walk('.'):
 ##Print total number of lines found in files:
 ListQC.append("Total lines read: "+ str(len(ListTotal)) + '\n')
 
+##Regex:
+pattern_chebi = '^(CHEBI:)?\\d+$'
+pattern_uniprot = '^([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?|([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])$'
+pattern_rhea = '^(RHEA:)?\\d{5}$'
+
 ##SER_number
 countSER = 0
 for itemSERX in ListTotal:
 	a = itemSERX.split('\t')
 	pattern = '[a-zA-Z]+:[0-9]'
 	result = re.match(pattern, a[0])
-	pattern_chebi = '^(CHEBI:)?\\d+$'
-	result_chebi =  re.match(pattern_chebi, a[7])
-	pattern_uniprot = '^([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?|([A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9])$'
-	result_uniprot = re.match(pattern_uniprot, a[4])
-	pattern_rhea = '^(RHEA:)?\\d{5}$'
-	result_rhea = re.match(pattern_rhea, a[6])
+	result_chebi =  re.match(pattern_chebi, a[7].strip())
+	result_uniprot = re.match(pattern_uniprot, a[4].strip())
+	result_rhea = re.match(pattern_rhea, a[6].strip())
 	if ('-' in a[0])|('-' in a[4])|('-' in a[6])|('-' in a[7]): #Check if one of the necessary values is missing!!
 	  ListTotal.remove(itemSERX)
 	elif result: ##Create a unique IRI based on Substrate [7], Enzyme [4], and Reaction [6] ID. Note: if one of the three is missing, report in QC.
@@ -83,25 +86,31 @@ for itemSERX in ListTotal:
 	  else:
 	    ListTotal.remove(itemSERX)
 	else:
-		ListQC.append("CHECK: Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
+	  ListTotal.remove(itemSERX)
+	  ListQC.append("CHECK: Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
 
 ##Print total number of lines found in files, after removing data without SEP-ID:
 ListQC.append("Lines remaining without missing SER info: "+ str(len(ListTotal)) + '\n')
-
+print("Lines remaining without missing SER info: "+ str(len(ListTotal)))
 ##Print total number of SEP-IDs, for which measurements are available:
 ListQC.append("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs. \n\n")  
+print("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs.")
 			
 ##Define type, extension of WP vocabulary:		
 for itemSERX in ListTotal:
 	a = itemSERX.split('\t')
 	pattern = '[a-zA-Z]+:[0-9]'
 	result = re.match(pattern, a[0])
+	result_chebi =  re.match(pattern_chebi, a[7].strip())
+	result_uniprot = re.match(pattern_uniprot, a[4].strip())
+	result_rhea = re.match(pattern_rhea, a[6].strip())
 	if ('-' in a[0])|('-' in a[4])|('-' in a[6])|('-' in a[7]):
 	  continue
 	elif result:
-	  ListSER_ID_type.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
+	  if(result_chebi is not None) & (result_uniprot is not None) & (result_rhea is not None):
+	    ListSER_ID_type.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
 	else:
-		print("CHECK: Data format for rdf:type IDs unknown, check original data for: " + a[0])
+		ListQC.append("CHECK: Data format for rdf:type IDs unknown, check original data for: " + a[0])
 
 #### [0]=ERPX_number [1]=EnzymePW, [2]=ApprovedEnzymeName, [3]=EC_Number, [4]=Uniprot , 
 #### [5]=Ensembl, [6]=RheaID, [7]=CHEBIID, [8]=Km, [9]=Kcat, [10]=Kcat/Km, [11]=pH, [12]=Temperature, 
@@ -206,6 +215,7 @@ for itemRheaID in ListTotal:
 	    countRhea = countRhea + 1
 	elif ('+' in g[6])&('=' in g[6]): #if no Rhea is available, but there is a reaction equation.
 	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!
+	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  countEquation = countEquation + 1   
 	else: #if no Rhea is available
 	  ListQC.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6]+ '\n')
@@ -348,7 +358,7 @@ for itemListSER in ListSER_ID:
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')
 
-##Finalize first statements with type info:	
+##Finalize statements with type info (if Rhea ID exists):	
 for itemListSERtype in ListSER_ID_type:
 	(key, val) = itemListSERtype.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
@@ -368,6 +378,12 @@ for itemListRheaID in unique_ListRheaID:
 	(key, val) = itemListRheaID.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
+	
+##Finalize statements with type info (without Rhea ID, with equation):	
+for itemListRheatype in ListRheaID_type:
+	(key, val) = itemListRheatype.strip('\n').split('\t')
+	AllDict.setdefault(key, [])
+	AllDict[key].append(val + ' .')		
 
 for itemListSubstrate in ListSubstrate:
 	(key, val) = itemListSubstrate.strip('\n').split('\t')

@@ -517,126 +517,6 @@ SER:88
 SER:90
 	rdf:type wp:InteractionData .
 
-SER:95
-	rdf:type wp:InteractionData .
-	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
-
-SER:97
-	rdf:type wp:InteractionData .
-	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
-
-SER:107
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:109
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:111
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:113
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:115
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:117
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:119
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:121
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:123
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:125
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:127
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:129
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:131
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:133
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:135
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:137
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:139
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:141
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:143
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:145
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:147
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:149
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:151
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:153
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:155
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:157
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:159
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
-SER:161
-	rdf:type wp:InteractionData .
-	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-
 uniprot:P45381
 	rdfs:label "Aminocyclase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
@@ -1103,6 +983,14 @@ RHEA:29516
 	sio:SIO_000028 SER:91_reaction ;
 	rh: RHEA:29516.
 
+SER:95
+	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:97
+	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
 RHEA:38495
 	wp:bdbRhea RHEA:38495 ;
 	sio:SIO_000028 SER:104_reaction ;
@@ -1112,6 +1000,118 @@ RHEA:12046
 	wp:bdbRhea RHEA:12046 ;
 	sio:SIO_000028 SER:105_reaction ;
 	rh: RHEA:12046.
+
+SER:107
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:109
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:111
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:113
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:115
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:117
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:119
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:121
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:123
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:125
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:127
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:129
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:131
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:133
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:135
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:137
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:139
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:141
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:143
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:145
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:147
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:149
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:151
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:153
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:155
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:157
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:159
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:161
+	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
+	rdf:type wp:InteractionData .
 
 CHEBI:16953
 	sio:SIO_000028 SER:1 ;
