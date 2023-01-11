@@ -32,463 +32,463 @@ SER:2
 	rdf:type wp:InteractionData .
 
 SER:3
-	dc:identifier SER:15524-Q92947-RHEA:47421 ;
+	dc:identifier SER:15524-Q92947-47421 ;
 	sio:SIO_000028  SER:3_substrate, SER:3_enzyme, SER:3_reaction ;
 	sio:SIO_000008  SER:3_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:4
-	dc:identifier SER:15524-Q92947-RHEA:47422 ;
+	dc:identifier SER:15524-Q92947-47422 ;
 	sio:SIO_000028  SER:4_substrate, SER:4_enzyme, SER:4_reaction ;
 	sio:SIO_000008  SER:4_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:5
-	dc:identifier SER:15524-Q92947-RHEA:47423 ;
+	dc:identifier SER:15524-Q92947-47423 ;
 	sio:SIO_000028  SER:5_substrate, SER:5_enzyme, SER:5_reaction ;
 	sio:SIO_000008  SER:5_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:6
-	dc:identifier SER:15524-Q92947-RHEA:47424 ;
+	dc:identifier SER:15524-Q92947-47424 ;
 	sio:SIO_000028  SER:6_substrate, SER:6_enzyme, SER:6_reaction ;
 	sio:SIO_000008  SER:6_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:7
-	dc:identifier SER:15524-Q92947-RHEA:47425 ;
+	dc:identifier SER:15524-Q92947-47425 ;
 	sio:SIO_000028  SER:7_substrate, SER:7_enzyme, SER:7_reaction ;
 	sio:SIO_000008  SER:7_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:8
-	dc:identifier SER:15524-Q92947-RHEA:47426 ;
+	dc:identifier SER:15524-Q92947-47426 ;
 	sio:SIO_000028  SER:8_substrate, SER:8_enzyme, SER:8_reaction ;
 	sio:SIO_000008  SER:8_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:9
-	dc:identifier SER:15524-Q92947-RHEA:47427 ;
+	dc:identifier SER:15524-Q92947-47427 ;
 	sio:SIO_000028  SER:9_substrate, SER:9_enzyme, SER:9_reaction ;
 	sio:SIO_000008  SER:9_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:10
-	dc:identifier SER:24311-Q92947-RHEA:47428 ;
+	dc:identifier SER:24311-Q92947-47428 ;
 	sio:SIO_000028  SER:10_substrate, SER:10_enzyme, SER:10_reaction ;
 	sio:SIO_000008  SER:10_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:11
-	dc:identifier SER:24311-Q92947-RHEA:47429 ;
+	dc:identifier SER:24311-Q92947-47429 ;
 	sio:SIO_000028  SER:11_substrate, SER:11_enzyme, SER:11_reaction ;
 	sio:SIO_000008  SER:11_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:12
-	dc:identifier SER:17084-Q9H9P8-RHEA:21253 ;
+	dc:identifier SER:17084-Q9H9P8-21253 ;
 	sio:SIO_000028  SER:12_substrate, SER:12_enzyme, SER:12_reaction ;
 	sio:SIO_000008  SER:12_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:13
-	dc:identifier SER:17084-Q9H9P8-RHEA:21254 ;
+	dc:identifier SER:17084-Q9H9P8-21254 ;
 	sio:SIO_000028  SER:13_substrate, SER:13_enzyme, SER:13_reaction ;
 	sio:SIO_000008  SER:13_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:14
-	dc:identifier SER:17084-Q8N465-RHEA:21255 ;
+	dc:identifier SER:17084-Q8N465-21255 ;
 	sio:SIO_000028  SER:14_substrate, SER:14_enzyme, SER:14_reaction ;
 	sio:SIO_000008  SER:14_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:15
-	dc:identifier SER:30915-P48735-RHEA:49614 ;
+	dc:identifier SER:30915-P48735-49614 ;
 	sio:SIO_000028  SER:15_substrate, SER:15_enzyme, SER:15_reaction ;
 	sio:SIO_000008  SER:15_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:16
-	dc:identifier SER:30915-P48735-RHEA:49615 ;
+	dc:identifier SER:30915-P48735-49615 ;
 	sio:SIO_000028  SER:16_substrate, SER:16_enzyme, SER:16_reaction ;
 	sio:SIO_000008  SER:16_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:17
-	dc:identifier SER:30915-P48735-RHEA:49616 ;
+	dc:identifier SER:30915-P48735-49616 ;
 	sio:SIO_000028  SER:17_substrate, SER:17_enzyme, SER:17_reaction ;
 	sio:SIO_000008  SER:17_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:18
-	dc:identifier SER:30915-P48735-RHEA:49617 ;
+	dc:identifier SER:30915-P48735-49617 ;
 	sio:SIO_000028  SER:18_substrate, SER:18_enzyme, SER:18_reaction ;
 	sio:SIO_000008  SER:18_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:19
-	dc:identifier SER:30915-P48735-RHEA:49618 ;
+	dc:identifier SER:30915-P48735-49618 ;
 	sio:SIO_000028  SER:19_substrate, SER:19_enzyme, SER:19_reaction ;
 	sio:SIO_000008  SER:19_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:20
-	dc:identifier SER:30915-P48735-RHEA:49619 ;
+	dc:identifier SER:30915-P48735-49619 ;
 	sio:SIO_000028  SER:20_substrate, SER:20_enzyme, SER:20_reaction ;
 	sio:SIO_000008  SER:20_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:21
-	dc:identifier SER:30915-P48735-RHEA:49620 ;
+	dc:identifier SER:30915-P48735-49620 ;
 	sio:SIO_000028  SER:21_substrate, SER:21_enzyme, SER:21_reaction ;
 	sio:SIO_000008  SER:21_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:22
-	dc:identifier SER:30915-P48735-RHEA:49621 ;
+	dc:identifier SER:30915-P48735-49621 ;
 	sio:SIO_000028  SER:22_substrate, SER:22_enzyme, SER:22_reaction ;
 	sio:SIO_000008  SER:22_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:25
-	dc:identifier SER:30915-Q8IWW8-RHEA:49615 ;
+	dc:identifier SER:30915-Q8IWW8-49615 ;
 	sio:SIO_000028  SER:25_substrate, SER:25_enzyme, SER:25_reaction ;
 	sio:SIO_000008  SER:25_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:26
-	dc:identifier SER:30915-Q8IWW8-RHEA:49616 ;
+	dc:identifier SER:30915-Q8IWW8-49616 ;
 	sio:SIO_000028  SER:26_substrate, SER:26_enzyme, SER:26_reaction ;
 	sio:SIO_000008  SER:26_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:27
-	dc:identifier SER:30915-Q8IWW8-RHEA:49617 ;
+	dc:identifier SER:30915-Q8IWW8-49617 ;
 	sio:SIO_000028  SER:27_substrate, SER:27_enzyme, SER:27_reaction ;
 	sio:SIO_000008  SER:27_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:28
-	dc:identifier SER:17084-P40926-RHEA:21253 ;
+	dc:identifier SER:17084-P40926-21253 ;
 	sio:SIO_000028  SER:28_substrate, SER:28_enzyme, SER:28_reaction ;
 	sio:SIO_000008  SER:28_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:29
-	dc:identifier SER:17084-P23368-RHEA:21254 ;
+	dc:identifier SER:17084-P23368-21254 ;
 	sio:SIO_000028  SER:29_substrate, SER:29_enzyme, SER:29_reaction ;
 	sio:SIO_000008  SER:29_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:30
-	dc:identifier SER:17084-P23368-RHEA:21255 ;
+	dc:identifier SER:17084-P23368-21255 ;
 	sio:SIO_000028  SER:30_substrate, SER:30_enzyme, SER:30_reaction ;
 	sio:SIO_000008  SER:30_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:31
-	dc:identifier SER:17084-P23368-RHEA:21256 ;
+	dc:identifier SER:17084-P23368-21256 ;
 	sio:SIO_000028  SER:31_substrate, SER:31_enzyme, SER:31_reaction ;
 	sio:SIO_000008  SER:31_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:32
-	dc:identifier SER:16856-P19440-RHEA:23905 ;
+	dc:identifier SER:16856-P19440-23905 ;
 	sio:SIO_000028  SER:32_substrate, SER:32_enzyme, SER:32_reaction ;
 	sio:SIO_000008  SER:32_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:33
-	dc:identifier SER:16856-P19440-RHEA:23905 ;
+	dc:identifier SER:16856-P19440-23905 ;
 	sio:SIO_000028  SER:33_substrate, SER:33_enzyme, SER:33_reaction ;
 	sio:SIO_000008  SER:33_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:34
-	dc:identifier SER:16856-P19440-RHEA:23905 ;
+	dc:identifier SER:16856-P19440-23905 ;
 	sio:SIO_000028  SER:34_substrate, SER:34_enzyme, SER:34_reaction ;
 	sio:SIO_000008  SER:34_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:35
-	dc:identifier SER:16856-P19440-RHEA:23905 ;
+	dc:identifier SER:16856-P19440-23905 ;
 	sio:SIO_000028  SER:35_substrate, SER:35_enzyme, SER:35_reaction ;
 	sio:SIO_000008  SER:35_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:36
-	dc:identifier SER:15857-O75223-RHEA:20506 ;
+	dc:identifier SER:15857-O75223-20506 ;
 	sio:SIO_000028  SER:36_substrate, SER:36_enzyme, SER:36_reaction ;
 	sio:SIO_000008  SER:36_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:37
-	dc:identifier SER:16010-O14841-RHEA:10349 ;
+	dc:identifier SER:16010-O14841-10349 ;
 	sio:SIO_000028  SER:37_substrate, SER:37_enzyme, SER:37_reaction ;
 	sio:SIO_000008  SER:37_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:38
-	dc:identifier SER:16010-O14841-RHEA:10349 ;
+	dc:identifier SER:16010-O14841-10349 ;
 	sio:SIO_000028  SER:38_substrate, SER:38_enzyme, SER:38_reaction ;
 	sio:SIO_000008  SER:38_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:39
-	dc:identifier SER:16010-O14841-RHEA:10349 ;
+	dc:identifier SER:16010-O14841-10349 ;
 	sio:SIO_000028  SER:39_substrate, SER:39_enzyme, SER:39_reaction ;
 	sio:SIO_000008  SER:39_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:40
-	dc:identifier SER:16010-O14841-RHEA:10349 ;
+	dc:identifier SER:16010-O14841-10349 ;
 	sio:SIO_000028  SER:40_substrate, SER:40_enzyme, SER:40_reaction ;
 	sio:SIO_000008  SER:40_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:41
-	dc:identifier SER:16010-O14841-RHEA:10349 ;
+	dc:identifier SER:16010-O14841-10349 ;
 	sio:SIO_000028  SER:41_substrate, SER:41_enzyme, SER:41_reaction ;
 	sio:SIO_000008  SER:41_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:42
-	dc:identifier SER:16010-O14841-RHEA:10349 ;
+	dc:identifier SER:16010-O14841-10349 ;
 	sio:SIO_000028  SER:42_substrate, SER:42_enzyme, SER:42_reaction ;
 	sio:SIO_000008  SER:42_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:43
-	dc:identifier SER:16010-O14841-RHEA:10349 ;
+	dc:identifier SER:16010-O14841-10349 ;
 	sio:SIO_000028  SER:43_substrate, SER:43_enzyme, SER:43_reaction ;
 	sio:SIO_000008  SER:43_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:44
-	dc:identifier SER:16010-O14841-RHEA:10349 ;
+	dc:identifier SER:16010-O14841-10349 ;
 	sio:SIO_000028  SER:44_substrate, SER:44_enzyme, SER:44_reaction ;
 	sio:SIO_000008  SER:44_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:45
-	dc:identifier SER:16010-O14841-RHEA:10349 ;
+	dc:identifier SER:16010-O14841-10349 ;
 	sio:SIO_000028  SER:45_substrate, SER:45_enzyme, SER:45_reaction ;
 	sio:SIO_000008  SER:45_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:46
-	dc:identifier SER:16010-O14841-RHEA:10349 ;
+	dc:identifier SER:16010-O14841-10349 ;
 	sio:SIO_000028  SER:46_substrate, SER:46_enzyme, SER:46_reaction ;
 	sio:SIO_000008  SER:46_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:47
-	dc:identifier SER:14321-P48506-RHEA:13286 ;
+	dc:identifier SER:14321-P48506-13286 ;
 	sio:SIO_000028  SER:47_substrate, SER:47_enzyme, SER:47_reaction ;
 	sio:SIO_000008  SER:47_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:48
-	dc:identifier SER:14321-P48506-RHEA:13286 ;
+	dc:identifier SER:14321-P48506-13286 ;
 	sio:SIO_000028  SER:48_substrate, SER:48_enzyme, SER:48_reaction ;
 	sio:SIO_000008  SER:48_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:49
-	dc:identifier SER:17515-P48637-RHEA:13558 ;
+	dc:identifier SER:17515-P48637-13558 ;
 	sio:SIO_000028  SER:49_substrate, SER:49_enzyme, SER:49_reaction ;
 	sio:SIO_000008  SER:49_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:50
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:50_substrate, SER:50_enzyme, SER:50_reaction ;
 	sio:SIO_000008  SER:50_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:51
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:51_substrate, SER:51_enzyme, SER:51_reaction ;
 	sio:SIO_000008  SER:51_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:52
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:52_substrate, SER:52_enzyme, SER:52_reaction ;
 	sio:SIO_000008  SER:52_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:53
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:53_substrate, SER:53_enzyme, SER:53_reaction ;
 	sio:SIO_000008  SER:53_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:54
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:54_substrate, SER:54_enzyme, SER:54_reaction ;
 	sio:SIO_000008  SER:54_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:55
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:55_substrate, SER:55_enzyme, SER:55_reaction ;
 	sio:SIO_000008  SER:55_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:56
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:56_substrate, SER:56_enzyme, SER:56_reaction ;
 	sio:SIO_000008  SER:56_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:57
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:57_substrate, SER:57_enzyme, SER:57_reaction ;
 	sio:SIO_000008  SER:57_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:58
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:58_substrate, SER:58_enzyme, SER:58_reaction ;
 	sio:SIO_000008  SER:58_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:59
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:59_substrate, SER:59_enzyme, SER:59_reaction ;
 	sio:SIO_000008  SER:59_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:60
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:60_substrate, SER:60_enzyme, SER:60_reaction ;
 	sio:SIO_000008  SER:60_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:61
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:61_substrate, SER:61_enzyme, SER:61_reaction ;
 	sio:SIO_000008  SER:61_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:62
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:62_substrate, SER:62_enzyme, SER:62_reaction ;
 	sio:SIO_000008  SER:62_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:63
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:63_substrate, SER:63_enzyme, SER:63_reaction ;
 	sio:SIO_000008  SER:63_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:64
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:64_substrate, SER:64_enzyme, SER:64_reaction ;
 	sio:SIO_000008  SER:64_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:65
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:65_substrate, SER:65_enzyme, SER:65_reaction ;
 	sio:SIO_000008  SER:65_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:66
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:66_substrate, SER:66_enzyme, SER:66_reaction ;
 	sio:SIO_000008  SER:66_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:67
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:67_substrate, SER:67_enzyme, SER:67_reaction ;
 	sio:SIO_000008  SER:67_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:68
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:68_substrate, SER:68_enzyme, SER:68_reaction ;
 	sio:SIO_000008  SER:68_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:69
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:69_substrate, SER:69_enzyme, SER:69_reaction ;
 	sio:SIO_000008  SER:69_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:70
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:70_substrate, SER:70_enzyme, SER:70_reaction ;
 	sio:SIO_000008  SER:70_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:71
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:71_substrate, SER:71_enzyme, SER:71_reaction ;
 	sio:SIO_000008  SER:71_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:72
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:72_substrate, SER:72_enzyme, SER:72_reaction ;
 	sio:SIO_000008  SER:72_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:73
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:73_substrate, SER:73_enzyme, SER:73_reaction ;
 	sio:SIO_000008  SER:73_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:74
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:74_substrate, SER:74_enzyme, SER:74_reaction ;
 	sio:SIO_000008  SER:74_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:75
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:75_substrate, SER:75_enzyme, SER:75_reaction ;
 	sio:SIO_000008  SER:75_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:76
-	dc:identifier SER:15428-P48637-RHEA:13558 ;
+	dc:identifier SER:15428-P48637-13558 ;
 	sio:SIO_000028  SER:76_substrate, SER:76_enzyme, SER:76_reaction ;
 	sio:SIO_000008  SER:76_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:77
-	dc:identifier SER:17515-P48637-RHEA:13558 ;
+	dc:identifier SER:17515-P48637-13558 ;
 	sio:SIO_000028  SER:77_substrate, SER:77_enzyme, SER:77_reaction ;
 	sio:SIO_000008  SER:77_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:78
-	dc:identifier SER:17515-P48637-RHEA:13558 ;
+	dc:identifier SER:17515-P48637-13558 ;
 	sio:SIO_000028  SER:78_substrate, SER:78_enzyme, SER:78_reaction ;
 	sio:SIO_000008  SER:78_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:79
-	dc:identifier SER:17515-P48637-RHEA:13558 ;
+	dc:identifier SER:17515-P48637-13558 ;
 	sio:SIO_000028  SER:79_substrate, SER:79_enzyme, SER:79_reaction ;
 	sio:SIO_000008  SER:79_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:82
-	dc:identifier SER:16091-Q9UPQ8-RHEA:13134 ;
+	dc:identifier SER:16091-Q9UPQ8-13134 ;
 	sio:SIO_000028  SER:82_substrate, SER:82_enzyme, SER:82_reaction ;
 	sio:SIO_000008  SER:82_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:91
-	dc:identifier SER:58472-Q9H553-RHEA:29516 ;
+	dc:identifier SER:58472-Q9H553-29516 ;
 	sio:SIO_000028  SER:91_substrate, SER:91_enzyme, SER:91_reaction ;
 	sio:SIO_000008  SER:91_measurement ;
 	rdf:type wp:InteractionData .
@@ -972,10 +972,10 @@ RHEA:13134
 	sio:SIO_000028 SER:82_reaction ;
 	rh: RHEA:13134.
 
-RHEA:13866
-	wp:bdbRhea RHEA:13866 ;
+13866
+	wp:bdbRhea 13866 ;
 	sio:SIO_000028 SER:88_reaction ;
-	rh: RHEA:13866.
+	rh: 13866.
 
 RHEA:29516
 	wp:bdbRhea RHEA:29516 ;

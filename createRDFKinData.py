@@ -57,6 +57,11 @@ for (dirname, dirs, files) in os.walk('.'):
 				SER_Name = "SER:" + str(countSER)
 				ListTotal.append(SER_Name + '\t' + line.strip('\n'))
 				countSER += 1
+				
+				
+##Replace common prefixes for harmonized data structure:
+ListTotal = [w.replace('RHEA:', '') for w in ListTotal]
+ListTotal = [w.replace('CHEBI:', '') for w in ListTotal]
 
 ##Print total number of lines found in files:
 ListQC.append("Total lines read: "+ str(len(ListTotal)) + '\n')
@@ -83,11 +88,18 @@ for itemSERX in ListTotal:
 	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
 	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
 	    countSER = countSER +1
+	  elif(result_chebi is not None) & (result_rhea is not None): ##check against REGEX; UniProt doesn't have to match necessarily, but is flagged!
+	    ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( ))
+	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
+	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
+	    ListQC.append("CHECK: Data format for UniProt doesn't match regex, check data for: "+ a[0] + ' ' + a[4] + '\n')
+	    countSER = countSER +1
 	  else:
 	    ListTotal.remove(itemSERX)
 	else:
 	  ListTotal.remove(itemSERX)
 	  ListQC.append("CHECK: Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
+
 
 ##Print total number of lines found in files, after removing data without SEP-ID:
 ListQC.append("Lines remaining without missing SER info: "+ str(len(ListTotal)) + '\n')
