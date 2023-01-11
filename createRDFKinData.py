@@ -83,17 +83,17 @@ for itemSERX in ListTotal:
 	if ('-' in a[0])|('-' in a[4])|('-' in a[6])|('-' in a[7]): #Check if one of the necessary values is missing!!
 	  ListTotal.remove(itemSERX)
 	elif result: ##Create a unique IRI based on Substrate [7], Enzyme [4], and Reaction [6] ID. Note: if one of the three is missing, report in QC.
-	  if (result_chebi is not None) & (result_uniprot is not None) & (result_rhea is not None): ##check against REGEX
+	  if (result_chebi is not None) & (result_rhea is not None): # & (result_uniprot is not None): ##check against REGEX
 	    ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( )) ##Trim RHEA/CHEBI in fromt of IDs if available.
 	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
 	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
 	    countSER = countSER +1
-	  elif(result_chebi is not None) & (result_rhea is not None): ##check against REGEX; UniProt doesn't have to match necessarily, but is flagged!
-	    ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( ))
-	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
-	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
-	    ListQC.append("CHECK: Data format for UniProt doesn't match regex, check data for: "+ a[0] + ' ' + a[4] + '\n')
-	    countSER = countSER +1
+	  #elif(result_chebi is not None) & (result_rhea is not None): ##check against REGEX; UniProt doesn't have to match necessarily, but is flagged!
+	  #  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( ))
+	  #  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
+	  #  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
+	  #  ListQC.append("CHECK: Data format for UniProt doesn't match regex, check data for: "+ a[0] + ' ' + a[4] + '\n')
+	  #  countSER = countSER +1
 	  else:
 	    ListTotal.remove(itemSERX)
 	else:
@@ -218,12 +218,12 @@ for itemRheaID in ListTotal:
 	  if g[6].isnumeric(): #without prefix
 	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
 	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
-	    ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:' + ' RHEA:' + g[6].strip( ) + '.' )	
+	    ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh::accession' + ' RHEA:' + g[6].strip( ) + '.' )	
 	    countRhea = countRhea +1
 	  else: # 'RHEA:' in g[6]: #with prefix
 	    ListRheaID.append(g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' ' + g[6].strip( ))
 	    ListRheaID.append(g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
-	    ListLinkRheaID.append(g[6].strip( ) + '\t' + 'rh:' + ' ' + g[6].strip( ) + '.' )
+	    ListLinkRheaID.append(g[6].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ) + '.' )
 	    countRhea = countRhea + 1
 	elif ('+' in g[6])&('=' in g[6]): #if no Rhea is available, but there is a reaction equation.
 	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!

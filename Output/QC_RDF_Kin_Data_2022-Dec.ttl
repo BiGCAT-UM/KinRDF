@@ -1,23 +1,82 @@
 Total lines read: 262
-Lines remaining without missing SER info: 171
-Data format for SER correctly loaded for 81 Substrate, Enzyme, and Reaction IDs. 
+CHECK: Data format doesn't match regex, check data for: SER:96
+CHECK: Data format doesn't match regex, check data for: SER:97
+CHECK: Data format doesn't match regex, check data for: SER:98
+CHECK: Data format doesn't match regex, check data for: SER:106
+CHECK: Data format doesn't match regex, check data for: SER:107
+CHECK: Data format doesn't match regex, check data for: SER:108
+CHECK: Data format doesn't match regex, check data for: SER:109
+CHECK: Data format doesn't match regex, check data for: SER:110
+CHECK: Data format doesn't match regex, check data for: SER:111
+CHECK: Data format doesn't match regex, check data for: SER:112
+CHECK: Data format doesn't match regex, check data for: SER:113
+CHECK: Data format doesn't match regex, check data for: SER:114
+CHECK: Data format doesn't match regex, check data for: SER:115
+CHECK: Data format doesn't match regex, check data for: SER:116
+CHECK: Data format doesn't match regex, check data for: SER:117
+CHECK: Data format doesn't match regex, check data for: SER:118
+CHECK: Data format doesn't match regex, check data for: SER:119
+CHECK: Data format doesn't match regex, check data for: SER:120
+CHECK: Data format doesn't match regex, check data for: SER:121
+CHECK: Data format doesn't match regex, check data for: SER:122
+CHECK: Data format doesn't match regex, check data for: SER:123
+CHECK: Data format doesn't match regex, check data for: SER:124
+CHECK: Data format doesn't match regex, check data for: SER:125
+CHECK: Data format doesn't match regex, check data for: SER:126
+CHECK: Data format doesn't match regex, check data for: SER:127
+CHECK: Data format doesn't match regex, check data for: SER:128
+CHECK: Data format doesn't match regex, check data for: SER:129
+CHECK: Data format doesn't match regex, check data for: SER:130
+CHECK: Data format doesn't match regex, check data for: SER:131
+CHECK: Data format doesn't match regex, check data for: SER:132
+CHECK: Data format doesn't match regex, check data for: SER:133
+CHECK: Data format doesn't match regex, check data for: SER:134
+CHECK: Data format doesn't match regex, check data for: SER:135
+CHECK: Data format doesn't match regex, check data for: SER:136
+CHECK: Data format doesn't match regex, check data for: SER:137
+CHECK: Data format doesn't match regex, check data for: SER:138
+CHECK: Data format doesn't match regex, check data for: SER:139
+CHECK: Data format doesn't match regex, check data for: SER:140
+CHECK: Data format doesn't match regex, check data for: SER:141
+CHECK: Data format doesn't match regex, check data for: SER:142
+CHECK: Data format doesn't match regex, check data for: SER:143
+CHECK: Data format doesn't match regex, check data for: SER:144
+CHECK: Data format doesn't match regex, check data for: SER:145
+CHECK: Data format doesn't match regex, check data for: SER:146
+CHECK: Data format doesn't match regex, check data for: SER:147
+CHECK: Data format doesn't match regex, check data for: SER:148
+CHECK: Data format doesn't match regex, check data for: SER:149
+CHECK: Data format doesn't match regex, check data for: SER:150
+CHECK: Data format doesn't match regex, check data for: SER:151
+CHECK: Data format doesn't match regex, check data for: SER:152
+CHECK: Data format doesn't match regex, check data for: SER:153
+CHECK: Data format doesn't match regex, check data for: SER:154
+CHECK: Data format doesn't match regex, check data for: SER:155
+CHECK: Data format doesn't match regex, check data for: SER:156
+CHECK: Data format doesn't match regex, check data for: SER:157
+CHECK: Data format doesn't match regex, check data for: SER:158
+CHECK: Data format doesn't match regex, check data for: SER:159
+CHECK: Data format doesn't match regex, check data for: SER:160
+CHECK: Data format doesn't match regex, check data for: SER:161
+Lines remaining without missing SER info: 200
+Data format for SER correctly loaded for 139 Substrate, Enzyme, and Reaction IDs. 
 
 CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:81 : 1.3.1.B13
-Data format for 'wp:bdbEnzymeNomenclature correctly loaded for 114 EC IDs. 
+Data format for 'wp:bdbEnzymeNomenclature correctly loaded for 144 EC IDs. 
 
-Data format for wp:bdbUniprot correctly loaded for 115 UniProt Protein IDs. 
+Data format for wp:bdbUniprot correctly loaded for 145 UniProt Protein IDs. 
 
 Data format for wp:bdbEnsembl correctly loaded for 17 gene IDs. 
 
 Data format for wp:bdbRhea correctly loaded for 85 rhea interaction IDs. 
 
-Data format for rh:equation correctly loaded for 30 reaction formulas. 
+Data format for rh:equation correctly loaded for 60 reaction formulas. 
 
-Data format for wp:bdbChEBI correctly loaded for 115 substrate IDs. 
+Data format for wp:bdbChEBI correctly loaded for 145 substrate IDs. 
 
-Data format for Km correctly loaded for 74 values. 
+Data format for Km correctly loaded for 86 values. 
 
-Data format for Kcat correctly loaded for 21 values. 
+Data format for Kcat correctly loaded for 30 values. 
 
-Data format for KcatKm correctly loaded for 24 values. 
+Data format for KcatKm correctly loaded for 33 values. 
 
