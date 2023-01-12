@@ -234,19 +234,27 @@ for itemSubstrate in ListTotal:
 
 ListQC.append("Data format for wp:bdbChEBI correctly loaded for " + str(countSubstrates) + " substrate IDs. \n\n")  
 
-####No regex or count defined for the following items, since these can be very diverse:
+####No regex or count defined for the following items, since these can be very diverse.
+
+##Regex:
+pattern_float = '^\d+\.\d+$'
 
 ##Km
 countKm = 0
 for itemKm in ListTotal:
   i = itemKm.split('\t')
+  i[8] = i[8].replace(',', '.')
+  result_float =  re.match(pattern_float, i[8])
   if(i[8]=='-')|(i[8]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!! [16] = Database, needed for provenance and ending statement in RDF!
     continue
-  elif(i[8].isnumeric):
+  elif(result_float): ##Check if entry contains a number with decimal(s)
+    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
+    countKm = countKm + 1
+  elif(i[8].strip().isnumeric()): ##Check if entry contains a number without decimal(s)
     ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
     countKm = countKm + 1
   else:
-    ListErrors.append("CHECK: Data format for Km data not numeric, check original data for: "+ h[0] + " : " + i[8] + '\n')
+    ListErrors.append("CHECK: Data format for Km data not a number, check original data for: "+ h[0] + " : " + i[8] + '\n')
 	  
 ListQC.append("Data format for Km correctly loaded for " + str(countKm) + " values. \n\n")  
 
@@ -255,11 +263,18 @@ ListQC.append("Data format for Km correctly loaded for " + str(countKm) + " valu
 countKcat = 0
 for itemKcat in ListTotal:
   i = itemKcat.split('\t')
-  if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[9]): #Check if one of the necessary values is missing!!
+  i[9] = i[9].replace(',', '.')
+  result_float =  re.match(pattern_float, i[9])
+  if(i[9]=='-')|(i[9]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!!
     continue
-  else:
+  elif(result_float):
     ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
     countKcat = countKcat + 1
+  elif(i[9].strip().isnumeric()):
+    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
+    countKcat = countKcat + 1
+  else:
+    ListErrors.append("CHECK: Data format for Kcat data not numeric, check original data for: "+ h[0] + " : " + i[9] + '\n')
 
 ListQC.append("Data format for Kcat correctly loaded for " + str(countKcat) + " values. \n\n") 
 
@@ -268,11 +283,19 @@ ListQC.append("Data format for Kcat correctly loaded for " + str(countKcat) + " 
 countKcatKm = 0
 for itemKcatKm in ListTotal:
   i = itemKcatKm.split('\t')
-  if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[10]): #Check if one of the necessary values is missing!!
+  i[10] = i[10].replace(',', '.')
+  result_float =  re.match(pattern_float, i[10])
+  if(i[10]=='-')|(i[10]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!!
     continue
-  else:
+  elif(result_float):
     ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKmKcat' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
     countKcatKm = countKcatKm + 1	
+  elif(i[10].strip().isnumeric()):
+    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKmKcat' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
+    countKcatKm = countKcatKm + 1	
+  else:
+    ListErrors.append("CHECK: Data format for KcatKm data not numeric, check original data for: "+ h[0] + " : " + i[10] + '\n')
+
 
 ListQC.append("Data format for KcatKm correctly loaded for " + str(countKcatKm) + " values. \n\n") 
 

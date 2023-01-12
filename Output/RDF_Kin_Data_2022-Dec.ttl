@@ -1948,7 +1948,7 @@ CHEBI:17347
 
 SER:1_measurement
 	SER:hasKm  "163"^^xsd:float ;
-	SER:hasKcat  "37,5"^^xsd:float ;
+	SER:hasKcat  "37.5"^^xsd:float ;
 	SER:hasPh "7,4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1973,7 +1973,7 @@ SER:3_measurement
 
 SER:4_measurement
 	SER:hasKm  "0.0047"^^xsd:float ;
-	SER:hasKcat  "5,6"^^xsd:float ;
+	SER:hasKcat  "5.6"^^xsd:float ;
 	SER:hasPh "6,5"^^xsd:float ;
 	wdt:P2076  ""^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1982,7 +1982,7 @@ SER:4_measurement
 
 SER:5_measurement
 	SER:hasKm  "0.0064"^^xsd:float ;
-	SER:hasKcat  "6,7"^^xsd:float ;
+	SER:hasKcat  "6.7"^^xsd:float ;
 	SER:hasPh "7,6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -1991,7 +1991,7 @@ SER:5_measurement
 
 SER:6_measurement
 	SER:hasKm  "0.0074"^^xsd:float ;
-	SER:hasKcat  "4,8"^^xsd:float ;
+	SER:hasKcat  "4.8"^^xsd:float ;
 	SER:hasPh "7,6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "mutant A421T; electron acceptor is electron transfer flavoprotein "@en ;
@@ -2001,7 +2001,7 @@ SER:6_measurement
 
 SER:7_measurement
 	SER:hasKm  "0.0081"^^xsd:float ;
-	SER:hasKcat  "9,4"^^xsd:float ;
+	SER:hasKcat  "9.4"^^xsd:float ;
 	SER:hasPh "7,6"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:17176108 ;
@@ -2009,7 +2009,7 @@ SER:7_measurement
 
 SER:8_measurement
 	SER:hasKm  "0.0123"^^xsd:float ;
-	SER:hasKcat  "4,6"^^xsd:float ;
+	SER:hasKcat  "4.6"^^xsd:float ;
 	SER:hasPh "7,6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "mutant A421V; electron acceptor is electron transfer flavoprotein "@en ;
@@ -2019,7 +2019,7 @@ SER:8_measurement
 
 SER:9_measurement
 	SER:hasKm  "0.0261"^^xsd:float ;
-	SER:hasKcat  "4,9"^^xsd:float ;
+	SER:hasKcat  "4.9"^^xsd:float ;
 	SER:hasPh "7,6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "mutant A433V; electron acceptor is electron transfer flavoprotein "@en ;
@@ -2038,7 +2038,7 @@ SER:10_measurement
 SER:11_measurement
 	SER:hasKm  "0.0026"^^xsd:float ;
 	SER:hasKcat  "9"^^xsd:float ;
-	SER:hasKmKcat "3,5"^^xsd:float ;
+	SER:hasKmKcat "3.5"^^xsd:float ;
 	SER:hasPh "7,6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "10 mM potassium phosphate"@en ;
@@ -2062,8 +2062,8 @@ SER:13_measurement
 
 SER:14_measurement
 	SER:hasKm  "584"^^xsd:float ;
-	SER:hasKcat  "0,8"^^xsd:float ;
-	SER:hasKmKcat "1,37"^^xsd:float ;
+	SER:hasKcat  "0.8"^^xsd:float ;
+	SER:hasKmKcat "1.37"^^xsd:float ;
 	SER:hasPh "8,75"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	wp:organismName "Arabidopsis thaliana"^^xsd:string ;
@@ -2641,6 +2641,7 @@ SER:124_measurement
 
 SER:165_measurement
 	SER:hasKm  "0.0091"^^xsd:float ;
+	SER:hasKmKcat "212"^^xsd:float ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:169_measurement
@@ -2653,6 +2654,7 @@ SER:181_measurement
 
 SER:185_measurement
 	SER:hasKm  "0.0037"^^xsd:float ;
+	SER:hasKmKcat "0.0073"^^xsd:float ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:189_measurement
@@ -2689,6 +2691,7 @@ SER:237_measurement
 
 SER:241_measurement
 	SER:hasKm  "338"^^xsd:float ;
+	SER:hasKcat  "167"^^xsd:float ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:245_measurement
@@ -2697,10 +2700,6 @@ SER:245_measurement
 
 SER:249_measurement
 	SER:hasKm  "2"^^xsd:float ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:257_measurement
-	SER:hasKm  "5.4E-05"^^xsd:float ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:125_measurement
@@ -2850,6 +2849,31 @@ SER:142_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
+
+SER:173_measurement
+	SER:hasKcat  "0.1"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:201_measurement
+	SER:hasKcat  "0.0037"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:217_measurement
+	SER:hasKcat  "17"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:221_measurement
+	SER:hasKcat  "0.17"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:233_measurement
+	SER:hasKcat  "2.8"^^xsd:float ;
+	SER:hasKmKcat "13330"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:253_measurement
+	SER:hasKcat  "0.4"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
 
 SER:68_measurement
 	SER:hasKmKcat "10.36"^^xsd:float ;
@@ -3105,6 +3129,10 @@ SER:161_measurement
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
 
+SER:213_measurement
+	SER:hasKmKcat "5.8"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
 SER:28_measurement
 	SER:hasPh "7,4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3160,28 +3188,10 @@ SER:104_measurement
 SER:105_measurement
 	dc:source "Unknown"^^xsd:string .
 
-SER:173_measurement
-	dc:source "Brenda"^^xsd:string .
-
 SER:177_measurement
 	dc:source "Unknown"^^xsd:string .
 
-SER:201_measurement
-	dc:source "Brenda"^^xsd:string .
-
-SER:213_measurement
-	dc:source "Brenda"^^xsd:string .
-
-SER:217_measurement
-	dc:source "Brenda"^^xsd:string .
-
-SER:221_measurement
-	dc:source "Brenda"^^xsd:string .
-
-SER:233_measurement
-	dc:source "Brenda"^^xsd:string .
-
-SER:253_measurement
+SER:257_measurement
 	dc:source "Brenda"^^xsd:string .
 
 SER:261_measurement
