@@ -330,6 +330,11 @@ for itemAdditionalConditions in ListTotal:
 ListCommonLatinOrganismsWP = ['Bos taurus', 'Canis familiaris', 'Danio rerio', 'Equus caballus', 'Gallus gallus', 'Homo sapiens', 'Mus musculus', 'Pan troglodytes', 'Rattus norvegicus', 'Sus scrofa']
 ListCommonEnglishOrganismsWP = ['Cow', 'Dog', 'Zebrafish', 'Horse', 'Chicken', 'Human', 'Mouse', 'Chimpanzee', 'Rat', 'Boar']
 
+##TODO: if English name, change to Latin for data model.
+##TODO: report names which are not known/incorrect; examples:
+#Alcaligenes sp. 
+
+
 #[14]=Organism			##--> Add to measurement
 for itemOrganism in ListTotal:
 	j = itemOrganism.split('\t')
