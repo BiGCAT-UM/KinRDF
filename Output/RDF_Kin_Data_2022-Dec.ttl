@@ -151,6 +151,12 @@ SER:22
 	sio:SIO_000008  SER:22_measurement ;
 	rdf:type wp:InteractionData .
 
+SER:24
+	dc:identifier SER:30915-Q8IWW8-49614 ;
+	sio:SIO_000028  SER:24_substrate, SER:24_enzyme, SER:24_reaction ;
+	sio:SIO_000008  SER:24_measurement ;
+	rdf:type wp:InteractionData .
+
 SER:25
 	dc:identifier SER:30915-Q8IWW8-49615 ;
 	sio:SIO_000028  SER:25_substrate, SER:25_enzyme, SER:25_reaction ;
@@ -481,10 +487,28 @@ SER:79
 	sio:SIO_000008  SER:79_measurement ;
 	rdf:type wp:InteractionData .
 
+SER:81
+	dc:identifier SER:67132-Q9H8P0-34281 ;
+	sio:SIO_000028  SER:81_substrate, SER:81_enzyme, SER:81_reaction ;
+	sio:SIO_000008  SER:81_measurement ;
+	rdf:type wp:InteractionData .
+
 SER:82
 	dc:identifier SER:16091-Q9UPQ8-13134 ;
 	sio:SIO_000028  SER:82_substrate, SER:82_enzyme, SER:82_reaction ;
 	sio:SIO_000008  SER:82_measurement ;
+	rdf:type wp:InteractionData .
+
+SER:88
+	dc:identifier SER:57269-Q9BT22-13866 ;
+	sio:SIO_000028  SER:88_substrate, SER:88_enzyme, SER:88_reaction ;
+	sio:SIO_000008  SER:88_measurement ;
+	rdf:type wp:InteractionData .
+
+SER:90
+	dc:identifier SER:58472-Q9H553-29516 ;
+	sio:SIO_000028  SER:90_substrate, SER:90_enzyme, SER:90_reaction ;
+	sio:SIO_000008  SER:90_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:91
@@ -494,24 +518,58 @@ SER:91
 	rdf:type wp:InteractionData .
 
 SER:96
-	dc:identifier SER:59238-P06865-triacylglycerol + H2O = diacylglycerol + a carboxylate ;
+	dc:identifier SER:59238-P06865-XXXXX ;
 	sio:SIO_000028  SER:96_substrate, SER:96_enzyme, SER:96_reaction ;
 	sio:SIO_000008  SER:96_measurement ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:97
-	dc:identifier SER:59238-P06866-triacylglycerol + H2O = diacylglycerol + a carboxylate ;
+	dc:identifier SER:59238-P06866-XXXXX ;
 	sio:SIO_000028  SER:97_substrate, SER:97_enzyme, SER:97_reaction ;
 	sio:SIO_000008  SER:97_measurement ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:98
-	dc:identifier SER:59238-P06866-triacylglycerol + H2O = diacylglycerol + a carboxylate ;
+	dc:identifier SER:59238-P06866-XXXXX ;
 	sio:SIO_000028  SER:98_substrate, SER:98_enzyme, SER:98_reaction ;
 	sio:SIO_000008  SER:98_measurement ;
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:99
+	dc:identifier SER:11750-P04180-XXXXX ;
+	sio:SIO_000028  SER:99_substrate, SER:99_enzyme, SER:99_reaction ;
+	sio:SIO_000008  SER:99_measurement ;
+	rh:equation "phosphatidylcholine + a sterol = 1acylglycerophosphocholine + a sterol ester"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:100
+	dc:identifier SER:11750-P04180-XXXXX ;
+	sio:SIO_000028  SER:100_substrate, SER:100_enzyme, SER:100_reaction ;
+	sio:SIO_000008  SER:100_measurement ;
+	rh:equation "phosphatidylcholine + a sterol = 1acylglycerophosphocholine + a sterol ester"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:101
+	dc:identifier SER:11750-P04180-XXXXX ;
+	sio:SIO_000028  SER:101_substrate, SER:101_enzyme, SER:101_reaction ;
+	sio:SIO_000008  SER:101_measurement ;
+	rh:equation "phosphatidylcholine + a sterol = 1acylglycerophosphocholine + a sterol ester"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:102
+	dc:identifier SER:11750-P04180-XXXXX ;
+	sio:SIO_000028  SER:102_substrate, SER:102_enzyme, SER:102_reaction ;
+	sio:SIO_000008  SER:102_measurement ;
+	rh:equation "phosphatidylcholine + a sterol = 1acylglycerophosphocholine + a sterol ester"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:104
+	dc:identifier SER:77272-P11150-38495 ;
+	sio:SIO_000028  SER:104_substrate, SER:104_enzyme, SER:104_reaction ;
+	sio:SIO_000008  SER:104_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:105
@@ -521,410 +579,395 @@ SER:105
 	rdf:type wp:InteractionData .
 
 SER:106
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:106_substrate, SER:106_enzyme, SER:106_reaction ;
 	sio:SIO_000008  SER:106_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:107
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:107_substrate, SER:107_enzyme, SER:107_reaction ;
 	sio:SIO_000008  SER:107_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:108
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:108_substrate, SER:108_enzyme, SER:108_reaction ;
 	sio:SIO_000008  SER:108_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:109
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:109_substrate, SER:109_enzyme, SER:109_reaction ;
 	sio:SIO_000008  SER:109_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:110
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:110_substrate, SER:110_enzyme, SER:110_reaction ;
 	sio:SIO_000008  SER:110_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:111
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:111_substrate, SER:111_enzyme, SER:111_reaction ;
 	sio:SIO_000008  SER:111_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:112
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:112_substrate, SER:112_enzyme, SER:112_reaction ;
 	sio:SIO_000008  SER:112_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:113
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:113_substrate, SER:113_enzyme, SER:113_reaction ;
 	sio:SIO_000008  SER:113_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:114
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:114_substrate, SER:114_enzyme, SER:114_reaction ;
 	sio:SIO_000008  SER:114_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:115
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:115_substrate, SER:115_enzyme, SER:115_reaction ;
 	sio:SIO_000008  SER:115_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:116
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:116_substrate, SER:116_enzyme, SER:116_reaction ;
 	sio:SIO_000008  SER:116_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:117
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:117_substrate, SER:117_enzyme, SER:117_reaction ;
 	sio:SIO_000008  SER:117_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:118
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:118_substrate, SER:118_enzyme, SER:118_reaction ;
 	sio:SIO_000008  SER:118_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:119
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:119_substrate, SER:119_enzyme, SER:119_reaction ;
 	sio:SIO_000008  SER:119_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:120
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:120_substrate, SER:120_enzyme, SER:120_reaction ;
 	sio:SIO_000008  SER:120_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:121
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:121_substrate, SER:121_enzyme, SER:121_reaction ;
 	sio:SIO_000008  SER:121_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:122
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:122_substrate, SER:122_enzyme, SER:122_reaction ;
 	sio:SIO_000008  SER:122_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:123
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:123_substrate, SER:123_enzyme, SER:123_reaction ;
 	sio:SIO_000008  SER:123_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:124
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:124_substrate, SER:124_enzyme, SER:124_reaction ;
 	sio:SIO_000008  SER:124_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:125
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:125_substrate, SER:125_enzyme, SER:125_reaction ;
 	sio:SIO_000008  SER:125_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:126
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:126_substrate, SER:126_enzyme, SER:126_reaction ;
 	sio:SIO_000008  SER:126_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:127
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:127_substrate, SER:127_enzyme, SER:127_reaction ;
 	sio:SIO_000008  SER:127_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:128
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:128_substrate, SER:128_enzyme, SER:128_reaction ;
 	sio:SIO_000008  SER:128_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:129
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:129_substrate, SER:129_enzyme, SER:129_reaction ;
 	sio:SIO_000008  SER:129_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:130
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:130_substrate, SER:130_enzyme, SER:130_reaction ;
 	sio:SIO_000008  SER:130_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:131
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:131_substrate, SER:131_enzyme, SER:131_reaction ;
 	sio:SIO_000008  SER:131_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:132
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:132_substrate, SER:132_enzyme, SER:132_reaction ;
 	sio:SIO_000008  SER:132_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:133
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:133_substrate, SER:133_enzyme, SER:133_reaction ;
 	sio:SIO_000008  SER:133_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:134
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:134_substrate, SER:134_enzyme, SER:134_reaction ;
 	sio:SIO_000008  SER:134_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:135
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:135_substrate, SER:135_enzyme, SER:135_reaction ;
 	sio:SIO_000008  SER:135_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:136
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:136_substrate, SER:136_enzyme, SER:136_reaction ;
 	sio:SIO_000008  SER:136_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:137
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:137_substrate, SER:137_enzyme, SER:137_reaction ;
 	sio:SIO_000008  SER:137_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:138
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:138_substrate, SER:138_enzyme, SER:138_reaction ;
 	sio:SIO_000008  SER:138_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:139
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:139_substrate, SER:139_enzyme, SER:139_reaction ;
 	sio:SIO_000008  SER:139_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:140
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:140_substrate, SER:140_enzyme, SER:140_reaction ;
 	sio:SIO_000008  SER:140_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:141
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:141_substrate, SER:141_enzyme, SER:141_reaction ;
 	sio:SIO_000008  SER:141_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:142
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:142_substrate, SER:142_enzyme, SER:142_reaction ;
 	sio:SIO_000008  SER:142_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:143
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:143_substrate, SER:143_enzyme, SER:143_reaction ;
 	sio:SIO_000008  SER:143_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:144
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:144_substrate, SER:144_enzyme, SER:144_reaction ;
 	sio:SIO_000008  SER:144_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:145
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:145_substrate, SER:145_enzyme, SER:145_reaction ;
 	sio:SIO_000008  SER:145_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:146
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:146_substrate, SER:146_enzyme, SER:146_reaction ;
 	sio:SIO_000008  SER:146_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:147
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:147_substrate, SER:147_enzyme, SER:147_reaction ;
 	sio:SIO_000008  SER:147_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:148
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:148_substrate, SER:148_enzyme, SER:148_reaction ;
 	sio:SIO_000008  SER:148_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:149
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:149_substrate, SER:149_enzyme, SER:149_reaction ;
 	sio:SIO_000008  SER:149_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:150
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:150_substrate, SER:150_enzyme, SER:150_reaction ;
 	sio:SIO_000008  SER:150_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:151
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:151_substrate, SER:151_enzyme, SER:151_reaction ;
 	sio:SIO_000008  SER:151_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:152
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:152_substrate, SER:152_enzyme, SER:152_reaction ;
 	sio:SIO_000008  SER:152_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:153
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:153_substrate, SER:153_enzyme, SER:153_reaction ;
 	sio:SIO_000008  SER:153_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:154
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:154_substrate, SER:154_enzyme, SER:154_reaction ;
 	sio:SIO_000008  SER:154_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:155
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:155_substrate, SER:155_enzyme, SER:155_reaction ;
 	sio:SIO_000008  SER:155_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:156
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:156_substrate, SER:156_enzyme, SER:156_reaction ;
 	sio:SIO_000008  SER:156_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:157
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:157_substrate, SER:157_enzyme, SER:157_reaction ;
 	sio:SIO_000008  SER:157_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:158
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:158_substrate, SER:158_enzyme, SER:158_reaction ;
 	sio:SIO_000008  SER:158_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:159
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:159_substrate, SER:159_enzyme, SER:159_reaction ;
 	sio:SIO_000008  SER:159_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:160
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:160_substrate, SER:160_enzyme, SER:160_reaction ;
 	sio:SIO_000008  SER:160_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
 SER:161
-	dc:identifier SER:15422-O95477-ATP + H2O = ADP + phosphate ;
+	dc:identifier SER:15422-O95477-XXXXX ;
 	sio:SIO_000028  SER:161_substrate, SER:161_enzyme, SER:161_reaction ;
 	sio:SIO_000008  SER:161_measurement ;
 	rh:equation "ATP + H2O = ADP + phosphate"^^xsd:string ;
-	rdf:type wp:InteractionData .
-
-SER:24
-	rdf:type wp:InteractionData .
-
-SER:81
-	rdf:type wp:InteractionData .
-
-SER:88
-	rdf:type wp:InteractionData .
-
-SER:90
-	rdf:type wp:InteractionData .
-
-SER:104
 	rdf:type wp:InteractionData .
 
 uniprot:P45381
@@ -935,6 +978,41 @@ uniprot:P45381
 	wp:bdbUniprot uniprot:P45381 ;
 	sio:SIO_000028 SER:2_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P45381.
+
+uniprot:Q92947
+	rdfs:label "Glutaryl-CoA dehydrogenase First Reaction"^^xsd:string ;
+	rdfs:label "Glutaryl-CoA dehydrogenase Second reaction"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
+	rdf:type wp:Protein ;
+	sio:SIO_000028 SER:3_enzyme ;
+	wp:bdbUniprot uniprot:Q92947 ;
+	sio:SIO_000028 SER:4_enzyme ;
+	sio:SIO_000028 SER:5_enzyme ;
+	sio:SIO_000028 SER:6_enzyme ;
+	sio:SIO_000028 SER:7_enzyme ;
+	sio:SIO_000028 SER:8_enzyme ;
+	sio:SIO_000028 SER:9_enzyme ;
+	sio:SIO_000028 SER:10_enzyme ;
+	sio:SIO_000028 SER:11_enzyme ;
+	wp:bdbEnsembl En_id:ENSG00000105607 ;
+	bioregistry:hasDbXref uniprotkb:Q92947.
+
+uniprot:Q9H9P8
+	rdfs:label "L-2-hydro-yglutarate dehydrogenase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
+	rdf:type wp:Protein ;
+	sio:SIO_000028 SER:12_enzyme ;
+	wp:bdbUniprot uniprot:Q9H9P8 ;
+	sio:SIO_000028 SER:13_enzyme ;
+	bioregistry:hasDbXref uniprotkb:Q9H9P8.
+
+uniprot:Q8N465
+	rdfs:label "D-2-hydro-yglutarate dehydrogenase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
+	rdf:type wp:Protein ;
+	sio:SIO_000028 SER:14_enzyme ;
+	wp:bdbUniprot uniprot:Q8N465 ;
+	bioregistry:hasDbXref uniprotkb:Q8N465.
 
 uniprot:P48735
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
@@ -999,6 +1077,23 @@ uniprot:O75223
 	sio:SIO_000028 SER:36_enzyme ;
 	wp:bdbUniprot uniprot:O75223 ;
 	bioregistry:hasDbXref uniprotkb:O75223.
+
+uniprot:O14841
+	rdfs:label "5-Oxoprolinase"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
+	rdf:type wp:Protein ;
+	sio:SIO_000028 SER:37_enzyme ;
+	wp:bdbUniprot uniprot:O14841 ;
+	sio:SIO_000028 SER:38_enzyme ;
+	sio:SIO_000028 SER:39_enzyme ;
+	sio:SIO_000028 SER:40_enzyme ;
+	sio:SIO_000028 SER:41_enzyme ;
+	sio:SIO_000028 SER:42_enzyme ;
+	sio:SIO_000028 SER:43_enzyme ;
+	sio:SIO_000028 SER:44_enzyme ;
+	sio:SIO_000028 SER:45_enzyme ;
+	sio:SIO_000028 SER:46_enzyme ;
+	bioregistry:hasDbXref uniprotkb:O14841.
 
 uniprot:P48506
 	rdfs:label "GCLC"^^xsd:string ;
@@ -1104,6 +1199,17 @@ uniprot:P06866
 	sio:SIO_000028 SER:98_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P06866.
 
+uniprot:P04180
+	rdfs:label "LCAT"^^xsd:string ;
+	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
+	rdf:type wp:Protein ;
+	sio:SIO_000028 SER:99_enzyme ;
+	wp:bdbUniprot uniprot:P04180 ;
+	sio:SIO_000028 SER:100_enzyme ;
+	sio:SIO_000028 SER:101_enzyme ;
+	sio:SIO_000028 SER:102_enzyme ;
+	bioregistry:hasDbXref uniprotkb:P04180.
+
 uniprot:P11150
 	rdfs:label "HL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
@@ -1175,53 +1281,6 @@ uniprot:O95477
 	sio:SIO_000028 SER:160_enzyme ;
 	sio:SIO_000028 SER:161_enzyme ;
 	bioregistry:hasDbXref uniprotkb:O95477.
-
-uniprot:Q92947
-	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
-	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:3_enzyme ;
-	wp:bdbUniprot uniprot:Q92947 ;
-	sio:SIO_000028 SER:4_enzyme ;
-	sio:SIO_000028 SER:5_enzyme ;
-	sio:SIO_000028 SER:6_enzyme ;
-	sio:SIO_000028 SER:7_enzyme ;
-	sio:SIO_000028 SER:8_enzyme ;
-	sio:SIO_000028 SER:9_enzyme ;
-	sio:SIO_000028 SER:10_enzyme ;
-	sio:SIO_000028 SER:11_enzyme ;
-	wp:bdbEnsembl En_id:ENSG00000105607 ;
-	bioregistry:hasDbXref uniprotkb:Q92947.
-
-uniprot:Q9H9P8
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
-	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:12_enzyme ;
-	wp:bdbUniprot uniprot:Q9H9P8 ;
-	sio:SIO_000028 SER:13_enzyme ;
-	bioregistry:hasDbXref uniprotkb:Q9H9P8.
-
-uniprot:Q8N465
-	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
-	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:14_enzyme ;
-	wp:bdbUniprot uniprot:Q8N465 ;
-	bioregistry:hasDbXref uniprotkb:Q8N465.
-
-uniprot:O14841
-	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
-	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:37_enzyme ;
-	wp:bdbUniprot uniprot:O14841 ;
-	sio:SIO_000028 SER:38_enzyme ;
-	sio:SIO_000028 SER:39_enzyme ;
-	sio:SIO_000028 SER:40_enzyme ;
-	sio:SIO_000028 SER:41_enzyme ;
-	sio:SIO_000028 SER:42_enzyme ;
-	sio:SIO_000028 SER:43_enzyme ;
-	sio:SIO_000028 SER:44_enzyme ;
-	sio:SIO_000028 SER:45_enzyme ;
-	sio:SIO_000028 SER:46_enzyme ;
-	bioregistry:hasDbXref uniprotkb:O14841.
 
 RHEA:14167
 	wp:bdbRhea RHEA:14167 ;
@@ -1419,10 +1478,15 @@ RHEA:13134
 	sio:SIO_000028 SER:82_reaction ;
 	rh::accession RHEA:13134.
 
-13866
-	wp:bdbRhea 13866 ;
+RHEA:23381
+	wp:bdbRhea RHEA:23381 ;
+	sio:SIO_000028 SER:86_reaction ;
+	rh::accession RHEA:23381.
+
+RHEA:13866
+	wp:bdbRhea RHEA:13866 ;
 	sio:SIO_000028 SER:88_reaction ;
-	rh::accession 13866.
+	rh::accession RHEA:13866.
 
 RHEA:29516
 	wp:bdbRhea RHEA:29516 ;
@@ -1443,6 +1507,181 @@ RHEA:12046
 	wp:bdbRhea RHEA:12046 ;
 	sio:SIO_000028 SER:105_reaction ;
 	rh::accession RHEA:12046.
+
+RHEA:35742
+	wp:bdbRhea RHEA:35742 ;
+	sio:SIO_000028 SER:165_reaction ;
+	rh::accession RHEA:35742.
+
+RHEA:35746
+	wp:bdbRhea RHEA:35746 ;
+	sio:SIO_000028 SER:169_reaction ;
+	rh::accession RHEA:35746.
+
+RHEA:35750
+	wp:bdbRhea RHEA:35750 ;
+	sio:SIO_000028 SER:173_reaction ;
+	rh::accession RHEA:35750.
+
+SER:177
+	rh:equation "ATP + steroidogenic acute regulatory protein = ADP + phosphorylated steroidogenic acute regulatory protein"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+RHEA:24080
+	wp:bdbRhea RHEA:24080 ;
+	sio:SIO_000028 SER:181_reaction ;
+	rh::accession RHEA:24080.
+
+RHEA:24084
+	wp:bdbRhea RHEA:24084 ;
+	sio:SIO_000028 SER:185_reaction ;
+	rh::accession RHEA:24084.
+
+RHEA:24088
+	wp:bdbRhea RHEA:24088 ;
+	sio:SIO_000028 SER:189_reaction ;
+	rh::accession RHEA:24088.
+
+RHEA:50237
+	wp:bdbRhea RHEA:50237 ;
+	sio:SIO_000028 SER:193_reaction ;
+	rh::accession RHEA:50237.
+
+RHEA:50241
+	wp:bdbRhea RHEA:50241 ;
+	sio:SIO_000028 SER:197_reaction ;
+	rh::accession RHEA:50241.
+
+RHEA:50245
+	wp:bdbRhea RHEA:50245 ;
+	sio:SIO_000028 SER:201_reaction ;
+	sio:SIO_000028 SER:225_reaction ;
+	rh::accession RHEA:50245.
+
+RHEA:46311
+	wp:bdbRhea RHEA:46311 ;
+	sio:SIO_000028 SER:205_reaction ;
+	rh::accession RHEA:46311.
+
+RHEA:46315
+	wp:bdbRhea RHEA:46315 ;
+	sio:SIO_000028 SER:209_reaction ;
+	rh::accession RHEA:46315.
+
+RHEA:46319
+	wp:bdbRhea RHEA:46319 ;
+	sio:SIO_000028 SER:213_reaction ;
+	rh::accession RHEA:46319.
+
+RHEA:46323
+	wp:bdbRhea RHEA:46323 ;
+	sio:SIO_000028 SER:217_reaction ;
+	rh::accession RHEA:46323.
+
+RHEA:46309
+	wp:bdbRhea RHEA:46309 ;
+	sio:SIO_000028 SER:221_reaction ;
+	rh::accession RHEA:46309.
+
+SER:229
+	rh:equation "A C(21) steroid + [reduced NADPH--hemoprotein reductase] + O(2) = a 21-hydroxy-C(21)-steroid + [oxidized NADPH--hemoprotein reductase] + H(2)O"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:233
+	rh:equation "A C(21) steroid + [reduced NADPH--hemoprotein reductase] + O(2) = a 21-hydroxy-C(21)-steroid + [oxidized NADPH--hemoprotein reductase] + H(2)O"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+SER:237
+	rh:equation "A C(21) steroid + [reduced NADPH--hemoprotein reductase] + O(2) = a 21-hydroxy-C(21)-steroid + [oxidized NADPH--hemoprotein reductase] + H(2)O"^^xsd:string ;
+	rdf:type wp:InteractionData .
+
+RHEA:15631
+	wp:bdbRhea RHEA:15631 ;
+	sio:SIO_000028 SER:241_reaction ;
+	rh::accession RHEA:15631.
+
+RHEA:11390
+	wp:bdbRhea RHEA:11390 ;
+	sio:SIO_000028 SER:245_reaction ;
+	rh::accession RHEA:11390.
+
+RHEA:11394
+	wp:bdbRhea RHEA:11394 ;
+	sio:SIO_000028 SER:249_reaction ;
+	rh::accession RHEA:11394.
+
+RHEA:11398
+	wp:bdbRhea RHEA:11398 ;
+	sio:SIO_000028 SER:253_reaction ;
+	rh::accession RHEA:11398.
+
+RHEA:54385
+	wp:bdbRhea RHEA:54385 ;
+	sio:SIO_000028 SER:257_reaction ;
+	rh::accession RHEA:54385.
+
+SER:86
+	rdf:type wp:InteractionData .
+
+SER:165
+	rdf:type wp:InteractionData .
+
+SER:169
+	rdf:type wp:InteractionData .
+
+SER:173
+	rdf:type wp:InteractionData .
+
+SER:181
+	rdf:type wp:InteractionData .
+
+SER:185
+	rdf:type wp:InteractionData .
+
+SER:189
+	rdf:type wp:InteractionData .
+
+SER:193
+	rdf:type wp:InteractionData .
+
+SER:197
+	rdf:type wp:InteractionData .
+
+SER:201
+	rdf:type wp:InteractionData .
+
+SER:205
+	rdf:type wp:InteractionData .
+
+SER:209
+	rdf:type wp:InteractionData .
+
+SER:213
+	rdf:type wp:InteractionData .
+
+SER:217
+	rdf:type wp:InteractionData .
+
+SER:221
+	rdf:type wp:InteractionData .
+
+SER:225
+	rdf:type wp:InteractionData .
+
+SER:241
+	rdf:type wp:InteractionData .
+
+SER:245
+	rdf:type wp:InteractionData .
+
+SER:249
+	rdf:type wp:InteractionData .
+
+SER:253
+	rdf:type wp:InteractionData .
+
+SER:257
+	rdf:type wp:InteractionData .
 
 CHEBI:16953
 	sio:SIO_000028 SER:1 ;
@@ -1563,6 +1802,10 @@ CHEBI:16091
 	sio:SIO_000028 SER:82 ;
 	wp:bdbChEBI 16091.
 
+CHEBI:58427
+	sio:SIO_000028 SER:86 ;
+	wp:bdbChEBI 58427.
+
 CHEBI:57269
 	sio:SIO_000028 SER:88 ;
 	wp:bdbChEBI 57269.
@@ -1578,6 +1821,13 @@ CHEBI:59238
 	sio:SIO_000028 SER:97 ;
 	sio:SIO_000028 SER:98 ;
 	wp:bdbChEBI 59238.
+
+CHEBI:11750
+	sio:SIO_000028 SER:99 ;
+	sio:SIO_000028 SER:100 ;
+	sio:SIO_000028 SER:101 ;
+	sio:SIO_000028 SER:102 ;
+	wp:bdbChEBI 11750.
 
 CHEBI:77272
 	sio:SIO_000028 SER:104 ;
@@ -1645,6 +1895,56 @@ CHEBI:15422
 	sio:SIO_000028 SER:160 ;
 	sio:SIO_000028 SER:161 ;
 	wp:bdbChEBI 15422.
+
+CHEBI:16113
+	sio:SIO_000028 SER:165 ;
+	sio:SIO_000028 SER:169 ;
+	sio:SIO_000028 SER:173 ;
+	wp:bdbChEBI 16113.
+
+CHEBI:28750
+	sio:SIO_000028 SER:181 ;
+	sio:SIO_000028 SER:225 ;
+	wp:bdbChEBI 28750.
+
+CHEBI:28689
+	sio:SIO_000028 SER:185 ;
+	sio:SIO_000028 SER:189 ;
+	wp:bdbChEBI 28689.
+
+CHEBI:16581
+	sio:SIO_000028 SER:193 ;
+	sio:SIO_000028 SER:197 ;
+	sio:SIO_000028 SER:201 ;
+	wp:bdbChEBI 16581.
+
+CHEBI:17026
+	sio:SIO_000028 SER:205 ;
+	sio:SIO_000028 SER:209 ;
+	sio:SIO_000028 SER:213 ;
+	sio:SIO_000028 SER:217 ;
+	sio:SIO_000028 SER:221 ;
+	sio:SIO_000028 SER:229 ;
+	sio:SIO_000028 SER:233 ;
+	wp:bdbChEBI 17026.
+
+CHEBI:17252
+	sio:SIO_000028 SER:237 ;
+	wp:bdbChEBI 17252.
+
+CHEBI:28324
+	sio:SIO_000028 SER:241 ;
+	wp:bdbChEBI 28324.
+
+CHEBI:16962
+	sio:SIO_000028 SER:245 ;
+	sio:SIO_000028 SER:249 ;
+	sio:SIO_000028 SER:253 ;
+	wp:bdbChEBI 16962.
+
+CHEBI:17347
+	sio:SIO_000028 SER:257 ;
+	wp:bdbChEBI 17347.
 
 SER:1_measurement
 	SER:hasKm  "163"^^xsd:float ;
@@ -2156,6 +2456,31 @@ SER:98_measurement
 	dcterms:references pubmed:4370169 ;
 	dc:source "BRENDA"^^xsd:string .
 
+SER:99_measurement
+	SER:hasKm  "0.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:16780378 ;
+	dc:source "BRENDA; UniProt"^^xsd:string .
+
+SER:100_measurement
+	SER:hasKm  "0.57"^^xsd:float ;
+	dcterms:description "recombinant enzyme expressed in baby hamster kidney cells"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:10685026 ;
+	dc:source "BRENDA"^^xsd:string .
+
+SER:101_measurement
+	SER:hasKm  "0.83"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:10685026 ;
+	dc:source "BRENDA"^^xsd:string .
+
+SER:102_measurement
+	SER:hasKm  "21.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:1901219 ;
+	dc:source "BRENDA"^^xsd:string .
+
 SER:106_measurement
 	SER:hasKm  "0.11"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -2313,6 +2638,70 @@ SER:124_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "BRENDA"^^xsd:string .
+
+SER:165_measurement
+	SER:hasKm  "0.0091"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:169_measurement
+	SER:hasKm  "0.3"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:181_measurement
+	SER:hasKm  "0.0035"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:185_measurement
+	SER:hasKm  "0.0037"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:189_measurement
+	SER:hasKm  "47"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:193_measurement
+	SER:hasKm  "0.00025"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:197_measurement
+	SER:hasKm  "0.00093"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:205_measurement
+	SER:hasKm  "0.00196"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:209_measurement
+	SER:hasKm  "0.0063"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:225_measurement
+	SER:hasKm  "0.0004"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:229_measurement
+	SER:hasKm  "0.00021"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:237_measurement
+	SER:hasKm  "9.2"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:241_measurement
+	SER:hasKm  "338"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:245_measurement
+	SER:hasKm  "0.0003"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:249_measurement
+	SER:hasKm  "2"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:257_measurement
+	SER:hasKm  "5.4E-05"^^xsd:float ;
+	dc:source "Brenda"^^xsd:string .
 
 SER:125_measurement
 	SER:hasKcat  "1"^^xsd:float ;
@@ -2762,9 +3151,39 @@ SER:88_measurement
 SER:36_measurement
 	dc:source "Unknown"^^xsd:string .
 
+SER:86_measurement
+	dc:source "Brenda"^^xsd:string .
+
 SER:104_measurement
 	dc:source "Unknown"^^xsd:string .
 
 SER:105_measurement
+	dc:source "Unknown"^^xsd:string .
+
+SER:173_measurement
+	dc:source "Brenda"^^xsd:string .
+
+SER:177_measurement
+	dc:source "Unknown"^^xsd:string .
+
+SER:201_measurement
+	dc:source "Brenda"^^xsd:string .
+
+SER:213_measurement
+	dc:source "Brenda"^^xsd:string .
+
+SER:217_measurement
+	dc:source "Brenda"^^xsd:string .
+
+SER:221_measurement
+	dc:source "Brenda"^^xsd:string .
+
+SER:233_measurement
+	dc:source "Brenda"^^xsd:string .
+
+SER:253_measurement
+	dc:source "Brenda"^^xsd:string .
+
+SER:261_measurement
 	dc:source "Unknown"^^xsd:string .
 

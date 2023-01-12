@@ -42,6 +42,7 @@ ListOrganism = []
 ListPMID = []
 ListDatabase = []
 ListQC = []
+ListErrors = []
 
 ##Read in files with kinetics data.
 count = 0
@@ -58,10 +59,16 @@ for (dirname, dirs, files) in os.walk('.'):
 				ListTotal.append(SER_Name + '\t' + line.strip('\n'))
 				countSER += 1
 				
-				
+
 ##Replace common prefixes for harmonized data structure:
 ListTotal = [w.replace('RHEA:', '') for w in ListTotal]
 ListTotal = [w.replace('CHEBI:', '') for w in ListTotal]
+
+##Remove lines without ChEBI, UniProt, or Rhea
+for item in ListTotal:
+	a = item.split('\t')
+	if (a[0]=='-')|(a[4]=='-')|(a[6]=='-')|(a[7]=='-')|(a[0]=='NA')|(a[4]=='NA')|( a[6]=='NA')|(a[7]=='NA'): #Check if one of the necessary values is missing!!
+	  ListTotal.remove(item)
 
 ##Print total number of lines found in files:
 ListQC.append("Total lines read: "+ str(len(ListTotal)) + '\n')
@@ -80,68 +87,42 @@ for itemSERX in ListTotal:
 	result_chebi =  re.match(pattern_chebi, a[7].strip())
 	result_uniprot = re.match(pattern_uniprot, a[4].strip())
 	result_rhea = re.match(pattern_rhea, a[6].strip())
-	if ('-' in a[0])|('-' in a[4])|('-' in a[6])|('-' in a[7]): #Check if one of the necessary values is missing!!
-	  ListTotal.remove(itemSERX)
-	elif result: ##Create a unique IRI based on Substrate [7], Enzyme [4], and Reaction [6] ID. Note: if one of the three is missing, report in QC.
-	  if (result_chebi is not None) & (result_rhea is not None): # & (result_uniprot is not None): ##check against REGEX
-	    ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( )) ##Trim RHEA/CHEBI in fromt of IDs if available.
-	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
-	    ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
-	    countSER = countSER +1
-	  #elif(result_chebi is not None) & (result_rhea is not None): ##check against REGEX; UniProt doesn't have to match necessarily, but is flagged!
-	  #  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( ))
-	  #  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
-	  #  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
-	  #  ListQC.append("CHECK: Data format for UniProt doesn't match regex, check data for: "+ a[0] + ' ' + a[4] + '\n')
-	  #  countSER = countSER +1
-	  else:
-	    ListTotal.remove(itemSERX)
+	if (result_chebi is not None) & (result_rhea is not None) & (result_uniprot is not None): ##check against REGEX
+	  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( )) ##Trim RHEA/CHEBI in fromt of IDs if available.
+	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
+	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
+	  countSER = countSER +1
+	elif(result_chebi is not None) & (result_rhea is None)  & (result_uniprot is not None): ##check against REGEX; if RHEA is not available, use reaction formula
+	  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-XXXXX')
+	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction')
+	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
+	  #ListQC.append("CHECK: Data format for Rhea doesn't match regex, suspected to be rection formula, check data for: "+ a[0] + ' ' + a[6] + '\n')
+	  countSER = countSER +1
 	else:
 	  ListTotal.remove(itemSERX)
-	  ListQC.append("CHECK: Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
+	  ListErrors.append("CHECK: Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
 
 
 ##Print total number of lines found in files, after removing data without SEP-ID:
 ListQC.append("Lines remaining without missing SER info: "+ str(len(ListTotal)) + '\n')
-print("Lines remaining without missing SER info: "+ str(len(ListTotal)))
+
 ##Print total number of SEP-IDs, for which measurements are available:
 ListQC.append("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs. \n\n")  
-print("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs.")
-			
-##Define type, extension of WP vocabulary:		
-for itemSERX in ListTotal:
-	a = itemSERX.split('\t')
-	pattern = '[a-zA-Z]+:[0-9]'
-	result = re.match(pattern, a[0])
-	result_chebi =  re.match(pattern_chebi, a[7].strip())
-	result_uniprot = re.match(pattern_uniprot, a[4].strip())
-	result_rhea = re.match(pattern_rhea, a[6].strip())
-	if ('-' in a[0])|('-' in a[4])|('-' in a[6])|('-' in a[7]):
-	  continue
-	elif result:
-	  if(result_chebi is not None) & (result_uniprot is not None) & (result_rhea is not None):
-	    ListSER_ID_type.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
-	else:
-		ListQC.append("CHECK: Data format for rdf:type IDs unknown, check original data for: " + a[0])
+
 
 #### [0]=ERPX_number [1]=EnzymePW, [2]=ApprovedEnzymeName, [3]=EC_Number, [4]=Uniprot , 
 #### [5]=Ensembl, [6]=RheaID, [7]=CHEBIID, [8]=Km, [9]=Kcat, [10]=Kcat/Km, [11]=pH, [12]=Temperature, 
 #### [13]=AdditionalConditions, [14]=Organism, [15]=PMID, [16]=Database				
 
-
 ##EnzymePW 
 ##No regex or count defined, since the names of Proteins can be very diverse!
 for itemEnzymePW in ListTotal:
 	b = itemEnzymePW.split('\t')
-	if ('-' in b[0])|('-' in b[4])|('-' in b[6])|('-' in b[7]): #Check if one of the necessary values is missing!!
+	if (b[1]=='-')|(b[1]=='NA')|(b[4]=='-')|(b[4]=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	else:
 	  ListUniprot.append('uniprot:' + b[4].strip( ) + '\t' + 'rdfs:label' + ' "' + b[1].strip( ) + '"^^xsd:string')
-	for items in ListUniprot: 
-		if '-' in items:
-			ListUniprot.remove(items)				
-	
-			
+
 ###Approved Ennzyme names (added in spreadsheet for curation, not needed in RDF model)
 # ##[2]=ApprovedEnzymeName
 # for itemApprovedEnzymeName in ListTotal:
@@ -158,13 +139,13 @@ for itemEC_Number in ListTotal:
 	d = itemEC_Number.split('\t')
 	pattern = '^\\d+\\.-\\.-\\.-|\\d+\\.\\d+\\.-\\.-|\\d+\\.\\d+\\.\\d+\\.-|\\d+\\.\\d+\\.\\d+\\.(n)?\\d+$'
 	result = re.match(pattern, d[3].strip())
-	if ('-' in d[0])|('-' in d[4])|('-' in d[6])|('-' in d[7]): #Check if one of the necessary values is missing!!
+	if (d[3]=='-')|(d[4]=='-'): #Check if necessary value is missing!!
 	  continue
 	elif result:
 	  ListUniprot.append('uniprot:' + d[4].strip( )  + '\t' + 'wp:bdbEnzymeNomenclature' + ' ECcode:' + d[3].strip( ))
 	  countECs = countECs + 1
 	else:
-	  ListQC.append("CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: "+ d[0] + ' : ' + d[3]+ '\n')
+	  ListErrors.append("CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: "+ d[0] + ' : ' + d[3]+ '\n')
     
 ListQC.append("Data format for 'wp:bdbEnzymeNomenclature correctly loaded for " + str(countECs) + " EC IDs. \n\n")  
 	
@@ -173,7 +154,7 @@ ListQC.append("Data format for 'wp:bdbEnzymeNomenclature correctly loaded for " 
 countProteins = 0
 for itemUniprot in ListTotal:
 	e = itemUniprot.split('\t')
-	if ('-' in e[0])|('-' in e[4])|('-' in e[6])|('-' in e[7]): #Check if one of the necessary values is missing!!
+	if(e[4]=='-'): #Check if necessary value is missing!!
 	  continue
 	else:
 	  ListUniprot.append('uniprot:' + e[4].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Protein")
@@ -193,17 +174,21 @@ for itemEnsembl in ListTotal:
   f = itemEnsembl.split('\t')
   pattern = '^ENS[A-Z]*[FPTG]\\d{11}$' #Pattern is: ^ENS[A-Z]*[FPTG]\d{11}$' ; need to escape backslash! 
   result = re.match(pattern, f[5].strip( ) )
-  if ('-' in f[0])|('-' in f[4])|('-' in f[6])|('-' in f[7])|('-' in f[5]): #Check if one of the necessary values is missing!!
+  if (f[5]=='-')|(f[5]=='NA')|(f[4]=='-')|(f[4]=='NA'): #Check if one of the necessary values is missing!!
     continue
   elif result: ##check against REGEX
     ListUniprot.append('uniprot:' + f[4].strip( ) + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
     countGenes = countGenes + 1
   else:
-    ListQC.append("CHECK: Data format for wp:bdbEnsembl unknown, check original data for: "+ f[0] + ' : ' + f[5]+ '\n')
+    ListErrors.append("CHECK: Data format for wp:bdbEnsembl unknown, check original data for: "+ f[0] + ' : ' + f[5]+ '\n')
 
 ##Print total number of Ensembl IDs:    
-ListQC.append("Data format for wp:bdbEnsembl correctly loaded for " + str(countGenes) + " gene IDs. \n\n")  
-  
+ListQC.append("Data format for wp:bdbEnsembl correctly loaded for " + str(countGenes) + " gene IDs. \n\n")
+
+##Define type, extension of WP vocabulary:		
+#for itemSERX in ListTotal:
+#	a = itemSERX.split('\t')
+#	ListSER_ID_type.append(a[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData')
 
 ##RHEA IDs
 countRhea = 0
@@ -212,19 +197,14 @@ for itemRheaID in ListTotal:
 	g = itemRheaID.split('\t')
 	pattern_rhea = '^(RHEA:)?\\d{5}$'
 	result_rhea = re.match(pattern_rhea, g[6].strip())
-	if ('-' in g[0])|('-' in g[4])|('-' in g[6])|('-' in g[7]): #Check if one of the necessary values is missing!!
+	if (g[6]=='-')|(g[6]=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	elif(result_rhea): ##regex check
-	  if g[6].isnumeric(): #without prefix
-	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
-	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
-	    ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh::accession' + ' RHEA:' + g[6].strip( ) + '.' )	
-	    countRhea = countRhea +1
-	  else: # 'RHEA:' in g[6]: #with prefix
-	    ListRheaID.append(g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' ' + g[6].strip( ))
-	    ListRheaID.append(g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
-	    ListLinkRheaID.append(g[6].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ) + '.' )
-	    countRhea = countRhea + 1
+	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
+	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
+	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh::accession' + ' RHEA:' + g[6].strip( ) + '.' )	
+	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
+	  countRhea = countRhea +1
 	elif ('+' in g[6])&('=' in g[6]): #if no Rhea is available, but there is a reaction equation.
 	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!
 	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
@@ -243,19 +223,14 @@ for itemSubstrate in ListTotal:
 	h = itemSubstrate.split('\t')
 	pattern_chebi = '^(CHEBI:)?\\d+$'
 	result_chebi =  re.match(pattern_chebi, h[7])
-	if ('-' in h[0])|('-' in h[4])|('-' in h[6])|('-' in h[7]): #Check if one of the necessary values is missing!!
+	if (h[7]=='-')|(h[7]=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	elif(result_chebi):
-	  if h[7].isnumeric(): #without prefix
-	    ListSubstrate.append('CHEBI:' + h[7].strip( ) +'\t' + 'sio:SIO_000028' + ' ' + h[0].strip())
-	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
-	    countSubstrates = countSubstrates + 1
-	  else: #'CHEBI:' Prefix is already included in the data
-	    ListSubstrate.append(h[7].strip( ) +'\t' + 'sio:SIO_000028' + ' ' + h[0].strip())
-	    ListSubstrateIDs.append(h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
-	    countSubstrates = countSubstrates + 1
+	  ListSubstrate.append('CHEBI:' + h[7].strip( ) +'\t' + 'sio:SIO_000028' + ' ' + h[0].strip())
+	  ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
+	  countSubstrates = countSubstrates + 1
 	else:
-	  ListQC.append("CHECK: Data format for CHEBI ID unknown, check original data for: "+ h[0] + " : " + h[7] + '\n')
+	  ListErrors.append("CHECK: Data format for CHEBI ID unknown, check original data for: "+ h[0] + " : " + h[7] + '\n')
 
 ListQC.append("Data format for wp:bdbChEBI correctly loaded for " + str(countSubstrates) + " substrate IDs. \n\n")  
 
@@ -265,11 +240,13 @@ ListQC.append("Data format for wp:bdbChEBI correctly loaded for " + str(countSub
 countKm = 0
 for itemKm in ListTotal:
   i = itemKm.split('\t')
-  if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[8]): #Check if one of the necessary values is missing!!
+  if(i[8]=='-')|(i[8]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!! [16] = Database, needed for provenance and ending statement in RDF!
     continue
-  else:
+  elif(i[8].isnumeric):
     ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
     countKm = countKm + 1
+  else:
+    ListErrors.append("CHECK: Data format for Km data not numeric, check original data for: "+ h[0] + " : " + i[8] + '\n')
 	  
 ListQC.append("Data format for Km correctly loaded for " + str(countKm) + " values. \n\n")  
 
@@ -356,7 +333,7 @@ for itemPMID in ListTotal:
 #[16]=Database ##--> Add to measurement				
 for itemDatabase in ListTotal:
 	l = itemDatabase.split('\t')
-	if('-' in l[0])|('-' in l[4])|('-' in l[6])|('-' in l[7])|('-' in l[16]): #Check if one of the necessary values is missing!!
+	if(l[16]=='-')|(l[16]=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	else:
 	  ListDatabase.append(l[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + l[16].strip( ) + '"^^xsd:string')
@@ -536,6 +513,14 @@ RDF_Kin_data_QC = open('QC_RDF_Kin_Data_2022-Dec.ttl', 'wb')
 if len(ListQC) >0:
   for item in ListQC:
     RDF_Kin_data_QC.write(item.encode())
+
+RDF_Kin_data_QC.write("\nReported Errors in Data: \n\n".encode())
+
+##Write Error info to file:
+if len(ListErrors) >0:
+  for item in ListErrors:
+    RDF_Kin_data_QC.write(item.encode())
+
 
 #Close this file as well
 RDF_Kin_data_QC.close()
