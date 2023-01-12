@@ -303,7 +303,7 @@ ListQC.append("Data format for KcatKm correctly loaded for " + str(countKcatKm) 
 #pH##--> Add to measurement
 for item_pH in ListTotal:
   i = item_pH.split('\t')
-  if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[11]): #Check if one of the necessary values is missing!!
+  if(i[11]=='-')|(i[11]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!!
     continue
   else:
     List_pH.append(i[0].strip( ) + '_measurement' + '\t' + 'SER:hasPh'+ ' "' + i[11].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q40936
@@ -312,7 +312,7 @@ for item_pH in ListTotal:
 #Temperature##--> Add to measurement
 for itemTemperature in ListTotal:
   i = itemTemperature.split('\t')
-  if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[12]): #Check if one of the necessary values is missing!!
+  if(i[12]=='-')|(i[12]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!!
     continue
   else:
     ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076 ' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
@@ -321,25 +321,31 @@ for itemTemperature in ListTotal:
 #AdditionalConditions##--> Add to measurement
 for itemAdditionalConditions in ListTotal:
 	i = itemAdditionalConditions.split('\t')
-	if('-' in i[0])|('-' in i[4])|('-' in i[6])|('-' in i[7])|('-' in i[13]): #Check if one of the necessary values is missing!!
+	if(i[13]=='-')|(i[13]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	else:
 	  ListAdditionalConditions.append(i[0].strip( )  + '_measurement' + '\t' + 'dcterms:description' + ' "' + i[13].strip('"') + '"@en')
 
+##Create a list to check listed organism (Latin and common English names) for vertebrates:
+ListCommonLatinOrganismsWP = ['Bos taurus', 'Canis familiaris', 'Danio rerio', 'Equus caballus', 'Gallus gallus', 'Homo sapiens', 'Mus musculus', 'Pan troglodytes', 'Rattus norvegicus', 'Sus scrofa']
+ListCommonEnglishOrganismsWP = ['Cow', 'Dog', 'Zebrafish', 'Horse', 'Chicken', 'Human', 'Mouse', 'Chimpanzee', 'Rat', 'Boar']
 
 #[14]=Organism			##--> Add to measurement
 for itemOrganism in ListTotal:
 	j = itemOrganism.split('\t')
-	if('-' in j[0])|('-' in j[4])|('-' in j[6])|('-' in j[7])|('-' in j[14]): #Check if one of the necessary values is missing!!
+	if(j[14]=='-')|(j[14]=='NA')|(j[16]=='-')|(j[16]=='NA'): #Check if one of the necessary values is missing!!
 	  continue
+	elif(i[14].isalpha()):
+	  if(i[14] in ListCommonLatinOrganismsWP)| i[14] in ListCommonEnglishOrganismsWPOrganismsWP):
+	    ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + j[14].strip('"') + '"^^xsd:string')
 	else:
-	  ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + j[14].strip('"') + '"^^xsd:string')
+	  ListErrors.append("CHECK: Data format for Organism name is not recognized, check original data for: "+ j[0] + " : " + j[14] + '\n')
 
 
 #[15]=PMID	##--> Add to measurement	
 for itemPMID in ListTotal:
 	k = itemPMID.split('\t')
-	if('-' in k[0])|('-' in k[4])|('-' in k[6])|('-' in k[7])|('-' in k[15]): #Check if one of the necessary values is missing!!
+	if(k[15]=='-')|(k[15]=='NA')|(k[16]=='-')|(k[16]=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	if k[15].isnumeric():
 	  ListPMID.append(k[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + k[15].strip( ))
@@ -347,8 +353,6 @@ for itemPMID in ListTotal:
 		k2 = k[15].split(';') ##Split multiple references in one line.
 		k2 = [x.strip(' ') for x in k2]
 		ListPMID.append(k[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + ', '.join(k2))
-	elif '-' in k[15]:
-	  continue
 	else:
 		print("Data format for PubMed IDs unknown, check original data for: " + k[0] + ' : ' + k[15])
 
