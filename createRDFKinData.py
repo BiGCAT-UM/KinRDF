@@ -340,7 +340,7 @@ ListQC.append("Data format for Additional Conditions correctly loaded for " + st
 
 ##Create a list to check listed organism (Latin and common English names) for vertebrates:
 ListCommonLatinOrganismsWP = ['Bos taurus', 'Canis familiaris', 'Danio rerio', 'Equus caballus', 'Gallus gallus', 'Homo sapiens', 'Mus musculus', 'Pan troglodytes', 'Rattus norvegicus', 'Sus scrofa']
-ListCommonEnglishOrganismsWP = ['Cow', 'Dog', 'Zebrafish', 'Horse', 'Chicken', 'Human', 'Mouse', 'Chimpanzee', 'Rat', 'Boar']
+ListCommonEnglishOrganismsWP = ['cow', 'dog', 'zebrafish', 'horse', 'chicken', 'human', 'mouse', 'chimpanzee', 'rat', 'boar']
 
 # using dictionary comprehension to convert lists to dictionary
 Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrganismsWP[i] for i in range(len(ListCommonEnglishOrganismsWP))}
@@ -359,7 +359,7 @@ for itemOrganism in ListTotal:
 	  if(j[14] in ListCommonLatinOrganismsWP): ##check for latin name first
 	    ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + j[14].strip('"') + '"^^xsd:string')
 	    countOrganisms = countOrganisms + 1
-	  elif(j[14] in ListCommonEnglishOrganismsWP):  ##Convert English to Latin name.
+	  elif(j[14].lower() in ListCommonEnglishOrganismsWP):  ##Convert English to Latin name.
 	    for key in Dict_CommonOrganismsWP:
 	      ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
 	      countOrganisms = countOrganisms + 1

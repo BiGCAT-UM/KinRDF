@@ -1986,6 +1986,16 @@ SER:5_measurement
 	SER:hasPh "7,6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "recombinant wild-type enzyme, electron acceptor is electron transfer flavoprotein "@en ;
+	wp:organismName "Bos taurus"^^xsd:string ;
+	wp:organismName "Canis familiaris"^^xsd:string ;
+	wp:organismName "Danio rerio"^^xsd:string ;
+	wp:organismName "Equus caballus"^^xsd:string ;
+	wp:organismName "Gallus gallus"^^xsd:string ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	wp:organismName "Mus musculus"^^xsd:string ;
+	wp:organismName "Pan troglodytes"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
 	dcterms:references pubmed:12948740 ;
 	dc:source "Brenda"^^xsd:string .
 
