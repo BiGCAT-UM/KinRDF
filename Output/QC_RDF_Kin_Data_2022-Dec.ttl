@@ -20,6 +20,16 @@ Data format for Kcat correctly loaded for 37 values.
 
 Data format for KcatKm correctly loaded for 37 values. 
 
+Data format for pH correctly loaded for 116 values. 
+
+Data format for Temperature correctly loaded for 112 values. 
+
+Data format for Additional Conditions correctly loaded for 125 values. 
+
+Data format for Organisms correctly loaded for 163 values. 
+
+Data format for Organisms correctly loaded for 161 values. 
+
 
 Reported Errors in Data: 
 
@@ -53,7 +63,6 @@ CHECK: Data format for dc:identifier unknown, check original data for: SER:259
 CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:81 : 1.3.1.B13
 CHECK: Data format for Km data not a number, check original data for: SER:261 : 5.4E-05
 CHECK: Name for Organism is not recognized, check original data for: SER:5 : human
-CHECK: Name for Organism is not recognized, check original data for: SER:7 : Human
 CHECK: Data format for Organism name is not recognized, check original data for: SER:13 : Alcaligenes sp. 
 CHECK: Name for Organism is not recognized, check original data for: SER:14 : Arabidopsis thaliana
 CHECK: Name for Organism is not recognized, check original data for: SER:15 : Pisum sativum

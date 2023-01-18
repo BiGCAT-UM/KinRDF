@@ -2003,6 +2003,16 @@ SER:7_measurement
 	SER:hasKm  "0.0081"^^xsd:float ;
 	SER:hasKcat  "9.4"^^xsd:float ;
 	SER:hasPh "7,6"^^xsd:float ;
+	wp:organismName "Bos taurus"^^xsd:string ;
+	wp:organismName "Canis familiaris"^^xsd:string ;
+	wp:organismName "Danio rerio"^^xsd:string ;
+	wp:organismName "Equus caballus"^^xsd:string ;
+	wp:organismName "Gallus gallus"^^xsd:string ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	wp:organismName "Mus musculus"^^xsd:string ;
+	wp:organismName "Pan troglodytes"^^xsd:string ;
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
 	dcterms:references pubmed:17176108 ;
 	dc:source "Brenda"^^xsd:string .
 

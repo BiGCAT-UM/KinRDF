@@ -67,7 +67,7 @@ ListTotal = [w.replace('CHEBI:', '') for w in ListTotal]
 ##Remove lines without ChEBI, UniProt, or Rhea
 for item in ListTotal:
 	a = item.split('\t')
-	if (a[0]=='-')|(a[4]=='-')|(a[6]=='-')|(a[7]=='-')|(a[0]=='NA')|(a[4]=='NA')|( a[6]=='NA')|(a[7]=='NA'): #Check if one of the necessary values is missing!!
+	if (a[0].strip()=='-')|(a[4].strip()=='-')|(a[6].strip()=='-')|(a[7].strip()=='-')|(a[0].strip()=='NA')|(a[4].strip()=='NA')|( a[6].strip()=='NA')|(a[7].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  ListTotal.remove(item)
 
 ##Print total number of lines found in files:
@@ -118,7 +118,7 @@ ListQC.append("Data format for SER correctly loaded for " + str(countSER) + " Su
 ##No regex or count defined, since the names of Proteins can be very diverse!
 for itemEnzymePW in ListTotal:
 	b = itemEnzymePW.split('\t')
-	if (b[1]=='-')|(b[1]=='NA')|(b[4]=='-')|(b[4]=='NA'): #Check if one of the necessary values is missing!!
+	if (b[1].strip()=='-')|(b[1].strip()=='NA')|(b[4].strip()=='-')|(b[4].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	else:
 	  ListUniprot.append('uniprot:' + b[4].strip( ) + '\t' + 'rdfs:label' + ' "' + b[1].strip( ) + '"^^xsd:string')
@@ -139,7 +139,7 @@ for itemEC_Number in ListTotal:
 	d = itemEC_Number.split('\t')
 	pattern = '^\\d+\\.-\\.-\\.-|\\d+\\.\\d+\\.-\\.-|\\d+\\.\\d+\\.\\d+\\.-|\\d+\\.\\d+\\.\\d+\\.(n)?\\d+$'
 	result = re.match(pattern, d[3].strip())
-	if (d[3]=='-')|(d[4]=='-'): #Check if necessary value is missing!!
+	if (d[3].strip()=='-')|(d[4].strip()=='-'): #Check if necessary value is missing!!
 	  continue
 	elif result:
 	  ListUniprot.append('uniprot:' + d[4].strip( )  + '\t' + 'wp:bdbEnzymeNomenclature' + ' ECcode:' + d[3].strip( ))
@@ -154,7 +154,7 @@ ListQC.append("Data format for 'wp:bdbEnzymeNomenclature correctly loaded for " 
 countProteins = 0
 for itemUniprot in ListTotal:
 	e = itemUniprot.split('\t')
-	if(e[4]=='-'): #Check if necessary value is missing!!
+	if(e[4].strip()=='-'): #Check if necessary value is missing!!
 	  continue
 	else:
 	  ListUniprot.append('uniprot:' + e[4].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Protein")
@@ -174,7 +174,7 @@ for itemEnsembl in ListTotal:
   f = itemEnsembl.split('\t')
   pattern = '^ENS[A-Z]*[FPTG]\\d{11}$' #Pattern is: ^ENS[A-Z]*[FPTG]\d{11}$' ; need to escape backslash! 
   result = re.match(pattern, f[5].strip( ) )
-  if (f[5]=='-')|(f[5]=='NA')|(f[4]=='-')|(f[4]=='NA'): #Check if one of the necessary values is missing!!
+  if (f[5].strip()=='-')|(f[5].strip()=='NA')|(f[4].strip()=='-')|(f[4].strip()=='NA'): #Check if one of the necessary values is missing!!
     continue
   elif result: ##check against REGEX
     ListUniprot.append('uniprot:' + f[4].strip( ) + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
@@ -197,7 +197,7 @@ for itemRheaID in ListTotal:
 	g = itemRheaID.split('\t')
 	pattern_rhea = '^(RHEA:)?\\d{5}$'
 	result_rhea = re.match(pattern_rhea, g[6].strip())
-	if (g[6]=='-')|(g[6]=='NA'): #Check if one of the necessary values is missing!!
+	if (g[6].strip()=='-')|(g[6].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	elif(result_rhea): ##regex check
 	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
@@ -223,7 +223,7 @@ for itemSubstrate in ListTotal:
 	h = itemSubstrate.split('\t')
 	pattern_chebi = '^(CHEBI:)?\\d+$'
 	result_chebi =  re.match(pattern_chebi, h[7])
-	if (h[7]=='-')|(h[7]=='NA'): #Check if one of the necessary values is missing!!
+	if (h[7].strip()=='-')|(h[7].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	elif(result_chebi):
 	  ListSubstrate.append('CHEBI:' + h[7].strip( ) +'\t' + 'sio:SIO_000028' + ' ' + h[0].strip())
@@ -245,7 +245,7 @@ for itemKm in ListTotal:
   i = itemKm.split('\t')
   i[8] = i[8].replace(',', '.')
   result_float =  re.match(pattern_float, i[8])
-  if(i[8]=='-')|(i[8]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!! [16] = Database, needed for provenance and ending statement in RDF!
+  if(i[8].strip()=='-')|(i[8].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!! [16] = Database, needed for provenance and ending statement in RDF!
     continue
   elif(result_float): ##Check if entry contains a number with decimal(s)
     ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
@@ -265,7 +265,7 @@ for itemKcat in ListTotal:
   i = itemKcat.split('\t')
   i[9] = i[9].replace(',', '.')
   result_float =  re.match(pattern_float, i[9])
-  if(i[9]=='-')|(i[9]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!!
+  if(i[9].strip()=='-')|(i[9].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
     ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
@@ -285,7 +285,7 @@ for itemKcatKm in ListTotal:
   i = itemKcatKm.split('\t')
   i[10] = i[10].replace(',', '.')
   result_float =  re.match(pattern_float, i[10])
-  if(i[10]=='-')|(i[10]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!!
+  if(i[10].strip()=='-')|(i[10].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
     ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKmKcat' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
@@ -299,76 +299,107 @@ for itemKcatKm in ListTotal:
 
 ListQC.append("Data format for KcatKm correctly loaded for " + str(countKcatKm) + " values. \n\n") 
 
+
+##TODO: check if value is numeric!
 			
 #pH##--> Add to measurement
+count_pH = 0
 for item_pH in ListTotal:
   i = item_pH.split('\t')
-  if(i[11]=='-')|(i[11]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!!
+  if(i[11].strip()=='-')|(i[11].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
     continue
   else:
     List_pH.append(i[0].strip( ) + '_measurement' + '\t' + 'SER:hasPh'+ ' "' + i[11].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q40936
+    count_pH = count_pH + 1
 
+ListQC.append("Data format for pH correctly loaded for " + str(count_pH) + " values. \n\n") 
 			
 #Temperature##--> Add to measurement
+countTemp = 0
 for itemTemperature in ListTotal:
   i = itemTemperature.split('\t')
-  if(i[12]=='-')|(i[12]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!!
+  if(i[12].strip()=='-')|(i[12].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
     continue
   else:
     ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076 ' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
+    countTemp = countTemp + 1
 
+ListQC.append("Data format for Temperature correctly loaded for " + str(countTemp) + " values. \n\n") 
 
 #AdditionalConditions##--> Add to measurement
+countConditions = 0
 for itemAdditionalConditions in ListTotal:
 	i = itemAdditionalConditions.split('\t')
-	if(i[13]=='-')|(i[13]=='NA')|(i[16]=='-')|(i[16]=='NA'): #Check if one of the necessary values is missing!!
+	if(i[13].strip()=='-')|(i[13].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	else:
 	  ListAdditionalConditions.append(i[0].strip( )  + '_measurement' + '\t' + 'dcterms:description' + ' "' + i[13].strip('"') + '"@en')
+	  countConditions = countConditions + 1
+	  
+ListQC.append("Data format for Additional Conditions correctly loaded for " + str(countConditions) + " values. \n\n") 
 
 ##Create a list to check listed organism (Latin and common English names) for vertebrates:
 ListCommonLatinOrganismsWP = ['Bos taurus', 'Canis familiaris', 'Danio rerio', 'Equus caballus', 'Gallus gallus', 'Homo sapiens', 'Mus musculus', 'Pan troglodytes', 'Rattus norvegicus', 'Sus scrofa']
 ListCommonEnglishOrganismsWP = ['Cow', 'Dog', 'Zebrafish', 'Horse', 'Chicken', 'Human', 'Mouse', 'Chimpanzee', 'Rat', 'Boar']
 
+# using dictionary comprehension to convert lists to dictionary
+Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrganismsWP[i] for i in range(len(ListCommonEnglishOrganismsWP))}
+
 ##TODO: if English name, change to Latin for data model.
-##TODO: report names which are not known/incorrect; examples:
+##TODO Fix abbreviations?
 #Alcaligenes sp. 
 
 #[14]=Organism			##--> Add to measurement
+countOrganisms = 0
 for itemOrganism in ListTotal:
 	j = itemOrganism.split('\t')
-	if(j[14]=='-')|(j[14]=='NA')|(j[16]=='-')|(j[16]=='NA'): #Check if one of the necessary values is missing!!
+	if(j[14].strip()=='-')|(j[14].strip()=='NA')|(j[16].strip()=='-')|(j[16].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	elif(all(x.isalpha() or x.isspace() for x in j[14])): ##Check if Organism names only contains letters and spaces.
-	  if(j[14] in ListCommonLatinOrganismsWP): ##elif(j[14] in ListCommonEnglishOrganismsWPOrganismsWP): ##Convert to Latin name.
+	  if(j[14] in ListCommonLatinOrganismsWP): ##check for latin name first
 	    ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + j[14].strip('"') + '"^^xsd:string')
+	    countOrganisms = countOrganisms + 1
+	  elif(j[14] in ListCommonEnglishOrganismsWP):  ##Convert English to Latin name.
+	    for key in Dict_CommonOrganismsWP:
+	      ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
+	      countOrganisms = countOrganisms + 1
 	  else:
 	    ListErrors.append("CHECK: Name for Organism is not recognized, check original data for: "+ j[0] + " : " + j[14] + '\n')
 	else:
 	  ListErrors.append("CHECK: Data format for Organism name is not recognized, check original data for: "+ j[0] + " : " + j[14] + '\n')
 
+ListQC.append("Data format for Organisms correctly loaded for " + str(countOrganisms) + " values. \n\n") 
+
 #[15]=PMID	##--> Add to measurement	
+countRefs = 0
 for itemPMID in ListTotal:
 	k = itemPMID.split('\t')
-	if(k[15]=='-')|(k[15]=='NA')|(k[16]=='-')|(k[16]=='NA'): #Check if one of the necessary values is missing!!
+	if(k[15].strip()=='-')|(k[15].strip()=='NA')|(k[16].strip()=='-')|(k[16].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	if k[15].isnumeric():
 	  ListPMID.append(k[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + k[15].strip( ))
+	  countRefs = countRefs + 1
 	elif ';' in k[15]:
 		k2 = k[15].split(';') ##Split multiple references in one line.
 		k2 = [x.strip(' ') for x in k2]
 		ListPMID.append(k[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + ', '.join(k2))
+		countRefs = countRefs + 1
 	else:
-		print("Data format for PubMed IDs unknown, check original data for: " + k[0] + ' : ' + k[15])
+		ListErrors.append("Data format for PubMed IDs unknown, check original data for: " + k[0] + ' : ' + k[15])
 
+ListQC.append("Data format for Organisms correctly loaded for " + str(countRefs) + " values. \n\n")
+			
+##TODO: check if this column is empty, otherwise data should not be added!
 			
 #[16]=Database ##--> Add to measurement				
+countProv = 0
 for itemDatabase in ListTotal:
 	l = itemDatabase.split('\t')
-	if(l[16]=='-')|(l[16]=='NA'): #Check if one of the necessary values is missing!!
+	if(l[16].strip()=='-')|(l[16].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	else:
 	  ListDatabase.append(l[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + l[16].strip( ) + '"^^xsd:string')
+	  countProv = countProv + 1
 
 AllDict = {}			
 
