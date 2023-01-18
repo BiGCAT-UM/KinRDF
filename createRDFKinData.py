@@ -334,18 +334,18 @@ ListCommonEnglishOrganismsWP = ['Cow', 'Dog', 'Zebrafish', 'Horse', 'Chicken', '
 ##TODO: report names which are not known/incorrect; examples:
 #Alcaligenes sp. 
 
-
 #[14]=Organism			##--> Add to measurement
 for itemOrganism in ListTotal:
 	j = itemOrganism.split('\t')
 	if(j[14]=='-')|(j[14]=='NA')|(j[16]=='-')|(j[16]=='NA'): #Check if one of the necessary values is missing!!
 	  continue
-	elif(i[14].isalpha()):
-	  if(i[14] in ListCommonLatinOrganismsWP)| i[14] in ListCommonEnglishOrganismsWPOrganismsWP):
+	elif(all(x.isalpha() or x.isspace() for x in j[14])): ##Check if Organism names only contains letters and spaces.
+	  if(j[14] in ListCommonLatinOrganismsWP): ##elif(j[14] in ListCommonEnglishOrganismsWPOrganismsWP): ##Convert to Latin name.
 	    ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + j[14].strip('"') + '"^^xsd:string')
+	  else:
+	    ListErrors.append("CHECK: Name for Organism is not recognized, check original data for: "+ j[0] + " : " + j[14] + '\n')
 	else:
 	  ListErrors.append("CHECK: Data format for Organism name is not recognized, check original data for: "+ j[0] + " : " + j[14] + '\n')
-
 
 #[15]=PMID	##--> Add to measurement	
 for itemPMID in ListTotal:
