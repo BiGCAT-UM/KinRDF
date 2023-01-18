@@ -43,6 +43,7 @@ ListPMID = []
 ListDatabase = []
 ListQC = []
 ListErrors = []
+ListCuration = [] 
 
 ##Read in files with kinetics data.
 count = 0
@@ -63,6 +64,9 @@ for (dirname, dirs, files) in os.walk('.'):
 ##Replace common prefixes for harmonized data structure:
 ListTotal = [w.replace('RHEA:', '') for w in ListTotal]
 ListTotal = [w.replace('CHEBI:', '') for w in ListTotal]
+
+##TODO: if line doesn't contain UniProt, but it has a valid Ensembl ID, ID map these.
+
 
 ##Remove lines without ChEBI, UniProt, or Rhea
 for item in ListTotal:
@@ -96,11 +100,10 @@ for itemSERX in ListTotal:
 	  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-XXXXX')
 	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction')
 	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
-	  #ListQC.append("CHECK: Data format for Rhea doesn't match regex, suspected to be rection formula, check data for: "+ a[0] + ' ' + a[6] + '\n')
 	  countSER = countSER +1
 	else:
 	  ListTotal.remove(itemSERX)
-	  ListErrors.append("CHECK: Data format for dc:identifier unknown, check original data for: "+ a[0] + '\n')
+	  ListCuration.append("CURATION: missing data for: "+ a[0] + ' substrate: ' + a[7] + ' enzyme: ' + a[4] + ' reaction: ' + a[6] + '\n')
 
 
 ##Print total number of lines found in files, after removing data without SEP-ID:
@@ -595,6 +598,14 @@ RDF_Kin_data_QC.write("\nReported Errors in Data: \n\n".encode())
 if len(ListErrors) >0:
   for item in ListErrors:
     RDF_Kin_data_QC.write(item.encode())
+    
+RDF_Kin_data_QC.write("\nPotential Curation Required: \n\n".encode())    
+    
+##Write Curation info to file:
+if len(ListCuration) >0:
+  for item in ListCuration:
+    RDF_Kin_data_QC.write(item.encode())
+    
 
 
 #Close this file as well

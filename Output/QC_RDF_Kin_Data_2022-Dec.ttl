@@ -33,33 +33,6 @@ Data format for Organisms correctly loaded for 161 values.
 
 Reported Errors in Data: 
 
-CHECK: Data format for dc:identifier unknown, check original data for: SER:84
-CHECK: Data format for dc:identifier unknown, check original data for: SER:93
-CHECK: Data format for dc:identifier unknown, check original data for: SER:163
-CHECK: Data format for dc:identifier unknown, check original data for: SER:167
-CHECK: Data format for dc:identifier unknown, check original data for: SER:171
-CHECK: Data format for dc:identifier unknown, check original data for: SER:175
-CHECK: Data format for dc:identifier unknown, check original data for: SER:179
-CHECK: Data format for dc:identifier unknown, check original data for: SER:183
-CHECK: Data format for dc:identifier unknown, check original data for: SER:187
-CHECK: Data format for dc:identifier unknown, check original data for: SER:191
-CHECK: Data format for dc:identifier unknown, check original data for: SER:195
-CHECK: Data format for dc:identifier unknown, check original data for: SER:199
-CHECK: Data format for dc:identifier unknown, check original data for: SER:203
-CHECK: Data format for dc:identifier unknown, check original data for: SER:207
-CHECK: Data format for dc:identifier unknown, check original data for: SER:211
-CHECK: Data format for dc:identifier unknown, check original data for: SER:215
-CHECK: Data format for dc:identifier unknown, check original data for: SER:219
-CHECK: Data format for dc:identifier unknown, check original data for: SER:223
-CHECK: Data format for dc:identifier unknown, check original data for: SER:227
-CHECK: Data format for dc:identifier unknown, check original data for: SER:231
-CHECK: Data format for dc:identifier unknown, check original data for: SER:235
-CHECK: Data format for dc:identifier unknown, check original data for: SER:239
-CHECK: Data format for dc:identifier unknown, check original data for: SER:243
-CHECK: Data format for dc:identifier unknown, check original data for: SER:247
-CHECK: Data format for dc:identifier unknown, check original data for: SER:251
-CHECK: Data format for dc:identifier unknown, check original data for: SER:255
-CHECK: Data format for dc:identifier unknown, check original data for: SER:259
 CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:81 : 1.3.1.B13
 CHECK: Data format for Km data not a number, check original data for: SER:261 : 5.4E-05
 CHECK: Data format for Organism name is not recognized, check original data for: SER:13 : Alcaligenes sp. 
@@ -77,3 +50,33 @@ CHECK: Name for Organism is not recognized, check original data for: SER:78 : Pa
 CHECK: Data format for Organism name is not recognized, check original data for: SER:79 : Synechocystis sp.
 CHECK: Name for Organism is not recognized, check original data for: SER:90 : Oryctolagus cuniculus
 CHECK: Name for Organism is not recognized, check original data for: SER:91 : Oryctolagus cuniculus
+
+Potential Curation Required: 
+
+CURATION: missing data for: SER:84 substrate: 16091 enzyme: - reaction: 13134
+CURATION: missing data for: SER:93 substrate: - enzyme: - reaction: 29523
+CURATION: missing data for: SER:163 substrate: 16113 enzyme: - reaction: 35740
+CURATION: missing data for: SER:167 substrate: 16113 enzyme: - reaction: 35744
+CURATION: missing data for: SER:171 substrate: 16113 enzyme: - reaction: 35748
+CURATION: missing data for: SER:175 substrate: 16113 enzyme: - reaction: 35752
+CURATION: missing data for: SER:179 substrate: 16581 enzyme: - reaction: 24078
+CURATION: missing data for: SER:183 substrate: 28689 enzyme: - reaction: 24082
+CURATION: missing data for: SER:187 substrate: 28689 enzyme: - reaction: 24086
+CURATION: missing data for: SER:191 substrate: 16485 enzyme: - reaction: 11874
+CURATION: missing data for: SER:195 substrate: 16581 enzyme: - reaction: 50239
+CURATION: missing data for: SER:199 substrate: 16581 enzyme: - reaction: 50243
+CURATION: missing data for: SER:203 substrate: 17026 enzyme: - reaction: 46309
+CURATION: missing data for: SER:207 substrate: 17026 enzyme: - reaction: 46313
+CURATION: missing data for: SER:211 substrate: 17026 enzyme: - reaction: 46317
+CURATION: missing data for: SER:215 substrate: 17026 enzyme: - reaction: 46321
+CURATION: missing data for: SER:219 substrate: 17026 enzyme: - reaction: 46325
+CURATION: missing data for: SER:223 substrate: 17252 enzyme: - reaction: 14755
+CURATION: missing data for: SER:227 substrate: 28750 enzyme: - reaction: 50247
+CURATION: missing data for: SER:231 substrate: 17026 enzyme: - reaction: A C(21) steroid + [reduced NADPH--hemoprotein reductase] + O(2) = a 21-hydroxy-C(21)-steroid + [oxidized NADPH--hemoprotein reductase] + H(2)O
+CURATION: missing data for: SER:235 substrate: 17252 enzyme: - reaction: A C(21) steroid + [reduced NADPH--hemoprotein reductase] + O(2) = a 21-hydroxy-C(21)-steroid + [oxidized NADPH--hemoprotein reductase] + H(2)O
+CURATION: missing data for: SER:239 substrate: 17252 enzyme: - reaction: A C(21) steroid + [reduced NADPH--hemoprotein reductase] + O(2) = a 21-hydroxy-C(21)-steroid + [oxidized NADPH--hemoprotein reductase] + H(2)O
+CURATION: missing data for: SER:243 substrate: 18009 enzyme: - reaction: 15843
+CURATION: missing data for: SER:247 substrate: 16962 enzyme: - reaction: 11392
+CURATION: missing data for: SER:251 substrate: 16962 enzyme: - reaction: 11396
+CURATION: missing data for: SER:255 substrate: 17650 enzyme: - reaction: 53118
+CURATION: missing data for: SER:259 substrate: 17347 enzyme: - reaction: 54387
