@@ -338,16 +338,28 @@ for itemAdditionalConditions in ListTotal:
 	  
 ListQC.append("Data format for Additional Conditions correctly loaded for " + str(countConditions) + " values. \n\n") 
 
-##Create a list to check listed organism (Latin and common English names) for vertebrates:
+## Lists to check listed organism (Latin and common English names) for animals//vertebrates commonly used in WikiPathways:
 ListCommonLatinOrganismsWP = ['Bos taurus', 'Canis familiaris', 'Danio rerio', 'Equus caballus', 'Gallus gallus', 'Homo sapiens', 'Mus musculus', 'Pan troglodytes', 'Rattus norvegicus', 'Sus scrofa']
 ListCommonEnglishOrganismsWP = ['cow', 'dog', 'zebrafish', 'horse', 'chicken', 'human', 'house mouse', 'chimpanzee', 'brown rat', 'wild boar or pig']
 
-# using dictionary comprehension to convert lists to dictionary
+# using dictionary comprehension to convert lists to dictionary for conversion of English to Latin later.
 Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrganismsWP[i] for i in range(len(ListCommonEnglishOrganismsWP))}
 
-##TODO: if English name, change to Latin for data model.
-##TODO Fix abbreviations?
-#Alcaligenes sp. 
+##Other data currently present in datasets (not mdoeled in RDF):
+## Bacteria
+# Alcaligenes sp. 
+# Chlorobium limicola
+# Rhoopseudomonas palustris
+# Synechocystis sp.
+# Pasteurella multocida
+## Plants:
+# Arabidopsis thaliana
+# Pisum sativum
+## Fungi:
+# Saccharomyces cerevisiae
+## Vertebrates
+# Oryctolagus cuniculus (european rabbit)
+
 
 #[14]=Organism			##--> Add to measurement
 countOrganisms = 0
@@ -355,7 +367,7 @@ for itemOrganism in ListTotal:
 	j = itemOrganism.split('\t')
 	if(j[14].strip()=='-')|(j[14].strip()=='NA')|(j[16].strip()=='-')|(j[16].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  continue
-	elif(all(x.isalpha() or x.isspace() for x in j[14])): ##Check if Organism names only contains letters and spaces.
+	elif(all(x.isalpha() or x.isspace() for x in j[14])): ##Check if Organism names only contains letters and spaces only.
 	  if(j[14] in ListCommonLatinOrganismsWP): ##check for latin name first
 	    ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + j[14].strip('"') + '"^^xsd:string')
 	    countOrganisms = countOrganisms + 1
