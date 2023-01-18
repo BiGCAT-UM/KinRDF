@@ -1,8 +1,8 @@
 EnzymePW	ApprovedEnzymeName	ECnumber	UniProt	Ensembl	RheaID	CHEBIID	Km	Kcat	Kcat/Km	pH	Temperature	AdditionalConditions	Species	PMID 	Database
 30.39	-	1.3.1.B13	Q9H8P0	-	RHEA:34281	67132	-	-	-	8	37	-	Homo sapiens	20637498	Brenda
 30.38	-	2.7.1.108	Q9UPQ8	-	RHEA:13134	16091	-	-	-	-	-	-	Homo sapiens	-	Brenda
-30.38	-	2.7.1.108	-	-	RHEA:13134	16091	23	-	-	7.4	37	-	Rattus norvegicus	2838091	Brenda
-30.38	-	2.7.1.108	-	-	RHEA:13134	16091	75	-	-	7.4	37	-	Rattus norvegicus	2999115	Brenda
+30.38	-	2.7.1.108	-	-	RHEA:13134	16091	23	-	-	7.4	37	-	Brown Rat	2838091	Brenda
+30.38	-	2.7.1.108	-	-	RHEA:13134	16091	75	-	-	7.4	37	-	Rat	2999115	Brenda
 DAPGT1	-	2.7.8.15	-	-	RHEA:13290	4691	-	-	-	-	-	-	-	-	Brenda
 ALG13	-	2.4.1.141	-	-	RHEA:23381	58427	-	-	-	7.5	37	-	Gallus gallus	9530952	Brenda
 ALG13	-	2.4.1.141	-	-	-	58427	-	-	-	7	-	-	Sus scrofa	11377171	Brenda

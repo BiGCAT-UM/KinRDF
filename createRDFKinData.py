@@ -340,7 +340,7 @@ ListQC.append("Data format for Additional Conditions correctly loaded for " + st
 
 ##Create a list to check listed organism (Latin and common English names) for vertebrates:
 ListCommonLatinOrganismsWP = ['Bos taurus', 'Canis familiaris', 'Danio rerio', 'Equus caballus', 'Gallus gallus', 'Homo sapiens', 'Mus musculus', 'Pan troglodytes', 'Rattus norvegicus', 'Sus scrofa']
-ListCommonEnglishOrganismsWP = ['cow', 'dog', 'zebrafish', 'horse', 'chicken', 'human', 'mouse', 'chimpanzee', 'rat', 'boar']
+ListCommonEnglishOrganismsWP = ['cow', 'dog', 'zebrafish', 'horse', 'chicken', 'human', 'mouse', 'chimpanzee', 'brown rat', 'boar']
 
 # using dictionary comprehension to convert lists to dictionary
 Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrganismsWP[i] for i in range(len(ListCommonEnglishOrganismsWP))}
