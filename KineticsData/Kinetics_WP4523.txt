@@ -13,7 +13,7 @@ P450scc	cholesterol monooxygenase (side-chain-cleaving)	1.14.15.6	-	ENSG00000140
 P450scc	cholesterol monooxygenase (side-chain-cleaving)	1.14.15.6	-	ENSG00000140459	RHEA:35751	16113	-	248	-	-	-	-	Bos taurus	18573681	Brenda
 P450scc	cholesterol monooxygenase (side-chain-cleaving)	1.14.15.6	-	ENSG00000140459	RHEA:35752	16113	-	-	212	-	-	-	Bos taurus	18573681	Brenda
 P450scc	cholesterol monooxygenase (side-chain-cleaving)	1.14.15.6	-	ENSG00000140459	RHEA:35753	16113	-	-	11.17	-	-	-	Bos taurus	18573681	Brenda
-STAR	Steroidogenic acute regulatory protein	2.7.11.12	-	ENSG00000147465	ATP + steroidogenic acute regulatory protein = ADP + phosphorylated steroidogenic acute regulatory protein	-	-	-	-	-	-	-	-	-	Unknown
+STAR	Steroidogenic acute regulatory protein	2.7.11.12	-	ENSG00000147465	ATP + steroidogenic acute regulatory protein = ADP + phosphorylated steroidogenic acute regulatory protein	-	-	-	-	-	-	-	-	-	-
 3-beta-HSD	3-beta-hydroxysteroid dehydrogenase	1.1.1.145	-	ENSG00000203859	RHEA:24077	16581	7E-05	-	-	-	-	-	Homo sapiens	6957697	Brenda
 3-beta-HSD	3-beta-hydroxysteroid dehydrogenase	1.1.1.145	-	ENSG00000203859	RHEA:24078	16581	0.0028	-	-	7.4	27	-	Homo sapiens	12205101	Brenda
 3-beta-HSD	3-beta-hydroxysteroid dehydrogenase	1.1.1.145	-	ENSG00000203859	RHEA:24079	16581	0.05	-	-	7.4	27	-	Homo sapiens	12205101	Brenda
@@ -26,9 +26,9 @@ STAR	Steroidogenic acute regulatory protein	2.7.11.12	-	ENSG00000147465	ATP + st
 3-beta-HSD	3-beta-hydroxysteroid dehydrogenase	1.1.1.145	-	ENSG00000203859	RHEA:24086	28689	0.0061	-	-	7.4	27	-	Homo sapiens	15797861	Brenda
 3-beta-HSD	3-beta-hydroxysteroid dehydrogenase	1.1.1.145	-	ENSG00000203859	RHEA:24087	28689	0.0156	-	15	-	-	-	Homo sapiens	20736065	Brenda
 3-beta-HSD	3-beta-hydroxysteroid dehydrogenase	1.1.1.145	-	ENSG00000203859	RHEA:24088	28689	47	-	-	-	-	-	Homo sapiens	12530651	Brenda
-Corticosterone Methyl Oxidase I	corticosterone 18-monooxygenase	1.14.15.5	-	ENSG00000179142	RHEA:11873	16827	-	-	-	7.4	27	-	-	-	Unknown
-Corticosterone Methyl Oxidase II	corticosterone 18-monooxygenase	1.14.15.5	-	ENSG00000179142	RHEA:11874	16485	-	-	-	7.4	27	-	-	-	Unknown
-POR	P450 oxidoreductase	1.6.2.4	P16435	-	-	16485	-	-	-	-	-	-	-	-	Unknown
+Corticosterone Methyl Oxidase I	corticosterone 18-monooxygenase	1.14.15.5	-	ENSG00000179142	RHEA:11873	16827	-	-	-	7.4	27	-	-	-	-
+Corticosterone Methyl Oxidase II	corticosterone 18-monooxygenase	1.14.15.5	-	ENSG00000179142	RHEA:11874	16485	-	-	-	7.4	27	-	-	-	-
+POR	P450 oxidoreductase	1.6.2.4	P16435	-	-	16485	-	-	-	-	-	-	-	-	-
 P450c17	steroid 17alpha-monooxygenase	1.14.14.19	-	ENSG00000148795	RHEA:50237	16581	0.00025	-	-	-	-	-	Homo sapiens	9726253	Brenda
 P450c17	steroid 17alpha-monooxygenase	1.14.14.19	-	ENSG00000148795	RHEA:50238	16581	0.00038	-	-	7.4	37	-	Homo sapiens	25301938	Brenda
 P450c17	steroid 17alpha-monooxygenase	1.14.14.19	-	ENSG00000148795	RHEA:50239	16581	0.0005	-	7.4	7.4	37	-	Homo sapiens	28684414	Brenda
@@ -96,6 +96,6 @@ H6PD	glucose 1-dehydrogenase	1.1.1.47	-	ENSG00000049239	RHEA:15844	18009	62	-	-	
 5-alpha-reductase 2	3-oxo-5alpha-steroid 4-dehydrogenase	1.3.99.5	-	ENSG00000277893	RHEA:54385	17347	5.4E-05	-	-	7.4	37	-	Homo sapiens	20823678	Brenda
 5-alpha-reductase 2	3-oxo-5alpha-steroid 4-dehydrogenase	1.3.99.5	-	ENSG00000277893	RHEA:54386	17347	0.0004	-	-	-	-	-	Homo sapiens	20170668	Brenda
 5-alpha-reductase 2	3-oxo-5alpha-steroid 4-dehydrogenase	1.3.99.5	-	ENSG00000277893	RHEA:54387	17347	0.01	-	-	-	-	-	Homo sapiens	20170668	Brenda
-17-beta-HSD3	3 or 17 beta-hydroxysteroid dehydrogenase	1.1.1.51	-	ENSG00000130948	RHEA:14983	16422	-	-	-	-	-	-	-	-	Unknown
-P450Aro	P450 aromatase	-	-	ENSG00000137869	-	-	-	-	-	-	-	-	-	-	Unknown
-Cytochrome b5	Ligand cytochrome b5	-	J3KNC7	-	-	-	-	-	-	-	-	-	-	-	Unknown
+17-beta-HSD3	3 or 17 beta-hydroxysteroid dehydrogenase	1.1.1.51	-	ENSG00000130948	RHEA:14983	16422	-	-	-	-	-	-	-	-	-
+P450Aro	P450 aromatase	-	-	ENSG00000137869	-	-	-	-	-	-	-	-	-	-	-
+Cytochrome b5	Ligand cytochrome b5	-	J3KNC7	-	-	-	-	-	-	-	-	-	-	-	-

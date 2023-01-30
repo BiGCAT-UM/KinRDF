@@ -3,7 +3,7 @@ GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.68	-	-	-	-	-
 GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.0057	-	-	-	-	-	Sus scrofa	6126192	BRENDA
 GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.0105	-	-	7.4	37	isoform GGT5. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl	Homo sapiens	21447318	BRENDA
 GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.0106	-	-	7.4	37	isoform GGT1. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl	Homo sapiens	21447318	BRENDA
-GGCT	Gamma-glutamylcycletransferase	 2.3.2.4	O75223	-	RHEA:20506	15857	-	-	-	-	-	-	-	-	Unknown
+GGCT	Gamma-glutamylcycletransferase	 2.3.2.4	O75223	-	RHEA:20506	15857	-	-	-	-	-	-	-	-	-
 5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.16	-	-	-	-	initial Km in presence of GTP	Rattus norvegicus	6121802	BRENDA
 5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.18	-	-	-	-	initial Km in presence of ITP	Rattus norvegicus	6121802	BRENDA
 5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.2	-	-	-	-	initial Km in presence of UTP	Rattus norvegicus	6121802	BRENDA
