@@ -1,8 +1,11 @@
 ##This script has been tested with Python version 3.8.15
+
+##Load library to report which Python version was used for reproducability
 import sys
 print("Python version: ", sys.version)
 print("Version info: ", sys.version_info)
 
+##Load library to check and set local path easier
 import os
 from os.path import join
 
@@ -17,7 +20,7 @@ else:
 os.chdir(dataFolder) ##Update directory to folder with data
 dir_code = os.getcwd()
 
-#Regex to test for structure of content
+#Load library for regex to test for structure of content
 import re
 
 ##Lists to store data in
@@ -64,9 +67,6 @@ for (dirname, dirs, files) in os.walk('.'):
 ##Replace common prefixes for harmonized data structure:
 ListTotal = [w.replace('RHEA:', '') for w in ListTotal]
 ListTotal = [w.replace('CHEBI:', '') for w in ListTotal]
-
-##TODO: if line doesn't contain UniProt, but it has a valid Ensembl ID, ID map these.
-
 
 ##Remove lines without ChEBI, UniProt, or Rhea
 for item in ListTotal:
