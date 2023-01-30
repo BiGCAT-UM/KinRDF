@@ -19,6 +19,14 @@
 @prefix sio: <http://semanticscience.org/resource/> . 
 @prefix bioregistry: <https://bioregistry.io/oboinowl:> . 
 
+wdt:P2076 sio:SIO_000028 wd:Q25267 . 
+SER:hasKm sio:SIO_000028 wd:Q105687351 . 
+SER:hasKm sio:SIO_000028 wd:Q61751178 . 
+SER:hasKcat sio:SIO_000028 wd:Q6137407 . 
+SER:hasKcat sio:SIO_000028 wd:Q899698 . 
+SER:hasKcatKm sio:SIO_000028 wd:Q116486875 . 
+SER:hasKcatKm a wd:Q7575016 . 
+
 SER:1
 	dc:identifier SER:16953-P45381-14167 ;
 	sio:SIO_000028  SER:1_substrate, SER:1_enzyme, SER:1_reaction ;
@@ -2057,7 +2065,7 @@ SER:10_measurement
 SER:11_measurement
 	SER:hasKm  "0.0026"^^xsd:float ;
 	SER:hasKcat  "9"^^xsd:float ;
-	SER:hasKmKcat "3.5"^^xsd:float ;
+	SER:hasKcatKm "3.5"^^xsd:float ;
 	SER:hasPh "7,6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "10 mM potassium phosphate"@en ;
@@ -2082,7 +2090,7 @@ SER:13_measurement
 SER:14_measurement
 	SER:hasKm  "584"^^xsd:float ;
 	SER:hasKcat  "0.8"^^xsd:float ;
-	SER:hasKmKcat "1.37"^^xsd:float ;
+	SER:hasKcatKm "1.37"^^xsd:float ;
 	SER:hasPh "8,75"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "cofactor o-idized 2,6-dichlorophenolindophenol "@en ;
@@ -2674,7 +2682,7 @@ SER:124_measurement
 
 SER:165_measurement
 	SER:hasKm  "0.0091"^^xsd:float ;
-	SER:hasKmKcat "212"^^xsd:float ;
+	SER:hasKcatKm "212"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dcterms:references pubmed:703418 ;
 	dc:source "Brenda"^^xsd:string .
@@ -2693,7 +2701,7 @@ SER:181_measurement
 
 SER:185_measurement
 	SER:hasKm  "0.0037"^^xsd:float ;
-	SER:hasKmKcat "0.0073"^^xsd:float ;
+	SER:hasKcatKm "0.0073"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "27"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -2975,7 +2983,7 @@ SER:221_measurement
 
 SER:233_measurement
 	SER:hasKcat  "2.8"^^xsd:float ;
-	SER:hasKmKcat "13330"^^xsd:float ;
+	SER:hasKcatKm "13330"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -2991,7 +2999,7 @@ SER:253_measurement
 	dc:source "Brenda"^^xsd:string .
 
 SER:68_measurement
-	SER:hasKmKcat "10.36"^^xsd:float ;
+	SER:hasKcatKm "10.36"^^xsd:float ;
 	SER:hasPh "7.5"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "wild-type enzyme"@en ;
@@ -2999,7 +3007,7 @@ SER:68_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:69_measurement
-	SER:hasKmKcat "1.17"^^xsd:float ;
+	SER:hasKcatKm "1.17"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "D458R"@en ;
@@ -3008,7 +3016,7 @@ SER:69_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:70_measurement
-	SER:hasKmKcat "1.6"^^xsd:float ;
+	SER:hasKcatKm "1.6"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "D458A "@en ;
@@ -3017,7 +3025,7 @@ SER:70_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:71_measurement
-	SER:hasKmKcat "2.31"^^xsd:float ;
+	SER:hasKcatKm "2.31"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "D458N "@en ;
@@ -3026,7 +3034,7 @@ SER:71_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:72_measurement
-	SER:hasKmKcat "15.68"^^xsd:float ;
+	SER:hasKcatKm "15.68"^^xsd:float ;
 	SER:hasPh "7.5"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "wild-type enzyme"@en ;
@@ -3035,7 +3043,7 @@ SER:72_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:73_measurement
-	SER:hasKmKcat "52"^^xsd:float ;
+	SER:hasKcatKm "52"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G370V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3043,7 +3051,7 @@ SER:73_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:74_measurement
-	SER:hasKmKcat "133"^^xsd:float ;
+	SER:hasKcatKm "133"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G369V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3051,7 +3059,7 @@ SER:74_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:75_measurement
-	SER:hasKmKcat "2.36"^^xsd:float ;
+	SER:hasKcatKm "2.36"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G371V"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3059,7 +3067,7 @@ SER:75_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:76_measurement
-	SER:hasKmKcat "18.8"^^xsd:float ;
+	SER:hasKcatKm "18.8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "wild-type enzyme"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3067,20 +3075,20 @@ SER:76_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:77_measurement
-	SER:hasKmKcat "26.9"^^xsd:float ;
+	SER:hasKcatKm "26.9"^^xsd:float ;
 	SER:hasPh "8.2"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:references pubmed:16339152 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SER:78_measurement
-	SER:hasKmKcat "55"^^xsd:float ;
+	SER:hasKcatKm "55"^^xsd:float ;
 	dcterms:description "inTris-HCl buffer (200 mM. pH 8.2)"@en ;
 	dcterms:references pubmed:16339152 ;
 	dc:source "BRENDA"^^xsd:string .
 
 SER:79_measurement
-	SER:hasKmKcat "10.36"^^xsd:float ;
+	SER:hasKcatKm "10.36"^^xsd:float ;
 	SER:hasPh "7.5"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "wild-type enzyme"@en ;
@@ -3088,7 +3096,7 @@ SER:79_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:143_measurement
-	SER:hasKmKcat "0.0009"^^xsd:float ;
+	SER:hasKcatKm "0.0009"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G894P, mutant G894P stimulated by beta-casein"@en ;
@@ -3097,7 +3105,7 @@ SER:143_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:144_measurement
-	SER:hasKmKcat "0.0024"^^xsd:float ;
+	SER:hasKcatKm "0.0024"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant T880V"@en ;
@@ -3106,7 +3114,7 @@ SER:144_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:145_measurement
-	SER:hasKmKcat "0.0025"^^xsd:float ;
+	SER:hasKcatKm "0.0025"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant W770A"@en ;
@@ -3115,7 +3123,7 @@ SER:145_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:146_measurement
-	SER:hasKmKcat "3"^^xsd:float ;
+	SER:hasKcatKm "3"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant T880V stimulated by beta-casein"@en ;
@@ -3124,7 +3132,7 @@ SER:146_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:147_measurement
-	SER:hasKmKcat "5"^^xsd:float ;
+	SER:hasKcatKm "5"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G894S"@en ;
@@ -3133,7 +3141,7 @@ SER:147_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:148_measurement
-	SER:hasKmKcat "6"^^xsd:float ;
+	SER:hasKcatKm "6"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G893A"@en ;
@@ -3142,7 +3150,7 @@ SER:148_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:149_measurement
-	SER:hasKmKcat "7"^^xsd:float ;
+	SER:hasKcatKm "7"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G894S stimulated by beta-casein"@en ;
@@ -3151,7 +3159,7 @@ SER:149_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:150_measurement
-	SER:hasKmKcat "9"^^xsd:float ;
+	SER:hasKcatKm "9"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant W770A stimulated by beta-casein"@en ;
@@ -3160,7 +3168,7 @@ SER:150_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:151_measurement
-	SER:hasKmKcat "12"^^xsd:float ;
+	SER:hasKcatKm "12"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G893A-G894A"@en ;
@@ -3169,7 +3177,7 @@ SER:151_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:152_measurement
-	SER:hasKmKcat "16"^^xsd:float ;
+	SER:hasKcatKm "16"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G893P, mutant K529R"@en ;
@@ -3178,7 +3186,7 @@ SER:152_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:153_measurement
-	SER:hasKmKcat "0.02"^^xsd:float ;
+	SER:hasKcatKm "0.02"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G893A stimulated by beta-casein"@en ;
@@ -3187,7 +3195,7 @@ SER:153_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:154_measurement
-	SER:hasKmKcat "22"^^xsd:float ;
+	SER:hasKcatKm "22"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G893A-G894A stimulated by beta-casein"@en ;
@@ -3196,7 +3204,7 @@ SER:154_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:155_measurement
-	SER:hasKmKcat "24"^^xsd:float ;
+	SER:hasKcatKm "24"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G894A stimulated by beta-casein"@en ;
@@ -3205,7 +3213,7 @@ SER:155_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:156_measurement
-	SER:hasKmKcat "29"^^xsd:float ;
+	SER:hasKcatKm "29"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G894A"@en ;
@@ -3214,7 +3222,7 @@ SER:156_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:157_measurement
-	SER:hasKmKcat "34"^^xsd:float ;
+	SER:hasKcatKm "34"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant K529R stimulated by beta-casein, wild-type enzyme"@en ;
@@ -3223,7 +3231,7 @@ SER:157_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:158_measurement
-	SER:hasKmKcat "39"^^xsd:float ;
+	SER:hasKcatKm "39"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G893P-G894A"@en ;
@@ -3232,7 +3240,7 @@ SER:158_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:159_measurement
-	SER:hasKmKcat "47"^^xsd:float ;
+	SER:hasKcatKm "47"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G893P stimulated by beta-casein"@en ;
@@ -3241,7 +3249,7 @@ SER:159_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:160_measurement
-	SER:hasKmKcat "52"^^xsd:float ;
+	SER:hasKcatKm "52"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "mutant G893P-G894A stimulated by beta-casein"@en ;
@@ -3250,7 +3258,7 @@ SER:160_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:161_measurement
-	SER:hasKmKcat "59"^^xsd:float ;
+	SER:hasKcatKm "59"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	dcterms:description "wild-type enzyme stimulated by beta-casein"@en ;
@@ -3259,7 +3267,7 @@ SER:161_measurement
 	dc:source "BRENDA"^^xsd:string .
 
 SER:213_measurement
-	SER:hasKmKcat "5.8"^^xsd:float ;
+	SER:hasKcatKm "5.8"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;

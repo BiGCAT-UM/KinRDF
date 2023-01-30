@@ -291,10 +291,10 @@ for itemKcatKm in ListTotal:
   if(i[10].strip()=='-')|(i[10].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
-    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKmKcat' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
+    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcatKm' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
     countKcatKm = countKcatKm + 1	
   elif(i[10].strip().isnumeric()):
-    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKmKcat' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
+    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcatKm' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
     countKcatKm = countKcatKm + 1	
   else:
     ListErrors.append("CHECK: Data format for KcatKm data not numeric, check original data for: "+ h[0] + " : " + i[10] + '\n')
@@ -566,7 +566,20 @@ RDF_Kin_data.write("@prefix wdt: <http://www.wikidata.org/prop/direct/> . \n".en
 RDF_Kin_data.write("@prefix sio: <http://semanticscience.org/resource/> . \n".encode()) #Semanticscience Integrated Ontology
 RDF_Kin_data.write("@prefix bioregistry: <https://bioregistry.io/oboinowl:> . \n\n".encode()) #Bioregistry hasDbXref
 
-# #Second, print the NEW prefixes (if needed)
+# #Second, print the information on units (for measurements) SIO_000221 
+## Temp wdt:P2076
+RDF_Kin_data.write("wdt:P2076 sio:SIO_000028 wd:Q25267 . \n".encode()) #Temperature hasUnit degree Celcius (Wikidata Q25267)
+## Km SER:hasKm ; Q61751178
+RDF_Kin_data.write("SER:hasKm sio:SIO_000028 wd:Q105687351 . \n".encode()) #Michaelis constant hasUnit degree millimolar mM (Wikidata Q105687351)
+RDF_Kin_data.write("SER:hasKm sio:SIO_000028 wd:Q61751178 . \n".encode()) #Michaelis constant a Michaelis constant (Wikidata Q61751178)
+## KCat SER:hasKcat
+RDF_Kin_data.write("SER:hasKcat sio:SIO_000028 wd:Q6137407 . \n".encode()) #Turnover Number hasUnit degree reciprocal second s-1 (Wikidata Q6137407)
+RDF_Kin_data.write("SER:hasKcat sio:SIO_000028 wd:Q899698 . \n".encode()) #Turnover Number a Turnover Number (Wikidata Q899698)
+## Kcat/Km SER:hasKcatKm 
+RDF_Kin_data.write("SER:hasKcatKm sio:SIO_000028 wd:Q116486875 . \n".encode()) #Specificity constant hasUnit degree M−1s-1 (Wikidata Q116486875)
+RDF_Kin_data.write("SER:hasKcatKm a wd:Q7575016 . \n\n".encode()) #Specificity constant a Specificity constant (Wikidata Q7575016)
+
+## Ph has no unit.
 
 #Third, print the dictionaries.
 ##ERPX_number			
