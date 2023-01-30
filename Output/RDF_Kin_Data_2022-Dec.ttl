@@ -183,12 +183,6 @@ SER:27
 	sio:SIO_000008  SER:27_measurement ;
 	rdf:type wp:InteractionData .
 
-SER:28
-	dc:identifier SER:17084-P40926-21253 ;
-	sio:SIO_000028  SER:28_substrate, SER:28_enzyme, SER:28_reaction ;
-	sio:SIO_000008  SER:28_measurement ;
-	rdf:type wp:InteractionData .
-
 SER:29
 	dc:identifier SER:17084-P23368-21254 ;
 	sio:SIO_000028  SER:29_substrate, SER:29_enzyme, SER:29_reaction ;
@@ -229,12 +223,6 @@ SER:35
 	dc:identifier SER:16856-P19440-23905 ;
 	sio:SIO_000028  SER:35_substrate, SER:35_enzyme, SER:35_reaction ;
 	sio:SIO_000008  SER:35_measurement ;
-	rdf:type wp:InteractionData .
-
-SER:36
-	dc:identifier SER:15857-O75223-20506 ;
-	sio:SIO_000028  SER:36_substrate, SER:36_enzyme, SER:36_reaction ;
-	sio:SIO_000008  SER:36_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:37
@@ -572,12 +560,6 @@ SER:102
 	sio:SIO_000028  SER:102_substrate, SER:102_enzyme, SER:102_reaction ;
 	sio:SIO_000008  SER:102_measurement ;
 	rh:equation "phosphatidylcholine + a sterol = 1acylglycerophosphocholine + a sterol ester"^^xsd:string ;
-	rdf:type wp:InteractionData .
-
-SER:104
-	dc:identifier SER:77272-P11150-38495 ;
-	sio:SIO_000028  SER:104_substrate, SER:104_enzyme, SER:104_reaction ;
-	sio:SIO_000008  SER:104_measurement ;
 	rdf:type wp:InteractionData .
 
 SER:105
@@ -1049,14 +1031,6 @@ uniprot:Q8IWW8
 	sio:SIO_000028 SER:27_enzyme ;
 	bioregistry:hasDbXref uniprotkb:Q8IWW8.
 
-uniprot:P40926
-	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:1.1.1.37 ;
-	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:28_enzyme ;
-	wp:bdbUniprot uniprot:P40926 ;
-	bioregistry:hasDbXref uniprotkb:P40926.
-
 uniprot:P23368
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
@@ -1077,14 +1051,6 @@ uniprot:P19440
 	sio:SIO_000028 SER:34_enzyme ;
 	sio:SIO_000028 SER:35_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P19440.
-
-uniprot:O75223
-	rdfs:label "GGCT"^^xsd:string ;
-	wp:bdbEnzymeNomenclature ECcode:2.3.2.4 ;
-	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:36_enzyme ;
-	wp:bdbUniprot uniprot:O75223 ;
-	bioregistry:hasDbXref uniprotkb:O75223.
 
 uniprot:O14841
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
@@ -1222,9 +1188,8 @@ uniprot:P11150
 	rdfs:label "HL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.3 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:104_enzyme ;
-	wp:bdbUniprot uniprot:P11150 ;
 	sio:SIO_000028 SER:105_enzyme ;
+	wp:bdbUniprot uniprot:P11150 ;
 	bioregistry:hasDbXref uniprotkb:P11150.
 
 uniprot:O95477
@@ -1344,7 +1309,6 @@ RHEA:47429
 RHEA:21253
 	wp:bdbRhea RHEA:21253 ;
 	sio:SIO_000028 SER:12_reaction ;
-	sio:SIO_000028 SER:28_reaction ;
 	rh::accession RHEA:21253.
 
 RHEA:21254
@@ -1415,11 +1379,6 @@ RHEA:23905
 	sio:SIO_000028 SER:34_reaction ;
 	sio:SIO_000028 SER:35_reaction ;
 	rh::accession RHEA:23905.
-
-RHEA:20506
-	wp:bdbRhea RHEA:20506 ;
-	sio:SIO_000028 SER:36_reaction ;
-	rh::accession RHEA:20506.
 
 RHEA:10349
 	wp:bdbRhea RHEA:10349 ;
@@ -1506,11 +1465,6 @@ SER:95
 	rh:equation "triacylglycerol + H2O = diacylglycerol + a carboxylate"^^xsd:string ;
 	rdf:type wp:InteractionData .
 
-RHEA:38495
-	wp:bdbRhea RHEA:38495 ;
-	sio:SIO_000028 SER:104_reaction ;
-	rh::accession RHEA:38495.
-
 RHEA:12046
 	wp:bdbRhea RHEA:12046 ;
 	sio:SIO_000028 SER:105_reaction ;
@@ -1531,24 +1485,20 @@ RHEA:35750
 	sio:SIO_000028 SER:173_reaction ;
 	rh::accession RHEA:35750.
 
-SER:177
-	rh:equation "ATP + steroidogenic acute regulatory protein = ADP + phosphorylated steroidogenic acute regulatory protein"^^xsd:string ;
-	rdf:type wp:InteractionData .
+RHEA:24078
+	wp:bdbRhea RHEA:24078 ;
+	sio:SIO_000028 SER:179_reaction ;
+	rh::accession RHEA:24078.
 
-RHEA:24080
-	wp:bdbRhea RHEA:24080 ;
-	sio:SIO_000028 SER:181_reaction ;
-	rh::accession RHEA:24080.
+RHEA:24082
+	wp:bdbRhea RHEA:24082 ;
+	sio:SIO_000028 SER:183_reaction ;
+	rh::accession RHEA:24082.
 
-RHEA:24084
-	wp:bdbRhea RHEA:24084 ;
-	sio:SIO_000028 SER:185_reaction ;
-	rh::accession RHEA:24084.
-
-RHEA:24088
-	wp:bdbRhea RHEA:24088 ;
-	sio:SIO_000028 SER:189_reaction ;
-	rh::accession RHEA:24088.
+RHEA:24086
+	wp:bdbRhea RHEA:24086 ;
+	sio:SIO_000028 SER:187_reaction ;
+	rh::accession RHEA:24086.
 
 RHEA:50237
 	wp:bdbRhea RHEA:50237 ;
@@ -1640,13 +1590,13 @@ SER:169
 SER:173
 	rdf:type wp:InteractionData .
 
-SER:181
+SER:179
 	rdf:type wp:InteractionData .
 
-SER:185
+SER:183
 	rdf:type wp:InteractionData .
 
-SER:189
+SER:187
 	rdf:type wp:InteractionData .
 
 SER:193
@@ -1715,7 +1665,6 @@ CHEBI:17084
 	sio:SIO_000028 SER:12 ;
 	sio:SIO_000028 SER:13 ;
 	sio:SIO_000028 SER:14 ;
-	sio:SIO_000028 SER:28 ;
 	sio:SIO_000028 SER:29 ;
 	sio:SIO_000028 SER:30 ;
 	sio:SIO_000028 SER:31 ;
@@ -1742,10 +1691,6 @@ CHEBI:16856
 	sio:SIO_000028 SER:34 ;
 	sio:SIO_000028 SER:35 ;
 	wp:bdbChEBI 16856.
-
-CHEBI:15857
-	sio:SIO_000028 SER:36 ;
-	wp:bdbChEBI 15857.
 
 CHEBI:16010
 	sio:SIO_000028 SER:37 ;
@@ -1837,10 +1782,6 @@ CHEBI:11750
 	sio:SIO_000028 SER:102 ;
 	wp:bdbChEBI 11750.
 
-CHEBI:77272
-	sio:SIO_000028 SER:104 ;
-	wp:bdbChEBI 77272.
-
 CHEBI:132933
 	sio:SIO_000028 SER:105 ;
 	wp:bdbChEBI 132933.
@@ -1910,21 +1851,17 @@ CHEBI:16113
 	sio:SIO_000028 SER:173 ;
 	wp:bdbChEBI 16113.
 
-CHEBI:28750
-	sio:SIO_000028 SER:181 ;
-	sio:SIO_000028 SER:225 ;
-	wp:bdbChEBI 28750.
-
-CHEBI:28689
-	sio:SIO_000028 SER:185 ;
-	sio:SIO_000028 SER:189 ;
-	wp:bdbChEBI 28689.
-
 CHEBI:16581
+	sio:SIO_000028 SER:179 ;
 	sio:SIO_000028 SER:193 ;
 	sio:SIO_000028 SER:197 ;
 	sio:SIO_000028 SER:201 ;
 	wp:bdbChEBI 16581.
+
+CHEBI:28689
+	sio:SIO_000028 SER:183 ;
+	sio:SIO_000028 SER:187 ;
+	wp:bdbChEBI 28689.
 
 CHEBI:17026
 	sio:SIO_000028 SER:205 ;
@@ -1935,6 +1872,10 @@ CHEBI:17026
 	sio:SIO_000028 SER:229 ;
 	sio:SIO_000028 SER:233 ;
 	wp:bdbChEBI 17026.
+
+CHEBI:28750
+	sio:SIO_000028 SER:225 ;
+	wp:bdbChEBI 28750.
 
 CHEBI:17252
 	sio:SIO_000028 SER:237 ;
@@ -1961,7 +1902,7 @@ SER:1_measurement
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:18280251 ;
-	dc:source "Brenda: 668640"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:2_measurement
 	SER:hasKm  "1.69"^^xsd:float ;
@@ -1969,7 +1910,7 @@ SER:2_measurement
 	dcterms:description "ASPA isolated from cytosol"@en ;
 	wp:organismName "Mus musculus"^^xsd:string ;
 	dcterms:references pubmed:17254025 ;
-	dc:source "Brenda: 681524"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:3_measurement
 	SER:hasKm  "3"^^xsd:float ;
@@ -1977,7 +1918,7 @@ SER:3_measurement
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:16229482 ;
-	dc:source "Brenda:713046"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:4_measurement
 	SER:hasKm  "0.0047"^^xsd:float ;
@@ -2060,7 +2001,7 @@ SER:10_measurement
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:11705404 ;
-	dc:source "Brenda:713046"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:11_measurement
 	SER:hasKm  "0.0026"^^xsd:float ;
@@ -2071,7 +2012,7 @@ SER:11_measurement
 	dcterms:description "10 mM potassium phosphate"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:11024031 ;
-	dc:source "Sabio: 2418"^^xsd:string .
+	dc:source "Sabio"^^xsd:string .
 
 SER:12_measurement
 	SER:hasKm  "0.8"^^xsd:float ;
@@ -2079,13 +2020,13 @@ SER:12_measurement
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:16005139 ;
-	dc:source "Brenda: 657168"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:13_measurement
 	SER:hasKm  "1.7"^^xsd:float ;
 	SER:hasPh "7,2"^^xsd:float ;
 	dcterms:description "reaction with alpha-o-oglutarate and NADH "@en ;
-	dc:source "Brenda:389902"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:14_measurement
 	SER:hasKm  "584"^^xsd:float ;
@@ -2095,7 +2036,7 @@ SER:14_measurement
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "cofactor o-idized 2,6-dichlorophenolindophenol "@en ;
 	dcterms:references pubmed:19586914 ;
-	dc:source "Brenda: 698932"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:15_measurement
 	SER:hasKm  "17"^^xsd:float ;
@@ -2151,13 +2092,13 @@ SER:24_measurement
 	dcterms:description "0,009 mM; in overexpressed HEK cells; in presence of 0,1 mM 4-hydroxybutyrate "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:16616524 ;
-	dc:source "Brenda: 286147"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:25_measurement
 	SER:hasKm  "18"^^xsd:float ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dcterms:references pubmed:3182820 ;
-	dc:source "Brenda: 697277"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:26_measurement
 	SER:hasKm  "77"^^xsd:float ;
@@ -2165,7 +2106,7 @@ SER:26_measurement
 	dcterms:description "Recombinant enzyme"@en ;
 	wp:organismName "Mus musculus"^^xsd:string ;
 	dcterms:references pubmed:16616524 ;
-	dc:source "Brenda:664967"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:27_measurement
 	SER:hasKm  "85"^^xsd:float ;
@@ -2174,7 +2115,7 @@ SER:27_measurement
 	dcterms:description "0,007 mM"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
 	dcterms:references pubmed:16616524 ;
-	dc:source "Brenda: 664967"^^xsd:string .
+	dc:source "Brenda"^^xsd:string .
 
 SER:29_measurement
 	SER:hasKm  "1.4"^^xsd:float ;
@@ -2184,7 +2125,7 @@ SER:29_measurement
 	dcterms:description "in vitro; wildtype; different concentration"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:15182181 ;
-	dc:source "Sabio: 141"^^xsd:string .
+	dc:source "Sabio"^^xsd:string .
 
 SER:30_measurement
 	SER:hasKm  "130"^^xsd:float ;
@@ -2194,7 +2135,7 @@ SER:30_measurement
 	dcterms:description "in vitro; wildtype; different concentration"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:15182181 ;
-	dc:source "Sabio: 141"^^xsd:string .
+	dc:source "Sabio"^^xsd:string .
 
 SER:31_measurement
 	SER:hasKm  "6.4"^^xsd:float ;
@@ -2204,7 +2145,7 @@ SER:31_measurement
 	dcterms:description "in vitro; wildtype; different concentration"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:15182181 ;
-	dc:source "Sabio: 141"^^xsd:string .
+	dc:source "Sabio"^^xsd:string .
 
 SER:32_measurement
 	SER:hasKm  "0.68"^^xsd:float ;
@@ -2693,25 +2634,27 @@ SER:169_measurement
 	dcterms:references pubmed:285420 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:181_measurement
-	SER:hasKm  "0.0035"^^xsd:float ;
+SER:179_measurement
+	SER:hasKm  "0.0028"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "27"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:12205101 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:185_measurement
-	SER:hasKm  "0.0037"^^xsd:float ;
-	SER:hasKcatKm "0.0073"^^xsd:float ;
+SER:183_measurement
+	SER:hasKm  "0.0007"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:17624763 ;
+	dc:source "Brenda"^^xsd:string .
+
+SER:187_measurement
+	SER:hasKm  "0.0061"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "27"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15291757 ;
-	dc:source "Brenda"^^xsd:string .
-
-SER:189_measurement
-	SER:hasKm  "47"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12530651 ;
+	dcterms:references pubmed:15797861 ;
 	dc:source "Brenda"^^xsd:string .
 
 SER:193_measurement
@@ -3274,11 +3217,6 @@ SER:213_measurement
 	dcterms:references pubmed:28684414 ;
 	dc:source "Brenda"^^xsd:string .
 
-SER:28_measurement
-	SER:hasPh "7,4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dc:source "Unknown"^^xsd:string .
-
 SER:55_measurement
 	SER:hasPh "8.2"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
@@ -3329,19 +3267,4 @@ SER:82_measurement
 SER:88_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dc:source "Brenda"^^xsd:string .
-
-SER:36_measurement
-	dc:source "Unknown"^^xsd:string .
-
-SER:104_measurement
-	dc:source "Unknown"^^xsd:string .
-
-SER:105_measurement
-	dc:source "Unknown"^^xsd:string .
-
-SER:177_measurement
-	dc:source "Unknown"^^xsd:string .
-
-SER:261_measurement
-	dc:source "Unknown"^^xsd:string .
 

@@ -73,6 +73,23 @@ for item in ListTotal:
 	a = item.split('\t')
 	if (a[0].strip()=='-')|(a[4].strip()=='-')|(a[6].strip()=='-')|(a[7].strip()=='-')|(a[0].strip()=='NA')|(a[4].strip()=='NA')|( a[6].strip()=='NA')|(a[7].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  ListTotal.remove(item)
+	  
+##Remove lines without any provenance (either PMID or Database ar needed)
+for item in ListTotal:
+	a = item.split('\t')
+	if ((a[15].strip()=='-')&(a[16].strip()=='-'))|((a[15].strip()=='-')&(a[16].strip()=='NA'))|((a[15].strip()=='-')&(a[16].strip()=='')): #Check if both values are missing!!
+	  ListTotal.remove(item)
+
+for item in ListTotal:
+	a = item.split('\t')	  
+	if ((a[15].strip()=='NA')&(a[16].strip()=='NA'))|((a[15].strip()=='NA')&(a[16].strip()=='-'))|((a[15].strip()=='NA')&(a[16].strip()=='')):  #Check if both values are NA!!
+	  ListTotal.remove(item)
+
+for item in ListTotal:
+	a = item.split('\t')
+	if ((a[15].strip()=='')&(a[16].strip()==''))|((a[15].strip()=='')&(a[16].strip()=='-'))|((a[15].strip()=='')&(a[16].strip()=='NA')):  #Check if both values are empty!!
+	  ListTotal.remove(item)
+	  
 
 ##Print total number of lines found in files:
 ListQC.append("Total lines read: "+ str(len(ListTotal)) + '\n')
@@ -385,6 +402,12 @@ for itemOrganism in ListTotal:
 
 ListQC.append("Data format for Organisms correctly loaded for " + str(countOrganisms) + " values. \n\n") 
 
+##Provenance can come from two sources; a PMID, a database name, or both.
+##At least one is needed to support the data  in the RDF.
+##TODO: check for both, if only PMID this should be the concluding statement.
+
+##TODO: PMID IDs should be numeric only!
+
 #[15]=PMID	##--> Add to measurement	
 countRefs = 0
 for itemPMID in ListTotal:
@@ -402,11 +425,10 @@ for itemPMID in ListTotal:
 	else:
 		ListErrors.append("Data format for PubMed IDs unknown, check original data for: " + k[0] + ' : ' + k[15])
 
-ListQC.append("Data format for Organisms correctly loaded for " + str(countRefs) + " values. \n\n")
-			
-##TODO: check if this column is empty, otherwise data should not be added!
+ListQC.append("Data format for PMIDs Provenance correctly loaded for " + str(countRefs) + " values. \n\n")
 			
 #[16]=Database ##--> Add to measurement				
+##TODO: add check against list of supported databases
 countProv = 0
 for itemDatabase in ListTotal:
 	l = itemDatabase.split('\t')
@@ -415,6 +437,8 @@ for itemDatabase in ListTotal:
 	else:
 	  ListDatabase.append(l[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + l[16].strip( ) + '"^^xsd:string')
 	  countProv = countProv + 1
+
+ListQC.append("Data format for Database Provenance correctly loaded for " + str(countProv) + " values. \n\n")
 
 AllDict = {}			
 
