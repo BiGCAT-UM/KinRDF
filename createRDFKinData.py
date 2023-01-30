@@ -419,8 +419,9 @@ for itemPMID in ListTotal:
 	  countRefs = countRefs + 1
 	elif ';' in k[15]:
 		k2 = k[15].split(';') ##Split multiple references in one line.
-		k2 = [x.strip(' ') for x in k2]
-		ListPMID.append(k[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + ', '.join(k2))
+		k2 = [x.strip(' ') for x in k2] ##strip whitespaces (if existing)
+		k2 = ['pubmed:' + s for s in k2] ##add prefix for each item in list
+		ListPMID.append(k[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " " + ', '.join(k2))
 		countRefs = countRefs + 1
 	else:
 		ListErrors.append("Data format for PubMed IDs unknown, check original data for: " + k[0] + ' : ' + k[15])
@@ -428,16 +429,28 @@ for itemPMID in ListTotal:
 ListQC.append("Data format for PMIDs Provenance correctly loaded for " + str(countRefs) + " values. \n\n")
 			
 #[16]=Database ##--> Add to measurement				
-##TODO: add check against list of supported databases
+ListSupportedDatabases = ['brenda', 'sabio', 'guide to pharmacology', 'strenda', 'uniprot']
+
 countProv = 0
 for itemDatabase in ListTotal:
 	l = itemDatabase.split('\t')
 	if(l[16].strip()=='-')|(l[16].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  continue
-	else:
-	  ListDatabase.append(l[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + l[16].strip( ) + '"^^xsd:string')
+	elif(all(x.isalpha() or x.isspace() for x in l[16])): ##Check if database names only contains letters (or spaces).
+	  if(l[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
+	    ListDatabase.append(l[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + l[16].strip( ).lower() + '"^^xsd:string')
+	    countProv = countProv + 1
+	  else:
+	    ListErrors.append("CHECK: Name for Database Provenance is not recognized, check original data for: "+ l[0] + " : " + l[16] + '\n')
+	elif ';' in l[16]:
+	  l2 = l[16].split(';') ##Split multiple references in one line.
+	  l2 = [x.strip(' ').lower() for x in l2] ##strip whitespaces (if existing)
+	  l2 = ['"' + t + '"^^xsd:string' for t in l2] ##add suffix for each item in list
+	  ListDatabase.append(l[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(l2))
 	  countProv = countProv + 1
-
+	else:
+	  ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ l[0] + " : " + l[16] + '\n')
+	  
 ListQC.append("Data format for Database Provenance correctly loaded for " + str(countProv) + " values. \n\n")
 
 AllDict = {}			
