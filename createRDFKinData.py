@@ -426,8 +426,6 @@ for itemProv in ListTotal:
 	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
 	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
 	    countProv = countProv + 1
-	  else:
-	    ListErrors.append("CHECK: Name for Database Provenance is not recognized, check original data for: "+ p[0] + " : " + p[16] + '\n')
 	##Option 2: Pubmed contains 1 value; database contains more than 1
 	elif (p[15].isnumeric())&(';' in p[16]): ##Check if pubmed ID is numeric and database name contains multiple values semicolon separated.
 	  ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
@@ -439,8 +437,6 @@ for itemProv in ListTotal:
 	      p2 = ['"' + t + '"^^xsd:string' for t in p2] ##add suffix for each item in list
 	      ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(p2))
 	      countProv = countProv + 1
-	    else:
-	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')
 	##Option 3: Pubmed contains more than 1 value, database name contains 1 value
 	elif (';' in p[15])&(all(x.isalpha() or x.isspace() for x in p[16])):
 	  p3 = p[15].split(';') ##Split multiple references in one line.
@@ -450,8 +446,6 @@ for itemProv in ListTotal:
 	      p3 = ['pubmed:' + s for s in p3] ##add prefix for each item in list
 	      ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " " + ', '.join(p3))
 	      countRefs = countRefs + 1
-	    else:
-	      ListErrors.append("Data format for PubMed IDs unknown, check original data for: "+ p[0] + " : " + p[15] + '\n')
 	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
 	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
 	    countProv = countProv + 1
