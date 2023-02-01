@@ -1,5 +1,5 @@
 EnzymePW	ApprovedEnzymeName	ECnumber	Uniprot 	Ensembl	RheaID	CHEBIID	Km (mM)	Kcat (s-1)	Kcat/Km (M-1s-1)	pH	Temperature (Celcius)	AdditionalConditions	Organism	PMID 	Database
-GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.68	-	-	-	-	-	Mus musculus	36916	BRENDA
+GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.68	-	-	-	-	-	Mus musculus	36916	-
 GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.0057	-	-	-	-	-	Sus scrofa	6126192	BRENDA
 GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.0105	-	-	7.4	37	isoform GGT5. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl	Homo sapiens	21447318	BRENDA
 GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.0106	-	-	7.4	37	isoform GGT1. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl	Homo sapiens	21447318	BRENDA
