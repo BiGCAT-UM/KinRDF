@@ -1,4 +1,4 @@
-EnzymePW	ApprovedEnzymeName 	ECnumber	UniProt	Ensembl	RheaID	CHEBIID	Km	Kcat 	Kcat/Km	pH	Temperature	AdditionalConditions	Species 	PMID	Database 
+EnzymePW	ApprovedEnzymeName 	ECnumber	UniProt	Ensembl	RheaID	CHEBIID	Km (mM)	Kcat (s-1)	Kcat/Km (M-1s-1)	pH	Temperature (Celcius)	AdditionalConditions	Organism	PMID 	Database
 LPL	lipoprotein lipase	3.1.1.34	P06863	-	triacylglycerol + H2O = diacylglycerol + a carboxylate	59238	1.12	-	-	-	-	-	Gallus gallus	11249004	BRENDA
 LPL	lipoprotein lipase	3.1.1.34	P06865	-	triacylglycerol + H2O = diacylglycerol + a carboxylate	59238	1.77	-	-	-	-	-	Rattus norvegicus	3523161	BRENDA
 LPL	lipoprotein lipase	3.1.1.34	P06866	-	triacylglycerol + H2O = diacylglycerol + a carboxylate	59238	0.075	-	-	-	-	soluble enzyme ; Km range 0,075 - 0,083	Rattus norvegicus	4370169	BRENDA
