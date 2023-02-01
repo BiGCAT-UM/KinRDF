@@ -44,6 +44,7 @@ ListAdditionalConditions = []
 ListOrganism = []
 ListPMID = []
 ListDatabase = []
+ListProv = []
 ListQC = []
 ListErrors = []
 ListCuration = [] 
@@ -407,48 +408,89 @@ ListQC.append("Data format for Organisms correctly loaded for " + str(countOrgan
 ##TODO: check for both, if only PMID this should be the concluding statement.
 
 #[15]=PMID	##--> Add to measurement	
-countRefs = 0
-for itemPMID in ListTotal:
-	k = itemPMID.split('\t')
-	if(k[15].strip()=='-')|(k[15].strip()=='NA')|(k[16].strip()=='-')|(k[16].strip()=='NA'): #Check if one of the necessary values is missing!!
-	  continue
-	if k[15].isnumeric():
-	  ListPMID.append(k[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + k[15].strip( ))
-	  countRefs = countRefs + 1
-	elif ';' in k[15]:
-		k2 = k[15].split(';') ##Split multiple references in one line.
-		k2 = [x.strip(' ') for x in k2] ##strip whitespaces (if existing)
-		k2 = ['pubmed:' + s for s in k2] ##add prefix for each item in list
-		ListPMID.append(k[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " " + ', '.join(k2))
-		countRefs = countRefs + 1
-	else:
-		ListErrors.append("Data format for PubMed IDs unknown, check original data for: " + k[0] + ' : ' + k[15])
-
-ListQC.append("Data format for PMIDs Provenance correctly loaded for " + str(countRefs) + " values. \n\n")
-			
 #[16]=Database ##--> Add to measurement				
 ListSupportedDatabases = ['brenda', 'sabio', 'guide to pharmacology', 'strenda', 'uniprot']
 
+countRefs = 0
 countProv = 0
-for itemDatabase in ListTotal:
-	l = itemDatabase.split('\t')
-	if(l[16].strip()=='-')|(l[16].strip()=='NA'): #Check if one of the necessary values is missing!!
+
+for itemProv in ListTotal:
+	p = itemProv.split('\t')
+	if((p[15].strip()=='-')|(p[15].strip()=='NA')|(p[15].strip()==''))&((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()=='')): ## if both are missing, do not include data.
 	  continue
-	elif(all(x.isalpha() or x.isspace() for x in l[16])): ##Check if database names only contains letters (or spaces).
-	  if(l[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
-	    ListDatabase.append(l[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + l[16].strip( ).lower() + '"^^xsd:string')
+	####First scenario, both values are available:
+	##Option 1: Pubmed contains 1 value; database name contains 1 value
+	elif (p[15].isnumeric())&(all(x.isalpha() or x.isspace() for x in p[16])): ##Check if pubmed ID is numeric and if database names only contains letters (or spaces).:
+	  ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
+	  countRefs = countRefs + 1
+	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
+	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
 	    countProv = countProv + 1
 	  else:
-	    ListErrors.append("CHECK: Name for Database Provenance is not recognized, check original data for: "+ l[0] + " : " + l[16] + '\n')
-	elif ';' in l[16]:
-	  l2 = l[16].split(';') ##Split multiple references in one line.
+	    ListErrors.append("CHECK: Name for Database Provenance is not recognized, check original data for: "+ p[0] + " : " + p[16] + '\n')
+	##Option 2: Pubmed contains 1 value; database contains more than 1
+	elif (p[15].isnumeric())&(';' in p[16]): ##Check if pubmed ID is numeric and database name contains multiple values semicolon separated.
+	  ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
+	  countRefs = countRefs + 1
+	  p2 = p[16].split(';') ##Split multiple references in one line.
+	  p2 = [x.strip(' ').lower() for x in p2] ##strip whitespaces (if existing)
+	  for z in [0,(len(p2)-1)]:
+	    if(p2[z] in ListSupportedDatabases): ##check for latin name first
+	      p2 = ['"' + t + '"^^xsd:string' for t in p2] ##add suffix for each item in list
+	      ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(p2))
+	      countProv = countProv + 1
+	    else:
+	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')
+	##Option 3: Pubmed contains more than 1 value, database name contains 1 value
+	elif (';' in p[15])&(all(x.isalpha() or x.isspace() for x in p[16])):
+	  p3 = p[15].split(';') ##Split multiple references in one line.
+	  p3 = [x.strip(' ') for x in p3] ##strip whitespaces (if existing)
+	  for y in [0,(len(p3)-1)]:
+	    if(p3[y].isnumeric()):
+	      p3 = ['pubmed:' + s for s in p3] ##add prefix for each item in list
+	      ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " " + ', '.join(p3))
+	      countRefs = countRefs + 1
+	    else:
+	      ListErrors.append("Data format for PubMed IDs unknown, check original data for: "+ p[0] + " : " + p[15] + '\n')
+	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
+	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
+	    countProv = countProv + 1
+	  else:
+	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')
+	##Option 4: Pubmed contains more than 1 value, database name contains more than 1 value    
+	elif (';' in p[15])&(';' in p[16]):
+	  print("Done") ##TODO:update with combined if statement for multiple values!
+	####Second scenario, only pubmed is available:  
+	##Option 1: Pubmed contains 1 value; database name contains 0 value
+	elif (p[15].isnumeric())&((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()=='')):
+	  ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
+	  countRefs = countRefs + 1
+	##Option 2: Pubmed contains more than 1 value, database name contains 0 value
+	elif(';' in p[15]):
+	  k2 = p[15].split(';') ##Split multiple references in one line.
+	  k2 = [x.strip(' ') for x in k2] ##strip whitespaces (if existing)
+	  k2 = ['pubmed:' + s for s in k2] ##add prefix for each item in list
+	  ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " " + ', '.join(k2))
+	  countRefs = countRefs + 1
+	####Third scenario, only Database name is available:  
+	##Option 1: Pubmed contains 0 value; database name contains 1 value
+	elif(all(x.isalpha() or x.isspace() for x in p[16])):
+	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
+	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
+	    countProv = countProv + 1
+	  else:
+	    ListErrors.append("CHECK: Name for Database Provenance is not recognized, check original data for: "+ p[0] + " : " + p[16] + '\n')
+	##Option 2: Pubmed contains 0 value; database name contains more than 1 value
+	elif(';' in p[16]):
+	  l2 = p[16].split(';') ##Split multiple references in one line.
 	  l2 = [x.strip(' ').lower() for x in l2] ##strip whitespaces (if existing)
 	  l2 = ['"' + t + '"^^xsd:string' for t in l2] ##add suffix for each item in list
-	  ListDatabase.append(l[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(l2))
+	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(l2))
 	  countProv = countProv + 1
 	else:
-	  ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ l[0] + " : " + l[16] + '\n')
-	  
+	  ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
+
+ListQC.append("Data format for PMIDs Provenance correctly loaded for " + str(countRefs) + " values. \n\n")
 ListQC.append("Data format for Database Provenance correctly loaded for " + str(countProv) + " values. \n\n")
 
 AllDict = {}			
@@ -533,7 +575,14 @@ for itemListPMID in ListPMID:
 	AllDict[key].append(val + ' ;')		
 	
 ##Last item should end with a .
+##Scenario 1 and 3: both PMID and Database name are available as provenance; or only database name.
 for itemListDatabase in ListDatabase:
+  (key, val) = itemListDatabase.strip('\n').split('\t')
+  AllDict.setdefault(key, [])
+  AllDict[key].append(val + ' .')
+  
+##Scenario 2: only PMID is available as provenance (no database)
+for itemListDatabase in ListProv:
   (key, val) = itemListDatabase.strip('\n').split('\t')
   AllDict.setdefault(key, [])
   AllDict[key].append(val + ' .')		
@@ -573,9 +622,6 @@ open('RDF_Kin_Data_2022-Dec.ttl', 'w').close()
 
 # # open a file for writing:
 RDF_Kin_data = open('RDF_Kin_Data_2022-Dec.ttl', 'wb')
-
-# # Clean all content in the file
-#TODO
 
 # #First, print the prefixes from existing databases
 ##.encode() needed to write to files in Python 3.x (compared to 2.x)
@@ -653,8 +699,6 @@ RDF_Kin_data_QC.write("\nPotential Curation Required: \n\n".encode())
 if len(ListCuration) >0:
   for item in ListCuration:
     RDF_Kin_data_QC.write(item.encode())
-    
-
 
 #Close this file as well
 RDF_Kin_data_QC.close()

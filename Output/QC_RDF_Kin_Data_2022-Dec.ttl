@@ -60,6 +60,8 @@ CHECK: Name for Organism is not recognized, check original data for: SER:90 : Or
 CHECK: Name for Organism is not recognized, check original data for: SER:91 : Oryctolagus cuniculus
 CHECK: Name for Organism is not recognized, check original data for: SER:92 : Oryctolagus cuniculus
 CHECK: Name for Organism is not recognized, check original data for: SER:254 : Felis catus
+Data format for PubMed IDs unknown, check original data for: SER:46 : 1181279;4823446;10078874
+CHECK: Name for Database Provenance contains incorrect symbols, check original data for: SER:99 : BRENDA; UniProt 
 
 Potential Curation Required: 
 
