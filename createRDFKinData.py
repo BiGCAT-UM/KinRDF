@@ -405,7 +405,8 @@ ListQC.append("Data format for Organisms correctly loaded for " + str(countOrgan
 
 ##Provenance can come from two sources; a PMID, a database name, or both.
 ##At least one is needed to support the data  in the RDF.
-##TODO: check for both, if only PMID this should be the concluding statement.
+
+##TODO: still add measurement data for items above, if pubmed ID is available but no database name.
 
 #[15]=PMID	##--> Add to measurement	
 #[16]=Database ##--> Add to measurement				
@@ -463,6 +464,7 @@ for itemProv in ListTotal:
 	elif(';' in p[15]):
 	  k2 = p[15].split(';') ##Split multiple references in one line.
 	  k2 = [x.strip(' ') for x in k2] ##strip whitespaces (if existing)
+	  ##TODO: build in test to see if all values are numeric!
 	  k2 = ['pubmed:' + s for s in k2] ##add prefix for each item in list
 	  ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " " + ', '.join(k2))
 	  countRefs = countRefs + 1

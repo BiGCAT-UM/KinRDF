@@ -3346,12 +3346,6 @@ SER:31_measurement
 	dcterms:references pubmed:15182181 ;
 	dc:source "sabio"^^xsd:string .
 
-SER:32_measurement
-	SER:hasKm  "0.68"^^xsd:float ;
-	wp:organismName "Mus musculus"^^xsd:string ;
-	dcterms:references pubmed:36916 ;
-	dc:source "brenda"^^xsd:string .
-
 SER:33_measurement
 	SER:hasKm  "0.0057"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
@@ -5036,4 +5030,7 @@ SER:178_measurement
 
 SER:85_measurement
 	dc:source "brenda"^^xsd:string .
+
+SER:32_measurement
+	dcterms:references pubmed:36916 .
 

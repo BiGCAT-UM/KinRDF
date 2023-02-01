@@ -14,7 +14,7 @@ Data format for rh:equation correctly loaded for 76 reaction formulas.
 
 Data format for wp:bdbChEBI correctly loaded for 250 substrate IDs. 
 
-Data format for Km correctly loaded for 162 values. 
+Data format for Km correctly loaded for 161 values. 
 
 Data format for Kcat correctly loaded for 49 values. 
 
@@ -26,11 +26,11 @@ Data format for Temperature correctly loaded for 152 values.
 
 Data format for Additional Conditions correctly loaded for 131 values. 
 
-Data format for Organisms correctly loaded for 256 values. 
+Data format for Organisms correctly loaded for 255 values. 
 
 Data format for PMIDs Provenance correctly loaded for 239 values. 
 
-Data format for Database Provenance correctly loaded for 248 values. 
+Data format for Database Provenance correctly loaded for 247 values. 
 
 
 Reported Errors in Data: 
