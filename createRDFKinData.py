@@ -225,7 +225,7 @@ for itemRheaID in ListTotal:
 	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh::accession' + ' RHEA:' + g[6].strip( ) + '.' )	
 	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  countRhea = countRhea +1
-	elif ('+' in g[6])&('=' in g[6]): #if no Rhea is available, but there is a reaction equation.
+	elif ('+' in g[6])|('=' in g[6]): #if no Rhea is available, but there is a reaction equation.
 	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!
 	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  countEquation = countEquation + 1   
