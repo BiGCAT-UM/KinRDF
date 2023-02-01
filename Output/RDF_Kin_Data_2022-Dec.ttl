@@ -3098,7 +3098,7 @@ CHEBI:17347
 SER:1_measurement
 	SER:hasKm  "163"^^xsd:float ;
 	SER:hasKcat  "37.5"^^xsd:float ;
-	SER:hasPh "7,4"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:18280251 ;
@@ -3114,7 +3114,7 @@ SER:2_measurement
 
 SER:3_measurement
 	SER:hasKm  "3"^^xsd:float ;
-	SER:hasPh "7,5"^^xsd:float ;
+	SER:hasPh "7.5"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:16229482 ;
@@ -3123,8 +3123,7 @@ SER:3_measurement
 SER:4_measurement
 	SER:hasKm  "0.0047"^^xsd:float ;
 	SER:hasKcat  "5.6"^^xsd:float ;
-	SER:hasPh "6,5"^^xsd:float ;
-	wdt:P2076  ""^^xsd:float ;
+	SER:hasPh "6.5"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:17176108 ;
 	dc:source "brenda"^^xsd:string .
@@ -3132,7 +3131,7 @@ SER:4_measurement
 SER:5_measurement
 	SER:hasKm  "0.0064"^^xsd:float ;
 	SER:hasKcat  "6.7"^^xsd:float ;
-	SER:hasPh "7,6"^^xsd:float ;
+	SER:hasPh "7.6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "recombinant wild-type enzyme, electron acceptor is electron transfer flavoprotein "@en ;
 	wp:organismName "Bos taurus"^^xsd:string ;
@@ -3151,7 +3150,7 @@ SER:5_measurement
 SER:6_measurement
 	SER:hasKm  "0.0074"^^xsd:float ;
 	SER:hasKcat  "4.8"^^xsd:float ;
-	SER:hasPh "7,6"^^xsd:float ;
+	SER:hasPh "7.6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "mutant A421T; electron acceptor is electron transfer flavoprotein "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3161,7 +3160,7 @@ SER:6_measurement
 SER:7_measurement
 	SER:hasKm  "0.0081"^^xsd:float ;
 	SER:hasKcat  "9.4"^^xsd:float ;
-	SER:hasPh "7,6"^^xsd:float ;
+	SER:hasPh "7.6"^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	wp:organismName "Canis familiaris"^^xsd:string ;
 	wp:organismName "Danio rerio"^^xsd:string ;
@@ -3178,7 +3177,7 @@ SER:7_measurement
 SER:8_measurement
 	SER:hasKm  "0.0123"^^xsd:float ;
 	SER:hasKcat  "4.6"^^xsd:float ;
-	SER:hasPh "7,6"^^xsd:float ;
+	SER:hasPh "7.6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "mutant A421V; electron acceptor is electron transfer flavoprotein "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3188,7 +3187,7 @@ SER:8_measurement
 SER:9_measurement
 	SER:hasKm  "0.0261"^^xsd:float ;
 	SER:hasKcat  "4.9"^^xsd:float ;
-	SER:hasPh "7,6"^^xsd:float ;
+	SER:hasPh "7.6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "mutant A433V; electron acceptor is electron transfer flavoprotein "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3197,7 +3196,7 @@ SER:9_measurement
 
 SER:10_measurement
 	SER:hasKm  "4"^^xsd:float ;
-	SER:hasPh "7,5"^^xsd:float ;
+	SER:hasPh "7.5"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:11705404 ;
@@ -3207,7 +3206,7 @@ SER:11_measurement
 	SER:hasKm  "0.0026"^^xsd:float ;
 	SER:hasKcat  "9"^^xsd:float ;
 	SER:hasKcatKm "3.5"^^xsd:float ;
-	SER:hasPh "7,6"^^xsd:float ;
+	SER:hasPh "7.6"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "10 mM potassium phosphate"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3224,7 +3223,7 @@ SER:12_measurement
 
 SER:13_measurement
 	SER:hasKm  "1.7"^^xsd:float ;
-	SER:hasPh "7,2"^^xsd:float ;
+	SER:hasPh "7.2"^^xsd:float ;
 	dcterms:description "reaction with alpha-o-oglutarate and NADH "@en ;
 	dc:source "brenda"^^xsd:string .
 
@@ -3232,7 +3231,7 @@ SER:14_measurement
 	SER:hasKm  "584"^^xsd:float ;
 	SER:hasKcat  "0.8"^^xsd:float ;
 	SER:hasKcatKm "1.37"^^xsd:float ;
-	SER:hasPh "8,75"^^xsd:float ;
+	SER:hasPh "8.75"^^xsd:float ;
 	wdt:P2076  "25"^^xsd:float ;
 	dcterms:description "cofactor o-idized 2,6-dichlorophenolindophenol "@en ;
 	dcterms:references pubmed:19586914 ;
@@ -3265,13 +3264,13 @@ SER:18_measurement
 
 SER:19_measurement
 	SER:hasKm  "304"^^xsd:float ;
-	SER:hasPh "6,5"^^xsd:float ;
+	SER:hasPh "6.5"^^xsd:float ;
 	dcterms:description "reverse reaction"@en ;
 	dc:source "brenda"^^xsd:string .
 
 SER:20_measurement
 	SER:hasKm  "398"^^xsd:float ;
-	SER:hasPh "6,5"^^xsd:float ;
+	SER:hasPh "6.5"^^xsd:float ;
 	dcterms:description "reverse reaction"@en ;
 	dc:source "brenda"^^xsd:string .
 
@@ -3302,7 +3301,7 @@ SER:25_measurement
 
 SER:26_measurement
 	SER:hasKm  "77"^^xsd:float ;
-	SER:hasPh "7,1"^^xsd:float ;
+	SER:hasPh "7.1"^^xsd:float ;
 	dcterms:description "Recombinant enzyme"@en ;
 	wp:organismName "Mus musculus"^^xsd:string ;
 	dcterms:references pubmed:16616524 ;
@@ -3310,7 +3309,7 @@ SER:26_measurement
 
 SER:27_measurement
 	SER:hasKm  "85"^^xsd:float ;
-	SER:hasPh "7,1"^^xsd:float ;
+	SER:hasPh "7.1"^^xsd:float ;
 	wdt:P2076  "30"^^xsd:float ;
 	dcterms:description "0,007 mM"@en ;
 	wp:organismName "Rattus norvegicus"^^xsd:string ;
@@ -3320,7 +3319,7 @@ SER:27_measurement
 SER:29_measurement
 	SER:hasKm  "1.4"^^xsd:float ;
 	SER:hasKcat  "26"^^xsd:float ;
-	SER:hasPh "7,4"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "30"^^xsd:float ;
 	dcterms:description "in vitro; wildtype; different concentration"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3330,7 +3329,7 @@ SER:29_measurement
 SER:30_measurement
 	SER:hasKm  "130"^^xsd:float ;
 	SER:hasKcat  "26"^^xsd:float ;
-	SER:hasPh "7,4"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "30"^^xsd:float ;
 	dcterms:description "in vitro; wildtype; different concentration"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3340,7 +3339,7 @@ SER:30_measurement
 SER:31_measurement
 	SER:hasKm  "6.4"^^xsd:float ;
 	SER:hasKcat  "26"^^xsd:float ;
-	SER:hasPh "7,4"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "30"^^xsd:float ;
 	dcterms:description "in vitro; wildtype; different concentration"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
@@ -3631,7 +3630,6 @@ SER:92_measurement
 	SER:hasKm  "0.00064"^^xsd:float ;
 	SER:hasPh "7"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description ""@en ;
 	dcterms:references pubmed:6154707 ;
 	dc:source "brenda"^^xsd:string .
 
@@ -3862,7 +3860,6 @@ SER:124_measurement
 SER:163_measurement
 	SER:hasKm  "0.0005"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  ""^^xsd:float ;
 	wp:organismName "Bos taurus"^^xsd:string ;
 	dcterms:references pubmed:285426 ;
 	dc:source "brenda"^^xsd:string .

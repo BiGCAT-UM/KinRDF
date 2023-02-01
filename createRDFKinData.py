@@ -89,7 +89,6 @@ for item in ListTotal:
 	a = item.split('\t')
 	if ((a[15].strip()=='')&(a[16].strip()==''))|((a[15].strip()=='')&(a[16].strip()=='-'))|((a[15].strip()=='')&(a[16].strip()=='NA')):  #Check if both values are empty!!
 	  ListTotal.remove(item)
-	  
 
 ##Print total number of lines found in files:
 ListQC.append("Total lines read: "+ str(len(ListTotal)) + '\n')
@@ -129,7 +128,6 @@ ListQC.append("Lines remaining without missing SER info: "+ str(len(ListTotal)) 
 ##Print total number of SEP-IDs, for which measurements are available:
 ListQC.append("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs. \n\n")  
 
-
 #### [0]=ERPX_number [1]=EnzymePW, [2]=ApprovedEnzymeName, [3]=EC_Number, [4]=Uniprot , 
 #### [5]=Ensembl, [6]=RheaID, [7]=CHEBIID, [8]=Km, [9]=Kcat, [10]=Kcat/Km, [11]=pH, [12]=Temperature, 
 #### [13]=AdditionalConditions, [14]=Organism, [15]=PMID, [16]=Database				
@@ -152,7 +150,6 @@ for itemEnzymePW in ListTotal:
 		# if '-' in items:
 			# ListApprovedEnzymeName.remove(items)
 
-			
 ##EC_Numbers
 countECs = 0
 for itemEC_Number in ListTotal:
@@ -168,7 +165,6 @@ for itemEC_Number in ListTotal:
 	  ListErrors.append("CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: "+ d[0] + ' : ' + d[3]+ '\n')
     
 ListQC.append("Data format for 'wp:bdbEnzymeNomenclature correctly loaded for " + str(countECs) + " EC IDs. \n\n")  
-	
 
 ##Uniprot IDs
 countProteins = 0
@@ -236,7 +232,6 @@ for itemRheaID in ListTotal:
 ListQC.append("Data format for wp:bdbRhea correctly loaded for " + str(countRhea) + " rhea interaction IDs. \n\n")  
 ListQC.append("Data format for rh:equation correctly loaded for " + str(countEquation) + " reaction formulas. \n\n")  
 
-
 ##CHEBI IDs
 countSubstrates = 0
 for itemSubstrate in ListTotal:
@@ -254,18 +249,16 @@ for itemSubstrate in ListTotal:
 
 ListQC.append("Data format for wp:bdbChEBI correctly loaded for " + str(countSubstrates) + " substrate IDs. \n\n")  
 
-####No regex or count defined for the following items, since these can be very diverse.
-
 ##Regex:
-pattern_float = '^\d+\.\d+$'
+pattern_float = '^\d+\.\d+$' ##to test for numbers with dot-decimal spearator
 
 ##Km
 countKm = 0
 for itemKm in ListTotal:
   i = itemKm.split('\t')
-  i[8] = i[8].replace(',', '.')
+  i[8] = i[8].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
   result_float =  re.match(pattern_float, i[8])
-  if(i[8].strip()=='-')|(i[8].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!! [16] = Database, needed for provenance and ending statement in RDF!
+  if(i[8].strip()=='-')|(i[8].strip()=='NA')|(i[8].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!! [16] = Database, needed for provenance and ending statement in RDF!
     continue
   elif(result_float): ##Check if entry contains a number with decimal(s)
     ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
@@ -274,63 +267,64 @@ for itemKm in ListTotal:
     ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
     countKm = countKm + 1
   else:
-    ListErrors.append("CHECK: Data format for Km data not a number, check original data for: "+ h[0] + " : " + i[8] + '\n')
+    ListErrors.append("CHECK: Data format for Km data not a number, check original data for: "+ i[0] + " : " + i[8] + '\n')
 	  
 ListQC.append("Data format for Km correctly loaded for " + str(countKm) + " values. \n\n")  
-
 
 ##Kcat
 countKcat = 0
 for itemKcat in ListTotal:
   i = itemKcat.split('\t')
-  i[9] = i[9].replace(',', '.')
+  i[9] = i[9].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
   result_float =  re.match(pattern_float, i[9])
-  if(i[9].strip()=='-')|(i[9].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
+  if(i[9].strip()=='-')|(i[9].strip()=='NA')|(i[9].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
-    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
+    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') 
     countKcat = countKcat + 1
   elif(i[9].strip().isnumeric()):
-    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q883112'
+    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') 
     countKcat = countKcat + 1
   else:
-    ListErrors.append("CHECK: Data format for Kcat data not numeric, check original data for: "+ h[0] + " : " + i[9] + '\n')
+    ListErrors.append("CHECK: Data format for Kcat data not numeric, check original data for: "+ i[0] + " : " + i[9] + '\n')
 
 ListQC.append("Data format for Kcat correctly loaded for " + str(countKcat) + " values. \n\n") 
-
 
 #KcatKm
 countKcatKm = 0
 for itemKcatKm in ListTotal:
   i = itemKcatKm.split('\t')
-  i[10] = i[10].replace(',', '.')
+  i[10] = i[10].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
   result_float =  re.match(pattern_float, i[10])
-  if(i[10].strip()=='-')|(i[10].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
+  if(i[10].strip()=='-')|(i[10].strip()=='NA')|(i[10].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
-    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcatKm' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
+    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcatKm' + ' "' + i[10].strip() + '"^^xsd:float') 
     countKcatKm = countKcatKm + 1	
   elif(i[10].strip().isnumeric()):
-    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcatKm' + ' "' + i[10].strip() + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q7575016
+    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcatKm' + ' "' + i[10].strip() + '"^^xsd:float') 
     countKcatKm = countKcatKm + 1	
   else:
-    ListErrors.append("CHECK: Data format for KcatKm data not numeric, check original data for: "+ h[0] + " : " + i[10] + '\n')
-
+    ListErrors.append("CHECK: Data format for KcatKm data not numeric, check original data for: "+ i[0] + " : " + i[10] + '\n')
 
 ListQC.append("Data format for KcatKm correctly loaded for " + str(countKcatKm) + " values. \n\n") 
 
-
-##TODO: check if value is numeric!
-			
 #pH##--> Add to measurement
 count_pH = 0
 for item_pH in ListTotal:
   i = item_pH.split('\t')
-  if(i[11].strip()=='-')|(i[11].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
+  i[11] = i[11].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
+  result_float =  re.match(pattern_float, i[11])
+  if(i[11].strip()=='-')|(i[11].strip()=='NA')|(i[11].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
     continue
-  else:
-    List_pH.append(i[0].strip( ) + '_measurement' + '\t' + 'SER:hasPh'+ ' "' + i[11].strip( ) + '"^^xsd:float') #Line from after 2020-01-17 ##wd:Q40936
+  elif(result_float):
+    List_pH.append(i[0].strip( ) + '_measurement' + '\t' + 'SER:hasPh'+ ' "' + i[11].strip( ) + '"^^xsd:float')
     count_pH = count_pH + 1
+  elif(i[11].strip().isnumeric()):
+    List_pH.append(i[0].strip( ) + '_measurement' + '\t' + 'SER:hasPh'+ ' "' + i[11].strip( ) + '"^^xsd:float')
+    count_pH = count_pH + 1
+  else:
+    ListErrors.append("CHECK: Data format for pH data not numeric, check original data for: "+ i[0] + " : " + i[11] + '\n')
 
 ListQC.append("Data format for pH correctly loaded for " + str(count_pH) + " values. \n\n") 
 			
@@ -338,11 +332,18 @@ ListQC.append("Data format for pH correctly loaded for " + str(count_pH) + " val
 countTemp = 0
 for itemTemperature in ListTotal:
   i = itemTemperature.split('\t')
-  if(i[12].strip()=='-')|(i[12].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
+  i[12] = i[12].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
+  result_float =  re.match(pattern_float, i[12])
+  if(i[12].strip()=='-')|(i[12].strip()=='NA')|(i[12].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
     continue
-  else:
+  elif(result_float):
     ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076 ' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
     countTemp = countTemp + 1
+  elif(i[12].strip().isnumeric()):
+    ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076 ' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
+    countTemp = countTemp + 1
+  else:
+    ListErrors.append("CHECK: Data format for Temp data not numeric, check original data for: "+ i[0] + " : " + i[12] + '\n')
 
 ListQC.append("Data format for Temperature correctly loaded for " + str(countTemp) + " values. \n\n") 
 
@@ -350,7 +351,7 @@ ListQC.append("Data format for Temperature correctly loaded for " + str(countTem
 countConditions = 0
 for itemAdditionalConditions in ListTotal:
 	i = itemAdditionalConditions.split('\t')
-	if(i[13].strip()=='-')|(i[13].strip()=='NA')|(i[16].strip()=='-')|(i[16].strip()=='NA'): #Check if one of the necessary values is missing!!
+	if(i[13].strip()=='-')|(i[13].strip()=='NA')|(i[13].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
 	  continue
 	else:
 	  ListAdditionalConditions.append(i[0].strip( )  + '_measurement' + '\t' + 'dcterms:description' + ' "' + i[13].strip('"') + '"@en')
@@ -380,7 +381,6 @@ Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrgani
 ## Vertebrates
 # Oryctolagus cuniculus (european rabbit)
 
-
 #[14]=Organism			##--> Add to measurement
 countOrganisms = 0
 for itemOrganism in ListTotal:
@@ -405,8 +405,6 @@ ListQC.append("Data format for Organisms correctly loaded for " + str(countOrgan
 ##Provenance can come from two sources; a PMID, a database name, or both.
 ##At least one is needed to support the data  in the RDF.
 ##TODO: check for both, if only PMID this should be the concluding statement.
-
-##TODO: PMID IDs should be numeric only!
 
 #[15]=PMID	##--> Add to measurement	
 countRefs = 0
