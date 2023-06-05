@@ -1,0 +1,5 @@
+EnzymePW	ApprovedEnzymeName	E.C.number	Uniprot	Ensemble	RheaID	CHEBIID	Km	Kcat	Kcat/Km	pH	Temperature	AdditionalConditions	Organism	PMID	Database
+OAT	Ornithine aminotransferase	26113	P04181	-	Rhea: 25163	15729	3.9	-	0.036	8	25	-	Homo sapiens	7055619	BRENDA
+GAMT	Guanidinoacetate methyltransferase	2112	Q14353	-	Rhea: 10657	131444	-	-	-	-	-	-	Homo sapiens	15533043	BRENDA
+GATM	Glycine amidinotransferase	2141	P50440	-	Rhea: 13201	15428	2.5	-	-	-	-	-	Homo sapiens	3800397	BRENDA
+CK	Creatine kinase	2732	P12277	-	Rhea: 17160	16919	0.69	-	-	6.7	36	-	Homo sapiens	6487638	BRENDA
