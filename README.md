@@ -4,6 +4,21 @@ Are you looking for a way to parameterize your pathway models with kinetic data?
 This project allows you to do so, using an Excel-based template (located [here]()).
 As a start, our data model is compatible with pathways hosted in WikiPathways [ref] build using PathVisio [ref].
 
+1. Use the [WikiPathways Academy](http://academy.wikipathways.org/) to learn how to build a pathway model representing a set of metabolic interactions
+2. Add UniProt (SwissProt/gold star) [ref] annotations for the enzymes catalyzing the reactions. 
+3. Include Rhea [ref] identifiers (IDs) for the interactions between a substrate and target metabolite.
+4. Use the ChEBI IDs listed in Rhea to annotate the substrate and product of each reaction.
+5. Download the template kinetic data file.
+6. Add kinetic data for each separate substrate-enzyme-reaction in your model.
+7. The model support these sources for provenance (request another resource through the [issue tracker](https://github.com/BiGCAT-UM/KinRDF/issues)):
+    1. Brenda (Chang et al., 2021),
+    2. Strenda (Swainston et al. 2018), 
+    3. Sabio-RK (Wittig et al., 2018), 
+    4. IUPHAR/BPS Guide to PHARMACOLOGY (Harding et al., 2022),
+    5. UniProt (The UniProt Consortium, 2021), 
+    6. PubMed (White, 2020).
+8.  tba
+
 # KinRDF
 Conversion of kinetic data to an RDF model, compatible with WikiPathways PathWayModels.
 
