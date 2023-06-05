@@ -1,3 +1,9 @@
+# Welcome to the Kinetics RDF model page!
+
+Are you looking for a way to parameterize your pathway models with kinetic data?
+This project allows you to do so, using an Excel-based template (located [here]()).
+As a start, our data model is compatible with pathways hosted in WikiPathways [ref] build using PathVisio [ref].
+
 # KinRDF
 Conversion of kinetic data to an RDF model, compatible with WikiPathways PathWayModels.
 
@@ -20,6 +26,8 @@ which python
 ## Check version of Python
 python3 --version
 ```
+
+# Run RDF
 
 Run the RDF locally (with Virtuoso Docker, on Linux):
 Documentation curtosy of Marvin Martens [https://github.com/marvinm2/AOPWikiRDF]
