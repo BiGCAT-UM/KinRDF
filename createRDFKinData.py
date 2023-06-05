@@ -219,7 +219,7 @@ for itemRheaID in ListTotal:
 	elif(result_rhea): ##regex check
 	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
 	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
-	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh::accession' + ' RHEA:' + g[6].strip( ) + '.' )	
+	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:accession' + ' RHEA:' + g[6].strip( ) + '.' )	
 	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  countRhea = countRhea +1
 	elif ('+' in g[6])|('=' in g[6]): #if no Rhea is available, but there is a reaction equation.
