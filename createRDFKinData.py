@@ -25,7 +25,7 @@ if dir_code.endswith('KinRDF'):
 else:
   parentPath = os.path.dirname(dir_code) #go up one directory
   dir_code = parentPath
-  dataFolder = dir_code + "/KineticsData"
+  dataFolder = dir_code + subfolderLocation
 os.chdir(dataFolder) ##Update directory to folder with data
 dir_code = os.getcwd()
 
@@ -276,9 +276,10 @@ for itemKm in ListTotal:
   elif(i[8].strip().isnumeric()): ##Check if entry contains a number without decimal(s)
     ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
     countKm = countKm + 1
-  elif("E" in i[8].strip()): ##Check if entry contains a scientific annotations 
-    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + float(i[8].strip()) + '"^^xsd:float')
-    countKm = countKm + 1
+  elif("e" in i[8].strip().lower()): ##Check if entry contains a scientific annotations 
+    Scinumber = float(i[8].strip().lower())
+    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + str('%.08f' % Scinumber) + '"^^xsd:float')
+    countKm = countKm + 1  
   else:
     ListErrors.append("CHECK: Data format for Km data not a number, check original data for: "+ i[0] + " : " + i[8] + '\n')
 	  
