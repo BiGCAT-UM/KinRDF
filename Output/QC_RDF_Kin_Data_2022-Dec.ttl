@@ -28,9 +28,9 @@ Data format for Additional Conditions correctly loaded for 131 values.
 
 Data format for Organisms correctly loaded for 228 values. 
 
-Data format for PMIDs Provenance correctly loaded for 239 values. 
+Data format for PMIDs Provenance correctly loaded for 241 values. 
 
-Data format for Database Provenance correctly loaded for 247 values. 
+Data format for Database Provenance correctly loaded for 248 values. 
 
 
 Reported Errors in Data: 
