@@ -1,0 +1,57 @@
+Enzyme PW	Approved enzyme name	E.C. number	Substrate	Uniprot	Ensembl	Rhea ID	CHEBI ID	Km [mM]	Kcat/Km	pH	Temperature	Additional conditions	Organism	PMID	Database
+CYP8B1	5beta-cholestane-3alpha,7alpha-diol 12alpha-hydroxylase	1.14.14.139	7alpha-hydroxycholest-4-en-3-one	O02766	ENSG00000180432	46752	17899	0,027	/	6,7-7	/	/	Oryctolagus cuniculus	659116	BRENDA
+CYP7A1	cholesterol 7alpha-monooxygenase	1.14.14.23	cholesterol	P22680	ENSG00000167910	21813	16113	/	/	7,2	37	/	Homo sapien	736605	BRENDA
+CYP7B1	25/26-hydroxycholesterol 7alpha-hydroxylase	1.14.14.29	3beta-hydroxy-5-cholestenoic acid	O75881	ENSG00000172817Ê	R-HSA-191972	81014	/	/	/	/	/	Homo sapien	/	BRENDA
+CYP27A1	cholestanetriol 26-monooxygenase	1.14.15.15	cholesterol	Q02318	ENSG00000135929	46401	16113	/	/	7,4	30	/	Homo sapien	671957, 702407, 735739	BRENDA
+			27-hydroxycholesterol	Q02318	ENSG00000135929	46093	17703	/	/	7,4	30	/	Homo sapien	671957, 702407, 735740	BRENDA
+			5beta-cholestane-3alpha, 7alpha, 26-triol	Q02318	ENSG00000135929	R-HSA-193497	28540	/	/	7,4	30	/	Homo sapien	671957, 702407, 735741	BRENDA
+			5beta-cholestane-3alpha, 7alpha-diol	Q02318	ENSG00000135929	R-HSA-193393	28047	/	/	7,4	30	/	Homo sapien	671957, 702407, 735742	BRENDA
+			5beta-cholestane-3alpha, 7alpha, 27-triol	Q02318	ENSG00000135929	R-HSA-193497	HMDB0060138	/	/	7,4	30	/	Homo sapien	671957, 702407, 735743	BRENDA
+			3alpha, 7alpha-dihydroxy-5beta-cholestan-26-al	Q02318	ENSG00000135929	R-HSA-193460	27428	/	/	7,4	30	/	Homo sapien	671957, 702407, 735744	BRENDA
+			5beta-cholestane-3alpha, 7alpha, 12alpha-triol	Q02318	ENSG00000135929	R-HSA-191999	16496	/	/	7,4	30	/	Homo sapien	671957, 702407, 735745	BRENDA
+			5beta-cholestane-3alpha, 7alpha, 12alpha, 26-tetrol	Q02318	ENSG00000135929	R-HSA-192042	17278	/	/	7,4	30	/	Homo sapien	671957, 702407, 735746	BRENDA
+			3alpha, 7alpha, 12alpha-trihydroxy-5beta-cholestan-26-al	Q02318	ENSG00000135929	R-HSA-192054 (	16466	/	/	7,4	30	/	Homo sapien	671957, 702407, 735747	BRENDA
+HSD3B7	cholest-5-ene-3beta,7alpha-diol 3beta-dehydrogenase	1.1.1.181	3beta, 7alpha-dihydroxy-5-cholestenoate	Q9H2F3	ENSG00000099377	R-HSA-193816	81015	/	/	/	/	/	Homo sapien	/	BRENDA
+			7-alpha-hydroxycholesterol	Q9H2F3	ENSG00000099377	11897	17500	/	/	/	/	/	Homo sapien	/	BRENDA
+AKR1D1	DELTA4-3-oxosteroid 5beta-reductase	1.3.1.3	7alpha,26-dihydroxycholest-4-en-3-one	P51857	ENSG00000122787	R-HSA-193824	48825	/	/	6	37	/	Homo sapien	725399	BRENDA
+			7alpha-Hydroxy-4-cholesten-3-one	P51857	ENSG00000122787	R-HSA-192033	17899	/	/	6	37	/	Homo sapien	725399	BRENDA
+			7alpha,12alpha-Dihydroxy-4-cholesten-3-one	P51857	ENSG00000122787	46633Ê	28477	/	/	6	37	/	Homo sapien	725399	BRENDA
+Aldo-keto reductase family 1 member C4	3alpha-hydroxysteroid 3-dehydrogenase	1.1.1.357	7alpha,26-dihydroxy-5beta-cholestan-3-one	P17516	ENSG00000198610	R-HSA-193841Ê	48778	/	/	/	/	/	Homo sapien	/	BRENDA
+			7alpha-hydroxy-5beta-cholestan-3-one	P17516	ENSG00000198610	R-HSA-192160	2290	/	/	/	/	/	Homo sapien	/	BRENDA
+			7alpha,12alpha-dihydroxy-5beta-cholestan-3-one	P17516	ENSG00000198610	R-HSA-192036	2288	/	/	/	/	/	Homo sapien	/	BRENDA
+Very long-chain acyl-CoA synthetase	long-chain acyl-CoA ligase	6.2.1.3	3alpha,7alpha-dihydroxy-5beta-cholestan-26-oic acid	O14975	ENSG00000140284	R-HSA-193424	16577	/	/	7,5	30	/	Homo sapien	714313,Ê714605	BRENDA
+			3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oic acid	O14975	ENSG00000140284	R-HSA-193401	18402	/	/	7,5	30	/	Homo sapien	714313,Ê714605	BRENDA
+AMACR	alpha-methylacyl-CoA racemase	5.1.99.4	(25R)-3alpha,7alpha-Dihydroxy-5beta-cholestanoyl-CoA	Q9UHK6	ENSG00000242110	40456	48474	/	/	7,2	35	/	Homo sapien	727322	BRENDA
+			(25R)-3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestan-26-oyl-CoA	Q9UHK6	ENSG00000242110	R-HSA-192056	37642	/	/	7,2	35	/	Homo sapien	727322	BRENDA
+ACOX2	3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA 24-hydroxylase	1.17.99.3	(25S)-3alpha,7alpha-Dihydroxy-5beta-cholestanoyl-CoA	P97562	ENSG00000168306	R-HSA-193369	HMDB60306	/	/	7,5	/	/	Rattus norvegicus	659114	BRENDA
+			(25S)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA	P97562	ENSG00000168306	R-HSA-192335	37643	/	/	7,5	/	/	Rattus norvegicus	659114	BRENDA
+SLC27A5	cholate-CoA ligase	6.2.1.7	chenodeoxycholate(1-)	Q9ES38	ENSG00000083807	31513Ê	36234	0,018	/	8,5	/	/	Rattus norvegicus	660788	BRENDA
+			cholate	Q9ES38	ENSG00000083807	23533	29747	0,01	/	8	/	/	Rattus norvegicus	843	BRENDA
+Bile acid-CoA: amino acid N-acyltransferase	/	2.3.1.65	Chenodeoxycholoyl-CoA (taurine-dependent)	Q14032	ENSG00000136881	49785	28701	/	/	6,5	37	/	Homo sapien	/	BRENDA
+			Chenodeoxycholoyl-CoA (glycine-dependent)	Q14032	ENSG00000136881	49789	28701	/	/	7,2	37	/	Homo sapien	/	BRENDA
+			cholyl-CoA (taurine-dependent)	Q14032	ENSG00000136881	4710	15519	0,05	/	6,5	37	/	Homo sapien	487367	BRENDA
+			cholyl-CoA (glycine-dependent)	Q14032	ENSG00000136881	14002	15519	0,087	/	7,2	37	/	Homo sapien	487367	BRENDA
+SCP2	propanoyl-CoA C-acyltransferase	2.3.1.176	3alpha,7alpha-dihydroxy-24-oxo-5beta-cholestan-26-oyl-CoA	P22307	ENSG00000116171	R-HSA-193533Ê	87704	/	/	/	/	/	Homo sapien	/	BRENDA
+			3_,7_,12_-trihydroxy-24-oxo-5_-cholestan-26-oyl-CoA	P22307	ENSG00000116171	R-HSA-19234	27379	/	/	/	/	/	Homo sapien	/	BRENDA
+HSD17B4	3alpha,7alpha,12alpha-trihydroxy-5beta-cholest-24-enoyl-CoA hydratase	4.2.1.107	3alpha,7alpha-Dihydroxy-5beta-cholest-24-enoyl-CoA	P51659	ENSG00000133835	R-HSA-193535	27393	/	/	7	/	/	Rattus norvegicus	684952	BRENDA
+			3alpha,7alpha,24-trihydroxy-5beta-cholestan-26-oyl-CoA	P51659	ENSG00000133835	R-HSA-193508	27403	/	/	7	/	/	Rattus norvegicus	684952	BRENDA
+			3alpha,7alpha,12alpha-Trihydroxy-5beta-cholest-24-enoyl-CoA	P51659	ENSG00000133835	R-HSA-192331	27505	/	/	7	/	/	Rattus norvegicus	684952	BRENDA
+			(24R,25R)-3alpha,7alpha,12alpha,24-tetrahydroxy-5beta-cholestan-26-oyl-CoA	P51659	ENSG00000133835	R-HSA-193455	52050	/	/	7	/	/	Rattus norvegicus	684952	BRENDA
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
