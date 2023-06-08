@@ -9,10 +9,19 @@ print("Version info: ", sys.version_info)
 import os
 from os.path import join
 
+##Define variables for folder names:
+checkedData = "/KineticsData" ##For curated data collection
+testData = "/TestData" ##For all test data
+validationData = "/ValidateData" ##To test one file at a time from test data
+
+##Select folder name to apply script on:
+subfolderLocation = checkedData ##Adapt this statement if needed
+##TODO: include different setup in 3 separate GitHub Actions.
+
 #Update the path to where the data is stored.
 dir_code = os.getcwd()
 if dir_code.endswith('KinRDF'):
-  dataFolder = dir_code + "/KineticsData"
+  dataFolder = dir_code + subfolderLocation
 else:
   parentPath = os.path.dirname(dir_code) #go up one directory
   dir_code = parentPath
