@@ -157,7 +157,7 @@ for itemEC_Number in ListTotal:
 	d = itemEC_Number.split('\t')
 	pattern = '^\\d+\\.-\\.-\\.-|\\d+\\.\\d+\\.-\\.-|\\d+\\.\\d+\\.\\d+\\.-|\\d+\\.\\d+\\.\\d+\\.(n)?\\d+$'
 	result = re.match(pattern, d[3].strip())
-	if (d[3].strip()=='-')|(d[4].strip()=='-'): #Check if necessary value is missing!!
+	if (d[3].strip()=='-')|(d[3].strip()=='NA')|(d[3].strip()=='')|(d[4].strip()=='-'): #Check if necessary value is missing!!
 	  continue
 	elif result:
 	  ListUniprot.append('uniprot:' + d[4].strip( )  + '\t' + 'wp:bdbEnzymeNomenclature' + ' ECcode:' + d[3].strip( ))
@@ -191,7 +191,7 @@ for itemEnsembl in ListTotal:
   f = itemEnsembl.split('\t')
   pattern = '^ENS[A-Z]*[FPTG]\\d{11}$' #Pattern is: ^ENS[A-Z]*[FPTG]\d{11}$' ; need to escape backslash! 
   result = re.match(pattern, f[5].strip( ) )
-  if (f[5].strip()=='-')|(f[5].strip()=='NA')|(f[4].strip()=='-')|(f[4].strip()=='NA'): #Check if one of the necessary values is missing!!
+  if (f[5].strip()=='-')|(f[5].strip()=='NA')|(f[5].strip()=='')|(f[4].strip()=='-')|(f[4].strip()=='NA'): #Check if one of the necessary values is missing!!
     continue
   elif result: ##check against REGEX
     ListUniprot.append('uniprot:' + f[4].strip( ) + '\t' + 'wp:bdbEnsembl' + ' En_id:' + f[5].strip( ))
@@ -266,6 +266,9 @@ for itemKm in ListTotal:
     countKm = countKm + 1
   elif(i[8].strip().isnumeric()): ##Check if entry contains a number without decimal(s)
     ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
+    countKm = countKm + 1
+  elif("E" in i[8].strip()): ##Check if entry contains a scientific annotations 
+    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + float(i[8].strip()) + '"^^xsd:float')
     countKm = countKm + 1
   else:
     ListErrors.append("CHECK: Data format for Km data not a number, check original data for: "+ i[0] + " : " + i[8] + '\n')

@@ -3908,442 +3908,6 @@ SER:171_measurement
 	dcterms:references pubmed:704039 ;
 	dc:source "brenda"^^xsd:string .
 
-SER:179_measurement
-	SER:hasKm  "0.0028"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "27"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12205101 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:180_measurement
-	SER:hasKm  "0.05"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "27"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12205101 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:181_measurement
-	SER:hasKm  "0.0035"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12205101 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:182_measurement
-	SER:hasKm  "18"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12205101 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:183_measurement
-	SER:hasKm  "0.0007"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:17624763 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:184_measurement
-	SER:hasKm  "0.0018"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15084349 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:185_measurement
-	SER:hasKm  "0.0037"^^xsd:float ;
-	SER:hasKcatKm "0.0073"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "27"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15291757 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:186_measurement
-	SER:hasKm  "0.0037"^^xsd:float ;
-	SER:hasKcatKm "14.83"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "27"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15291757 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:187_measurement
-	SER:hasKm  "0.0061"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "27"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15797861 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:188_measurement
-	SER:hasKm  "0.0156"^^xsd:float ;
-	SER:hasKcatKm "15"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:20736065 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:189_measurement
-	SER:hasKm  "47"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12530651 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:193_measurement
-	SER:hasKm  "0.00025"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:9726253 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:194_measurement
-	SER:hasKm  "0.00038"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:25301938 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:195_measurement
-	SER:hasKm  "0.0005"^^xsd:float ;
-	SER:hasKcatKm "7.4"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:196_measurement
-	SER:hasKm  "0.00055"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:19454579 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:197_measurement
-	SER:hasKm  "0.00093"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:25301938 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:198_measurement
-	SER:hasKm  "0.0011"^^xsd:float ;
-	SER:hasKcatKm "100"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:199_measurement
-	SER:hasKm  "0.0025"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:4854454 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:200_measurement
-	SER:hasKm  "0.0077"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:8396144 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:203_measurement
-	SER:hasKm  "0.00045"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:9726253 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:204_measurement
-	SER:hasKm  "0.0011"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:205_measurement
-	SER:hasKm  "0.00196"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:25301938 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:206_measurement
-	SER:hasKm  "0.0023"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:4854454 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:207_measurement
-	SER:hasKm  "0.0043"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:208_measurement
-	SER:hasKm  "0.0053"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:209_measurement
-	SER:hasKm  "0.0063"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:8396144 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:210_measurement
-	SER:hasKm  "0.0097"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28684414 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:211_measurement
-	SER:hasKm  "0.0105"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:25301938 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:222_measurement
-	SER:hasKm  "0.000525"^^xsd:float ;
-	wp:organismName "Rattus norvegicus"^^xsd:string ;
-	dcterms:references pubmed:8918985 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:223_measurement
-	SER:hasKm  "0.0024"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:6971291 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:224_measurement
-	SER:hasKm  "0.0025"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:6608525 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:225_measurement
-	SER:hasKm  "0.0004"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:10406467 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:226_measurement
-	SER:hasKm  "0.00056"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:10406467 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:227_measurement
-	SER:hasKm  "0.0008"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:10406467 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:229_measurement
-	SER:hasKm  "0.00021"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:25855791 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:230_measurement
-	SER:hasKm  "0.00021"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:28539365 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:231_measurement
-	SER:hasKm  "0.0011"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:21446712 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:232_measurement
-	SER:hasKm  "6.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15126570 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:235_measurement
-	SER:hasKm  "2.3"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant P482S"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15126570 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:236_measurement
-	SER:hasKm  "8.5"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "wild-type"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15126570 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:237_measurement
-	SER:hasKm  "9.2"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:description "mutant A15T"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15126570 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:240_measurement
-	SER:hasKm  "0.18"^^xsd:float ;
-	SER:hasKcat  "0.85"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	dcterms:description "recombinant enzyme"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:18215163 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:241_measurement
-	SER:hasKm  "338"^^xsd:float ;
-	SER:hasKcat  "167"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	dcterms:description "recombinant enzyme"@en ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:18215163 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:242_measurement
-	SER:hasKm  "0.0036"^^xsd:float ;
-	SER:hasPh "7.5"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:6641908 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:243_measurement
-	SER:hasKm  "0.0046"^^xsd:float ;
-	SER:hasPh "10"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:6641908 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:244_measurement
-	SER:hasKm  "62"^^xsd:float ;
-	SER:hasPh "9.5"^^xsd:float ;
-	wdt:P2076  "30"^^xsd:float ;
-	wp:organismName "Bos taurus"^^xsd:string ;
-	dcterms:references pubmed:7092232 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:245_measurement
-	SER:hasKm  "0.0003"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12397058 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:246_measurement
-	SER:hasKm  "0.00034"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:15152005 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:247_measurement
-	SER:hasKm  "0.0006"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12460758 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:248_measurement
-	SER:hasKm  "0.0008"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12397058 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:249_measurement
-	SER:hasKm  "2"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12397058 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:250_measurement
-	SER:hasKm  "0.0044"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "28"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:17825335 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:251_measurement
-	SER:hasKm  "9"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:12397058 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:252_measurement
-	SER:hasKm  "14"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:11841241 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:254_measurement
-	SER:hasKm  "0.0002"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "37"^^xsd:float ;
-	dcterms:references pubmed:14732482 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:255_measurement
-	SER:hasKm  "0.00038"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "34"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:17942303 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:256_measurement
-	SER:hasKm  "0.00136"^^xsd:float ;
-	SER:hasPh "7.4"^^xsd:float ;
-	wdt:P2076  "34"^^xsd:float ;
-	wp:organismName "Sus scrofa"^^xsd:string ;
-	dcterms:references pubmed:17942303 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:258_measurement
-	SER:hasKm  "0.0004"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:20170668 ;
-	dc:source "brenda"^^xsd:string .
-
-SER:259_measurement
-	SER:hasKm  "0.01"^^xsd:float ;
-	wp:organismName "Homo sapiens"^^xsd:string ;
-	dcterms:references pubmed:20170668 ;
-	dc:source "brenda"^^xsd:string .
-
 SER:125_measurement
 	SER:hasKcat  "1"^^xsd:float ;
 	SER:hasPh "8"^^xsd:float ;
@@ -4623,6 +4187,22 @@ SER:239_measurement
 	SER:hasKcatKm "2667"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:28539365 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:240_measurement
+	SER:hasKcat  "0.85"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
+	dcterms:description "recombinant enzyme"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:18215163 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:241_measurement
+	SER:hasKcat  "167"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
+	dcterms:description "recombinant enzyme"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:18215163 ;
 	dc:source "brenda"^^xsd:string .
 
 SER:253_measurement
@@ -4913,6 +4493,44 @@ SER:176_measurement
 	dcterms:references pubmed:18573681 ;
 	dc:source "brenda"^^xsd:string .
 
+SER:185_measurement
+	SER:hasKcatKm "0.0073"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "27"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15291757 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:186_measurement
+	SER:hasKcatKm "14.83"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "27"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15291757 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:188_measurement
+	SER:hasKcatKm "15"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20736065 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:195_measurement
+	SER:hasKcatKm "7.4"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:198_measurement
+	SER:hasKcatKm "100"^^xsd:float ;
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
+	dc:source "brenda"^^xsd:string .
+
 SER:212_measurement
 	SER:hasKcatKm "4.7"^^xsd:float ;
 	SER:hasPh "7.4"^^xsd:float ;
@@ -5008,11 +4626,239 @@ SER:94_measurement
 	dcterms:references pubmed:6698009 ;
 	dc:source "brenda"^^xsd:string .
 
+SER:179_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "27"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12205101 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:180_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "27"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12205101 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:183_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:17624763 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:184_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15084349 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:187_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "27"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15797861 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:194_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25301938 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:197_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25301938 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:204_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:205_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25301938 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:207_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:208_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:210_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28684414 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:211_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25301938 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:229_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:25855791 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:231_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:21446712 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:242_measurement
+	SER:hasPh "7.5"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:6641908 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:243_measurement
+	SER:hasPh "10"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:6641908 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:244_measurement
+	SER:hasPh "9.5"^^xsd:float ;
+	wdt:P2076  "30"^^xsd:float ;
+	wp:organismName "Bos taurus"^^xsd:string ;
+	dcterms:references pubmed:7092232 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:245_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12397058 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:246_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15152005 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:247_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12460758 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:248_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12397058 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:249_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12397058 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:250_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "28"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:17825335 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:251_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12397058 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:252_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:11841241 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:254_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "37"^^xsd:float ;
+	dcterms:references pubmed:14732482 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:255_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "34"^^xsd:float ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:17942303 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:256_measurement
+	SER:hasPh "7.4"^^xsd:float ;
+	wdt:P2076  "34"^^xsd:float ;
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:17942303 ;
+	dc:source "brenda"^^xsd:string .
+
 SER:257_measurement
 	SER:hasPh "7.4"^^xsd:float ;
 	wdt:P2076  "37"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:20823678 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:232_measurement
+	wdt:P2076  "37"^^xsd:float ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15126570 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:235_measurement
+	wdt:P2076  "37"^^xsd:float ;
+	dcterms:description "mutant P482S"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15126570 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:236_measurement
+	wdt:P2076  "37"^^xsd:float ;
+	dcterms:description "wild-type"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15126570 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:237_measurement
+	wdt:P2076  "37"^^xsd:float ;
+	dcterms:description "mutant A15T"@en ;
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:15126570 ;
 	dc:source "brenda"^^xsd:string .
 
 SER:82_measurement
@@ -5026,6 +4872,101 @@ SER:88_measurement
 SER:178_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	dcterms:references pubmed:6957697 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:181_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12205101 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:182_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12205101 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:189_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:12530651 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:193_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:9726253 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:196_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:19454579 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:199_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:4854454 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:200_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:8396144 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:203_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:9726253 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:206_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:4854454 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:209_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:8396144 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:222_measurement
+	wp:organismName "Rattus norvegicus"^^xsd:string ;
+	dcterms:references pubmed:8918985 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:223_measurement
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:6971291 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:224_measurement
+	wp:organismName "Sus scrofa"^^xsd:string ;
+	dcterms:references pubmed:6608525 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:225_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:10406467 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:226_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:10406467 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:227_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:10406467 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:230_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:28539365 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:258_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20170668 ;
+	dc:source "brenda"^^xsd:string .
+
+SER:259_measurement
+	wp:organismName "Homo sapiens"^^xsd:string ;
+	dcterms:references pubmed:20170668 ;
 	dc:source "brenda"^^xsd:string .
 
 SER:85_measurement

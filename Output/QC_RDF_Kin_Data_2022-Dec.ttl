@@ -14,7 +14,7 @@ Data format for rh:equation correctly loaded for 76 reaction formulas.
 
 Data format for wp:bdbChEBI correctly loaded for 250 substrate IDs. 
 
-Data format for Km correctly loaded for 161 values. 
+Data format for Km correctly loaded for 102 values. 
 
 Data format for Kcat correctly loaded for 49 values. 
 
@@ -39,9 +39,6 @@ CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data fo
 CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:254 : 1.1.1.B40
 CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:255 : 1.1.1.B40
 CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:256 : 1.1.1.B40
-CHECK: Data format for wp:bdbEnsembl unknown, check original data for: SER:92 : 
-CHECK: Data format for Km data not a number, check original data for: SER:178 : 7E-05
-CHECK: Data format for Km data not a number, check original data for: SER:257 : 5.4E-05
 CHECK: Data format for Organism name is not recognized, check original data for: SER:13 : Alcaligenes sp. 
 CHECK: Name for Organism is not recognized, check original data for: SER:14 : Arabidopsis thaliana
 CHECK: Name for Organism is not recognized, check original data for: SER:15 : Pisum sativum
