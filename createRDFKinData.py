@@ -251,7 +251,7 @@ for itemSubstrate in ListTotal:
 ListQC.append("Data format for wp:bdbChEBI correctly loaded for " + str(countSubstrates) + " substrate IDs. \n\n")  
 
 ##Regex:
-pattern_float = '^\d+\.\d+$' ##to test for numbers with dot-decimal spearator
+pattern_float = '^\d+\.\d+$' ##to test for numbers with dot-decimal separator
 
 ##Km
 countKm = 0
@@ -367,7 +367,7 @@ ListCommonEnglishOrganismsWP = ['cow', 'dog', 'zebrafish', 'horse', 'chicken', '
 # using dictionary comprehension to convert lists to dictionary for conversion of English to Latin later.
 Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrganismsWP[i] for i in range(len(ListCommonEnglishOrganismsWP))}
 
-##Other data currently present in datasets (not mdoeled in RDF):
+##Other data currently present in datasets (not modeled in RDF):
 ## Bacteria
 # Alcaligenes sp. 
 # Chlorobium limicola
@@ -386,7 +386,7 @@ Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrgani
 countOrganisms = 0
 for itemOrganism in ListTotal:
 	j = itemOrganism.split('\t')
-	if(j[14].strip()=='-')|(j[14].strip()=='NA')|(j[16].strip()=='-')|(j[16].strip()=='NA'): #Check if one of the necessary values is missing!!
+	if(j[14].strip()=='-')|(j[14].strip()=='NA')|(i[14].strip()=='')|(j[16].strip()=='-')|(j[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
 	  continue
 	elif(all(x.isalpha() or x.isspace() for x in j[14])): ##Check if Organism names only contains letters and spaces only.
 	  if(j[14] in ListCommonLatinOrganismsWP): ##check for latin name first
@@ -395,7 +395,7 @@ for itemOrganism in ListTotal:
 	  elif(j[14].lower() in ListCommonEnglishOrganismsWP):  ##Convert English to Latin name.
 	    for key in Dict_CommonOrganismsWP:
 	      ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
-	      countOrganisms = countOrganisms + 1
+	    countOrganisms = countOrganisms + 1
 	  else:
 	    ListErrors.append("CHECK: Name for Organism is not recognized, check original data for: "+ j[0] + " : " + j[14] + '\n')
 	else:
@@ -405,8 +405,6 @@ ListQC.append("Data format for Organisms correctly loaded for " + str(countOrgan
 
 ##Provenance can come from two sources; a PMID, a database name, or both.
 ##At least one is needed to support the data  in the RDF.
-
-##TODO: still add measurement data for items above, if pubmed ID is available but no database name.
 
 #[15]=PMID	##--> Add to measurement	
 #[16]=Database ##--> Add to measurement				

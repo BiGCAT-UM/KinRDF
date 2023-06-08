@@ -26,7 +26,7 @@ Data format for Temperature correctly loaded for 152 values.
 
 Data format for Additional Conditions correctly loaded for 131 values. 
 
-Data format for Organisms correctly loaded for 255 values. 
+Data format for Organisms correctly loaded for 228 values. 
 
 Data format for PMIDs Provenance correctly loaded for 239 values. 
 
