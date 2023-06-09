@@ -15,7 +15,7 @@ testData = "/TestData" ##For all test data
 validationData = "/ValidateData" ##To test one file at a time from test data
 
 ##Select folder name to apply script on:
-subfolderLocation = checkedData ##Adapt this statement if needed
+subfolderLocation = validationData ##Adapt this statement if needed
 ##TODO: include different setup in 3 separate GitHub Actions.
 
 #Update the path to where the data is stored.
@@ -407,7 +407,8 @@ for itemOrganism in ListTotal:
 	    countOrganisms = countOrganisms + 1
 	  elif(j[14].lower() in ListCommonEnglishOrganismsWP):  ##Convert English to Latin name.
 	    for key in Dict_CommonOrganismsWP:
-	      ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
+	      if key.lower() == j[14].lower():
+	        ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
 	    countOrganisms = countOrganisms + 1
 	  else:
 	    ListErrors.append("CHECK: Name for Organism is not recognized, check original data for: "+ j[0] + " : " + j[14] + '\n')
@@ -423,6 +424,11 @@ ListQC.append("Data format for Organisms correctly loaded for " + str(countOrgan
 #[16]=Database ##--> Add to measurement				
 ListSupportedDatabases = ['brenda', 'sabio', 'guide to pharmacology', 'strenda', 'uniprot']
 
+ListSupportedDatabasesAlternatives = ['brenda', 'sabio-rk', 'guide to pharmacology', 'strenda', 'uniprot'] ##If no alternative name is known (yet), use same name as official.
+
+# using dictionary comprehension to convert lists to dictionary for conversion of English to Latin later.
+Dict_SupportedDatabases = {ListSupportedDatabasesAlternatives[i]: ListSupportedDatabases[i] for i in range(len(ListSupportedDatabasesAlternatives))}
+
 countRefs = 0
 countProv = 0
 
@@ -432,26 +438,49 @@ for itemProv in ListTotal:
 	  continue
 	####First scenario, both values are available:
 	##Option 1: Pubmed contains 1 value; database name contains 1 value
-	elif (p[15].isnumeric())&(all(x.isalpha() or x.isspace() for x in p[16])): ##Check if pubmed ID is numeric and if database names only contains letters (or spaces).:
+	elif (p[15].isnumeric())&(all(x.isalpha() or x.isspace() or '-' in x for x in p[16])): ##Check if pubmed ID is numeric and if database names only contains letters (or spaces, or one bar for sabio-rk).:
 	  ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
 	  countRefs = countRefs + 1
-	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
+	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for official name first
 	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
 	    countProv = countProv + 1
+	  elif(p[16].strip().lower() in ListSupportedDatabasesAlternatives):  ##Convert alternative name to official name.
+	    for key in Dict_SupportedDatabases:
+	      if key.lower() == p[16].strip().lower():
+	        ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + Dict_SupportedDatabases[key] + '"^^xsd:string')
+	    countProv = countProv + 1  
 	##Option 2: Pubmed contains 1 value; database contains more than 1
-	elif (p[15].isnumeric())&(';' in p[16]): ##Check if pubmed ID is numeric and database name contains multiple values semicolon separated.
+	elif (p[15].isnumeric())&((';' in p[16])|(',' in p[16])): ##Check if pubmed ID is numeric and database name contains multiple values semicolon or comma separated.
 	  ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
 	  countRefs = countRefs + 1
-	  p2 = p[16].split(';') ##Split multiple references in one line.
+	  if(';' in p[16]):
+	    p2 = p[16].split(';') ##Split multiple references in one line, semicolon split.
+	  elif(',' in p[16]):
+	    p2 = p[16].split(',') ##Split multiple references in one line, comma split.
+	  else:
+	    ListErrors.append("CHECK: Multiple separators for Database Provenance detected, check original data for: "+ p[0] + " : " + p[16] + '\n')  
 	  p2 = [x.strip(' ').lower() for x in p2] ##strip whitespaces (if existing)
+	  ListProvenance = []
 	  for z in [0,(len(p2)-1)]:
-	    if(p2[z] in ListSupportedDatabases): ##check for latin name first
-	      p2 = ['"' + t + '"^^xsd:string' for t in p2] ##add suffix for each item in list
-	      ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(p2))
+	    if(p2[z] in ListSupportedDatabases): ##check for original name first
+	      p2[z] = '"' + p2[z] + '"^^xsd:string' ##add suffix for each item in list
+	      ListProvenance.append(p2[z])
+	    elif(p2[z] in ListSupportedDatabasesAlternatives):  ##Check to convert alternative name to official name.
+	      for key in Dict_SupportedDatabases:
+	        if key.lower() == p2[z].strip().lower():
+	          p2[z] = Dict_SupportedDatabases[key] ##Convert alternative name to official to item
+	          p2[z] = '"' + p2[z] + '"^^xsd:string'##add suffix for item
+	          ListProvenance.append(p2[z])
+	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(ListProvenance))
 	  countProv = countProv + len(p2)
 	##Option 3: Pubmed contains more than 1 value, database name contains 1 value
-	elif (';' in p[15])&(all(x.isalpha() or x.isspace() for x in p[16])):
-	  p3 = p[15].split(';') ##Split multiple references in one line.
+	elif ((';' in p[15])|(',' in p[15]))&(all(x.isalpha() or x.isspace() for x in p[16])):
+	  if(';' in p[15]):
+	    p3 = p[15].split(';') ##Split multiple references in one line.
+	  elif(',' in p[15]):
+	    p3 = p[15].split(',') ##Split multiple references in one line.
+	  else:
+	    ListErrors.append("CHECK: Multiple separators for Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[15] + '\n')  
 	  p3 = [x.strip(' ') for x in p3] ##strip whitespaces (if existing)
 	  for y in [0,(len(p3)-1)]:
 	    if(p3[y].isnumeric()):
@@ -464,16 +493,22 @@ for itemProv in ListTotal:
 	  else:
 	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')
 	##Option 4: Pubmed contains more than 1 value, database name contains more than 1 value    
-	elif (';' in p[15])&(';' in p[16]):
-	  print("Done") ##TODO:update with combined if statement for multiple values!
+	elif ((';' in p[15])|(',' in p[15]))&((';' in p[16])|(',' in p[15])):
+	  ListErrors.append("CHECK: Multiple Database Provenance And Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[15] + ', ' + p[16] + '\n')  
+	  ##TODO:update with combined if statement for multiple values!
 	####Second scenario, only pubmed is available:  
 	##Option 1: Pubmed contains 1 value; database name contains 0 value
 	elif (p[15].isnumeric())&((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()=='')):
 	  ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
 	  countRefs = countRefs + 1
 	##Option 2: Pubmed contains more than 1 value, database name contains 0 value
-	elif(';' in p[15]):
-	  k2 = p[15].split(';') ##Split multiple references in one line.
+	elif((';' in p[15])|(',' in p[15]))&((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()=='')):
+	  if(';' in p[15]):
+	    k2 = p[15].split(';') ##Split multiple references in one line.
+	  elif(',' in p[15]):
+	    k2 = p[15].split(',') ##Split multiple references in one line.
+	  else:
+	    ListErrors.append("CHECK: Multiple separators for Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[15] + '\n')  
 	  k2 = [x.strip(' ') for x in k2] ##strip whitespaces (if existing)
 	  ##TODO: build in test to see if all values are numeric!
 	  k2 = ['pubmed:' + s for s in k2] ##add prefix for each item in list
@@ -481,19 +516,32 @@ for itemProv in ListTotal:
 	  countRefs = countRefs + 1
 	####Third scenario, only Database name is available:  
 	##Option 1: Pubmed contains 0 value; database name contains 1 value
-	elif(all(x.isalpha() or x.isspace() for x in p[16])):
+	elif(all(x.isalpha() or x.isspace() for x in p[16]))&((p[15].strip()=='-')|(p[15].strip()=='NA')|(p[15].strip()=='')):
 	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
 	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
 	    countProv = countProv + 1
 	  else:
 	    ListErrors.append("CHECK: Name for Database Provenance is not recognized, check original data for: "+ p[0] + " : " + p[16] + '\n')
 	##Option 2: Pubmed contains 0 value; database name contains more than 1 value
-	elif(';' in p[16]):
-	  l2 = p[16].split(';') ##Split multiple references in one line.
+	elif((';' in p[16])|(',' in p[16]))&((p[15].strip()=='-')|(p[15].strip()=='NA')|(p[15].strip()=='')):
+	  if(';' in p[16]):
+	    l2 = p[16].split(';') ##Split multiple references in one line.
+	  elif(',' in p[16]):
+	    l2 = p[16].split(',')
 	  l2 = [x.strip(' ').lower() for x in l2] ##strip whitespaces (if existing)
-	  l2 = ['"' + t + '"^^xsd:string' for t in l2] ##add suffix for each item in list
-	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(l2))
-	  countProv = countProv + 1
+	  ListProvenance = []
+	  for z in [0,(len(l2)-1)]:
+	    if(l2[z] in ListSupportedDatabases): ##check for original name first
+	      l2[z] = '"' + l2[z] + '"^^xsd:string' ##add suffix for each item in list
+	      ListProvenance.append(l2[z])
+	    elif(l2[z] in ListSupportedDatabasesAlternatives):  ##Check to convert alternative name to official name.
+	      for key in Dict_SupportedDatabases:
+	        if key.lower() == l2[z].strip().lower():
+	          l2[z] = Dict_SupportedDatabases[key] ##Convert alternative name to official to item
+	          l2[z] = '"' + l2[z] + '"^^xsd:string'##add suffix for item
+	          ListProvenance.append(l2[z])
+	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(ListProvenance))
+	  countProv = countProv + len(l2)
 	else:
 	  ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
 
