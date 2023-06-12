@@ -73,6 +73,14 @@ for (dirname, dirs, files) in os.walk('.'):
 				ListTotal.append(SER_Name + '\t' + line.strip('\n'))
 				countSER += 1
 				
+##Remove spaces between prefixes and IDs for RHEA (column 6) and ChEBI (column 7)
+ListTotal = [w.replace('RHEA: ', '') for w in ListTotal]
+ListTotal = [w.replace('CHEBI: ', '') for w in ListTotal]
+
+##Remove text within parenthesis using regex:
+##TODO: find regex to remove double brackets, e.g. '((3R,5S)-1-pyrroline-3-hydroxy-5-carboxylate)'
+#ListTotal = [re.sub("^.*\(.*\)-([A-Za-z0-9]+(-[A-Za-z0-9]+)+).*$", "",x) for x in ListTotal]
+ListTotal = [re.sub("[\(\[].*?[\)\]]","",x) for x in ListTotal] ##Everything in brackets
 
 ##Replace common prefixes for harmonized data structure:
 ListTotal = [w.replace('RHEA:', '') for w in ListTotal]
@@ -224,6 +232,7 @@ for itemRheaID in ListTotal:
 	pattern_rhea = '^(RHEA:)?\\d{5}$'
 	result_rhea = re.match(pattern_rhea, g[6].strip())
 	if (g[6].strip()=='-')|(g[6].strip()=='NA'): #Check if one of the necessary values is missing!!
+	  ListErrors.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6]+ '\n')
 	  continue
 	elif(result_rhea): ##regex check
 	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
@@ -235,6 +244,8 @@ for itemRheaID in ListTotal:
 	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!
 	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  countEquation = countEquation + 1   
+	elif (result_rhea is None): ##Rhea doesn't match regex, but isn't empty  
+	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	else: #if no Rhea is available
 	  ListErrors.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6]+ '\n')
 
@@ -438,10 +449,12 @@ for itemProv in ListTotal:
 	  continue
 	####First scenario, both values are available:
 	##Option 1: Pubmed contains 1 value; database name contains 1 value
-	elif (p[15].isnumeric())&(all(x.isalpha() or x.isspace() or '-' in x for x in p[16])): ##Check if pubmed ID is numeric and if database names only contains letters (or spaces, or one bar for sabio-rk).:
-	  ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
-	  countRefs = countRefs + 1
-	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for official name first
+	elif ((p[15].isnumeric())&((all(x.isalpha() or x.isspace() for x in p[16])|(('-' in p[16])&((',' not in p[16])&(';' not in p[16])))))):  ##Check if pubmed ID is numeric and if database names only contains letters (or spaces, or one bar for sabio-rk).:
+	  if((p[16].strip().lower() not in ListSupportedDatabases)&(p[16].strip().lower() not in ListSupportedDatabasesAlternatives)): ##Check if database name is valid!
+	    ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
+	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
+	    countRefs = countRefs + 1
+	  elif(p[16].strip().lower() in ListSupportedDatabases): ##check for official name first
 	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
 	    countProv = countProv + 1
 	  elif(p[16].strip().lower() in ListSupportedDatabasesAlternatives):  ##Convert alternative name to official name.
@@ -449,6 +462,10 @@ for itemProv in ListTotal:
 	      if key.lower() == p[16].strip().lower():
 	        ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + Dict_SupportedDatabases[key] + '"^^xsd:string')
 	    countProv = countProv + 1  
+	  else:
+	    ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
+	    countRefs = countRefs + 1
+	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
 	##Option 2: Pubmed contains 1 value; database contains more than 1
 	elif (p[15].isnumeric())&((';' in p[16])|(',' in p[16])): ##Check if pubmed ID is numeric and database name contains multiple values semicolon or comma separated.
 	  ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
@@ -471,6 +488,8 @@ for itemProv in ListTotal:
 	          p2[z] = Dict_SupportedDatabases[key] ##Convert alternative name to official to item
 	          p2[z] = '"' + p2[z] + '"^^xsd:string'##add suffix for item
 	          ListProvenance.append(p2[z])
+	    else:
+	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
 	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(ListProvenance))
 	  countProv = countProv + len(p2)
 	##Option 3: Pubmed contains more than 1 value, database name contains 1 value
@@ -521,7 +540,7 @@ for itemProv in ListTotal:
 	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
 	    countProv = countProv + 1
 	  else:
-	    ListErrors.append("CHECK: Name for Database Provenance is not recognized, check original data for: "+ p[0] + " : " + p[16] + '\n')
+	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')
 	##Option 2: Pubmed contains 0 value; database name contains more than 1 value
 	elif((';' in p[16])|(',' in p[16]))&((p[15].strip()=='-')|(p[15].strip()=='NA')|(p[15].strip()=='')):
 	  if(';' in p[16]):
@@ -540,6 +559,8 @@ for itemProv in ListTotal:
 	          l2[z] = Dict_SupportedDatabases[key] ##Convert alternative name to official to item
 	          l2[z] = '"' + l2[z] + '"^^xsd:string'##add suffix for item
 	          ListProvenance.append(l2[z])
+	    else:
+	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')
 	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(ListProvenance))
 	  countProv = countProv + len(l2)
 	else:
