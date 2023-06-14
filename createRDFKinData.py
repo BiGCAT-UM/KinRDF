@@ -79,7 +79,6 @@ ListTotal = [w.replace('CHEBI: ', '') for w in ListTotal]
 
 ##Remove text within parenthesis using regex:
 ##TODO: find regex to remove double brackets, e.g. '((3R,5S)-1-pyrroline-3-hydroxy-5-carboxylate)'
-#ListTotal = [re.sub("^.*\(.*\)-([A-Za-z0-9]+(-[A-Za-z0-9]+)+).*$", "",x) for x in ListTotal]
 ListTotal = [re.sub("[\(\[].*?[\)\]]","",x) for x in ListTotal] ##Everything in brackets
 
 ##Replace common prefixes for harmonized data structure:
@@ -246,6 +245,7 @@ for itemRheaID in ListTotal:
 	  countEquation = countEquation + 1   
 	elif (result_rhea is None): ##Rhea doesn't match regex, but isn't empty  
 	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
+	  ListErrors.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6]+ '\n')
 	else: #if no Rhea is available
 	  ListErrors.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6]+ '\n')
 
@@ -258,7 +258,7 @@ countSubstrates = 0
 for itemSubstrate in ListTotal:
 	h = itemSubstrate.split('\t')
 	pattern_chebi = '^(CHEBI:)?\\d+$'
-	result_chebi =  re.match(pattern_chebi, h[7])
+	result_chebi =  re.match(pattern_chebi, h[7].strip())
 	if (h[7].strip()=='-')|(h[7].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  continue
 	elif(result_chebi):
@@ -385,8 +385,8 @@ for itemAdditionalConditions in ListTotal:
 ListQC.append("Data format for Additional Conditions correctly loaded for " + str(countConditions) + " values. \n\n") 
 
 ## Lists to check listed organism (Latin and common English names) for animals//vertebrates commonly used in WikiPathways:
-ListCommonLatinOrganismsWP = ['Bos taurus', 'Canis familiaris', 'Danio rerio', 'Equus caballus', 'Gallus gallus', 'Homo sapiens', 'Mus musculus', 'Pan troglodytes', 'Rattus norvegicus', 'Sus scrofa']
-ListCommonEnglishOrganismsWP = ['cow', 'dog', 'zebrafish', 'horse', 'chicken', 'human', 'house mouse', 'chimpanzee', 'brown rat', 'wild boar or pig']
+ListCommonLatinOrganismsWP = ['Bos taurus', 'Canis familiaris', 'Danio rerio', 'Equus caballus', 'Gallus gallus', 'Homo sapiens', 'Mus musculus', 'Pan troglodytes', 'Rattus norvegicus', 'Sus scrofa', 'Escherichia coli']
+ListCommonEnglishOrganismsWP = ['cow', 'dog', 'zebrafish', 'horse', 'chicken', 'human', 'house mouse', 'chimpanzee', 'brown rat', 'wild boar or pig', 'E. coli']
 
 # using dictionary comprehension to convert lists to dictionary for conversion of English to Latin later.
 Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrganismsWP[i] for i in range(len(ListCommonEnglishOrganismsWP))}
@@ -412,13 +412,15 @@ for itemOrganism in ListTotal:
 	j = itemOrganism.split('\t')
 	if(j[14].strip()=='-')|(j[14].strip()=='NA')|(i[14].strip()=='')|(j[16].strip()=='-')|(j[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
 	  continue
-	elif(all(x.isalpha() or x.isspace() for x in j[14])): ##Check if Organism names only contains letters and spaces only.
-	  if(j[14] in ListCommonLatinOrganismsWP): ##check for latin name first
-	    ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + j[14].strip('"') + '"^^xsd:string')
-	    countOrganisms = countOrganisms + 1
-	  elif(j[14].lower() in ListCommonEnglishOrganismsWP):  ##Convert English to Latin name.
-	    for key in Dict_CommonOrganismsWP:
-	      if key.lower() == j[14].lower():
+	elif((all(x.isalpha() or x.isspace() for x in j[14])|('.' in j[14]))): ##Check if Organism names only contains letters and spaces only; or a dot (for abbreviated names)
+	  if(j[14].lower().strip().replace(" ", "") in [x.lower().replace(" ", "") for x in ListCommonLatinOrganismsWP]): ##check for latin name first
+	    for key, value in Dict_CommonOrganismsWP.items(): ## Add names from structured data, not input data.
+	      if value.strip().lower().replace(" ", "") == j[14].lower().strip().replace(" ", ""):
+	        ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
+	        countOrganisms = countOrganisms + 1
+	  elif(j[14].lower().strip().replace(" ", "") in [x.lower().replace(" ", "") for x in ListCommonEnglishOrganismsWP]):  ##Convert English to Latin name.
+	    for key,value in Dict_CommonOrganismsWP.items():
+	      if key.strip().lower().replace(" ", "") == j[14].lower().strip().replace(" ", ""):
 	        ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
 	    countOrganisms = countOrganisms + 1
 	  else:
