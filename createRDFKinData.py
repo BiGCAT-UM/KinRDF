@@ -298,14 +298,14 @@ for itemKm in ListTotal:
   if(i[8].strip()=='-')|(i[8].strip()=='NA')|(i[8].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!! [16] = Database, needed for provenance and ending statement in RDF!
     continue
   elif(result_float): ##Check if entry contains a number with decimal(s)
-    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
+    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm' + ' "' + i[8].strip() + '"^^xsd:float')
     countKm = countKm + 1
   elif(i[8].strip().isnumeric()): ##Check if entry contains a number without decimal(s)
-    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + i[8].strip() + '"^^xsd:float')
+    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm' + ' "' + i[8].strip() + '"^^xsd:float')
     countKm = countKm + 1
   elif("e" in i[8].strip().lower()): ##Check if entry contains a scientific annotations 
     Scinumber = float(i[8].strip().lower())
-    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm ' + ' "' + str('%.08f' % Scinumber) + '"^^xsd:float')
+    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm' + ' "' + str('%.08f' % Scinumber) + '"^^xsd:float')
     countKm = countKm + 1  
   else:
     ListErrors.append("CHECK: Data format for Km data not a number, check original data for: "+ i[0] + " : " + i[8] + '\n')
@@ -321,10 +321,10 @@ for itemKcat in ListTotal:
   if(i[9].strip()=='-')|(i[9].strip()=='NA')|(i[9].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
-    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') 
+    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat' + ' "' + i[9].strip() + '"^^xsd:float') 
     countKcat = countKcat + 1
   elif(i[9].strip().isnumeric()):
-    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat ' + ' "' + i[9].strip() + '"^^xsd:float') 
+    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat' + ' "' + i[9].strip() + '"^^xsd:float') 
     countKcat = countKcat + 1
   else:
     ListErrors.append("CHECK: Data format for Kcat data not numeric, check original data for: "+ i[0] + " : " + i[9] + '\n')
@@ -378,10 +378,10 @@ for itemTemperature in ListTotal:
   if(i[12].strip()=='-')|(i[12].strip()=='NA')|(i[12].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
-    ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076 ' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
+    ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
     countTemp = countTemp + 1
   elif(i[12].strip().isnumeric()):
-    ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076 ' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
+    ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
     countTemp = countTemp + 1
   else:
     ListErrors.append("CHECK: Data format for Temp data not numeric, check original data for: "+ i[0] + " : " + i[12] + '\n')
