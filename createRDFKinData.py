@@ -102,23 +102,23 @@ ListTotal = [w.replace('RHEA:', '') for w in ListTotal]
 ListTotal = [w.replace('CHEBI:', '') for w in ListTotal]
 
 ##Remove lines without ChEBI, UniProt, or Rhea
-for item in ListTotal:
+for item in ListTotal[:]:
 	a = item.split('\t')
 	if (a[0].strip()=='-')|(a[4].strip()=='-')|(a[6].strip()=='-')|(a[7].strip()=='-')|(a[0].strip()=='NA')|(a[4].strip()=='NA')|( a[6].strip()=='NA')|(a[7].strip()=='NA'): #Check if one of the necessary values is missing!!
 	  ListTotal.remove(item)
-	  
+
 ##Remove lines without any provenance (either PMID or Database ar needed)
-for item in ListTotal:
+for item in ListTotal[:]:
 	a = item.split('\t')
 	if ((a[15].strip()=='-')&(a[16].strip()=='-'))|((a[15].strip()=='-')&(a[16].strip()=='NA'))|((a[15].strip()=='-')&(a[16].strip()=='')): #Check if both values are missing!!
 	  ListTotal.remove(item)
 
-for item in ListTotal:
+for item in ListTotal[:]:
 	a = item.split('\t')	  
 	if ((a[15].strip()=='NA')&(a[16].strip()=='NA'))|((a[15].strip()=='NA')&(a[16].strip()=='-'))|((a[15].strip()=='NA')&(a[16].strip()=='')):  #Check if both values are NA!!
 	  ListTotal.remove(item)
 
-for item in ListTotal:
+for item in ListTotal[:]:
 	a = item.split('\t')
 	if ((a[15].strip()=='')&(a[16].strip()==''))|((a[15].strip()=='')&(a[16].strip()=='-'))|((a[15].strip()=='')&(a[16].strip()=='NA')):  #Check if both values are empty!!
 	  ListTotal.remove(item)
@@ -133,7 +133,7 @@ pattern_rhea = '^(RHEA:)?\\d{5}$'
 
 ##SER_number
 countSER = 0
-for itemSERX in ListTotal:
+for itemSERX in ListTotal[:]:
 	a = itemSERX.split('\t')
 	pattern = '[a-zA-Z]+:[0-9]'
 	result = re.match(pattern, a[0])
