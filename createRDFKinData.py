@@ -467,49 +467,65 @@ for itemProv in ListTotal:
 	  continue
 	####First scenario, both values are available and valid:
 	##Option 1: Pubmed contains 1 value; database name contains 1 value
-	elif ((p[15].isnumeric())&((all(x.isalpha() or x.isspace() for x in p[16])|(('-' in p[16])&((',' not in p[16])&(';' not in p[16])))))):  ##Check if pubmed ID is numeric and if database names only contains letters (or spaces, or one bar for sabio-rk).:
-	  if((p[16].strip().lower() not in ListSupportedDatabases)&(p[16].strip().lower() not in ListSupportedDatabasesAlternatives)): ##Check if database name is valid!
+	elif ((p[15].isnumeric())&((all(x.isalpha() or x.isspace() for x in p[16])|((('-' in p[16])|((':' in p[16])))&((',' not in p[16])&(';' not in p[16])))))):  ##Check if pubmed ID is numeric and if database names only contains letters (or spaces, or one bar for sabio-rk, or ':' for internal brenda IDs).:
+	  splitProv = p[16].split(':') ##Doesn't trow an error if no ':' is present!
+	  if(((p[16].strip().lower() not in ListSupportedDatabases)&(p[16].strip().lower() not in ListSupportedDatabasesAlternatives))&((splitProv[0].strip().lower() not in ListSupportedDatabases)&(splitProv[0].strip().lower() not in ListSupportedDatabasesAlternatives))): ##Check if database name is valid!
 	    ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
-	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
 	    countRefs = countRefs + 1
-	  elif(p[16].strip().lower() in ListSupportedDatabases): ##check for official name first
+	    if(p[16].strip() == '-'):
+	      continue
+	    else:
+	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
+	  elif((p[16].strip().lower() in ListSupportedDatabases)|(splitProv[0].strip().lower() in ListSupportedDatabases)): ##check for official name first
 	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
 	    countProv = countProv + 1
-	  elif(p[16].strip().lower() in ListSupportedDatabasesAlternatives):  ##Convert alternative name to official name.
+	  elif((p[16].strip().lower() in ListSupportedDatabasesAlternatives)|(splitProv[0].strip().lower() in ListSupportedDatabasesAlternatives)):  ##Convert alternative name to official name.
 	    for key in Dict_SupportedDatabases:
-	      if key.lower() == p[16].strip().lower():
+	      if key.lower() == p[16].strip().lower(): ##Original data
+	        ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + Dict_SupportedDatabases[key] + '"^^xsd:string')
+	      elif key.lower() == splitProv[0].strip().lower(): ##Split data
 	        ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + Dict_SupportedDatabases[key] + '"^^xsd:string')
 	    countProv = countProv + 1  
 	  else:
 	    ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
 	    countRefs = countRefs + 1
-	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
+	    if(p[16].strip() == '-'):
+	      continue
+	    else:
+	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
 	##Option 2: Pubmed contains 1 value; database contains more than 1
-	elif (p[15].isnumeric())&((';' in p[16])|(',' in p[16])): ##Check if pubmed ID is numeric and database name contains multiple values semicolon or comma separated.
+	elif (p[15].isnumeric())&((';' in p[16])|(',' in p[16])|(':' in p[16])): ##Check if pubmed ID is numeric and database name contains multiple values semicolon or comma separated. Note: items with mulitple separators, e.g. with internal Brenda IDs will not be split.
 	  ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
 	  countRefs = countRefs + 1
-	  if(';' in p[16]):
+	  if(';' in p[16])&(',' not in p[16])&(':' not in p[16]):
 	    p2 = p[16].split(';') ##Split multiple references in one line, semicolon split.
-	  elif(',' in p[16]):
+	  elif(',' in p[16])&(';' not in p[16])&(':' not in p[16]):
 	    p2 = p[16].split(',') ##Split multiple references in one line, comma split.
 	  else:
 	    ListErrors.append("CHECK: Multiple separators for Database Provenance detected, check original data for: "+ p[0] + " : " + p[16] + '\n')  
-	  p2 = [x.strip(' ').lower() for x in p2] ##strip whitespaces (if existing)
-	  ListProvenance = []
-	  for z in [0,(len(p2)-1)]:
-	    if(p2[z] in ListSupportedDatabases): ##check for original name first
-	      p2[z] = '"' + p2[z] + '"^^xsd:string' ##add suffix for each item in list
-	      ListProvenance.append(p2[z])
-	    elif(p2[z] in ListSupportedDatabasesAlternatives):  ##Check to convert alternative name to official name.
-	      for key in Dict_SupportedDatabases:
-	        if key.lower() == p2[z].strip().lower():
-	          p2[z] = Dict_SupportedDatabases[key] ##Convert alternative name to official to item
-	          p2[z] = '"' + p2[z] + '"^^xsd:string'##add suffix for item
-	          ListProvenance.append(p2[z])
-	    else:
-	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
+	  try:
+	    ListProvenance = []
+	    p2 = [x.strip(' ').lower() for x in p2] ##strip whitespaces (if existing)
+	    for z in [0,(len(p2)-1)]:
+	      if(p2[z] in ListSupportedDatabases): ##check for original name first
+	        p2[z] = '"' + p2[z] + '"^^xsd:string' ##add suffix for each item in list
+	        ListProvenance.append(p2[z])
+	      elif(p2[z] in ListSupportedDatabasesAlternatives):  ##Check to convert alternative name to official name.
+	        for key in Dict_SupportedDatabases:
+	          if key.lower() == p2[z].strip().lower():
+	            p2[z] = Dict_SupportedDatabases[key] ##Convert alternative name to official to item
+	            p2[z] = '"' + p2[z] + '"^^xsd:string'##add suffix for item
+	            ListProvenance.append(p2[z])
+	      else:
+	        ListProvenance = []
+	        ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
+	  except NameError:
+	    continue
 	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(ListProvenance))
-	  countProv = countProv + len(p2)
+	  try:
+	    countProv = countProv + len(p2)
+	  except NameError:
+	    countProv = countProv
 	##Option 3: Pubmed contains more than 1 value, database name contains 1 value
 	elif ((';' in p[15])|(',' in p[15]))&(all(x.isalpha() or x.isspace() for x in p[16])):
 	  if(';' in p[15]):
