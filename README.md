@@ -40,6 +40,8 @@ source my_env/bin/activate
 which python
 ## Check version of Python
 python3 --version
+##Install library to read xlsx files:
+pip install openpyxl
 ```
 
 # Run RDF

@@ -58,21 +58,37 @@ ListQC = []
 ListErrors = []
 ListCuration = [] 
 
+##Import library to read xlsx files:
+import openpyxl
+
 ##Read in files with kinetics data.
-count = 0
+#count = 0
 countSER = 1
 for (dirname, dirs, files) in os.walk('.'):
 	for filename in files:
-		if filename.endswith('.txt') :
-			count = count + 1
-			thefile = os.path.join(dirname,filename)
-			f = open(filename, "r")
-			next(f)
-			for line in f:
-				SER_Name = "SER:" + str(countSER)
-				ListTotal.append(SER_Name + '\t' + line.strip('\n'))
-				countSER += 1
-				
+	  if filename.endswith('.txt') :
+	    thefile = os.path.join(dirname,filename)
+	    f = open(filename, "r")
+	    next(f)
+	    for line in f:
+	      SER_Name = "SER:" + str(countSER)
+	      ListTotal.append(SER_Name + '\t' + line.strip('\n'))
+	      countSER += 1
+	  elif filename.endswith('.xlsx') :
+		  thefile = os.path.join(dirname,filename)
+		  wb_obj = openpyxl.load_workbook(filename)
+		  sheet_obj = wb_obj.active
+		  rows_iter = sheet_obj.iter_rows(min_col = 1, min_row = 2, max_col = sheet_obj.max_column, max_row = sheet_obj.max_row)
+		  values = [[cell.value for cell in row] for row in rows_iter]
+		  entries = range(len(values))
+		  for n in entries:
+		    SER_Name = "SER:" + str(countSER)
+		    line = '\t'.join(str(element) for element in values[n])
+		    ListTotal.append(SER_Name + '\t' + line)
+		    countSER += 1
+	  else:
+	    ListQC.append("File extension could not be read: "+ filename + '\n')
+
 ##Remove spaces between prefixes and IDs for RHEA (column 6) and ChEBI (column 7)
 ListTotal = [w.replace('RHEA: ', '') for w in ListTotal]
 ListTotal = [w.replace('CHEBI: ', '') for w in ListTotal]
@@ -449,7 +465,7 @@ for itemProv in ListTotal:
 	p = itemProv.split('\t')
 	if((p[15].strip()=='-')|(p[15].strip()=='NA')|(p[15].strip()==''))&((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()=='')): ## if both are missing, do not include data.
 	  continue
-	####First scenario, both values are available:
+	####First scenario, both values are available and valid:
 	##Option 1: Pubmed contains 1 value; database name contains 1 value
 	elif ((p[15].isnumeric())&((all(x.isalpha() or x.isspace() for x in p[16])|(('-' in p[16])&((',' not in p[16])&(';' not in p[16])))))):  ##Check if pubmed ID is numeric and if database names only contains letters (or spaces, or one bar for sabio-rk).:
 	  if((p[16].strip().lower() not in ListSupportedDatabases)&(p[16].strip().lower() not in ListSupportedDatabasesAlternatives)): ##Check if database name is valid!
@@ -565,7 +581,9 @@ for itemProv in ListTotal:
 	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')
 	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(ListProvenance))
 	  countProv = countProv + len(l2)
+	####Fourth scenario, no valid entry is available:
 	else:
+	  ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + 'unclear origin' + '"^^xsd:string')
 	  ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
 
 ListQC.append("Data format for PMIDs Provenance correctly loaded for " + str(countRefs) + " values. \n\n")
