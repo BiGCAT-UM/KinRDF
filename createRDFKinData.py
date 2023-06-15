@@ -467,23 +467,27 @@ for itemProv in ListTotal:
 	  continue
 	####First scenario, both values are available and valid:
 	##Option 1: Pubmed contains 1 value; database name contains 1 value
-	elif ((p[15].isnumeric())&((all(x.isalpha() or x.isspace() for x in p[16])|((('-' in p[16])|((':' in p[16])))&((',' not in p[16])&(';' not in p[16])))))):  ##Check if pubmed ID is numeric and if database names only contains letters (or spaces, or one bar for sabio-rk, or ':' for internal brenda IDs).:
+	elif ((p[15].isnumeric())&((all(x.isalpha() or x.isspace() for x in p[16])|((('-' in p[16])|((':' in p[16])))&((',' not in p[16])&(';' not in p[16])))))):  
+	  ##Check if pubmed ID is numeric and if database names only contains letters (or spaces, or one bar for sabio-rk, or ':' for internal brenda IDs).:
 	  splitProv = p[16].split(':') ##Doesn't trow an error if no ':' is present!
-	  if(((p[16].strip().lower() not in ListSupportedDatabases)&(p[16].strip().lower() not in ListSupportedDatabasesAlternatives))&((splitProv[0].strip().lower() not in ListSupportedDatabases)&(splitProv[0].strip().lower() not in ListSupportedDatabasesAlternatives))): ##Check if database name is valid!
+	  if(((p[16].strip().lower() not in ListSupportedDatabases)&(p[16].strip().lower() not in ListSupportedDatabasesAlternatives))&((splitProv[0].strip().lower() not in ListSupportedDatabases)&(splitProv[0].strip().lower() not in ListSupportedDatabasesAlternatives))): 
+	    ##Check if database name is not valid, so only pubmed ID will be added!
 	    ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
 	    countRefs = countRefs + 1
 	    if(p[16].strip() == '-'):
+	      ##check if database is equally to '-', and ignore this value in QC report.
 	      continue
 	    else:
 	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
 	  elif((p[16].strip().lower() in ListSupportedDatabases)|(splitProv[0].strip().lower() in ListSupportedDatabases)): ##check for official name first
-	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
+	    for key, value in Dict_SupportedDatabases.items(): ## Add databases from structured data, not input data.
+	      if ((value.strip().lower().replace(" ", "") == p[16].strip().lower().replace(" ", ""))|(value.strip().lower().replace(" ", "") == splitProv[0].strip().lower().replace(" ", ""))):
+	        ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + Dict_SupportedDatabases[key] + '"^^xsd:string')
+	        print('Error5')
 	    countProv = countProv + 1
 	  elif((p[16].strip().lower() in ListSupportedDatabasesAlternatives)|(splitProv[0].strip().lower() in ListSupportedDatabasesAlternatives)):  ##Convert alternative name to official name.
 	    for key in Dict_SupportedDatabases:
-	      if key.lower() == p[16].strip().lower(): ##Original data
-	        ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + Dict_SupportedDatabases[key] + '"^^xsd:string')
-	      elif key.lower() == splitProv[0].strip().lower(): ##Split data
+	      if ((key.strip().lower().replace(" ", "") == p[16].strip().lower().replace(" ", ""))|(key.strip().lower().replace(" ", "")  == splitProv[0].strip().lower().replace(" ", ""))): 
 	        ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + Dict_SupportedDatabases[key] + '"^^xsd:string')
 	    countProv = countProv + 1  
 	  else:
