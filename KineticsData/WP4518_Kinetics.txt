@@ -1,50 +1,50 @@
-EnzymePW	ApprovedEnzymeName	ECnumber	Uniprot 	Ensembl	RheaID	CHEBIID	Km (mM)	Kcat (s-1)	Kcat/Km (M-1s-1)	pH	Temperature (Celcius)	AdditionalConditions	Organism	PMID 	Database
-GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.68	-	-	-	-	-	Mus musculus	36916	-
-GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.0057	-	-	-	-	-	Sus scrofa	6126192	BRENDA
-GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.0105	-	-	7.4	37	isoform GGT5. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl	Homo sapiens	21447318	BRENDA
-GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856	0.0106	-	-	7.4	37	isoform GGT1. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl	Homo sapiens	21447318	BRENDA
-GGCT	Gamma-glutamylcycletransferase	 2.3.2.4	O75223	-	RHEA:20506	15857	-	-	-	-	-	-	-	-	-
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.16	-	-	-	-	initial Km in presence of GTP	Rattus norvegicus	6121802	BRENDA
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.18	-	-	-	-	initial Km in presence of ITP	Rattus norvegicus	6121802	BRENDA
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.2	-	-	-	-	initial Km in presence of UTP	Rattus norvegicus	6121802	BRENDA
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.41	-	-	-	-	in presence of ATP	Rattus norvegicus	6121802	BRENDA
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.5	-	-	-	-	final Km in presence of UTP	Rattus norvegicus	6121802	BRENDA
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.5	-	-	-	-	-	Rattus norvegicus	6121802	BRENDA
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.57	-	-	-	-	final Km in presence of GTP	Rattus norvegicus	6121802	BRENDA
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.58	-	-	-	-	final Km in presence of ITP	Rattus norvegicus	6121802	BRENDA
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.0316	-	-	-	-	-	Rattus norvegicus	1181279	BRENDA
-5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010	0.05	-	-	-	-	-	Rattus norvegicus	1181279;4823446;10078874	BRENDA
-GCLC	Glutamate-cysteine ligase	 6.3.2.2	P48506	-	RHEA:13286	14321	0.75	-	-	-	-	enzyme from embryo homogenate	Rattus norvegicus	15115889	BRENDA
-GCLC	Glutamate-cysteine ligase	 6.3.2.2	P48506	-	RHEA:13286	14321	1.38	-	-	-	-	enzyme from visceral yolk sac homogenate	Rattus norvegicus	15115889	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515	0.2	-	-	-	-	-	Homo sapiens	-	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	0.25	-	-	8.2	37	mutant K305A	Homo sapiens	14990577	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	452	-	-	8.2	37	-	Homo sapiens	11708780	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	0.58	-	-	8.2	37	wild-type enzyme	Homo sapiens	21771585	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	1.75	-	-	8.2	37	wild-type enzyme	Homo sapiens	14990577	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	1.96	-	-	8.2	37	mutant K305E	Homo sapiens	14990577	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	-	8.2	37	D458A. Km between 3 -5 with an average of 4	Homo sapiens	21771585	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	16	-	-	8.2	37	D458N	Homo sapiens	21771585	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	51	-	-	8.2	37	D458R	Homo sapiens	21771585	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	0.53	-	-	-	37	wild-type enzyme	Homo sapiens	20800579	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	1.02	-	-	-	-	mutant enzyme R283C	Homo sapiens	15056072	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	1.24	-	-	-	-	mutant enzyme Y270H	Homo sapiens	15056072	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	1.43	-	-	-	-	mutant enzyme Y270C	Homo sapiens	15056072	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	1.51	-	-	-	-	mutant enzyme D219G	Homo sapiens	15056072	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	1.64	-	-	-	-	mutant enzyme P314L	Homo sapiens	15056072	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	1.75	-	-	-	-	wild-type enzyme	Homo sapiens	15056072	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	2.07	-	-	-	-	mutant enzyme D219A	Homo sapiens	15056072	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	2.25	-	-	-	-	mutant enzyme L188P	Homo sapiens	15056072	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	2.52	-	-	-	37	mutant G371V	Homo sapiens	20800579	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	10.36	7.5	25	wild-type enzyme	Synechocystis sp.	23170977	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	1.17	8.2	37	D458R	Homo sapiens	21771585	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	1.6	8.2	37	D458A 	Homo sapiens	21771585	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	2.31	8.2	37	D458N 	Homo sapiens	21771585	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	15.68	7.5	25	wild-type enzyme	Homo sapiens	21771585	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	52	-	37	mutant G370V	Homo sapiens	20800579	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	133	-	37	mutant G369V	Homo sapiens	20800579	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	2.36	-	37	mutant G371V	Homo sapiens	20800579	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428	-	-	18.8	-	37	wild-type enzyme	Homo sapiens	20800579	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515	-	-	26.9	8.2	25	-	Pasteurella multocida	16339152	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515	-	-	55	-	-	inTris-HCl buffer (200 mM. pH 8.2)	Pasteurella multocida	16339152	BRENDA
-GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515	-	-	10.36	7.5	25	wild-type enzyme	Synechocystis sp.	23170977	BRENDA
-DP	Membrane alanyl aminopeptidase	 3.4.11.2	P16444	ENSG00000015413	Cysteinylglycine = cysteine 	4047	2.5	-	-	-	-	-	Rattus norvegicus	6122685	BRENDA
+EnzymePW	ApprovedEnzymeName	E.C.number	Uniprot	Ensembl	RheaID	CHEBIID	SusbtrateName	Km (mM)	Kcat (s-1)	Kcat/Km (M-1s-1)	pH	Temperature (Celcius)	AdditionalConditions	Organism	PMID	Database
+GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856		0.68	-	-	-	-	-	Mus musculus	36916	-
+GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856		0.0057	-	-	-	-	-	Sus scrofa	6126192	BRENDA
+GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856		0.0105	-	-	7.4	37	isoform GGT5. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl	Homo sapiens	21447318	BRENDA
+GGT1	Gamma-glutamyltransferase	 2.3.2.2	P19440	-	RHEA:23905	16856		0.0106	-	-	7.4	37	isoform GGT1. in 100 mM Na2HPO4. 3.2 mM KCl. 1.8 mM KH2PO4. and 27.5 mM NaCl	Homo sapiens	21447318	BRENDA
+GGCT	Gamma-glutamylcycletransferase	 2.3.2.4	O75223	-	RHEA:20506	15857		-	-	-	-	-	-	-	-	-
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010		0.16	-	-	-	-	initial Km in presence of GTP	Rattus norvegicus	6121802	BRENDA
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010		0.18	-	-	-	-	initial Km in presence of ITP	Rattus norvegicus	6121802	BRENDA
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010		0.2	-	-	-	-	initial Km in presence of UTP	Rattus norvegicus	6121802	BRENDA
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010		0.41	-	-	-	-	in presence of ATP	Rattus norvegicus	6121802	BRENDA
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010		0.5	-	-	-	-	final Km in presence of UTP	Rattus norvegicus	6121802	BRENDA
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010		0.5	-	-	-	-	-	Rattus norvegicus	6121802	BRENDA
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010		0.57	-	-	-	-	final Km in presence of GTP	Rattus norvegicus	6121802	BRENDA
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010		0.58	-	-	-	-	final Km in presence of ITP	Rattus norvegicus	6121802	BRENDA
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010		0.0316	-	-	-	-	-	Rattus norvegicus	1181279	BRENDA
+5-Oxoprolinase	5-Oxoprolinase	 3.5.2.9	O14841	-	RHEA:10349	16010		0.05	-	-	-	-	-	Rattus norvegicus	1181279;4823446;10078874	BRENDA
+GCLC	Glutamate-cysteine ligase	 6.3.2.2	P48506	-	RHEA:13286	14321		0.75	-	-	-	-	enzyme from embryo homogenate	Rattus norvegicus	15115889	BRENDA
+GCLC	Glutamate-cysteine ligase	 6.3.2.2	P48506	-	RHEA:13286	14321		1.38	-	-	-	-	enzyme from visceral yolk sac homogenate	Rattus norvegicus	15115889	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515		0.2	-	-	-	-	-	Homo sapiens	-	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		0.25	-	-	8.2	37	mutant K305A	Homo sapiens	14990577	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		452	-	-	8.2	37	-	Homo sapiens	11708780	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		0.58	-	-	8.2	37	wild-type enzyme	Homo sapiens	21771585	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		1.75	-	-	8.2	37	wild-type enzyme	Homo sapiens	14990577	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		1.96	-	-	8.2	37	mutant K305E	Homo sapiens	14990577	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		-	-	-	8.2	37	D458A. Km between 3 -5 with an average of 4	Homo sapiens	21771585	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		16	-	-	8.2	37	D458N	Homo sapiens	21771585	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		51	-	-	8.2	37	D458R	Homo sapiens	21771585	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		0.53	-	-	-	37	wild-type enzyme	Homo sapiens	20800579	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		1.02	-	-	-	-	mutant enzyme R283C	Homo sapiens	15056072	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		1.24	-	-	-	-	mutant enzyme Y270H	Homo sapiens	15056072	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		1.43	-	-	-	-	mutant enzyme Y270C	Homo sapiens	15056072	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		1.51	-	-	-	-	mutant enzyme D219G	Homo sapiens	15056072	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		1.64	-	-	-	-	mutant enzyme P314L	Homo sapiens	15056072	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		1.75	-	-	-	-	wild-type enzyme	Homo sapiens	15056072	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		2.07	-	-	-	-	mutant enzyme D219A	Homo sapiens	15056072	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		2.25	-	-	-	-	mutant enzyme L188P	Homo sapiens	15056072	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		2.52	-	-	-	37	mutant G371V	Homo sapiens	20800579	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		-	-	10.36	7.5	25	wild-type enzyme	Synechocystis sp.	23170977	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		-	-	1.17	8.2	37	D458R	Homo sapiens	21771585	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		-	-	1.6	8.2	37	D458A 	Homo sapiens	21771585	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		-	-	2.31	8.2	37	D458N 	Homo sapiens	21771585	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		-	-	15.68	7.5	25	wild-type enzyme	Homo sapiens	21771585	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		-	-	52	-	37	mutant G370V	Homo sapiens	20800579	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		-	-	133	-	37	mutant G369V	Homo sapiens	20800579	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		-	-	2.36	-	37	mutant G371V	Homo sapiens	20800579	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	15428		-	-	18.8	-	37	wild-type enzyme	Homo sapiens	20800579	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515		-	-	26.9	8.2	25	-	Pasteurella multocida	16339152	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515		-	-	55	-	-	inTris-HCl buffer (200 mM. pH 8.2)	Pasteurella multocida	16339152	BRENDA
+GSS	Gluthation synthase 	 6.3.2.3	P48637	-	RHEA:13558	17515		-	-	10.36	7.5	25	wild-type enzyme	Synechocystis sp.	23170977	BRENDA
+DP	Membrane alanyl aminopeptidase	 3.4.11.2	P16444	ENSG00000015413	Cysteinylglycine = cysteine 	4047		2.5	-	-	-	-	-	Rattus norvegicus	6122685	BRENDA

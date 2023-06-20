@@ -1,18 +1,19 @@
-Total lines read: 251
-Lines remaining without missing SER info: 250
-Data format for SER correctly loaded for 250 Substrate, Enzyme, and Reaction IDs. 
+File extension could not be read: .~lock.KineticsPW4519.txt#
+Total lines read: 247
+Lines remaining without missing SER info: 247
+Data format for SER correctly loaded for 247 Substrate, Enzyme, and Reaction IDs. 
 
-Data format for 'wp:bdbEnzymeNomenclature correctly loaded for 246 EC IDs. 
+Data format for 'wp:bdbEnzymeNomenclature correctly loaded for 243 EC IDs. 
 
-Data format for wp:bdbUniprot correctly loaded for 250 UniProt Protein IDs. 
+Data format for wp:bdbUniprot correctly loaded for 247 UniProt Protein IDs. 
 
-Data format for wp:bdbEnsembl correctly loaded for 112 gene IDs. 
+Data format for wp:bdbEnsembl correctly loaded for 111 gene IDs. 
 
-Data format for wp:bdbRhea correctly loaded for 174 rhea interaction IDs. 
+Data format for wp:bdbRhea correctly loaded for 171 rhea interaction IDs. 
 
 Data format for rh:equation correctly loaded for 76 reaction formulas. 
 
-Data format for wp:bdbChEBI correctly loaded for 250 substrate IDs. 
+Data format for wp:bdbChEBI correctly loaded for 247 substrate IDs. 
 
 Data format for Km correctly loaded for 163 values. 
 
@@ -28,7 +29,7 @@ Data format for Additional Conditions correctly loaded for 131 values.
 
 Data format for Organisms correctly loaded for 228 values. 
 
-Data format for PMIDs Provenance correctly loaded for 241 values. 
+Data format for PMIDs Provenance correctly loaded for 240 values. 
 
 Data format for Database Provenance correctly loaded for 248 values. 
 
@@ -39,7 +40,7 @@ CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data fo
 CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:254 : 1.1.1.B40
 CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:255 : 1.1.1.B40
 CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:256 : 1.1.1.B40
-CHECK: Data format for Organism name is not recognized, check original data for: SER:13 : Alcaligenes sp. 
+CHECK: Name for Organism is not recognized, check original data for: SER:13 : Alcaligenes sp. 
 CHECK: Name for Organism is not recognized, check original data for: SER:14 : Arabidopsis thaliana
 CHECK: Name for Organism is not recognized, check original data for: SER:15 : Pisum sativum
 CHECK: Name for Organism is not recognized, check original data for: SER:16 : Pisum sativum
@@ -48,10 +49,10 @@ CHECK: Name for Organism is not recognized, check original data for: SER:19 : Ch
 CHECK: Name for Organism is not recognized, check original data for: SER:20 : Rhoopseudomonas palustris
 CHECK: Name for Organism is not recognized, check original data for: SER:21 : Chlorobium limicola
 CHECK: Name for Organism is not recognized, check original data for: SER:22 : Saccharomyces cerevisiae
-CHECK: Data format for Organism name is not recognized, check original data for: SER:68 : Synechocystis sp.
+CHECK: Name for Organism is not recognized, check original data for: SER:68 : Synechocystis sp.
 CHECK: Name for Organism is not recognized, check original data for: SER:77 : Pasteurella multocida
 CHECK: Name for Organism is not recognized, check original data for: SER:78 : Pasteurella multocida
-CHECK: Data format for Organism name is not recognized, check original data for: SER:79 : Synechocystis sp.
+CHECK: Name for Organism is not recognized, check original data for: SER:79 : Synechocystis sp.
 CHECK: Name for Organism is not recognized, check original data for: SER:84 : Rat
 CHECK: Name for Organism is not recognized, check original data for: SER:90 : Oryctolagus cuniculus
 CHECK: Name for Organism is not recognized, check original data for: SER:91 : Oryctolagus cuniculus
@@ -60,4 +61,3 @@ CHECK: Name for Organism is not recognized, check original data for: SER:254 : F
 
 Potential Curation Required: 
 
-CURATION: missing data for: SER:262 substrate: - enzyme: J3KNC7 reaction: -

@@ -1,3 +1,3 @@
-EnzymePW	ApprovedEnzymeName	E.C.number	Uniprot	Ensembl	RheaID	CHEBIID	Km	Kcat	Kcat/Km	pH	Temperature	AdditionalConditions	Organism	PMID	Database
-Aminocyclase 2	-	3.5.1.15	P45381 	-	RHEA:14167	16953	163	37,5	-	7,4	37	-	Homo sapiens	18280251	Brenda: 668640 
-LPL	lipoprotein lipase	3.1.1.34	P06863	-	triacylglycerol + H2O = diacylglycerol + a carboxylate	59238	1,12	-	-	-	-	-	Gallus gallus	11249004	BRENDA
+EnzymePW	ApprovedEnzymeName	E.C.number	Uniprot	Ensembl	RheaID	CHEBIID	SusbtrateName	Km (mM)	Kcat (s-1)	Kcat/Km (M-1s-1)	pH	Temperature (Celcius)	AdditionalConditions	Organism	PMID	Database
+Aminocyclase 2	-	3.5.1.15	P45381 	-	RHEA:14167	16953		163	37,5	-	7,4	37	-	Homo sapiens	18280251	Brenda: 668640 
+LPL	lipoprotein lipase	3.1.1.34	P06863	-	triacylglycerol + H2O = diacylglycerol + a carboxylate	59238		1,12	-	-	-	-	-	Gallus gallus	11249004	BRENDA

@@ -15,7 +15,7 @@ testData = "/TestData" ##For all test data
 validationData = "/ValidateData" ##To test one file at a time from test data
 
 ##Select folder name to apply script on:
-subfolderLocation = validationData ##Adapt this statement if needed
+subfolderLocation = checkedData ##Adapt this statement if needed
 ##TODO: include different setup in 3 separate GitHub Actions.
 
 #Update the path to where the data is stored.
@@ -58,6 +58,9 @@ ListQC = []
 ListErrors = []
 ListCuration = [] 
 
+##Header String to compare input data against template (in exact order)
+headers = 'EnzymePW	ApprovedEnzymeName	E.C.number	Uniprot	Ensembl	RheaID	CHEBIID	SusbtrateName	Km (mM)	Kcat (s-1)	Kcat/Km (M-1s-1)	pH	Temperature (Celcius)	AdditionalConditions	Organism	PMID	Database\n'
+
 ##Import library to read xlsx files:
 import openpyxl
 
@@ -68,12 +71,15 @@ for (dirname, dirs, files) in os.walk('.'):
 	for filename in files:
 	  if filename.endswith('.txt') :
 	    thefile = os.path.join(dirname,filename)
-	    f = open(filename, "r")
-	    next(f)
+	    f = open(filename, "r").readlines()
+	    header_line = f.pop(0)
 	    for line in f:
-	      SER_Name = "SER:" + str(countSER)
-	      ListTotal.append(SER_Name + '\t' + line.strip('\n'))
-	      countSER += 1
+	      if (header_line == headers):
+	        SER_Name = "SER:" + str(countSER)
+	        ListTotal.append(SER_Name + '\t' + line.strip('\n'))
+	        countSER += 1
+	      else:
+	        ListQC.append("File contains wrong column names, CHECK: "+ filename + '\n')
 	  elif filename.endswith('.xlsx') :
 		  thefile = os.path.join(dirname,filename)
 		  wb_obj = openpyxl.load_workbook(filename)
@@ -110,17 +116,17 @@ for item in ListTotal[:]:
 ##Remove lines without any provenance (either PMID or Database ar needed)
 for item in ListTotal[:]:
 	a = item.split('\t')
-	if ((a[15].strip()=='-')&(a[16].strip()=='-'))|((a[15].strip()=='-')&(a[16].strip()=='NA'))|((a[15].strip()=='-')&(a[16].strip()=='')): #Check if both values are missing!!
+	if ((a[17].strip()=='-')&(a[17].strip()=='-'))|((a[17].strip()=='-')&(a[17].strip()=='NA'))|((a[17].strip()=='-')&(a[17].strip()=='')): #Check if both values are missing!!
 	  ListTotal.remove(item)
 
 for item in ListTotal[:]:
 	a = item.split('\t')	  
-	if ((a[15].strip()=='NA')&(a[16].strip()=='NA'))|((a[15].strip()=='NA')&(a[16].strip()=='-'))|((a[15].strip()=='NA')&(a[16].strip()=='')):  #Check if both values are NA!!
+	if ((a[16].strip()=='NA')&(a[17].strip()=='NA'))|((a[16].strip()=='NA')&(a[17].strip()=='-'))|((a[16].strip()=='NA')&(a[17].strip()=='')):  #Check if both values are NA!!
 	  ListTotal.remove(item)
 
 for item in ListTotal[:]:
 	a = item.split('\t')
-	if ((a[15].strip()=='')&(a[16].strip()==''))|((a[15].strip()=='')&(a[16].strip()=='-'))|((a[15].strip()=='')&(a[16].strip()=='NA')):  #Check if both values are empty!!
+	if ((a[16].strip()=='')&(a[17].strip()==''))|((a[16].strip()=='')&(a[17].strip()=='-'))|((a[16].strip()=='')&(a[17].strip()=='NA')):  #Check if both values are empty!!
 	  ListTotal.remove(item)
 
 ##Print total number of lines found in files:
@@ -161,9 +167,10 @@ ListQC.append("Lines remaining without missing SER info: "+ str(len(ListTotal)) 
 ##Print total number of SEP-IDs, for which measurements are available:
 ListQC.append("Data format for SER correctly loaded for " + str(countSER) + " Substrate, Enzyme, and Reaction IDs. \n\n")  
 
+#### Template Version 2.x
 #### [0]=ERPX_number [1]=EnzymePW, [2]=ApprovedEnzymeName, [3]=EC_Number, [4]=Uniprot , 
-#### [5]=Ensembl, [6]=RheaID, [7]=CHEBIID, [8]=Km, [9]=Kcat, [10]=Kcat/Km, [11]=pH, [12]=Temperature, 
-#### [13]=AdditionalConditions, [14]=Organism, [15]=PMID, [16]=Database				
+#### [5]=Ensembl, [6]=RheaID, [7]=CHEBIID, [9] = SubstrateName, [9]=Km, [10]=Kcat, [11]=Kcat/Km, [12]=pH, [13]=Temperature, 
+#### [14]=AdditionalConditions, [15]=Organism, [16]=PMID, [17]=Database				
 
 ##EnzymePW 
 ##No regex or count defined, since the names of Proteins can be very diverse!
@@ -286,6 +293,18 @@ for itemSubstrate in ListTotal:
 
 ListQC.append("Data format for wp:bdbChEBI correctly loaded for " + str(countSubstrates) + " substrate IDs. \n\n")  
 
+
+###Substrate names (added in spreadsheet for curation, not needed in RDF model)
+##To be updated if needed
+# ##[8]=ApprovedEnzymeName
+# for itemApprovedEnzymeName in ListTotal:
+	# c = itemApprovedEnzymeName.split('\t')
+	# ListApprovedEnzymeName.append(b[0] + ' ' + 'rdfs:label' + ' ' + c[2])
+	# for items in ListApprovedEnzymeName: 
+		# if '-' in items:
+			# ListApprovedEnzymeName.remove(items)
+
+
 ##Regex:
 pattern_float = '^\d+\.\d+$' ##to test for numbers with dot-decimal separator
 
@@ -293,22 +312,25 @@ pattern_float = '^\d+\.\d+$' ##to test for numbers with dot-decimal separator
 countKm = 0
 for itemKm in ListTotal:
   i = itemKm.split('\t')
-  i[8] = i[8].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
-  result_float =  re.match(pattern_float, i[8])
-  if(i[8].strip()=='-')|(i[8].strip()=='NA')|(i[8].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!! [16] = Database, needed for provenance and ending statement in RDF!
+  i[9] = i[9].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
+  result_float =  re.match(pattern_float, i[9])
+  if(i[9].strip()=='-')|(i[9].strip()=='NA')|(i[9].strip()=='')|(i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()==''): #Check if one of the necessary values is missing!! [17] = Database, needed for provenance and ending statement in RDF!
     continue
   elif(result_float): ##Check if entry contains a number with decimal(s)
-    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm' + ' "' + i[8].strip() + '"^^xsd:float')
+    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm' + ' "' + i[9].strip() + '"^^xsd:float')
     countKm = countKm + 1
-  elif(i[8].strip().isnumeric()): ##Check if entry contains a number without decimal(s)
-    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm' + ' "' + i[8].strip() + '"^^xsd:float')
+  elif(i[9].strip().isnumeric()): ##Check if entry contains a number without decimal(s)
+    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm' + ' "' + i[9].strip() + '"^^xsd:float')
     countKm = countKm + 1
-  elif("e" in i[8].strip().lower()): ##Check if entry contains a scientific annotations 
-    Scinumber = float(i[8].strip().lower())
-    ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm' + ' "' + str('%.08f' % Scinumber) + '"^^xsd:float')
-    countKm = countKm + 1  
+  elif("e" in i[9].strip().lower()): ##Check if entry contains a scientific annotations 
+    try:
+      Scinumber = float(i[9].strip().lower())
+      ListKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKm' + ' "' + str('%.08f' % Scinumber) + '"^^xsd:float')
+      countKm = countKm + 1  
+    except: ##To avoid issues with other strings containing an 'e'
+      ListErrors.append("CHECK: Data format for Km data not a scientific number, check original data for: "+ i[0] + " : " + i[9] + '\n')
   else:
-    ListErrors.append("CHECK: Data format for Km data not a number, check original data for: "+ i[0] + " : " + i[8] + '\n')
+    ListErrors.append("CHECK: Data format for Km data not a number, check original data for: "+ i[0] + " : " + i[9] + '\n')
 	  
 ListQC.append("Data format for Km correctly loaded for " + str(countKm) + " values. \n\n")  
 
@@ -316,18 +338,18 @@ ListQC.append("Data format for Km correctly loaded for " + str(countKm) + " valu
 countKcat = 0
 for itemKcat in ListTotal:
   i = itemKcat.split('\t')
-  i[9] = i[9].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
-  result_float =  re.match(pattern_float, i[9])
-  if(i[9].strip()=='-')|(i[9].strip()=='NA')|(i[9].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
+  i[10] = i[10].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
+  result_float =  re.match(pattern_float, i[10])
+  if(i[10].strip()=='-')|(i[10].strip()=='NA')|(i[10].strip()=='')|(i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()==''): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
-    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat' + ' "' + i[9].strip() + '"^^xsd:float') 
+    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat' + ' "' + i[10].strip() + '"^^xsd:float') 
     countKcat = countKcat + 1
-  elif(i[9].strip().isnumeric()):
-    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat' + ' "' + i[9].strip() + '"^^xsd:float') 
+  elif(i[10].strip().isnumeric()):
+    ListKcat.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcat' + ' "' + i[10].strip() + '"^^xsd:float') 
     countKcat = countKcat + 1
   else:
-    ListErrors.append("CHECK: Data format for Kcat data not numeric, check original data for: "+ i[0] + " : " + i[9] + '\n')
+    ListErrors.append("CHECK: Data format for Kcat data not numeric, check original data for: "+ i[0] + " : " + i[10] + '\n')
 
 ListQC.append("Data format for Kcat correctly loaded for " + str(countKcat) + " values. \n\n") 
 
@@ -335,18 +357,18 @@ ListQC.append("Data format for Kcat correctly loaded for " + str(countKcat) + " 
 countKcatKm = 0
 for itemKcatKm in ListTotal:
   i = itemKcatKm.split('\t')
-  i[10] = i[10].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
-  result_float =  re.match(pattern_float, i[10])
-  if(i[10].strip()=='-')|(i[10].strip()=='NA')|(i[10].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
+  i[11] = i[11].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
+  result_float =  re.match(pattern_float, i[11])
+  if(i[11].strip()=='-')|(i[11].strip()=='NA')|(i[11].strip()=='')|(i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()==''): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
-    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcatKm' + ' "' + i[10].strip() + '"^^xsd:float') 
+    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcatKm' + ' "' + i[11].strip() + '"^^xsd:float') 
     countKcatKm = countKcatKm + 1	
-  elif(i[10].strip().isnumeric()):
-    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcatKm' + ' "' + i[10].strip() + '"^^xsd:float') 
+  elif(i[11].strip().isnumeric()):
+    ListKcatKm.append(i[0].strip() + '_measurement' + '\t' + 'SER:hasKcatKm' + ' "' + i[11].strip() + '"^^xsd:float') 
     countKcatKm = countKcatKm + 1	
   else:
-    ListErrors.append("CHECK: Data format for KcatKm data not numeric, check original data for: "+ i[0] + " : " + i[10] + '\n')
+    ListErrors.append("CHECK: Data format for KcatKm data not numeric, check original data for: "+ i[0] + " : " + i[11] + '\n')
 
 ListQC.append("Data format for KcatKm correctly loaded for " + str(countKcatKm) + " values. \n\n") 
 
@@ -354,18 +376,18 @@ ListQC.append("Data format for KcatKm correctly loaded for " + str(countKcatKm) 
 count_pH = 0
 for item_pH in ListTotal:
   i = item_pH.split('\t')
-  i[11] = i[11].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
-  result_float =  re.match(pattern_float, i[11])
-  if(i[11].strip()=='-')|(i[11].strip()=='NA')|(i[11].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
+  i[12] = i[12].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
+  result_float =  re.match(pattern_float, i[12])
+  if(i[12].strip()=='-')|(i[12].strip()=='NA')|(i[12].strip()=='')|(i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()==''): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
-    List_pH.append(i[0].strip( ) + '_measurement' + '\t' + 'SER:hasPh'+ ' "' + i[11].strip( ) + '"^^xsd:float')
+    List_pH.append(i[0].strip( ) + '_measurement' + '\t' + 'SER:hasPh'+ ' "' + i[12].strip( ) + '"^^xsd:float')
     count_pH = count_pH + 1
-  elif(i[11].strip().isnumeric()):
-    List_pH.append(i[0].strip( ) + '_measurement' + '\t' + 'SER:hasPh'+ ' "' + i[11].strip( ) + '"^^xsd:float')
+  elif(i[12].strip().isnumeric()):
+    List_pH.append(i[0].strip( ) + '_measurement' + '\t' + 'SER:hasPh'+ ' "' + i[12].strip( ) + '"^^xsd:float')
     count_pH = count_pH + 1
   else:
-    ListErrors.append("CHECK: Data format for pH data not numeric, check original data for: "+ i[0] + " : " + i[11] + '\n')
+    ListErrors.append("CHECK: Data format for pH data not numeric, check original data for: "+ i[0] + " : " + i[12] + '\n')
 
 ListQC.append("Data format for pH correctly loaded for " + str(count_pH) + " values. \n\n") 
 			
@@ -373,18 +395,18 @@ ListQC.append("Data format for pH correctly loaded for " + str(count_pH) + " val
 countTemp = 0
 for itemTemperature in ListTotal:
   i = itemTemperature.split('\t')
-  i[12] = i[12].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
-  result_float =  re.match(pattern_float, i[12])
-  if(i[12].strip()=='-')|(i[12].strip()=='NA')|(i[12].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
+  i[13] = i[13].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
+  result_float =  re.match(pattern_float, i[13])
+  if(i[13].strip()=='-')|(i[13].strip()=='NA')|(i[13].strip()=='')|(i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()==''): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
-    ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
+    ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076' + ' "' + i[13].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
     countTemp = countTemp + 1
-  elif(i[12].strip().isnumeric()):
-    ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076' + ' "' + i[12].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
+  elif(i[13].strip().isnumeric()):
+    ListTemperature.append(i[0].strip( ) + '_measurement' + '\t' + 'wdt:P2076' + ' "' + i[13].strip( ) + '"^^xsd:float') #Line from after 2020-01-17
     countTemp = countTemp + 1
   else:
-    ListErrors.append("CHECK: Data format for Temp data not numeric, check original data for: "+ i[0] + " : " + i[12] + '\n')
+    ListErrors.append("CHECK: Data format for Temp data not numeric, check original data for: "+ i[0] + " : " + i[13] + '\n')
 
 ListQC.append("Data format for Temperature correctly loaded for " + str(countTemp) + " values. \n\n") 
 
@@ -392,10 +414,10 @@ ListQC.append("Data format for Temperature correctly loaded for " + str(countTem
 countConditions = 0
 for itemAdditionalConditions in ListTotal:
 	i = itemAdditionalConditions.split('\t')
-	if(i[13].strip()=='-')|(i[13].strip()=='NA')|(i[13].strip()=='')|(i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
+	if(i[14].strip()=='-')|(i[14].strip()=='NA')|(i[14].strip()=='')|(i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()==''): #Check if one of the necessary values is missing!!
 	  continue
 	else:
-	  ListAdditionalConditions.append(i[0].strip( )  + '_measurement' + '\t' + 'dcterms:description' + ' "' + i[13].strip('"') + '"@en')
+	  ListAdditionalConditions.append(i[0].strip( )  + '_measurement' + '\t' + 'dcterms:description' + ' "' + i[14].strip('"') + '"@en')
 	  countConditions = countConditions + 1
 	  
 ListQC.append("Data format for Additional Conditions correctly loaded for " + str(countConditions) + " values. \n\n") 
@@ -422,35 +444,35 @@ Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrgani
 ## Vertebrates
 # Oryctolagus cuniculus (european rabbit)
 
-#[14]=Organism			##--> Add to measurement
+#[15]=Organism			##--> Add to measurement
 countOrganisms = 0
 for itemOrganism in ListTotal:
 	j = itemOrganism.split('\t')
-	if(j[14].strip()=='-')|(j[14].strip()=='NA')|(i[14].strip()=='')|(j[16].strip()=='-')|(j[16].strip()=='NA')|(i[16].strip()==''): #Check if one of the necessary values is missing!!
+	if(j[15].strip()=='-')|(j[15].strip()=='NA')|(i[15].strip()=='')|(j[17].strip()=='-')|(j[17].strip()=='NA')|(i[17].strip()==''): #Check if one of the necessary values is missing!!
 	  continue
-	elif((all(x.isalpha() or x.isspace() for x in j[14])|('.' in j[14]))): ##Check if Organism names only contains letters and spaces only; or a dot (for abbreviated names)
-	  if(j[14].lower().strip().replace(" ", "") in [x.lower().replace(" ", "") for x in ListCommonLatinOrganismsWP]): ##check for latin name first
+	elif((all(x.isalpha() or x.isspace() for x in j[15])|('.' in j[15]))): ##Check if Organism names only contains letters and spaces only; or a dot (for abbreviated names)
+	  if(j[15].lower().strip().replace(" ", "") in [x.lower().replace(" ", "") for x in ListCommonLatinOrganismsWP]): ##check for latin name first
 	    for key, value in Dict_CommonOrganismsWP.items(): ## Add names from structured data, not input data.
-	      if value.strip().lower().replace(" ", "") == j[14].lower().strip().replace(" ", ""):
+	      if value.strip().lower().replace(" ", "") == j[15].lower().strip().replace(" ", ""):
 	        ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
 	        countOrganisms = countOrganisms + 1
-	  elif(j[14].lower().strip().replace(" ", "") in [x.lower().replace(" ", "") for x in ListCommonEnglishOrganismsWP]):  ##Convert English to Latin name.
+	  elif(j[15].lower().strip().replace(" ", "") in [x.lower().replace(" ", "") for x in ListCommonEnglishOrganismsWP]):  ##Convert English to Latin name.
 	    for key,value in Dict_CommonOrganismsWP.items():
-	      if key.strip().lower().replace(" ", "") == j[14].lower().strip().replace(" ", ""):
+	      if key.strip().lower().replace(" ", "") == j[15].lower().strip().replace(" ", ""):
 	        ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
 	    countOrganisms = countOrganisms + 1
 	  else:
-	    ListErrors.append("CHECK: Name for Organism is not recognized, check original data for: "+ j[0] + " : " + j[14] + '\n')
+	    ListErrors.append("CHECK: Name for Organism is not recognized, check original data for: "+ j[0] + " : " + j[15] + '\n')
 	else:
-	  ListErrors.append("CHECK: Data format for Organism name is not recognized, check original data for: "+ j[0] + " : " + j[14] + '\n')
+	  ListErrors.append("CHECK: Data format for Organism name is not recognized, check original data for: "+ j[0] + " : " + j[15] + '\n')
 
 ListQC.append("Data format for Organisms correctly loaded for " + str(countOrganisms) + " values. \n\n") 
 
 ##Provenance can come from two sources; a PMID, a database name, or both.
 ##At least one is needed to support the data  in the RDF.
 
-#[15]=PMID	##--> Add to measurement	
-#[16]=Database ##--> Add to measurement				
+#[16]=PMID	##--> Add to measurement	
+#[17]=Database ##--> Add to measurement				
 ListSupportedDatabases = ['brenda', 'sabio', 'guide to pharmacology', 'strenda', 'uniprot']
 
 ListSupportedDatabasesAlternatives = ['brenda', 'sabio-rk', 'guide to pharmacology', 'strenda', 'uniprot'] ##If no alternative name is known (yet), use same name as official.
@@ -463,50 +485,54 @@ countProv = 0
 
 for itemProv in ListTotal:
 	p = itemProv.split('\t')
-	if((p[15].strip()=='-')|(p[15].strip()=='NA')|(p[15].strip()==''))&((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()=='')): ## if both are missing, do not include data.
+	if((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()==''))&((p[17].strip()=='-')|(p[17].strip()=='NA')|(p[17].strip()=='')): ## if both are missing, do not include data.
 	  continue
 	####First scenario, both values are available and valid:
 	##Option 1: Pubmed contains 1 value; database name contains 1 value
-	elif ((p[15].isnumeric())&((all(x.isalpha() or x.isspace() for x in p[16])|((('-' in p[16])|((':' in p[16])))&((',' not in p[16])&(';' not in p[16])))))):  
+	elif ((p[16].isnumeric())&((all(x.isalpha() or x.isspace() for x in p[17])|((('-' in p[17])|((':' in p[17])))&((',' not in p[17])&(';' not in p[17])))))):  
 	  ##Check if pubmed ID is numeric and if database names only contains letters (or spaces, or one bar for sabio-rk, or ':' for internal brenda IDs).:
-	  splitProv = p[16].split(':') ##Doesn't trow an error if no ':' is present!
-	  if(((p[16].strip().lower() not in ListSupportedDatabases)&(p[16].strip().lower() not in ListSupportedDatabasesAlternatives))&((splitProv[0].strip().lower() not in ListSupportedDatabases)&(splitProv[0].strip().lower() not in ListSupportedDatabasesAlternatives))): 
+	  splitProv = p[17].split(':') ##Doesn't trow an error if no ':' is present!
+	  if(((p[17].strip().lower() not in ListSupportedDatabases)&(p[17].strip().lower() not in ListSupportedDatabasesAlternatives))&((splitProv[0].strip().lower() not in ListSupportedDatabases)&(splitProv[0].strip().lower() not in ListSupportedDatabasesAlternatives))): 
 	    ##Check if database name is not valid, so only pubmed ID will be added!
-	    ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
-	    countRefs = countRefs + 1
-	    if(p[16].strip() == '-'):
+	    ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[16].strip( ))
+	    countRefs += 1
+	    if(p[17].strip() == '-'):
 	      ##check if database is equally to '-', and ignore this value in QC report.
 	      continue
 	    else:
-	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
-	  elif((p[16].strip().lower() in ListSupportedDatabases)|(splitProv[0].strip().lower() in ListSupportedDatabases)): ##check for official name first
+	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[17] + '\n')  
+	  elif((p[17].strip().lower() in ListSupportedDatabases)|(splitProv[0].strip().lower() in ListSupportedDatabases)): ##check for official name first
+	    ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[16].strip( ))
+	    countRefs += 1
 	    for key, value in Dict_SupportedDatabases.items(): ## Add databases from structured data, not input data.
-	      if ((value.strip().lower().replace(" ", "") == p[16].strip().lower().replace(" ", ""))|(value.strip().lower().replace(" ", "") == splitProv[0].strip().lower().replace(" ", ""))):
+	      if ((value.strip().lower().replace(" ", "") == p[17].strip().lower().replace(" ", ""))|(value.strip().lower().replace(" ", "") == splitProv[0].strip().lower().replace(" ", ""))):
 	        ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + Dict_SupportedDatabases[key] + '"^^xsd:string')
-	        print('Error5')
 	    countProv = countProv + 1
-	  elif((p[16].strip().lower() in ListSupportedDatabasesAlternatives)|(splitProv[0].strip().lower() in ListSupportedDatabasesAlternatives)):  ##Convert alternative name to official name.
+	  elif((p[17].strip().lower() in ListSupportedDatabasesAlternatives)|(splitProv[0].strip().lower() in ListSupportedDatabasesAlternatives)):  ##Convert alternative name to official name.
+	    ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[16].strip( ))
+	    countRefs += 1
 	    for key in Dict_SupportedDatabases:
-	      if ((key.strip().lower().replace(" ", "") == p[16].strip().lower().replace(" ", ""))|(key.strip().lower().replace(" ", "")  == splitProv[0].strip().lower().replace(" ", ""))): 
+	      if ((key.strip().lower().replace(" ", "") == p[17].strip().lower().replace(" ", ""))|(key.strip().lower().replace(" ", "")  == splitProv[0].strip().lower().replace(" ", ""))): 
 	        ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + Dict_SupportedDatabases[key] + '"^^xsd:string')
 	    countProv = countProv + 1  
-	  else:
-	    ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
-	    countRefs = countRefs + 1
-	    if(p[16].strip() == '-'):
+	  else: ##For any other case Database name is not recognised
+	    #ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[16].strip( ))
+	    ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[16].strip( ))
+	    countRefs += 1
+	    if(p[17].strip() == '-'):
 	      continue
 	    else:
-	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
+	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[17] + '\n')  
 	##Option 2: Pubmed contains 1 value; database contains more than 1
-	elif (p[15].isnumeric())&((';' in p[16])|(',' in p[16])|(':' in p[16])): ##Check if pubmed ID is numeric and database name contains multiple values semicolon or comma separated. Note: items with mulitple separators, e.g. with internal Brenda IDs will not be split.
-	  ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
-	  countRefs = countRefs + 1
-	  if(';' in p[16])&(',' not in p[16])&(':' not in p[16]):
-	    p2 = p[16].split(';') ##Split multiple references in one line, semicolon split.
-	  elif(',' in p[16])&(';' not in p[16])&(':' not in p[16]):
-	    p2 = p[16].split(',') ##Split multiple references in one line, comma split.
+	elif (p[16].isnumeric())&((';' in p[17])|(',' in p[17])|(':' in p[17])): ##Check if pubmed ID is numeric and database name contains multiple values semicolon or comma separated. Note: items with mulitple separators, e.g. with internal Brenda IDs will not be split.
+	  ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[16].strip( ))
+	  countRefs += 1
+	  if(';' in p[17])&(',' not in p[17])&(':' not in p[17]):
+	    p2 = p[17].split(';') ##Split multiple references in one line, semicolon split.
+	  elif(',' in p[17])&(';' not in p[17])&(':' not in p[17]):
+	    p2 = p[17].split(',') ##Split multiple references in one line, comma split.
 	  else:
-	    ListErrors.append("CHECK: Multiple separators for Database Provenance detected, check original data for: "+ p[0] + " : " + p[16] + '\n')  
+	    ListErrors.append("CHECK: Multiple separators for Database Provenance detected, check original data for: "+ p[0] + " : " + p[17] + '\n')  
 	  try:
 	    ListProvenance = []
 	    p2 = [x.strip(' ').lower() for x in p2] ##strip whitespaces (if existing)
@@ -522,7 +548,7 @@ for itemProv in ListTotal:
 	            ListProvenance.append(p2[z])
 	      else:
 	        ListProvenance = []
-	        ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
+	        ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[17] + '\n')  
 	  except NameError:
 	    continue
 	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(ListProvenance))
@@ -531,41 +557,41 @@ for itemProv in ListTotal:
 	  except NameError:
 	    countProv = countProv
 	##Option 3: Pubmed contains more than 1 value, database name contains 1 value
-	elif ((';' in p[15])|(',' in p[15]))&(all(x.isalpha() or x.isspace() for x in p[16])):
-	  if(';' in p[15]):
-	    p3 = p[15].split(';') ##Split multiple references in one line.
-	  elif(',' in p[15]):
-	    p3 = p[15].split(',') ##Split multiple references in one line.
+	elif ((';' in p[16])|(',' in p[16]))&(all(x.isalpha() or x.isspace() for x in p[17])):
+	  if(';' in p[16]):
+	    p3 = p[16].split(';') ##Split multiple references in one line.
+	  elif(',' in p[16]):
+	    p3 = p[16].split(',') ##Split multiple references in one line.
 	  else:
-	    ListErrors.append("CHECK: Multiple separators for Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[15] + '\n')  
+	    ListErrors.append("CHECK: Multiple separators for Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[16] + '\n')  
 	  p3 = [x.strip(' ') for x in p3] ##strip whitespaces (if existing)
 	  for y in [0,(len(p3)-1)]:
 	    if(p3[y].isnumeric()):
 	      p3 = ['pubmed:' + s for s in p3] ##add prefix for each item in list
 	      ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " " + ', '.join(p3))
 	  countRefs = countRefs + len(p3)
-	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
-	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
+	  if(p[17].strip().lower() in ListSupportedDatabases): ##check for latin name first
+	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[17].strip( ).lower() + '"^^xsd:string')
 	    countProv = countProv + 1
 	  else:
-	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')
+	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[17] + '\n')
 	##Option 4: Pubmed contains more than 1 value, database name contains more than 1 value    
-	elif ((';' in p[15])|(',' in p[15]))&((';' in p[16])|(',' in p[15])):
-	  ListErrors.append("CHECK: Multiple Database Provenance And Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[15] + ', ' + p[16] + '\n')  
+	elif ((';' in p[16])|(',' in p[16]))&((';' in p[17])|(',' in p[16])):
+	  ListErrors.append("CHECK: Multiple Database Provenance And Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[16] + ', ' + p[17] + '\n')  
 	  ##TODO:update with combined if statement for multiple values!
 	####Second scenario, only pubmed is available:  
 	##Option 1: Pubmed contains 1 value; database name contains 0 value
-	elif (p[15].isnumeric())&((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()=='')):
-	  ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[15].strip( ))
+	elif (p[16].isnumeric())&((p[17].strip()=='-')|(p[17].strip()=='NA')|(p[17].strip()=='')):
+	  ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[16].strip( ))
 	  countRefs = countRefs + 1
 	##Option 2: Pubmed contains more than 1 value, database name contains 0 value
-	elif((';' in p[15])|(',' in p[15]))&((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()=='')):
-	  if(';' in p[15]):
-	    k2 = p[15].split(';') ##Split multiple references in one line.
-	  elif(',' in p[15]):
-	    k2 = p[15].split(',') ##Split multiple references in one line.
+	elif((';' in p[16])|(',' in p[16]))&((p[17].strip()=='-')|(p[17].strip()=='NA')|(p[17].strip()=='')):
+	  if(';' in p[16]):
+	    k2 = p[16].split(';') ##Split multiple references in one line.
+	  elif(',' in p[16]):
+	    k2 = p[16].split(',') ##Split multiple references in one line.
 	  else:
-	    ListErrors.append("CHECK: Multiple separators for Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[15] + '\n')  
+	    ListErrors.append("CHECK: Multiple separators for Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[16] + '\n')  
 	  k2 = [x.strip(' ') for x in k2] ##strip whitespaces (if existing)
 	  ##TODO: build in test to see if all values are numeric!
 	  k2 = ['pubmed:' + s for s in k2] ##add prefix for each item in list
@@ -573,18 +599,18 @@ for itemProv in ListTotal:
 	  countRefs = countRefs + 1
 	####Third scenario, only Database name is available:  
 	##Option 1: Pubmed contains 0 value; database name contains 1 value
-	elif(all(x.isalpha() or x.isspace() for x in p[16]))&((p[15].strip()=='-')|(p[15].strip()=='NA')|(p[15].strip()=='')):
-	  if(p[16].strip().lower() in ListSupportedDatabases): ##check for latin name first
-	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[16].strip( ).lower() + '"^^xsd:string')
+	elif(all(x.isalpha() or x.isspace() for x in p[17]))&((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()=='')):
+	  if(p[17].strip().lower() in ListSupportedDatabases): ##check for latin name first
+	    ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + p[17].strip( ).lower() + '"^^xsd:string')
 	    countProv = countProv + 1
 	  else:
-	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')
+	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[17] + '\n')
 	##Option 2: Pubmed contains 0 value; database name contains more than 1 value
-	elif((';' in p[16])|(',' in p[16]))&((p[15].strip()=='-')|(p[15].strip()=='NA')|(p[15].strip()=='')):
-	  if(';' in p[16]):
-	    l2 = p[16].split(';') ##Split multiple references in one line.
-	  elif(',' in p[16]):
-	    l2 = p[16].split(',')
+	elif((';' in p[17])|(',' in p[17]))&((p[16].strip()=='-')|(p[16].strip()=='NA')|(p[16].strip()=='')):
+	  if(';' in p[17]):
+	    l2 = p[17].split(';') ##Split multiple references in one line.
+	  elif(',' in p[17]):
+	    l2 = p[17].split(',')
 	  l2 = [x.strip(' ').lower() for x in l2] ##strip whitespaces (if existing)
 	  ListProvenance = []
 	  for z in [0,(len(l2)-1)]:
@@ -598,13 +624,13 @@ for itemProv in ListTotal:
 	          l2[z] = '"' + l2[z] + '"^^xsd:string'##add suffix for item
 	          ListProvenance.append(l2[z])
 	    else:
-	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')
+	      ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[17] + '\n')
 	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(ListProvenance))
 	  countProv = countProv + len(l2)
 	####Fourth scenario, no valid entry is available:
 	else:
 	  ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + 'unclear origin' + '"^^xsd:string')
-	  ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[16] + '\n')  
+	  ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[17] + '\n')  
 
 ListQC.append("Data format for PMIDs Provenance correctly loaded for " + str(countRefs) + " values. \n\n")
 ListQC.append("Data format for Database Provenance correctly loaded for " + str(countProv) + " values. \n\n")
