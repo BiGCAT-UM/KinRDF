@@ -120,6 +120,8 @@ ListTotal = [w.replace('CHEBI:', '') for w in ListTotal]
 
 ##Replace items with backslash as empty value
 ListTotal = [re.sub("\\\\","",x) for x in ListTotal]
+##Replace items with forward as empty value
+ListTotal = [re.sub("/","",x) for x in ListTotal]
 
 ##Replace 'EC:' for enzyme nomenclature IDs if available
 ListTotal = [w.replace('EC: ', '') for w in ListTotal]
