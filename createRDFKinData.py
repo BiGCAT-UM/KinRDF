@@ -127,6 +127,9 @@ ListTotal = [re.sub("/","",x) for x in ListTotal]
 ListTotal = [w.replace('EC: ', '') for w in ListTotal]
 ListTotal = [w.replace('EC:', '') for w in ListTotal]
 
+##Replace misspelled organism name for humans (Homo sapien)
+ListTotal = [w.replace('Homo sapien\t', 'Homo sapiens\t') for w in ListTotal]
+
 ##Remove lines without ChEBI, UniProt, or Rhea (Excel files include 'None' for empty values)
 for item in ListTotal[:]:
 	a = item.split('\t')
@@ -284,7 +287,12 @@ for itemRheaID in ListTotal:
 	pattern_rhea = '^(RHEA:)?\\d{5}$'
 	result_rhea = re.match(pattern_rhea, g[6].strip())
 	if (g[6].strip()=='-')|(g[6].strip()=='NA')|(g[6].strip()=='')|(g[6].strip()=='None'): #Check if one of the necessary values is missing!!
+	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  ListErrors.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6] + ' ' + g[18] + '\n')
+	  continue
+	elif ('R-HSA-' in g[6].strip()):
+	  ##TODO: add conversion to Rhea IDs in the future from BridgeDb mapping file!
+	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  continue
 	elif(result_rhea): ##regex check
 	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
@@ -300,6 +308,7 @@ for itemRheaID in ListTotal:
 	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  ListErrors.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6] + ' ' + g[18] + '\n')
 	else: #if no Rhea is available
+	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  ListErrors.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6] + ' ' + g[18] +  '\n')
 
 ##Print total number of Ensembl IDs:    
