@@ -598,9 +598,46 @@ for itemProv in ListTotal:
 	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[17] + ' ' + p[18] + '\n')
 	##Option 4: Pubmed contains more than 1 value, database name contains more than 1 value    
 	elif ((';' in p[16])|(',' in p[16]))&((';' in p[17])|(',' in p[16])):
-	  ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + 'unclear origin' + '"^^xsd:string')
-	  ListErrors.append("CHECK: Multiple Database Provenance And Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[16] + ', ' + p[17] + ' ' + p[18] + '\n')  
-	  ##TODO:update with combined if statement for multiple values!
+	  if(';' in p[16])&(';' in p[17]):
+	    p4 = p[16].split(';') ##Split multiple references in one line.
+	    p5 = p[16].split(';') ##Split multiple databases in one line.
+	  elif(',' in p[16])&(',' in p[17]):
+	    p4 = p[16].split(',') ##Split multiple references in one line.
+	    p5 = p[17].split(',') ##Split multiple databases in one line.
+	  else:
+	    ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + 'unclear origin' + '"^^xsd:string')
+	    ListErrors.append("CHECK: Multiple Database Provenance And Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[16] + ', ' + p[17] + ' ' + p[18] + '\n')  
+	  ##Pubmed IDs:
+	  p4 = [x.strip(' ') for x in p4] ##strip whitespaces (if existing)
+	  for y in [0,(len(p4)-1)]:
+	    if(p4[y].isnumeric()):
+	      p4 = ['pubmed:' + s for s in p4] ##add prefix for each item in list
+	      ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " " + ', '.join(p4))
+	  countRefs = countRefs + len(p4)
+	  ##Database names:
+	  try:
+	    ListProvenance = []
+	    p5 = [x.strip(' ').lower() for x in p5] ##strip whitespaces (if existing)
+	    for z in [0,(len(p5)-1)]:
+	      if(p5[z] in ListSupportedDatabases): ##check for original name first
+	        p5[z] = '"' + p5[z] + '"^^xsd:string' ##add suffix for each item in list
+	        ListProvenance.append(p5[z])
+	      elif(p5[z] in ListSupportedDatabasesAlternatives):  ##Check to convert alternative name to official name.
+	        for key in Dict_SupportedDatabases:
+	          if key.lower() == p5[z].strip().lower():
+	            p5[z] = Dict_SupportedDatabases[key] ##Convert alternative name to official to item
+	            p5[z] = '"' + p5[z] + '"^^xsd:string'##add suffix for item
+	            ListProvenance.append(p5[z])
+	      else:
+	        ListProvenance = []
+	        ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[17] + ' ' + p[18] + '\n')  
+	  except NameError:
+	    continue
+	  ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' ' + ', '.join(ListProvenance))
+	  try:
+	    countProv = countProv + len(p5)
+	  except NameError:
+	    countProv = countProv
 	####Second scenario, only pubmed is available:  
 	##Option 1: Pubmed contains 1 value; database name contains 0 value
 	elif (p[16].isnumeric())&((p[17].strip()=='-')|(p[17].strip()=='NA')|(p[17].strip()=='')):
