@@ -112,26 +112,39 @@ ListTotal = [re.sub("[\(\[].*?[\)\]]","",x) for x in ListTotal] ##Everything in 
 ListTotal = [w.replace('RHEA:', '') for w in ListTotal]
 ListTotal = [w.replace('CHEBI:', '') for w in ListTotal]
 
-##Remove lines without ChEBI, UniProt, or Rhea
+##Replace items with backslash as empty value
+ListTotal = [re.sub("\\\\","",x) for x in ListTotal]
+
+##Remove lines without ChEBI, UniProt, or Rhea (Excel files include 'None' for empty values)
 for item in ListTotal[:]:
 	a = item.split('\t')
-	if (a[0].strip()=='-')|(a[4].strip()=='-')|(a[6].strip()=='-')|(a[7].strip()=='-')|(a[0].strip()=='NA')|(a[4].strip()=='NA')|( a[6].strip()=='NA')|(a[7].strip()=='NA'): #Check if one of the necessary values is missing!!
+	#Check if one of the necessary values is missing!!
+	if (a[0].strip()=='-')|(a[4].strip()=='-')|(a[6].strip()=='-')|(a[7].strip()=='-') | (a[0].strip()=='NA')|(a[4].strip()=='NA')|(a[6].strip()=='NA')|(a[7].strip()=='NA') | (a[0].strip()=='None')|(a[4].strip()=='None')|(a[6].strip()=='None')|(a[7].strip()=='None'):
 	  ListTotal.remove(item)
 
-##Remove lines without any provenance (either PMID or Database ar needed)
+##Remove lines without any provenance (either PMID or Database are needed)
+### '-'
 for item in ListTotal[:]:
 	a = item.split('\t')
-	if ((a[17].strip()=='-')&(a[17].strip()=='-'))|((a[17].strip()=='-')&(a[17].strip()=='NA'))|((a[17].strip()=='-')&(a[17].strip()=='')): #Check if both values are missing!!
+	if ((a[16].strip()=='-')&(a[17].strip()=='-'))|((a[16].strip()=='-')&(a[17].strip()=='NA'))|((a[16].strip()=='-')&(a[17].strip()=='')|((a[16].strip()=='-')&(a[17].strip()=='None'))): #Check if both values are missing!!
 	  ListTotal.remove(item)
 
+### 'NA'
 for item in ListTotal[:]:
 	a = item.split('\t')	  
-	if ((a[16].strip()=='NA')&(a[17].strip()=='NA'))|((a[16].strip()=='NA')&(a[17].strip()=='-'))|((a[16].strip()=='NA')&(a[17].strip()=='')):  #Check if both values are NA!!
+	if ((a[16].strip()=='NA')&(a[17].strip()=='NA'))|((a[16].strip()=='NA')&(a[17].strip()=='-'))|((a[16].strip()=='NA')&(a[17].strip()==''))|((a[16].strip()=='NA')&(a[17].strip()=='None')):  #Check if both values are NA!!
 	  ListTotal.remove(item)
 
+### ''
 for item in ListTotal[:]:
 	a = item.split('\t')
-	if ((a[16].strip()=='')&(a[17].strip()==''))|((a[16].strip()=='')&(a[17].strip()=='-'))|((a[16].strip()=='')&(a[17].strip()=='NA')):  #Check if both values are empty!!
+	if ((a[16].strip()=='')&(a[17].strip()==''))|((a[16].strip()=='')&(a[17].strip()=='-'))|((a[16].strip()=='')&(a[17].strip()=='NA'))|((a[16].strip()=='')&(a[17].strip()=='None')):  #Check if both values are empty!!
+	  ListTotal.remove(item)
+
+### 'None'
+for item in ListTotal[:]:
+	a = item.split('\t')
+	if ((a[16].strip()=='None')&(a[17].strip()=='None'))|((a[16].strip()=='None')&(a[17].strip()=='-'))|((a[16].strip()=='None')&(a[17].strip()=='NA'))|((a[16].strip()=='None')&(a[17].strip()=='')):  #Check if both values are empty!!
 	  ListTotal.remove(item)
 
 ##Print total number of lines found in files:
@@ -521,7 +534,6 @@ for itemProv in ListTotal:
 	        ListDatabase.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + Dict_SupportedDatabases[key] + '"^^xsd:string')
 	    countProv = countProv + 1  
 	  else: ##For any other case Database name is not recognised
-	    #ListPMID.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[16].strip( ))
 	    ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dcterms:references' + " pubmed:" + p[16].strip( ))
 	    countRefs += 1
 	    if(p[17].strip() == '-'):
@@ -582,6 +594,7 @@ for itemProv in ListTotal:
 	    ListErrors.append("CHECK: Name for Database Provenance contains incorrect symbols, check original data for: "+ p[0] + " : " + p[17] + '\n')
 	##Option 4: Pubmed contains more than 1 value, database name contains more than 1 value    
 	elif ((';' in p[16])|(',' in p[16]))&((';' in p[17])|(',' in p[16])):
+	  ListProv.append(p[0].strip( ) + '_measurement' + '\t' + 'dc:source' + ' "' + 'unclear origin' + '"^^xsd:string')
 	  ListErrors.append("CHECK: Multiple Database Provenance And Pubmed IDs detected, check original data for: "+ p[0] + " : " + p[16] + ', ' + p[17] + '\n')  
 	  ##TODO:update with combined if statement for multiple values!
 	####Second scenario, only pubmed is available:  
