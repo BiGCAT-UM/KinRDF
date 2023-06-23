@@ -15,7 +15,7 @@ testData = "/TestData" ##For all test data
 validationData = "/ValidateData" ##To test one file at a time from test data
 
 ##Select folder name to apply script on:
-subfolderLocation = checkedData ##Adapt this statement if needed
+subfolderLocation = validationData ##Adapt this statement if needed
 ##TODO: include different setup in 3 separate GitHub Actions.
 
 #Update the path to where the data is stored.
@@ -60,6 +60,7 @@ ListCuration = []
 
 ##Header String to compare input data against template (in exact order)
 headers = 'EnzymePW	ApprovedEnzymeName	E.C.number	Uniprot	Ensembl	RheaID	CHEBIID	SusbtrateName	Km (mM)	Kcat (s-1)	Kcat/Km (M-1s-1)	pH	Temperature (Celcius)	AdditionalConditions	Organism	PMID	Database\n'
+headersList = ['EnzymePW', 'ApprovedEnzymeName', 'E.C.number', 'Uniprot', 'Ensembl', 'RheaID', 'CHEBIID', 'SusbtrateName', 'Km (mM)', 'Kcat (s-1)', 'Kcat/Km (M-1s-1)', 'pH', 'Temperature (Celcius)', 'AdditionalConditions', 'Organism', 'PMID', 'Database']
 
 ##Import library to read xlsx files:
 import openpyxl
@@ -73,25 +74,29 @@ for (dirname, dirs, files) in os.walk('.'):
 	    thefile = os.path.join(dirname,filename)
 	    f = open(filename, "r").readlines()
 	    header_line = f.pop(0)
-	    for line in f:
-	      if (header_line == headers):
+	    if (header_line == headers):
+	      for line in f:
 	        SER_Name = "SER:" + str(countSER)
 	        ListTotal.append(SER_Name + '\t' + line.strip('\n'))
 	        countSER += 1
-	      else:
+	    else:
 	        ListQC.append("File contains wrong column names, CHECK: "+ filename + '\n')
 	  elif filename.endswith('.xlsx') :
-		  thefile = os.path.join(dirname,filename)
-		  wb_obj = openpyxl.load_workbook(filename)
-		  sheet_obj = wb_obj.active
-		  rows_iter = sheet_obj.iter_rows(min_col = 1, min_row = 2, max_col = sheet_obj.max_column, max_row = sheet_obj.max_row)
-		  values = [[cell.value for cell in row] for row in rows_iter]
-		  entries = range(len(values))
-		  for n in entries:
-		    SER_Name = "SER:" + str(countSER)
-		    line = '\t'.join(str(element) for element in values[n])
-		    ListTotal.append(SER_Name + '\t' + line)
-		    countSER += 1
+	    thefile = os.path.join(dirname,filename)
+	    wb_obj = openpyxl.load_workbook(filename)
+	    sheet_obj = wb_obj.active
+	    header_line = [cell.value for cell in sheet_obj[1]]
+	    rows_iter = sheet_obj.iter_rows(min_col = 1, min_row = 2, max_col = sheet_obj.max_column, max_row = sheet_obj.max_row)
+	    values = [[cell.value for cell in row] for row in rows_iter]
+	    entries = range(len(values))
+	    if (header_line == headersList):
+	      for n in entries:
+	        SER_Name = "SER:" + str(countSER)
+	        line = '\t'.join(str(element) for element in values[n])
+	        ListTotal.append(SER_Name + '\t' + line)
+	        countSER += 1
+	    else:
+	        ListQC.append("File contains wrong column names, CHECK: "+ filename + '\n')
 	  else:
 	    ListQC.append("File extension could not be read: "+ filename + '\n')
 
