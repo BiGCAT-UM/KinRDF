@@ -72,8 +72,11 @@ for (dirname, dirs, files) in os.walk('.'):
 	for filename in files:
 	  if filename.endswith('.txt') :
 	    thefile = os.path.join(dirname,filename)
-	    f = open(filename, "r").readlines()
-	    header_line = f.pop(0)
+	    try:
+	      f = open(filename, "r", encoding="utf8").readlines() ##Read files with UTF8 encoding specified
+	      header_line = f.pop(0)
+	    except UnicodeDecodeError:
+	      ListQC.append("File contains not UTF8 encoded characters, CHECK: "+ filename + '\n')
 	    if (header_line == headers):
 	      for line in f:
 	        SER_Name = "SER:" + str(countSER)
@@ -83,12 +86,15 @@ for (dirname, dirs, files) in os.walk('.'):
 	        ListQC.append("File contains wrong column names, CHECK: "+ filename + '\n')
 	  elif filename.endswith('.xlsx') :
 	    thefile = os.path.join(dirname,filename)
-	    wb_obj = openpyxl.load_workbook(filename)
-	    sheet_obj = wb_obj.active
-	    header_line = [cell.value for cell in sheet_obj[1]]
-	    rows_iter = sheet_obj.iter_rows(min_col = 1, min_row = 2, max_col = sheet_obj.max_column, max_row = sheet_obj.max_row)
-	    values = [[cell.value for cell in row] for row in rows_iter]
-	    entries = range(len(values))
+	    try:
+	      wb_obj = openpyxl.load_workbook(filename) ##Files are read with UTF8 encoding as standard
+	      sheet_obj = wb_obj.active
+	      header_line = [cell.value for cell in sheet_obj[1]]
+	      rows_iter = sheet_obj.iter_rows(min_col = 1, min_row = 2, max_col = sheet_obj.max_column, max_row = sheet_obj.max_row)
+	      values = [[cell.value for cell in row] for row in rows_iter]
+	      entries = range(len(values))
+	    except UnicodeDecodeError:
+	      ListQC.append("File contains not UTF8 encoded characters, CHECK: "+ filename + '\n')
 	    if (header_line == headersList):
 	      for n in entries:
 	        SER_Name = "SER:" + str(countSER)
