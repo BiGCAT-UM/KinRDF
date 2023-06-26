@@ -64,6 +64,8 @@ headersList = ['EnzymePW', 'ApprovedEnzymeName', 'E.C.number', 'Uniprot', 'Ensem
 
 ##Import library to read xlsx files:
 import openpyxl
+##Import library to read .csv files:
+import csv
 
 ##Read in files with kinetics data.
 #count = 0
@@ -103,6 +105,22 @@ for (dirname, dirs, files) in os.walk('.'):
 	        countSER += 1
 	    else:
 	        ListQC.append("File contains wrong column names, CHECK: "+ filename + '\n')
+	  elif filename.endswith('.csv') :
+	    List_rawcsvdata = []
+	    thefile = os.path.join(dirname,filename)
+	    try:
+	      f = open(filename, newline='', encoding='utf-8') ##Open the csv file
+	      file_data = csv.reader(f, delimiter=',', quotechar='"') ##Read the data with delimiter ','  and keep cells content withint double quotations.
+	      for line in file_data:
+	        List_rawcsvdata.append('\t'.join(line)) ##Convert data to .tsv structure for further processing.
+	      header_line = List_rawcsvdata[0] + '\n'
+	      if (header_line == headers):
+	        for line in List_rawcsvdata[1:len(List_rawcsvdata)]: ##Skipping the first line, which is the header (column names) of the file.
+	          SER_Name = "SER:" + str(countSER)
+	          ListTotal.append(SER_Name + '\t' + line.strip('\n') + '\t' + filename) ##Add filename to list to easily find curation point.
+	          countSER += 1
+	    except UnicodeDecodeError:
+	      ListQC.append("File contains not UTF8 encoded characters, CHECK: "+ filename + '\n')
 	  else:
 	    ListQC.append("File extension could not be read: "+ filename + '\n')
 
