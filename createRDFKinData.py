@@ -164,28 +164,28 @@ for item in ListTotal[:]:
 for item in ListTotal[:]:
 	a = item.split('\t')
 	if ((a[16].strip()=='-')&(a[17].strip()=='-'))|((a[16].strip()=='-')&(a[17].strip()=='NA'))|((a[16].strip()=='-')&(a[17].strip()=='')|((a[16].strip()=='-')&(a[17].strip()=='None'))): #Check if both values are missing!!
-	  ListCuration.append("CHECK: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
+	  ListCuration.append("CURATION: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
 	  ListTotal.remove(item)
 
 ### 'NA'
 for item in ListTotal[:]:
 	a = item.split('\t')	  
 	if ((a[16].strip()=='NA')&(a[17].strip()=='NA'))|((a[16].strip()=='NA')&(a[17].strip()=='-'))|((a[16].strip()=='NA')&(a[17].strip()==''))|((a[16].strip()=='NA')&(a[17].strip()=='None')):  #Check if both values are NA!!
-	  ListCuration.append("CHECK: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
+	  ListCuration.append("CURATION: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
 	  ListTotal.remove(item)
 
 ### ''
 for item in ListTotal[:]:
 	a = item.split('\t')
 	if ((a[16].strip()=='')&(a[17].strip()==''))|((a[16].strip()=='')&(a[17].strip()=='-'))|((a[16].strip()=='')&(a[17].strip()=='NA'))|((a[16].strip()=='')&(a[17].strip()=='None')):  #Check if both values are empty!!
-	  ListCuration.append("CHECK: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
+	  ListCuration.append("CURATION: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
 	  ListTotal.remove(item)
 
 ### 'None' (from .xlsx files)
 for item in ListTotal[:]:
 	a = item.split('\t')
 	if ((a[16].strip()=='None')&(a[17].strip()=='None'))|((a[16].strip()=='None')&(a[17].strip()=='-'))|((a[16].strip()=='None')&(a[17].strip()=='NA'))|((a[16].strip()=='None')&(a[17].strip()=='')):  #Check if both values are None!!
-	  ListCuration.append("CHECK: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
+	  ListCuration.append("CURATION: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
 	  ListTotal.remove(item)
 
 ##Print total number of lines found in files:
@@ -209,12 +209,14 @@ for itemSERX in ListTotal[:]:
 	  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-' + a[6].strip( )) ##Trim RHEA/CHEBI in fromt of IDs if available.
 	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction') #Add the 'has part' relationship, so we can link the IDs to that later.
 	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
-	  countSER = countSER +1
+	  countSER += 1
 	elif(result_chebi is not None) & (result_rhea is None)  & (result_uniprot is not None): ##check against REGEX; if RHEA is not available, use reaction formula
 	  ListSER_ID.append(a[0].strip( ) + '\t' + 'dc:identifier' + ' ' + 'SER:'+ a[7].strip( ) + '-' + a[4].strip( ) + '-XXXXX')
 	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000028 ' + ' ' +  a[0].strip( ) + '_substrate' + ', '  + a[0].strip( )+ '_enzyme' + ', ' + a[0].strip( )+ '_reaction')
 	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
-	  countSER = countSER +1
+	  countSER += 1
+	elif((result_rhea is not None) & (result_uniprot is not None) & ((all(x.isnumeric() or x.isspace() for x in a[7].strip()))|(',' in a[7].strip())|(';' in a[7].strip()))): ##Substrate column contains multiple values
+	    ListErrors.append("CHECK: Multiple values for ChEBI IDs detected, check original data for: "+ a[0] + " : " + a[7] + ' ' + a[18] + '\n')
 	else:
 	  ListCuration.append("CURATION: missing data for: "+ a[0] + ' substrate: ' + a[7] + ' enzyme: ' + a[4] + ' reaction: ' + a[6] + ' ' + a[18] + '\n')
 	  ListTotal.remove(itemSERX)
