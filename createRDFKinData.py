@@ -127,8 +127,13 @@ for (dirname, dirs, files) in os.walk('.'):
 ###Cleaning up data:
 
 ##Remove spaces between prefixes and IDs for RHEA (column 6) and ChEBI (column 7)
-ListTotal = [w.replace('RHEA: ', '') and w.replace('Rhea: ', '') and w.replace('rhea: ', '') for w in ListTotal]
-ListTotal = [w.replace('CHEBI: ', '') and w.replace('Chebi: ', '') and w.replace('ChEBI: ', '') and w.replace('chebi: ', '') for w in ListTotal]
+ListTotal = [w.replace('RHEA: ', '') for w in ListTotal]
+ListTotal = [w.replace('Rhea: ', '') for w in ListTotal]
+ListTotal = [w.replace('rhea: ', '') for w in ListTotal]
+ListTotal = [w.replace('CHEBI: ', '') for w in ListTotal]
+ListTotal = [w.replace('Chebi: ', '') for w in ListTotal]
+ListTotal = [w.replace('ChEBI: ', '') for w in ListTotal]
+ListTotal = [w.replace('chebi: ', '') for w in ListTotal]
 
 ##Remove text within parenthesis using regex:
 ##TODO: find regex to remove double brackets, e.g. '((3R,5S)-1-pyrroline-3-hydroxy-5-carboxylate)'
@@ -144,14 +149,18 @@ ListTotal = [re.sub("\\\\","",x) for x in ListTotal]
 ListTotal = [re.sub("/","",x) for x in ListTotal]
 
 ##Replace 'EC:' for enzyme nomenclature IDs if available
-ListTotal = [w.replace('EC: ', '') and w.replace('EC:', '') and w.replace('EC', '') for w in ListTotal]
+ListTotal = [w.replace('EC: ', '')  for w in ListTotal]
+ListTotal = [w.replace('EC:', '') for w in ListTotal]
+ListTotal = [w.replace('EC', '') for w in ListTotal]
 
 ##Replace misspelled organism name for humans (Homo sapien)
 ListTotal = [w.replace('Homo sapien\t', 'Homo sapiens\t') for w in ListTotal]
 ##Replace not common abbreviations for species
-ListTotal = [w.replace('house mouse', 'mouse') and w.replace('House Mouse', 'mouse') for w in ListTotal] ##Mouse
-ListTotal = [w.replace('brown rat', 'rat') and w.replace('Brown Rat', 'rat') for w in ListTotal] ##Rat
-ListTotal = [w.replace('wild boar or pig', 'pig') and w.replace('Wild Boar or Pig', 'pig')for w in ListTotal] ##Pig
+ListTotal = [w.replace('house mouse', 'mouse') for w in ListTotal] ##Mouse
+ListTotal = [w.replace('House Mouse', 'mouse') for w in ListTotal] ##Mouse
+ListTotal = [w.replace('brown rat', 'rat') for w in ListTotal] ##Rat
+ListTotal = [w.replace('Brown Rat', 'rat') for w in ListTotal] ##Rat
+ListTotal = [w.replace('wild boar or pig', 'pig') for w in ListTotal] ##Pig
 
 ##Remove lines without ChEBI, UniProt, or Rhea (Excel files include 'None' for empty values)
 for item in ListTotal[:]:
@@ -382,7 +391,7 @@ countKm = 0
 for itemKm in ListTotal:
   i = itemKm.split('\t')
   i[9] = i[9].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
-  result_float =  re.match(pattern_float, i[9])
+  result_float =  re.match(pattern_float, i[9].strip())
   if(i[9].strip()=='-')|(i[9].strip()=='NA')|(i[9].strip()=='')|(i[9].strip()=='None') | (((i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()=='')|(i[17].strip()=='None'))&((i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()=='')|(i[16].strip()=='None'))): #Check if one of the necessary value && provenance are missing!!
     continue
   elif(result_float): ##Check if entry contains a number with decimal(s)
@@ -408,7 +417,7 @@ countKcat = 0
 for itemKcat in ListTotal:
   i = itemKcat.split('\t')
   i[10] = i[10].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
-  result_float =  re.match(pattern_float, i[10])
+  result_float =  re.match(pattern_float, i[10].strip())
   if(i[10].strip()=='-')|(i[10].strip()=='NA')|(i[10].strip()=='')|(i[10].strip()=='None') | (((i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()=='')|(i[17].strip()=='None'))&((i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()=='')|(i[16].strip()=='None'))): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
@@ -427,7 +436,7 @@ countKcatKm = 0
 for itemKcatKm in ListTotal:
   i = itemKcatKm.split('\t')
   i[11] = i[11].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
-  result_float =  re.match(pattern_float, i[11])
+  result_float =  re.match(pattern_float, i[11].strip())
   if(i[11].strip()=='-')|(i[11].strip()=='NA')|(i[11].strip()=='')|(i[11].strip()=='None') | (((i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()=='')|(i[17].strip()=='None'))&((i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()=='')|(i[16].strip()=='None'))): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
@@ -446,7 +455,7 @@ count_pH = 0
 for item_pH in ListTotal:
   i = item_pH.split('\t')
   i[12] = i[12].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
-  result_float =  re.match(pattern_float, i[12])
+  result_float =  re.match(pattern_float, i[12].strip())
   if(i[12].strip()=='-')|(i[12].strip()=='NA')|(i[12].strip()=='')|(i[12].strip()=='None') | (((i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()=='')|(i[17].strip()=='None'))&((i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()=='')|(i[16].strip()=='None'))) : #Check if one of the necessary values is missing!!
     continue
   elif(result_float):
@@ -465,7 +474,7 @@ countTemp = 0
 for itemTemperature in ListTotal:
   i = itemTemperature.split('\t')
   i[13] = i[13].replace(',', '.') ##Replace comma decimal values with a dot decimal for consitency
-  result_float =  re.match(pattern_float, i[13])
+  result_float =  re.match(pattern_float, i[13].strip())
   if(i[13].strip()=='-')|(i[13].strip()=='NA')|(i[13].strip()=='')|(i[13].strip()=='None') | (((i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()=='')|(i[17].strip()=='None'))&((i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()=='')|(i[16].strip()=='None'))): #Check if one of the necessary values is missing!!
     continue
   elif(result_float):

@@ -1,15 +1,15 @@
 EnzymePW	ApprovedEnzymeName	E.C.number	Uniprot	Ensembl	RheaID	CHEBIID	SusbtrateName	Km (mM)	Kcat (s-1)	Kcat/Km (M-1s-1)	pH	Temperature (Celcius)	AdditionalConditions	Organism	PMID	Database
-AGT	Alanine-glyoxylate transaminase	2.6.1.44	P21549	ENSG00000172482	RHEA: 24249	CHEBI: 36655 (glyoxylate)		0.21	0.33	0.64	7.4	25		Homo sapiens	17696873	BRENDA
-AGT	Alanine-glyoxylate transaminase	2.6.1.44	P21549	ENSG00000172482	RHEA: 24249	CHEBI: 57972 (L-alanine)		31	45	0.69	7.4	25		Homo sapiens	17696873	BRENDA
-SPT	Serine-pyruvate transaminase	2.6.1.51	P21549	ENSG00000172482	RHEA: 22853	CHEBI: 33384 (L-serine)		16			8.5	37		Rattus Norvegicus	851432	SABIO-RK, BRENDA
-SPT	Serine-pyruvate transaminase	2.6.1.51	P21549	ENSG00000172482	RHEA: 22853	CHEBI: 15361 (pyruvate)		1			8.5	37		Rattus Norvegicus	851432	SABIO-RK, BRENDA
-1P5CDH	Delta-1-pyrroline-5-carboxylate dehydrogenase	1.2.1.88	P30038	ENSG00000159423	RHEA: 24943	CHEBI:62612 ((3R,5S)-1-pyrroline-3-hydroxy-5-carboxylate)		0.09			8.5			Rattus Norvegicus	2211729	SABIO-RK, BRENDA
-AspAT	Aspartate aminotransferase	2.6.1.1	P17174	ENSG00000120053	RHEA: 21826	CHEBI:29985 (L-glutamate)		37	670	18	7.5	25		E.coli	22138634	BRENDA
-AspAT	Aspartate aminotransferase	2.6.1.1	P17174	ENSG00000120053	RHEA: 21826	CHEBI: 16452 (oxaloacetate)								E.coli	22138634	BRENDA
-DAO	D-amino-acid oxidase	1.4.3.3	P14920	ENSG00000110887	RHEA: 1533	CHEBI: 57305 (glycine)		180	0.9	0.005	7	25		Homo sapiens	22865246	BRENDA
-GO	Hydroxyacid oxidase (glycolate oxidase) 1	1.1.3.15	Q9UJM8	ENSG00000101323	RHEA: 25311	CHEBI: 29805 (glycolate)		0.086	3.5	40.7	8	37		Homo sapiens	17669354	SABIO-RK
-GRHPR	Glyoxylate reductase/hydroxypyruvate reductase	1.1.1.81	Q9UBQ7	ENSG00000137106	RHEA:10994	CHEBI:36655 (glyoxylate)		10.8			7	30		Hyphomicrobium methylovorum	2114287	SABIO-RK
-GRHPR	Glyoxylate reductase/hydroxypyruvate reductase	1.1.1.81	Q9UBQ7	ENSG00000137106	RHEA:17907	CHEBI: 17180 (3-hydroxypyruvate)		0.6	30	50	7	37		Methylomicrobium alcaliphilum	29223156	BRENDA
-HOGA1	4-hydroxy-2-oxoglutarate aldolase 1	4.1.3.16	Q86XE5	ENSG00000241935	RHEA:18169	CHEBI: 17742		0.011	6.1	555	9	37		Homo sapiens	21998747	BRENDA
-HYPDH	Hydroxyproline dehydrogenase	1.5.5.3	Q9UF12	ENSG00000250799	RHEA: 52512	CHEBI:58375 (trans-4-L-hydroxyproline)		200	0.19	0.93	7.5	25		Homo sapiens	25697095	via Uniprot
+AGT	Alanine-glyoxylate transaminase	2.6.1.44	P21549	ENSG00000172482	RHEA: 24249	CHEBI: 36655	(glyoxylate)	0.21	0.33	0.64	7.4	25		Homo sapiens	17696873	BRENDA
+AGT	Alanine-glyoxylate transaminase	2.6.1.44	P21549	ENSG00000172482	RHEA: 24249	CHEBI: 57972	 (L-alanine)	31	45	0.69	7.4	25		Homo sapiens	17696873	BRENDA
+SPT	Serine-pyruvate transaminase	2.6.1.51	P21549	ENSG00000172482	RHEA: 22853	CHEBI: 33384	 (L-serine)	16			8.5	37		Rattus Norvegicus	851432	SABIO-RK, BRENDA
+SPT	Serine-pyruvate transaminase	2.6.1.51	P21549	ENSG00000172482	RHEA: 22853	CHEBI: 15361	 (pyruvate)	1			8.5	37		Rattus Norvegicus	851432	SABIO-RK, BRENDA
+1P5CDH	Delta-1-pyrroline-5-carboxylate dehydrogenase	1.2.1.88	P30038	ENSG00000159423	RHEA: 24943	CHEBI:62612	 ((3R,5S)-1-pyrroline-3-hydroxy-5-carboxylate)	0.09			8.5			Rattus Norvegicus	2211729	SABIO-RK, BRENDA
+AspAT	Aspartate aminotransferase	2.6.1.1	P17174	ENSG00000120053	RHEA: 21826	CHEBI:29985	(L-glutamate)	37	670	18	7.5	25		E.coli	22138634	BRENDA
+AspAT	Aspartate aminotransferase	2.6.1.1	P17174	ENSG00000120053	RHEA: 21826	CHEBI: 16452	 (oxaloacetate)							E.coli	22138634	BRENDA
+DAO	D-amino-acid oxidase	1.4.3.3	P14920	ENSG00000110887	RHEA: 11533	CHEBI: 57305	 (glycine)	180	0.9	0.005	7	25		Homo sapiens	22865246	BRENDA
+GO	Hydroxyacid oxidase (glycolate oxidase) 1	1.1.3.15	Q9UJM8	ENSG00000101323	RHEA: 25311	CHEBI: 29805	 (glycolate)	0.086	3.5	40.7	8	37		Homo sapiens	17669354	SABIO-RK
+GRHPR	Glyoxylate reductase/hydroxypyruvate reductase	1.1.1.81	Q9UBQ7	ENSG00000137106	RHEA:10994	CHEBI:36655	 (glyoxylate)	10.8			7	30		Hyphomicrobium methylovorum	2114287	SABIO-RK
+GRHPR	Glyoxylate reductase/hydroxypyruvate reductase	1.1.1.81	Q9UBQ7	ENSG00000137106	RHEA:17907	CHEBI: 17180	 (3-hydroxypyruvate)	0.6	30	50	7	37		Methylomicrobium alcaliphilum	29223156	BRENDA
+HOGA1	4-hydroxy-2-oxoglutarate aldolase 1	4.1.3.16	Q86XE5	ENSG00000241935	RHEA:18169	CHEBI: 17742	 (trans-4-L-hydroxyproline)	0.011	6.1	555	9	37		Homo sapiens	21998747	BRENDA
+HYPDH	Hydroxyproline dehydrogenase	1.5.5.3	Q9UF12	ENSG00000250799	RHEA: 52512	CHEBI:58375		200	0.19	0.93	7.5	25		Homo sapiens	25697095	Uniprot
 LDH5	L-lactate dehydrogenase 5	1.1.1.27	P00338	ENSG00000134333	RHEA: 14838	CHEBI:36655		25			6.5			Solanum tuberosum	4144124	BRENDA
