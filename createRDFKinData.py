@@ -127,16 +127,16 @@ for (dirname, dirs, files) in os.walk('.'):
 ###Cleaning up data:
 
 ##Remove spaces between prefixes and IDs for RHEA (column 6) and ChEBI (column 7)
-ListTotal = [w.replace('RHEA: ', '') for w in ListTotal]
-ListTotal = [w.replace('CHEBI: ', '') for w in ListTotal]
+ListTotal = [w.replace('RHEA: ', '') and w.replace('Rhea: ', '') and w.replace('rhea: ', '') for w in ListTotal]
+ListTotal = [w.replace('CHEBI: ', '') and w.replace('Chebi: ', '') and w.replace('ChEBI: ', '') and w.replace('chebi: ', '') for w in ListTotal]
 
 ##Remove text within parenthesis using regex:
 ##TODO: find regex to remove double brackets, e.g. '((3R,5S)-1-pyrroline-3-hydroxy-5-carboxylate)'
 ListTotal = [re.sub("[\(\[].*?[\)\]]","",x) for x in ListTotal] ##Everything in brackets
 
 ##Replace common prefixes for harmonized data structure:
-ListTotal = [w.replace('RHEA:', '') for w in ListTotal]
-ListTotal = [w.replace('CHEBI:', '') for w in ListTotal]
+ListTotal = [w.replace('RHEA:', '') and w.replace('Rhea:', '') and w.replace('rhea:', '') for w in ListTotal]
+ListTotal = [w.replace('CHEBI:', '') and w.replace('Chebi:', '') and w.replace('ChEBI:', '') and w.replace('chebi:', '') for w in ListTotal]
 
 ##Replace items with backslash as empty value
 ListTotal = [re.sub("\\\\","",x) for x in ListTotal]
@@ -144,12 +144,14 @@ ListTotal = [re.sub("\\\\","",x) for x in ListTotal]
 ListTotal = [re.sub("/","",x) for x in ListTotal]
 
 ##Replace 'EC:' for enzyme nomenclature IDs if available
-ListTotal = [w.replace('EC: ', '') for w in ListTotal]
-ListTotal = [w.replace('EC:', '') for w in ListTotal]
-ListTotal = [w.replace('EC', '') for w in ListTotal]
+ListTotal = [w.replace('EC: ', '') and w.replace('EC:', '') and w.replace('EC', '') for w in ListTotal]
 
 ##Replace misspelled organism name for humans (Homo sapien)
 ListTotal = [w.replace('Homo sapien\t', 'Homo sapiens\t') for w in ListTotal]
+##Replace not common abbreviations for species
+ListTotal = [w.replace('house mouse', 'mouse') and w.replace('House Mouse', 'mouse') for w in ListTotal] ##Mouse
+ListTotal = [w.replace('brown rat', 'rat') and w.replace('Brown Rat', 'rat') for w in ListTotal] ##Rat
+ListTotal = [w.replace('wild boar or pig', 'pig') and w.replace('Wild Boar or Pig', 'pig')for w in ListTotal] ##Pig
 
 ##Remove lines without ChEBI, UniProt, or Rhea (Excel files include 'None' for empty values)
 for item in ListTotal[:]:
@@ -491,7 +493,8 @@ ListQC.append("Data format for Additional Conditions correctly loaded for " + st
 
 ## Lists to check listed organism (Latin and common English names) for animals//vertebrates commonly used in WikiPathways:
 ListCommonLatinOrganismsWP = ['Bos taurus', 'Canis familiaris', 'Danio rerio', 'Equus caballus', 'Gallus gallus', 'Homo sapiens', 'Mus musculus', 'Pan troglodytes', 'Rattus norvegicus', 'Sus scrofa', 'Escherichia coli']
-ListCommonEnglishOrganismsWP = ['cow', 'dog', 'zebrafish', 'horse', 'chicken', 'human', 'house mouse', 'chimpanzee', 'brown rat', 'wild boar or pig', 'E. coli']
+ListCommonEnglishOrganismsWP = ['cow', 'dog', 'zebrafish', 'horse', 'chicken', 'human', 'mouse', 'chimpanzee', 'rat', 'pig', 'E. coli'] 
+##TODO: add mouse, rat as separate entries (list with multiple values to compare against 1 key)
 
 # using dictionary comprehension to convert lists to dictionary for conversion of English to Latin later.
 Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrganismsWP[i] for i in range(len(ListCommonEnglishOrganismsWP))}
