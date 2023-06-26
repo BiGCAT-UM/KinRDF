@@ -1,39 +1,40 @@
 EnzymePW	ApprovedEnzymeName	E.C.number	Uniprot	Ensembl	RheaID	CHEBIID	SusbtrateName	Km (mM)	Kcat (s-1)	Kcat/Km (M-1s-1)	pH	Temperature (Celcius)	AdditionalConditions	Organism	PMID	Database
-CYP8B1	5beta-cholestane-3alpha,7alpha-diol 12alpha-hydroxylase	1.14.14.139	O02766	ENSG00000180432	46752	17899	7alpha-hydroxycholest-4-en-3-one	27		/	6,7-7	/	/	Oryctolagus cuniculus	659116	BRENDA
+CYP8B1	5beta-cholestane-3alpha,7alpha-diol 12alpha-hydroxylase	1.14.14.139	O02766	ENSG00000180432	46752	17899	7alpha-hydroxycholest-4-en-3-one	27		/	6,7	/	/	Oryctolagus cuniculus	659116	BRENDA
+CYP8B1	5beta-cholestane-3alpha,7alpha-diol 12alpha-hydroxylase	1.14.14.139	O02766	ENSG00000180432	46752	17899	7alpha-hydroxycholest-4-en-3-one	27		/	7	/	/	Oryctolagus cuniculus	659116	BRENDA
 CYP7A1	cholesterol 7alpha-monooxygenase	1.14.14.23	P22680	ENSG00000167910	21813	16113	cholesterol	/		/	7,2	37	/	Homo sapien	736605	BRENDA
-CYP7B1	25/26-hydroxycholesterol 7alpha-hydroxylase	1.14.14.29	O75881	ENSG00000172817	R-HSA-191972	81014	3beta-hydroxy-5-cholestenoic acid	/		/	/	/	/	Homo sapien	/	BRENDA
-CYP27A1	cholestanetriol 26-monooxygenase	1.14.15.15	Q02318	ENSG00000135929	46401	16113	cholesterol	/		/	7,4	30	/	Homo sapien	671957, 702407, 735739	BRENDA
+CYP7B1	25/26-hydroxycholesterol 7alpha-hydroxylase	1.14.14.29	O75881	ENSG00000172817	R-HSA-191972	81014	3beta-hydroxy-5-cholestenoic acid	/		/	/	/	Transition reaction	Homo sapien	/	BRENDA
+CYP27A1	cholestanetriol 26-monooxygenase	1.14.15.15	Q02318	ENSG00000135929	46401	16113	cholesterol	/		/	7,4	30	'	Homo sapien	671957, 702407, 735739	BRENDA
 			Q02318	ENSG00000135929	46093	17703	27-hydroxycholesterol	/		/	7,4	30	/	Homo sapien	671957, 702407, 735740	BRENDA
-			Q02318	ENSG00000135929	R-HSA-193497	28540	5beta-cholestane-3alpha, 7alpha, 26-triol	/		/	7,4	30	/	Homo sapien	671957, 702407, 735741	BRENDA
-			Q02318	ENSG00000135929	R-HSA-193393	28047	5beta-cholestane-3alpha, 7alpha-diol	/		/	7,4	30	/	Homo sapien	671957, 702407, 735742	BRENDA
-			Q02318	ENSG00000135929	R-HSA-193497	HMDB0060138	5beta-cholestane-3alpha, 7alpha, 27-triol	/		/	7,4	30	/	Homo sapien	671957, 702407, 735743	BRENDA
-			Q02318	ENSG00000135929	R-HSA-193460	27428	3alpha, 7alpha-dihydroxy-5beta-cholestan-26-al	/		/	7,4	30	/	Homo sapien	671957, 702407, 735744	BRENDA
-			Q02318	ENSG00000135929	R-HSA-191999	16496	5beta-cholestane-3alpha, 7alpha, 12alpha-triol	/		/	7,4	30	/	Homo sapien	671957, 702407, 735745	BRENDA
-			Q02318	ENSG00000135929	R-HSA-192042	17278	5beta-cholestane-3alpha, 7alpha, 12alpha, 26-tetrol	/		/	7,4	30	/	Homo sapien	671957, 702407, 735746	BRENDA
-			Q02318	ENSG00000135929	R-HSA-192054 (	16466	3alpha, 7alpha, 12alpha-trihydroxy-5beta-cholestan-26-al	/		/	7,4	30	/	Homo sapien	671957, 702407, 735747	BRENDA
-HSD3B7	cholest-5-ene-3beta,7alpha-diol 3beta-dehydrogenase	1.1.1.181	Q9H2F3	ENSG00000099377	R-HSA-193816	81015	3beta, 7alpha-dihydroxy-5-cholestenoate	/		/	/	/	/	Homo sapien	/	BRENDA
+			Q02318	ENSG00000135929	R-HSA-193497	28540	5beta-cholestane-3alpha, 7alpha, 26-triol	/		/	7,4	30	No corresponding Rhea found; could be  Rhea 40231	Homo sapien	671957, 702407, 735741	BRENDA
+			Q02318	ENSG00000135929	R-HSA-193393	28047	5beta-cholestane-3alpha, 7alpha-diol	/		/	7,4	30	No corresponding Rhea found.	Homo sapien	671957, 702407, 735742	BRENDA
+			Q02318	ENSG00000135929	R-HSA-193497	HMDB0060138	5beta-cholestane-3alpha, 7alpha, 27-triol	/		/	7,4	30	No corresponding Rhea found.	Homo sapien	671957, 702407, 735743	BRENDA
+			Q02318	ENSG00000135929	R-HSA-193460	27428	3alpha, 7alpha-dihydroxy-5beta-cholestan-26-al	/		/	7,4	30	No corresponding Rhea found.	Homo sapien	671957, 702407, 735744	BRENDA
+			Q02318	ENSG00000135929	34632	16496	5beta-cholestane-3alpha, 7alpha, 12alpha-triol	/		/	7,4	30	Previous Reactome ID: R-HSA-191999	Homo sapien	671957, 702407, 735745	BRENDA
+			Q02318	ENSG00000135929	40232	17278	5beta-cholestane-3alpha, 7alpha, 12alpha, 26-tetrol	/		/	7,4	30	Previous Reactome ID: R-HSA-192042	Homo sapien	671957, 702407, 735746	BRENDA
+			Q02318	ENSG00000135929	40233	16466	3alpha, 7alpha, 12alpha-trihydroxy-5beta-cholestan-26-al	/		/	7,4	30	Previous Reactome ID: R-HSA-192054	Homo sapien	671957, 702407, 735747	BRENDA
+HSD3B7	cholest-5-ene-3beta,7alpha-diol 3beta-dehydrogenase	1.1.1.181	Q9H2F3	ENSG00000099377	R-HSA-193816	81015	3beta, 7alpha-dihydroxy-5-cholestenoate	/		/	/	/	No corresponding Rhea found.	Homo sapien	/	BRENDA
 			Q9H2F3	ENSG00000099377	11897	17500	7-alpha-hydroxycholesterol	/		/	/	/	/	Homo sapien	/	BRENDA
-AKR1D1	DELTA4-3-oxosteroid 5beta-reductase	1.3.1.3	P51857	ENSG00000122787	R-HSA-193824	48825	7alpha,26-dihydroxycholest-4-en-3-one	/		/	6	37	/	Homo sapien	725399	BRENDA
-			P51857	ENSG00000122787	R-HSA-192033	17899	7alpha-Hydroxy-4-cholesten-3-one	/		/	6	37	/	Homo sapien	725399	BRENDA
-			P51857	ENSG00000122787	46633	28477	7alpha,12alpha-Dihydroxy-4-cholesten-3-one	/		/	6	37	/	Homo sapien	725399	BRENDA
-Aldo-keto reductase family 1 member C4	3alpha-hydroxysteroid 3-dehydrogenase	1.1.1.357	P17516	ENSG00000198610	R-HSA-193841	48778	7alpha,26-dihydroxy-5beta-cholestan-3-one	/		/	/	/	/	Homo sapien	/	BRENDA
-			P17516	ENSG00000198610	R-HSA-192160	2290	7alpha-hydroxy-5beta-cholestan-3-one	/		/	/	/	/	Homo sapien	/	BRENDA
-			P17516	ENSG00000198610	R-HSA-192036	2288	7alpha,12alpha-dihydroxy-5beta-cholestan-3-one	/		/	/	/	/	Homo sapien	/	BRENDA
-Very long-chain acyl-CoA synthetase	long-chain acyl-CoA ligase	6.2.1.3	O14975	ENSG00000140284	R-HSA-193424	16577	3alpha,7alpha-dihydroxy-5beta-cholestan-26-oic acid	/		/	7,5	30	/	Homo sapien	714313,714605	BRENDA
-			O14975	ENSG00000140284	R-HSA-193401	18402	3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oic acid	/		/	7,5	30	/	Homo sapien	714313, 714605	BRENDA
+AKR1D1	DELTA4-3-oxosteroid 5beta-reductase	1.3.1.3	P51857	ENSG00000122787	R-HSA-193824	48825	7alpha,26-dihydroxycholest-4-en-3-one	/		/	6	37	No corresponding Rhea found.	Homo sapien	725399	BRENDA
+			P51857	ENSG00000122787	46641	17899	7alpha-Hydroxy-4-cholesten-3-one	/		/	6	37	/	Homo sapien	725399	BRENDA
+			P51857	ENSG00000122787	46633	28477	7alpha,12alpha-Dihydroxy-4-cholesten-3-one	/		/	6	37	Previous Reactome ID: R-HSA-192033	Homo sapien	725399	BRENDA
+Aldo-keto reductase family 1 member C4	3alpha-hydroxysteroid 3-dehydrogenase	1.1.1.357	P17516	ENSG00000198610	R-HSA-193841	48778	7alpha,26-dihydroxy-5beta-cholestan-3-one	/		/	/	/	No corresponding Rhea found	Homo sapien	/	BRENDA
+			P17516	ENSG00000198610	R-HSA-192160	2290	7alpha-hydroxy-5beta-cholestan-3-one	/		/	/	/	No corresponding Rhea found	Homo sapien	/	BRENDA
+			P17516	ENSG00000198610	R-HSA-192036	2288	7alpha,12alpha-dihydroxy-5beta-cholestan-3-one	/		/	/	/	No corresponding Rhea found	Homo sapien	/	BRENDA
+Very long-chain acyl-CoA synthetase	long-chain acyl-CoA ligase	6.2.1.3	O14975	ENSG00000140284	R-HSA-193424	16577	3alpha,7alpha-dihydroxy-5beta-cholestan-26-oic acid	/		/	7,5	30	No corresponding Rhea found	Homo sapien	714313,714605	BRENDA
+			O14975	ENSG00000140284	R-HSA-193401	18402	3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oic acid	/		/	7,5	30	No corresponding Rhea found	Homo sapien	714313, 714605	BRENDA
 AMACR	alpha-methylacyl-CoA racemase	5.1.99.4	Q9UHK6	ENSG00000242110	40456	48474	(25R)-3alpha,7alpha-Dihydroxy-5beta-cholestanoyl-CoA	/		/	7,2	35	/	Homo sapien	727322	BRENDA
-			Q9UHK6	ENSG00000242110	R-HSA-192056	37642	(25R)-3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestan-26-oyl-CoA	/		/	7,2	35	/	Homo sapien	727322	BRENDA
-ACOX2	3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA 24-hydroxylase	1.17.99.3	P97562	ENSG00000168306	R-HSA-193369	HMDB60306	(25S)-3alpha,7alpha-Dihydroxy-5beta-cholestanoyl-CoA	/		/	7,5	/	/	Rattus norvegicus	659114	BRENDA
-			P97562	ENSG00000168306	R-HSA-192335	37643	(25S)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA	/		/	7,5	/	/	Rattus norvegicus	659114	BRENDA
+			Q9UHK6	ENSG00000242110	40456	37642	(25R)-3alpha,7alpha,12alpha-Trihydroxy-5beta-cholestan-26-oyl-CoA	/		/	7,2	35	Previous Reactome ID:R-HSA-192056 	Homo sapien	727322	BRENDA
+ACOX2	3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA 24-hydroxylase	1.17.99.3	P97562	ENSG00000168306	R-HSA-193369	CHEBI:58677	(25S)-3alpha,7alpha-Dihydroxy-5beta-cholestanoyl-CoA	/		/	7,5	/	/	Rattus norvegicus	659114	BRENDA
+			P97562	ENSG00000168306	46729	37643	(25S)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA	/		/	7,5	/	Previous Reactome ID: R-HSA-192335	Rattus norvegicus	659114	BRENDA
 SLC27A5	cholate-CoA ligase	6.2.1.7	Q9ES38	ENSG00000083807	31513	36234	chenodeoxycholate(1-)	18		/	8,5	/	/	Rattus norvegicus	660788	BRENDA
 			Q9ES38	ENSG00000083807	23533	29747	cholate	0,01		/	8	/	/	Rattus norvegicus	843	BRENDA
 Bile acid-CoA: amino acid N-acyltransferase	/	2.3.1.65	Q14032	ENSG00000136881	49785	28701	Chenodeoxycholoyl-CoA (taurine-dependent)	/		/	6,5	37	/	Homo sapien	/	BRENDA
 			Q14032	ENSG00000136881	49789	28701	Chenodeoxycholoyl-CoA (glycine-dependent)	/		/	7,2	37	/	Homo sapien	/	BRENDA
-			Q14032	ENSG00000136881	4710	15519	cholyl-CoA (taurine-dependent)	0,05		/	6,5	37	/	Homo sapien	487367	BRENDA
+			Q14032	ENSG00000136881	47101	15519	cholyl-CoA (taurine-dependent)	0,05		/	6,5	37	/	Homo sapien	487367	BRENDA
 			Q14032	ENSG00000136881	14002	15519	cholyl-CoA (glycine-dependent)	87		/	7,2	37	/	Homo sapien	487367	BRENDA
-SCP2	propanoyl-CoA C-acyltransferase	2.3.1.176	P22307	ENSG00000116171	R-HSA-193533	87704	3alpha,7alpha-dihydroxy-24-oxo-5beta-cholestan-26-oyl-CoA	/		/	/	/	/	Homo sapien	/	BRENDA
-			P22307	ENSG00000116171	R-HSA-19234	27379	3_,7_,12_-trihydroxy-24-oxo-5_-cholestan-26-oyl-CoA	/		/	/	/	/	Homo sapien	/	BRENDA
-HSD17B4	3alpha,7alpha,12alpha-trihydroxy-5beta-cholest-24-enoyl-CoA hydratase	4.2.1.107	P51659	ENSG00000133835	R-HSA-193535	27393	3alpha,7alpha-Dihydroxy-5beta-cholest-24-enoyl-CoA	/		/	7	/	/	Rattus norvegicus	684952	BRENDA
-			P51659	ENSG00000133835	R-HSA-193508	27403	3alpha,7alpha,24-trihydroxy-5beta-cholestan-26-oyl-CoA	/		/	7	/	/	Rattus norvegicus	684952	BRENDA
-			P51659	ENSG00000133835	R-HSA-192331	27505	3alpha,7alpha,12alpha-Trihydroxy-5beta-cholest-24-enoyl-CoA	/		/	7	/	/	Rattus norvegicus	684952	BRENDA
-			P51659	ENSG00000133835	R-HSA-193455	52050	(24R,25R)-3alpha,7alpha,12alpha,24-tetrahydroxy-5beta-cholestan-26-oyl-CoA	/		/	7	/	/	Rattus norvegicus	684952	BRENDA
+SCP2	propanoyl-CoA C-acyltransferase	2.3.1.176	P22307	ENSG00000116171	R-HSA-193533	87704	3alpha,7alpha-dihydroxy-24-oxo-5beta-cholestan-26-oyl-CoA	/		/	/	/	No corresponding Rhea found	Homo sapien	/	BRENDA
+			P22307	ENSG00000116171	R-HSA-19234	27379	3_,7_,12_-trihydroxy-24-oxo-5_-cholestan-26-oyl-CoA	/		/	/	/	Reactome ID does not exist (anymore?)	Homo sapien	/	BRENDA
+HSD17B4	3alpha,7alpha,12alpha-trihydroxy-5beta-cholest-24-enoyl-CoA hydratase	4.2.1.107	P51659	ENSG00000133835	R-HSA-193535	27393	3alpha,7alpha-Dihydroxy-5beta-cholest-24-enoyl-CoA	/		/	7	/	No corresponding Rhea found	Rattus norvegicus	684952	BRENDA
+			P51659	ENSG00000133835	R-HSA-193508	27403	3alpha,7alpha,24-trihydroxy-5beta-cholestan-26-oyl-CoA	/		/	7	/	No corresponding Rhea found	Rattus norvegicus	684952	BRENDA
+			P51659	ENSG00000133835	R-HSA-192331	27505	3alpha,7alpha,12alpha-Trihydroxy-5beta-cholest-24-enoyl-CoA	/		/	7	/	No corresponding Rhea found, close match:18933	Rattus norvegicus	684952	BRENDA
+			P51659	ENSG00000133835	47089	52050	(24R,25R)-3alpha,7alpha,12alpha,24-tetrahydroxy-5beta-cholestan-26-oyl-CoA	/		/	7	/	Previous Reactome ID:R-HSA-193455	Rattus norvegicus	684952	BRENDA
