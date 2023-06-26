@@ -124,6 +124,8 @@ for (dirname, dirs, files) in os.walk('.'):
 	  else:
 	    ListQC.append("File extension could not be read: "+ filename + '\n')
 
+###Cleaning up data:
+
 ##Remove spaces between prefixes and IDs for RHEA (column 6) and ChEBI (column 7)
 ListTotal = [w.replace('RHEA: ', '') for w in ListTotal]
 ListTotal = [w.replace('CHEBI: ', '') for w in ListTotal]
@@ -144,6 +146,7 @@ ListTotal = [re.sub("/","",x) for x in ListTotal]
 ##Replace 'EC:' for enzyme nomenclature IDs if available
 ListTotal = [w.replace('EC: ', '') for w in ListTotal]
 ListTotal = [w.replace('EC:', '') for w in ListTotal]
+ListTotal = [w.replace('EC', '') for w in ListTotal]
 
 ##Replace misspelled organism name for humans (Homo sapien)
 ListTotal = [w.replace('Homo sapien\t', 'Homo sapiens\t') for w in ListTotal]
@@ -153,6 +156,7 @@ for item in ListTotal[:]:
 	a = item.split('\t')
 	#Check if one of the necessary values is missing!!
 	if (a[0].strip()=='-')|(a[4].strip()=='-')|(a[6].strip()=='-')|(a[7].strip()=='-') | (a[0].strip()=='NA')|(a[4].strip()=='NA')|(a[6].strip()=='NA')|(a[7].strip()=='NA') | (a[0].strip()=='None')|(a[4].strip()=='None')|(a[6].strip()=='None')|(a[7].strip()=='None') | (a[0].strip()=='')|(a[4].strip()=='')|(a[6].strip()=='')|(a[7].strip()==''):
+	  ListCuration.append("CURATION: missing data for: "+ a[0] + ' substrate: ' + a[7] + ' enzyme: ' + a[4] + ' reaction: ' + a[6] + ' ' + a[18] + '\n')
 	  ListTotal.remove(item)
 
 ##Remove lines without any provenance (either PMID or Database are needed)
@@ -160,24 +164,28 @@ for item in ListTotal[:]:
 for item in ListTotal[:]:
 	a = item.split('\t')
 	if ((a[16].strip()=='-')&(a[17].strip()=='-'))|((a[16].strip()=='-')&(a[17].strip()=='NA'))|((a[16].strip()=='-')&(a[17].strip()=='')|((a[16].strip()=='-')&(a[17].strip()=='None'))): #Check if both values are missing!!
+	  ListCuration.append("CHECK: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
 	  ListTotal.remove(item)
 
 ### 'NA'
 for item in ListTotal[:]:
 	a = item.split('\t')	  
 	if ((a[16].strip()=='NA')&(a[17].strip()=='NA'))|((a[16].strip()=='NA')&(a[17].strip()=='-'))|((a[16].strip()=='NA')&(a[17].strip()==''))|((a[16].strip()=='NA')&(a[17].strip()=='None')):  #Check if both values are NA!!
+	  ListCuration.append("CHECK: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
 	  ListTotal.remove(item)
 
 ### ''
 for item in ListTotal[:]:
 	a = item.split('\t')
 	if ((a[16].strip()=='')&(a[17].strip()==''))|((a[16].strip()=='')&(a[17].strip()=='-'))|((a[16].strip()=='')&(a[17].strip()=='NA'))|((a[16].strip()=='')&(a[17].strip()=='None')):  #Check if both values are empty!!
+	  ListCuration.append("CHECK: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
 	  ListTotal.remove(item)
 
-### 'None'
+### 'None' (from .xlsx files)
 for item in ListTotal[:]:
 	a = item.split('\t')
-	if ((a[16].strip()=='None')&(a[17].strip()=='None'))|((a[16].strip()=='None')&(a[17].strip()=='-'))|((a[16].strip()=='None')&(a[17].strip()=='NA'))|((a[16].strip()=='None')&(a[17].strip()=='')):  #Check if both values are empty!!
+	if ((a[16].strip()=='None')&(a[17].strip()=='None'))|((a[16].strip()=='None')&(a[17].strip()=='-'))|((a[16].strip()=='None')&(a[17].strip()=='NA'))|((a[16].strip()=='None')&(a[17].strip()=='')):  #Check if both values are None!!
+	  ListCuration.append("CHECK: Provenance for data is missing, check original data for: "+ a[0] + " publication: " + a[16] + ' database: ' + a[17] + ' ' + a[18] + '\n')  
 	  ListTotal.remove(item)
 
 ##Print total number of lines found in files:
@@ -208,9 +216,8 @@ for itemSERX in ListTotal[:]:
 	  ListSER_ID.append(a[0].strip() + '\t' + 'sio:SIO_000008 ' + ' ' +  a[0].strip( ) + '_measurement' ) #Add the 'has attribute' relationship, so we can link the values to that later.
 	  countSER = countSER +1
 	else:
+	  ListCuration.append("CURATION: missing data for: "+ a[0] + ' substrate: ' + a[7] + ' enzyme: ' + a[4] + ' reaction: ' + a[6] + ' ' + a[18] + '\n')
 	  ListTotal.remove(itemSERX)
-	  ListCuration.append("CURATION: missing data for: "+ a[0] + ' substrate: ' + a[7] + ' enzyme: ' + a[4] + ' reaction: ' + a[6] + '\n')
-
 
 ##Print total number of lines found in files, after removing data without SEP-ID:
 ListQC.append("Lines remaining without missing SER info: "+ str(len(ListTotal)) + '\n')
@@ -311,6 +318,7 @@ for itemRheaID in ListTotal:
 	elif ('R-HSA-' in g[6].strip()):
 	  ##TODO: add conversion to Rhea IDs in the future from BridgeDb mapping file!
 	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
+	  ListErrors.append("CHECK: Data format for Rhea contains Reactome IDs, check original data for: "+ g[0] + ' : ' + g[6] + ' ' + g[18] + '\n')
 	  continue
 	elif(result_rhea): ##regex check
 	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
