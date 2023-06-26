@@ -15,7 +15,7 @@ testData = "/TestData" ##For all test data
 validationData = "/ValidateData" ##To test one file at a time from test data
 
 ##Select folder name to apply script on:
-subfolderLocation = validationData ##Adapt this statement if needed
+subfolderLocation = checkedData ##Adapt this statement if needed
 ##TODO: include different setup in 3 separate GitHub Actions.
 
 #Update the path to where the data is stored.

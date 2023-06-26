@@ -1,63 +1,108 @@
-File extension could not be read: .~lock.KineticsPW4519.txt#
-Total lines read: 247
-Lines remaining without missing SER info: 247
-Data format for SER correctly loaded for 247 Substrate, Enzyme, and Reaction IDs. 
+Total lines read: 368
+Lines remaining without missing SER info: 367
+Data format for SER correctly loaded for 367 Substrate, Enzyme, and Reaction IDs. 
 
-Data format for 'wp:bdbEnzymeNomenclature correctly loaded for 243 EC IDs. 
+Data format for 'wp:bdbEnzymeNomenclature correctly loaded for 340 EC IDs. 
 
-Data format for wp:bdbUniprot correctly loaded for 247 UniProt Protein IDs. 
+Data format for wp:bdbUniprot correctly loaded for 367 UniProt Protein IDs. 
 
-Data format for wp:bdbEnsembl correctly loaded for 111 gene IDs. 
+Data format for wp:bdbEnsembl correctly loaded for 216 gene IDs. 
 
-Data format for wp:bdbRhea correctly loaded for 171 rhea interaction IDs. 
+Data format for wp:bdbRhea correctly loaded for 270 rhea interaction IDs. 
 
-Data format for rh:equation correctly loaded for 76 reaction formulas. 
+Data format for rh:equation correctly loaded for 80 reaction formulas. 
 
-Data format for wp:bdbChEBI correctly loaded for 247 substrate IDs. 
+Data format for wp:bdbChEBI correctly loaded for 367 substrate IDs. 
 
-Data format for Km correctly loaded for 163 values. 
+Data format for Km correctly loaded for 231 values. 
 
-Data format for Kcat correctly loaded for 49 values. 
+Data format for Kcat correctly loaded for 80 values. 
 
-Data format for KcatKm correctly loaded for 50 values. 
+Data format for KcatKm correctly loaded for 76 values. 
 
-Data format for pH correctly loaded for 159 values. 
+Data format for pH correctly loaded for 243 values. 
 
-Data format for Temperature correctly loaded for 152 values. 
+Data format for Temperature correctly loaded for 221 values. 
 
-Data format for Additional Conditions correctly loaded for 131 values. 
+Data format for Additional Conditions correctly loaded for 159 values. 
 
-Data format for Organisms correctly loaded for 228 values. 
+Data format for Organisms correctly loaded for 338 values. 
 
-Data format for PMIDs Provenance correctly loaded for 240 values. 
+Data format for PMIDs Provenance correctly loaded for 399 values. 
 
-Data format for Database Provenance correctly loaded for 248 values. 
+Data format for Database Provenance correctly loaded for 370 values. 
 
 
 Reported Errors in Data: 
 
-CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:81 : 1.3.1.B13
-CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:254 : 1.1.1.B40
-CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:255 : 1.1.1.B40
-CHECK: Data format for 'wp:bdbEnzymeNomenclature unknown, check original data for: SER:256 : 1.1.1.B40
-CHECK: Name for Organism is not recognized, check original data for: SER:13 : Alcaligenes sp. 
-CHECK: Name for Organism is not recognized, check original data for: SER:14 : Arabidopsis thaliana
-CHECK: Name for Organism is not recognized, check original data for: SER:15 : Pisum sativum
-CHECK: Name for Organism is not recognized, check original data for: SER:16 : Pisum sativum
-CHECK: Name for Organism is not recognized, check original data for: SER:18 : Saccharomyces cerevisiae
-CHECK: Name for Organism is not recognized, check original data for: SER:19 : Chlorobium limicola
-CHECK: Name for Organism is not recognized, check original data for: SER:20 : Rhoopseudomonas palustris
-CHECK: Name for Organism is not recognized, check original data for: SER:21 : Chlorobium limicola
-CHECK: Name for Organism is not recognized, check original data for: SER:22 : Saccharomyces cerevisiae
-CHECK: Name for Organism is not recognized, check original data for: SER:68 : Synechocystis sp.
-CHECK: Name for Organism is not recognized, check original data for: SER:77 : Pasteurella multocida
-CHECK: Name for Organism is not recognized, check original data for: SER:78 : Pasteurella multocida
-CHECK: Name for Organism is not recognized, check original data for: SER:79 : Synechocystis sp.
-CHECK: Name for Organism is not recognized, check original data for: SER:84 : Rat
-CHECK: Name for Organism is not recognized, check original data for: SER:90 : Oryctolagus cuniculus
-CHECK: Name for Organism is not recognized, check original data for: SER:91 : Oryctolagus cuniculus
-CHECK: Name for Organism is not recognized, check original data for: SER:92 : Oryctolagus cuniculus
-CHECK: Name for Organism is not recognized, check original data for: SER:254 : Felis catus
+CHECK: Data format for wp:bdbEnzymeNomenclature unknown, check original data for: SER:136 : 1.3.1.B13 Kinetics_WP4521.txt
+CHECK: Data format for wp:bdbEnzymeNomenclature unknown, check original data for: SER:357 : 1.1.1.B40 Kinetics_WP4523.txt
+CHECK: Data format for wp:bdbEnzymeNomenclature unknown, check original data for: SER:358 : 1.1.1.B40 Kinetics_WP4523.txt
+CHECK: Data format for wp:bdbEnzymeNomenclature unknown, check original data for: SER:359 : 1.1.1.B40 Kinetics_WP4523.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:153 : R-HSA-191972 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:156 : R-HSA-193497 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:157 : R-HSA-193393 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:159 : R-HSA-193460 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:163 : R-HSA-193816 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:165 : R-HSA-193824 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:168 : R-HSA-193841 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:169 : R-HSA-192160 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:170 : R-HSA-192036 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:171 : R-HSA-193424 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:172 : R-HSA-193401 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:175 : R-HSA-193369 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:183 : R-HSA-193533 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:184 : R-HSA-19234 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:185 : R-HSA-193535 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:186 : R-HSA-193508 WP5176_kinetic data.txt
+CHECK: Data format for Rhea contains Reactome IDs, check original data for: SER:187 : R-HSA-192331 WP5176_kinetic data.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:13 : Alcaligenes sp.  KineticsPW4519.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:14 : Arabidopsis thaliana KineticsPW4519.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:15 : Pisum sativum KineticsPW4519.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:16 : Pisum sativum KineticsPW4519.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:18 : Saccharomyces cerevisiae KineticsPW4519.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:19 : Chlorobium limicola KineticsPW4519.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:20 : Rhoopseudomonas palustris KineticsPW4519.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:21 : Chlorobium limicola KineticsPW4519.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:22 : Saccharomyces cerevisiae KineticsPW4519.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:68 : Synechocystis sp. WP4518_Kinetics.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:77 : Pasteurella multocida WP4518_Kinetics.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:78 : Pasteurella multocida WP4518_Kinetics.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:79 : Synechocystis sp. WP4518_Kinetics.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:101 : Pelomonas saccharophila kinetic-data_WP5173.xlsx
+CHECK: Name for Organism is not recognized, check original data for: SER:108 :  Debaryomyces nepalensis kinetic-data_WP5173.xlsx
+CHECK: Name for Organism is not recognized, check original data for: SER:125 : rabbit kinetic-data_WP5173.xlsx
+CHECK: Name for Organism is not recognized, check original data for: SER:132 : Oryctolagus cuniculus kinetic-data_WP5173.xlsx
+CHECK: Name for Organism is not recognized, check original data for: SER:133 : Mycobacterium tuberculosis kinetic-data_WP5173.xlsx
+CHECK: Name for Organism is not recognized, check original data for: SER:134 : Mycobacterium tuberculosis kinetic-data_WP5173.xlsx
+CHECK: Name for Organism is not recognized, check original data for: SER:145 : Oryctolagus cuniculus Kinetics_WP4521.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:146 : Oryctolagus cuniculus Kinetics_WP4521.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:147 : Oryctolagus cuniculus Kinetics_WP4521.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:150 : Oryctolagus cuniculus WP5176_kinetic data.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:151 : Oryctolagus cuniculus WP5176_kinetic data.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:357 : Felis catus Kinetics_WP4523.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:375 : Hyphomicrobium methylovorum Kinetic data - Glyoxylate pathway_WP5166.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:376 : Methylomicrobium alcaliphilum Kinetic data - Glyoxylate pathway_WP5166.txt
+CHECK: Name for Organism is not recognized, check original data for: SER:379 : Solanum tuberosum Kinetic data - Glyoxylate pathway_WP5166.txt
 
 Potential Curation Required: 
 
+CURATION: missing data for: SER:23 substrate: 61511 enzyme: P49419 reaction: - KineticsPW4519.txt
+CURATION: missing data for: SER:197 substrate: 39027 enzyme: P11597 reaction: - Kinetics_WP4522.txt
+CURATION: missing data for: SER:256 substrate: low density lipoprotein receptor enzyme: Q8NBP7 reaction: - Kinetics_WP4522.txt
+CURATION: missing data for: SER:280 substrate: - enzyme: P49675 reaction: ATP + steroidogenic acute regulatory protein = ADP + phosphorylated steroidogenic acute regulatory protein Kinetics_WP4523.txt
+CURATION: missing data for: SER:295 substrate: 16485 enzyme: P16435 reaction: - Kinetics_WP4523.txt
+CURATION: missing data for: SER:364 substrate: - enzyme: P11511 reaction: - Kinetics_WP4523.txt
+CURATION: missing data for: SER:365 substrate: - enzyme: J3KNC7 reaction: - Kinetics_WP4523.txt
+CURATION: Provenance for data is missing, check original data for: SER:28 publication: -  database: - KineticsPW4519.txt
+CURATION: Provenance for data is missing, check original data for: SER:36 publication: - database: - WP4518_Kinetics.txt
+CURATION: Provenance for data is missing, check original data for: SER:198 publication: - database: - Kinetics_WP4522.txt
+CURATION: Provenance for data is missing, check original data for: SER:199 publication: - database: - Kinetics_WP4522.txt
+CURATION: Provenance for data is missing, check original data for: SER:293 publication: - database: - Kinetics_WP4523.txt
+CURATION: Provenance for data is missing, check original data for: SER:294 publication: - database: - Kinetics_WP4523.txt
+CURATION: Provenance for data is missing, check original data for: SER:363 publication: - database: - Kinetics_WP4523.txt
+CURATION: Provenance for data is missing, check original data for: SER:381 publication: - database: - WP5172.xlsx
+CURATION: Provenance for data is missing, check original data for: SER:383 publication: - database: - WP5172.xlsx
+CURATION: Provenance for data is missing, check original data for: SER:128 publication: None database: None kinetic-data_WP5173.xlsx
+CURATION: Provenance for data is missing, check original data for: SER:131 publication: None database: None kinetic-data_WP5173.xlsx
+CURATION: missing data for: SER:158 substrate: HMDB0060138 enzyme: Q02318 reaction: R-HSA-193497 WP5176_kinetic data.txt
