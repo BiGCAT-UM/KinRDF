@@ -2,11 +2,15 @@ name: Python Script Test
 
 on: [push]
 
+# Sets permissions of the GITHUB_TOKEN to push results to GitHub if required
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   CreateCuratedRDF:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     strategy:
       max-parallel: 5
 
