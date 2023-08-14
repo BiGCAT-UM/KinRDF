@@ -27,5 +27,8 @@ jobs:
         python3 --version
         ##Install library to read xlsx files:
         pip install openpyxl
+        ls
+        cd ..
+        ls
         python reateRDFKinData.py
         echo "script run successfully"
