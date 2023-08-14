@@ -43,10 +43,11 @@ jobs:
     - name: Turtle Validator
       run: |
         npm install -g turtle-validator
-        ttl Output/RDF_Kin_Data_2022-Dec.ttl
-        if [[ ttl Output/RDF_Kin_Data_2022-Dec.ttl == "Validator finished with 0 warnings and 0 errors." ]]; then
-          echo "RDF content valid"
+        ttl Output/RDF_Kin_Data_2022-Dec.ttl > validationLog2022-Dec.txt
+        FILENAME=validationLog2022-Dec.txt 
+        if grep -q . "${FILENAME}"; then
+          echo "File is not empty"
         else
-          echo "RDF content NOT valid, please check"
-        fi        
+          echo "File is empty"
+        fi     
 
