@@ -44,4 +44,9 @@ jobs:
       run: |
         npm install -g turtle-validator
         ttl Output/RDF_Kin_Data_2022-Dec.ttl
-        echo "RDF content valid"
+        if [[ ttl Output/RDF_Kin_Data_2022-Dec.ttl == "Validator finished with 0 warnings and 0 errors." ]]; then
+          echo "RDF content valid"
+        else
+          echo "RDF content NOT valid, please check"
+        fi        
+
