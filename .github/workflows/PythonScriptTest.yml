@@ -37,9 +37,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: CreateCuratedRDF
     steps:
-    # step 1: Download and run the RDF validator
-      - name: Turtle Validator
-        run: |
-          npm install -g turtle-validator
-          ls
-          #ttl Output/RDF_Kin_Data_2022-Dec.ttl
+    # step 1: checkout the repository
+    - uses: actions/checkout@v3
+    # step 2: Download and run the RDF validator
+    - name: Turtle Validator
+      run: |
+        npm install -g turtle-validator
+        echo "Testing location"
+        ls
+        #ttl Output/RDF_Kin_Data_2022-Dec.ttl
