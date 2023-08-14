@@ -25,10 +25,12 @@ jobs:
         which python
         ## Check version of Python
         python3 --version
+        ##Update pip install
+        pip install --upgrade pip
         ##Install library to read xlsx files:
         pip install openpyxl
         ls
         cd ..
         ls
-        python reateRDFKinData.py
+        python createRDFKinData.py
         echo "script run successfully"
