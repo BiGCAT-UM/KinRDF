@@ -7,7 +7,8 @@ workspaceRoot = "."
 rdf = new net.bioclipse.managers.RDFManager(workspaceRoot);
 
 file = "/Output/RDF_Kin_Data_2022-Dec.ttl"
-clazz = "InteractionData"
+clazz = args[0]
+type = args[1]
 
 store = rdf.createInMemoryStore(true);
 store = rdf.importFile(store, "${file}", "TURTLE")
@@ -15,7 +16,7 @@ report = rdf.validateAllOfType(
   store,
   "/shapes/${clazz}.shex",
   "http://bigcat-um.github.io/KinRDF/shapes#${clazz}",
-  "http://vocabularies.wikipathways.org/wp#${clazz}"
+  "${type}"
 )
 
 println "{"
