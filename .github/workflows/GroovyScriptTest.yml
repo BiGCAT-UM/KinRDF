@@ -1,11 +1,15 @@
-name: Update the Open SbD4Nano Cache
+name: Groovy Script Test
 
 on:
   workflow_dispatch:
   push:
+    paths:
+      - Output/RDF_Kin_Data_2022-Dec.ttl
+      - shapes/*.shex
+      - validate.groovy
 
 jobs:
-  fetch-data:
+  VaidateCuratedRDF:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
