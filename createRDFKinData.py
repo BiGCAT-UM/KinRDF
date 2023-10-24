@@ -883,7 +883,7 @@ RDF_Kin_data = open('RDF_Kin_Data_2022-Dec.ttl', 'wb')
 
 # #First, print the prefixes from existing databases
 ##.encode() needed to write to files in Python 3.x (compared to 2.x)
-RDF_Kin_data.write("@prefix SER: <http://vocabularies.wikipathways.org/kin#> . \n".encode())  #Need to make URL for this prefix!
+RDF_Kin_data.write("@prefix SER: <http://bigcat-um.github.io/KinRDF/kin#> . \n".encode())
 RDF_Kin_data.write("@prefix dc: <http://purl.org/dc/elements/1.1/> . \n".encode()) 
 RDF_Kin_data.write("@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . \n".encode()) 
 RDF_Kin_data.write("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . \n".encode()) 
