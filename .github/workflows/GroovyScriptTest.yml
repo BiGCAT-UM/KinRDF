@@ -22,4 +22,5 @@ jobs:
 
       - name: Generate the Shex validation reports
         run: |
-          groovy validate.groovy
+          groovy validate.groovy InteractionData http://vocabularies.wikipathways.org/wp#InteractionData
+          groovy validate.groovy Enzyme http://vocabularies.wikipathways.org/wp#Protein
