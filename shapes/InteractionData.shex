@@ -10,5 +10,8 @@ PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
 PREFIX wp:    <http://vocabularies.wikipathways.org/wp#>
 
 :InteractionData {
-  a [ wp:InteractionData ]
+  a [ wp:InteractionData ] ;
+  dc:identifier IRI {1} ;
+  sio:SIO_000008 IRI {1} ;
+  sio:SIO_000028 IRI +
 }
