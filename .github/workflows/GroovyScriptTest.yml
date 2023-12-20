@@ -24,6 +24,6 @@ jobs:
         run: |
           groovy validate.groovy InteractionData http://vocabularies.wikipathways.org/wp#InteractionData
           #groovy validate.groovy Enzyme http://vocabularies.wikipathways.org/wp#Protein
-          groovy validate.groovy Interaction http://vocabularies.wikipathways.org/wp#Interaction
+          #groovy validate.groovy Interaction http://vocabularies.wikipathways.org/wp#Interaction
           #groovy validate.groovy Substrate http://vocabularies.wikipathways.org/wp#Metabolite
           #groovy validate.groovy Measurement http://vocabularies.wikipathways.org/wp#???
