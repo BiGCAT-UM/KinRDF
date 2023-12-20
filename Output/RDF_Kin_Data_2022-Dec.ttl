@@ -3820,797 +3820,6 @@ RHEA:16374
 	rdf:type wp:Interaction ;
 	rh:accession RHEA:16374.
 
-CHEBI:16953
-	sio:SIO_000028 SER:1_substrate ;
-	sio:SIO_000028 SER:2_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16953.
-
-CHEBI:15524
-	sio:SIO_000028 SER:3_substrate ;
-	sio:SIO_000028 SER:4_substrate ;
-	sio:SIO_000028 SER:5_substrate ;
-	sio:SIO_000028 SER:6_substrate ;
-	sio:SIO_000028 SER:7_substrate ;
-	sio:SIO_000028 SER:8_substrate ;
-	sio:SIO_000028 SER:9_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15524.
-
-CHEBI:24311
-	sio:SIO_000028 SER:10_substrate ;
-	sio:SIO_000028 SER:11_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 24311.
-
-CHEBI:17084
-	sio:SIO_000028 SER:12_substrate ;
-	sio:SIO_000028 SER:13_substrate ;
-	sio:SIO_000028 SER:14_substrate ;
-	sio:SIO_000028 SER:29_substrate ;
-	sio:SIO_000028 SER:30_substrate ;
-	sio:SIO_000028 SER:31_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17084.
-
-CHEBI:30915
-	sio:SIO_000028 SER:15_substrate ;
-	sio:SIO_000028 SER:16_substrate ;
-	sio:SIO_000028 SER:17_substrate ;
-	sio:SIO_000028 SER:18_substrate ;
-	sio:SIO_000028 SER:19_substrate ;
-	sio:SIO_000028 SER:20_substrate ;
-	sio:SIO_000028 SER:21_substrate ;
-	sio:SIO_000028 SER:22_substrate ;
-	sio:SIO_000028 SER:24_substrate ;
-	sio:SIO_000028 SER:25_substrate ;
-	sio:SIO_000028 SER:26_substrate ;
-	sio:SIO_000028 SER:27_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 30915.
-
-CHEBI:16856
-	sio:SIO_000028 SER:32_substrate ;
-	sio:SIO_000028 SER:33_substrate ;
-	sio:SIO_000028 SER:34_substrate ;
-	sio:SIO_000028 SER:35_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16856.
-
-CHEBI:16010
-	sio:SIO_000028 SER:37_substrate ;
-	sio:SIO_000028 SER:38_substrate ;
-	sio:SIO_000028 SER:39_substrate ;
-	sio:SIO_000028 SER:40_substrate ;
-	sio:SIO_000028 SER:41_substrate ;
-	sio:SIO_000028 SER:42_substrate ;
-	sio:SIO_000028 SER:43_substrate ;
-	sio:SIO_000028 SER:44_substrate ;
-	sio:SIO_000028 SER:45_substrate ;
-	sio:SIO_000028 SER:46_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16010.
-
-CHEBI:14321
-	sio:SIO_000028 SER:47_substrate ;
-	sio:SIO_000028 SER:48_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 14321.
-
-CHEBI:17515
-	sio:SIO_000028 SER:49_substrate ;
-	sio:SIO_000028 SER:77_substrate ;
-	sio:SIO_000028 SER:78_substrate ;
-	sio:SIO_000028 SER:79_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17515.
-
-CHEBI:15428
-	sio:SIO_000028 SER:50_substrate ;
-	sio:SIO_000028 SER:51_substrate ;
-	sio:SIO_000028 SER:52_substrate ;
-	sio:SIO_000028 SER:53_substrate ;
-	sio:SIO_000028 SER:54_substrate ;
-	sio:SIO_000028 SER:55_substrate ;
-	sio:SIO_000028 SER:56_substrate ;
-	sio:SIO_000028 SER:57_substrate ;
-	sio:SIO_000028 SER:58_substrate ;
-	sio:SIO_000028 SER:59_substrate ;
-	sio:SIO_000028 SER:60_substrate ;
-	sio:SIO_000028 SER:61_substrate ;
-	sio:SIO_000028 SER:62_substrate ;
-	sio:SIO_000028 SER:63_substrate ;
-	sio:SIO_000028 SER:64_substrate ;
-	sio:SIO_000028 SER:65_substrate ;
-	sio:SIO_000028 SER:66_substrate ;
-	sio:SIO_000028 SER:67_substrate ;
-	sio:SIO_000028 SER:68_substrate ;
-	sio:SIO_000028 SER:69_substrate ;
-	sio:SIO_000028 SER:70_substrate ;
-	sio:SIO_000028 SER:71_substrate ;
-	sio:SIO_000028 SER:72_substrate ;
-	sio:SIO_000028 SER:73_substrate ;
-	sio:SIO_000028 SER:74_substrate ;
-	sio:SIO_000028 SER:75_substrate ;
-	sio:SIO_000028 SER:76_substrate ;
-	sio:SIO_000028 SER:259_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15428.
-
-CHEBI:4047
-	sio:SIO_000028 SER:80_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 4047.
-
-CHEBI:CHEBI:15428
-	sio:SIO_000028 SER:81_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:15428.
-
-CHEBI:CHEBI:15380
-	sio:SIO_000028 SER:82_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:15380.
-
-CHEBI:CHEBI:17549
-	sio:SIO_000028 SER:83_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:17549.
-
-CHEBI:CHEBI:17381
-	sio:SIO_000028 SER:84_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:17381.
-
-CHEBI:CHEBI:16645
-	sio:SIO_000028 SER:85_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:16645.
-
-CHEBI:CHEBI:15437
-	sio:SIO_000028 SER:86_substrate ;
-	sio:SIO_000028 SER:95_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:15437.
-
-CHEBI:CHEBI:28766
-	sio:SIO_000028 SER:87_substrate ;
-	sio:SIO_000028 SER:94_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:28766.
-
-CHEBI:CHEBI:89912
-	sio:SIO_000028 SER:88_substrate ;
-	sio:SIO_000028 SER:89_substrate ;
-	sio:SIO_000028 SER:90_substrate ;
-	sio:SIO_000028 SER:91_substrate ;
-	sio:SIO_000028 SER:92_substrate ;
-	sio:SIO_000028 SER:93_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:89912.
-
-CHEBI:CHEBI:15439
-	sio:SIO_000028 SER:96_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:15439.
-
-CHEBI:CHEBI:15435
-	sio:SIO_000028 SER:97_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:15435.
-
-CHEBI:CHEBI:15430
-	sio:SIO_000028 SER:98_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:15430.
-
-CHEBI:28260
-	sio:SIO_000028 SER:99_substrate ;
-	sio:SIO_000028 SER:100_substrate ;
-	sio:SIO_000028 SER:101_substrate ;
-	sio:SIO_000028 SER:102_substrate ;
-	sio:SIO_000028 SER:103_substrate ;
-	sio:SIO_000028 SER:104_substrate ;
-	sio:SIO_000028 SER:105_substrate ;
-	sio:SIO_000028 SER:106_substrate ;
-	sio:SIO_000028 SER:107_substrate ;
-	sio:SIO_000028 SER:108_substrate ;
-	sio:SIO_000028 SER:109_substrate ;
-	sio:SIO_000028 SER:110_substrate ;
-	sio:SIO_000028 SER:111_substrate ;
-	sio:SIO_000028 SER:112_substrate ;
-	sio:SIO_000028 SER:113_substrate ;
-	sio:SIO_000028 SER:114_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 28260.
-
-CHEBI:58601
-	sio:SIO_000028 SER:115_substrate ;
-	sio:SIO_000028 SER:116_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 58601.
-
-CHEBI:14314
-	sio:SIO_000028 SER:117_substrate ;
-	sio:SIO_000028 SER:118_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 14314.
-
-CHEBI:18066
-	sio:SIO_000028 SER:119_substrate ;
-	sio:SIO_000028 SER:120_substrate ;
-	sio:SIO_000028 SER:125_substrate ;
-	sio:SIO_000028 SER:126_substrate ;
-	sio:SIO_000028 SER:127_substrate ;
-	sio:SIO_000028 SER:129_substrate ;
-	sio:SIO_000028 SER:130_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 18066.
-
-CHEBI:18307
-	sio:SIO_000028 SER:121_substrate ;
-	sio:SIO_000028 SER:122_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 18307.
-
-CHEBI:28087
-	sio:SIO_000028 SER:123_substrate ;
-	sio:SIO_000028 SER:124_substrate ;
-	sio:SIO_000028 SER:132_substrate ;
-	sio:SIO_000028 SER:133_substrate ;
-	sio:SIO_000028 SER:134_substrate ;
-	sio:SIO_000028 SER:135_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 28087.
-
-CHEBI:67132
-	sio:SIO_000028 SER:136_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 67132.
-
-CHEBI:16091
-	sio:SIO_000028 SER:137_substrate ;
-	sio:SIO_000028 SER:138_substrate ;
-	sio:SIO_000028 SER:139_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16091.
-
-CHEBI:4691
-	sio:SIO_000028 SER:140_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 4691.
-
-CHEBI:58427
-	sio:SIO_000028 SER:141_substrate ;
-	sio:SIO_000028 SER:142_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 58427.
-
-CHEBI:57269
-	sio:SIO_000028 SER:143_substrate ;
-	sio:SIO_000028 SER:144_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 57269.
-
-CHEBI:58472
-	sio:SIO_000028 SER:145_substrate ;
-	sio:SIO_000028 SER:146_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 58472.
-
-CHEBI:132511
-	sio:SIO_000028 SER:147_substrate ;
-	sio:SIO_000028 SER:148_substrate ;
-	sio:SIO_000028 SER:149_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 132511.
-
-CHEBI:17899
-	sio:SIO_000028 SER:150_substrate ;
-	sio:SIO_000028 SER:151_substrate ;
-	sio:SIO_000028 SER:166_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17899.
-
-CHEBI:16113
-	sio:SIO_000028 SER:152_substrate ;
-	sio:SIO_000028 SER:154_substrate ;
-	sio:SIO_000028 SER:266_substrate ;
-	sio:SIO_000028 SER:267_substrate ;
-	sio:SIO_000028 SER:268_substrate ;
-	sio:SIO_000028 SER:269_substrate ;
-	sio:SIO_000028 SER:270_substrate ;
-	sio:SIO_000028 SER:271_substrate ;
-	sio:SIO_000028 SER:272_substrate ;
-	sio:SIO_000028 SER:273_substrate ;
-	sio:SIO_000028 SER:274_substrate ;
-	sio:SIO_000028 SER:275_substrate ;
-	sio:SIO_000028 SER:276_substrate ;
-	sio:SIO_000028 SER:277_substrate ;
-	sio:SIO_000028 SER:278_substrate ;
-	sio:SIO_000028 SER:279_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16113.
-
-CHEBI:81014
-	sio:SIO_000028 SER:153_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 81014.
-
-CHEBI:17703
-	sio:SIO_000028 SER:155_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17703.
-
-CHEBI:28540
-	sio:SIO_000028 SER:156_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 28540.
-
-CHEBI:28047
-	sio:SIO_000028 SER:157_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 28047.
-
-CHEBI:27428
-	sio:SIO_000028 SER:159_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 27428.
-
-CHEBI:16496
-	sio:SIO_000028 SER:160_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16496.
-
-CHEBI:17278
-	sio:SIO_000028 SER:161_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17278.
-
-CHEBI:16466
-	sio:SIO_000028 SER:162_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16466.
-
-CHEBI:81015
-	sio:SIO_000028 SER:163_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 81015.
-
-CHEBI:17500
-	sio:SIO_000028 SER:164_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17500.
-
-CHEBI:48825
-	sio:SIO_000028 SER:165_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 48825.
-
-CHEBI:28477
-	sio:SIO_000028 SER:167_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 28477.
-
-CHEBI:48778
-	sio:SIO_000028 SER:168_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 48778.
-
-CHEBI:2290
-	sio:SIO_000028 SER:169_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 2290.
-
-CHEBI:2288
-	sio:SIO_000028 SER:170_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 2288.
-
-CHEBI:16577
-	sio:SIO_000028 SER:171_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16577.
-
-CHEBI:18402
-	sio:SIO_000028 SER:172_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 18402.
-
-CHEBI:48474
-	sio:SIO_000028 SER:173_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 48474.
-
-CHEBI:37642
-	sio:SIO_000028 SER:174_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 37642.
-
-CHEBI:CHEBI:58677
-	sio:SIO_000028 SER:175_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:58677.
-
-CHEBI:37643
-	sio:SIO_000028 SER:176_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 37643.
-
-CHEBI:36234
-	sio:SIO_000028 SER:177_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 36234.
-
-CHEBI:29747
-	sio:SIO_000028 SER:178_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 29747.
-
-CHEBI:28701
-	sio:SIO_000028 SER:179_substrate ;
-	sio:SIO_000028 SER:180_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 28701.
-
-CHEBI:15519
-	sio:SIO_000028 SER:181_substrate ;
-	sio:SIO_000028 SER:182_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15519.
-
-CHEBI:87704
-	sio:SIO_000028 SER:183_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 87704.
-
-CHEBI:27379
-	sio:SIO_000028 SER:184_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 27379.
-
-CHEBI:27393
-	sio:SIO_000028 SER:185_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 27393.
-
-CHEBI:27403
-	sio:SIO_000028 SER:186_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 27403.
-
-CHEBI:27505
-	sio:SIO_000028 SER:187_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 27505.
-
-CHEBI:52050
-	sio:SIO_000028 SER:188_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 52050.
-
-CHEBI:59238
-	sio:SIO_000028 SER:189_substrate ;
-	sio:SIO_000028 SER:190_substrate ;
-	sio:SIO_000028 SER:191_substrate ;
-	sio:SIO_000028 SER:192_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 59238.
-
-CHEBI:11750
-	sio:SIO_000028 SER:193_substrate ;
-	sio:SIO_000028 SER:194_substrate ;
-	sio:SIO_000028 SER:195_substrate ;
-	sio:SIO_000028 SER:196_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 11750.
-
-CHEBI:15422
-	sio:SIO_000028 SER:200_substrate ;
-	sio:SIO_000028 SER:201_substrate ;
-	sio:SIO_000028 SER:202_substrate ;
-	sio:SIO_000028 SER:203_substrate ;
-	sio:SIO_000028 SER:204_substrate ;
-	sio:SIO_000028 SER:205_substrate ;
-	sio:SIO_000028 SER:206_substrate ;
-	sio:SIO_000028 SER:207_substrate ;
-	sio:SIO_000028 SER:208_substrate ;
-	sio:SIO_000028 SER:209_substrate ;
-	sio:SIO_000028 SER:210_substrate ;
-	sio:SIO_000028 SER:211_substrate ;
-	sio:SIO_000028 SER:212_substrate ;
-	sio:SIO_000028 SER:213_substrate ;
-	sio:SIO_000028 SER:214_substrate ;
-	sio:SIO_000028 SER:215_substrate ;
-	sio:SIO_000028 SER:216_substrate ;
-	sio:SIO_000028 SER:217_substrate ;
-	sio:SIO_000028 SER:218_substrate ;
-	sio:SIO_000028 SER:219_substrate ;
-	sio:SIO_000028 SER:220_substrate ;
-	sio:SIO_000028 SER:221_substrate ;
-	sio:SIO_000028 SER:222_substrate ;
-	sio:SIO_000028 SER:223_substrate ;
-	sio:SIO_000028 SER:224_substrate ;
-	sio:SIO_000028 SER:225_substrate ;
-	sio:SIO_000028 SER:226_substrate ;
-	sio:SIO_000028 SER:227_substrate ;
-	sio:SIO_000028 SER:228_substrate ;
-	sio:SIO_000028 SER:229_substrate ;
-	sio:SIO_000028 SER:230_substrate ;
-	sio:SIO_000028 SER:231_substrate ;
-	sio:SIO_000028 SER:232_substrate ;
-	sio:SIO_000028 SER:233_substrate ;
-	sio:SIO_000028 SER:234_substrate ;
-	sio:SIO_000028 SER:235_substrate ;
-	sio:SIO_000028 SER:236_substrate ;
-	sio:SIO_000028 SER:237_substrate ;
-	sio:SIO_000028 SER:238_substrate ;
-	sio:SIO_000028 SER:239_substrate ;
-	sio:SIO_000028 SER:240_substrate ;
-	sio:SIO_000028 SER:241_substrate ;
-	sio:SIO_000028 SER:242_substrate ;
-	sio:SIO_000028 SER:243_substrate ;
-	sio:SIO_000028 SER:244_substrate ;
-	sio:SIO_000028 SER:245_substrate ;
-	sio:SIO_000028 SER:246_substrate ;
-	sio:SIO_000028 SER:247_substrate ;
-	sio:SIO_000028 SER:248_substrate ;
-	sio:SIO_000028 SER:249_substrate ;
-	sio:SIO_000028 SER:250_substrate ;
-	sio:SIO_000028 SER:251_substrate ;
-	sio:SIO_000028 SER:252_substrate ;
-	sio:SIO_000028 SER:253_substrate ;
-	sio:SIO_000028 SER:254_substrate ;
-	sio:SIO_000028 SER:255_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15422.
-
-CHEBI:15729
-	sio:SIO_000028 SER:257_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15729.
-
-CHEBI:131444
-	sio:SIO_000028 SER:258_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 131444.
-
-CHEBI:16919
-	sio:SIO_000028 SER:260_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16919.
-
-CHEBI:36242
-	sio:SIO_000028 SER:261_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 36242.
-
-CHEBI:17105
-	sio:SIO_000028 SER:262_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17105.
-
-CHEBI:16169
-	sio:SIO_000028 SER:263_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16169.
-
-CHEBI:13705
-	sio:SIO_000028 SER:264_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 13705.
-
-CHEBI:29806
-	sio:SIO_000028 SER:265_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 29806.
-
-CHEBI:16581
-	sio:SIO_000028 SER:281_substrate ;
-	sio:SIO_000028 SER:282_substrate ;
-	sio:SIO_000028 SER:283_substrate ;
-	sio:SIO_000028 SER:296_substrate ;
-	sio:SIO_000028 SER:297_substrate ;
-	sio:SIO_000028 SER:298_substrate ;
-	sio:SIO_000028 SER:299_substrate ;
-	sio:SIO_000028 SER:300_substrate ;
-	sio:SIO_000028 SER:301_substrate ;
-	sio:SIO_000028 SER:302_substrate ;
-	sio:SIO_000028 SER:303_substrate ;
-	sio:SIO_000028 SER:304_substrate ;
-	sio:SIO_000028 SER:305_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16581.
-
-CHEBI:28750
-	sio:SIO_000028 SER:284_substrate ;
-	sio:SIO_000028 SER:285_substrate ;
-	sio:SIO_000028 SER:328_substrate ;
-	sio:SIO_000028 SER:329_substrate ;
-	sio:SIO_000028 SER:330_substrate ;
-	sio:SIO_000028 SER:331_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 28750.
-
-CHEBI:28689
-	sio:SIO_000028 SER:286_substrate ;
-	sio:SIO_000028 SER:287_substrate ;
-	sio:SIO_000028 SER:288_substrate ;
-	sio:SIO_000028 SER:289_substrate ;
-	sio:SIO_000028 SER:290_substrate ;
-	sio:SIO_000028 SER:291_substrate ;
-	sio:SIO_000028 SER:292_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 28689.
-
-CHEBI:17026
-	sio:SIO_000028 SER:306_substrate ;
-	sio:SIO_000028 SER:307_substrate ;
-	sio:SIO_000028 SER:308_substrate ;
-	sio:SIO_000028 SER:309_substrate ;
-	sio:SIO_000028 SER:310_substrate ;
-	sio:SIO_000028 SER:311_substrate ;
-	sio:SIO_000028 SER:312_substrate ;
-	sio:SIO_000028 SER:313_substrate ;
-	sio:SIO_000028 SER:314_substrate ;
-	sio:SIO_000028 SER:315_substrate ;
-	sio:SIO_000028 SER:316_substrate ;
-	sio:SIO_000028 SER:317_substrate ;
-	sio:SIO_000028 SER:318_substrate ;
-	sio:SIO_000028 SER:319_substrate ;
-	sio:SIO_000028 SER:320_substrate ;
-	sio:SIO_000028 SER:321_substrate ;
-	sio:SIO_000028 SER:322_substrate ;
-	sio:SIO_000028 SER:323_substrate ;
-	sio:SIO_000028 SER:324_substrate ;
-	sio:SIO_000028 SER:332_substrate ;
-	sio:SIO_000028 SER:333_substrate ;
-	sio:SIO_000028 SER:334_substrate ;
-	sio:SIO_000028 SER:335_substrate ;
-	sio:SIO_000028 SER:336_substrate ;
-	sio:SIO_000028 SER:337_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17026.
-
-CHEBI:17252
-	sio:SIO_000028 SER:325_substrate ;
-	sio:SIO_000028 SER:326_substrate ;
-	sio:SIO_000028 SER:327_substrate ;
-	sio:SIO_000028 SER:338_substrate ;
-	sio:SIO_000028 SER:339_substrate ;
-	sio:SIO_000028 SER:340_substrate ;
-	sio:SIO_000028 SER:341_substrate ;
-	sio:SIO_000028 SER:342_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17252.
-
-CHEBI:16973
-	sio:SIO_000028 SER:343_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16973.
-
-CHEBI:28324
-	sio:SIO_000028 SER:344_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 28324.
-
-CHEBI:18009
-	sio:SIO_000028 SER:345_substrate ;
-	sio:SIO_000028 SER:346_substrate ;
-	sio:SIO_000028 SER:347_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 18009.
-
-CHEBI:16962
-	sio:SIO_000028 SER:348_substrate ;
-	sio:SIO_000028 SER:349_substrate ;
-	sio:SIO_000028 SER:350_substrate ;
-	sio:SIO_000028 SER:351_substrate ;
-	sio:SIO_000028 SER:352_substrate ;
-	sio:SIO_000028 SER:353_substrate ;
-	sio:SIO_000028 SER:354_substrate ;
-	sio:SIO_000028 SER:355_substrate ;
-	sio:SIO_000028 SER:356_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16962.
-
-CHEBI:17650
-	sio:SIO_000028 SER:357_substrate ;
-	sio:SIO_000028 SER:358_substrate ;
-	sio:SIO_000028 SER:359_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17650.
-
-CHEBI:17347
-	sio:SIO_000028 SER:360_substrate ;
-	sio:SIO_000028 SER:361_substrate ;
-	sio:SIO_000028 SER:362_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17347.
-
-CHEBI:36655
-	sio:SIO_000028 SER:366_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 36655.
-
-CHEBI:57972
-	sio:SIO_000028 SER:367_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 57972.
-
-CHEBI:33384
-	sio:SIO_000028 SER:368_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 33384.
-
-CHEBI:15361
-	sio:SIO_000028 SER:369_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 15361.
-
-CHEBI:CHEBI:62612
-	sio:SIO_000028 SER:370_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:62612.
-
-CHEBI:CHEBI:29985
-	sio:SIO_000028 SER:371_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:29985.
-
-CHEBI:16452
-	sio:SIO_000028 SER:372_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 16452.
-
-CHEBI:57305
-	sio:SIO_000028 SER:373_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 57305.
-
-CHEBI:29805
-	sio:SIO_000028 SER:374_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 29805.
-
-CHEBI:CHEBI:36655
-	sio:SIO_000028 SER:375_substrate ;
-	sio:SIO_000028 SER:379_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:36655.
-
-CHEBI:17180
-	sio:SIO_000028 SER:376_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17180.
-
-CHEBI:17742
-	sio:SIO_000028 SER:377_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 17742.
-
-CHEBI:CHEBI:58375
-	sio:SIO_000028 SER:378_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI CHEBI:58375.
-
-CHEBI:29034
-	sio:SIO_000028 SER:380_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 29034.
-
-CHEBI:29033
-	sio:SIO_000028 SER:382_substrate ;
-	sio:SIO_000028 SER:384_substrate ;
-	sio:SIO_000028 SER:385_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 29033.
-
-CHEBI:29032
-	sio:SIO_000028 SER:386_substrate ;
-	rdf:type wp:Metabolite ;
-	wp:bdbChEBI 29032.
-
 SER:1_measurement
 	SER:hasKm "163"^^xsd:float ;
 	SER:hasKcat "37.5"^^xsd:float ;
@@ -9310,4 +8519,1521 @@ SER:385_reaction
 
 SER:386_reaction
 	rdfs:subClassOf RHEA:16374.
+
+SER:1_substrate
+	rdfs:subClassOf CHEBI:16953.
+
+SER:2_substrate
+	rdfs:subClassOf CHEBI:16953.
+
+SER:3_substrate
+	rdfs:subClassOf CHEBI:15524.
+
+SER:4_substrate
+	rdfs:subClassOf CHEBI:15524.
+
+SER:5_substrate
+	rdfs:subClassOf CHEBI:15524.
+
+SER:6_substrate
+	rdfs:subClassOf CHEBI:15524.
+
+SER:7_substrate
+	rdfs:subClassOf CHEBI:15524.
+
+SER:8_substrate
+	rdfs:subClassOf CHEBI:15524.
+
+SER:9_substrate
+	rdfs:subClassOf CHEBI:15524.
+
+SER:10_substrate
+	rdfs:subClassOf CHEBI:24311.
+
+SER:11_substrate
+	rdfs:subClassOf CHEBI:24311.
+
+SER:12_substrate
+	rdfs:subClassOf CHEBI:17084.
+
+SER:13_substrate
+	rdfs:subClassOf CHEBI:17084.
+
+SER:14_substrate
+	rdfs:subClassOf CHEBI:17084.
+
+SER:15_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:16_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:17_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:18_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:19_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:20_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:21_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:22_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:24_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:25_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:26_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:27_substrate
+	rdfs:subClassOf CHEBI:30915.
+
+SER:29_substrate
+	rdfs:subClassOf CHEBI:17084.
+
+SER:30_substrate
+	rdfs:subClassOf CHEBI:17084.
+
+SER:31_substrate
+	rdfs:subClassOf CHEBI:17084.
+
+SER:32_substrate
+	rdfs:subClassOf CHEBI:16856.
+
+SER:33_substrate
+	rdfs:subClassOf CHEBI:16856.
+
+SER:34_substrate
+	rdfs:subClassOf CHEBI:16856.
+
+SER:35_substrate
+	rdfs:subClassOf CHEBI:16856.
+
+SER:37_substrate
+	rdfs:subClassOf CHEBI:16010.
+
+SER:38_substrate
+	rdfs:subClassOf CHEBI:16010.
+
+SER:39_substrate
+	rdfs:subClassOf CHEBI:16010.
+
+SER:40_substrate
+	rdfs:subClassOf CHEBI:16010.
+
+SER:41_substrate
+	rdfs:subClassOf CHEBI:16010.
+
+SER:42_substrate
+	rdfs:subClassOf CHEBI:16010.
+
+SER:43_substrate
+	rdfs:subClassOf CHEBI:16010.
+
+SER:44_substrate
+	rdfs:subClassOf CHEBI:16010.
+
+SER:45_substrate
+	rdfs:subClassOf CHEBI:16010.
+
+SER:46_substrate
+	rdfs:subClassOf CHEBI:16010.
+
+SER:47_substrate
+	rdfs:subClassOf CHEBI:14321.
+
+SER:48_substrate
+	rdfs:subClassOf CHEBI:14321.
+
+SER:49_substrate
+	rdfs:subClassOf CHEBI:17515.
+
+SER:50_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:51_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:52_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:53_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:54_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:55_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:56_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:57_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:58_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:59_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:60_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:61_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:62_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:63_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:64_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:65_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:66_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:67_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:68_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:69_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:70_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:71_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:72_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:73_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:74_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:75_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:76_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:77_substrate
+	rdfs:subClassOf CHEBI:17515.
+
+SER:78_substrate
+	rdfs:subClassOf CHEBI:17515.
+
+SER:79_substrate
+	rdfs:subClassOf CHEBI:17515.
+
+SER:80_substrate
+	rdfs:subClassOf CHEBI:4047.
+
+SER:81_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:82_substrate
+	rdfs:subClassOf CHEBI:15380.
+
+SER:83_substrate
+	rdfs:subClassOf CHEBI:17549.
+
+SER:84_substrate
+	rdfs:subClassOf CHEBI:17381.
+
+SER:85_substrate
+	rdfs:subClassOf CHEBI:16645.
+
+SER:86_substrate
+	rdfs:subClassOf CHEBI:15437.
+
+SER:87_substrate
+	rdfs:subClassOf CHEBI:28766.
+
+SER:88_substrate
+	rdfs:subClassOf CHEBI:89912.
+
+SER:89_substrate
+	rdfs:subClassOf CHEBI:89912.
+
+SER:90_substrate
+	rdfs:subClassOf CHEBI:89912.
+
+SER:91_substrate
+	rdfs:subClassOf CHEBI:89912.
+
+SER:92_substrate
+	rdfs:subClassOf CHEBI:89912.
+
+SER:93_substrate
+	rdfs:subClassOf CHEBI:89912.
+
+SER:94_substrate
+	rdfs:subClassOf CHEBI:28766.
+
+SER:95_substrate
+	rdfs:subClassOf CHEBI:15437.
+
+SER:96_substrate
+	rdfs:subClassOf CHEBI:15439.
+
+SER:97_substrate
+	rdfs:subClassOf CHEBI:15435.
+
+SER:98_substrate
+	rdfs:subClassOf CHEBI:15430.
+
+SER:99_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:100_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:101_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:102_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:103_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:104_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:105_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:106_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:107_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:108_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:109_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:110_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:111_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:112_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:113_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:114_substrate
+	rdfs:subClassOf CHEBI:28260.
+
+SER:115_substrate
+	rdfs:subClassOf CHEBI:58601.
+
+SER:116_substrate
+	rdfs:subClassOf CHEBI:58601.
+
+SER:117_substrate
+	rdfs:subClassOf CHEBI:14314.
+
+SER:118_substrate
+	rdfs:subClassOf CHEBI:14314.
+
+SER:119_substrate
+	rdfs:subClassOf CHEBI:18066.
+
+SER:120_substrate
+	rdfs:subClassOf CHEBI:18066.
+
+SER:121_substrate
+	rdfs:subClassOf CHEBI:18307.
+
+SER:122_substrate
+	rdfs:subClassOf CHEBI:18307.
+
+SER:123_substrate
+	rdfs:subClassOf CHEBI:28087.
+
+SER:124_substrate
+	rdfs:subClassOf CHEBI:28087.
+
+SER:125_substrate
+	rdfs:subClassOf CHEBI:18066.
+
+SER:126_substrate
+	rdfs:subClassOf CHEBI:18066.
+
+SER:127_substrate
+	rdfs:subClassOf CHEBI:18066.
+
+SER:129_substrate
+	rdfs:subClassOf CHEBI:18066.
+
+SER:130_substrate
+	rdfs:subClassOf CHEBI:18066.
+
+SER:132_substrate
+	rdfs:subClassOf CHEBI:28087.
+
+SER:133_substrate
+	rdfs:subClassOf CHEBI:28087.
+
+SER:134_substrate
+	rdfs:subClassOf CHEBI:28087.
+
+SER:135_substrate
+	rdfs:subClassOf CHEBI:28087.
+
+SER:136_substrate
+	rdfs:subClassOf CHEBI:67132.
+
+SER:137_substrate
+	rdfs:subClassOf CHEBI:16091.
+
+SER:138_substrate
+	rdfs:subClassOf CHEBI:16091.
+
+SER:139_substrate
+	rdfs:subClassOf CHEBI:16091.
+
+SER:140_substrate
+	rdfs:subClassOf CHEBI:4691.
+
+SER:141_substrate
+	rdfs:subClassOf CHEBI:58427.
+
+SER:142_substrate
+	rdfs:subClassOf CHEBI:58427.
+
+SER:143_substrate
+	rdfs:subClassOf CHEBI:57269.
+
+SER:144_substrate
+	rdfs:subClassOf CHEBI:57269.
+
+SER:145_substrate
+	rdfs:subClassOf CHEBI:58472.
+
+SER:146_substrate
+	rdfs:subClassOf CHEBI:58472.
+
+SER:147_substrate
+	rdfs:subClassOf CHEBI:132511.
+
+SER:148_substrate
+	rdfs:subClassOf CHEBI:132511.
+
+SER:149_substrate
+	rdfs:subClassOf CHEBI:132511.
+
+SER:150_substrate
+	rdfs:subClassOf CHEBI:17899.
+
+SER:151_substrate
+	rdfs:subClassOf CHEBI:17899.
+
+SER:152_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:153_substrate
+	rdfs:subClassOf CHEBI:81014.
+
+SER:154_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:155_substrate
+	rdfs:subClassOf CHEBI:17703.
+
+SER:156_substrate
+	rdfs:subClassOf CHEBI:28540.
+
+SER:157_substrate
+	rdfs:subClassOf CHEBI:28047.
+
+SER:159_substrate
+	rdfs:subClassOf CHEBI:27428.
+
+SER:160_substrate
+	rdfs:subClassOf CHEBI:16496.
+
+SER:161_substrate
+	rdfs:subClassOf CHEBI:17278.
+
+SER:162_substrate
+	rdfs:subClassOf CHEBI:16466.
+
+SER:163_substrate
+	rdfs:subClassOf CHEBI:81015.
+
+SER:164_substrate
+	rdfs:subClassOf CHEBI:17500.
+
+SER:165_substrate
+	rdfs:subClassOf CHEBI:48825.
+
+SER:166_substrate
+	rdfs:subClassOf CHEBI:17899.
+
+SER:167_substrate
+	rdfs:subClassOf CHEBI:28477.
+
+SER:168_substrate
+	rdfs:subClassOf CHEBI:48778.
+
+SER:169_substrate
+	rdfs:subClassOf CHEBI:2290.
+
+SER:170_substrate
+	rdfs:subClassOf CHEBI:2288.
+
+SER:171_substrate
+	rdfs:subClassOf CHEBI:16577.
+
+SER:172_substrate
+	rdfs:subClassOf CHEBI:18402.
+
+SER:173_substrate
+	rdfs:subClassOf CHEBI:48474.
+
+SER:174_substrate
+	rdfs:subClassOf CHEBI:37642.
+
+SER:175_substrate
+	rdfs:subClassOf CHEBI:58677.
+
+SER:176_substrate
+	rdfs:subClassOf CHEBI:37643.
+
+SER:177_substrate
+	rdfs:subClassOf CHEBI:36234.
+
+SER:178_substrate
+	rdfs:subClassOf CHEBI:29747.
+
+SER:179_substrate
+	rdfs:subClassOf CHEBI:28701.
+
+SER:180_substrate
+	rdfs:subClassOf CHEBI:28701.
+
+SER:181_substrate
+	rdfs:subClassOf CHEBI:15519.
+
+SER:182_substrate
+	rdfs:subClassOf CHEBI:15519.
+
+SER:183_substrate
+	rdfs:subClassOf CHEBI:87704.
+
+SER:184_substrate
+	rdfs:subClassOf CHEBI:27379.
+
+SER:185_substrate
+	rdfs:subClassOf CHEBI:27393.
+
+SER:186_substrate
+	rdfs:subClassOf CHEBI:27403.
+
+SER:187_substrate
+	rdfs:subClassOf CHEBI:27505.
+
+SER:188_substrate
+	rdfs:subClassOf CHEBI:52050.
+
+SER:189_substrate
+	rdfs:subClassOf CHEBI:59238.
+
+SER:190_substrate
+	rdfs:subClassOf CHEBI:59238.
+
+SER:191_substrate
+	rdfs:subClassOf CHEBI:59238.
+
+SER:192_substrate
+	rdfs:subClassOf CHEBI:59238.
+
+SER:193_substrate
+	rdfs:subClassOf CHEBI:11750.
+
+SER:194_substrate
+	rdfs:subClassOf CHEBI:11750.
+
+SER:195_substrate
+	rdfs:subClassOf CHEBI:11750.
+
+SER:196_substrate
+	rdfs:subClassOf CHEBI:11750.
+
+SER:200_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:201_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:202_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:203_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:204_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:205_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:206_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:207_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:208_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:209_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:210_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:211_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:212_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:213_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:214_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:215_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:216_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:217_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:218_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:219_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:220_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:221_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:222_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:223_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:224_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:225_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:226_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:227_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:228_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:229_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:230_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:231_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:232_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:233_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:234_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:235_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:236_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:237_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:238_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:239_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:240_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:241_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:242_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:243_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:244_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:245_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:246_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:247_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:248_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:249_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:250_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:251_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:252_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:253_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:254_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:255_substrate
+	rdfs:subClassOf CHEBI:15422.
+
+SER:257_substrate
+	rdfs:subClassOf CHEBI:15729.
+
+SER:258_substrate
+	rdfs:subClassOf CHEBI:131444.
+
+SER:259_substrate
+	rdfs:subClassOf CHEBI:15428.
+
+SER:260_substrate
+	rdfs:subClassOf CHEBI:16919.
+
+SER:261_substrate
+	rdfs:subClassOf CHEBI:36242.
+
+SER:262_substrate
+	rdfs:subClassOf CHEBI:17105.
+
+SER:263_substrate
+	rdfs:subClassOf CHEBI:16169.
+
+SER:264_substrate
+	rdfs:subClassOf CHEBI:13705.
+
+SER:265_substrate
+	rdfs:subClassOf CHEBI:29806.
+
+SER:266_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:267_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:268_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:269_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:270_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:271_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:272_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:273_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:274_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:275_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:276_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:277_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:278_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:279_substrate
+	rdfs:subClassOf CHEBI:16113.
+
+SER:281_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:282_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:283_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:284_substrate
+	rdfs:subClassOf CHEBI:28750.
+
+SER:285_substrate
+	rdfs:subClassOf CHEBI:28750.
+
+SER:286_substrate
+	rdfs:subClassOf CHEBI:28689.
+
+SER:287_substrate
+	rdfs:subClassOf CHEBI:28689.
+
+SER:288_substrate
+	rdfs:subClassOf CHEBI:28689.
+
+SER:289_substrate
+	rdfs:subClassOf CHEBI:28689.
+
+SER:290_substrate
+	rdfs:subClassOf CHEBI:28689.
+
+SER:291_substrate
+	rdfs:subClassOf CHEBI:28689.
+
+SER:292_substrate
+	rdfs:subClassOf CHEBI:28689.
+
+SER:296_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:297_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:298_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:299_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:300_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:301_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:302_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:303_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:304_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:305_substrate
+	rdfs:subClassOf CHEBI:16581.
+
+SER:306_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:307_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:308_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:309_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:310_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:311_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:312_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:313_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:314_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:315_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:316_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:317_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:318_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:319_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:320_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:321_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:322_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:323_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:324_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:325_substrate
+	rdfs:subClassOf CHEBI:17252.
+
+SER:326_substrate
+	rdfs:subClassOf CHEBI:17252.
+
+SER:327_substrate
+	rdfs:subClassOf CHEBI:17252.
+
+SER:328_substrate
+	rdfs:subClassOf CHEBI:28750.
+
+SER:329_substrate
+	rdfs:subClassOf CHEBI:28750.
+
+SER:330_substrate
+	rdfs:subClassOf CHEBI:28750.
+
+SER:331_substrate
+	rdfs:subClassOf CHEBI:28750.
+
+SER:332_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:333_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:334_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:335_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:336_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:337_substrate
+	rdfs:subClassOf CHEBI:17026.
+
+SER:338_substrate
+	rdfs:subClassOf CHEBI:17252.
+
+SER:339_substrate
+	rdfs:subClassOf CHEBI:17252.
+
+SER:340_substrate
+	rdfs:subClassOf CHEBI:17252.
+
+SER:341_substrate
+	rdfs:subClassOf CHEBI:17252.
+
+SER:342_substrate
+	rdfs:subClassOf CHEBI:17252.
+
+SER:343_substrate
+	rdfs:subClassOf CHEBI:16973.
+
+SER:344_substrate
+	rdfs:subClassOf CHEBI:28324.
+
+SER:345_substrate
+	rdfs:subClassOf CHEBI:18009.
+
+SER:346_substrate
+	rdfs:subClassOf CHEBI:18009.
+
+SER:347_substrate
+	rdfs:subClassOf CHEBI:18009.
+
+SER:348_substrate
+	rdfs:subClassOf CHEBI:16962.
+
+SER:349_substrate
+	rdfs:subClassOf CHEBI:16962.
+
+SER:350_substrate
+	rdfs:subClassOf CHEBI:16962.
+
+SER:351_substrate
+	rdfs:subClassOf CHEBI:16962.
+
+SER:352_substrate
+	rdfs:subClassOf CHEBI:16962.
+
+SER:353_substrate
+	rdfs:subClassOf CHEBI:16962.
+
+SER:354_substrate
+	rdfs:subClassOf CHEBI:16962.
+
+SER:355_substrate
+	rdfs:subClassOf CHEBI:16962.
+
+SER:356_substrate
+	rdfs:subClassOf CHEBI:16962.
+
+SER:357_substrate
+	rdfs:subClassOf CHEBI:17650.
+
+SER:358_substrate
+	rdfs:subClassOf CHEBI:17650.
+
+SER:359_substrate
+	rdfs:subClassOf CHEBI:17650.
+
+SER:360_substrate
+	rdfs:subClassOf CHEBI:17347.
+
+SER:361_substrate
+	rdfs:subClassOf CHEBI:17347.
+
+SER:362_substrate
+	rdfs:subClassOf CHEBI:17347.
+
+SER:366_substrate
+	rdfs:subClassOf CHEBI:36655.
+
+SER:367_substrate
+	rdfs:subClassOf CHEBI:57972.
+
+SER:368_substrate
+	rdfs:subClassOf CHEBI:33384.
+
+SER:369_substrate
+	rdfs:subClassOf CHEBI:15361.
+
+SER:370_substrate
+	rdfs:subClassOf CHEBI:62612.
+
+SER:371_substrate
+	rdfs:subClassOf CHEBI:29985.
+
+SER:372_substrate
+	rdfs:subClassOf CHEBI:16452.
+
+SER:373_substrate
+	rdfs:subClassOf CHEBI:57305.
+
+SER:374_substrate
+	rdfs:subClassOf CHEBI:29805.
+
+SER:375_substrate
+	rdfs:subClassOf CHEBI:36655.
+
+SER:376_substrate
+	rdfs:subClassOf CHEBI:17180.
+
+SER:377_substrate
+	rdfs:subClassOf CHEBI:17742.
+
+SER:378_substrate
+	rdfs:subClassOf CHEBI:58375.
+
+SER:379_substrate
+	rdfs:subClassOf CHEBI:36655.
+
+SER:380_substrate
+	rdfs:subClassOf CHEBI:29034.
+
+SER:382_substrate
+	rdfs:subClassOf CHEBI:29033.
+
+SER:384_substrate
+	rdfs:subClassOf CHEBI:29033.
+
+SER:385_substrate
+	rdfs:subClassOf CHEBI:29033.
+
+SER:386_substrate
+	rdfs:subClassOf CHEBI:29032.
+
+CHEBI:16953
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16953.
+
+CHEBI:15524
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15524.
+
+CHEBI:24311
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:24311.
+
+CHEBI:17084
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17084.
+
+CHEBI:30915
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:30915.
+
+CHEBI:16856
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16856.
+
+CHEBI:16010
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16010.
+
+CHEBI:14321
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:14321.
+
+CHEBI:17515
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17515.
+
+CHEBI:15428
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15428.
+
+CHEBI:4047
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:4047.
+
+CHEBI:15380
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15380.
+
+CHEBI:17549
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17549.
+
+CHEBI:17381
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17381.
+
+CHEBI:16645
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16645.
+
+CHEBI:15437
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15437.
+
+CHEBI:28766
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:28766.
+
+CHEBI:89912
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:89912.
+
+CHEBI:15439
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15439.
+
+CHEBI:15435
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15435.
+
+CHEBI:15430
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15430.
+
+CHEBI:28260
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:28260.
+
+CHEBI:58601
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:58601.
+
+CHEBI:14314
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:14314.
+
+CHEBI:18066
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:18066.
+
+CHEBI:18307
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:18307.
+
+CHEBI:28087
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:28087.
+
+CHEBI:67132
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:67132.
+
+CHEBI:16091
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16091.
+
+CHEBI:4691
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:4691.
+
+CHEBI:58427
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:58427.
+
+CHEBI:57269
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:57269.
+
+CHEBI:58472
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:58472.
+
+CHEBI:132511
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:132511.
+
+CHEBI:17899
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17899.
+
+CHEBI:16113
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16113.
+
+CHEBI:81014
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:81014.
+
+CHEBI:17703
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17703.
+
+CHEBI:28540
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:28540.
+
+CHEBI:28047
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:28047.
+
+CHEBI:27428
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:27428.
+
+CHEBI:16496
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16496.
+
+CHEBI:17278
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17278.
+
+CHEBI:16466
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16466.
+
+CHEBI:81015
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:81015.
+
+CHEBI:17500
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17500.
+
+CHEBI:48825
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:48825.
+
+CHEBI:28477
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:28477.
+
+CHEBI:48778
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:48778.
+
+CHEBI:2290
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:2290.
+
+CHEBI:2288
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:2288.
+
+CHEBI:16577
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16577.
+
+CHEBI:18402
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:18402.
+
+CHEBI:48474
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:48474.
+
+CHEBI:37642
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:37642.
+
+CHEBI:58677
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:58677.
+
+CHEBI:37643
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:37643.
+
+CHEBI:36234
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:36234.
+
+CHEBI:29747
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:29747.
+
+CHEBI:28701
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:28701.
+
+CHEBI:15519
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15519.
+
+CHEBI:87704
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:87704.
+
+CHEBI:27379
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:27379.
+
+CHEBI:27393
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:27393.
+
+CHEBI:27403
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:27403.
+
+CHEBI:27505
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:27505.
+
+CHEBI:52050
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:52050.
+
+CHEBI:59238
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:59238.
+
+CHEBI:11750
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:11750.
+
+CHEBI:15422
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15422.
+
+CHEBI:15729
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15729.
+
+CHEBI:131444
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:131444.
+
+CHEBI:16919
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16919.
+
+CHEBI:36242
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:36242.
+
+CHEBI:17105
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17105.
+
+CHEBI:16169
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16169.
+
+CHEBI:13705
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:13705.
+
+CHEBI:29806
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:29806.
+
+CHEBI:16581
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16581.
+
+CHEBI:28750
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:28750.
+
+CHEBI:28689
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:28689.
+
+CHEBI:17026
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17026.
+
+CHEBI:17252
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17252.
+
+CHEBI:16973
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16973.
+
+CHEBI:28324
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:28324.
+
+CHEBI:18009
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:18009.
+
+CHEBI:16962
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16962.
+
+CHEBI:17650
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17650.
+
+CHEBI:17347
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17347.
+
+CHEBI:36655
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:36655.
+
+CHEBI:57972
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:57972.
+
+CHEBI:33384
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:33384.
+
+CHEBI:15361
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:15361.
+
+CHEBI:62612
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:62612.
+
+CHEBI:29985
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:29985.
+
+CHEBI:16452
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:16452.
+
+CHEBI:57305
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:57305.
+
+CHEBI:29805
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:29805.
+
+CHEBI:17180
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17180.
+
+CHEBI:17742
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:17742.
+
+CHEBI:58375
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:58375.
+
+CHEBI:29034
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:29034.
+
+CHEBI:29033
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:29033.
+
+CHEBI:29032
+	rdf:type wp:Metabolite ;
+	wp:bdbChEBI CHEBI:29032.
 

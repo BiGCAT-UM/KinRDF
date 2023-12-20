@@ -14,9 +14,11 @@ Data format for wp:bdbRhea correctly loaded for 270 rhea interaction IDs.
 
 Data format for rh:equation correctly loaded for 80 reaction formulas. 
 
-Data format for Rhea correctly linked for 368 measurement IDs. 
+Data format for Rhea correctly linked for 270 measurement IDs. 
 
 Data format for wp:bdbChEBI correctly loaded for 367 substrate IDs. 
+
+Data format for ChEBI correctly linked for 367 measurement IDs. 
 
 Data format for Km correctly loaded for 231 values. 
 

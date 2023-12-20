@@ -46,6 +46,7 @@ ListLinkRheaID = []
 ListInteractionLinks = [] 
 ListSubstrate = []
 ListSubstrateIDs = []
+ListSubstrateLinks = [] 
 ListKm = []
 ListKcat = []
 ListKcatKm = []
@@ -281,6 +282,8 @@ ListQC.append("Data format for 'wp:bdbEnzymeNomenclature correctly loaded for " 
 
 ##Uniprot IDs
 countProteins = 0
+##Connect measurement data to UniProt IDs:
+countProteinsLinks = 0
 for itemUniprot in ListTotal:
 	e = itemUniprot.split('\t')
 	if(e[4].strip()=='-')|(e[4].strip()=='NA')|(e[4].strip()=='')|(e[4].strip()=='None'): #Check if necessary value is missing!!
@@ -292,20 +295,11 @@ for itemUniprot in ListTotal:
 	  ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
 	  ListLinkUniprot.append('uniprot:' + e[4].strip( ) + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )
 	  countProteins = countProteins + 1
-
-##Print total number of UniProt IDs:    
-ListQC.append("Data format for wp:bdbUniprot correctly loaded for " + str(countProteins) + " UniProt Protein IDs. \n\n")  
-
-##Connect measurement data to UniProt IDs:
-countProteinsLinks = 0
-for itemUniprot in ListTotal:
-	e = itemUniprot.split('\t')
-	if(e[4].strip()=='-')|(e[4].strip()=='NA')|(e[4].strip()=='')|(e[4].strip()=='None'): #Check if necessary value is missing!!
-	  continue
-	else:
 	  ListProteinsLinks.append(e[0].strip( ) + '_enzyme' + '\t' + 'rdfs:subClassOf' + ' ' + 'uniprot:' + e[4].strip( ) + '.')
 	  countProteinsLinks = countProteinsLinks + 1
 
+##Print total number of UniProt IDs:    
+ListQC.append("Data format for wp:bdbUniprot correctly loaded for " + str(countProteins) + " UniProt Protein IDs. \n\n")  
 ##Print total number of UniProt IDs linked to measurements:    
 ListQC.append("Data format for Uniprot correctly linked for " + str(countProteinsLinks) + " measurement IDs. \n\n")  
 
@@ -352,20 +346,18 @@ for itemRheaID in ListTotal:
 	elif(result_rhea): ##regex check
 	  if ( "rhea" in g[6].strip().lower() ) : ##If Rhea is part of the ID structure.
 	    ListRheaID.append( g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' ' + g[6].strip( ) ) 
-	    #ListRheaID.append( g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction')
 	    ListLinkRheaID.append( g[6].strip( ) + '\t' + 'rdf:type' + ' ' + "wp:Interaction" + ' ;')	  
 	    ListLinkRheaID.append( g[6].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ) + '.' )	
 	    ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	    ListInteractionLinks.append(g[0].strip( ) + '_reaction' + '\t' + 'rdfs:subClassOf' + ' ' + g[6].strip( ) + '.')
-	    countRheaLinks = countProteinsLinks + 1
+	    countRheaLinks = countRheaLinks + 1
 	  else:  ##If Rhea is NOT part of the ID structure.
 	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
-	    #ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction')
 	    ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rdf:type' + ' ' + "wp:Interaction" + ' ;')	  
 	    ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:accession' + ' RHEA:' + g[6].strip( ) + '.' )	
 	    ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	    ListInteractionLinks.append(g[0].strip( ) + '_reaction' + '\t' + 'rdfs:subClassOf' + ' ' + 'RHEA:' + g[6].strip( ) + '.')
-	    countRheaLinks = countProteinsLinks + 1
+	    countRheaLinks = countRheaLinks + 1
 	  countRhea = countRhea +1
 	elif ('+' in g[6])|('=' in g[6]): #if no Rhea is available, but there is a reaction equation.
 	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!
@@ -386,6 +378,9 @@ ListQC.append("Data format for Rhea correctly linked for " + str(countRheaLinks)
 
 ##CHEBI IDs
 countSubstrates = 0
+##Connect measurement data to ChEBI IDs:
+countSubstratesLinks = 0
+#ListSubstrateLinks
 for itemSubstrate in ListTotal:
 	h = itemSubstrate.split('\t')
 	pattern_chebi = '^(CHEBI:)?\\d+$'
@@ -393,15 +388,25 @@ for itemSubstrate in ListTotal:
 	if (h[7].strip()=='-')|(h[7].strip()=='NA')|(h[7].strip()=='')|(h[7].strip()=='None'): #Check if one of the necessary values is missing!!
 	  continue
 	elif(result_chebi):
-	  ListSubstrate.append('CHEBI:' + h[7].strip( ) +'\t' + 'sio:SIO_000028' + ' ' + h[0].strip() + '_substrate')
-	  ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Metabolite" + ' ;')
-	  ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
-	  countSubstrates = countSubstrates + 1
+	  if ( "chebi" in h[7].strip().lower() ) : ##If ChEBI is part of the ID structure.
+	    ListSubstrateIDs.append( h[7].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Metabolite" + ' ;')
+	    ListSubstrateIDs.append( h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
+	    countSubstrates = countSubstrates + 1
+	    ListInteractionLinks.append(h[0].strip( ) + '_substrate' + '\t' + 'rdfs:subClassOf' + ' ' + h[7].strip( ) + '.')
+	    countSubstratesLinks = countSubstratesLinks + 1
+	  else: ##If ChEBI is NOT part of the ID structure.
+	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Metabolite" + ' ;')
+	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + 'CHEBI:' + h[7].strip( )+ '.')
+	    countSubstrates = countSubstrates + 1
+	    ListInteractionLinks.append(h[0].strip( ) + '_substrate' + '\t' + 'rdfs:subClassOf' + ' ' + 'CHEBI:' + h[7].strip( ) + '.')
+	    countSubstratesLinks = countSubstratesLinks + 1
 	else:
 	  ListErrors.append("CHECK: Data format for CHEBI ID unknown, check original data for: "+ h[0] + " : " + h[7] + ' ' + h[18] + '\n')
 
+##Print total number of ChEBI IDs:  
 ListQC.append("Data format for wp:bdbChEBI correctly loaded for " + str(countSubstrates) + " substrate IDs. \n\n")  
-
+##Print total number of Linked ChEBI IDs to measurements:    
+ListQC.append("Data format for ChEBI correctly linked for " + str(countSubstratesLinks) + " measurement IDs. \n\n")  
 
 ###Substrate names (added in spreadsheet for curation, not needed in RDF model)
 ##To be updated if needed
@@ -796,7 +801,7 @@ for itemListSERtype in ListSER_ID_type:
 	(key, val) = itemListSERtype.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' .')	
-	
+
 unique_ListUniprot = list(dict.fromkeys(ListUniprot))
 
 for itemListUniprot in unique_ListUniprot:
@@ -811,7 +816,7 @@ for itemListRheaID in unique_ListRheaID:
 	(key, val) = itemListRheaID.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
-	
+
 ##Finalize statements with type info (without Rhea ID, with equation):	
 for itemListRheatype in ListRheaID_type:
 	(key, val) = itemListRheatype.strip('\n').split('\t')
@@ -827,7 +832,7 @@ for itemListKm in ListKm:
 	(key, val) = itemListKm.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
-	
+
 for itemListKcat in ListKcat:
 	(key, val) = itemListKcat.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
@@ -837,7 +842,7 @@ for itemListKcatKm in ListKcatKm:
 	(key, val) = itemListKcatKm.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
-	
+
 for itemList_pH in List_pH:
 	(key, val) = itemList_pH.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
@@ -847,7 +852,7 @@ for itemListTemperature in ListTemperature:
 	(key, val) = itemListTemperature.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')	
-	
+
 for itemListAdditionalConditions in ListAdditionalConditions:
 	(key, val) = itemListAdditionalConditions.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
@@ -862,14 +867,14 @@ for itemListPMID in ListPMID:
 	(key, val) = itemListPMID.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val + ' ;')		
-	
+
 ##Last item should end with a .
 ##Scenario 1 and 3: both PMID and Database name are available as provenance; or only database name.
 for itemListDatabase in ListDatabase:
   (key, val) = itemListDatabase.strip('\n').split('\t')
   AllDict.setdefault(key, [])
   AllDict[key].append(val + ' .')
-  
+
 ##Scenario 2: only PMID is available as provenance (no database)
 for itemListDatabase in ListProv:
   (key, val) = itemListDatabase.strip('\n').split('\t')
@@ -880,36 +885,44 @@ for itemListDatabase in ListProv:
 unique_ListLinkUniprot = list(dict.fromkeys(ListLinkUniprot))
 unique_ListLinkRheaID= list(dict.fromkeys(ListLinkRheaID))
 unique_ListSubstrateIDs= list(dict.fromkeys(ListSubstrateIDs))
-  
+
 ## Add UniProt proteins for interoperability:  
 for itemListLinkedUniprot in unique_ListLinkUniprot:
 	(key, val) = itemListLinkedUniprot.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val)
-	
+
 ## Add links between UniProt IDs and measurement Enzymes:
 for itemListProteinsLinks in ListProteinsLinks:
 	(key, val) = itemListProteinsLinks.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val)	
-	
+
 ## Add Rhea interaction IDs for interoperability:  
 for itemListLinkRheaID in unique_ListLinkRheaID:
 	(key, val) = itemListLinkRheaID.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val)	
-	
+
 ## Add links between Rhea IDs and measurement Interactions:
 for itemListInteractionLinks in ListInteractionLinks:
 	(key, val) = itemListInteractionLinks.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val)	
-  
+
 ##Add ChEBI IDs for substrates ListSubstrateIDs  
 for itemListSubstrateIDs in unique_ListSubstrateIDs:
 	(key, val) = itemListSubstrateIDs.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val)	
+
+## Add links between ChEBI IDs and measurement Interactions:
+for itemListSubstrateLinks in ListSubstrateLinks:
+	(key, val) = itemListSubstrateLinks.strip('\n').split('\t')
+	AllDict.setdefault(key, [])
+	AllDict[key].append(val)	
+
+#########
   
 # # Go to output folder
 dir_code = os.getcwd()
