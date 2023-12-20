@@ -11,5 +11,5 @@ PREFIX wp:    <http://vocabularies.wikipathways.org/wp#>
 PREFIX sio:   <http://semanticscience.org/resource/>
 
 :Enzyme {
-  a [ wp:Protein ]
+  rdf:type [ wp:Protein ]
 }
