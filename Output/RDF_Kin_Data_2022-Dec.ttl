@@ -9622,418 +9622,522 @@ SER:386_substrate
 	rdfs:subClassOf CHEBI:29032.
 
 CHEBI:16953
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16953.
 
 CHEBI:15524
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15524.
 
 CHEBI:24311
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:24311.
 
 CHEBI:17084
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17084.
 
 CHEBI:30915
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:30915.
 
 CHEBI:16856
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16856.
 
 CHEBI:16010
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16010.
 
 CHEBI:14321
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:14321.
 
 CHEBI:17515
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17515.
 
 CHEBI:15428
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15428.
 
 CHEBI:4047
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:4047.
 
 CHEBI:15380
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15380.
 
 CHEBI:17549
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17549.
 
 CHEBI:17381
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17381.
 
 CHEBI:16645
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16645.
 
 CHEBI:15437
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15437.
 
 CHEBI:28766
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28766.
 
 CHEBI:89912
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:89912.
 
 CHEBI:15439
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15439.
 
 CHEBI:15435
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15435.
 
 CHEBI:15430
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15430.
 
 CHEBI:28260
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28260.
 
 CHEBI:58601
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:58601.
 
 CHEBI:14314
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:14314.
 
 CHEBI:18066
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:18066.
 
 CHEBI:18307
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:18307.
 
 CHEBI:28087
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28087.
 
 CHEBI:67132
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:67132.
 
 CHEBI:16091
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16091.
 
 CHEBI:4691
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:4691.
 
 CHEBI:58427
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:58427.
 
 CHEBI:57269
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:57269.
 
 CHEBI:58472
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:58472.
 
 CHEBI:132511
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:132511.
 
 CHEBI:17899
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17899.
 
 CHEBI:16113
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16113.
 
 CHEBI:81014
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:81014.
 
 CHEBI:17703
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17703.
 
 CHEBI:28540
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28540.
 
 CHEBI:28047
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28047.
 
 CHEBI:27428
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:27428.
 
 CHEBI:16496
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16496.
 
 CHEBI:17278
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17278.
 
 CHEBI:16466
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16466.
 
 CHEBI:81015
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:81015.
 
 CHEBI:17500
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17500.
 
 CHEBI:48825
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:48825.
 
 CHEBI:28477
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28477.
 
 CHEBI:48778
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:48778.
 
 CHEBI:2290
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:2290.
 
 CHEBI:2288
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:2288.
 
 CHEBI:16577
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16577.
 
 CHEBI:18402
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:18402.
 
 CHEBI:48474
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:48474.
 
 CHEBI:37642
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:37642.
 
 CHEBI:58677
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:58677.
 
 CHEBI:37643
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:37643.
 
 CHEBI:36234
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:36234.
 
 CHEBI:29747
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:29747.
 
 CHEBI:28701
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28701.
 
 CHEBI:15519
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15519.
 
 CHEBI:87704
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:87704.
 
 CHEBI:27379
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:27379.
 
 CHEBI:27393
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:27393.
 
 CHEBI:27403
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:27403.
 
 CHEBI:27505
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:27505.
 
 CHEBI:52050
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:52050.
 
 CHEBI:59238
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:59238.
 
 CHEBI:11750
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:11750.
 
 CHEBI:15422
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15422.
 
 CHEBI:15729
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15729.
 
 CHEBI:131444
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:131444.
 
 CHEBI:16919
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16919.
 
 CHEBI:36242
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:36242.
 
 CHEBI:17105
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17105.
 
 CHEBI:16169
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16169.
 
 CHEBI:13705
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:13705.
 
 CHEBI:29806
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:29806.
 
 CHEBI:16581
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16581.
 
 CHEBI:28750
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28750.
 
 CHEBI:28689
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28689.
 
 CHEBI:17026
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17026.
 
 CHEBI:17252
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17252.
 
 CHEBI:16973
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16973.
 
 CHEBI:28324
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28324.
 
 CHEBI:18009
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:18009.
 
 CHEBI:16962
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16962.
 
 CHEBI:17650
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17650.
 
 CHEBI:17347
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17347.
 
 CHEBI:36655
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:36655.
 
 CHEBI:57972
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:57972.
 
 CHEBI:33384
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:33384.
 
 CHEBI:15361
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15361.
 
 CHEBI:62612
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:62612.
 
 CHEBI:29985
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:29985.
 
 CHEBI:16452
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16452.
 
 CHEBI:57305
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:57305.
 
 CHEBI:29805
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:29805.
 
 CHEBI:17180
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17180.
 
 CHEBI:17742
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17742.
 
 CHEBI:58375
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:58375.
 
 CHEBI:29034
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:29034.
 
 CHEBI:29033
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:29033.
 
 CHEBI:29032
+	a CHEBI:CHEBI_23367 ;
 	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:29032.
 
