@@ -9,9 +9,8 @@ PREFIX sbd:   <https://www.sbd4nano.eu/rdf/#>
 PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
 PREFIX wp:    <http://vocabularies.wikipathways.org/wp#>
 PREFIX sio:   <http://semanticscience.org/resource/>
-PREFIX chebi: <http://purl.obolibrary.org/obo/>
+PREFIX RHEA:   <https://identifiers.org/rhea/>  
 
-:Substrate {
-  a [ chebi:CHEBI_23367 ]
-  a [ wp:Metabolite ]
+:Interaction {
+  a [ wp:Interaction ]
 }
