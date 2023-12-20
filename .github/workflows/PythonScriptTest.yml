@@ -7,6 +7,7 @@ on:
       - KineticsData/*
       - TestData/*
       - ValidateData/*
+      - createRDFKinData.py
 
 # Sets permissions of the GITHUB_TOKEN to push results to GitHub if required
 permissions:

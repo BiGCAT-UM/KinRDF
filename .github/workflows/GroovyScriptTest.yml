@@ -9,7 +9,7 @@ on:
       - validate.groovy
 
 jobs:
-  VaidateCuratedRDF:
+  ValidateCuratedRDF:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
