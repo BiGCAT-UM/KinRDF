@@ -38,6 +38,7 @@ ListSER_ID = []
 ListSER_ID_type = []
 ListUniprot = [] 
 ListLinkUniprot = [] 
+ListProteinsLinks = [] 
 ListEnsembl = []
 ListRheaID = []
 ListRheaID_type = []
@@ -285,15 +286,34 @@ for itemUniprot in ListTotal:
 	  continue
 	else:
 	  ListUniprot.append('uniprot:' + e[4].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Protein")
-	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'sio:SIO_000028' + ' ' + e[0].strip( ) + '_enzyme') ##TODO
 	  ##WP IRIs:
 	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) 
 	  ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
 	  ListLinkUniprot.append('uniprot:' + e[4].strip( ) + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )
 	  countProteins = countProteins + 1
 
-##Print total number of Ensembl IDs:    
+##Print total number of UniProt IDs:    
 ListQC.append("Data format for wp:bdbUniprot correctly loaded for " + str(countProteins) + " UniProt Protein IDs. \n\n")  
+
+##Connect measurement data to UniProt IDs:
+countProteinsLinks = 0
+for itemUniprot in ListTotal:
+	e = itemUniprot.split('\t')
+	if(e[4].strip()=='-')|(e[4].strip()=='NA')|(e[4].strip()=='')|(e[4].strip()=='None'): #Check if necessary value is missing!!
+	  continue
+	else:
+	  ListProteinsLinks.append(e[0].strip( ) + '_enzyme' + '\t' + 'rdfs:subClassOf' + ' ' + 'uniprot:' + e[4].strip( ) + '.')
+	  #ListUniprot.append('uniprot:' + e[4].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Protein")
+	  #ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'sio:SIO_000028' + ' ' + e[0].strip( ) + '_enzyme') ##TODO
+	  ##WP IRIs:
+	  #ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) 
+	  ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
+	  #ListLinkUniprot.append('uniprot:' + e[4].strip( ) + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )
+	  countProteinsLinks = countProteinsLinks + 1
+
+##Print total number of UniProt IDs:    
+ListQC.append("Data format for Uniprot correctly linked for " + str(countProteinsLinks) + " UniProt Protein IDs. \n\n")  
+
 
 ##Ensembl IDs
 countGenes = 0
@@ -864,6 +884,12 @@ for itemListLinkedUniprot in unique_ListLinkUniprot:
 	(key, val) = itemListLinkedUniprot.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val)
+	
+## Add links between UniProt IDs and measurement Enzymes:
+for itemListProteinsLinks in ListProteinsLinks:
+	(key, val) = itemListProteinsLinks.strip('\n').split('\t')
+	AllDict.setdefault(key, [])
+	AllDict[key].append(val)	
 	
 ## Add Rhea interaction IDs for interoperability:  
 for itemListLinkRheaID in unique_ListLinkRheaID:

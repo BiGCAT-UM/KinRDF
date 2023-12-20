@@ -6,6 +6,8 @@ Data format for 'wp:bdbEnzymeNomenclature correctly loaded for 340 EC IDs.
 
 Data format for wp:bdbUniprot correctly loaded for 367 UniProt Protein IDs. 
 
+Data format for Uniprot correctly linked for 367 UniProt Protein IDs. 
+
 Data format for wp:bdbEnsembl correctly loaded for 216 gene IDs. 
 
 Data format for wp:bdbRhea correctly loaded for 270 rhea interaction IDs. 

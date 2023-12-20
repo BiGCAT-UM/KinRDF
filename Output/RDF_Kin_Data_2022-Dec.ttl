@@ -2320,9 +2320,7 @@ uniprot:P45381
 	rdfs:label "Aminocyclase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.1.15 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:1_enzyme ;
 	wp:bdbUniprot uniprot:P45381 ;
-	sio:SIO_000028 SER:2_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P45381.
 
 uniprot:Q92947
@@ -2330,16 +2328,7 @@ uniprot:Q92947
 	rdfs:label "Glutaryl-CoA dehydrogenase Second reaction"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.8.6 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:3_enzyme ;
 	wp:bdbUniprot uniprot:Q92947 ;
-	sio:SIO_000028 SER:4_enzyme ;
-	sio:SIO_000028 SER:5_enzyme ;
-	sio:SIO_000028 SER:6_enzyme ;
-	sio:SIO_000028 SER:7_enzyme ;
-	sio:SIO_000028 SER:8_enzyme ;
-	sio:SIO_000028 SER:9_enzyme ;
-	sio:SIO_000028 SER:10_enzyme ;
-	sio:SIO_000028 SER:11_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000105607 ;
 	bioregistry:hasDbXref uniprotkb:Q92947.
 
@@ -2347,16 +2336,13 @@ uniprot:Q9H9P8
 	rdfs:label "L-2-hydro-yglutarate dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.2 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:12_enzyme ;
 	wp:bdbUniprot uniprot:Q9H9P8 ;
-	sio:SIO_000028 SER:13_enzyme ;
 	bioregistry:hasDbXref uniprotkb:Q9H9P8.
 
 uniprot:Q8N465
 	rdfs:label "D-2-hydro-yglutarate dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.39 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:14_enzyme ;
 	wp:bdbUniprot uniprot:Q8N465 ;
 	bioregistry:hasDbXref uniprotkb:Q8N465.
 
@@ -2364,15 +2350,7 @@ uniprot:P48735
 	rdfs:label "Isocitrate dehydrogenase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.42 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:15_enzyme ;
 	wp:bdbUniprot uniprot:P48735 ;
-	sio:SIO_000028 SER:16_enzyme ;
-	sio:SIO_000028 SER:17_enzyme ;
-	sio:SIO_000028 SER:18_enzyme ;
-	sio:SIO_000028 SER:19_enzyme ;
-	sio:SIO_000028 SER:20_enzyme ;
-	sio:SIO_000028 SER:21_enzyme ;
-	sio:SIO_000028 SER:22_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000182054 ;
 	bioregistry:hasDbXref uniprotkb:P48735.
 
@@ -2380,103 +2358,48 @@ uniprot:Q8IWW8
 	rdfs:label "Hydroxyacid oxoacid transhydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.99.24 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:24_enzyme ;
 	wp:bdbUniprot uniprot:Q8IWW8 ;
-	sio:SIO_000028 SER:25_enzyme ;
-	sio:SIO_000028 SER:26_enzyme ;
-	sio:SIO_000028 SER:27_enzyme ;
 	bioregistry:hasDbXref uniprotkb:Q8IWW8.
 
 uniprot:P23368
 	rdfs:label "L malic acid dehydrogenase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.38 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:29_enzyme ;
 	wp:bdbUniprot uniprot:P23368 ;
-	sio:SIO_000028 SER:30_enzyme ;
-	sio:SIO_000028 SER:31_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P23368.
 
 uniprot:P19440
 	rdfs:label "GGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.2.2 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:32_enzyme ;
 	wp:bdbUniprot uniprot:P19440 ;
-	sio:SIO_000028 SER:33_enzyme ;
-	sio:SIO_000028 SER:34_enzyme ;
-	sio:SIO_000028 SER:35_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P19440.
 
 uniprot:O14841
 	rdfs:label "5-Oxoprolinase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.5.2.9 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:37_enzyme ;
 	wp:bdbUniprot uniprot:O14841 ;
-	sio:SIO_000028 SER:38_enzyme ;
-	sio:SIO_000028 SER:39_enzyme ;
-	sio:SIO_000028 SER:40_enzyme ;
-	sio:SIO_000028 SER:41_enzyme ;
-	sio:SIO_000028 SER:42_enzyme ;
-	sio:SIO_000028 SER:43_enzyme ;
-	sio:SIO_000028 SER:44_enzyme ;
-	sio:SIO_000028 SER:45_enzyme ;
-	sio:SIO_000028 SER:46_enzyme ;
 	bioregistry:hasDbXref uniprotkb:O14841.
 
 uniprot:P48506
 	rdfs:label "GCLC"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.2 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:47_enzyme ;
 	wp:bdbUniprot uniprot:P48506 ;
-	sio:SIO_000028 SER:48_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P48506.
 
 uniprot:P48637
 	rdfs:label "GSS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.3.2.3 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:49_enzyme ;
 	wp:bdbUniprot uniprot:P48637 ;
-	sio:SIO_000028 SER:50_enzyme ;
-	sio:SIO_000028 SER:51_enzyme ;
-	sio:SIO_000028 SER:52_enzyme ;
-	sio:SIO_000028 SER:53_enzyme ;
-	sio:SIO_000028 SER:54_enzyme ;
-	sio:SIO_000028 SER:55_enzyme ;
-	sio:SIO_000028 SER:56_enzyme ;
-	sio:SIO_000028 SER:57_enzyme ;
-	sio:SIO_000028 SER:58_enzyme ;
-	sio:SIO_000028 SER:59_enzyme ;
-	sio:SIO_000028 SER:60_enzyme ;
-	sio:SIO_000028 SER:61_enzyme ;
-	sio:SIO_000028 SER:62_enzyme ;
-	sio:SIO_000028 SER:63_enzyme ;
-	sio:SIO_000028 SER:64_enzyme ;
-	sio:SIO_000028 SER:65_enzyme ;
-	sio:SIO_000028 SER:66_enzyme ;
-	sio:SIO_000028 SER:67_enzyme ;
-	sio:SIO_000028 SER:68_enzyme ;
-	sio:SIO_000028 SER:69_enzyme ;
-	sio:SIO_000028 SER:70_enzyme ;
-	sio:SIO_000028 SER:71_enzyme ;
-	sio:SIO_000028 SER:72_enzyme ;
-	sio:SIO_000028 SER:73_enzyme ;
-	sio:SIO_000028 SER:74_enzyme ;
-	sio:SIO_000028 SER:75_enzyme ;
-	sio:SIO_000028 SER:76_enzyme ;
-	sio:SIO_000028 SER:77_enzyme ;
-	sio:SIO_000028 SER:78_enzyme ;
-	sio:SIO_000028 SER:79_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P48637.
 
 uniprot:P16444
 	rdfs:label "DP"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.4.11.2 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:80_enzyme ;
 	wp:bdbUniprot uniprot:P16444 ;
 	wp:bdbEnsembl En_id:ENSG00000015413 ;
 	bioregistry:hasDbXref uniprotkb:P16444.
@@ -2485,16 +2408,13 @@ uniprot:P22557
 	rdfs:label "ALAS2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.37 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:81_enzyme ;
 	wp:bdbUniprot uniprot:P22557 ;
-	sio:SIO_000028 SER:82_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P22557.
 
 uniprot:P13716
 	rdfs:label "ALAD"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:4.2.1.24 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:83_enzyme ;
 	wp:bdbUniprot uniprot:P13716 ;
 	wp:bdbEnsembl En_id:ENSG00000148218 ;
 	bioregistry:hasDbXref uniprotkb:P13716.
@@ -2503,7 +2423,6 @@ uniprot:P08397
 	rdfs:label "HMBS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.5.1.61 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:84_enzyme ;
 	wp:bdbUniprot uniprot:P08397 ;
 	wp:bdbEnsembl En_id:ENSG00000256269 ;
 	bioregistry:hasDbXref uniprotkb:P08397.
@@ -2512,7 +2431,6 @@ uniprot:P10746
 	rdfs:label "UROS"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:4.2.1.75 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:85_enzyme ;
 	wp:bdbUniprot uniprot:P10746 ;
 	wp:bdbEnsembl En_id:ENSG00000188690 ;
 	bioregistry:hasDbXref uniprotkb:P10746.
@@ -2521,17 +2439,7 @@ uniprot:P06132
 	rdfs:label "UROD"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:4.1.1.37 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:86_enzyme ;
 	wp:bdbUniprot uniprot:P06132 ;
-	sio:SIO_000028 SER:87_enzyme ;
-	sio:SIO_000028 SER:88_enzyme ;
-	sio:SIO_000028 SER:89_enzyme ;
-	sio:SIO_000028 SER:90_enzyme ;
-	sio:SIO_000028 SER:91_enzyme ;
-	sio:SIO_000028 SER:92_enzyme ;
-	sio:SIO_000028 SER:93_enzyme ;
-	sio:SIO_000028 SER:94_enzyme ;
-	sio:SIO_000028 SER:95_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000126088 ;
 	bioregistry:hasDbXref uniprotkb:P06132.
 
@@ -2539,7 +2447,6 @@ uniprot:P36551
 	rdfs:label "CPOX"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.3.3 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:96_enzyme ;
 	wp:bdbUniprot uniprot:P36551 ;
 	wp:bdbEnsembl En_id:ENSG00000080819 ;
 	bioregistry:hasDbXref uniprotkb:P36551.
@@ -2548,7 +2455,6 @@ uniprot:P50336
 	rdfs:label "PPOX"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.3.4 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:97_enzyme ;
 	wp:bdbUniprot uniprot:P50336 ;
 	wp:bdbEnsembl En_id:ENSG00000143224 ;
 	bioregistry:hasDbXref uniprotkb:P50336.
@@ -2557,7 +2463,6 @@ uniprot:P22830
 	rdfs:label "FH"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:4.99.1.1 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:98_enzyme ;
 	wp:bdbUniprot uniprot:P22830 ;
 	wp:bdbEnsembl En_id:ENSG00000066926 ;
 	bioregistry:hasDbXref uniprotkb:P22830.
@@ -2566,26 +2471,14 @@ uniprot:P11886
 	rdfs:label "GAL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.48 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:99_enzyme ;
 	wp:bdbUniprot uniprot:P11886 ;
-	sio:SIO_000028 SER:100_enzyme ;
-	sio:SIO_000028 SER:101_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P11886.
 
 uniprot:P15121
 	rdfs:label "AKR1B1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.21 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:102_enzyme ;
 	wp:bdbUniprot uniprot:P15121 ;
-	sio:SIO_000028 SER:103_enzyme ;
-	sio:SIO_000028 SER:104_enzyme ;
-	sio:SIO_000028 SER:105_enzyme ;
-	sio:SIO_000028 SER:106_enzyme ;
-	sio:SIO_000028 SER:107_enzyme ;
-	sio:SIO_000028 SER:108_enzyme ;
-	sio:SIO_000028 SER:109_enzyme ;
-	sio:SIO_000028 SER:110_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000085662 ;
 	bioregistry:hasDbXref uniprotkb:P15121.
 
@@ -2593,11 +2486,7 @@ uniprot:P51570
 	rdfs:label "GALK1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.1.6 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:111_enzyme ;
 	wp:bdbUniprot uniprot:P51570 ;
-	sio:SIO_000028 SER:112_enzyme ;
-	sio:SIO_000028 SER:113_enzyme ;
-	sio:SIO_000028 SER:114_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000108479 ;
 	bioregistry:hasDbXref uniprotkb:P51570.
 
@@ -2605,11 +2494,7 @@ uniprot:P36871
 	rdfs:label "PGM1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:5.4.2.2 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:115_enzyme ;
 	wp:bdbUniprot uniprot:P36871 ;
-	sio:SIO_000028 SER:116_enzyme ;
-	sio:SIO_000028 SER:117_enzyme ;
-	sio:SIO_000028 SER:118_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000079739 ;
 	bioregistry:hasDbXref uniprotkb:P36871.
 
@@ -2617,9 +2502,7 @@ uniprot:P07902
 	rdfs:label "GALT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.7.12 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:119_enzyme ;
 	wp:bdbUniprot uniprot:P07902 ;
-	sio:SIO_000028 SER:120_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000213930 ;
 	bioregistry:hasDbXref uniprotkb:P07902.
 
@@ -2627,9 +2510,7 @@ uniprot:Q14376
 	rdfs:label "GALE"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:5.1.3.2 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:121_enzyme ;
 	wp:bdbUniprot uniprot:Q14376 ;
-	sio:SIO_000028 SER:122_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000117308 ;
 	bioregistry:hasDbXref uniprotkb:Q14376.
 
@@ -2637,9 +2518,7 @@ uniprot:P06737
 	rdfs:label "PYGL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.1 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:123_enzyme ;
 	wp:bdbUniprot uniprot:P06737 ;
-	sio:SIO_000028 SER:124_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000100504 ;
 	bioregistry:hasDbXref uniprotkb:P06737.
 
@@ -2647,10 +2526,7 @@ uniprot:P46976
 	rdfs:label "GYG1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.186 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:125_enzyme ;
 	wp:bdbUniprot uniprot:P46976 ;
-	sio:SIO_000028 SER:126_enzyme ;
-	sio:SIO_000028 SER:127_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000163754 ;
 	bioregistry:hasDbXref uniprotkb:P46976.
 
@@ -2658,9 +2534,7 @@ uniprot:P13807
 	rdfs:label "GYS1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.11 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:129_enzyme ;
 	wp:bdbUniprot uniprot:P13807 ;
-	sio:SIO_000028 SER:130_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000104812 ;
 	bioregistry:hasDbXref uniprotkb:P13807.
 
@@ -2668,18 +2542,13 @@ uniprot:Q04446
 	rdfs:label "GBE1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.18 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:132_enzyme ;
 	wp:bdbUniprot uniprot:Q04446 ;
-	sio:SIO_000028 SER:133_enzyme ;
-	sio:SIO_000028 SER:134_enzyme ;
-	sio:SIO_000028 SER:135_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000114480 ;
 	bioregistry:hasDbXref uniprotkb:Q04446.
 
 uniprot:Q9H8P0
 	rdfs:label "SRD5A3"^^xsd:string ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:136_enzyme ;
 	wp:bdbUniprot uniprot:Q9H8P0 ;
 	bioregistry:hasDbXref uniprotkb:Q9H8P0.
 
@@ -2687,17 +2556,13 @@ uniprot:Q9UPQ8
 	rdfs:label "DOLK"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.1.108 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:137_enzyme ;
 	wp:bdbUniprot uniprot:Q9UPQ8 ;
-	sio:SIO_000028 SER:138_enzyme ;
-	sio:SIO_000028 SER:139_enzyme ;
 	bioregistry:hasDbXref uniprotkb:Q9UPQ8.
 
 uniprot:Q9H3H5
 	rdfs:label "DPAGT1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.8.15 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:140_enzyme ;
 	wp:bdbUniprot uniprot:Q9H3H5 ;
 	bioregistry:hasDbXref uniprotkb:Q9H3H5.
 
@@ -2705,46 +2570,35 @@ uniprot:Q9NP73
 	rdfs:label "ALG13"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.141 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:141_enzyme ;
 	wp:bdbUniprot uniprot:Q9NP73 ;
-	sio:SIO_000028 SER:142_enzyme ;
 	bioregistry:hasDbXref uniprotkb:Q9NP73.
 
 uniprot:Q9BT22
 	rdfs:label "ALG1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.142 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:143_enzyme ;
 	wp:bdbUniprot uniprot:Q9BT22 ;
-	sio:SIO_000028 SER:144_enzyme ;
 	bioregistry:hasDbXref uniprotkb:Q9BT22.
 
 uniprot:Q9H553
 	rdfs:label "ALG2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.132 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:145_enzyme ;
 	wp:bdbUniprot uniprot:Q9H553 ;
-	sio:SIO_000028 SER:146_enzyme ;
 	bioregistry:hasDbXref uniprotkb:Q9H553.
 
 uniprot:Q2TAA5
 	rdfs:label "ALG11"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.4.1.131 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:147_enzyme ;
 	wp:bdbUniprot uniprot:Q2TAA5 ;
-	sio:SIO_000028 SER:148_enzyme ;
-	sio:SIO_000028 SER:149_enzyme ;
 	bioregistry:hasDbXref uniprotkb:Q2TAA5.
 
 uniprot:O02766
 	rdfs:label "CYP8B1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.139 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:150_enzyme ;
 	wp:bdbUniprot uniprot:O02766 ;
-	sio:SIO_000028 SER:151_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000180432 ;
 	bioregistry:hasDbXref uniprotkb:O02766.
 
@@ -2752,7 +2606,6 @@ uniprot:P22680
 	rdfs:label "CYP7A1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.23 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:152_enzyme ;
 	wp:bdbUniprot uniprot:P22680 ;
 	wp:bdbEnsembl En_id:ENSG00000167910 ;
 	bioregistry:hasDbXref uniprotkb:P22680.
@@ -2761,7 +2614,6 @@ uniprot:O75881
 	rdfs:label "CYP7B1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.29 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:153_enzyme ;
 	wp:bdbUniprot uniprot:O75881 ;
 	wp:bdbEnsembl En_id:ENSG00000172817 ;
 	bioregistry:hasDbXref uniprotkb:O75881.
@@ -2770,15 +2622,7 @@ uniprot:Q02318
 	rdfs:label "CYP27A1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.15 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:154_enzyme ;
 	wp:bdbUniprot uniprot:Q02318 ;
-	sio:SIO_000028 SER:155_enzyme ;
-	sio:SIO_000028 SER:156_enzyme ;
-	sio:SIO_000028 SER:157_enzyme ;
-	sio:SIO_000028 SER:159_enzyme ;
-	sio:SIO_000028 SER:160_enzyme ;
-	sio:SIO_000028 SER:161_enzyme ;
-	sio:SIO_000028 SER:162_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000135929 ;
 	bioregistry:hasDbXref uniprotkb:Q02318.
 
@@ -2786,9 +2630,7 @@ uniprot:Q9H2F3
 	rdfs:label "HSD3B7"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.181 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:163_enzyme ;
 	wp:bdbUniprot uniprot:Q9H2F3 ;
-	sio:SIO_000028 SER:164_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000099377 ;
 	bioregistry:hasDbXref uniprotkb:Q9H2F3.
 
@@ -2796,10 +2638,7 @@ uniprot:P51857
 	rdfs:label "AKR1D1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.1.3 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:165_enzyme ;
 	wp:bdbUniprot uniprot:P51857 ;
-	sio:SIO_000028 SER:166_enzyme ;
-	sio:SIO_000028 SER:167_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000122787 ;
 	bioregistry:hasDbXref uniprotkb:P51857.
 
@@ -2807,10 +2646,7 @@ uniprot:P17516
 	rdfs:label "Aldo-keto reductase family 1 member C4"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.357 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:168_enzyme ;
 	wp:bdbUniprot uniprot:P17516 ;
-	sio:SIO_000028 SER:169_enzyme ;
-	sio:SIO_000028 SER:170_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000198610 ;
 	bioregistry:hasDbXref uniprotkb:P17516.
 
@@ -2818,9 +2654,7 @@ uniprot:O14975
 	rdfs:label "Very long-chain acyl-CoA synthetase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.2.1.3 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:171_enzyme ;
 	wp:bdbUniprot uniprot:O14975 ;
-	sio:SIO_000028 SER:172_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000140284 ;
 	bioregistry:hasDbXref uniprotkb:O14975.
 
@@ -2828,9 +2662,7 @@ uniprot:Q9UHK6
 	rdfs:label "AMACR"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:5.1.99.4 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:173_enzyme ;
 	wp:bdbUniprot uniprot:Q9UHK6 ;
-	sio:SIO_000028 SER:174_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000242110 ;
 	bioregistry:hasDbXref uniprotkb:Q9UHK6.
 
@@ -2838,9 +2670,7 @@ uniprot:P97562
 	rdfs:label "ACOX2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.17.99.3 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:175_enzyme ;
 	wp:bdbUniprot uniprot:P97562 ;
-	sio:SIO_000028 SER:176_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000168306 ;
 	bioregistry:hasDbXref uniprotkb:P97562.
 
@@ -2848,9 +2678,7 @@ uniprot:Q9ES38
 	rdfs:label "SLC27A5"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:6.2.1.7 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:177_enzyme ;
 	wp:bdbUniprot uniprot:Q9ES38 ;
-	sio:SIO_000028 SER:178_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000083807 ;
 	bioregistry:hasDbXref uniprotkb:Q9ES38.
 
@@ -2858,11 +2686,7 @@ uniprot:Q14032
 	rdfs:label "Bile acid-CoA: amino acid N-acyltransferase"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.65 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:179_enzyme ;
 	wp:bdbUniprot uniprot:Q14032 ;
-	sio:SIO_000028 SER:180_enzyme ;
-	sio:SIO_000028 SER:181_enzyme ;
-	sio:SIO_000028 SER:182_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000136881 ;
 	bioregistry:hasDbXref uniprotkb:Q14032.
 
@@ -2870,9 +2694,7 @@ uniprot:P22307
 	rdfs:label "SCP2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.176 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:183_enzyme ;
 	wp:bdbUniprot uniprot:P22307 ;
-	sio:SIO_000028 SER:184_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000116171 ;
 	bioregistry:hasDbXref uniprotkb:P22307.
 
@@ -2880,11 +2702,7 @@ uniprot:P51659
 	rdfs:label "HSD17B4"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:4.2.1.107 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:185_enzyme ;
 	wp:bdbUniprot uniprot:P51659 ;
-	sio:SIO_000028 SER:186_enzyme ;
-	sio:SIO_000028 SER:187_enzyme ;
-	sio:SIO_000028 SER:188_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000133835 ;
 	bioregistry:hasDbXref uniprotkb:P51659.
 
@@ -2892,7 +2710,6 @@ uniprot:P06863
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:189_enzyme ;
 	wp:bdbUniprot uniprot:P06863 ;
 	bioregistry:hasDbXref uniprotkb:P06863.
 
@@ -2900,7 +2717,6 @@ uniprot:P06865
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:190_enzyme ;
 	wp:bdbUniprot uniprot:P06865 ;
 	bioregistry:hasDbXref uniprotkb:P06865.
 
@@ -2908,90 +2724,27 @@ uniprot:P06866
 	rdfs:label "LPL"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.1.1.34 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:191_enzyme ;
 	wp:bdbUniprot uniprot:P06866 ;
-	sio:SIO_000028 SER:192_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P06866.
 
 uniprot:P04180
 	rdfs:label "LCAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.3.1.43 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:193_enzyme ;
 	wp:bdbUniprot uniprot:P04180 ;
-	sio:SIO_000028 SER:194_enzyme ;
-	sio:SIO_000028 SER:195_enzyme ;
-	sio:SIO_000028 SER:196_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P04180.
 
 uniprot:O95477
 	rdfs:label "ABCA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:3.6.1.3 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:200_enzyme ;
 	wp:bdbUniprot uniprot:O95477 ;
-	sio:SIO_000028 SER:201_enzyme ;
-	sio:SIO_000028 SER:202_enzyme ;
-	sio:SIO_000028 SER:203_enzyme ;
-	sio:SIO_000028 SER:204_enzyme ;
-	sio:SIO_000028 SER:205_enzyme ;
-	sio:SIO_000028 SER:206_enzyme ;
-	sio:SIO_000028 SER:207_enzyme ;
-	sio:SIO_000028 SER:208_enzyme ;
-	sio:SIO_000028 SER:209_enzyme ;
-	sio:SIO_000028 SER:210_enzyme ;
-	sio:SIO_000028 SER:211_enzyme ;
-	sio:SIO_000028 SER:212_enzyme ;
-	sio:SIO_000028 SER:213_enzyme ;
-	sio:SIO_000028 SER:214_enzyme ;
-	sio:SIO_000028 SER:215_enzyme ;
-	sio:SIO_000028 SER:216_enzyme ;
-	sio:SIO_000028 SER:217_enzyme ;
-	sio:SIO_000028 SER:218_enzyme ;
-	sio:SIO_000028 SER:219_enzyme ;
-	sio:SIO_000028 SER:220_enzyme ;
-	sio:SIO_000028 SER:221_enzyme ;
-	sio:SIO_000028 SER:222_enzyme ;
-	sio:SIO_000028 SER:223_enzyme ;
-	sio:SIO_000028 SER:224_enzyme ;
-	sio:SIO_000028 SER:225_enzyme ;
-	sio:SIO_000028 SER:226_enzyme ;
-	sio:SIO_000028 SER:227_enzyme ;
-	sio:SIO_000028 SER:228_enzyme ;
-	sio:SIO_000028 SER:229_enzyme ;
-	sio:SIO_000028 SER:230_enzyme ;
-	sio:SIO_000028 SER:231_enzyme ;
-	sio:SIO_000028 SER:232_enzyme ;
-	sio:SIO_000028 SER:233_enzyme ;
-	sio:SIO_000028 SER:234_enzyme ;
-	sio:SIO_000028 SER:235_enzyme ;
-	sio:SIO_000028 SER:236_enzyme ;
-	sio:SIO_000028 SER:237_enzyme ;
-	sio:SIO_000028 SER:238_enzyme ;
-	sio:SIO_000028 SER:239_enzyme ;
-	sio:SIO_000028 SER:240_enzyme ;
-	sio:SIO_000028 SER:241_enzyme ;
-	sio:SIO_000028 SER:242_enzyme ;
-	sio:SIO_000028 SER:243_enzyme ;
-	sio:SIO_000028 SER:244_enzyme ;
-	sio:SIO_000028 SER:245_enzyme ;
-	sio:SIO_000028 SER:246_enzyme ;
-	sio:SIO_000028 SER:247_enzyme ;
-	sio:SIO_000028 SER:248_enzyme ;
-	sio:SIO_000028 SER:249_enzyme ;
-	sio:SIO_000028 SER:250_enzyme ;
-	sio:SIO_000028 SER:251_enzyme ;
-	sio:SIO_000028 SER:252_enzyme ;
-	sio:SIO_000028 SER:253_enzyme ;
-	sio:SIO_000028 SER:254_enzyme ;
-	sio:SIO_000028 SER:255_enzyme ;
 	bioregistry:hasDbXref uniprotkb:O95477.
 
 uniprot:P04181
 	rdfs:label "OAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.6.1.13 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:257_enzyme ;
 	wp:bdbUniprot uniprot:P04181 ;
 	bioregistry:hasDbXref uniprotkb:P04181.
 
@@ -2999,7 +2752,6 @@ uniprot:Q14353
 	rdfs:label "GAMT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.1.1.2 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:258_enzyme ;
 	wp:bdbUniprot uniprot:Q14353 ;
 	bioregistry:hasDbXref uniprotkb:Q14353.
 
@@ -3007,7 +2759,6 @@ uniprot:P50440
 	rdfs:label "GATM"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.1.4.1 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:259_enzyme ;
 	wp:bdbUniprot uniprot:P50440 ;
 	bioregistry:hasDbXref uniprotkb:P50440.
 
@@ -3015,7 +2766,6 @@ uniprot:P12277
 	rdfs:label "CK"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.3.2 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:260_enzyme ;
 	wp:bdbUniprot uniprot:P12277 ;
 	bioregistry:hasDbXref uniprotkb:P12277.
 
@@ -3023,21 +2773,7 @@ uniprot:P05108
 	rdfs:label "P450scc, CYP11A1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.6 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:266_enzyme ;
 	wp:bdbUniprot uniprot:P05108 ;
-	sio:SIO_000028 SER:267_enzyme ;
-	sio:SIO_000028 SER:268_enzyme ;
-	sio:SIO_000028 SER:269_enzyme ;
-	sio:SIO_000028 SER:270_enzyme ;
-	sio:SIO_000028 SER:271_enzyme ;
-	sio:SIO_000028 SER:272_enzyme ;
-	sio:SIO_000028 SER:273_enzyme ;
-	sio:SIO_000028 SER:274_enzyme ;
-	sio:SIO_000028 SER:275_enzyme ;
-	sio:SIO_000028 SER:276_enzyme ;
-	sio:SIO_000028 SER:277_enzyme ;
-	sio:SIO_000028 SER:278_enzyme ;
-	sio:SIO_000028 SER:279_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000140459 ;
 	bioregistry:hasDbXref uniprotkb:P05108.
 
@@ -3045,19 +2781,7 @@ uniprot:P26439
 	rdfs:label "3-beta-HSD"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.145 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:281_enzyme ;
 	wp:bdbUniprot uniprot:P26439 ;
-	sio:SIO_000028 SER:282_enzyme ;
-	sio:SIO_000028 SER:283_enzyme ;
-	sio:SIO_000028 SER:284_enzyme ;
-	sio:SIO_000028 SER:285_enzyme ;
-	sio:SIO_000028 SER:286_enzyme ;
-	sio:SIO_000028 SER:287_enzyme ;
-	sio:SIO_000028 SER:288_enzyme ;
-	sio:SIO_000028 SER:289_enzyme ;
-	sio:SIO_000028 SER:290_enzyme ;
-	sio:SIO_000028 SER:291_enzyme ;
-	sio:SIO_000028 SER:292_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000203859 ;
 	bioregistry:hasDbXref uniprotkb:P26439.
 
@@ -3065,43 +2789,7 @@ uniprot:P05093
 	rdfs:label "P450c17"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.19 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:296_enzyme ;
 	wp:bdbUniprot uniprot:P05093 ;
-	sio:SIO_000028 SER:297_enzyme ;
-	sio:SIO_000028 SER:298_enzyme ;
-	sio:SIO_000028 SER:299_enzyme ;
-	sio:SIO_000028 SER:300_enzyme ;
-	sio:SIO_000028 SER:301_enzyme ;
-	sio:SIO_000028 SER:302_enzyme ;
-	sio:SIO_000028 SER:303_enzyme ;
-	sio:SIO_000028 SER:304_enzyme ;
-	sio:SIO_000028 SER:305_enzyme ;
-	sio:SIO_000028 SER:306_enzyme ;
-	sio:SIO_000028 SER:307_enzyme ;
-	sio:SIO_000028 SER:308_enzyme ;
-	sio:SIO_000028 SER:309_enzyme ;
-	sio:SIO_000028 SER:310_enzyme ;
-	sio:SIO_000028 SER:311_enzyme ;
-	sio:SIO_000028 SER:312_enzyme ;
-	sio:SIO_000028 SER:313_enzyme ;
-	sio:SIO_000028 SER:314_enzyme ;
-	sio:SIO_000028 SER:315_enzyme ;
-	sio:SIO_000028 SER:316_enzyme ;
-	sio:SIO_000028 SER:317_enzyme ;
-	sio:SIO_000028 SER:318_enzyme ;
-	sio:SIO_000028 SER:319_enzyme ;
-	sio:SIO_000028 SER:320_enzyme ;
-	sio:SIO_000028 SER:321_enzyme ;
-	sio:SIO_000028 SER:322_enzyme ;
-	sio:SIO_000028 SER:323_enzyme ;
-	sio:SIO_000028 SER:324_enzyme ;
-	sio:SIO_000028 SER:325_enzyme ;
-	sio:SIO_000028 SER:326_enzyme ;
-	sio:SIO_000028 SER:327_enzyme ;
-	sio:SIO_000028 SER:328_enzyme ;
-	sio:SIO_000028 SER:329_enzyme ;
-	sio:SIO_000028 SER:330_enzyme ;
-	sio:SIO_000028 SER:331_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000148795 ;
 	bioregistry:hasDbXref uniprotkb:P05093.
 
@@ -3109,18 +2797,7 @@ uniprot:P08686
 	rdfs:label "P450c21"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.14.16 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:332_enzyme ;
 	wp:bdbUniprot uniprot:P08686 ;
-	sio:SIO_000028 SER:333_enzyme ;
-	sio:SIO_000028 SER:334_enzyme ;
-	sio:SIO_000028 SER:335_enzyme ;
-	sio:SIO_000028 SER:336_enzyme ;
-	sio:SIO_000028 SER:337_enzyme ;
-	sio:SIO_000028 SER:338_enzyme ;
-	sio:SIO_000028 SER:339_enzyme ;
-	sio:SIO_000028 SER:340_enzyme ;
-	sio:SIO_000028 SER:341_enzyme ;
-	sio:SIO_000028 SER:342_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000231852 ;
 	bioregistry:hasDbXref uniprotkb:P08686.
 
@@ -3128,9 +2805,7 @@ uniprot:P15538
 	rdfs:label "P450c11"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.14.15.4 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:343_enzyme ;
 	wp:bdbUniprot uniprot:P15538 ;
-	sio:SIO_000028 SER:344_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000160882 ;
 	bioregistry:hasDbXref uniprotkb:P15538.
 
@@ -3138,10 +2813,7 @@ uniprot:O95479
 	rdfs:label "H6PD"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.47 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:345_enzyme ;
 	wp:bdbUniprot uniprot:O95479 ;
-	sio:SIO_000028 SER:346_enzyme ;
-	sio:SIO_000028 SER:347_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000049239 ;
 	bioregistry:hasDbXref uniprotkb:O95479.
 
@@ -3149,26 +2821,14 @@ uniprot:P28845
 	rdfs:label "11-beta-HSD1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.146 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:348_enzyme ;
 	wp:bdbUniprot uniprot:P28845 ;
-	sio:SIO_000028 SER:349_enzyme ;
-	sio:SIO_000028 SER:350_enzyme ;
-	sio:SIO_000028 SER:351_enzyme ;
-	sio:SIO_000028 SER:352_enzyme ;
-	sio:SIO_000028 SER:353_enzyme ;
-	sio:SIO_000028 SER:354_enzyme ;
-	sio:SIO_000028 SER:355_enzyme ;
-	sio:SIO_000028 SER:356_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000117594 ;
 	bioregistry:hasDbXref uniprotkb:P28845.
 
 uniprot:P80365
 	rdfs:label "11-beta-HSD2"^^xsd:string ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:357_enzyme ;
 	wp:bdbUniprot uniprot:P80365 ;
-	sio:SIO_000028 SER:358_enzyme ;
-	sio:SIO_000028 SER:359_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000176387 ;
 	bioregistry:hasDbXref uniprotkb:P80365.
 
@@ -3176,10 +2836,7 @@ uniprot:P31213
 	rdfs:label "5-alpha-reductase 2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.3.99.5 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:360_enzyme ;
 	wp:bdbUniprot uniprot:P31213 ;
-	sio:SIO_000028 SER:361_enzyme ;
-	sio:SIO_000028 SER:362_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000277893 ;
 	bioregistry:hasDbXref uniprotkb:P31213.
 
@@ -3189,11 +2846,7 @@ uniprot:P21549
 	wp:bdbEnzymeNomenclature ECcode:2.6.1.44 ;
 	wp:bdbEnzymeNomenclature ECcode:2.6.1.51 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:366_enzyme ;
 	wp:bdbUniprot uniprot:P21549 ;
-	sio:SIO_000028 SER:367_enzyme ;
-	sio:SIO_000028 SER:368_enzyme ;
-	sio:SIO_000028 SER:369_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000172482 ;
 	bioregistry:hasDbXref uniprotkb:P21549.
 
@@ -3201,7 +2854,6 @@ uniprot:P30038
 	rdfs:label "1P5CDH"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.2.1.88 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:370_enzyme ;
 	wp:bdbUniprot uniprot:P30038 ;
 	wp:bdbEnsembl En_id:ENSG00000159423 ;
 	bioregistry:hasDbXref uniprotkb:P30038.
@@ -3210,9 +2862,7 @@ uniprot:P17174
 	rdfs:label "AspAT"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.6.1.1 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:371_enzyme ;
 	wp:bdbUniprot uniprot:P17174 ;
-	sio:SIO_000028 SER:372_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000120053 ;
 	bioregistry:hasDbXref uniprotkb:P17174.
 
@@ -3220,7 +2870,6 @@ uniprot:P14920
 	rdfs:label "DAO"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.4.3.3 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:373_enzyme ;
 	wp:bdbUniprot uniprot:P14920 ;
 	wp:bdbEnsembl En_id:ENSG00000110887 ;
 	bioregistry:hasDbXref uniprotkb:P14920.
@@ -3229,7 +2878,6 @@ uniprot:Q9UJM8
 	rdfs:label "GO"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.3.15 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:374_enzyme ;
 	wp:bdbUniprot uniprot:Q9UJM8 ;
 	wp:bdbEnsembl En_id:ENSG00000101323 ;
 	bioregistry:hasDbXref uniprotkb:Q9UJM8.
@@ -3238,9 +2886,7 @@ uniprot:Q9UBQ7
 	rdfs:label "GRHPR"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.81 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:375_enzyme ;
 	wp:bdbUniprot uniprot:Q9UBQ7 ;
-	sio:SIO_000028 SER:376_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000137106 ;
 	bioregistry:hasDbXref uniprotkb:Q9UBQ7.
 
@@ -3248,7 +2894,6 @@ uniprot:Q86XE5
 	rdfs:label "HOGA1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:4.1.3.16 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:377_enzyme ;
 	wp:bdbUniprot uniprot:Q86XE5 ;
 	wp:bdbEnsembl En_id:ENSG00000241935 ;
 	bioregistry:hasDbXref uniprotkb:Q86XE5.
@@ -3257,7 +2902,6 @@ uniprot:Q9UF12
 	rdfs:label "HYPDH"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.5.5.3 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:378_enzyme ;
 	wp:bdbUniprot uniprot:Q9UF12 ;
 	wp:bdbEnsembl En_id:ENSG00000250799 ;
 	bioregistry:hasDbXref uniprotkb:Q9UF12.
@@ -3266,7 +2910,6 @@ uniprot:P00338
 	rdfs:label "LDH5"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.1.1.27 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:379_enzyme ;
 	wp:bdbUniprot uniprot:P00338 ;
 	wp:bdbEnsembl En_id:ENSG00000134333 ;
 	bioregistry:hasDbXref uniprotkb:P00338.
@@ -3275,7 +2918,6 @@ uniprot:Q53TN4
 	rdfs:label "CYBRD1"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:7.2.1.3 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:380_enzyme ;
 	wp:bdbUniprot uniprot:Q53TN4 ;
 	wp:bdbEnsembl En_id:ENSG00000071967 ;
 	bioregistry:hasDbXref uniprotkb:Q53TN4.
@@ -3284,7 +2926,6 @@ uniprot:Q9BQS7
 	rdfs:label "HEPH"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.16.3.1 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:382_enzyme ;
 	wp:bdbUniprot uniprot:Q9BQS7 ;
 	wp:bdbEnsembl En_id:ENSG00000089472 ;
 	bioregistry:hasDbXref uniprotkb:Q9BQS7.
@@ -3293,9 +2934,7 @@ uniprot:P00450
 	rdfs:label "CP"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:1.16.3.1 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:384_enzyme ;
 	wp:bdbUniprot uniprot:P00450 ;
-	sio:SIO_000028 SER:385_enzyme ;
 	wp:bdbEnsembl En_id:ENSG00000047457 ;
 	bioregistry:hasDbXref uniprotkb:P00450.
 
@@ -3303,7 +2942,6 @@ uniprot:Q9BZ23
 	rdfs:label "PANK2"^^xsd:string ;
 	wp:bdbEnzymeNomenclature ECcode:2.7.1.33 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:386_enzyme ;
 	wp:bdbUniprot uniprot:Q9BZ23 ;
 	wp:bdbEnsembl En_id:ENSG00000125779 ;
 	bioregistry:hasDbXref uniprotkb:Q9BZ23.
@@ -3311,30 +2949,25 @@ uniprot:Q9BZ23
 uniprot:P17735
 	wp:bdbEnzymeNomenclature ECcode:2.6.1.5 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:261_enzyme ;
 	wp:bdbUniprot uniprot:P17735 ;
 	bioregistry:hasDbXref uniprotkb:P17735.
 
 uniprot:H7C576
 	wp:bdbEnzymeNomenclature ECcode:1.13.11.5 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:262_enzyme ;
 	wp:bdbUniprot uniprot:H7C576 ;
 	bioregistry:hasDbXref uniprotkb:H7C576.
 
 uniprot:P32754
 	wp:bdbEnzymeNomenclature ECcode:1.13.11.27 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:263_enzyme ;
 	wp:bdbUniprot uniprot:P32754 ;
 	bioregistry:hasDbXref uniprotkb:P32754.
 
 uniprot:P16930
 	wp:bdbEnzymeNomenclature ECcode:3.7.1.2 ;
 	rdf:type wp:Protein ;
-	sio:SIO_000028 SER:264_enzyme ;
 	wp:bdbUniprot uniprot:P16930 ;
-	sio:SIO_000028 SER:265_enzyme ;
 	bioregistry:hasDbXref uniprotkb:P16930.
 
 RHEA:14167
@@ -8036,4 +7669,1105 @@ SER:372_measurement
 
 SER:140_measurement
 	dc:source "brenda"^^xsd:string .
+
+SER:1_enzyme
+	rdfs:subClassOf uniprot:P45381.
+
+SER:2_enzyme
+	rdfs:subClassOf uniprot:P45381.
+
+SER:3_enzyme
+	rdfs:subClassOf uniprot:Q92947.
+
+SER:4_enzyme
+	rdfs:subClassOf uniprot:Q92947.
+
+SER:5_enzyme
+	rdfs:subClassOf uniprot:Q92947.
+
+SER:6_enzyme
+	rdfs:subClassOf uniprot:Q92947.
+
+SER:7_enzyme
+	rdfs:subClassOf uniprot:Q92947.
+
+SER:8_enzyme
+	rdfs:subClassOf uniprot:Q92947.
+
+SER:9_enzyme
+	rdfs:subClassOf uniprot:Q92947.
+
+SER:10_enzyme
+	rdfs:subClassOf uniprot:Q92947.
+
+SER:11_enzyme
+	rdfs:subClassOf uniprot:Q92947.
+
+SER:12_enzyme
+	rdfs:subClassOf uniprot:Q9H9P8.
+
+SER:13_enzyme
+	rdfs:subClassOf uniprot:Q9H9P8.
+
+SER:14_enzyme
+	rdfs:subClassOf uniprot:Q8N465.
+
+SER:15_enzyme
+	rdfs:subClassOf uniprot:P48735.
+
+SER:16_enzyme
+	rdfs:subClassOf uniprot:P48735.
+
+SER:17_enzyme
+	rdfs:subClassOf uniprot:P48735.
+
+SER:18_enzyme
+	rdfs:subClassOf uniprot:P48735.
+
+SER:19_enzyme
+	rdfs:subClassOf uniprot:P48735.
+
+SER:20_enzyme
+	rdfs:subClassOf uniprot:P48735.
+
+SER:21_enzyme
+	rdfs:subClassOf uniprot:P48735.
+
+SER:22_enzyme
+	rdfs:subClassOf uniprot:P48735.
+
+SER:24_enzyme
+	rdfs:subClassOf uniprot:Q8IWW8.
+
+SER:25_enzyme
+	rdfs:subClassOf uniprot:Q8IWW8.
+
+SER:26_enzyme
+	rdfs:subClassOf uniprot:Q8IWW8.
+
+SER:27_enzyme
+	rdfs:subClassOf uniprot:Q8IWW8.
+
+SER:29_enzyme
+	rdfs:subClassOf uniprot:P23368.
+
+SER:30_enzyme
+	rdfs:subClassOf uniprot:P23368.
+
+SER:31_enzyme
+	rdfs:subClassOf uniprot:P23368.
+
+SER:32_enzyme
+	rdfs:subClassOf uniprot:P19440.
+
+SER:33_enzyme
+	rdfs:subClassOf uniprot:P19440.
+
+SER:34_enzyme
+	rdfs:subClassOf uniprot:P19440.
+
+SER:35_enzyme
+	rdfs:subClassOf uniprot:P19440.
+
+SER:37_enzyme
+	rdfs:subClassOf uniprot:O14841.
+
+SER:38_enzyme
+	rdfs:subClassOf uniprot:O14841.
+
+SER:39_enzyme
+	rdfs:subClassOf uniprot:O14841.
+
+SER:40_enzyme
+	rdfs:subClassOf uniprot:O14841.
+
+SER:41_enzyme
+	rdfs:subClassOf uniprot:O14841.
+
+SER:42_enzyme
+	rdfs:subClassOf uniprot:O14841.
+
+SER:43_enzyme
+	rdfs:subClassOf uniprot:O14841.
+
+SER:44_enzyme
+	rdfs:subClassOf uniprot:O14841.
+
+SER:45_enzyme
+	rdfs:subClassOf uniprot:O14841.
+
+SER:46_enzyme
+	rdfs:subClassOf uniprot:O14841.
+
+SER:47_enzyme
+	rdfs:subClassOf uniprot:P48506.
+
+SER:48_enzyme
+	rdfs:subClassOf uniprot:P48506.
+
+SER:49_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:50_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:51_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:52_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:53_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:54_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:55_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:56_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:57_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:58_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:59_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:60_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:61_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:62_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:63_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:64_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:65_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:66_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:67_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:68_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:69_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:70_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:71_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:72_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:73_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:74_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:75_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:76_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:77_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:78_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:79_enzyme
+	rdfs:subClassOf uniprot:P48637.
+
+SER:80_enzyme
+	rdfs:subClassOf uniprot:P16444.
+
+SER:81_enzyme
+	rdfs:subClassOf uniprot:P22557.
+
+SER:82_enzyme
+	rdfs:subClassOf uniprot:P22557.
+
+SER:83_enzyme
+	rdfs:subClassOf uniprot:P13716.
+
+SER:84_enzyme
+	rdfs:subClassOf uniprot:P08397.
+
+SER:85_enzyme
+	rdfs:subClassOf uniprot:P10746.
+
+SER:86_enzyme
+	rdfs:subClassOf uniprot:P06132.
+
+SER:87_enzyme
+	rdfs:subClassOf uniprot:P06132.
+
+SER:88_enzyme
+	rdfs:subClassOf uniprot:P06132.
+
+SER:89_enzyme
+	rdfs:subClassOf uniprot:P06132.
+
+SER:90_enzyme
+	rdfs:subClassOf uniprot:P06132.
+
+SER:91_enzyme
+	rdfs:subClassOf uniprot:P06132.
+
+SER:92_enzyme
+	rdfs:subClassOf uniprot:P06132.
+
+SER:93_enzyme
+	rdfs:subClassOf uniprot:P06132.
+
+SER:94_enzyme
+	rdfs:subClassOf uniprot:P06132.
+
+SER:95_enzyme
+	rdfs:subClassOf uniprot:P06132.
+
+SER:96_enzyme
+	rdfs:subClassOf uniprot:P36551.
+
+SER:97_enzyme
+	rdfs:subClassOf uniprot:P50336.
+
+SER:98_enzyme
+	rdfs:subClassOf uniprot:P22830.
+
+SER:99_enzyme
+	rdfs:subClassOf uniprot:P11886.
+
+SER:100_enzyme
+	rdfs:subClassOf uniprot:P11886.
+
+SER:101_enzyme
+	rdfs:subClassOf uniprot:P11886.
+
+SER:102_enzyme
+	rdfs:subClassOf uniprot:P15121.
+
+SER:103_enzyme
+	rdfs:subClassOf uniprot:P15121.
+
+SER:104_enzyme
+	rdfs:subClassOf uniprot:P15121.
+
+SER:105_enzyme
+	rdfs:subClassOf uniprot:P15121.
+
+SER:106_enzyme
+	rdfs:subClassOf uniprot:P15121.
+
+SER:107_enzyme
+	rdfs:subClassOf uniprot:P15121.
+
+SER:108_enzyme
+	rdfs:subClassOf uniprot:P15121.
+
+SER:109_enzyme
+	rdfs:subClassOf uniprot:P15121.
+
+SER:110_enzyme
+	rdfs:subClassOf uniprot:P15121.
+
+SER:111_enzyme
+	rdfs:subClassOf uniprot:P51570.
+
+SER:112_enzyme
+	rdfs:subClassOf uniprot:P51570.
+
+SER:113_enzyme
+	rdfs:subClassOf uniprot:P51570.
+
+SER:114_enzyme
+	rdfs:subClassOf uniprot:P51570.
+
+SER:115_enzyme
+	rdfs:subClassOf uniprot:P36871.
+
+SER:116_enzyme
+	rdfs:subClassOf uniprot:P36871.
+
+SER:117_enzyme
+	rdfs:subClassOf uniprot:P36871.
+
+SER:118_enzyme
+	rdfs:subClassOf uniprot:P36871.
+
+SER:119_enzyme
+	rdfs:subClassOf uniprot:P07902.
+
+SER:120_enzyme
+	rdfs:subClassOf uniprot:P07902.
+
+SER:121_enzyme
+	rdfs:subClassOf uniprot:Q14376.
+
+SER:122_enzyme
+	rdfs:subClassOf uniprot:Q14376.
+
+SER:123_enzyme
+	rdfs:subClassOf uniprot:P06737.
+
+SER:124_enzyme
+	rdfs:subClassOf uniprot:P06737.
+
+SER:125_enzyme
+	rdfs:subClassOf uniprot:P46976.
+
+SER:126_enzyme
+	rdfs:subClassOf uniprot:P46976.
+
+SER:127_enzyme
+	rdfs:subClassOf uniprot:P46976.
+
+SER:129_enzyme
+	rdfs:subClassOf uniprot:P13807.
+
+SER:130_enzyme
+	rdfs:subClassOf uniprot:P13807.
+
+SER:132_enzyme
+	rdfs:subClassOf uniprot:Q04446.
+
+SER:133_enzyme
+	rdfs:subClassOf uniprot:Q04446.
+
+SER:134_enzyme
+	rdfs:subClassOf uniprot:Q04446.
+
+SER:135_enzyme
+	rdfs:subClassOf uniprot:Q04446.
+
+SER:136_enzyme
+	rdfs:subClassOf uniprot:Q9H8P0.
+
+SER:137_enzyme
+	rdfs:subClassOf uniprot:Q9UPQ8.
+
+SER:138_enzyme
+	rdfs:subClassOf uniprot:Q9UPQ8.
+
+SER:139_enzyme
+	rdfs:subClassOf uniprot:Q9UPQ8.
+
+SER:140_enzyme
+	rdfs:subClassOf uniprot:Q9H3H5.
+
+SER:141_enzyme
+	rdfs:subClassOf uniprot:Q9NP73.
+
+SER:142_enzyme
+	rdfs:subClassOf uniprot:Q9NP73.
+
+SER:143_enzyme
+	rdfs:subClassOf uniprot:Q9BT22.
+
+SER:144_enzyme
+	rdfs:subClassOf uniprot:Q9BT22.
+
+SER:145_enzyme
+	rdfs:subClassOf uniprot:Q9H553.
+
+SER:146_enzyme
+	rdfs:subClassOf uniprot:Q9H553.
+
+SER:147_enzyme
+	rdfs:subClassOf uniprot:Q2TAA5.
+
+SER:148_enzyme
+	rdfs:subClassOf uniprot:Q2TAA5.
+
+SER:149_enzyme
+	rdfs:subClassOf uniprot:Q2TAA5.
+
+SER:150_enzyme
+	rdfs:subClassOf uniprot:O02766.
+
+SER:151_enzyme
+	rdfs:subClassOf uniprot:O02766.
+
+SER:152_enzyme
+	rdfs:subClassOf uniprot:P22680.
+
+SER:153_enzyme
+	rdfs:subClassOf uniprot:O75881.
+
+SER:154_enzyme
+	rdfs:subClassOf uniprot:Q02318.
+
+SER:155_enzyme
+	rdfs:subClassOf uniprot:Q02318.
+
+SER:156_enzyme
+	rdfs:subClassOf uniprot:Q02318.
+
+SER:157_enzyme
+	rdfs:subClassOf uniprot:Q02318.
+
+SER:159_enzyme
+	rdfs:subClassOf uniprot:Q02318.
+
+SER:160_enzyme
+	rdfs:subClassOf uniprot:Q02318.
+
+SER:161_enzyme
+	rdfs:subClassOf uniprot:Q02318.
+
+SER:162_enzyme
+	rdfs:subClassOf uniprot:Q02318.
+
+SER:163_enzyme
+	rdfs:subClassOf uniprot:Q9H2F3.
+
+SER:164_enzyme
+	rdfs:subClassOf uniprot:Q9H2F3.
+
+SER:165_enzyme
+	rdfs:subClassOf uniprot:P51857.
+
+SER:166_enzyme
+	rdfs:subClassOf uniprot:P51857.
+
+SER:167_enzyme
+	rdfs:subClassOf uniprot:P51857.
+
+SER:168_enzyme
+	rdfs:subClassOf uniprot:P17516.
+
+SER:169_enzyme
+	rdfs:subClassOf uniprot:P17516.
+
+SER:170_enzyme
+	rdfs:subClassOf uniprot:P17516.
+
+SER:171_enzyme
+	rdfs:subClassOf uniprot:O14975.
+
+SER:172_enzyme
+	rdfs:subClassOf uniprot:O14975.
+
+SER:173_enzyme
+	rdfs:subClassOf uniprot:Q9UHK6.
+
+SER:174_enzyme
+	rdfs:subClassOf uniprot:Q9UHK6.
+
+SER:175_enzyme
+	rdfs:subClassOf uniprot:P97562.
+
+SER:176_enzyme
+	rdfs:subClassOf uniprot:P97562.
+
+SER:177_enzyme
+	rdfs:subClassOf uniprot:Q9ES38.
+
+SER:178_enzyme
+	rdfs:subClassOf uniprot:Q9ES38.
+
+SER:179_enzyme
+	rdfs:subClassOf uniprot:Q14032.
+
+SER:180_enzyme
+	rdfs:subClassOf uniprot:Q14032.
+
+SER:181_enzyme
+	rdfs:subClassOf uniprot:Q14032.
+
+SER:182_enzyme
+	rdfs:subClassOf uniprot:Q14032.
+
+SER:183_enzyme
+	rdfs:subClassOf uniprot:P22307.
+
+SER:184_enzyme
+	rdfs:subClassOf uniprot:P22307.
+
+SER:185_enzyme
+	rdfs:subClassOf uniprot:P51659.
+
+SER:186_enzyme
+	rdfs:subClassOf uniprot:P51659.
+
+SER:187_enzyme
+	rdfs:subClassOf uniprot:P51659.
+
+SER:188_enzyme
+	rdfs:subClassOf uniprot:P51659.
+
+SER:189_enzyme
+	rdfs:subClassOf uniprot:P06863.
+
+SER:190_enzyme
+	rdfs:subClassOf uniprot:P06865.
+
+SER:191_enzyme
+	rdfs:subClassOf uniprot:P06866.
+
+SER:192_enzyme
+	rdfs:subClassOf uniprot:P06866.
+
+SER:193_enzyme
+	rdfs:subClassOf uniprot:P04180.
+
+SER:194_enzyme
+	rdfs:subClassOf uniprot:P04180.
+
+SER:195_enzyme
+	rdfs:subClassOf uniprot:P04180.
+
+SER:196_enzyme
+	rdfs:subClassOf uniprot:P04180.
+
+SER:200_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:201_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:202_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:203_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:204_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:205_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:206_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:207_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:208_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:209_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:210_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:211_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:212_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:213_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:214_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:215_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:216_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:217_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:218_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:219_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:220_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:221_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:222_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:223_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:224_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:225_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:226_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:227_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:228_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:229_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:230_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:231_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:232_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:233_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:234_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:235_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:236_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:237_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:238_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:239_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:240_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:241_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:242_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:243_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:244_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:245_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:246_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:247_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:248_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:249_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:250_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:251_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:252_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:253_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:254_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:255_enzyme
+	rdfs:subClassOf uniprot:O95477.
+
+SER:257_enzyme
+	rdfs:subClassOf uniprot:P04181.
+
+SER:258_enzyme
+	rdfs:subClassOf uniprot:Q14353.
+
+SER:259_enzyme
+	rdfs:subClassOf uniprot:P50440.
+
+SER:260_enzyme
+	rdfs:subClassOf uniprot:P12277.
+
+SER:261_enzyme
+	rdfs:subClassOf uniprot:P17735.
+
+SER:262_enzyme
+	rdfs:subClassOf uniprot:H7C576.
+
+SER:263_enzyme
+	rdfs:subClassOf uniprot:P32754.
+
+SER:264_enzyme
+	rdfs:subClassOf uniprot:P16930.
+
+SER:265_enzyme
+	rdfs:subClassOf uniprot:P16930.
+
+SER:266_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:267_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:268_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:269_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:270_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:271_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:272_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:273_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:274_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:275_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:276_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:277_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:278_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:279_enzyme
+	rdfs:subClassOf uniprot:P05108.
+
+SER:281_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:282_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:283_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:284_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:285_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:286_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:287_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:288_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:289_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:290_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:291_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:292_enzyme
+	rdfs:subClassOf uniprot:P26439.
+
+SER:296_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:297_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:298_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:299_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:300_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:301_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:302_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:303_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:304_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:305_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:306_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:307_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:308_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:309_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:310_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:311_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:312_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:313_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:314_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:315_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:316_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:317_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:318_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:319_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:320_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:321_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:322_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:323_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:324_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:325_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:326_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:327_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:328_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:329_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:330_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:331_enzyme
+	rdfs:subClassOf uniprot:P05093.
+
+SER:332_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:333_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:334_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:335_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:336_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:337_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:338_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:339_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:340_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:341_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:342_enzyme
+	rdfs:subClassOf uniprot:P08686.
+
+SER:343_enzyme
+	rdfs:subClassOf uniprot:P15538.
+
+SER:344_enzyme
+	rdfs:subClassOf uniprot:P15538.
+
+SER:345_enzyme
+	rdfs:subClassOf uniprot:O95479.
+
+SER:346_enzyme
+	rdfs:subClassOf uniprot:O95479.
+
+SER:347_enzyme
+	rdfs:subClassOf uniprot:O95479.
+
+SER:348_enzyme
+	rdfs:subClassOf uniprot:P28845.
+
+SER:349_enzyme
+	rdfs:subClassOf uniprot:P28845.
+
+SER:350_enzyme
+	rdfs:subClassOf uniprot:P28845.
+
+SER:351_enzyme
+	rdfs:subClassOf uniprot:P28845.
+
+SER:352_enzyme
+	rdfs:subClassOf uniprot:P28845.
+
+SER:353_enzyme
+	rdfs:subClassOf uniprot:P28845.
+
+SER:354_enzyme
+	rdfs:subClassOf uniprot:P28845.
+
+SER:355_enzyme
+	rdfs:subClassOf uniprot:P28845.
+
+SER:356_enzyme
+	rdfs:subClassOf uniprot:P28845.
+
+SER:357_enzyme
+	rdfs:subClassOf uniprot:P80365.
+
+SER:358_enzyme
+	rdfs:subClassOf uniprot:P80365.
+
+SER:359_enzyme
+	rdfs:subClassOf uniprot:P80365.
+
+SER:360_enzyme
+	rdfs:subClassOf uniprot:P31213.
+
+SER:361_enzyme
+	rdfs:subClassOf uniprot:P31213.
+
+SER:362_enzyme
+	rdfs:subClassOf uniprot:P31213.
+
+SER:366_enzyme
+	rdfs:subClassOf uniprot:P21549.
+
+SER:367_enzyme
+	rdfs:subClassOf uniprot:P21549.
+
+SER:368_enzyme
+	rdfs:subClassOf uniprot:P21549.
+
+SER:369_enzyme
+	rdfs:subClassOf uniprot:P21549.
+
+SER:370_enzyme
+	rdfs:subClassOf uniprot:P30038.
+
+SER:371_enzyme
+	rdfs:subClassOf uniprot:P17174.
+
+SER:372_enzyme
+	rdfs:subClassOf uniprot:P17174.
+
+SER:373_enzyme
+	rdfs:subClassOf uniprot:P14920.
+
+SER:374_enzyme
+	rdfs:subClassOf uniprot:Q9UJM8.
+
+SER:375_enzyme
+	rdfs:subClassOf uniprot:Q9UBQ7.
+
+SER:376_enzyme
+	rdfs:subClassOf uniprot:Q9UBQ7.
+
+SER:377_enzyme
+	rdfs:subClassOf uniprot:Q86XE5.
+
+SER:378_enzyme
+	rdfs:subClassOf uniprot:Q9UF12.
+
+SER:379_enzyme
+	rdfs:subClassOf uniprot:P00338.
+
+SER:380_enzyme
+	rdfs:subClassOf uniprot:Q53TN4.
+
+SER:382_enzyme
+	rdfs:subClassOf uniprot:Q9BQS7.
+
+SER:384_enzyme
+	rdfs:subClassOf uniprot:P00450.
+
+SER:385_enzyme
+	rdfs:subClassOf uniprot:P00450.
+
+SER:386_enzyme
+	rdfs:subClassOf uniprot:Q9BZ23.
 
