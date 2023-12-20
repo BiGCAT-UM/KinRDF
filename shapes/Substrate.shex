@@ -13,4 +13,5 @@ PREFIX chebi: <http://purl.obolibrary.org/obo/>
 
 :Substrate {
   a [ chebi:CHEBI_23367 ]
+  a [ wp:Metabolite ]
 }
