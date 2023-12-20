@@ -917,15 +917,22 @@ RDF_Kin_data.write("@prefix bioregistry: <https://bioregistry.io/oboinowl:> . \n
 # #Second, print the information on units (for measurements) SIO_000221 
 ## Temp wdt:P2076
 RDF_Kin_data.write("wdt:P2076 sio:SIO_000028 wd:Q25267 . \n".encode()) #Temperature hasUnit degree Celcius (Wikidata Q25267)
+RDF_Kin_data.write("#Temperature hasUnit degree Celcius (Wikidata Q25267) \n".encode()) #Print comment for clarity
 ## Km SER:hasKm ; Q61751178
 RDF_Kin_data.write("SER:hasKm sio:SIO_000028 wd:Q105687351 . \n".encode()) #Michaelis constant hasUnit degree millimolar mM (Wikidata Q105687351)
+RDF_Kin_data.write("#Michaelis constant hasUnit degree millimolar mM (Wikidata Q105687351) \n".encode()) #Print comment for clarity
 RDF_Kin_data.write("SER:hasKm sio:SIO_000028 wd:Q61751178 . \n".encode()) #Michaelis constant a Michaelis constant (Wikidata Q61751178)
+RDF_Kin_data.write("#Michaelis constant a Michaelis constant (Wikidata Q61751178) \n".encode()) #Print comment for clarity
 ## KCat SER:hasKcat
 RDF_Kin_data.write("SER:hasKcat sio:SIO_000028 wd:Q6137407 . \n".encode()) #Turnover Number hasUnit degree reciprocal second s-1 (Wikidata Q6137407)
+RDF_Kin_data.write("#Turnover Number hasUnit degree reciprocal second s-1 (Wikidata Q6137407) \n".encode()) #Print comment for clarity
 RDF_Kin_data.write("SER:hasKcat sio:SIO_000028 wd:Q899698 . \n".encode()) #Turnover Number a Turnover Number (Wikidata Q899698)
+RDF_Kin_data.write("#Turnover Number a Turnover Number (Wikidata Q899698) \n".encode()) #Print comment for clarity
 ## Kcat/Km SER:hasKcatKm 
 RDF_Kin_data.write("SER:hasKcatKm sio:SIO_000028 wd:Q116486875 . \n".encode()) #Specificity constant hasUnit degree M−1s-1 (Wikidata Q116486875)
+RDF_Kin_data.write("#Specificity constant hasUnit degree M−1s-1 (Wikidata Q116486875) \n".encode()) #Print comment for clarity
 RDF_Kin_data.write("SER:hasKcatKm a wd:Q7575016 . \n\n".encode()) #Specificity constant a Specificity constant (Wikidata Q7575016)
+RDF_Kin_data.write("#Specificity constant a Specificity constant (Wikidata Q7575016) \n".encode()) #Print comment for clarity
 
 ## Ph has no unit.
 

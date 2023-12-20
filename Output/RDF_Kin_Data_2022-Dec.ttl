@@ -20,13 +20,20 @@
 @prefix bioregistry: <https://bioregistry.io/oboinowl:> . 
 
 wdt:P2076 sio:SIO_000028 wd:Q25267 . 
+#Temperature hasUnit degree Celcius (Wikidata Q25267) 
 SER:hasKm sio:SIO_000028 wd:Q105687351 . 
+#Michaelis constant hasUnit degree millimolar mM (Wikidata Q105687351) 
 SER:hasKm sio:SIO_000028 wd:Q61751178 . 
+#Michaelis constant a Michaelis constant (Wikidata Q61751178) 
 SER:hasKcat sio:SIO_000028 wd:Q6137407 . 
+#Turnover Number hasUnit degree reciprocal second s-1 (Wikidata Q6137407) 
 SER:hasKcat sio:SIO_000028 wd:Q899698 . 
+#Turnover Number a Turnover Number (Wikidata Q899698) 
 SER:hasKcatKm sio:SIO_000028 wd:Q116486875 . 
+#Specificity constant hasUnit degree M−1s-1 (Wikidata Q116486875) 
 SER:hasKcatKm a wd:Q7575016 . 
 
+#Specificity constant a Specificity constant (Wikidata Q7575016) 
 SER:1
 	dc:identifier SER:16953-P45381-14167 ;
 	sio:SIO_000028  SER:1_substrate, SER:1_enzyme, SER:1_reaction ;
