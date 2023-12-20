@@ -43,6 +43,7 @@ ListEnsembl = []
 ListRheaID = []
 ListRheaID_type = []
 ListLinkRheaID = [] 
+ListInteractionLinks = [] 
 ListSubstrate = []
 ListSubstrateIDs = []
 ListKm = []
@@ -303,17 +304,10 @@ for itemUniprot in ListTotal:
 	  continue
 	else:
 	  ListProteinsLinks.append(e[0].strip( ) + '_enzyme' + '\t' + 'rdfs:subClassOf' + ' ' + 'uniprot:' + e[4].strip( ) + '.')
-	  #ListUniprot.append('uniprot:' + e[4].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Protein")
-	  #ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'sio:SIO_000028' + ' ' + e[0].strip( ) + '_enzyme') ##TODO
-	  ##WP IRIs:
-	  #ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) 
-	  ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
-	  #ListLinkUniprot.append('uniprot:' + e[4].strip( ) + '\t' + 'bioregistry:hasDbXref' + ' ' + 'uniprotkb:'  + e[4].strip() + '.' )
 	  countProteinsLinks = countProteinsLinks + 1
 
-##Print total number of UniProt IDs:    
-ListQC.append("Data format for Uniprot correctly linked for " + str(countProteinsLinks) + " UniProt Protein IDs. \n\n")  
-
+##Print total number of UniProt IDs linked to measurements:    
+ListQC.append("Data format for Uniprot correctly linked for " + str(countProteinsLinks) + " measurement IDs. \n\n")  
 
 ##Ensembl IDs
 countGenes = 0
@@ -340,6 +334,8 @@ ListQC.append("Data format for wp:bdbEnsembl correctly loaded for " + str(countG
 ##RHEA IDs
 countRhea = 0
 countEquation = 0
+##Connect measurement data to Rhea IDs:
+countRheaLinks = 0
 for itemRheaID in ListTotal:
 	g = itemRheaID.split('\t')
 	pattern_rhea = '^(RHEA:)?\\d{5}$'
@@ -356,16 +352,20 @@ for itemRheaID in ListTotal:
 	elif(result_rhea): ##regex check
 	  if ( "rhea" in g[6].strip().lower() ) : ##If Rhea is part of the ID structure.
 	    ListRheaID.append( g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' ' + g[6].strip( ) ) 
-	    ListRheaID.append( g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction')
+	    #ListRheaID.append( g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction')
 	    ListLinkRheaID.append( g[6].strip( ) + '\t' + 'rdf:type' + ' ' + "wp:Interaction" + ' ;')	  
 	    ListLinkRheaID.append( g[6].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ) + '.' )	
 	    ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
+	    ListInteractionLinks.append(g[0].strip( ) + '_reaction' + '\t' + 'rdfs:subClassOf' + ' ' + g[6].strip( ) + '.')
+	    countRheaLinks = countProteinsLinks + 1
 	  else:  ##If Rhea is NOT part of the ID structure.
 	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
-	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction')
+	    #ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction')
 	    ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rdf:type' + ' ' + "wp:Interaction" + ' ;')	  
 	    ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:accession' + ' RHEA:' + g[6].strip( ) + '.' )	
 	    ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
+	    ListInteractionLinks.append(g[0].strip( ) + '_reaction' + '\t' + 'rdfs:subClassOf' + ' ' + 'RHEA:' + g[6].strip( ) + '.')
+	    countRheaLinks = countProteinsLinks + 1
 	  countRhea = countRhea +1
 	elif ('+' in g[6])|('=' in g[6]): #if no Rhea is available, but there is a reaction equation.
 	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!
@@ -378,9 +378,11 @@ for itemRheaID in ListTotal:
 	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  ListErrors.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6] + ' ' + g[18] +  '\n')
 
-##Print total number of Ensembl IDs:    
+##Print total number of Rhea IDs:    
 ListQC.append("Data format for wp:bdbRhea correctly loaded for " + str(countRhea) + " rhea interaction IDs. \n\n")  
 ListQC.append("Data format for rh:equation correctly loaded for " + str(countEquation) + " reaction formulas. \n\n")  
+##Print total number of Linked Rhea IDs to measurements:    
+ListQC.append("Data format for Rhea correctly linked for " + str(countRheaLinks) + " measurement IDs. \n\n")  
 
 ##CHEBI IDs
 countSubstrates = 0
@@ -894,6 +896,12 @@ for itemListProteinsLinks in ListProteinsLinks:
 ## Add Rhea interaction IDs for interoperability:  
 for itemListLinkRheaID in unique_ListLinkRheaID:
 	(key, val) = itemListLinkRheaID.strip('\n').split('\t')
+	AllDict.setdefault(key, [])
+	AllDict[key].append(val)	
+	
+## Add links between Rhea IDs and measurement Interactions:
+for itemListInteractionLinks in ListInteractionLinks:
+	(key, val) = itemListInteractionLinks.strip('\n').split('\t')
 	AllDict.setdefault(key, [])
 	AllDict[key].append(val)	
   
