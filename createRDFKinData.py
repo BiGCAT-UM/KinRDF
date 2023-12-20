@@ -526,7 +526,7 @@ for itemAdditionalConditions in ListTotal:
 	if(i[14].strip()=='-')|(i[14].strip()=='NA')|(i[14].strip()=='')|(i[14].strip()=='None') | (((i[17].strip()=='-')|(i[17].strip()=='NA')|(i[17].strip()=='')|(i[17].strip()=='None'))&((i[16].strip()=='-')|(i[16].strip()=='NA')|(i[16].strip()=='')|(i[16].strip()=='None'))): #Check if one of the necessary values is missing!!
 	  continue
 	else:
-	  ListAdditionalConditions.append(i[0].strip( )  + '_measurement' + '\t' + 'dcterms:description' + ' "' + i[14].strip('"') + '"@en')
+	  ListAdditionalConditions.append(i[0].strip( )  + '_measurement' + '\t' + 'rdfs:comment' + ' "' + i[14].strip('"') + '"@en')
 	  countConditions = countConditions + 1
 	  
 ListQC.append("Data format for Additional Conditions correctly loaded for " + str(countConditions) + " values. \n\n") 
