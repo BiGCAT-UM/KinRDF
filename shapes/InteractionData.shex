@@ -14,10 +14,5 @@ PREFIX sio:   <http://semanticscience.org/resource/>
   a [ wp:InteractionData ] ;
   dc:identifier IRI {1} ;
   sio:SIO_000008 IRI {1} ;
-  sio:SIO_000028 @:Enzyme {1} ;
   sio:SIO_000028 IRI +
-}
-
-:Enzyme {
-  a [ wp:Protein ]
 }
