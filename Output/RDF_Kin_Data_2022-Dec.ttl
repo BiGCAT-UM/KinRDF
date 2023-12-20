@@ -3334,117 +3334,139 @@ RHEA:14167
 	wp:bdbRhea RHEA:14167 ;
 	sio:SIO_000028 SER:1_reaction ;
 	sio:SIO_000028 SER:2_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:14167.
 
 RHEA:RHEA:47421
 	wp:bdbRhea RHEA:RHEA:47421 ;
 	sio:SIO_000028 SER:3_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:47421.
 
 RHEA:RHEA:47422
 	wp:bdbRhea RHEA:RHEA:47422 ;
 	sio:SIO_000028 SER:4_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:47422.
 
 RHEA:RHEA:47423
 	wp:bdbRhea RHEA:RHEA:47423 ;
 	sio:SIO_000028 SER:5_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:47423.
 
 RHEA:RHEA:47424
 	wp:bdbRhea RHEA:RHEA:47424 ;
 	sio:SIO_000028 SER:6_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:47424.
 
 RHEA:RHEA:47425
 	wp:bdbRhea RHEA:RHEA:47425 ;
 	sio:SIO_000028 SER:7_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:47425.
 
 RHEA:RHEA:47426
 	wp:bdbRhea RHEA:RHEA:47426 ;
 	sio:SIO_000028 SER:8_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:47426.
 
 RHEA:RHEA:47427
 	wp:bdbRhea RHEA:RHEA:47427 ;
 	sio:SIO_000028 SER:9_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:47427.
 
 RHEA:RHEA:47428
 	wp:bdbRhea RHEA:RHEA:47428 ;
 	sio:SIO_000028 SER:10_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:47428.
 
 RHEA:RHEA:47429
 	wp:bdbRhea RHEA:RHEA:47429 ;
 	sio:SIO_000028 SER:11_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:47429.
 
 RHEA:RHEA:21253
 	wp:bdbRhea RHEA:RHEA:21253 ;
 	sio:SIO_000028 SER:12_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:21253.
 
 RHEA:RHEA:21254
 	wp:bdbRhea RHEA:RHEA:21254 ;
 	sio:SIO_000028 SER:13_reaction ;
 	sio:SIO_000028 SER:29_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:21254.
 
 RHEA:RHEA:21255
 	wp:bdbRhea RHEA:RHEA:21255 ;
 	sio:SIO_000028 SER:14_reaction ;
 	sio:SIO_000028 SER:30_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:21255.
 
 RHEA:RHEA:49614
 	wp:bdbRhea RHEA:RHEA:49614 ;
 	sio:SIO_000028 SER:15_reaction ;
 	sio:SIO_000028 SER:24_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:49614.
 
 RHEA:RHEA:49615
 	wp:bdbRhea RHEA:RHEA:49615 ;
 	sio:SIO_000028 SER:16_reaction ;
 	sio:SIO_000028 SER:25_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:49615.
 
 RHEA:RHEA:49616
 	wp:bdbRhea RHEA:RHEA:49616 ;
 	sio:SIO_000028 SER:17_reaction ;
 	sio:SIO_000028 SER:26_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:49616.
 
 RHEA:RHEA:49617
 	wp:bdbRhea RHEA:RHEA:49617 ;
 	sio:SIO_000028 SER:18_reaction ;
 	sio:SIO_000028 SER:27_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:49617.
 
 RHEA:RHEA:49618
 	wp:bdbRhea RHEA:RHEA:49618 ;
 	sio:SIO_000028 SER:19_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:49618.
 
 RHEA:RHEA:49619
 	wp:bdbRhea RHEA:RHEA:49619 ;
 	sio:SIO_000028 SER:20_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:49619.
 
 RHEA:RHEA:49620
 	wp:bdbRhea RHEA:RHEA:49620 ;
 	sio:SIO_000028 SER:21_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:49620.
 
 RHEA:RHEA:49621
 	wp:bdbRhea RHEA:RHEA:49621 ;
 	sio:SIO_000028 SER:22_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:49621.
 
 RHEA:RHEA:21256
 	wp:bdbRhea RHEA:RHEA:21256 ;
 	sio:SIO_000028 SER:31_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:21256.
 
 RHEA:RHEA:23905
@@ -3453,6 +3475,7 @@ RHEA:RHEA:23905
 	sio:SIO_000028 SER:33_reaction ;
 	sio:SIO_000028 SER:34_reaction ;
 	sio:SIO_000028 SER:35_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:23905.
 
 RHEA:RHEA:10349
@@ -3467,12 +3490,14 @@ RHEA:RHEA:10349
 	sio:SIO_000028 SER:44_reaction ;
 	sio:SIO_000028 SER:45_reaction ;
 	sio:SIO_000028 SER:46_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:10349.
 
 RHEA:RHEA:13286
 	wp:bdbRhea RHEA:RHEA:13286 ;
 	sio:SIO_000028 SER:47_reaction ;
 	sio:SIO_000028 SER:48_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:13286.
 
 RHEA:RHEA:13558
@@ -3508,32 +3533,38 @@ RHEA:RHEA:13558
 	sio:SIO_000028 SER:77_reaction ;
 	sio:SIO_000028 SER:78_reaction ;
 	sio:SIO_000028 SER:79_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:13558.
 
 RHEA:RHEA:12922
 	wp:bdbRhea RHEA:RHEA:12922 ;
 	sio:SIO_000028 SER:81_reaction ;
 	sio:SIO_000028 SER:82_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:12922.
 
 RHEA:RHEA:24065
 	wp:bdbRhea RHEA:RHEA:24065 ;
 	sio:SIO_000028 SER:83_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24065.
 
 RHEA:RHEA:13186
 	wp:bdbRhea RHEA:RHEA:13186 ;
 	sio:SIO_000028 SER:84_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:13186.
 
 RHEA:RHEA:18966
 	wp:bdbRhea RHEA:RHEA:18966 ;
 	sio:SIO_000028 SER:85_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:18966.
 
 RHEA:RHEA:19866
 	wp:bdbRhea RHEA:RHEA:19866 ;
 	sio:SIO_000028 SER:86_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:19866.
 
 RHEA:RHEA:31240
@@ -3547,21 +3578,25 @@ RHEA:RHEA:31240
 	sio:SIO_000028 SER:93_reaction ;
 	sio:SIO_000028 SER:94_reaction ;
 	sio:SIO_000028 SER:95_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:31240.
 
 RHEA:RHEA:18258
 	wp:bdbRhea RHEA:RHEA:18258 ;
 	sio:SIO_000028 SER:96_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:18258.
 
 RHEA:RHEA:25577
 	wp:bdbRhea RHEA:RHEA:25577 ;
 	sio:SIO_000028 SER:97_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:25577.
 
 RHEA:RHEA:22586
 	wp:bdbRhea RHEA:RHEA:22586 ;
 	sio:SIO_000028 SER:98_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:22586.
 
 RHEA:21296
@@ -3569,6 +3604,7 @@ RHEA:21296
 	sio:SIO_000028 SER:99_reaction ;
 	sio:SIO_000028 SER:100_reaction ;
 	sio:SIO_000028 SER:101_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:21296.
 
 RHEA:37965
@@ -3582,6 +3618,7 @@ RHEA:37965
 	sio:SIO_000028 SER:108_reaction ;
 	sio:SIO_000028 SER:109_reaction ;
 	sio:SIO_000028 SER:110_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:37965.
 
 RHEA:13554
@@ -3590,6 +3627,7 @@ RHEA:13554
 	sio:SIO_000028 SER:112_reaction ;
 	sio:SIO_000028 SER:113_reaction ;
 	sio:SIO_000028 SER:114_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:13554.
 
 RHEA:23539
@@ -3598,24 +3636,28 @@ RHEA:23539
 	sio:SIO_000028 SER:116_reaction ;
 	sio:SIO_000028 SER:117_reaction ;
 	sio:SIO_000028 SER:118_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:23539.
 
 RHEA:22169
 	wp:bdbRhea RHEA:22169 ;
 	sio:SIO_000028 SER:119_reaction ;
 	sio:SIO_000028 SER:120_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:22169.
 
 RHEA:22170
 	wp:bdbRhea RHEA:22170 ;
 	sio:SIO_000028 SER:121_reaction ;
 	sio:SIO_000028 SER:122_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:22170.
 
 RHEA:41732
 	wp:bdbRhea RHEA:41732 ;
 	sio:SIO_000028 SER:123_reaction ;
 	sio:SIO_000028 SER:124_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:41732.
 
 RHEA:18550
@@ -3625,11 +3667,13 @@ RHEA:18550
 	sio:SIO_000028 SER:127_reaction ;
 	sio:SIO_000028 SER:129_reaction ;
 	sio:SIO_000028 SER:130_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:18550.
 
 RHEA:RHEA:34281
 	wp:bdbRhea RHEA:RHEA:34281 ;
 	sio:SIO_000028 SER:136_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:34281.
 
 RHEA:RHEA:13134
@@ -3637,29 +3681,34 @@ RHEA:RHEA:13134
 	sio:SIO_000028 SER:137_reaction ;
 	sio:SIO_000028 SER:138_reaction ;
 	sio:SIO_000028 SER:139_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:13134.
 
 RHEA:RHEA:13290
 	wp:bdbRhea RHEA:RHEA:13290 ;
 	sio:SIO_000028 SER:140_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:13290.
 
 RHEA:RHEA:23381
 	wp:bdbRhea RHEA:RHEA:23381 ;
 	sio:SIO_000028 SER:141_reaction ;
 	sio:SIO_000028 SER:142_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:23381.
 
 RHEA:RHEA:13866
 	wp:bdbRhea RHEA:RHEA:13866 ;
 	sio:SIO_000028 SER:143_reaction ;
 	sio:SIO_000028 SER:144_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:13866.
 
 RHEA:RHEA:29516
 	wp:bdbRhea RHEA:RHEA:29516 ;
 	sio:SIO_000028 SER:145_reaction ;
 	sio:SIO_000028 SER:146_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:29516.
 
 RHEA:RHEA:29523
@@ -3667,605 +3716,724 @@ RHEA:RHEA:29523
 	sio:SIO_000028 SER:147_reaction ;
 	sio:SIO_000028 SER:148_reaction ;
 	sio:SIO_000028 SER:149_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:29523.
 
 RHEA:46752
 	wp:bdbRhea RHEA:46752 ;
 	sio:SIO_000028 SER:150_reaction ;
 	sio:SIO_000028 SER:151_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:46752.
 
 RHEA:21813
 	wp:bdbRhea RHEA:21813 ;
 	sio:SIO_000028 SER:152_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:21813.
 
 RHEA:46401
 	wp:bdbRhea RHEA:46401 ;
 	sio:SIO_000028 SER:154_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:46401.
 
 RHEA:46093
 	wp:bdbRhea RHEA:46093 ;
 	sio:SIO_000028 SER:155_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:46093.
 
 RHEA:34632
 	wp:bdbRhea RHEA:34632 ;
 	sio:SIO_000028 SER:160_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:34632.
 
 RHEA:40232
 	wp:bdbRhea RHEA:40232 ;
 	sio:SIO_000028 SER:161_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:40232.
 
 RHEA:40233
 	wp:bdbRhea RHEA:40233 ;
 	sio:SIO_000028 SER:162_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:40233.
 
 RHEA:11897
 	wp:bdbRhea RHEA:11897 ;
 	sio:SIO_000028 SER:164_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:11897.
 
 RHEA:46641
 	wp:bdbRhea RHEA:46641 ;
 	sio:SIO_000028 SER:166_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:46641.
 
 RHEA:46633
 	wp:bdbRhea RHEA:46633 ;
 	sio:SIO_000028 SER:167_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:46633.
 
 RHEA:40456
 	wp:bdbRhea RHEA:40456 ;
 	sio:SIO_000028 SER:173_reaction ;
 	sio:SIO_000028 SER:174_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:40456.
 
 RHEA:46729
 	wp:bdbRhea RHEA:46729 ;
 	sio:SIO_000028 SER:176_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:46729.
 
 RHEA:31513
 	wp:bdbRhea RHEA:31513 ;
 	sio:SIO_000028 SER:177_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:31513.
 
 RHEA:23533
 	wp:bdbRhea RHEA:23533 ;
 	sio:SIO_000028 SER:178_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:23533.
 
 RHEA:49785
 	wp:bdbRhea RHEA:49785 ;
 	sio:SIO_000028 SER:179_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:49785.
 
 RHEA:49789
 	wp:bdbRhea RHEA:49789 ;
 	sio:SIO_000028 SER:180_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:49789.
 
 RHEA:47101
 	wp:bdbRhea RHEA:47101 ;
 	sio:SIO_000028 SER:181_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:47101.
 
 RHEA:14002
 	wp:bdbRhea RHEA:14002 ;
 	sio:SIO_000028 SER:182_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:14002.
 
 RHEA:47089
 	wp:bdbRhea RHEA:47089 ;
 	sio:SIO_000028 SER:188_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:47089.
 
 RHEA:25163
 	wp:bdbRhea RHEA:25163 ;
 	sio:SIO_000028 SER:257_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:25163.
 
 RHEA:10657
 	wp:bdbRhea RHEA:10657 ;
 	sio:SIO_000028 SER:258_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:10657.
 
 RHEA:13201
 	wp:bdbRhea RHEA:13201 ;
 	sio:SIO_000028 SER:259_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:13201.
 
 RHEA:17160
 	wp:bdbRhea RHEA:17160 ;
 	sio:SIO_000028 SER:260_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:17160.
 
 RHEA:15094
 	wp:bdbRhea RHEA:15094 ;
 	sio:SIO_000028 SER:261_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:15094.
 
 RHEA:15450
 	wp:bdbRhea RHEA:15450 ;
 	sio:SIO_000028 SER:262_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:15450.
 
 RHEA:16190
 	wp:bdbRhea RHEA:16190 ;
 	sio:SIO_000028 SER:263_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:16190.
 
 RHEA:10245
 	wp:bdbRhea RHEA:10245 ;
 	sio:SIO_000028 SER:264_reaction ;
 	sio:SIO_000028 SER:265_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:10245.
 
 RHEA:RHEA:35740
 	wp:bdbRhea RHEA:RHEA:35740 ;
 	sio:SIO_000028 SER:266_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35740.
 
 RHEA:RHEA:35741
 	wp:bdbRhea RHEA:RHEA:35741 ;
 	sio:SIO_000028 SER:267_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35741.
 
 RHEA:RHEA:35742
 	wp:bdbRhea RHEA:RHEA:35742 ;
 	sio:SIO_000028 SER:268_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35742.
 
 RHEA:RHEA:35743
 	wp:bdbRhea RHEA:RHEA:35743 ;
 	sio:SIO_000028 SER:269_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35743.
 
 RHEA:RHEA:35744
 	wp:bdbRhea RHEA:RHEA:35744 ;
 	sio:SIO_000028 SER:270_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35744.
 
 RHEA:RHEA:35745
 	wp:bdbRhea RHEA:RHEA:35745 ;
 	sio:SIO_000028 SER:271_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35745.
 
 RHEA:RHEA:35746
 	wp:bdbRhea RHEA:RHEA:35746 ;
 	sio:SIO_000028 SER:272_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35746.
 
 RHEA:RHEA:35747
 	wp:bdbRhea RHEA:RHEA:35747 ;
 	sio:SIO_000028 SER:273_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35747.
 
 RHEA:RHEA:35748
 	wp:bdbRhea RHEA:RHEA:35748 ;
 	sio:SIO_000028 SER:274_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35748.
 
 RHEA:RHEA:35749
 	wp:bdbRhea RHEA:RHEA:35749 ;
 	sio:SIO_000028 SER:275_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35749.
 
 RHEA:RHEA:35750
 	wp:bdbRhea RHEA:RHEA:35750 ;
 	sio:SIO_000028 SER:276_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35750.
 
 RHEA:RHEA:35751
 	wp:bdbRhea RHEA:RHEA:35751 ;
 	sio:SIO_000028 SER:277_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35751.
 
 RHEA:RHEA:35752
 	wp:bdbRhea RHEA:RHEA:35752 ;
 	sio:SIO_000028 SER:278_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35752.
 
 RHEA:RHEA:35753
 	wp:bdbRhea RHEA:RHEA:35753 ;
 	sio:SIO_000028 SER:279_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:35753.
 
 RHEA:RHEA:24077
 	wp:bdbRhea RHEA:RHEA:24077 ;
 	sio:SIO_000028 SER:281_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24077.
 
 RHEA:RHEA:24078
 	wp:bdbRhea RHEA:RHEA:24078 ;
 	sio:SIO_000028 SER:282_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24078.
 
 RHEA:RHEA:24079
 	wp:bdbRhea RHEA:RHEA:24079 ;
 	sio:SIO_000028 SER:283_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24079.
 
 RHEA:RHEA:24080
 	wp:bdbRhea RHEA:RHEA:24080 ;
 	sio:SIO_000028 SER:284_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24080.
 
 RHEA:RHEA:24081
 	wp:bdbRhea RHEA:RHEA:24081 ;
 	sio:SIO_000028 SER:285_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24081.
 
 RHEA:RHEA:24082
 	wp:bdbRhea RHEA:RHEA:24082 ;
 	sio:SIO_000028 SER:286_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24082.
 
 RHEA:RHEA:24083
 	wp:bdbRhea RHEA:RHEA:24083 ;
 	sio:SIO_000028 SER:287_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24083.
 
 RHEA:RHEA:24084
 	wp:bdbRhea RHEA:RHEA:24084 ;
 	sio:SIO_000028 SER:288_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24084.
 
 RHEA:RHEA:24085
 	wp:bdbRhea RHEA:RHEA:24085 ;
 	sio:SIO_000028 SER:289_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24085.
 
 RHEA:RHEA:24086
 	wp:bdbRhea RHEA:RHEA:24086 ;
 	sio:SIO_000028 SER:290_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24086.
 
 RHEA:RHEA:24087
 	wp:bdbRhea RHEA:RHEA:24087 ;
 	sio:SIO_000028 SER:291_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24087.
 
 RHEA:RHEA:24088
 	wp:bdbRhea RHEA:RHEA:24088 ;
 	sio:SIO_000028 SER:292_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:24088.
 
 RHEA:RHEA:50237
 	wp:bdbRhea RHEA:RHEA:50237 ;
 	sio:SIO_000028 SER:296_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50237.
 
 RHEA:RHEA:50238
 	wp:bdbRhea RHEA:RHEA:50238 ;
 	sio:SIO_000028 SER:297_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50238.
 
 RHEA:RHEA:50239
 	wp:bdbRhea RHEA:RHEA:50239 ;
 	sio:SIO_000028 SER:298_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50239.
 
 RHEA:RHEA:50240
 	wp:bdbRhea RHEA:RHEA:50240 ;
 	sio:SIO_000028 SER:299_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50240.
 
 RHEA:RHEA:50241
 	wp:bdbRhea RHEA:RHEA:50241 ;
 	sio:SIO_000028 SER:300_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50241.
 
 RHEA:RHEA:50242
 	wp:bdbRhea RHEA:RHEA:50242 ;
 	sio:SIO_000028 SER:301_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50242.
 
 RHEA:RHEA:50243
 	wp:bdbRhea RHEA:RHEA:50243 ;
 	sio:SIO_000028 SER:302_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50243.
 
 RHEA:RHEA:50244
 	wp:bdbRhea RHEA:RHEA:50244 ;
 	sio:SIO_000028 SER:303_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50244.
 
 RHEA:RHEA:50245
 	wp:bdbRhea RHEA:RHEA:50245 ;
 	sio:SIO_000028 SER:304_reaction ;
 	sio:SIO_000028 SER:328_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50245.
 
 RHEA:RHEA:50246
 	wp:bdbRhea RHEA:RHEA:50246 ;
 	sio:SIO_000028 SER:305_reaction ;
 	sio:SIO_000028 SER:329_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50246.
 
 RHEA:RHEA:46309
 	wp:bdbRhea RHEA:RHEA:46309 ;
 	sio:SIO_000028 SER:306_reaction ;
 	sio:SIO_000028 SER:324_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46309.
 
 RHEA:RHEA:46310
 	wp:bdbRhea RHEA:RHEA:46310 ;
 	sio:SIO_000028 SER:307_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46310.
 
 RHEA:RHEA:46311
 	wp:bdbRhea RHEA:RHEA:46311 ;
 	sio:SIO_000028 SER:308_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46311.
 
 RHEA:RHEA:46312
 	wp:bdbRhea RHEA:RHEA:46312 ;
 	sio:SIO_000028 SER:309_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46312.
 
 RHEA:RHEA:46313
 	wp:bdbRhea RHEA:RHEA:46313 ;
 	sio:SIO_000028 SER:310_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46313.
 
 RHEA:RHEA:46314
 	wp:bdbRhea RHEA:RHEA:46314 ;
 	sio:SIO_000028 SER:311_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46314.
 
 RHEA:RHEA:46315
 	wp:bdbRhea RHEA:RHEA:46315 ;
 	sio:SIO_000028 SER:312_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46315.
 
 RHEA:RHEA:46316
 	wp:bdbRhea RHEA:RHEA:46316 ;
 	sio:SIO_000028 SER:313_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46316.
 
 RHEA:RHEA:46317
 	wp:bdbRhea RHEA:RHEA:46317 ;
 	sio:SIO_000028 SER:314_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46317.
 
 RHEA:RHEA:46318
 	wp:bdbRhea RHEA:RHEA:46318 ;
 	sio:SIO_000028 SER:315_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46318.
 
 RHEA:RHEA:46319
 	wp:bdbRhea RHEA:RHEA:46319 ;
 	sio:SIO_000028 SER:316_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46319.
 
 RHEA:RHEA:46320
 	wp:bdbRhea RHEA:RHEA:46320 ;
 	sio:SIO_000028 SER:317_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46320.
 
 RHEA:RHEA:46321
 	wp:bdbRhea RHEA:RHEA:46321 ;
 	sio:SIO_000028 SER:318_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46321.
 
 RHEA:RHEA:46322
 	wp:bdbRhea RHEA:RHEA:46322 ;
 	sio:SIO_000028 SER:319_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46322.
 
 RHEA:RHEA:46323
 	wp:bdbRhea RHEA:RHEA:46323 ;
 	sio:SIO_000028 SER:320_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46323.
 
 RHEA:RHEA:46324
 	wp:bdbRhea RHEA:RHEA:46324 ;
 	sio:SIO_000028 SER:321_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46324.
 
 RHEA:RHEA:46325
 	wp:bdbRhea RHEA:RHEA:46325 ;
 	sio:SIO_000028 SER:322_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46325.
 
 RHEA:RHEA:46326
 	wp:bdbRhea RHEA:RHEA:46326 ;
 	sio:SIO_000028 SER:323_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:46326.
 
 RHEA:RHEA:14754
 	wp:bdbRhea RHEA:RHEA:14754 ;
 	sio:SIO_000028 SER:325_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:14754.
 
 RHEA:RHEA:14755
 	wp:bdbRhea RHEA:RHEA:14755 ;
 	sio:SIO_000028 SER:326_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:14755.
 
 RHEA:RHEA:14756
 	wp:bdbRhea RHEA:RHEA:14756 ;
 	sio:SIO_000028 SER:327_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:14756.
 
 RHEA:RHEA:50247
 	wp:bdbRhea RHEA:RHEA:50247 ;
 	sio:SIO_000028 SER:330_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50247.
 
 RHEA:RHEA:50248
 	wp:bdbRhea RHEA:RHEA:50248 ;
 	sio:SIO_000028 SER:331_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:50248.
 
 RHEA:RHEA:15630
 	wp:bdbRhea RHEA:RHEA:15630 ;
 	sio:SIO_000028 SER:343_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:15630.
 
 RHEA:RHEA:15631
 	wp:bdbRhea RHEA:RHEA:15631 ;
 	sio:SIO_000028 SER:344_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:15631.
 
 RHEA:RHEA:15842
 	wp:bdbRhea RHEA:RHEA:15842 ;
 	sio:SIO_000028 SER:345_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:15842.
 
 RHEA:RHEA:15843
 	wp:bdbRhea RHEA:RHEA:15843 ;
 	sio:SIO_000028 SER:346_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:15843.
 
 RHEA:RHEA:15844
 	wp:bdbRhea RHEA:RHEA:15844 ;
 	sio:SIO_000028 SER:347_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:15844.
 
 RHEA:RHEA:11390
 	wp:bdbRhea RHEA:RHEA:11390 ;
 	sio:SIO_000028 SER:348_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:11390.
 
 RHEA:RHEA:11391
 	wp:bdbRhea RHEA:RHEA:11391 ;
 	sio:SIO_000028 SER:349_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:11391.
 
 RHEA:RHEA:11392
 	wp:bdbRhea RHEA:RHEA:11392 ;
 	sio:SIO_000028 SER:350_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:11392.
 
 RHEA:RHEA:11393
 	wp:bdbRhea RHEA:RHEA:11393 ;
 	sio:SIO_000028 SER:351_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:11393.
 
 RHEA:RHEA:11394
 	wp:bdbRhea RHEA:RHEA:11394 ;
 	sio:SIO_000028 SER:352_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:11394.
 
 RHEA:RHEA:11395
 	wp:bdbRhea RHEA:RHEA:11395 ;
 	sio:SIO_000028 SER:353_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:11395.
 
 RHEA:RHEA:11396
 	wp:bdbRhea RHEA:RHEA:11396 ;
 	sio:SIO_000028 SER:354_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:11396.
 
 RHEA:RHEA:11397
 	wp:bdbRhea RHEA:RHEA:11397 ;
 	sio:SIO_000028 SER:355_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:11397.
 
 RHEA:RHEA:11398
 	wp:bdbRhea RHEA:RHEA:11398 ;
 	sio:SIO_000028 SER:356_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:11398.
 
 RHEA:RHEA:53117
 	wp:bdbRhea RHEA:RHEA:53117 ;
 	sio:SIO_000028 SER:357_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:53117.
 
 RHEA:RHEA:53118
 	wp:bdbRhea RHEA:RHEA:53118 ;
 	sio:SIO_000028 SER:358_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:53118.
 
 RHEA:RHEA:53119
 	wp:bdbRhea RHEA:RHEA:53119 ;
 	sio:SIO_000028 SER:359_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:53119.
 
 RHEA:RHEA:54385
 	wp:bdbRhea RHEA:RHEA:54385 ;
 	sio:SIO_000028 SER:360_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:54385.
 
 RHEA:RHEA:54386
 	wp:bdbRhea RHEA:RHEA:54386 ;
 	sio:SIO_000028 SER:361_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:54386.
 
 RHEA:RHEA:54387
 	wp:bdbRhea RHEA:RHEA:54387 ;
 	sio:SIO_000028 SER:362_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:54387.
 
 RHEA:24249
 	wp:bdbRhea RHEA:24249 ;
 	sio:SIO_000028 SER:366_reaction ;
 	sio:SIO_000028 SER:367_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:24249.
 
 RHEA:22853
 	wp:bdbRhea RHEA:22853 ;
 	sio:SIO_000028 SER:368_reaction ;
 	sio:SIO_000028 SER:369_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:22853.
 
 RHEA:24943
 	wp:bdbRhea RHEA:24943 ;
 	sio:SIO_000028 SER:370_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:24943.
 
 RHEA:21826
 	wp:bdbRhea RHEA:21826 ;
 	sio:SIO_000028 SER:371_reaction ;
 	sio:SIO_000028 SER:372_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:21826.
 
 RHEA:11533
 	wp:bdbRhea RHEA:11533 ;
 	sio:SIO_000028 SER:373_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:11533.
 
 RHEA:25311
 	wp:bdbRhea RHEA:25311 ;
 	sio:SIO_000028 SER:374_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:25311.
 
 RHEA:RHEA:10994
 	wp:bdbRhea RHEA:RHEA:10994 ;
 	sio:SIO_000028 SER:375_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:10994.
 
 RHEA:RHEA:17907
 	wp:bdbRhea RHEA:RHEA:17907 ;
 	sio:SIO_000028 SER:376_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:17907.
 
 RHEA:RHEA:18169
 	wp:bdbRhea RHEA:RHEA:18169 ;
 	sio:SIO_000028 SER:377_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:RHEA:18169.
 
 RHEA:52512
 	wp:bdbRhea RHEA:52512 ;
 	sio:SIO_000028 SER:378_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:52512.
 
 RHEA:14838
 	wp:bdbRhea RHEA:14838 ;
 	sio:SIO_000028 SER:379_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:14838.
 
 RHEA:30404
 	wp:bdbRhea RHEA:30404 ;
 	sio:SIO_000028 SER:380_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:30404.
 
 RHEA:11149
@@ -4273,11 +4441,13 @@ RHEA:11149
 	sio:SIO_000028 SER:382_reaction ;
 	sio:SIO_000028 SER:384_reaction ;
 	sio:SIO_000028 SER:385_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:11149.
 
 RHEA:16374
 	wp:bdbRhea RHEA:16374 ;
 	sio:SIO_000028 SER:386_reaction ;
+	rdf:type wp:Interaction ;
 	rh:accession RHEA:16374.
 
 CHEBI:16953

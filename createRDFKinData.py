@@ -335,7 +335,8 @@ for itemRheaID in ListTotal:
 	  continue
 	elif(result_rhea): ##regex check
 	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
-	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction') 
+	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction')
+	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rdf:type' + ' ' + "wp:Interaction" + ' ;')	  
 	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:accession' + ' RHEA:' + g[6].strip( ) + '.' )	
 	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  countRhea = countRhea +1
