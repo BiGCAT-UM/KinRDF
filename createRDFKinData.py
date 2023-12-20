@@ -543,8 +543,13 @@ ListCommonLatinOrganismsWP = ['Bos taurus', 'Canis familiaris', 'Danio rerio', '
 ListCommonEnglishOrganismsWP = ['cow', 'dog', 'zebrafish', 'horse', 'chicken', 'human', 'mouse', 'chimpanzee', 'rat', 'pig', 'E. coli'] 
 ##TODO: add mouse, rat as separate entries (list with multiple values to compare against 1 key)
 
+ListTaxonIDs = ['9913', '9615', '7955', '9796', '9031', '9606', '10090', '9598', '10116', '9823', '562']
+#  ?pathway wp:organism ?organism .
+#  filter(contains(str(?organism),"9606")) 
+
 # using dictionary comprehension to convert lists to dictionary for conversion of English to Latin later.
 Dict_CommonOrganismsWP = {ListCommonEnglishOrganismsWP[i]: ListCommonLatinOrganismsWP[i] for i in range(len(ListCommonEnglishOrganismsWP))}
+Dict_TaxonIDs = {ListCommonLatinOrganismsWP[i]: ListTaxonIDs[i] for i in range(len(ListCommonLatinOrganismsWP))}
 
 ##Other data currently present in datasets (not modeled in RDF):
 ## Bacteria
@@ -573,10 +578,16 @@ for itemOrganism in ListTotal:
 	      if value.strip().lower().replace(" ", "") == j[15].lower().strip().replace(" ", ""):
 	        ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
 	        countOrganisms = countOrganisms + 1
+	        for keys, values in Dict_TaxonIDs.items():
+	          if keys.strip().lower().replace(" ", "") == j[15].lower().strip().replace(" ", ""):
+	            ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wd:P703' + ' "' + Dict_TaxonIDs[keys] + '"') #found in taxon
 	  elif(j[15].lower().strip().replace(" ", "") in [x.lower().replace(" ", "") for x in ListCommonEnglishOrganismsWP]):  ##Convert English to Latin name.
 	    for key,value in Dict_CommonOrganismsWP.items():
 	      if key.strip().lower().replace(" ", "") == j[15].lower().strip().replace(" ", ""):
 	        ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wp:organismName' + ' "' + Dict_CommonOrganismsWP[key] + '"^^xsd:string')
+	        for keys, values in Dict_TaxonIDs.items():
+	          if keys.strip().lower().replace(" ", "") == value.strip().lower().replace(" ", ""):
+	            ListOrganism.append(j[0].strip( ) + '_measurement'  + '\t' + 'wd:P703' + ' "' + Dict_TaxonIDs[keys] + '"') #found in taxon
 	    countOrganisms = countOrganisms + 1
 	  else:
 	    ListErrors.append("CHECK: Name for Organism is not recognized, check original data for: "+ j[0] + " : " + j[15] + ' ' + j[18] + '\n')
@@ -958,6 +969,7 @@ RDF_Kin_data.write("@prefix up:   <http://purl.uniprot.org/core/> . \n".encode()
 RDF_Kin_data.write("@prefix ECcode:   <https://identifiers.org/ec-code/> . \n".encode())
 RDF_Kin_data.write("@prefix En_id:   <http://identifiers.org/ensembl/> . \n".encode())
 RDF_Kin_data.write("@prefix pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/> . \n".encode()) #For WPRDF interoperability
+RDF_Kin_data.write("@prefix NCBI:  <http://purl.obolibrary.org/obo/NCBITaxon_> . \n".encode()) #For NCBI Taxon IDs
 RDF_Kin_data.write("@prefix wd: <http://www.wikidata.org/entity/> . \n".encode()) #From WikiData
 RDF_Kin_data.write("@prefix wdt: <http://www.wikidata.org/prop/direct/> . \n".encode()) #From WikiData
 RDF_Kin_data.write("@prefix sio: <http://semanticscience.org/resource/> . \n".encode()) #Semanticscience Integrated Ontology
