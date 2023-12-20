@@ -1,6 +1,7 @@
 name: Python Script Test
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - KineticsData/*
