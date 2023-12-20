@@ -334,11 +334,18 @@ for itemRheaID in ListTotal:
 	  ListErrors.append("CHECK: Data format for Rhea contains Reactome IDs, check original data for: "+ g[0] + ' : ' + g[6] + ' ' + g[18] + '\n')
 	  continue
 	elif(result_rhea): ##regex check
-	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
-	  ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction')
-	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rdf:type' + ' ' + "wp:Interaction" + ' ;')	  
-	  ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:accession' + ' RHEA:' + g[6].strip( ) + '.' )	
-	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
+	  if ( "rhea" in g[6].strip().lower() ) : ##If Rhea is part of the ID structure.
+	    ListRheaID.append( g[6].strip( ) + '\t' + 'wp:bdbRhea' + ' ' + g[6].strip( ) ) 
+	    ListRheaID.append( g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction')
+	    ListLinkRheaID.append( g[6].strip( ) + '\t' + 'rdf:type' + ' ' + "wp:Interaction" + ' ;')	  
+	    ListLinkRheaID.append( g[6].strip( ) + '\t' + 'rh:accession' + ' ' + g[6].strip( ) + '.' )	
+	    ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
+	  else:  ##If Rhea is NOT part of the ID structure.
+	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'wp:bdbRhea'  + ' RHEA:' + g[6].strip( ) ) 
+	    ListRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'sio:SIO_000028'  + ' ' + g[0].strip( ) + '_reaction')
+	    ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rdf:type' + ' ' + "wp:Interaction" + ' ;')	  
+	    ListLinkRheaID.append('RHEA:' + g[6].strip( ) + '\t' + 'rh:accession' + ' RHEA:' + g[6].strip( ) + '.' )	
+	    ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
 	  countRhea = countRhea +1
 	elif ('+' in g[6])|('=' in g[6]): #if no Rhea is available, but there is a reaction equation.
 	  ListRheaID.append(g[0].strip( ) + '\t' + 'rh:equation' + ' "' + g[6].strip( ) + '"^^xsd:string') ##Missing directional info!!
