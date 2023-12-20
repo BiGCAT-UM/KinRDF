@@ -285,7 +285,7 @@ for itemUniprot in ListTotal:
 	  continue
 	else:
 	  ListUniprot.append('uniprot:' + e[4].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Protein")
-	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'sio:SIO_000028' + ' ' + e[0].strip( ) + '_enzyme')
+	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'sio:SIO_000028' + ' ' + e[0].strip( ) + '_enzyme') ##TODO
 	  ##WP IRIs:
 	  ListUniprot.append('uniprot:' + e[4].strip( )  + '\t' + 'wp:bdbUniprot' + ' uniprot:' + e[4].strip( )) 
 	  ##Uniprot IRIs for UniProt RDF link: "uniprotkb:P05067 a up:Protein ;"
@@ -364,6 +364,7 @@ for itemSubstrate in ListTotal:
 	  continue
 	elif(result_chebi):
 	  ListSubstrate.append('CHEBI:' + h[7].strip( ) +'\t' + 'sio:SIO_000028' + ' ' + h[0].strip() + '_substrate')
+	  ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Metabolite" + ' ;')
 	  ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
 	  countSubstrates = countSubstrates + 1
 	else:

@@ -1,4 +1,4 @@
-@prefix SER: <http://vocabularies.wikipathways.org/kin#> . 
+@prefix SER: <http://bigcat-um.github.io/KinRDF/kin#> . 
 @prefix dc: <http://purl.org/dc/elements/1.1/> . 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
@@ -4283,6 +4283,7 @@ RHEA:16374
 CHEBI:16953
 	sio:SIO_000028 SER:1_substrate ;
 	sio:SIO_000028 SER:2_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16953.
 
 CHEBI:15524
@@ -4293,11 +4294,13 @@ CHEBI:15524
 	sio:SIO_000028 SER:7_substrate ;
 	sio:SIO_000028 SER:8_substrate ;
 	sio:SIO_000028 SER:9_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 15524.
 
 CHEBI:24311
 	sio:SIO_000028 SER:10_substrate ;
 	sio:SIO_000028 SER:11_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 24311.
 
 CHEBI:17084
@@ -4307,6 +4310,7 @@ CHEBI:17084
 	sio:SIO_000028 SER:29_substrate ;
 	sio:SIO_000028 SER:30_substrate ;
 	sio:SIO_000028 SER:31_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17084.
 
 CHEBI:30915
@@ -4322,6 +4326,7 @@ CHEBI:30915
 	sio:SIO_000028 SER:25_substrate ;
 	sio:SIO_000028 SER:26_substrate ;
 	sio:SIO_000028 SER:27_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 30915.
 
 CHEBI:16856
@@ -4329,6 +4334,7 @@ CHEBI:16856
 	sio:SIO_000028 SER:33_substrate ;
 	sio:SIO_000028 SER:34_substrate ;
 	sio:SIO_000028 SER:35_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16856.
 
 CHEBI:16010
@@ -4342,11 +4348,13 @@ CHEBI:16010
 	sio:SIO_000028 SER:44_substrate ;
 	sio:SIO_000028 SER:45_substrate ;
 	sio:SIO_000028 SER:46_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16010.
 
 CHEBI:14321
 	sio:SIO_000028 SER:47_substrate ;
 	sio:SIO_000028 SER:48_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 14321.
 
 CHEBI:17515
@@ -4354,6 +4362,7 @@ CHEBI:17515
 	sio:SIO_000028 SER:77_substrate ;
 	sio:SIO_000028 SER:78_substrate ;
 	sio:SIO_000028 SER:79_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17515.
 
 CHEBI:15428
@@ -4385,40 +4394,49 @@ CHEBI:15428
 	sio:SIO_000028 SER:75_substrate ;
 	sio:SIO_000028 SER:76_substrate ;
 	sio:SIO_000028 SER:259_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 15428.
 
 CHEBI:4047
 	sio:SIO_000028 SER:80_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 4047.
 
 CHEBI:CHEBI:15428
 	sio:SIO_000028 SER:81_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15428.
 
 CHEBI:CHEBI:15380
 	sio:SIO_000028 SER:82_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15380.
 
 CHEBI:CHEBI:17549
 	sio:SIO_000028 SER:83_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17549.
 
 CHEBI:CHEBI:17381
 	sio:SIO_000028 SER:84_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:17381.
 
 CHEBI:CHEBI:16645
 	sio:SIO_000028 SER:85_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:16645.
 
 CHEBI:CHEBI:15437
 	sio:SIO_000028 SER:86_substrate ;
 	sio:SIO_000028 SER:95_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15437.
 
 CHEBI:CHEBI:28766
 	sio:SIO_000028 SER:87_substrate ;
 	sio:SIO_000028 SER:94_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:28766.
 
 CHEBI:CHEBI:89912
@@ -4428,18 +4446,22 @@ CHEBI:CHEBI:89912
 	sio:SIO_000028 SER:91_substrate ;
 	sio:SIO_000028 SER:92_substrate ;
 	sio:SIO_000028 SER:93_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:89912.
 
 CHEBI:CHEBI:15439
 	sio:SIO_000028 SER:96_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15439.
 
 CHEBI:CHEBI:15435
 	sio:SIO_000028 SER:97_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15435.
 
 CHEBI:CHEBI:15430
 	sio:SIO_000028 SER:98_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:15430.
 
 CHEBI:28260
@@ -4459,16 +4481,19 @@ CHEBI:28260
 	sio:SIO_000028 SER:112_substrate ;
 	sio:SIO_000028 SER:113_substrate ;
 	sio:SIO_000028 SER:114_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 28260.
 
 CHEBI:58601
 	sio:SIO_000028 SER:115_substrate ;
 	sio:SIO_000028 SER:116_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 58601.
 
 CHEBI:14314
 	sio:SIO_000028 SER:117_substrate ;
 	sio:SIO_000028 SER:118_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 14314.
 
 CHEBI:18066
@@ -4479,11 +4504,13 @@ CHEBI:18066
 	sio:SIO_000028 SER:127_substrate ;
 	sio:SIO_000028 SER:129_substrate ;
 	sio:SIO_000028 SER:130_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 18066.
 
 CHEBI:18307
 	sio:SIO_000028 SER:121_substrate ;
 	sio:SIO_000028 SER:122_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 18307.
 
 CHEBI:28087
@@ -4493,47 +4520,56 @@ CHEBI:28087
 	sio:SIO_000028 SER:133_substrate ;
 	sio:SIO_000028 SER:134_substrate ;
 	sio:SIO_000028 SER:135_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 28087.
 
 CHEBI:67132
 	sio:SIO_000028 SER:136_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 67132.
 
 CHEBI:16091
 	sio:SIO_000028 SER:137_substrate ;
 	sio:SIO_000028 SER:138_substrate ;
 	sio:SIO_000028 SER:139_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16091.
 
 CHEBI:4691
 	sio:SIO_000028 SER:140_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 4691.
 
 CHEBI:58427
 	sio:SIO_000028 SER:141_substrate ;
 	sio:SIO_000028 SER:142_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 58427.
 
 CHEBI:57269
 	sio:SIO_000028 SER:143_substrate ;
 	sio:SIO_000028 SER:144_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 57269.
 
 CHEBI:58472
 	sio:SIO_000028 SER:145_substrate ;
 	sio:SIO_000028 SER:146_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 58472.
 
 CHEBI:132511
 	sio:SIO_000028 SER:147_substrate ;
 	sio:SIO_000028 SER:148_substrate ;
 	sio:SIO_000028 SER:149_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 132511.
 
 CHEBI:17899
 	sio:SIO_000028 SER:150_substrate ;
 	sio:SIO_000028 SER:151_substrate ;
 	sio:SIO_000028 SER:166_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17899.
 
 CHEBI:16113
@@ -4553,132 +4589,164 @@ CHEBI:16113
 	sio:SIO_000028 SER:277_substrate ;
 	sio:SIO_000028 SER:278_substrate ;
 	sio:SIO_000028 SER:279_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16113.
 
 CHEBI:81014
 	sio:SIO_000028 SER:153_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 81014.
 
 CHEBI:17703
 	sio:SIO_000028 SER:155_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17703.
 
 CHEBI:28540
 	sio:SIO_000028 SER:156_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 28540.
 
 CHEBI:28047
 	sio:SIO_000028 SER:157_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 28047.
 
 CHEBI:27428
 	sio:SIO_000028 SER:159_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 27428.
 
 CHEBI:16496
 	sio:SIO_000028 SER:160_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16496.
 
 CHEBI:17278
 	sio:SIO_000028 SER:161_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17278.
 
 CHEBI:16466
 	sio:SIO_000028 SER:162_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16466.
 
 CHEBI:81015
 	sio:SIO_000028 SER:163_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 81015.
 
 CHEBI:17500
 	sio:SIO_000028 SER:164_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17500.
 
 CHEBI:48825
 	sio:SIO_000028 SER:165_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 48825.
 
 CHEBI:28477
 	sio:SIO_000028 SER:167_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 28477.
 
 CHEBI:48778
 	sio:SIO_000028 SER:168_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 48778.
 
 CHEBI:2290
 	sio:SIO_000028 SER:169_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 2290.
 
 CHEBI:2288
 	sio:SIO_000028 SER:170_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 2288.
 
 CHEBI:16577
 	sio:SIO_000028 SER:171_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16577.
 
 CHEBI:18402
 	sio:SIO_000028 SER:172_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 18402.
 
 CHEBI:48474
 	sio:SIO_000028 SER:173_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 48474.
 
 CHEBI:37642
 	sio:SIO_000028 SER:174_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 37642.
 
 CHEBI:CHEBI:58677
 	sio:SIO_000028 SER:175_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:58677.
 
 CHEBI:37643
 	sio:SIO_000028 SER:176_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 37643.
 
 CHEBI:36234
 	sio:SIO_000028 SER:177_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 36234.
 
 CHEBI:29747
 	sio:SIO_000028 SER:178_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 29747.
 
 CHEBI:28701
 	sio:SIO_000028 SER:179_substrate ;
 	sio:SIO_000028 SER:180_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 28701.
 
 CHEBI:15519
 	sio:SIO_000028 SER:181_substrate ;
 	sio:SIO_000028 SER:182_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 15519.
 
 CHEBI:87704
 	sio:SIO_000028 SER:183_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 87704.
 
 CHEBI:27379
 	sio:SIO_000028 SER:184_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 27379.
 
 CHEBI:27393
 	sio:SIO_000028 SER:185_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 27393.
 
 CHEBI:27403
 	sio:SIO_000028 SER:186_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 27403.
 
 CHEBI:27505
 	sio:SIO_000028 SER:187_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 27505.
 
 CHEBI:52050
 	sio:SIO_000028 SER:188_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 52050.
 
 CHEBI:59238
@@ -4686,6 +4754,7 @@ CHEBI:59238
 	sio:SIO_000028 SER:190_substrate ;
 	sio:SIO_000028 SER:191_substrate ;
 	sio:SIO_000028 SER:192_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 59238.
 
 CHEBI:11750
@@ -4693,6 +4762,7 @@ CHEBI:11750
 	sio:SIO_000028 SER:194_substrate ;
 	sio:SIO_000028 SER:195_substrate ;
 	sio:SIO_000028 SER:196_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 11750.
 
 CHEBI:15422
@@ -4752,38 +4822,47 @@ CHEBI:15422
 	sio:SIO_000028 SER:253_substrate ;
 	sio:SIO_000028 SER:254_substrate ;
 	sio:SIO_000028 SER:255_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 15422.
 
 CHEBI:15729
 	sio:SIO_000028 SER:257_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 15729.
 
 CHEBI:131444
 	sio:SIO_000028 SER:258_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 131444.
 
 CHEBI:16919
 	sio:SIO_000028 SER:260_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16919.
 
 CHEBI:36242
 	sio:SIO_000028 SER:261_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 36242.
 
 CHEBI:17105
 	sio:SIO_000028 SER:262_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17105.
 
 CHEBI:16169
 	sio:SIO_000028 SER:263_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16169.
 
 CHEBI:13705
 	sio:SIO_000028 SER:264_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 13705.
 
 CHEBI:29806
 	sio:SIO_000028 SER:265_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 29806.
 
 CHEBI:16581
@@ -4800,6 +4879,7 @@ CHEBI:16581
 	sio:SIO_000028 SER:303_substrate ;
 	sio:SIO_000028 SER:304_substrate ;
 	sio:SIO_000028 SER:305_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16581.
 
 CHEBI:28750
@@ -4809,6 +4889,7 @@ CHEBI:28750
 	sio:SIO_000028 SER:329_substrate ;
 	sio:SIO_000028 SER:330_substrate ;
 	sio:SIO_000028 SER:331_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 28750.
 
 CHEBI:28689
@@ -4819,6 +4900,7 @@ CHEBI:28689
 	sio:SIO_000028 SER:290_substrate ;
 	sio:SIO_000028 SER:291_substrate ;
 	sio:SIO_000028 SER:292_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 28689.
 
 CHEBI:17026
@@ -4847,6 +4929,7 @@ CHEBI:17026
 	sio:SIO_000028 SER:335_substrate ;
 	sio:SIO_000028 SER:336_substrate ;
 	sio:SIO_000028 SER:337_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17026.
 
 CHEBI:17252
@@ -4858,20 +4941,24 @@ CHEBI:17252
 	sio:SIO_000028 SER:340_substrate ;
 	sio:SIO_000028 SER:341_substrate ;
 	sio:SIO_000028 SER:342_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17252.
 
 CHEBI:16973
 	sio:SIO_000028 SER:343_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16973.
 
 CHEBI:28324
 	sio:SIO_000028 SER:344_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 28324.
 
 CHEBI:18009
 	sio:SIO_000028 SER:345_substrate ;
 	sio:SIO_000028 SER:346_substrate ;
 	sio:SIO_000028 SER:347_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 18009.
 
 CHEBI:16962
@@ -4884,85 +4971,104 @@ CHEBI:16962
 	sio:SIO_000028 SER:354_substrate ;
 	sio:SIO_000028 SER:355_substrate ;
 	sio:SIO_000028 SER:356_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16962.
 
 CHEBI:17650
 	sio:SIO_000028 SER:357_substrate ;
 	sio:SIO_000028 SER:358_substrate ;
 	sio:SIO_000028 SER:359_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17650.
 
 CHEBI:17347
 	sio:SIO_000028 SER:360_substrate ;
 	sio:SIO_000028 SER:361_substrate ;
 	sio:SIO_000028 SER:362_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17347.
 
 CHEBI:36655
 	sio:SIO_000028 SER:366_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 36655.
 
 CHEBI:57972
 	sio:SIO_000028 SER:367_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 57972.
 
 CHEBI:33384
 	sio:SIO_000028 SER:368_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 33384.
 
 CHEBI:15361
 	sio:SIO_000028 SER:369_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 15361.
 
 CHEBI:CHEBI:62612
 	sio:SIO_000028 SER:370_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:62612.
 
 CHEBI:CHEBI:29985
 	sio:SIO_000028 SER:371_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:29985.
 
 CHEBI:16452
 	sio:SIO_000028 SER:372_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 16452.
 
 CHEBI:57305
 	sio:SIO_000028 SER:373_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 57305.
 
 CHEBI:29805
 	sio:SIO_000028 SER:374_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 29805.
 
 CHEBI:CHEBI:36655
 	sio:SIO_000028 SER:375_substrate ;
 	sio:SIO_000028 SER:379_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:36655.
 
 CHEBI:17180
 	sio:SIO_000028 SER:376_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17180.
 
 CHEBI:17742
 	sio:SIO_000028 SER:377_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 17742.
 
 CHEBI:CHEBI:58375
 	sio:SIO_000028 SER:378_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI CHEBI:58375.
 
 CHEBI:29034
 	sio:SIO_000028 SER:380_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 29034.
 
 CHEBI:29033
 	sio:SIO_000028 SER:382_substrate ;
 	sio:SIO_000028 SER:384_substrate ;
 	sio:SIO_000028 SER:385_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 29033.
 
 CHEBI:29032
 	sio:SIO_000028 SER:386_substrate ;
+	rdf:type wp:Metabolite ;
 	wp:bdbChEBI 29032.
 
 SER:1_measurement
