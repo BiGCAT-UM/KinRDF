@@ -1,15 +1,27 @@
 BASE <http://bigcat-um.github.io/KinRDF/shapes#>
 PREFIX : <http://bigcat-um.github.io/KinRDF/shapes#>
 
-PREFIX dc:    <http://purl.org/dc/elements/1.1/>
-PREFIX dct:   <http://purl.org/dc/terms/>
-PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
-PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX sbd:   <https://www.sbd4nano.eu/rdf/#>
-PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
-PREFIX wp:    <http://vocabularies.wikipathways.org/wp#>
-PREFIX sio:   <http://semanticscience.org/resource/>
+PREFIX SER: <http://bigcat-um.github.io/KinRDF/kin#>  
+PREFIX dc: <http://purl.org/dc/elements/1.1/>  
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  
+PREFIX wp: <http://vocabularies.wikipathways.org/wp#>  
+PREFIX rh: <http://rdf.rhea-db.org/>  
 PREFIX RHEA:   <https://identifiers.org/rhea/>  
+PREFIX CHEBI:   <http://purl.obolibrary.org/obo/CHEBI_> 
+PREFIX dcterms: <http://purl.org/dc/terms/>  
+PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>  
+PREFIX uniprot:   <https://identifiers.org/uniprot/>  
+PREFIX uniprotkb:   <http://purl.uniprot.org/uniprot/>  
+PREFIX up:   <http://purl.uniprot.org/core/>  
+PREFIX ECcode:   <https://identifiers.org/ec-code/>  
+PREFIX En_id:   <http://identifiers.org/ensembl/>  
+PREFIX pubmed:  <http://www.ncbi.nlm.nih.gov/pubmed/>  
+PREFIX NCBI:  <http://purl.obolibrary.org/obo/NCBITaxon_>  
+PREFIX wd: <http://www.wikidata.org/entity/>  
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>  
+PREFIX sio: <http://semanticscience.org/resource/>  
+PREFIX bioregistry: <https://bioregistry.io/oboinowl:> 
 
 :Interaction {
   a [ wp:Interaction ] ;
