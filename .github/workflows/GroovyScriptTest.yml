@@ -9,10 +9,10 @@ on:
       - validate.groovy
 
 jobs:
-  ValidateCuratedRDF:
+  setup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
@@ -20,22 +20,42 @@ jobs:
       - name: Install groovy
         run: sudo apt install groovy
 
-      - name: Generate the Shex validation reports - InteractionData
+  interactionData:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Generate the Shex validation reports
         run: |
           groovy validate.groovy InteractionData http://vocabularies.wikipathways.org/wp#InteractionData
 
-      - name: Generate the Shex validation reports - Enzyme
+  enzyme:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Generate the Shex validation reports
         run: |
           #groovy validate.groovy Enzyme http://vocabularies.wikipathways.org/wp#Protein
 
-      - name: Generate the Shex validation reports - Interaction
+  interaction:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Generate the Shex validation reports
         run: |
           groovy validate.groovy Interaction http://vocabularies.wikipathways.org/wp#Interaction
 
-      - name: Generate the Shex validation reports - Substrate
+  substrate:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Generate the Shex validation reports
         run: |
           #groovy validate.groovy Substrate http://vocabularies.wikipathways.org/wp#Metabolite
 
-      - name: Generate the Shex validation reports - Measurement
+  measurement:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Generate the Shex validation reports
         run: |
           #groovy validate.groovy Measurement http://vocabularies.wikipathways.org/wp#???
