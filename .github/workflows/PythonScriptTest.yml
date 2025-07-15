@@ -23,7 +23,7 @@ jobs:
 
     steps:        
       # step 1: checkout the repository
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       # step 2: define Python version to run script with
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
@@ -54,9 +54,9 @@ jobs:
     - name: Turtle Validator
       run: |
         npm install -g turtle-validator
-        ttl Output/RDF_Kin_Data_2022-Dec.ttl
-        ttl Output/RDF_Kin_Data_2022-Dec.ttl > validationLog2022-Dec.txt
-        FILENAME=validationLog2022-Dec.txt 
+        ttl Output/RDF_Kin_Data_2025-July.ttl
+        ttl Output/RDF_Kin_Data_2025-July.ttl > validationLog2025-July.txt
+        FILENAME=validationLog2025-July.txt 
         if grep -q . "${FILENAME}"; then
           echo "File is not empty"
         else
