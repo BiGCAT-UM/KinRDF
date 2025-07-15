@@ -886,13 +886,13 @@ for itemListPMID in ListPMID:
 for itemListDatabase in ListDatabase:
   (key, val) = itemListDatabase.strip('\n').split('\t')
   AllDict.setdefault(key, [])
-  AllDict[key].append(val + ' ; \n  rdf:type SER:ReactionInformation .')
+  AllDict[key].append(val + ' ; \n \trdf:type SER:ReactionInformation .')
 
 ##Scenario 2: only PMID is available as provenance (no database)
 for itemListDatabase in ListProv:
   (key, val) = itemListDatabase.strip('\n').split('\t')
   AllDict.setdefault(key, [])
-  AllDict[key].append(val + ' ; \n  rdf:type SER:ReactionInformation .')		
+  AllDict[key].append(val + ' ; \n \trdf:type SER:ReactionInformation .')		
 
 ##Remove duplicates for linked lists:
 unique_ListLinkUniprot = list(dict.fromkeys(ListLinkUniprot))

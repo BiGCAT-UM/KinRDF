@@ -3832,7 +3832,7 @@ SER:1_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:17696873 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:2_measurement
 	SER:hasKm "31"^^xsd:float ;
@@ -3844,7 +3844,7 @@ SER:2_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:17696873 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:3_measurement
 	SER:hasKm "16"^^xsd:float ;
@@ -3854,7 +3854,7 @@ SER:3_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:851432 ;
 	dc:source "sabio"^^xsd:string, "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:4_measurement
 	SER:hasKm "1"^^xsd:float ;
@@ -3864,7 +3864,7 @@ SER:4_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:851432 ;
 	dc:source "sabio"^^xsd:string, "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:5_measurement
 	SER:hasKm "0.09"^^xsd:float ;
@@ -3873,7 +3873,7 @@ SER:5_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:2211729 ;
 	dc:source "sabio"^^xsd:string, "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:6_measurement
 	SER:hasKm "37"^^xsd:float ;
@@ -3885,7 +3885,7 @@ SER:6_measurement
 	wd:P703 "562" ;
 	dcterms:references pubmed:22138634 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:8_measurement
 	SER:hasKm "180"^^xsd:float ;
@@ -3897,7 +3897,7 @@ SER:8_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:22865246 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:9_measurement
 	SER:hasKm "0.086"^^xsd:float ;
@@ -3909,7 +3909,7 @@ SER:9_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:17669354 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:10_measurement
 	SER:hasKm "10.8"^^xsd:float ;
@@ -3917,7 +3917,7 @@ SER:10_measurement
 	wdt:P2076 "30"^^xsd:float ;
 	dcterms:references pubmed:2114287 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:11_measurement
 	SER:hasKm "0.6"^^xsd:float ;
@@ -3927,7 +3927,7 @@ SER:11_measurement
 	wdt:P2076 "37"^^xsd:float ;
 	dcterms:references pubmed:29223156 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:12_measurement
 	SER:hasKm "0.011"^^xsd:float ;
@@ -3939,7 +3939,7 @@ SER:12_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21998747 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:13_measurement
 	SER:hasKm "200"^^xsd:float ;
@@ -3951,14 +3951,14 @@ SER:13_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25697095 ;
 	dc:source "uniprot"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:14_measurement
 	SER:hasKm "25"^^xsd:float ;
 	SER:hasPh "6.5"^^xsd:float ;
 	dcterms:references pubmed:4144124 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:15_measurement
 	SER:hasKm "9.3"^^xsd:float ;
@@ -3969,7 +3969,7 @@ SER:15_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20506125 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:16_measurement
 	SER:hasKm "0.0407"^^xsd:float ;
@@ -3980,7 +3980,7 @@ SER:16_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20506125 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:17_measurement
 	SER:hasKm "4.5"^^xsd:float ;
@@ -3988,7 +3988,7 @@ SER:17_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:23720291 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:18_measurement
 	SER:hasKm "0.0042"^^xsd:float ;
@@ -3997,7 +3997,7 @@ SER:18_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:23720291 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:19_measurement
 	SER:hasKm "0.06"^^xsd:float ;
@@ -4005,7 +4005,7 @@ SER:19_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:30594473 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:20_measurement
 	SER:hasKm "0.00072"^^xsd:float ;
@@ -4013,7 +4013,7 @@ SER:20_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:30594473 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:21_measurement
 	SER:hasKm "0.00256"^^xsd:float ;
@@ -4021,7 +4021,7 @@ SER:21_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:30594473 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:22_measurement
 	SER:hasKm "0.00085"^^xsd:float ;
@@ -4029,7 +4029,7 @@ SER:22_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:10692079 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:23_measurement
 	SER:hasKm "0.00035"^^xsd:float ;
@@ -4037,7 +4037,7 @@ SER:23_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:31326287 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:26_measurement
 	SER:hasKm "0.00057"^^xsd:float ;
@@ -4045,7 +4045,7 @@ SER:26_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:10692079 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:27_measurement
 	SER:hasKm "0.00005"^^xsd:float ;
@@ -4053,7 +4053,7 @@ SER:27_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:31326287 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:30_measurement
 	SER:hasKm "0.00029"^^xsd:float ;
@@ -4061,7 +4061,7 @@ SER:30_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:30594473 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:31_measurement
 	SER:hasKm "0.0021"^^xsd:float ;
@@ -4069,7 +4069,7 @@ SER:31_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:30594473 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:33_measurement
 	SER:hasKm "0.223"^^xsd:float ;
@@ -4079,7 +4079,7 @@ SER:33_measurement
 	wd:P703 "10090" ;
 	dcterms:references pubmed:4169027, pubmed:4149284 ;
 	dc:source "sabio"^^xsd:string, "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:34_measurement
 	SER:hasKm "0.223"^^xsd:float ;
@@ -4089,7 +4089,7 @@ SER:34_measurement
 	wd:P703 "10090" ;
 	dcterms:references pubmed:4169027, pubmed:4149284 ;
 	dc:source "sabio"^^xsd:string, "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:36_measurement
 	SER:hasKm "40"^^xsd:float ;
@@ -4097,7 +4097,7 @@ SER:36_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:6814912, pubmed:1901806 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:37_measurement
 	SER:hasKm "43.3"^^xsd:float ;
@@ -4105,7 +4105,7 @@ SER:37_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:6814912, pubmed:1901806 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:38_measurement
 	SER:hasKm "46.7"^^xsd:float ;
@@ -4113,7 +4113,7 @@ SER:38_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:6814912, pubmed:1901806 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:39_measurement
 	SER:hasKm "49.3"^^xsd:float ;
@@ -4121,7 +4121,7 @@ SER:39_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:6814912, pubmed:1901806 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:45_measurement
 	SER:hasKm "0.17"^^xsd:float ;
@@ -4132,7 +4132,7 @@ SER:45_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:2149596, pubmed:2533352 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:46_measurement
 	SER:hasKm "0.97"^^xsd:float ;
@@ -4143,7 +4143,7 @@ SER:46_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:2149596, pubmed:2533352 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:49_measurement
 	SER:hasKm "0.0805"^^xsd:float ;
@@ -4155,7 +4155,7 @@ SER:49_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25288802 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:50_measurement
 	SER:hasKm "0.088"^^xsd:float ;
@@ -4167,7 +4167,7 @@ SER:50_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25288802 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:51_measurement
 	SER:hasKm "0.0805"^^xsd:float ;
@@ -4179,7 +4179,7 @@ SER:51_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25288802 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:52_measurement
 	SER:hasKm "0.088"^^xsd:float ;
@@ -4191,7 +4191,7 @@ SER:52_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25288802 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:53_measurement
 	SER:hasKm "0.21"^^xsd:float ;
@@ -4203,7 +4203,7 @@ SER:53_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:8900165, pubmed:22461411, pubmed:23583749 ;
 	dc:source "brenda"^^xsd:string, "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:54_measurement
 	SER:hasKm "0.43"^^xsd:float ;
@@ -4215,7 +4215,7 @@ SER:54_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:8900165, pubmed:22461411, pubmed:23583749 ;
 	dc:source "brenda"^^xsd:string, "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:55_measurement
 	SER:hasKm "0.069"^^xsd:float ;
@@ -4226,7 +4226,7 @@ SER:55_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:16302980, pubmed:21703329, pubmed:16302980 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:56_measurement
 	SER:hasKm "0.38"^^xsd:float ;
@@ -4237,7 +4237,7 @@ SER:56_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:16302980, pubmed:21703329, pubmed:16302980 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:57_measurement
 	SER:hasKm "0.1"^^xsd:float ;
@@ -4247,7 +4247,7 @@ SER:57_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:7929251, pubmed:7929251 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:58_measurement
 	SER:hasKm "5"^^xsd:float ;
@@ -4257,7 +4257,7 @@ SER:58_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:7929251, pubmed:7929251 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:59_measurement
 	SER:hasKm "0.002"^^xsd:float ;
@@ -4265,7 +4265,7 @@ SER:59_measurement
 	wdt:P2076 "30"^^xsd:float ;
 	dcterms:references pubmed:2970965, pubmed:16889748 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:63_measurement
 	SER:hasKm "0.021"^^xsd:float ;
@@ -4275,7 +4275,7 @@ SER:63_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:108102 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:64_measurement
 	SER:hasKm "0.081"^^xsd:float ;
@@ -4285,13 +4285,13 @@ SER:64_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:108102 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:66_measurement
 	SER:hasKm "0.0056"^^xsd:float ;
 	dcterms:references pubmed:5288588, pubmed:25107532 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:70_measurement
 	SER:hasKm "3.9"^^xsd:float ;
@@ -4302,7 +4302,7 @@ SER:70_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:7055619 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:72_measurement
 	SER:hasKm "2.5"^^xsd:float ;
@@ -4310,7 +4310,7 @@ SER:72_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:3800397 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:73_measurement
 	SER:hasKm "0.69"^^xsd:float ;
@@ -4320,7 +4320,7 @@ SER:73_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:6487638 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:74_measurement
 	SER:hasKm "870"^^xsd:float ;
@@ -4329,7 +4329,7 @@ SER:74_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:75_measurement
 	SER:hasKm "0.009"^^xsd:float ;
@@ -4340,7 +4340,7 @@ SER:75_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15479158 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:76_measurement
 	SER:hasKm "0.07"^^xsd:float ;
@@ -4352,7 +4352,7 @@ SER:76_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:77_measurement
 	SER:hasKm "0.0252"^^xsd:float ;
@@ -4364,7 +4364,7 @@ SER:77_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:655997 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:78_measurement
 	SER:hasKm "0.0252"^^xsd:float ;
@@ -4376,7 +4376,7 @@ SER:78_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:655997 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:79_measurement
 	SER:hasKm "163"^^xsd:float ;
@@ -4387,7 +4387,7 @@ SER:79_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:18280251 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:80_measurement
 	SER:hasKm "1.69"^^xsd:float ;
@@ -4397,7 +4397,7 @@ SER:80_measurement
 	wd:P703 "10090" ;
 	dcterms:references pubmed:17254025 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:81_measurement
 	SER:hasKm "3"^^xsd:float ;
@@ -4407,7 +4407,7 @@ SER:81_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:16229482 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:82_measurement
 	SER:hasKm "0.0047"^^xsd:float ;
@@ -4417,7 +4417,7 @@ SER:82_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:17176108 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:83_measurement
 	SER:hasKm "0.0064"^^xsd:float ;
@@ -4429,7 +4429,7 @@ SER:83_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12948740 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:84_measurement
 	SER:hasKm "0.0074"^^xsd:float ;
@@ -4441,7 +4441,7 @@ SER:84_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12948740 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:85_measurement
 	SER:hasKm "0.0081"^^xsd:float ;
@@ -4451,7 +4451,7 @@ SER:85_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:17176108 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:86_measurement
 	SER:hasKm "0.0123"^^xsd:float ;
@@ -4463,7 +4463,7 @@ SER:86_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12948740 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:87_measurement
 	SER:hasKm "0.0261"^^xsd:float ;
@@ -4475,7 +4475,7 @@ SER:87_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12948740 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:88_measurement
 	SER:hasKm "4"^^xsd:float ;
@@ -4485,7 +4485,7 @@ SER:88_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:11705404 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:89_measurement
 	SER:hasKm "0.0026"^^xsd:float ;
@@ -4498,7 +4498,7 @@ SER:89_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:11024031 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:90_measurement
 	SER:hasKm "0.8"^^xsd:float ;
@@ -4508,14 +4508,14 @@ SER:90_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:16005139 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:91_measurement
 	SER:hasKm "1.7"^^xsd:float ;
 	SER:hasPh "7.2"^^xsd:float ;
 	rdfs:comment "reaction with alpha-o-oglutarate and NADH "@en ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:92_measurement
 	SER:hasKm "584"^^xsd:float ;
@@ -4526,7 +4526,7 @@ SER:92_measurement
 	rdfs:comment "cofactor o-idized 2,6-dichlorophenolindophenol "@en ;
 	dcterms:references pubmed:19586914 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:93_measurement
 	SER:hasKm "17"^^xsd:float ;
@@ -4534,7 +4534,7 @@ SER:93_measurement
 	rdfs:comment "mitochondrial isozyme; reverse reaction"@en ;
 	dcterms:references pubmed:14507432 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:94_measurement
 	SER:hasKm "26"^^xsd:float ;
@@ -4542,49 +4542,49 @@ SER:94_measurement
 	rdfs:comment "mitochondrial isozyme; reverse reaction"@en ;
 	dcterms:references pubmed:14507432 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:95_measurement
 	SER:hasKm "0.13"^^xsd:float ;
 	wp:organismName "Sus scrofa"^^xsd:string ;
 	wd:P703 "9823" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:96_measurement
 	SER:hasKm "0.2"^^xsd:float ;
 	rdfs:comment "Isozyme IDP2"@en ;
 	dcterms:references pubmed:15001388 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:97_measurement
 	SER:hasKm "304"^^xsd:float ;
 	SER:hasPh "6.5"^^xsd:float ;
 	rdfs:comment "reverse reaction"@en ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:98_measurement
 	SER:hasKm "398"^^xsd:float ;
 	SER:hasPh "6.5"^^xsd:float ;
 	rdfs:comment "reverse reaction"@en ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:99_measurement
 	SER:hasKm "1.1"^^xsd:float ;
 	SER:hasPh "7"^^xsd:float ;
 	rdfs:comment "Recombinant enzyme"@en ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:100_measurement
 	SER:hasKm "1.92"^^xsd:float ;
 	rdfs:comment "Isozyme IDP2"@en ;
 	dcterms:references pubmed:15001388 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:102_measurement
 	SER:hasKm "77"^^xsd:float ;
@@ -4593,7 +4593,7 @@ SER:102_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:16616524 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:103_measurement
 	SER:hasKm "18"^^xsd:float ;
@@ -4601,7 +4601,7 @@ SER:103_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:3182820 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:104_measurement
 	SER:hasKm "77"^^xsd:float ;
@@ -4611,7 +4611,7 @@ SER:104_measurement
 	wd:P703 "10090" ;
 	dcterms:references pubmed:16616524 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:105_measurement
 	SER:hasKm "85"^^xsd:float ;
@@ -4622,7 +4622,7 @@ SER:105_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:16616524 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:107_measurement
 	SER:hasKm "1.4"^^xsd:float ;
@@ -4634,7 +4634,7 @@ SER:107_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15182181 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:108_measurement
 	SER:hasKm "130"^^xsd:float ;
@@ -4646,7 +4646,7 @@ SER:108_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15182181 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:109_measurement
 	SER:hasKm "6.4"^^xsd:float ;
@@ -4658,7 +4658,7 @@ SER:109_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15182181 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:112_measurement
 	SER:hasKm "23"^^xsd:float ;
@@ -4668,7 +4668,7 @@ SER:112_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:2838091 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:113_measurement
 	SER:hasKm "75"^^xsd:float ;
@@ -4678,7 +4678,7 @@ SER:113_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:2999115 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:121_measurement
 	SER:hasKm "0.00064"^^xsd:float ;
@@ -4686,7 +4686,7 @@ SER:121_measurement
 	wdt:P2076 "37"^^xsd:float ;
 	dcterms:references pubmed:6154707 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:124_measurement
 	SER:hasKm "1.12"^^xsd:float ;
@@ -4694,7 +4694,7 @@ SER:124_measurement
 	wd:P703 "9031" ;
 	dcterms:references pubmed:11249004 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:125_measurement
 	SER:hasKm "1.77"^^xsd:float ;
@@ -4702,7 +4702,7 @@ SER:125_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:3523161 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:126_measurement
 	SER:hasKm "0.075"^^xsd:float ;
@@ -4711,7 +4711,7 @@ SER:126_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:4370169 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:127_measurement
 	SER:hasKm "0.083"^^xsd:float ;
@@ -4720,7 +4720,7 @@ SER:127_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:4370169 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:128_measurement
 	SER:hasKm "0.4"^^xsd:float ;
@@ -4728,7 +4728,7 @@ SER:128_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:16780378 ;
 	dc:source "brenda"^^xsd:string, "uniprot"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:129_measurement
 	SER:hasKm "0.57"^^xsd:float ;
@@ -4737,7 +4737,7 @@ SER:129_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:10685026 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:130_measurement
 	SER:hasKm "0.83"^^xsd:float ;
@@ -4746,7 +4746,7 @@ SER:130_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:10685026 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:131_measurement
 	SER:hasKm "21.4"^^xsd:float ;
@@ -4755,7 +4755,7 @@ SER:131_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:1901219 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:135_measurement
 	SER:hasKm "0.11"^^xsd:float ;
@@ -4766,7 +4766,7 @@ SER:135_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:136_measurement
 	SER:hasKm "0.36"^^xsd:float ;
@@ -4777,7 +4777,7 @@ SER:136_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:137_measurement
 	SER:hasKm "0.37"^^xsd:float ;
@@ -4788,7 +4788,7 @@ SER:137_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:138_measurement
 	SER:hasKm "0.38"^^xsd:float ;
@@ -4799,7 +4799,7 @@ SER:138_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:139_measurement
 	SER:hasKm "0.42"^^xsd:float ;
@@ -4810,7 +4810,7 @@ SER:139_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:140_measurement
 	SER:hasKm "0.45"^^xsd:float ;
@@ -4821,7 +4821,7 @@ SER:140_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:141_measurement
 	SER:hasKm "0.49"^^xsd:float ;
@@ -4832,7 +4832,7 @@ SER:141_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:142_measurement
 	SER:hasKm "0.52"^^xsd:float ;
@@ -4843,7 +4843,7 @@ SER:142_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:143_measurement
 	SER:hasKm "0.54"^^xsd:float ;
@@ -4854,7 +4854,7 @@ SER:143_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:144_measurement
 	SER:hasKm "0.55"^^xsd:float ;
@@ -4865,7 +4865,7 @@ SER:144_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:145_measurement
 	SER:hasKm "0.61"^^xsd:float ;
@@ -4876,7 +4876,7 @@ SER:145_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:146_measurement
 	SER:hasKm "0.62"^^xsd:float ;
@@ -4887,7 +4887,7 @@ SER:146_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:147_measurement
 	SER:hasKm "0.68"^^xsd:float ;
@@ -4898,7 +4898,7 @@ SER:147_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:148_measurement
 	SER:hasKm "0.77"^^xsd:float ;
@@ -4909,7 +4909,7 @@ SER:148_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:149_measurement
 	SER:hasKm "0.85"^^xsd:float ;
@@ -4920,7 +4920,7 @@ SER:149_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:150_measurement
 	SER:hasKm "0.88"^^xsd:float ;
@@ -4931,7 +4931,7 @@ SER:150_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:151_measurement
 	SER:hasKm "0.95"^^xsd:float ;
@@ -4942,7 +4942,7 @@ SER:151_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:152_measurement
 	SER:hasKm "1.1"^^xsd:float ;
@@ -4953,7 +4953,7 @@ SER:152_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:153_measurement
 	SER:hasKm "1.2"^^xsd:float ;
@@ -4964,7 +4964,7 @@ SER:153_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:192_measurement
 	SER:hasKm "0.0005"^^xsd:float ;
@@ -4973,7 +4973,7 @@ SER:192_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:285426 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:193_measurement
 	SER:hasKm "2"^^xsd:float ;
@@ -4981,7 +4981,7 @@ SER:193_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:285420 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:194_measurement
 	SER:hasKm "0.0091"^^xsd:float ;
@@ -4990,7 +4990,7 @@ SER:194_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:703418 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:195_measurement
 	SER:hasKm "0.0165"^^xsd:float ;
@@ -4998,7 +4998,7 @@ SER:195_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:285426 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:196_measurement
 	SER:hasKm "164"^^xsd:float ;
@@ -5006,7 +5006,7 @@ SER:196_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:285432 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:197_measurement
 	SER:hasKm "0.19"^^xsd:float ;
@@ -5014,7 +5014,7 @@ SER:197_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:285418 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:198_measurement
 	SER:hasKm "0.3"^^xsd:float ;
@@ -5022,7 +5022,7 @@ SER:198_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:285420 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:199_measurement
 	SER:hasKm "0.39"^^xsd:float ;
@@ -5030,7 +5030,7 @@ SER:199_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:285413 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:200_measurement
 	SER:hasKm "1.18"^^xsd:float ;
@@ -5039,7 +5039,7 @@ SER:200_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:704039 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:207_measurement
 	SER:hasKm "0.00007000"^^xsd:float ;
@@ -5047,7 +5047,7 @@ SER:207_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:6957697 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:208_measurement
 	SER:hasKm "0.0028"^^xsd:float ;
@@ -5057,7 +5057,7 @@ SER:208_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12205101 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:209_measurement
 	SER:hasKm "0.05"^^xsd:float ;
@@ -5067,7 +5067,7 @@ SER:209_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12205101 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:210_measurement
 	SER:hasKm "0.0035"^^xsd:float ;
@@ -5075,7 +5075,7 @@ SER:210_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12205101 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:211_measurement
 	SER:hasKm "18"^^xsd:float ;
@@ -5083,7 +5083,7 @@ SER:211_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12205101 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:212_measurement
 	SER:hasKm "0.0007"^^xsd:float ;
@@ -5092,7 +5092,7 @@ SER:212_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:17624763 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:213_measurement
 	SER:hasKm "0.0018"^^xsd:float ;
@@ -5102,7 +5102,7 @@ SER:213_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15084349 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:214_measurement
 	SER:hasKm "0.0037"^^xsd:float ;
@@ -5113,7 +5113,7 @@ SER:214_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15291757 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:215_measurement
 	SER:hasKm "0.0037"^^xsd:float ;
@@ -5124,7 +5124,7 @@ SER:215_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15291757 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:216_measurement
 	SER:hasKm "0.0061"^^xsd:float ;
@@ -5134,7 +5134,7 @@ SER:216_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15797861 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:217_measurement
 	SER:hasKm "0.0156"^^xsd:float ;
@@ -5143,7 +5143,7 @@ SER:217_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20736065 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:218_measurement
 	SER:hasKm "47"^^xsd:float ;
@@ -5151,7 +5151,7 @@ SER:218_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12530651 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:222_measurement
 	SER:hasKm "0.00025"^^xsd:float ;
@@ -5159,7 +5159,7 @@ SER:222_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:9726253 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:223_measurement
 	SER:hasKm "0.00038"^^xsd:float ;
@@ -5169,7 +5169,7 @@ SER:223_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25301938 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:224_measurement
 	SER:hasKm "0.0005"^^xsd:float ;
@@ -5180,7 +5180,7 @@ SER:224_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:225_measurement
 	SER:hasKm "0.00055"^^xsd:float ;
@@ -5188,7 +5188,7 @@ SER:225_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:19454579 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:226_measurement
 	SER:hasKm "0.00093"^^xsd:float ;
@@ -5198,7 +5198,7 @@ SER:226_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25301938 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:227_measurement
 	SER:hasKm "0.0011"^^xsd:float ;
@@ -5209,7 +5209,7 @@ SER:227_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:228_measurement
 	SER:hasKm "0.0025"^^xsd:float ;
@@ -5217,7 +5217,7 @@ SER:228_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:4854454 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:229_measurement
 	SER:hasKm "0.0077"^^xsd:float ;
@@ -5225,7 +5225,7 @@ SER:229_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:8396144 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:232_measurement
 	SER:hasKm "0.00045"^^xsd:float ;
@@ -5233,7 +5233,7 @@ SER:232_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:9726253 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:233_measurement
 	SER:hasKm "0.0011"^^xsd:float ;
@@ -5243,7 +5243,7 @@ SER:233_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:234_measurement
 	SER:hasKm "0.00196"^^xsd:float ;
@@ -5253,7 +5253,7 @@ SER:234_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25301938 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:235_measurement
 	SER:hasKm "0.0023"^^xsd:float ;
@@ -5261,7 +5261,7 @@ SER:235_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:4854454 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:236_measurement
 	SER:hasKm "0.0043"^^xsd:float ;
@@ -5271,7 +5271,7 @@ SER:236_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:237_measurement
 	SER:hasKm "0.0053"^^xsd:float ;
@@ -5281,7 +5281,7 @@ SER:237_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:238_measurement
 	SER:hasKm "0.0063"^^xsd:float ;
@@ -5289,7 +5289,7 @@ SER:238_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:8396144 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:239_measurement
 	SER:hasKm "0.0097"^^xsd:float ;
@@ -5299,7 +5299,7 @@ SER:239_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:240_measurement
 	SER:hasKm "0.0105"^^xsd:float ;
@@ -5309,7 +5309,7 @@ SER:240_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25301938 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:251_measurement
 	SER:hasKm "0.000525"^^xsd:float ;
@@ -5317,7 +5317,7 @@ SER:251_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:8918985 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:252_measurement
 	SER:hasKm "0.0024"^^xsd:float ;
@@ -5325,7 +5325,7 @@ SER:252_measurement
 	wd:P703 "9823" ;
 	dcterms:references pubmed:6971291 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:253_measurement
 	SER:hasKm "0.0025"^^xsd:float ;
@@ -5333,7 +5333,7 @@ SER:253_measurement
 	wd:P703 "9823" ;
 	dcterms:references pubmed:6608525 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:254_measurement
 	SER:hasKm "0.0004"^^xsd:float ;
@@ -5341,7 +5341,7 @@ SER:254_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:10406467 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:255_measurement
 	SER:hasKm "0.00056"^^xsd:float ;
@@ -5349,7 +5349,7 @@ SER:255_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:10406467 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:256_measurement
 	SER:hasKm "0.0008"^^xsd:float ;
@@ -5357,7 +5357,7 @@ SER:256_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:10406467 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:258_measurement
 	SER:hasKm "0.00021"^^xsd:float ;
@@ -5367,7 +5367,7 @@ SER:258_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25855791 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:259_measurement
 	SER:hasKm "0.00021"^^xsd:float ;
@@ -5375,7 +5375,7 @@ SER:259_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28539365 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:260_measurement
 	SER:hasKm "0.0011"^^xsd:float ;
@@ -5385,7 +5385,7 @@ SER:260_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21446712 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:261_measurement
 	SER:hasKm "6.4"^^xsd:float ;
@@ -5394,7 +5394,7 @@ SER:261_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15126570 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:264_measurement
 	SER:hasKm "2.3"^^xsd:float ;
@@ -5404,7 +5404,7 @@ SER:264_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15126570 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:265_measurement
 	SER:hasKm "8.5"^^xsd:float ;
@@ -5414,7 +5414,7 @@ SER:265_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15126570 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:266_measurement
 	SER:hasKm "9.2"^^xsd:float ;
@@ -5424,7 +5424,7 @@ SER:266_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15126570 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:269_measurement
 	SER:hasKm "0.18"^^xsd:float ;
@@ -5435,7 +5435,7 @@ SER:269_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:18215163 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:270_measurement
 	SER:hasKm "338"^^xsd:float ;
@@ -5446,7 +5446,7 @@ SER:270_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:18215163 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:271_measurement
 	SER:hasKm "0.0036"^^xsd:float ;
@@ -5456,7 +5456,7 @@ SER:271_measurement
 	wd:P703 "9823" ;
 	dcterms:references pubmed:6641908 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:272_measurement
 	SER:hasKm "0.0046"^^xsd:float ;
@@ -5466,7 +5466,7 @@ SER:272_measurement
 	wd:P703 "9823" ;
 	dcterms:references pubmed:6641908 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:273_measurement
 	SER:hasKm "62"^^xsd:float ;
@@ -5476,7 +5476,7 @@ SER:273_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:7092232 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:274_measurement
 	SER:hasKm "0.0003"^^xsd:float ;
@@ -5486,7 +5486,7 @@ SER:274_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12397058 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:275_measurement
 	SER:hasKm "0.00034"^^xsd:float ;
@@ -5496,7 +5496,7 @@ SER:275_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15152005 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:276_measurement
 	SER:hasKm "0.0006"^^xsd:float ;
@@ -5506,7 +5506,7 @@ SER:276_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12460758 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:277_measurement
 	SER:hasKm "0.0008"^^xsd:float ;
@@ -5516,7 +5516,7 @@ SER:277_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12397058 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:278_measurement
 	SER:hasKm "2"^^xsd:float ;
@@ -5526,7 +5526,7 @@ SER:278_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12397058 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:279_measurement
 	SER:hasKm "0.0044"^^xsd:float ;
@@ -5536,7 +5536,7 @@ SER:279_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:17825335 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:280_measurement
 	SER:hasKm "9"^^xsd:float ;
@@ -5546,7 +5546,7 @@ SER:280_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12397058 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:281_measurement
 	SER:hasKm "14"^^xsd:float ;
@@ -5556,7 +5556,7 @@ SER:281_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:11841241 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:283_measurement
 	SER:hasKm "0.0002"^^xsd:float ;
@@ -5564,7 +5564,7 @@ SER:283_measurement
 	wdt:P2076 "37"^^xsd:float ;
 	dcterms:references pubmed:14732482 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:284_measurement
 	SER:hasKm "0.00038"^^xsd:float ;
@@ -5574,7 +5574,7 @@ SER:284_measurement
 	wd:P703 "9823" ;
 	dcterms:references pubmed:17942303 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:285_measurement
 	SER:hasKm "0.00136"^^xsd:float ;
@@ -5584,7 +5584,7 @@ SER:285_measurement
 	wd:P703 "9823" ;
 	dcterms:references pubmed:17942303 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:286_measurement
 	SER:hasKm "0.00005400"^^xsd:float ;
@@ -5594,7 +5594,7 @@ SER:286_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20823678 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:287_measurement
 	SER:hasKm "0.0004"^^xsd:float ;
@@ -5602,7 +5602,7 @@ SER:287_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20170668 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:288_measurement
 	SER:hasKm "0.01"^^xsd:float ;
@@ -5610,14 +5610,14 @@ SER:288_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20170668 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:292_measurement
 	SER:hasKm "0.68"^^xsd:float ;
 	wp:organismName "Mus musculus"^^xsd:string ;
 	wd:P703 "10090" ;
 	dcterms:references pubmed:36916 ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:293_measurement
 	SER:hasKm "0.0057"^^xsd:float ;
@@ -5625,7 +5625,7 @@ SER:293_measurement
 	wd:P703 "9823" ;
 	dcterms:references pubmed:6126192 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:294_measurement
 	SER:hasKm "0.0105"^^xsd:float ;
@@ -5636,7 +5636,7 @@ SER:294_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21447318 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:295_measurement
 	SER:hasKm "0.0106"^^xsd:float ;
@@ -5647,7 +5647,7 @@ SER:295_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21447318 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:297_measurement
 	SER:hasKm "0.16"^^xsd:float ;
@@ -5656,7 +5656,7 @@ SER:297_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:6121802 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:298_measurement
 	SER:hasKm "0.18"^^xsd:float ;
@@ -5665,7 +5665,7 @@ SER:298_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:6121802 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:299_measurement
 	SER:hasKm "0.2"^^xsd:float ;
@@ -5674,7 +5674,7 @@ SER:299_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:6121802 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:300_measurement
 	SER:hasKm "0.41"^^xsd:float ;
@@ -5683,7 +5683,7 @@ SER:300_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:6121802 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:301_measurement
 	SER:hasKm "0.5"^^xsd:float ;
@@ -5692,7 +5692,7 @@ SER:301_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:6121802 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:302_measurement
 	SER:hasKm "0.5"^^xsd:float ;
@@ -5700,7 +5700,7 @@ SER:302_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:6121802 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:303_measurement
 	SER:hasKm "0.57"^^xsd:float ;
@@ -5709,7 +5709,7 @@ SER:303_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:6121802 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:304_measurement
 	SER:hasKm "0.58"^^xsd:float ;
@@ -5718,7 +5718,7 @@ SER:304_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:6121802 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:305_measurement
 	SER:hasKm "0.0316"^^xsd:float ;
@@ -5726,7 +5726,7 @@ SER:305_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:1181279 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:306_measurement
 	SER:hasKm "0.05"^^xsd:float ;
@@ -5734,7 +5734,7 @@ SER:306_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:1181279, pubmed:4823446, pubmed:10078874 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:307_measurement
 	SER:hasKm "0.75"^^xsd:float ;
@@ -5743,7 +5743,7 @@ SER:307_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:15115889 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:308_measurement
 	SER:hasKm "1.38"^^xsd:float ;
@@ -5752,14 +5752,14 @@ SER:308_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:15115889 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:309_measurement
 	SER:hasKm "0.2"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:310_measurement
 	SER:hasKm "0.25"^^xsd:float ;
@@ -5770,7 +5770,7 @@ SER:310_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:14990577 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:311_measurement
 	SER:hasKm "452"^^xsd:float ;
@@ -5780,7 +5780,7 @@ SER:311_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:11708780 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:312_measurement
 	SER:hasKm "0.58"^^xsd:float ;
@@ -5791,7 +5791,7 @@ SER:312_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21771585 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:313_measurement
 	SER:hasKm "1.75"^^xsd:float ;
@@ -5802,7 +5802,7 @@ SER:313_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:14990577 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:314_measurement
 	SER:hasKm "1.96"^^xsd:float ;
@@ -5813,7 +5813,7 @@ SER:314_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:14990577 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:316_measurement
 	SER:hasKm "16"^^xsd:float ;
@@ -5824,7 +5824,7 @@ SER:316_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21771585 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:317_measurement
 	SER:hasKm "51"^^xsd:float ;
@@ -5835,7 +5835,7 @@ SER:317_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21771585 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:318_measurement
 	SER:hasKm "0.53"^^xsd:float ;
@@ -5845,7 +5845,7 @@ SER:318_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20800579 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:319_measurement
 	SER:hasKm "1.02"^^xsd:float ;
@@ -5854,7 +5854,7 @@ SER:319_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15056072 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:320_measurement
 	SER:hasKm "1.24"^^xsd:float ;
@@ -5863,7 +5863,7 @@ SER:320_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15056072 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:321_measurement
 	SER:hasKm "1.43"^^xsd:float ;
@@ -5872,7 +5872,7 @@ SER:321_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15056072 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:322_measurement
 	SER:hasKm "1.51"^^xsd:float ;
@@ -5881,7 +5881,7 @@ SER:322_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15056072 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:323_measurement
 	SER:hasKm "1.64"^^xsd:float ;
@@ -5890,7 +5890,7 @@ SER:323_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15056072 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:324_measurement
 	SER:hasKm "1.75"^^xsd:float ;
@@ -5899,7 +5899,7 @@ SER:324_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15056072 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:325_measurement
 	SER:hasKm "2.07"^^xsd:float ;
@@ -5908,7 +5908,7 @@ SER:325_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15056072 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:326_measurement
 	SER:hasKm "2.25"^^xsd:float ;
@@ -5917,7 +5917,7 @@ SER:326_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15056072 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:327_measurement
 	SER:hasKm "2.52"^^xsd:float ;
@@ -5927,7 +5927,7 @@ SER:327_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20800579 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:340_measurement
 	SER:hasKm "2.5"^^xsd:float ;
@@ -5935,7 +5935,7 @@ SER:340_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:6122685 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:341_measurement
 	SER:hasKm "0.074"^^xsd:float ;
@@ -5945,7 +5945,7 @@ SER:341_measurement
 	wd:P703 "10090" ;
 	dcterms:references pubmed:18498772 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:343_measurement
 	SER:hasKm "0.004"^^xsd:float ;
@@ -5958,7 +5958,7 @@ SER:343_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:22961397 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:345_measurement
 	SER:hasKm "0.0006"^^xsd:float ;
@@ -5968,7 +5968,7 @@ SER:345_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:775938 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:346_measurement
 	SER:hasKm "0.05"^^xsd:float ;
@@ -5978,7 +5978,7 @@ SER:346_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:775938 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:347_measurement
 	SER:hasKm "0.017"^^xsd:float ;
@@ -5988,21 +5988,21 @@ SER:347_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:30927326 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:348_measurement
 	SER:hasKm "27"^^xsd:float ;
 	SER:hasPh "6.7"^^xsd:float ;
 	dcterms:references pubmed:659116 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:349_measurement
 	SER:hasKm "27"^^xsd:float ;
 	SER:hasPh "7"^^xsd:float ;
 	dcterms:references pubmed:659116 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:375_measurement
 	SER:hasKm "18"^^xsd:float ;
@@ -6011,7 +6011,7 @@ SER:375_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:660788 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:376_measurement
 	SER:hasKm "0.01"^^xsd:float ;
@@ -6020,7 +6020,7 @@ SER:376_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:843 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:379_measurement
 	SER:hasKm "0.05"^^xsd:float ;
@@ -6030,7 +6030,7 @@ SER:379_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:487367 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:380_measurement
 	SER:hasKm "87"^^xsd:float ;
@@ -6040,14 +6040,14 @@ SER:380_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:487367 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:35_measurement
 	SER:hasKcat "358"^^xsd:float ;
 	wdt:P2076 "37"^^xsd:float ;
 	dcterms:references pubmed:4169027, pubmed:4149284 ;
 	dc:source "sabio"^^xsd:string, "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:40_measurement
 	SER:hasKcat "0.233"^^xsd:float ;
@@ -6055,7 +6055,7 @@ SER:40_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:6814912, pubmed:1901806 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:41_measurement
 	SER:hasKcat "0.4"^^xsd:float ;
@@ -6063,7 +6063,7 @@ SER:41_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:6814912, pubmed:1901806 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:47_measurement
 	SER:hasKcat "1.7"^^xsd:float ;
@@ -6074,7 +6074,7 @@ SER:47_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:2149596, pubmed:2533352 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:48_measurement
 	SER:hasKcat "8.7"^^xsd:float ;
@@ -6085,7 +6085,7 @@ SER:48_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:2149596, pubmed:2533352 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:60_measurement
 	SER:hasKcat "0.0053"^^xsd:float ;
@@ -6095,7 +6095,7 @@ SER:60_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:2970965, pubmed:16889748 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:61_measurement
 	SER:hasKcat "0.0183"^^xsd:float ;
@@ -6105,19 +6105,19 @@ SER:61_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:2970965, pubmed:16889748 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:67_measurement
 	SER:hasKcat "0.068"^^xsd:float ;
 	dcterms:references pubmed:5288588, pubmed:25107532 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:68_measurement
 	SER:hasKcat "0.15"^^xsd:float ;
 	dcterms:references pubmed:5288588, pubmed:25107532 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:154_measurement
 	SER:hasKcat "1"^^xsd:float ;
@@ -6128,7 +6128,7 @@ SER:154_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:155_measurement
 	SER:hasKcat "5"^^xsd:float ;
@@ -6139,7 +6139,7 @@ SER:155_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:156_measurement
 	SER:hasKcat "7"^^xsd:float ;
@@ -6150,7 +6150,7 @@ SER:156_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:157_measurement
 	SER:hasKcat "0.01"^^xsd:float ;
@@ -6161,7 +6161,7 @@ SER:157_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:158_measurement
 	SER:hasKcat "11"^^xsd:float ;
@@ -6172,7 +6172,7 @@ SER:158_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:159_measurement
 	SER:hasKcat "17"^^xsd:float ;
@@ -6183,7 +6183,7 @@ SER:159_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:160_measurement
 	SER:hasKcat "19"^^xsd:float ;
@@ -6194,7 +6194,7 @@ SER:160_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:161_measurement
 	SER:hasKcat "22"^^xsd:float ;
@@ -6205,7 +6205,7 @@ SER:161_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:162_measurement
 	SER:hasKcat "36"^^xsd:float ;
@@ -6216,7 +6216,7 @@ SER:162_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:163_measurement
 	SER:hasKcat "37"^^xsd:float ;
@@ -6227,7 +6227,7 @@ SER:163_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:164_measurement
 	SER:hasKcat "0.05"^^xsd:float ;
@@ -6238,7 +6238,7 @@ SER:164_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:165_measurement
 	SER:hasKcat "64"^^xsd:float ;
@@ -6249,7 +6249,7 @@ SER:165_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:166_measurement
 	SER:hasKcat "67"^^xsd:float ;
@@ -6260,7 +6260,7 @@ SER:166_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:167_measurement
 	SER:hasKcat "79"^^xsd:float ;
@@ -6271,7 +6271,7 @@ SER:167_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:168_measurement
 	SER:hasKcat "92"^^xsd:float ;
@@ -6282,7 +6282,7 @@ SER:168_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:169_measurement
 	SER:hasKcat "94"^^xsd:float ;
@@ -6293,7 +6293,7 @@ SER:169_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:170_measurement
 	SER:hasKcat "95"^^xsd:float ;
@@ -6304,7 +6304,7 @@ SER:170_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:171_measurement
 	SER:hasKcat "0.15"^^xsd:float ;
@@ -6315,7 +6315,7 @@ SER:171_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:201_measurement
 	SER:hasKcat "0.05"^^xsd:float ;
@@ -6323,7 +6323,7 @@ SER:201_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:3968069 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:202_measurement
 	SER:hasKcat "0.1"^^xsd:float ;
@@ -6331,7 +6331,7 @@ SER:202_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:18573681 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:203_measurement
 	SER:hasKcat "248"^^xsd:float ;
@@ -6339,7 +6339,7 @@ SER:203_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:18573681 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:230_measurement
 	SER:hasKcat "0.0037"^^xsd:float ;
@@ -6349,7 +6349,7 @@ SER:230_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:231_measurement
 	SER:hasKcat "0.11"^^xsd:float ;
@@ -6360,7 +6360,7 @@ SER:231_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:245_measurement
 	SER:hasKcat "0.0064"^^xsd:float ;
@@ -6370,7 +6370,7 @@ SER:245_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:246_measurement
 	SER:hasKcat "17"^^xsd:float ;
@@ -6380,7 +6380,7 @@ SER:246_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25301938 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:247_measurement
 	SER:hasKcat "25"^^xsd:float ;
@@ -6390,7 +6390,7 @@ SER:247_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:248_measurement
 	SER:hasKcat "0.0483"^^xsd:float ;
@@ -6398,7 +6398,7 @@ SER:248_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:8396144 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:249_measurement
 	SER:hasKcat "86"^^xsd:float ;
@@ -6408,7 +6408,7 @@ SER:249_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:250_measurement
 	SER:hasKcat "0.17"^^xsd:float ;
@@ -6418,7 +6418,7 @@ SER:250_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:257_measurement
 	SER:hasKcat "0.00283"^^xsd:float ;
@@ -6426,7 +6426,7 @@ SER:257_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:8396144 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:262_measurement
 	SER:hasKcat "2.8"^^xsd:float ;
@@ -6437,7 +6437,7 @@ SER:262_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25855791 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:263_measurement
 	SER:hasKcat "2.8"^^xsd:float ;
@@ -6446,7 +6446,7 @@ SER:263_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28539365 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:267_measurement
 	SER:hasKcat "4"^^xsd:float ;
@@ -6457,7 +6457,7 @@ SER:267_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:25855791 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:268_measurement
 	SER:hasKcat "4"^^xsd:float ;
@@ -6466,7 +6466,7 @@ SER:268_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28539365 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:282_measurement
 	SER:hasKcat "0.4"^^xsd:float ;
@@ -6476,14 +6476,14 @@ SER:282_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:12397058 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:42_measurement
 	SER:hasKcatKm "0.2"^^xsd:float ;
 	SER:hasPh "7"^^xsd:float ;
 	dcterms:references pubmed:6814912, pubmed:1901806 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:172_measurement
 	SER:hasKcatKm "0.0009"^^xsd:float ;
@@ -6494,7 +6494,7 @@ SER:172_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:173_measurement
 	SER:hasKcatKm "0.0024"^^xsd:float ;
@@ -6505,7 +6505,7 @@ SER:173_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:174_measurement
 	SER:hasKcatKm "0.0025"^^xsd:float ;
@@ -6516,7 +6516,7 @@ SER:174_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:175_measurement
 	SER:hasKcatKm "3"^^xsd:float ;
@@ -6527,7 +6527,7 @@ SER:175_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:176_measurement
 	SER:hasKcatKm "5"^^xsd:float ;
@@ -6538,7 +6538,7 @@ SER:176_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:177_measurement
 	SER:hasKcatKm "6"^^xsd:float ;
@@ -6549,7 +6549,7 @@ SER:177_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:178_measurement
 	SER:hasKcatKm "7"^^xsd:float ;
@@ -6560,7 +6560,7 @@ SER:178_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:179_measurement
 	SER:hasKcatKm "9"^^xsd:float ;
@@ -6571,7 +6571,7 @@ SER:179_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:180_measurement
 	SER:hasKcatKm "12"^^xsd:float ;
@@ -6582,7 +6582,7 @@ SER:180_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:181_measurement
 	SER:hasKcatKm "16"^^xsd:float ;
@@ -6593,7 +6593,7 @@ SER:181_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:182_measurement
 	SER:hasKcatKm "0.02"^^xsd:float ;
@@ -6604,7 +6604,7 @@ SER:182_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:183_measurement
 	SER:hasKcatKm "22"^^xsd:float ;
@@ -6615,7 +6615,7 @@ SER:183_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:184_measurement
 	SER:hasKcatKm "24"^^xsd:float ;
@@ -6626,7 +6626,7 @@ SER:184_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:185_measurement
 	SER:hasKcatKm "29"^^xsd:float ;
@@ -6637,7 +6637,7 @@ SER:185_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:186_measurement
 	SER:hasKcatKm "34"^^xsd:float ;
@@ -6648,7 +6648,7 @@ SER:186_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:187_measurement
 	SER:hasKcatKm "39"^^xsd:float ;
@@ -6659,7 +6659,7 @@ SER:187_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:188_measurement
 	SER:hasKcatKm "47"^^xsd:float ;
@@ -6670,7 +6670,7 @@ SER:188_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:189_measurement
 	SER:hasKcatKm "52"^^xsd:float ;
@@ -6681,7 +6681,7 @@ SER:189_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:190_measurement
 	SER:hasKcatKm "59"^^xsd:float ;
@@ -6692,7 +6692,7 @@ SER:190_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:24520911 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:204_measurement
 	SER:hasKcatKm "212"^^xsd:float ;
@@ -6700,7 +6700,7 @@ SER:204_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:18573681 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:205_measurement
 	SER:hasKcatKm "11.17"^^xsd:float ;
@@ -6708,7 +6708,7 @@ SER:205_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:18573681 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:241_measurement
 	SER:hasKcatKm "4.7"^^xsd:float ;
@@ -6718,7 +6718,7 @@ SER:241_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:242_measurement
 	SER:hasKcatKm "5.8"^^xsd:float ;
@@ -6728,7 +6728,7 @@ SER:242_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:243_measurement
 	SER:hasKcatKm "8.9"^^xsd:float ;
@@ -6738,7 +6738,7 @@ SER:243_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:244_measurement
 	SER:hasKcatKm "40"^^xsd:float ;
@@ -6748,7 +6748,7 @@ SER:244_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:28684414 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:328_measurement
 	SER:hasKcatKm "10.36"^^xsd:float ;
@@ -6757,7 +6757,7 @@ SER:328_measurement
 	rdfs:comment "wild-type enzyme"@en ;
 	dcterms:references pubmed:23170977 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:329_measurement
 	SER:hasKcatKm "1.17"^^xsd:float ;
@@ -6768,7 +6768,7 @@ SER:329_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21771585 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:330_measurement
 	SER:hasKcatKm "1.6"^^xsd:float ;
@@ -6779,7 +6779,7 @@ SER:330_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21771585 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:331_measurement
 	SER:hasKcatKm "2.31"^^xsd:float ;
@@ -6790,7 +6790,7 @@ SER:331_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21771585 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:332_measurement
 	SER:hasKcatKm "15.68"^^xsd:float ;
@@ -6801,7 +6801,7 @@ SER:332_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21771585 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:333_measurement
 	SER:hasKcatKm "52"^^xsd:float ;
@@ -6811,7 +6811,7 @@ SER:333_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20800579 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:334_measurement
 	SER:hasKcatKm "133"^^xsd:float ;
@@ -6821,7 +6821,7 @@ SER:334_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20800579 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:335_measurement
 	SER:hasKcatKm "2.36"^^xsd:float ;
@@ -6831,7 +6831,7 @@ SER:335_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20800579 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:336_measurement
 	SER:hasKcatKm "18.8"^^xsd:float ;
@@ -6841,7 +6841,7 @@ SER:336_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20800579 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:337_measurement
 	SER:hasKcatKm "26.9"^^xsd:float ;
@@ -6849,14 +6849,14 @@ SER:337_measurement
 	wdt:P2076 "25"^^xsd:float ;
 	dcterms:references pubmed:16339152 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:338_measurement
 	SER:hasKcatKm "55"^^xsd:float ;
 	rdfs:comment "inTris-HCl buffer "@en ;
 	dcterms:references pubmed:16339152 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:339_measurement
 	SER:hasKcatKm "10.36"^^xsd:float ;
@@ -6865,7 +6865,7 @@ SER:339_measurement
 	rdfs:comment "wild-type enzyme"@en ;
 	dcterms:references pubmed:23170977 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:28_measurement
 	SER:hasPh "7.2"^^xsd:float ;
@@ -6873,14 +6873,14 @@ SER:28_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dcterms:references pubmed:10692079 ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:29_measurement
 	SER:hasPh "7.4"^^xsd:float ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dcterms:references pubmed:31326287 ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:43_measurement
 	SER:hasPh "7"^^xsd:float ;
@@ -6889,7 +6889,7 @@ SER:43_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:6814912, pubmed:1901806 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:44_measurement
 	SER:hasPh "7"^^xsd:float ;
@@ -6898,7 +6898,7 @@ SER:44_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:6814912, pubmed:1901806 ;
 	dc:source "sabio"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:69_measurement
 	SER:hasPh "7.5"^^xsd:float ;
@@ -6907,7 +6907,7 @@ SER:69_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:5288588, pubmed:25107532 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:110_measurement
 	SER:hasPh "8"^^xsd:float ;
@@ -6916,7 +6916,7 @@ SER:110_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:20637498 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:115_measurement
 	SER:hasPh "7.5"^^xsd:float ;
@@ -6925,7 +6925,7 @@ SER:115_measurement
 	wd:P703 "9031" ;
 	dcterms:references pubmed:9530952 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:116_measurement
 	SER:hasPh "7"^^xsd:float ;
@@ -6933,7 +6933,7 @@ SER:116_measurement
 	wd:P703 "9823" ;
 	dcterms:references pubmed:11377171 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:118_measurement
 	SER:hasPh "7"^^xsd:float ;
@@ -6942,7 +6942,7 @@ SER:118_measurement
 	wd:P703 "9823" ;
 	dcterms:references pubmed:3021065 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:119_measurement
 	SER:hasPh "6.8"^^xsd:float ;
@@ -6950,7 +6950,7 @@ SER:119_measurement
 	rdfs:comment "pH range was between 6,8 to 7,3"@en ;
 	dcterms:references pubmed:7309740 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:120_measurement
 	SER:hasPh "7.3"^^xsd:float ;
@@ -6958,7 +6958,7 @@ SER:120_measurement
 	rdfs:comment "pH range was between 6,8 to 7,3"@en ;
 	dcterms:references pubmed:7309740 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:122_measurement
 	SER:hasPh "6.5"^^xsd:float ;
@@ -6967,7 +6967,7 @@ SER:122_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:6698009 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:123_measurement
 	SER:hasPh "7.6"^^xsd:float ;
@@ -6976,7 +6976,7 @@ SER:123_measurement
 	wd:P703 "9913" ;
 	dcterms:references pubmed:6698009 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:315_measurement
 	SER:hasPh "8.2"^^xsd:float ;
@@ -6986,7 +6986,7 @@ SER:315_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:21771585 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:350_measurement
 	SER:hasPh "7.2"^^xsd:float ;
@@ -6995,7 +6995,7 @@ SER:350_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:736605 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:352_measurement
 	SER:hasPh "7.4"^^xsd:float ;
@@ -7005,7 +7005,7 @@ SER:352_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:671957, pubmed:702407, pubmed:735739 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:353_measurement
 	SER:hasPh "7.4"^^xsd:float ;
@@ -7014,7 +7014,7 @@ SER:353_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:671957, pubmed:702407, pubmed:735740 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:354_measurement
 	SER:hasPh "7.4"^^xsd:float ;
@@ -7024,7 +7024,7 @@ SER:354_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:671957, pubmed:702407, pubmed:735741 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:355_measurement
 	SER:hasPh "7.4"^^xsd:float ;
@@ -7034,7 +7034,7 @@ SER:355_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:671957, pubmed:702407, pubmed:735742 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:357_measurement
 	SER:hasPh "7.4"^^xsd:float ;
@@ -7044,7 +7044,7 @@ SER:357_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:671957, pubmed:702407, pubmed:735744 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:358_measurement
 	SER:hasPh "7.4"^^xsd:float ;
@@ -7054,7 +7054,7 @@ SER:358_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:671957, pubmed:702407, pubmed:735745 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:359_measurement
 	SER:hasPh "7.4"^^xsd:float ;
@@ -7064,7 +7064,7 @@ SER:359_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:671957, pubmed:702407, pubmed:735746 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:360_measurement
 	SER:hasPh "7.4"^^xsd:float ;
@@ -7074,7 +7074,7 @@ SER:360_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:671957, pubmed:702407, pubmed:735747 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:363_measurement
 	SER:hasPh "6"^^xsd:float ;
@@ -7084,7 +7084,7 @@ SER:363_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:725399 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:364_measurement
 	SER:hasPh "6"^^xsd:float ;
@@ -7093,7 +7093,7 @@ SER:364_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:725399 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:365_measurement
 	SER:hasPh "6"^^xsd:float ;
@@ -7103,7 +7103,7 @@ SER:365_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:725399 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:369_measurement
 	SER:hasPh "7.5"^^xsd:float ;
@@ -7113,7 +7113,7 @@ SER:369_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:714313, pubmed:714605 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:370_measurement
 	SER:hasPh "7.5"^^xsd:float ;
@@ -7123,7 +7123,7 @@ SER:370_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:714313, pubmed:714605 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:371_measurement
 	SER:hasPh "7.2"^^xsd:float ;
@@ -7132,7 +7132,7 @@ SER:371_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:727322 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:372_measurement
 	SER:hasPh "7.2"^^xsd:float ;
@@ -7142,7 +7142,7 @@ SER:372_measurement
 	wd:P703 "9606" ;
 	dcterms:references pubmed:727322 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:373_measurement
 	SER:hasPh "7.5"^^xsd:float ;
@@ -7150,7 +7150,7 @@ SER:373_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:659114 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:374_measurement
 	SER:hasPh "7.5"^^xsd:float ;
@@ -7159,7 +7159,7 @@ SER:374_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:659114 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:377_measurement
 	SER:hasPh "6.5"^^xsd:float ;
@@ -7167,7 +7167,7 @@ SER:377_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:378_measurement
 	SER:hasPh "7.2"^^xsd:float ;
@@ -7175,7 +7175,7 @@ SER:378_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:383_measurement
 	SER:hasPh "7"^^xsd:float ;
@@ -7184,7 +7184,7 @@ SER:383_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:684952 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:384_measurement
 	SER:hasPh "7"^^xsd:float ;
@@ -7193,7 +7193,7 @@ SER:384_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:684952 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:385_measurement
 	SER:hasPh "7"^^xsd:float ;
@@ -7202,7 +7202,7 @@ SER:385_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:684952 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:386_measurement
 	SER:hasPh "7"^^xsd:float ;
@@ -7211,110 +7211,110 @@ SER:386_measurement
 	wd:P703 "10116" ;
 	dcterms:references pubmed:684952 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:351_measurement
 	rdfs:comment "Transition reaction"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:361_measurement
 	rdfs:comment "No corresponding Rhea found."@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:366_measurement
 	rdfs:comment "No corresponding Rhea found"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:367_measurement
 	rdfs:comment "No corresponding Rhea found"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:368_measurement
 	rdfs:comment "No corresponding Rhea found"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:381_measurement
 	rdfs:comment "No corresponding Rhea found"@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:382_measurement
 	rdfs:comment "Reactome ID does not exist "@en ;
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:7_measurement
 	wp:organismName "Escherichia coli"^^xsd:string ;
 	wd:P703 "562" ;
 	dcterms:references pubmed:22138634 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:24_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dcterms:references pubmed:10692079 ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:25_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dcterms:references pubmed:31326287 ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:32_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dcterms:references pubmed:30594473 ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:71_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dcterms:references pubmed:15533043 ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:111_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:117_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:362_measurement
 	wp:organismName "Homo sapiens"^^xsd:string ;
 	wd:P703 "9606" ;
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:114_measurement
 	dc:source "brenda"^^xsd:string ; 
-  rdf:type SER:ReactionInformation .
+ 	rdf:type SER:ReactionInformation .
 
 SER:1_enzyme
 	rdfs:subClassOf uniprot:P21549.
