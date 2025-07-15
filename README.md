@@ -22,7 +22,25 @@ As a start, our data model is compatible with pathways hosted in WikiPathways [r
 # KinRDF
 Conversion of kinetic data to an RDF model, compatible with WikiPathways PathWayModels.
 
-Setup this project in Rstudio:
+# Run script in command line:
+
+```bash
+##Install library to read xlsx files:
+pip install openpyxl
+## Check if python is activated:
+which python
+## Check version of Python
+python3 --version
+##Update pip install
+pip install --upgrade pip
+##Install library to read xlsx files:
+pip install openpyxl
+ls
+python createRDFKinData.py
+echo "script run successful"
+``
+
+Setting up this project in a GUI, for example Rstudio (many other options are available):
 ```R
 ### Install Python on your local machine to run this script:
 ### See https://support.posit.co/hc/en-us/articles/360023654474-Installing-and-Configuring-Python-with-RStudio

@@ -1,4 +1,4 @@
-##This script has been tested with Python version 3.8.15
+##This script has been tested with Python version 3.13.5
 
 ##Load library to report which Python version was used for reproducability
 import sys
