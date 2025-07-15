@@ -389,14 +389,14 @@ for itemSubstrate in ListTotal:
 	  continue
 	elif(result_chebi):
 	  if ( "chebi" in h[7].strip().lower() ) : ##If ChEBI is part of the ID structure.
-	    ListSubstrateIDs.append( h[7].strip( ) + '\t'  + 'a' + ' ' + 'CHEBI:' + "CHEBI_23367" + ' ;') #molecular entity
+	    ListSubstrateIDs.append( h[7].strip( ) + '\t'  + 'a' + ' ' + 'CHEBI:' + "23367" + ' ;') #molecular entity
 	    ListSubstrateIDs.append( h[7].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Metabolite" + ' ;')
 	    ListSubstrateIDs.append( h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
 	    countSubstrates = countSubstrates + 1
 	    ListInteractionLinks.append(h[0].strip( ) + '_substrate' + '\t' + 'rdfs:subClassOf' + ' ' + h[7].strip( ) + '.')
 	    countSubstratesLinks = countSubstratesLinks + 1
 	  else: ##If ChEBI is NOT part of the ID structure.
-	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + '\t'  + 'a' + ' ' + 'CHEBI:' + "CHEBI_23367" + ' ;') #molecular entity
+	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + '\t'  + 'a' + ' ' + 'CHEBI:' + "23367" + ' ;') #molecular entity
 	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Metabolite" + ' ;')
 	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + 'CHEBI:' + h[7].strip( )+ '.')
 	    countSubstrates = countSubstrates + 1
