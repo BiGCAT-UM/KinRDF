@@ -140,7 +140,7 @@ ListTotal = [w.replace('chebi: ', '') for w in ListTotal]
 
 ##Remove text within parenthesis using regex:
 ##TODO: find regex to remove double brackets, e.g. '((3R,5S)-1-pyrroline-3-hydroxy-5-carboxylate)'
-ListTotal = [re.sub("[\(\[].*?[\)\]]","",x) for x in ListTotal] ##Everything in brackets
+ListTotal = [re.sub(r"[\(\[].*?[\)\]]","",x) for x in ListTotal] ##Everything in brackets
 
 ##Replace common prefixes for harmonized data structure:
 ListTotal = [w.replace('RHEA:', '') and w.replace('Rhea:', '') and w.replace('rhea:', '') for w in ListTotal]
@@ -422,7 +422,7 @@ ListQC.append("Data format for ChEBI correctly linked for " + str(countSubstrate
 
 
 ##Regex:
-pattern_float = '^\d+\.\d+$' ##to test for numbers with dot-decimal separator
+pattern_float = r'^\d+\.\d+$' ##to test for numbers with dot-decimal separator
 
 ##Km
 countKm = 0
@@ -945,10 +945,10 @@ os.chdir(outputFolder) ##Update directory to folder to store output data
 dir_code = os.getcwd()
 
 # # Empty the data file before writing new content:
-open('RDF_Kin_Data_2022-Dec.ttl', 'w').close()
+open('RDF_Kin_Data_2025-July.ttl', 'w').close()
 
 # # open a file for writing:
-RDF_Kin_data = open('RDF_Kin_Data_2022-Dec.ttl', 'wb')
+RDF_Kin_data = open('RDF_Kin_Data_2025-July.ttl', 'wb')
 
 # #First, print the prefixes from existing databases
 ##.encode() needed to write to files in Python 3.x (compared to 2.x)
@@ -1011,10 +1011,10 @@ for KeySERX, ValueSERX in AllDict.items():
 RDF_Kin_data.close()
 
 # # Empty the QC file before writing new content:
-open('QC_RDF_Kin_Data_2022-Dec.ttl', 'w').close()
+open('QC_RDF_Kin_Data_2025-July.ttl', 'w').close()
 
 # # open a file for writing:
-RDF_Kin_data_QC = open('QC_RDF_Kin_Data_2022-Dec.ttl', 'wb')
+RDF_Kin_data_QC = open('QC_RDF_Kin_Data_2025-July.ttl', 'wb')
 
 ##Write QC info to file:
 if len(ListQC) >0:
