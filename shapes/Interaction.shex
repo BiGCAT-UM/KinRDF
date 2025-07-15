@@ -23,7 +23,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX sio: <http://semanticscience.org/resource/>  
 PREFIX bioregistry: <https://bioregistry.io/oboinowl:> 
 
-:Interaction {
+:Interaction EXTRA a {
   rdf:type [ wp:Interaction ] ;
   rh:accession IRI {1} ;
   wp:bdbRhea IRI {1}
