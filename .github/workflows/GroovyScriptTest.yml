@@ -26,7 +26,7 @@ jobs:
 
       - name: Generate the Shex validation reports - Enzyme
         run: |
-          #groovy validate.groovy Enzyme http://vocabularies.wikipathways.org/wp#Protein
+          groovy validate.groovy Enzyme http://vocabularies.wikipathways.org/wp#Protein
 
       - name: Generate the Shex validation reports - Interaction
         run: |
@@ -34,8 +34,8 @@ jobs:
 
       - name: Generate the Shex validation reports - Substrate
         run: |
-          #groovy validate.groovy Substrate http://vocabularies.wikipathways.org/wp#Metabolite
+          groovy validate.groovy Substrate http://vocabularies.wikipathways.org/wp#Metabolite
 
       - name: Generate the Shex validation reports - Measurement
         run: |
-          #groovy validate.groovy Measurement http://vocabularies.wikipathways.org/wp#???
+          groovy validate.groovy Measurement http://vocabularies.wikipathways.org/wp#???
