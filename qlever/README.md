@@ -16,7 +16,7 @@ Assuming you already have `docker` (if not, see below), do:
 qlever get-data --input-files Qleverfile
 sudo /home/${HOME}/.venvs/qlever/bin/qlever index --input-files Qleverfile
 sudo /home/${HOME}/.venvs/qlever/bin/qlever start --description KinRDF
-sudo /home/egonw/.venvs/qlever/bin/qlever ui
+sudo /home/${HOME}/.venvs/qlever/bin/qlever ui
 ```
 
 And then you will have the QLever GUI running.
