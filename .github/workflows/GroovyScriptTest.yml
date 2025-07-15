@@ -20,10 +20,22 @@ jobs:
       - name: Install groovy
         run: sudo apt install groovy
 
-      - name: Generate the Shex validation reports
+      - name: Generate the Shex validation reports: InteractionData
         run: |
           groovy validate.groovy InteractionData http://vocabularies.wikipathways.org/wp#InteractionData
+
+      - name: Generate the Shex validation reports: Enzyme
+        run: |
           #groovy validate.groovy Enzyme http://vocabularies.wikipathways.org/wp#Protein
+
+      - name: Generate the Shex validation reports: Interaction
+        run: |
           groovy validate.groovy Interaction http://vocabularies.wikipathways.org/wp#Interaction
+
+      - name: Generate the Shex validation reports: Substrate
+        run: |
           #groovy validate.groovy Substrate http://vocabularies.wikipathways.org/wp#Metabolite
+
+      - name: Generate the Shex validation reports: Measurement
+        run: |
           #groovy validate.groovy Measurement http://vocabularies.wikipathways.org/wp#???
