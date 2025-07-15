@@ -6,7 +6,7 @@ import org.apache.jena.shex.ShexStatus
 workspaceRoot = "."
 rdf = new net.bioclipse.managers.RDFManager(workspaceRoot);
 
-file = "/Output/RDF_Kin_Data_2022-Dec.ttl"
+file = "/Output/RDF_Kin_Data_2025-July.ttl"
 clazz = args[0]
 type = args[1]
 
