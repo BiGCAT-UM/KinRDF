@@ -24,7 +24,7 @@ PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX bioregistry: <https://bioregistry.io/oboinowl:> 
 
 :Interaction {
-  a [ wp:Interaction ] ;
+  rdf:type [ wp:Interaction ] ;
   rh:accession IRI {1} ;
   wp:bdbRhea IRI {1}
 }
