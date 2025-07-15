@@ -23,7 +23,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX sio: <http://semanticscience.org/resource/>  
 PREFIX bioregistry: <https://bioregistry.io/oboinowl:> 
 
-:Enzyme {
+:Enzyme EXTRA a {
   a [ wp:Protein ] ;
   wp:bdbUniprot IRI* ;
   bioregistry:hasDbXref IRI* ;
