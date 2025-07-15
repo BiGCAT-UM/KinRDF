@@ -33,7 +33,7 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
   SER:hasKcatKm @:MeasurementValue * ;
   dc:source Literal ;
   dcterms:references @:Publication
-]
+}
 
 :MeasurementValue {
   sio:has-unit Literal ;
