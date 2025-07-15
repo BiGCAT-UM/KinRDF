@@ -391,14 +391,14 @@ for itemSubstrate in ListTotal:
 	  if ( "chebi" in h[7].strip().lower() ) : ##If ChEBI is part of the ID structure.
 	    ListSubstrateIDs.append( h[7].strip( ) + '\t'  + 'a' + ' ' + 'CHEBI:' + "23367" + ' ;') #molecular entity
 	    ListSubstrateIDs.append( h[7].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Metabolite" + ' ;')
-	    ListSubstrateIDs.append( h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + h[7].strip( )+ '.')
+	    ListSubstrateIDs.append( h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' CHEBIWP:' + h[7].strip( ).replace('CHEBI:', '')+ '.')
 	    countSubstrates = countSubstrates + 1
 	    ListInteractionLinks.append(h[0].strip( ) + '_substrate' + '\t' + 'rdfs:subClassOf' + ' ' + h[7].strip( ) + '.')
 	    countSubstratesLinks = countSubstratesLinks + 1
 	  else: ##If ChEBI is NOT part of the ID structure.
 	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + '\t'  + 'a' + ' ' + 'CHEBI:' + "23367" + ' ;') #molecular entity
 	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + '\t'  + 'rdf:type' + ' ' + "wp:Metabolite" + ' ;')
-	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + 'CHEBI:' + h[7].strip( )+ '.')
+	    ListSubstrateIDs.append('CHEBI:' + h[7].strip( ) + "\t" + "wp:bdbChEBI" + ' ' + 'CHEBIWP:' + h[7].strip( )+ '.')
 	    countSubstrates = countSubstrates + 1
 	    ListInteractionLinks.append(h[0].strip( ) + '_substrate' + '\t' + 'rdfs:subClassOf' + ' ' + 'CHEBI:' + h[7].strip( ) + '.')
 	    countSubstratesLinks = countSubstratesLinks + 1
@@ -961,6 +961,7 @@ RDF_Kin_data.write("@prefix rh: <http://rdf.rhea-db.org/> . \n".encode()) #From 
 #RDF_Kin_data.write("@prefix RHEA:   <https://www.rhea-db.org/reaction?id=> . \n".encode()) #For website link, not for IRI!
 RDF_Kin_data.write("@prefix RHEA:   <https://identifiers.org/rhea/> . \n".encode()) #To link to WPRDF
 RDF_Kin_data.write("@prefix CHEBI:   <http://purl.obolibrary.org/obo/CHEBI_> . \n".encode()) #To link to Rhea RDF (which includes ChEBI)
+RDF_Kin_data.write("@prefix CHEBIwp:   <https://identifiers.org/chebi/CHEBI:> . \n".encode()) #To link to WPs RDF (matches with identifiers.org)
 RDF_Kin_data.write("@prefix dcterms: <http://purl.org/dc/terms/> . \n".encode()) 
 RDF_Kin_data.write("@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> . \n".encode())
 RDF_Kin_data.write("@prefix uniprot:   <https://identifiers.org/uniprot/> . \n".encode())
