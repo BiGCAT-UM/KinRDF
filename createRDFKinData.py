@@ -961,7 +961,7 @@ RDF_Kin_data.write("@prefix rh: <http://rdf.rhea-db.org/> . \n".encode()) #From 
 #RDF_Kin_data.write("@prefix RHEA:   <https://www.rhea-db.org/reaction?id=> . \n".encode()) #For website link, not for IRI!
 RDF_Kin_data.write("@prefix RHEA:   <https://identifiers.org/rhea/> . \n".encode()) #To link to WPRDF
 RDF_Kin_data.write("@prefix CHEBI:   <http://purl.obolibrary.org/obo/CHEBI_> . \n".encode()) #To link to Rhea RDF (which includes ChEBI)
-RDF_Kin_data.write("@prefix CHEBIwp:   <https://identifiers.org/chebi/CHEBI:> . \n".encode()) #To link to WPs RDF (matches with identifiers.org)
+RDF_Kin_data.write("@prefix CHEBIWP:   <https://identifiers.org/chebi/CHEBI:> . \n".encode()) #To link to WPs RDF (matches with identifiers.org)
 RDF_Kin_data.write("@prefix dcterms: <http://purl.org/dc/terms/> . \n".encode()) 
 RDF_Kin_data.write("@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> . \n".encode())
 RDF_Kin_data.write("@prefix uniprot:   <https://identifiers.org/uniprot/> . \n".encode())
