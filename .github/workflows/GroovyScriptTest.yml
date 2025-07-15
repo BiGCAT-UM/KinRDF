@@ -16,9 +16,10 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-
-      - name: Install groovy
-        run: sudo apt install groovy
+      - uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: groovy
+          version: 1.0
 
   interactionData:
     runs-on: ubuntu-latest
