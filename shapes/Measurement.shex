@@ -35,10 +35,10 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
   dcterms:references @:Publication
 ]
 
-:MeasurementValue [
+:MeasurementValue {
   sio:has-unit Literal ;
   sio:has-value Literal
-]
+}
 
-:Publication [
-]
+:Publication /^http:\/www\.ncbi\.nlm\.nih\.gov\/pubmed[0-9]+/ {
+}
