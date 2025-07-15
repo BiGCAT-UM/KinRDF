@@ -29,6 +29,7 @@ jobs:
         with:
           packages: groovy
           version: 1.0
+          execute_install_scripts: true
       - name: Generate the Shex validation reports
         run: |
           groovy validate.groovy InteractionData http://vocabularies.wikipathways.org/wp#InteractionData
