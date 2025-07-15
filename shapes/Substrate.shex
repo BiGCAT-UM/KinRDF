@@ -11,7 +11,8 @@ PREFIX wp:    <http://vocabularies.wikipathways.org/wp#>
 PREFIX sio:   <http://semanticscience.org/resource/>
 PREFIX chebi: <http://purl.obolibrary.org/obo/>
 
-:Substrate {
+:Substrate EXTRA a {
   a [ chebi:CHEBI_23367 ] ;
-  a [ wp:Metabolite ]
+  a [ wp:Metabolite ] ;
+  wp:bdbChEBI IRI {1}
 }
