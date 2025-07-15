@@ -38,4 +38,4 @@ jobs:
 
       - name: Generate the Shex validation reports - Measurement
         run: |
-          groovy validate.groovy Measurement http://vocabularies.wikipathways.org/wp#???
+          groovy validate.groovy Measurement http://bigcat-um.github.io/KinRDF/kin#ReactionInformation

@@ -23,7 +23,8 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX sio: <http://semanticscience.org/resource/>  
 PREFIX bioregistry: <https://bioregistry.io/oboinowl:> 
 
-:Measurement {
+:Measurement EXTRA a {
+  a [ SER:ReactionInformation ] ;
   dct:references IRI + ;
   dc:source Literal ;
   wp:organismName [@en] ;
