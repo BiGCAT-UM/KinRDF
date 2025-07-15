@@ -1,0 +1,40 @@
+# Qleverfile for WikiPathways
+#
+# qlever get-data
+# qlever index
+# qlever start
+#
+# Also builds a text index for fast kewyword search in literals. Without that
+# (WITH_TEXT_INDEX = false), the index build takes only ~10 minutes.
+
+[data]
+NAME              = KinRDF
+RELEASE           = 202507
+RELEASE_DATA      = RDF_Kin_Data_2022-Dec.ttl
+GET_DATA_URL      = https://raw.githubusercontent.com/BiGCAT-UM/KinRDF/refs/heads/main/Output/
+GET_DATA_CMD      = wget -O ${RELEASE_DATA} ${GET_DATA_URL}/${RELEASE_DATA}
+                    cat ${RELEASE_DATA} | grep ^@prefix | tr -s ' ' | sort -u > ${NAME}.prefix-definitions
+INDEX_DESCRIPTION = KinRDF, data from ${GET_DATA_URL}
+TEXT_DESCRIPTION  = All literals, search with FILTER KEYWORDS(?text, "...")
+
+[index]
+NAME              = KinRDF
+FILE_NAMES        = ${NAME}.prefix-definitions ${data:RELEASE_DATA}
+CAT_INPUT_FILES   = cat ${FILE_NAMES}
+SETTINGS_JSON     = { "ascii-prefixes-only": false, "num-triples-per-batch": 1000000 }
+WITH_TEXT_INDEX   = from_literals
+
+[server]
+PORT               = 7015
+ACCESS_TOKEN       = ${data:NAME}_7643543846
+MEMORY_FOR_QUERIES = 30G
+CACHE_MAX_SIZE     = 5G
+WITH_TEXT_INDEX    = from_literals
+
+[docker]
+USE_DOCKER = true
+IMAGE      = adfreiburg/qlever
+
+[ui]
+PORT   = 7001
+CONFIG = default
