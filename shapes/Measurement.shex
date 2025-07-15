@@ -25,8 +25,6 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
 
 :Measurement EXTRA a {
   a [ SER:ReactionInformation ] ;
-  dct:references IRI + ;
-  dc:source Literal ;
   wp:organismName [@en] ;
   SER:hasKm @:MeasurementValue * ;
   SER:hasPh @:MeasurementValue * ;
