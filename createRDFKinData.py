@@ -335,7 +335,7 @@ for itemRheaID in ListTotal:
 	pattern_rhea = '^(RHEA:)?\\d{5}$'
 	result_rhea = re.match(pattern_rhea, g[6].strip())
 	if (g[6].strip()=='-')|(g[6].strip()=='NA')|(g[6].strip()=='')|(g[6].strip()=='None'): #Check if one of the necessary values is missing!!
-	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement ends with type
+	  ListRheaID_type.append(g[0].strip( ) + '\t' + 'rdf:type ' + 'wp:InteractionData') ##To make sure statement includes type
 	  ListErrors.append("CHECK: Data format for Rhea unknown, check original data for: "+ g[0] + ' : ' + g[6] + ' ' + g[18] + '\n')
 	  continue
 	elif ('R-HSA-' in g[6].strip()):
@@ -886,13 +886,13 @@ for itemListPMID in ListPMID:
 for itemListDatabase in ListDatabase:
   (key, val) = itemListDatabase.strip('\n').split('\t')
   AllDict.setdefault(key, [])
-  AllDict[key].append(val + ' .')
+  AllDict[key].append(val + ' ; \n  rdf:type SER:ReactionInformation .')
 
 ##Scenario 2: only PMID is available as provenance (no database)
 for itemListDatabase in ListProv:
   (key, val) = itemListDatabase.strip('\n').split('\t')
   AllDict.setdefault(key, [])
-  AllDict[key].append(val + ' .')		
+  AllDict[key].append(val + ' ; \n  rdf:type SER:ReactionInformation .')		
 
 ##Remove duplicates for linked lists:
 unique_ListLinkUniprot = list(dict.fromkeys(ListLinkUniprot))
