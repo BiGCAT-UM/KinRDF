@@ -29,28 +29,28 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
   # the next construct ensure we have at least one of
   #   (SER:hasKm|SER:hasKcat|SER:hascatKm)
   (
-    SER:hasKm @:MeasurementValue + ; 
-    SER:hasKcat @:MeasurementValue * ;
-    SER:hasKcatKm @:MeasurementValue * 
+    SER:hasKm xsd:float + ; 
+    SER:hasKcat xsd:float * ;
+    SER:hasKcatKm xsd:float * 
   |
-    SER:hasKm @:MeasurementValue * ; 
-    SER:hasKcat @:MeasurementValue + ;
-    SER:hasKcatKm @:MeasurementValue * 
+    SER:hasKm xsd:float * ; 
+    SER:hasKcat xsd:float + ;
+    SER:hasKcatKm xsd:float * 
   |
-    SER:hasKm @:MeasurementValue * ; 
-    SER:hasKcat @:MeasurementValue * ;
-    SER:hasKcatKm @:MeasurementValue +
+    SER:hasKm xsd:float * ; 
+    SER:hasKcat xsd:float * ;
+    SER:hasKcatKm xsd:float +
   )
-  #SER:hasPh @:MeasurementValue {1} ;
+  #SER:hasPh xsd:float {1} ;
   #wdt:P2076 @:MeasurementValue * ;
   #dc:source Literal ;
   #dcterms:references @:Publication
 }
 
-:MeasurementValue {
-  sio:has-unit Literal ;
-  sio:has-value Literal
-}
+#:MeasurementValue {
+#  sio:has-unit Literal ;
+#  sio:has-value Literal
+#}
 
 #:Publication /^http:\/www\.ncbi\.nlm\.nih\.gov\/pubmed[0-9]+/ {
 #}
