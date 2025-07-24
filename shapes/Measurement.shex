@@ -25,7 +25,7 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
 
 :Measurement EXTRA a {
   rdf:type [ SER:ReactionInformation ] ; 
-  #wp:organismName [@en] ;
+  wp:organism @:Organism {1} ;
   # the next construct ensure we have at least one of
   #   (SER:hasKm|SER:hasKcat|SER:hascatKm)
   (
@@ -41,16 +41,19 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
     SER:hasKcat xsd:float * ;
     SER:hasKcatKm xsd:float +
   )
-  #SER:hasPh xsd:float {1} ;
-  #wdt:P2076 @:MeasurementValue * ;
-  #dc:source Literal ;
-  #dcterms:references @:Publication
+  SER:hasPh xsd:float {1} ;
+  wdt:P2076 xsd:float {1} ;
+  (
+    dc:source IRI 
+  |
+    dcterms:references @:Publication
+  )
 }
 
-#:MeasurementValue {
-#  sio:has-unit Literal ;
-#  sio:has-value Literal
-#}
+:Organism {
+  wp:organismName xsd:string ;
+  wdt:P703 xsd:string
+}
 
-#:Publication /^http:\/www\.ncbi\.nlm\.nih\.gov\/pubmed[0-9]+/ {
-#}
+:Publication /^http:\/www\.ncbi\.nlm\.nih\.gov\/pubmed[0-9]+/ {
+}
