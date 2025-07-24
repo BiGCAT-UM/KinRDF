@@ -26,11 +26,23 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
 :Measurement EXTRA a {
   rdf:type [ SER:ReactionInformation ] ; 
   #wp:organismName [@en] ;
-  #SER:hasKm @:MeasurementValue * ;
+  # the next construct ensure we have at least one of
+  #   (SER:hasKm|SER:hasKcat|SER:hascatKm)
+  (
+    SER:hasKm @:MeasurementValue + ; 
+    SER:hasKcat @:MeasurementValue * ;
+    SER:hasKcatKm @:MeasurementValue * 
+  |
+    SER:hasKm @:MeasurementValue * ; 
+    SER:hasKcat @:MeasurementValue + ;
+    SER:hasKcatKm @:MeasurementValue * 
+  |
+    SER:hasKm @:MeasurementValue * ; 
+    SER:hasKcat @:MeasurementValue * ;
+    SER:hasKcatKm @:MeasurementValue +
+  )
   #SER:hasPh @:MeasurementValue {1} ;
   #wdt:P2076 @:MeasurementValue * ;
-  #SER:hasKcat @:MeasurementValue * ;
-  #SER:hasKcatKm @:MeasurementValue * ;
   #dc:source Literal ;
   #dcterms:references @:Publication
 }
