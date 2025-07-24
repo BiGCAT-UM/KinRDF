@@ -27,7 +27,7 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
   rdf:type [ SER:ReactionInformation ] ; 
   #wp:organismName [@en] ;
   #SER:hasKm @:MeasurementValue * ;
-  SER:hasPh @:MeasurementValue {1} ;
+  #SER:hasPh @:MeasurementValue {1} ;
   #wdt:P2076 @:MeasurementValue * ;
   #SER:hasKcat @:MeasurementValue * ;
   #SER:hasKcatKm @:MeasurementValue * ;
@@ -35,10 +35,10 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
   #dcterms:references @:Publication
 }
 
-#:MeasurementValue {
-#  sio:has-unit Literal ;
-#  sio:has-value Literal
-#}
+:MeasurementValue {
+  sio:has-unit Literal ;
+  sio:has-value Literal
+}
 
 #:Publication /^http:\/www\.ncbi\.nlm\.nih\.gov\/pubmed[0-9]+/ {
 #}
