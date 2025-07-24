@@ -44,9 +44,11 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
   SER:hasPh xsd:float {1} ;
   wdt:P2076 xsd:float {1} ;
   (
-    dc:source IRI 
+    dc:source @:Source + ;
+    dcterms:references @:Publication *
   |
-    dcterms:references @:Publication
+    dcterms:references @:Publication + ;
+    dc:source @:Source *
   )
 }
 
@@ -56,4 +58,8 @@ PREFIX bioregistry: <https://bioregistry.io/oboinowl:>
 }
 
 :Publication /^http:\/www\.ncbi\.nlm\.nih\.gov\/pubmed[0-9]+/ {
+}
+
+:Source {
+  rdfs:label LITERAL {1}
 }
