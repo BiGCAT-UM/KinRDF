@@ -3,37 +3,38 @@ Aldo-keto reductase family 1 	Aldo-keto reductase family 1 member A1	EC:1.1.1.2	
 Aldo-keto reductase family 1 	Aldo-keto reductase family 1 member A1	EC:1.1.1.2	P14550	-	38113	 CHEBI:27975	D-glyceraldehyde	1.5	3.0	-	7.0	25	-	Homo sapiens 	16919	Brenda 
 Aldo-keto reductase family 1 	Aldo-keto reductase family 1 member A1	EC:1.1.1.2	P14550	-	38113	 CHEBI:27975	D-glyceraldehyde	1.7	-	-	7.0	25	-	Homo sapiens 	8916913	Brenda 
 Aldo-keto reductase family 1 	Aldo-keto reductase family 1 member A1	EC:1.1.1.2	P14550	-	38113	 CHEBI:27975	D-glyceraldehyde	2.94	-	-	7.0	37	-	Homo sapiens 	6753936	Sabio-Rk
-Ketohexokinase	Ketohexokinase	EC:2.7.1.3	P50053 	-	18146	CHEBI:28757	D-Fructose	0.86	-	-	7.5	37	-	Homo sapiens 	2996495	Sabio-Rk
-Ketohexokinase	Ketohexokinase	EC:2.7.1.3	P50053 	-	18146	CHEBI:28757	D-Fructose	7	6.9	-	7	25	A- wild type 	Homo sapiens 	12941785	Brenda 
-Ketohexokinase	Ketohexokinase	EC:2.7.1.3	P50053 	-	18146	CHEBI:28757	D-Fructose	0.8	7.6	-	7	25	C- wild type 	Homo sapiens 	12941785	Brenda 
-Ketohexokinase	Ketohexokinase	EC:2.7.1.3	P50053 	-	18146	CHEBI:28757	D-Fructose	0.83	-	-	7.4	37	-	Rattus norvegicus	2992452	Brenda 
+Ketohexokinase	Ketohexokinase	EC:2.7.1.3	P50053Â 	-	18146	CHEBI:28757	D-Fructose	0.86	-	-	7.5	37	-	Homo sapiens 	2996495	Sabio-Rk
+Ketohexokinase	Ketohexokinase	EC:2.7.1.3	P50053Â 	-	18146	CHEBI:28757	D-Fructose	7	6.9	-	7	25	A- wild type 	Homo sapiens 	12941785	Brenda 
+Ketohexokinase	Ketohexokinase	EC:2.7.1.3	P50053Â 	-	18146	CHEBI:28757	D-Fructose	0.8	7.6	-	7	25	C- wild type 	Homo sapiens 	12941785	Brenda 
+Ketohexokinase	Ketohexokinase	EC:2.7.1.3	P50053Â 	-	18146	CHEBI:28757	D-Fructose	0.83	-	-	7.4	37	-	Rattus norvegicus	2992452	Brenda 
 GLYCTK	Glycerate kinase	EC:2.7.1.31	Q8IVS8	-	23517	CHEBI:16659	(R)-glycerate	15	-	-	7.1	30	Patient with deficiency 	Homo sapiens 	2537226	Sabio-Rk
 Phosphoglycerate mutase 1	Phosphoglycerate mutase 1	EC:5.4.2.11	P18669	-	15903	CHEBI:58272	3-phosphoglycerate	0.22	-	-	7.6	25	-	Homo sapiens 	3251	Brenda 
 Phosphoglycerate mutase 1	Phosphoglycerate mutase 1	EC:5.4.2.11	P18669	-	15903	CHEBI:58272	3-phosphoglycerate	0.56	530	-	-	-	-	Saccharomyces cerevisiae	10369755	Brenda 
 Enolase	Alpha-enolase	EC:4.2.1.11	P06733	-	10165	CHEBI:58289	2-phosphoglycerate	0.199	410	-	6.8	-	Brenda: 701578	Homo sapiens 		Brenda 
 Enolase	Alpha-enolase	EC:4.2.1.11	P06733	-	10166	CHEBI:58702	phosphoenolpyruvate	0.58	48.5	-	6.8	-	Brenda: 701578	Homo sapiens 		Brenda 
-Pyruvate kinase 	Pyruvate kinase PKLR	EC:2.7.1.40	P30613 	-	18159	CHEBI:15361	pyruvate	0.4	-	-	7.3	37	Tissue: liver, dephosphorylated 	Homo sapiens 	6250830	Sabio-Rk
-Pyruvate kinase 	Pyruvate kinase PKLR	EC:2.7.1.40	P30613 	-	18159	CHEBI:15361	pyruvate	0.85	-	-	7.3	37	Tissue: liver, phosphorylated 	Homo sapiens 	6250830	Sabio-Rk
-Pyruvate kinase 	Pyruvate kinase PKLR	EC:2.7.1.40	P30613 	-	18159	CHEBI:15361	pyruvate	0.24	-	-	-	30	-	Homo sapiens 	23270483	Brenda 
-Pyruvate carboxylase	Pyruvate carboxylase	EC:6.4.1.1 	P11498	-	20845	CHEBI:15361	pyruvate	0.22	-	-	7.8	37	-	Homo sapiens 	10600533	Brenda 
-Pyruvate carboxylase	Pyruvate carboxylase	EC:6.4.1.1 	P11498	-	20845	CHEBI:15361	pyruvate	0.5	60	-	7.8	30	-	Saccharomyces cerevisiae	17478118	Brenda 
-Phosphoenolpyruvate carboxykinase	Phosphoenolpyruvate carboxykinase	EC:4.1.1.32 	P35558 	-	10389	CHEBI:16452	oxaloacetate	0.217	-	-	-	-	-	Homo sapiens 	19021757	Brenda 
+Pyruvate kinaseÂ 	Pyruvate kinase PKLR	EC:2.7.1.40	P30613Â 	-	18159	CHEBI:15361	pyruvate	0.4	-	-	7.3	37	Tissue: liver, dephosphorylated 	Homo sapiens 	6250830	Sabio-Rk
+Pyruvate kinaseÂ 	Pyruvate kinase PKLR	EC:2.7.1.40	P30613Â 	-	18159	CHEBI:15361	pyruvate	0.85	-	-	7.3	37	Tissue: liver, phosphorylated 	Homo sapiens 	6250830	Sabio-Rk
+Pyruvate kinaseÂ 	Pyruvate kinase PKLR	EC:2.7.1.40	P30613Â 	-	18159	CHEBI:15361	pyruvate	0.24	-	-	-	30	-	Homo sapiens 	23270483	Brenda 
+Pyruvate carboxylase	Pyruvate carboxylase	EC:6.4.1.1Â 	P11498	-	20845	CHEBI:15361	pyruvate	0.22	-	-	7.8	37	-	Homo sapiens 	10600533	Brenda 
+Pyruvate carboxylase	Pyruvate carboxylase	EC:6.4.1.1Â 	P11498	-	20845	CHEBI:15361	pyruvate	0.5	60	-	7.8	30	-	Saccharomyces cerevisiae	17478118	Brenda 
+Phosphoenolpyruvate carboxykinase	Phosphoenolpyruvate carboxykinase	EC:4.1.1.32Â 	P35558Â 	-	10389	CHEBI:16452	oxaloacetate	0.217	-	-	-	-	-	Homo sapiens 	19021757	Brenda 
 L-serine dehydratase	L-serine dehydratase	EC:4.3.1.17	P20132	-	19170	CHEBI:33384	L-serine	67.3	-	-	-	37	hSDH	Homo sapiens 	16580895	Brenda 
 L-serine dehydratase	L-serine dehydratase	EC:4.3.1.17	P20132	-	19170	CHEBI:33384	L-serine	23	79	3500	8.3	-	hSDH	Homo sapiens 	18342636	Sabio-Rk
 Fructose-bisphosphate aldolase B		EC:4.1.2.13	P05062	-	30852	CHEBI:138881	fructose 1-phosphate	3.7	10.8	-	-	-	Temperature and PH range	Homo sapiens 	7982900	Brenda 
-GK	Glycerol kinase	EC:2.7.1.30		-	21645	CHEBI:17754	Glycerol	0.111	-	-	7.35	37	-	Rattus norvegicus	 9606984	Brenda 
-GPD1	Glycerol-3-phosphate dehydrogenase	EC:1.1.1.8 	P21695	-	11094	CHEBI:57642	DHAP	0.052	240	4600	7.5	25	-	Homo sapiens 	26926520	Brenda 
+GK	Glycerol kinase	EC:2.7.1.30		-	21645	CHEBI:17754	Glycerol	0.111	-	-	7.35	37	-	Rattus norvegicus	Â 9606984	Brenda 
+GPD1	Glycerol-3-phosphate dehydrogenase	EC:1.1.1.8Â 	P21695	-	11094	CHEBI:57642	DHAP	0.052	240	4600	7.5	25	-	Homo sapiens 	26926520	Brenda 
 Phosphoglycerate kinase 1	Phosphoglycerate kinase 1	EC:2.7.2.3	P00558	-	14802	CHEBI:58272	(2R)-3-phosphoglycerate	0.4	89.8	224.5	8.0	37	-	Homo sapiens 	29995887	Brenda 
 Phosphoglycerate kinase 1	Phosphoglycerate kinase 1	EC:2.7.2.3		-	14802	CHEBI:58272	(2R)-3-phosphoglycerate	1.65	-	-	7.4	25	liver enzzyme 	Rattus norvegicus	4203909	Brenda 
 GAPDH	Glyceraldehyde-3-phosphate dehydrogenase	EC:1.2.1.12	P04406	-	10301	CHEBI:59776	Glyceraldehyde-3-P	0.27	-	-	8.9	20	-	Homo sapiens 		Brenda 
 Triosephosphate isomerase	Triosephosphate isomerase	EC:5.3.1.1	P60174	-	18586	CHEBI:59776	Glyceraldehyde-3-P	0.4	-	-	7.9	-	-	Homo sapiens 	1168838	Sabio-Rk
 Triosephosphate isomerase	Triosephosphate isomerase	EC:5.3.1.1	P60174	-	18587	CHEBI:57642	DHAP	0.59	-	-	7.9	-	-	Homo sapiens 	1168838	Sabio-Rk
-Triosephosphate isomerase	Triosephosphate isomerase	EC:5.3.1.1	P60174	-	18586	CHEBI:59776	Glyceraldehyde-3-P	-	-	18.6	7	37	Tissue: erythrocyte 	Homo sapiens 	11698297	Sabio-Rk
+Triosephosphate isomerase	Triosephosphate isomerase	EC:5.3.1.1	P60174	-	18586	CHEBI:59776	Glyceraldehyde-3-P	-	-	18.6	7	37	Tissue: erythrocyteÂ 	Homo sapiens 	11698297	Sabio-Rk
 Aldolase	Fructose-bisphosphate aldolase A	EC:4.1.2.13	P04075	-	14730	CHEBI:32966	?-D-fructose 1,6-bisphosphate	0.0519	16.7	321.77	7.4	30	-	Homo sapiens 	14766013	Brenda 
 Fructose-1,6-bisphosphatase 1	Fructose-1,6-bisphosphatase 1	EC:3.1.3.11	P09467	-	11065	CHEBI:32966	?-D-fructose 1,6-bisphosphate	0.0021	20.8	-	7.5	37	-	Homo sapiens 	16213487	Brenda 
 Glucose-6-phosphate isomerase	Glucose-6-phosphate isomerase	EC:5.3.1.9	P06744	-	11818	CHEBI:57634	?-D-fructose 6-phosphate	0.037	650	-	7.5	30	Recombinant wild-type enzyme 	Homo sapiens 	19064002	Brenda 
 Glucose-6-phosphate isomerase	Glucose-6-phosphate isomerase	EC:5.3.1.9	P06744	-	11817	CHEBI:58225	?-D-glucose 6-phosphate	-	1000	-	7.5	30	Recombinant wild-type enzyme 	Homo sapiens 	19064002	Brenda 
 Glucose-6-phosphatase	Glucose-6-phosphatase catalytic subunit 1	EC:3.1.3.9 	P35575	-	44905	CHEBI:58225	?-D-glucose 6-phosphate	0.431	41	96	6.5	30	-	Mus musculus	34952005	Brenda 
 Glucose-6-phosphatase	Glucose-6-phosphatase catalytic subunit 1	EC:3.1.3.9 	P35575	-	44905	CHEBI:58225	?-D-glucose 6-phosphate	2	-	-	6.5	37	-	Homo sapiens 	6291517	Sabio-Rk
-Hexokinase-1	Hexokinase-1	EC:2.7.1.1	P19367 	-	36496	CHEBI:17925	Glucose	0.057	-	-	7.8	-	-	Homo sapiens 	10387081	Brenda 
-Hexokinase-1	Hexokinase-1	EC:2.7.1.1	P19367 	-	36496	CHEBI:17925	Glucose	0.047	-	-	7.2	37	-	Homo sapiens 	4027385	Sabio-Rk
+Hexokinase-1	Hexokinase-1	EC:2.7.1.1	P19367Â 	-	36496	CHEBI:17925	Glucose	0.057	-	-	7.8	-	-	Homo sapiens 	10387081	Brenda 
+Hexokinase-1	Hexokinase-1	EC:2.7.1.1	P19367Â 	-	36496	CHEBI:17925	Glucose	0.047	-	-	7.2	37	-	Homo sapiens 	4027385	Sabio-Rk
+
